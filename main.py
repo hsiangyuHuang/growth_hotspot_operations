@@ -2,12 +2,15 @@
 
 用法：
   python main.py fetch          # 立即抓取 + 处理（一次性）
+  python main.py sync           # 同步 data/processed/ → dashboard/data/
   python main.py dashboard      # 只启动看板
   python main.py                # 调度器模式：每日 09:00 自动执行 + 启动看板
 """
 import asyncio
+import json
 import logging
 import os
+import shutil
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -24,6 +27,7 @@ logging.basicConfig(
 logger = logging.getLogger("main")
 
 DATA_DIR = Path(__file__).parent / "data"
+DASHBOARD_DATA_DIR = Path(__file__).parent / "dashboard" / "data"
 
 
 def raw_path(date_str: str) -> Path:
@@ -70,6 +74,41 @@ async def run_fetch_and_process():
         logger.info(f"原始数据已保存至 {out_path}，配置好 MANUS_API_KEY 后重新运行即可")
 
 
+def sync_dashboard():
+    """将 data/processed/{date}/result.json 同步到 dashboard/data/"""
+    processed_dir = DATA_DIR / "processed"
+    if not processed_dir.exists():
+        logger.warning("data/processed/ 不存在，无数据可同步")
+        return
+
+    DASHBOARD_DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    dates = sorted(
+        [d.name for d in processed_dir.iterdir() if d.is_dir() and (d / "result.json").exists()],
+        reverse=True,
+    )
+
+    if not dates:
+        logger.warning("没有找到任何 result.json")
+        return
+
+    for date_str in dates:
+        src = processed_dir / date_str / "result.json"
+        dst = DASHBOARD_DATA_DIR / f"{date_str}.json"
+        shutil.copy2(src, dst)
+        logger.info(f"[sync] {src} → {dst}")
+
+    # 更新 latest.json
+    latest_src = processed_dir / dates[0] / "result.json"
+    shutil.copy2(latest_src, DASHBOARD_DATA_DIR / "latest.json")
+    logger.info(f"[sync] latest.json → {dates[0]}")
+
+    # 更新 dates.json
+    with open(DASHBOARD_DATA_DIR / "dates.json", "w", encoding="utf-8") as f:
+        json.dump(dates, f, ensure_ascii=False, indent=2)
+    logger.info(f"[sync] dates.json 已更新，共 {len(dates)} 条记录")
+
+
 def run_dashboard():
     """启动 FastAPI 看板"""
     import uvicorn
@@ -111,6 +150,8 @@ if __name__ == "__main__":
 
     if cmd == "fetch":
         asyncio.run(run_fetch_and_process())
+    elif cmd == "sync":
+        sync_dashboard()
     elif cmd == "dashboard":
         run_dashboard()
     else:
