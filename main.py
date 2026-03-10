@@ -133,7 +133,7 @@ def run_scheduler():
         trigger="cron",
         hour=9,
         minute=0,
-        timezone="Asia/Hong_Kong",
+        timezone="Asia/Shanghai",
         id="daily_fetch",
         name="每日热点抓取",
         replace_existing=True,
