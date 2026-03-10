@@ -86,9 +86,7 @@ def extract(markdown: str, run_date: str) -> dict:
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         raise EnvironmentError("GEMINI_API_KEY not set")
-    model = os.environ.get("GEMINI_MODEL", "")
-    if not model:
-        raise EnvironmentError("GEMINI_MODEL not set")
+    model = "gemini-3-flash-preview"
 
     client = genai.Client(api_key=api_key)
     max_retries = 3

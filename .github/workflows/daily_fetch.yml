@@ -21,11 +21,8 @@ jobs:
       - name: Run fetch
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          TWITTER_API_BASE: ${{ secrets.TWITTER_API_BASE }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
-          MANUS_API_BASE: ${{ secrets.MANUS_API_BASE }}
           MANUS_PROJECT_ID: ${{ secrets.MANUS_PROJECT_ID }}
         run: python main.py fetch
 

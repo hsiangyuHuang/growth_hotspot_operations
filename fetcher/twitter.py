@@ -105,10 +105,7 @@ async def fetch_all(output_path: Path) -> list[dict]:
     if not api_key:
         logger.warning("[Twitter] TWITTER_API_KEY not set, skipping")
         return []
-    base_url = os.environ.get("TWITTER_API_BASE", "")
-    if not base_url:
-        logger.warning("[Twitter] TWITTER_API_BASE not set, skipping")
-        return []
+    base_url = "https://api.twitterapi.io/twitter/user/last_tweets"
 
     accounts = _load_accounts()
     all_items = []

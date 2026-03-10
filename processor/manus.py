@@ -110,9 +110,7 @@ async def process(raw_path: Path, output_path: Path, run_date: str) -> str:
     project_id = os.environ.get("MANUS_PROJECT_ID", "")
     if not project_id:
         raise EnvironmentError("MANUS_PROJECT_ID not set")
-    base_url = os.environ.get("MANUS_API_BASE", "").rstrip("/")
-    if not base_url:
-        raise EnvironmentError("MANUS_API_BASE not set")
+    base_url = "https://api.manus.ai/v1"
 
     cfg = _load_config()
     poll_interval = cfg.get("manus_poll_interval", 60)
