@@ -1,5 +1,8 @@
 const REFRESH_INTERVAL = 5 * 60 * 1000;
 let currentTab = "today";
+let currentFilter = "all";
+let _currentData = null;
+let _currentPrefix = null;
 let refreshTimer = null;
 const headerState = { today: false, history: false };
 
@@ -96,6 +99,8 @@ async function loadHistory(dateStr) {
 
 // ── Rendering ──
 function renderDashboard(data, prefix) {
+  _currentData = data;
+  _currentPrefix = prefix;
   const cards = data.cards || [];
   window._currentCards = cards;
 
@@ -114,11 +119,34 @@ function renderDashboard(data, prefix) {
   }
 
   const listEl = document.getElementById(`${prefix}-list`);
+  const filterBarEl = document.getElementById(`${prefix}-filter-bar`);
+
   if (!cards.length) {
     listEl.innerHTML = renderEmptyState();
+    if (filterBarEl) filterBarEl.style.display = "none";
     return;
   }
-  listEl.innerHTML = cards.map((card, i) => renderCard(card, i)).join("");
+
+  renderFilterBar(prefix);
+
+  // Sort: P0 first, then P1, then P2
+  const sorted = [...cards].sort((a, b) => {
+    const order = { P0: 0, P1: 1, P2: 2 };
+    return (order[a.priority] ?? 2) - (order[b.priority] ?? 2);
+  });
+
+  const filtered = currentFilter === "all"
+    ? sorted
+    : sorted.filter(c => {
+        if (currentFilter === "P2") return !c.priority || c.priority === "P2";
+        return c.priority === currentFilter;
+      });
+
+  listEl.innerHTML = filtered.map((card, i) => renderCard(card, i)).join("");
+
+  if (data.product_gaps?.length) {
+    listEl.innerHTML += renderProductGaps(data.product_gaps);
+  }
 }
 
 function renderSummaryBar(cards) {
@@ -127,12 +155,39 @@ function renderSummaryBar(cards) {
   bar.style.display = "";
   const p0 = cards.filter(c => c.priority === "P0").length;
   const p1 = cards.filter(c => c.priority === "P1").length;
-  const p2 = cards.filter(c => c.priority === "P2").length;
+  const p2 = cards.filter(c => !c.priority || c.priority === "P2").length;
   bar.innerHTML =
     statCard("PACKAGES", cards.length, "bg-emerald-500/10 text-emerald-400 border-emerald-500/20") +
     statCard("P0 URGENT", p0, "bg-red-500/10 text-red-400 border-red-500/20", p0 > 0) +
     statCard("P1 PLANNED", p1, "bg-blue-500/10 text-blue-400 border-blue-500/20") +
     statCard("P2 LIGHT", p2, "bg-slate-500/10 text-slate-400 border-slate-500/20");
+}
+
+function renderFilterBar(prefix) {
+  const filterBarEl = document.getElementById(`${prefix}-filter-bar`);
+  if (!filterBarEl) return;
+  filterBarEl.style.display = "";
+  const pills = [
+    { f: "all", label: "全部" },
+    { f: "P0", label: "P0 紧急" },
+    { f: "P1", label: "P1 计划" },
+    { f: "P2", label: "P2 轻量" },
+  ];
+  filterBarEl.innerHTML = pills.map(({ f, label }) => {
+    const active = currentFilter === f;
+    const cls = active
+      ? "bg-white/10 text-white border-white/20"
+      : "text-slate-500 border-slate-700 hover:border-slate-500 hover:text-slate-300";
+    return `<button onclick="setFilter('${f}')" data-filter="${f}"
+      class="px-3 py-1.5 rounded-lg text-xs font-mono border transition-all duration-150 ${cls}">${label}</button>`;
+  }).join("");
+}
+
+function setFilter(f) {
+  currentFilter = f;
+  if (_currentData && _currentPrefix) {
+    renderDashboard(_currentData, _currentPrefix);
+  }
 }
 
 function statCard(label, count, classes, pulse = false) {
@@ -147,9 +202,12 @@ function statCard(label, count, classes, pulse = false) {
 function renderCard(card, index) {
   const p = card.priority || "P2";
   const borderColor = { P0: "border-l-red-500", P1: "border-l-blue-500", P2: "border-l-slate-600" }[p];
-  const glowStyle = p === "P0"
-    ? "box-shadow: inset 0 0 60px -20px rgba(239,68,68,0.06), 0 0 30px -15px rgba(239,68,68,0.1);"
+  const isP0 = p === "P0";
+  const glowStyle = isP0
+    ? "box-shadow: inset 0 0 80px -20px rgba(239,68,68,0.1), 0 0 40px -10px rgba(239,68,68,0.15);"
     : p === "P1" ? "box-shadow: inset 0 0 60px -20px rgba(59,130,246,0.04);" : "";
+  const topBorder = isP0 ? "border-t-2 border-t-red-500" : "";
+  const titleSize = isP0 ? "text-xl" : "text-[17px]";
 
   const badges = [
     priorityBadge(p),
@@ -162,21 +220,53 @@ function renderCard(card, index) {
   const summary = card.summary
     ? `<p class="text-sm text-slate-300 leading-relaxed mt-3">${esc(card.summary)}</p>` : "";
 
+  const dontDo = card.dont_do
+    ? `<p class="text-xs text-slate-500 mt-2 border-l-2 border-slate-600 pl-2"><span class="text-slate-600">⚠ 不做：</span>${esc(card.dont_do)}</p>`
+    : "";
+
+  // Sources
+  const sources = (card.sources || []).map(s =>
+    `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-mono bg-slate-700/40 text-slate-400 border border-slate-600/30 hover:bg-slate-600/50 hover:text-slate-200 transition-colors duration-150">
+      <svg class="w-3 h-3 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      ${esc(s.name)}</a>`
+  ).join("");
+  const sourcesHtml = sources ? `<div class="flex flex-wrap gap-1.5 mt-3">${sources}</div>` : "";
+
   // Channel sub-cards
   const channels = (card.channels || []).map((ch, ci) => renderChannelCard(ch, card.id, ci)).join("");
 
   return `
-  <div class="rounded-xl bg-surface border border-white/5 border-l-[3px] ${borderColor} overflow-hidden transition-all duration-300 hover:border-white/10"
+  <div class="rounded-xl bg-surface border border-white/5 border-l-[3px] ${borderColor} ${topBorder} overflow-hidden transition-all duration-300 hover:border-white/10"
        style="${glowStyle} animation: fadeSlideIn 0.5s ease-out both; animation-delay: ${index * 0.08}s"
        id="card-${card.id}">
     <div class="p-5">
       <div class="flex flex-wrap items-center gap-2 mb-3">${badges}</div>
-      <h3 class="font-display font-700 text-[17px] text-white leading-snug tracking-tight">${esc(card.title)}</h3>
+      <h3 class="font-display font-700 ${titleSize} text-white leading-snug tracking-tight">${esc(card.title)}</h3>
       ${summary}
+      ${dontDo}
+      ${sourcesHtml}
     </div>
     <!-- Channel sub-cards -->
     ${channels ? `<div class="px-5 pb-5 grid gap-3 sm:grid-cols-2">${channels}</div>` : ""}
   </div>`;
+}
+
+// ── Product Gaps ──
+function renderProductGaps(gaps) {
+  const items = gaps.map(g => `
+    <div class="flex gap-3 py-2.5 border-b border-white/5 last:border-0">
+      <span class="text-xs font-mono text-amber-400 mt-0.5 shrink-0">[GAP]</span>
+      <div>
+        <span class="text-sm font-medium text-slate-200">${esc(g.signal)}</span>
+        <p class="text-xs text-slate-500 mt-0.5">${esc(g.description)}</p>
+      </div>
+    </div>`).join("");
+  return `
+    <div class="rounded-xl bg-surface border border-amber-500/10 p-5 mt-2">
+      <div class="text-[10px] font-mono tracking-widest text-amber-400/60 mb-3">PRODUCT GAPS</div>
+      ${items}
+    </div>`;
 }
 
 // ── Channel Sub-Card ──

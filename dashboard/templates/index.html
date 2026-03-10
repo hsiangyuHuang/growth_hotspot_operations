@@ -64,7 +64,7 @@
   <main class="max-w-6xl mx-auto px-6 py-6">
 
     <!-- Summary stats bar -->
-    <div id="summary-bar" class="grid grid-cols-4 gap-3 mb-6" style="display:none"></div>
+    <div id="summary-bar" class="grid grid-cols-4 gap-3 mb-6 sticky top-[56px] z-30 py-3 bg-surface-deep/90 backdrop-blur-md -mx-6 px-6" style="display:none"></div>
 
     <!-- Today view -->
     <div id="today-view">
@@ -80,7 +80,8 @@
         </button>
         <div id="today-header" class="prose-container rounded-xl bg-surface border border-white/5 p-6 mb-6 overflow-hidden transition-all duration-500 ease-out" style="display:none"></div>
       </div>
-      <div id="today-list" class="space-y-4"></div>
+      <div id="today-filter-bar" class="flex gap-2 mb-4 flex-wrap" style="display:none"></div>
+      <div id="today-list" class="grid gap-4 md:grid-cols-2"></div>
     </div>
 
     <!-- History view -->
@@ -101,7 +102,8 @@
         </button>
         <div id="history-header" class="prose-container rounded-xl bg-surface border border-white/5 p-6 mb-6 overflow-hidden transition-all duration-500 ease-out" style="display:none"></div>
       </div>
-      <div id="history-list" class="space-y-4"></div>
+      <div id="history-filter-bar" class="flex gap-2 mb-4 flex-wrap" style="display:none"></div>
+      <div id="history-list" class="grid gap-4 md:grid-cols-2"></div>
     </div>
   </main>
 
