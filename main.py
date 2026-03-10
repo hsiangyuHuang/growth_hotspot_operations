@@ -1,0 +1,117 @@
+"""OSL Growth Hotspot Agent — 主入口
+
+用法：
+  python main.py fetch          # 立即抓取 + 处理（一次性）
+  python main.py dashboard      # 只启动看板
+  python main.py                # 调度器模式：每日 09:00 自动执行 + 启动看板
+"""
+import asyncio
+import logging
+import os
+import sys
+from datetime import date, datetime
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+logger = logging.getLogger("main")
+
+DATA_DIR = Path(__file__).parent / "data"
+
+
+def raw_path(date_str: str) -> Path:
+    return DATA_DIR / "raw" / date_str / "items.json"
+
+
+def processed_path(date_str: str) -> Path:
+    return DATA_DIR / "processed" / date_str / "result.md"
+
+
+async def run_fetch_and_process():
+    """抓取所有信源 + 调用 Manus 处理"""
+    today = date.today().isoformat()
+    out_path = raw_path(today)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    logger.info(f"=== 开始抓取 {today} ===")
+
+    from fetcher import rss as rss_fetcher
+    from fetcher import twitter as twitter_fetcher
+    from fetcher import telegram as telegram_fetcher
+
+    # 并发抓取 RSS + Twitter；Telegram 串行（需要交互式登录）
+    rss_items, twitter_items = await asyncio.gather(
+        rss_fetcher.fetch_all(out_path),
+        twitter_fetcher.fetch_all(out_path),
+    )
+    telegram_items = await telegram_fetcher.fetch_all(out_path)
+
+    total = len(rss_items) + len(twitter_items) + len(telegram_items)
+    logger.info(f"抓取完成：RSS {len(rss_items)} + Twitter {len(twitter_items)} + Telegram {len(telegram_items)} = {total} 条")
+
+    if total == 0:
+        logger.warning("未抓取到任何条目，跳过 Manus 处理")
+        return
+
+    logger.info("=== 开始 Manus 处理 ===")
+    from processor import manus
+    try:
+        result = await manus.process(out_path, processed_path(today), today)
+        logger.info(f"处理完成，结果已写入 {processed_path(today)}")
+    except EnvironmentError as e:
+        logger.warning(f"跳过 Manus 处理：{e}")
+        logger.info(f"原始数据已保存至 {out_path}，配置好 MANUS_API_KEY 后重新运行即可")
+
+
+def run_dashboard():
+    """启动 FastAPI 看板"""
+    import uvicorn
+    port = int(os.environ.get("DASHBOARD_PORT", "8080"))
+    logger.info(f"启动看板：http://localhost:{port}")
+    uvicorn.run(
+        "dashboard.app:app",
+        host="0.0.0.0",
+        port=port,
+        reload=False,
+        log_level="warning",
+    )
+
+
+def run_scheduler():
+    """调度模式：每日 09:00 执行抓取+处理，同时启动看板"""
+    from apscheduler.schedulers.background import BackgroundScheduler
+
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(
+        lambda: asyncio.run(run_fetch_and_process()),
+        trigger="cron",
+        hour=9,
+        minute=0,
+        timezone="Asia/Hong_Kong",
+        id="daily_fetch",
+        name="每日热点抓取",
+        replace_existing=True,
+    )
+    scheduler.start()
+    logger.info("调度器已启动，每日 09:00 自动抓取")
+
+    # 阻塞在看板
+    run_dashboard()
+
+
+if __name__ == "__main__":
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "scheduler"
+
+    if cmd == "fetch":
+        asyncio.run(run_fetch_and_process())
+    elif cmd == "dashboard":
+        run_dashboard()
+    else:
+        run_scheduler()

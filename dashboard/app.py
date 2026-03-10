@@ -19,17 +19,11 @@ app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
 
 
 def _load_result(date_str: str) -> Optional[dict]:
-    """优先读 result.json，不存在则尝试从 result.md 即时解析。"""
+    """读取指定日期的 result.json。"""
     json_path = PROCESSED_DIR / date_str / "result.json"
     if json_path.exists():
         with open(json_path, "r", encoding="utf-8") as f:
             return json.load(f)
-
-    md_path = PROCESSED_DIR / date_str / "result.md"
-    if md_path.exists():
-        from processor.parser import parse_result_md
-        md = md_path.read_text(encoding="utf-8")
-        return parse_result_md(md, date_str)
 
     return None
 
@@ -67,7 +61,7 @@ async def get_dates():
         [
             d.name
             for d in PROCESSED_DIR.iterdir()
-            if d.is_dir() and ((d / "result.json").exists() or (d / "result.md").exists())
+            if d.is_dir() and (d / "result.json").exists()
         ],
         reverse=True,
     )

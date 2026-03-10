@@ -1,0 +1,88 @@
+lookback_hours: 24
+content_limit: 500          # RSS/Twitter 正文截取字符数
+manus_poll_interval: 60     # Manus 轮询间隔（秒）
+manus_timeout: 1800         # Manus 超时（秒）
+
+rss:
+  - name: "The Block"
+    url: "https://www.theblock.co/rss.xml"
+    lang: "en"
+  - name: "CoinTelegraph"
+    url: "https://cointelegraph.com/rss"
+    lang: "en"
+  - name: "CoinDesk"
+    url: "https://www.coindesk.com/arc/outboundfeeds/rss/"
+    lang: "en"
+  - name: "Decrypt"
+    url: "https://decrypt.co/feed"
+    lang: "en"
+  - name: "CryptoSlate"
+    url: "https://cryptoslate.com/feed/"
+    lang: "en"
+  - name: "The Defiant"
+    url: "https://thedefiant.io/feed/"
+    lang: "en"
+  - name: "Blockworks"
+    url: "https://blockworks.co/feed"
+    lang: "en"
+  # CryptoPanic: RSS 需要 API auth_token，暂不支持
+  # Foresight News: 反爬虫保护，RSS 不可用
+  - name: "律动 BlockBeats 快讯"
+    url: "https://api.theblockbeats.news/v2/rss/newsflash"
+    lang: "zh"
+  - name: "律动 BlockBeats 文章"
+    url: "https://api.theblockbeats.news/v2/rss/article"
+    lang: "zh"
+  # ChainCatcher: 官方 /rss 返回 HTML 非 XML，暂不支持
+  - name: "Odaily 快讯"
+    url: "https://rss.odaily.news/rss/newsflash"
+    lang: "zh"
+  - name: "Odaily 文章"
+    url: "https://rss.odaily.news/rss/post"
+    lang: "zh"
+  # PANews: RSS 路径已变，返回 HTML，暂不支持
+
+twitter:
+  accounts:
+    # 监管 & 合规（OSL 核心关注）
+    - "SFC_HK"           # 香港证监会官方
+    - "EleanorTerrett"    # Fox Business 加密记者，SEC 动态
+    - "MetaLawMan"        # 加密法律分析
+    - "iannedlingham"     # Bloomberg 加密记者
+    # 快讯 & 突发
+    - "WatcherGuru"       # 突发新闻，覆盖全
+    - "WuBlockchain"      # 亚洲加密新闻，最活跃
+    - "TheBlock__"        # The Block 官方
+    - "CoinDesk"          # CoinDesk 官方
+    # 链上数据 & 安全
+    - "lookonchain"       # 鲸鱼动向，Smart Money
+    - "whale_alert"       # 大额转账监控
+    - "zachxbt"           # 安全事件/骗局曝光
+    # 机构 & 宏观
+    - "saylor"            # Michael Saylor，BTC 机构风向标
+    - "APompliano"        # 机构投资人视角
+    # 机构媒体
+    - "Blockworks_"       # Blockworks（机构向加密媒体）
+    # 竞品官方
+    - "HashKeyExchange"   # HashKey Exchange（HK 直接竞对）
+    - "HashKeyGroup"      # HashKey Group（集团动态、投资布局）
+    - "MoomooApp"         # 富途牛牛 Moomoo（TradFi 跨界加密）
+    - "BackpackExchange"  # Backpack Exchange
+    - "okx"               # OKX 官方
+    - "star_xu"           # OKX 创始人徐明星
+    - "binance"           # Binance 官方
+    - "_RichardTeng"      # Binance CEO Richard Teng
+    - "Bybit_Official"    # Bybit 官方
+    - "KrakenExchange"    # Kraken
+    - "coinbase"          # Coinbase 官方
+  max_tweets_per_account: 20
+
+# telegram:  # 暂时屏蔽：需要交互式登录
+#   channels:
+#     - "wublockchain12"
+#     - "theblockbeats"
+#     - "odailycn"
+#     - "OKX_Announcements"     # OKX 公告频道
+#     - "binance_announcements" # Binance 公告频道
+#     - "backaborex_exchange"   # Backpack（待确认频道名）
+#   lookback_hours: 24

@@ -6,3 +6,7 @@ __pycache__/
 *.py[cod]
 .DS_Store
 .superset/
+.vercel
+.claude/
+knowledge/
+.venv/
