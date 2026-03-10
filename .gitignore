@@ -1,5 +1,4 @@
 .env
-/data/
 *.session
 cookies.json
 __pycache__/
