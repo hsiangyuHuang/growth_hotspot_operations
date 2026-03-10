@@ -143,10 +143,6 @@ function renderDashboard(data, prefix) {
       });
 
   listEl.innerHTML = filtered.map((card, i) => renderCard(card, i)).join("");
-
-  if (data.product_gaps?.length) {
-    listEl.innerHTML += renderProductGaps(data.product_gaps);
-  }
 }
 
 function renderSummaryBar(cards) {
@@ -250,23 +246,6 @@ function renderCard(card, index) {
     <!-- Channel sub-cards -->
     ${channels ? `<div class="px-5 pb-5 grid gap-3 sm:grid-cols-2">${channels}</div>` : ""}
   </div>`;
-}
-
-// ── Product Gaps ──
-function renderProductGaps(gaps) {
-  const items = gaps.map(g => `
-    <div class="flex gap-3 py-2.5 border-b border-white/5 last:border-0">
-      <span class="text-xs font-mono text-amber-400 mt-0.5 shrink-0">[GAP]</span>
-      <div>
-        <span class="text-sm font-medium text-slate-200">${esc(g.signal)}</span>
-        <p class="text-xs text-slate-500 mt-0.5">${esc(g.description)}</p>
-      </div>
-    </div>`).join("");
-  return `
-    <div class="rounded-xl bg-surface border border-amber-500/10 p-5 mt-2">
-      <div class="text-[10px] font-mono tracking-widest text-amber-400/60 mb-3">PRODUCT GAPS</div>
-      ${items}
-    </div>`;
 }
 
 // ── Channel Sub-Card ──

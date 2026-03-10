@@ -65,19 +65,8 @@ RESPONSE_SCHEMA = {
                 "required": ["title", "priority"],
             },
         },
-        "product_gaps": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "signal": {"type": "string"},
-                    "description": {"type": "string"},
-                },
-                "required": ["signal", "description"],
-            },
-        },
     },
-    "required": ["cards", "product_gaps"],
+    "required": ["cards"],
 }
 
 
@@ -118,7 +107,6 @@ def extract(markdown: str, run_date: str) -> dict:
                 "run_date": run_date,
                 "header_markdown": "",
                 "cards": result.get("cards", []),
-                "product_gaps": result.get("product_gaps", []),
             }
         except Exception as e:
             last_error = e
