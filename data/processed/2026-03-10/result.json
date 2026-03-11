@@ -1,0 +1,432 @@
+{
+  "run_date": "2026-03-10",
+  "header_markdown": "",
+  "cards": [
+    {
+      "title": "BTC 油价冲击后反弹 + 机构增持叙事",
+      "priority": "P0",
+      "category": "价格行情 + 机构 TradFi",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "FOMO 买入（主）/ 深度研究（次）",
+      "site": "Both",
+      "executability": "A",
+      "summary": "借 BTC 重回 $70K+ 窗口，全渠道推 BTC/ETH 现货交易，同步用机构增持数据强化“聪明钱在买”叙事，CRM 触达活跃用户，SEO 截流“油价比特币”相关搜索。",
+      "dont_do": "不做价格预测（\"BTC 将涨至 X\"）；不做收益承诺；不在油价仍高位时发进攻性广告；HK 站不推 SOL/ETH 以外的山寨币",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：HK 站（Google Search 竞品词 + Meta Leads 定向金融从业者）；Global 站（Google Web 台湾用户 + TikTok 印尼用户）\n- 素材形式：静态图 + 6-10s 竖屏短视频\n- 文案：Hook「油价崩了，比特币却站上 $70,000——机构正在买入」。CTA「立即在 OSL 交易 BTC，持牌平台，安全可信」"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- Onsite：首页 Banner 更新「BTC 重回 $70K，机构增持信号强劲」\n- Push：针对 Global 站活跃交易用户发送行情提醒\n- EDM：主题「油价崩塌，比特币反弹——机构在做什么？」针对 VIP 及已入金未交易用户"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：比特币价格反弹\n- 长尾词：油价上涨比特币会跌吗、机构增持比特币 2026、Strategy 买入比特币 怎么跟投\n- 大纲：油价震荡与 BTC 反弹逻辑、机构增持数据解读、如何在 OSL 安全交易"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：油价崩了，比特币却涨了——这次和以往有什么不同？\n- 形式：BTC 价格 vs 油价走势对比图\n- 引导：分享判断、OSL 交易指南、机构增持数据解读"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/03/10/bitcoin-climbs-to-usd71-000-as-dollar-oil-weaken-after-trump-comments-on-iran-war"
+        },
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/392822/the-second-century-begins-michael-saylors-strategy-buys-more-bitcoin"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2031276446971465740"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-vs-gold-etf-flows-point-to-early-capital-rotation-signs"
+        }
+      ],
+      "id": "ap_1"
+    },
+    {
+      "title": "BTC 2000 万枚稀缺性里程碑",
+      "priority": "P0",
+      "category": "代币经济事件 + 品牌",
+      "timing": "Wave",
+      "relation": "Direct",
+      "intent": "FOMO 买入（主）/ 深度研究（次）",
+      "site": "Both",
+      "executability": "B",
+      "summary": "BTC 已开采 2000 万枚（95% 供应量），这是 BTC 稀缺性叙事的历史性节点。借此制作高质量 SEO 内容和品牌素材，同时配合 Paid 广告截流新手搜索流量。",
+      "dont_do": "不做价格预测；不说“现在是最后机会”等煽动性表述；不做收益承诺",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：Global 站（Google Search 关键词“比特币稀缺”、TikTok 新手人群）；HK 站（Google Search + Meta 定向金融投资人群）\n- 素材：2000 万 / 2100 万 BTC 进度条可视化\n- 文案：强调通胀无限而 BTC 有限的稀缺性力量"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- Onsite：首页 Banner「BTC 第 2000 万枚已挖出——稀缺性时代正式开启」\n- EDM：教育类内容，向新注册及沉默用户解释 BTC 稀缺性原理\n- Push：全量活跃用户提醒历史性时刻"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：比特币供应量 2000 万\n- 长尾词：比特币总量 2100 万 为什么有限、比特币稀缺性 投资价值\n- 大纲：里程碑意义、技术原理、历史价格回顾、如何在 OSL 购买"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：比特币第 2000 万枚已挖出——你知道这意味着什么吗？\n- 形式：进度条可视化图文\n- 引导：用户认知调研、深度文章推荐、OSL 平台引导"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/392660/bitcoin-mined-supply-hits-20-million-btc"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-mined-20-million-executives-speculate-1-million-left"
+        },
+        {
+          "name": "CryptoSlate",
+          "url": "https://cryptoslate.com/95-of-all-bitcoin-is-now-mined-and-its-raising-a-new-question-about-security/"
+        }
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "Bithumb AML/KYC 违规遭停业处罚",
+      "priority": "P0",
+      "category": "竞对动态 + 安全风险",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "迁移转换（主）/ 信任评估（次）",
+      "site": "Both",
+      "executability": "B",
+      "summary": "韩国 Bithumb 因 AML/KYC 违规面临六个月部分停业，这是 OSL 强化持牌合规优势叙事的绝佳窗口。正面输出 OSL 的合规机制（SFC 持牌、AML 体系、资金隔离），不攻击竞对。",
+      "dont_do": "不点名攻击 Bithumb；不幸灾乐祸；不做“竞对出事了来我们这”的直接对比广告；HK 站不做硬广强转化",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：Global 站（Google Search “加密交易所安全”、定向韩国/东南亚/台湾）；HK 站（品牌词 + 竞品词）\n- 文案：Hook「选择交易所，合规是第一道防线」。强调 SFC 第 1、4、7、9 类牌照"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- 帮助中心：置顶「如何识别合规加密交易所」FAQ\n- EDM：品牌信任类内容，分析合规标准的重要性\n- 站内信：向已入金用户同步资产安全合规保护机制"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：加密交易所合规安全\n- 长尾词：如何选择安全的加密货币交易所、香港持牌加密交易所哪家好\n- 大纲：合规资质重要性、AML/KYC 保护机制、验证持牌平台实操指南"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：选交易所，你最看重什么？——合规资质还是费率？\n- 调性：专业客观，正面突出 OSL 合规优势\n- 引导：用户偏好互动、合规资质科普、安全问题解答"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/392846/south-korea-crypto-exchange-bithumb-suspension-ceo-disciplinary-action-report"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bithumb-faces-partial-suspension-south-korea-aml-kyc"
+        }
+      ],
+      "id": "ap_3"
+    },
+    {
+      "title": "稳定币市值 $3000 亿 + Aon 保险 PoC + StableHub 推广",
+      "priority": "P0",
+      "category": "产品创新 + 机构 TradFi",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "信任评估（主）/ FOMO 买入（次）",
+      "site": "Global",
+      "executability": "A",
+      "summary": "稳定币市值重回 $3000 亿，主流机构接受稳定币支付叙事升温。重点推广 OSL Global 的 StableHub 产品，强化“稳定币不只是避险，还能产生收益”的叙事。",
+      "dont_do": "不做收益承诺（不说\"年化 X%\"）；不做稳定币脱锚风险暗示；不推广 OSL 未上线的稳定币产品",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：Global 站（台湾、印尼用户）；关键词“稳定币理财”、“USDT 收益”\n- 素材：StableHub 产品截图与收益展示\n- 文案：Hook「稳定币市值突破 $3000 亿——你的 USDT 还在「躺着」吗？」"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- Onsite：首页 Banner 与资产页模块提示存入 StableHub\n- Push：针对持有 USDT/USDC 余额 >100U 且未开通 StableHub 的用户\n- EDM：介绍稳定币支付里程碑及 StableHub 产品（无锁仓特性）"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：稳定币理财 2026\n- 长尾词：USDT 怎么赚收益不锁仓、稳定币市值 3000 亿意味着什么\n- 大纲：机构拥抱稳定币原因、Aon 支付案例、StableHub 使用指南"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：稳定币市值 $3000 亿——你的稳定币在做什么？\n- 形式：数据图文 + StableHub 产品介绍\n- 引导：持有习惯互动、StableHub 收益说明、理财问题答疑"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/post/5209667"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/aon-stablecoin-payments-insurance-premiums-paxos-coinbase"
+        },
+        {
+          "name": "Odaily RWA",
+          "url": "https://www.odaily.news/zh-CN/post/5209668"
+        }
+      ],
+      "id": "ap_4"
+    },
+    {
+      "title": "HashKey Exchange HSK 存款奖励活动竞对应对",
+      "priority": "P0",
+      "category": "竞对动态",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "迁移转换（主）/ 信任评估（次）",
+      "site": "HK",
+      "executability": "A",
+      "summary": "HashKey Exchange 针对 PI 推出 HSK 存款奖励活动。OSL 需强化 HK 站 VIP 用户黏性，突出差异化优势（SFC 持牌、更多 PI 币种、机构服务）。",
+      "dont_do": "不点名 HashKey；不做直接对比；不向零售用户推广 PI 专属产品；不使用 SFC 禁止的激励手段",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：Google Search 竞品词 + 香港加密投资人群\n- 文案：Hook「香港持牌交易所，OSL 为专业投资者提供更完整的服务」。强调 24+ PI 币种与 OTC 大宗交易"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- CRM：触达活跃度下降或资产下降的 VIP 用户\n- EDM：主题「OSL VIP 专属：超过 24 种 PI 币种 + 机构级服务」\n- BD：WhatsApp API 触达高净值 VIP，1对1介绍 PI 产品动态"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：香港专业投资者加密交易所\n- 长尾词：香港 PI 加密货币交易哪家好、OSL HK 专业投资者开户\n- 大纲：PI 交易指南、OSL PI 币种列表、PI 资格申请步骤"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：香港专业投资者加密交易：你最看重什么？\n- 调性：专业、低调，侧重 PI 权益说明\n- 引导：服务要素调研、PI 专区引导、资格申请咨询"
+        }
+      ],
+      "sources": [
+        {
+          "name": "HashKey Exchange",
+          "url": "https://x.com/HashKeyExchange/status/2031266506634666095"
+        }
+      ],
+      "id": "ap_5"
+    },
+    {
+      "title": "RWA 代币化里程碑（Nasdaq + Kraken + $10 亿市值）",
+      "priority": "P1",
+      "category": "产品创新 + 机构 TradFi",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "深度研究（主）/ 信任评估（次）",
+      "site": "Both",
+      "executability": "C",
+      "summary": "Nasdaq 与 Kraken 推进代币化股票，RWA 赛道迎来机构级里程碑。OSL 借此强化持牌机构在 RWA 赛道的天然叙事优势，侧重机构客户沟通。",
+      "dont_do": "不推广 OSL 未上线的 RWA 代币；不做收益承诺；HK 站不推零售用户参与 RWA 产品",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：LinkedIn 风格受众 + Google Search “代币化证券”\n- 文案：Hook「代币化股票市值突破 $10 亿——传统金融与加密的边界正在消失」\n- 落地页：OSL 机构服务页面"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- EDM：面向机构及 VIP 用户，分析 Nasdaq + Kraken 合作意义\n- 报告：发送 RWA 深度分析报告精选版给 VIP 用户"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：RWA 代币化 2026\n- 长尾词：代币化股票怎么买香港、Nasdaq 区块链代币化证券\n- 大纲：RWA 机构时代、合规挑战与机遇、机构参与路径"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：Nasdaq 入场代币化股票——传统金融与加密的融合加速了吗？\n- 形式：深度行业分析文章 + 数据图表\n- 引导：行业趋势互动、深度分析推荐、机构服务咨询"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/392818/nasdaq-partners-with-kraken-parent-payward-to-link-tokenized-equities-with-defi-networks"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/tokenized-stocks-surpass-1b-ondo-xstocks-dominate-sector"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/nasdaq-partners-with-boerse-stuttgart-s-seturion-to-advance-tokenized-securities-settlement-in-europe"
+        }
+      ],
+      "id": "ap_6"
+    },
+    {
+      "title": "持牌合规优势叙事（白宫网络战略 + 银行业起诉 OCC）",
+      "priority": "P1",
+      "category": "监管政策",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "信任评估（主）/ 学习入圈（次）",
+      "site": "Both",
+      "executability": "B",
+      "summary": "白宫网络战略将加密纳入联邦安全框架，监管合规化是不可逆趋势。OSL 借此强化持牌机构安全叙事，建立权威形象。",
+      "dont_do": "不做政治立场表态；不预测监管走向；不做收益承诺；不攻击传统银行业",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：Google Search “加密货币合规”；定向关注金融监管的用户\n- 文案：Hook「加密合规化是大势所趋——选择持牌平台，才是真正的安全」"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- 帮助中心：置顶「加密货币监管全球动态」文章\n- EDM：教育类，分析白宫、OCC、SFC 动向对持牌平台的利好"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：加密货币监管 2026\n- 长尾词：美国加密货币监管最新动态 2026、香港加密货币持牌交易所 SFC\n- 大纲：白宫战略解读、银行业之争意义、持牌平台优势分析"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：加密监管加速——这对普通投资者意味着什么？\n- 调性：专业客观的行业观察者视角\n- 引导：监管利弊调研、监管动态解读阅读、OSL 资产保护机制介绍"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/regulation/white-house-cyber-strategy-puts-crypto-under-federal-umbrella"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bank-policy-institute-occ-crypto-national-trust-bank-charters-lawsuit"
+        },
+        {
+          "name": "Decrypt",
+          "url": "https://decrypt.co/360524/wall-street-banks-weigh-lawsuit-over-crypto-banking-charters"
+        }
+      ],
+      "id": "ap_7"
+    },
+    {
+      "title": "AI+Crypto 破圈截流（Nvidia NemoClaw + AI 代币上涨）",
+      "priority": "P1",
+      "category": "产品创新 + 社会舆论",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "FOMO 买入（主）/ 学习入圈（次）",
+      "site": "Global",
+      "executability": "B",
+      "summary": "Nvidia 引爆 AI+Crypto 叙事，AI 圈用户搜索需求激增。OSL 借此截流新手流量，引导至 BTC/ETH 合约交易承接 FOMO 情绪。",
+      "dont_do": "不推广 OSL 未上线的 AI 代币；不做价格预测；不做收益承诺",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：Google Search “AI 加密货币”、TikTok AI 兴趣用户\n- 文案：Hook「Nvidia 入场 AI Agent，加密市场迎来新叙事」。引导至 BTC/ETH 合约交易"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- Onsite：行情页置顶卡提示 AI 代币领涨\n- Push：针对合约活跃用户，发送 Nvidia 计划引发的 BTC/ETH 合约机会提醒"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：AI 加密货币 2026\n- 长尾词：Nvidia NemoClaw 影响、AI 代币怎么买 2026\n- 大纲：Nvidia 计划解读、AI 代币上涨逻辑、在 OSL 参与 AI 行情路径"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：Nvidia 入场 AI Agent——AI 与加密的融合会走向何方？\n- 调性：前沿专业，引发思考\n- 引导：AI 赛道主叙事讨论、深度分析文章推荐、主流资产交易引导"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WatcherGuru",
+          "url": "https://x.com/WatcherGuru/status/2031193980411494860"
+        },
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/03/10/ai-tokens-rally-after-nvidia-open-source-agent-plan-beating-coindesk-20"
+        }
+      ],
+      "id": "ap_8"
+    },
+    {
+      "title": "东南亚 AML 监管收紧（泰国冻结 1 万账户）",
+      "priority": "P1",
+      "category": "监管政策 + 地域热点",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "迁移转换（主）/ 信任评估（次）",
+      "site": "Global",
+      "executability": "B",
+      "summary": "泰国 AML 打击信号明显，东南亚用户对资产安全担忧。OSL 借此强化“合规平台”叙事，重点触达印尼等东南亚市场。",
+      "dont_do": "不点名泰国具体平台；不做制造恐慌的广告；不做收益承诺",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "- 受众定向：TikTok 印尼用户 + Google 印尼市场\n- 文案：Hook（印尼语）强调监管收紧下选择持牌平台的重要性"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- Push：针对印尼注册用户发送安全保障提醒（印尼语）\n- 社区：印尼群发布安全提醒帖，突出 OSL 合规优势"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：platform crypto aman Indonesia\n- 长尾词：platform crypto berlisensi Indonesia、OSL exchange review Indonesia\n- 大纲：AML 监管重要性、持牌平台选择方法、OSL 安全体系"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：东南亚监管收紧——这对我们意味着什么？（印尼语）\n- 调性：专业安心，科普教育\n- 引导：平台资质自查互动、合规安全性科普、安全提问答疑"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/thai-crypto-operators-freeze-10-000-accounts-aml"
+        }
+      ],
+      "id": "ap_9"
+    },
+    {
+      "title": "竞对格局变化（ICE 投资 OKX + Coinbase 欧洲期货扩张）",
+      "priority": "P2",
+      "category": "竞对动态",
+      "timing": "Day",
+      "relation": "Indirect",
+      "intent": "信任评估（主）/ 深度研究（次）",
+      "site": "Global",
+      "executability": "D",
+      "summary": "传统金融巨头对竞对背书及竞对合约扩张，意味着合规合约交易赛道竞争加剧。OSL 输出 Global 合约产品差异化叙事，建立专业形象。",
+      "dont_do": "不点名攻击 OKX 或 Coinbase；不做直接对比；不夸大 OSL 合约能力",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "- EDM：面向合约活跃用户，强调 OSL Global 合约产品的持牌合规与杠杆特点"
+        },
+        {
+          "name": "SEO",
+          "markdown": "- 主关键词：加密合约交易所 2026\n- 长尾词：持牌加密合约交易所哪家好、Coinbase 期货 vs OSL 合约比较\n- 大纲：行业格局变化分析、合规合约定义、安全平台选择指南"
+        },
+        {
+          "name": "社区",
+          "markdown": "- 话题：NYSE 母公司投资 OKX——传统金融与加密的融合进入新阶段\n- 形式：行业观察分析文章\n- 引导：巨头入场意义讨论、合规合约产品介绍、交易问题咨询"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/392772/why-nyse-parent-ice-okx-reported-200-million-investment-25-billion-valuation"
+        },
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/392797/coinbase-opens-crypto-futures-trading-europe"
+        },
+        {
+          "name": "Decrypt",
+          "url": "https://decrypt.co/360420/coinbase-debuts-crypto-futures-european-traders-bitcoin-ethereum"
+        }
+      ],
+      "id": "ap_10"
+    }
+  ]
+}
