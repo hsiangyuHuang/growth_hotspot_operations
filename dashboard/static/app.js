@@ -1,10 +1,11 @@
+// ── Config ──
 const REFRESH_INTERVAL = 5 * 60 * 1000;
 let currentTab = "today";
-let currentFilter = "all";
+let filterPriority = "ALL";
+let filterChannel = "ALL";
+let filterSite = "ALL";
 let _currentData = null;
-let _currentPrefix = null;
 let refreshTimer = null;
-const headerState = { today: false, history: false };
 
 // Auto-detect: static site (Vercel) vs local FastAPI
 const IS_STATIC = !window.location.port || window.location.hostname !== 'localhost';
@@ -12,11 +13,38 @@ const API = IS_STATIC
   ? { today: "./data/latest.json", dates: "./data/dates.json", history: (d) => `./data/${d}.json` }
   : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}` };
 
-const CHANNEL_ICONS = {
-  "Paid Ads": { icon: "\u{1F4E2}", color: "purple" },
-  "站内运营 / 用户触达": { icon: "\u{1F465}", color: "sky" },
-  "SEO": { icon: "\u{1F50D}", color: "emerald" },
-  "社区": { icon: "\u{1F4AC}", color: "amber" },
+// ── Design Tokens ──
+const URGENCY_CONFIG = {
+  Flash: { label: 'Flash <4h', color: 'text-red-400', bg: 'bg-red-500/10', border: 'border-red-500/30' },
+  Day:   { label: 'Day 4-48h', color: 'text-amber-400', bg: 'bg-amber-500/10', border: 'border-amber-500/30' },
+  Wave:  { label: 'Wave 2-7d', color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/30' },
+  Trend: { label: 'Trend 1-4w', color: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/30' },
+};
+
+const PRIORITY_CONFIG = {
+  P0: { label: 'P0 当日启动', color: 'text-red-400', bg: 'bg-red-500/15', bar: 'bg-red-500', divider: 'bg-red-500/20' },
+  P1: { label: 'P1 计划跟进', color: 'text-amber-400', bg: 'bg-amber-500/15', bar: 'bg-amber-500', divider: 'bg-amber-500/20' },
+  P2: { label: 'P2 轻量参与', color: 'text-slate-400', bg: 'bg-slate-500/15', bar: 'bg-slate-500', divider: 'bg-slate-500/20' },
+};
+
+const CHANNEL_CONFIG = {
+  'Paid Ads':            { label: 'Paid Ads',    icon: '📣', color: 'text-amber-300',  bg: 'bg-amber-500/15',  activeCls: 'text-amber-300 bg-amber-500/15' },
+  'SEO':                 { label: 'SEO',         icon: '🔍', color: 'text-emerald-300', bg: 'bg-emerald-500/15', activeCls: 'text-emerald-300 bg-emerald-500/15' },
+  '站内运营 / 用户触达': { label: '站内运营/触达', icon: '🖥️', color: 'text-cyan-300',   bg: 'bg-cyan-500/15',   activeCls: 'text-cyan-300 bg-cyan-500/15' },
+  '社区':                { label: '社区运营',     icon: '💬', color: 'text-violet-300', bg: 'bg-violet-500/15', activeCls: 'text-violet-300 bg-violet-500/15' },
+};
+
+const SITE_CONFIG = {
+  HK:     { label: 'HK 站',      color: 'text-sky-300',    bg: 'bg-sky-500/15' },
+  Global: { label: 'Global 站',  color: 'text-indigo-300', bg: 'bg-indigo-500/15' },
+  Both:   { label: 'HK + Global', color: 'text-teal-300',  bg: 'bg-teal-500/15' },
+};
+
+const EXEC_CONFIG = {
+  A: { label: 'A 级 2-4h',  color: 'text-green-400' },
+  B: { label: 'B 级 1-2d',  color: 'text-yellow-400' },
+  C: { label: 'C 级 2-3d',  color: 'text-orange-400' },
+  D: { label: 'D 级 纯内容', color: 'text-slate-400' },
 };
 
 // ── Bootstrap ──
@@ -31,318 +59,484 @@ function setupTabs() {
     btn.addEventListener("click", () => {
       currentTab = btn.dataset.tab;
       document.querySelectorAll(".tab-btn").forEach(b => {
-        b.classList.remove("active", "bg-white/10", "text-white");
-        b.classList.add("text-slate-500");
+        b.classList.remove("active", "bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
+        b.classList.add("text-slate-400");
       });
-      btn.classList.add("active", "bg-white/10", "text-white");
-      btn.classList.remove("text-slate-500");
+      btn.classList.add("active", "bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
+      btn.classList.remove("text-slate-400");
+      const dateSel = document.getElementById("date-selector");
       if (currentTab === "today") {
-        document.getElementById("today-view").style.display = "";
-        document.getElementById("history-view").style.display = "none";
+        dateSel.style.display = "none";
+        _selectedHistoryDate = null;
         loadToday();
       } else {
-        document.getElementById("today-view").style.display = "none";
-        document.getElementById("history-view").style.display = "";
+        dateSel.style.display = "";
         loadDates();
       }
     });
   });
-  document.querySelector('.tab-btn.active').classList.add("bg-white/10", "text-white");
-  document.querySelectorAll('.tab-btn:not(.active)').forEach(b => b.classList.add("text-slate-500"));
-
-  document.getElementById("history-date").addEventListener("change", e => {
-    if (e.target.value) loadHistory(e.target.value);
-  });
+  document.querySelector('.tab-btn.active').classList.add("bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
+  document.querySelectorAll('.tab-btn:not(.active)').forEach(b => b.classList.add("text-slate-400"));
 }
+
+// ── Filter Rendering ──
+function renderFilterButtons() {
+  const priorities = ["ALL", "P0", "P1", "P2"];
+  const channels = ["ALL", "Paid Ads", "SEO", "站内运营 / 用户触达", "社区"];
+  const sites = ["ALL", "HK", "Global"];
+
+  function filterBtn(value, label, isActive, cfg, onclick) {
+    const base = 'text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer select-none';
+    const active = cfg
+      ? `${cfg.color} ${cfg.bg} ring-1 ring-inset ring-white/10 shadow-sm`
+      : 'bg-white/[0.12] text-white ring-1 ring-inset ring-white/15 shadow-sm';
+    const inactive = 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.06]';
+    return `<button onclick="${onclick}" class="${base} ${isActive ? active : inactive}">${label}</button>`;
+  }
+
+  document.getElementById("filter-priority").innerHTML =
+    '<span class="text-xs text-slate-500 font-medium mr-2">优先级</span>' +
+    priorities.map(p => {
+      const cfg = p !== "ALL" ? PRIORITY_CONFIG[p] : null;
+      return filterBtn(p, p === "ALL" ? "全部" : p, filterPriority === p, cfg, `setFilterPriority('${p}')`);
+    }).join("");
+
+  document.getElementById("filter-channel").innerHTML =
+    '<span class="text-xs text-slate-500 font-medium mr-2">渠道</span>' +
+    channels.map(c => {
+      const cfg = c !== "ALL" ? CHANNEL_CONFIG[c] : null;
+      const label = c === "ALL" ? "全部" : (cfg ? `${cfg.icon} ${cfg.label}` : c);
+      return filterBtn(c, label, filterChannel === c, cfg, `setFilterChannel('${esc(c)}')`);
+    }).join("");
+
+  document.getElementById("filter-site").innerHTML =
+    '<span class="text-xs text-slate-500 font-medium mr-2">站点</span>' +
+    sites.map(s => {
+      const cfg = s !== "ALL" ? SITE_CONFIG[s] : null;
+      const label = s === "ALL" ? "全部" : (cfg ? cfg.label : s);
+      return filterBtn(s, label, filterSite === s, cfg, `setFilterSite('${s}')`);
+    }).join("");
+}
+
+function setFilterPriority(v) { filterPriority = v; rerender(); }
+function setFilterChannel(v) {
+  filterChannel = v;
+  rerender();
+  // 自动展开所有卡片中对应渠道的面板
+  if (v !== 'ALL') {
+    requestAnimationFrame(() => autoExpandChannel(v));
+  }
+}
+function setFilterSite(v) { filterSite = v; rerender(); }
+function rerender() { if (_currentData) renderDashboard(_currentData); }
 
 // ── Data Loading ──
 async function loadToday() {
   try {
     const res = await fetch(API.today);
     const data = await res.json();
-    renderDashboard(data, "today");
-    document.getElementById("update-time").textContent =
-      new Date().toLocaleTimeString("zh-HK", { hour: '2-digit', minute: '2-digit' });
+    console.log("[DEBUG] loadToday got", data.cards?.length, "cards");
+    _currentData = data;
+    renderDashboard(data);
+    console.log("[DEBUG] renderDashboard done");
   } catch (e) {
     console.error("Failed to load today:", e);
+    document.getElementById("card-sections").innerHTML =
+      `<pre class="text-red-400 text-xs p-4">[DEBUG ERROR] ${e.message}\n${e.stack}</pre>` + renderEmptyState();
   }
 }
 
+let _selectedHistoryDate = null;
+
 async function loadDates() {
-  const res = await fetch(API.dates);
-  const data = await res.json();
-  const select = document.getElementById("history-date");
-  while (select.options.length > 1) select.remove(1);
-  const dates = Array.isArray(data) ? data : (data.dates || []);
-  dates.forEach(d => {
-    const opt = document.createElement("option");
-    opt.value = d;
-    opt.textContent = d;
-    select.appendChild(opt);
-  });
+  try {
+    const res = await fetch(API.dates);
+    const data = await res.json();
+    const dates = Array.isArray(data) ? data : (data.dates || []);
+    renderDateTimeline(dates);
+  } catch (e) { console.error("Failed to load dates:", e); }
+}
+
+function renderDateTimeline(dates) {
+  const container = document.getElementById("date-selector");
+  if (!dates.length) {
+    container.innerHTML = '<p class="text-sm text-slate-500">暂无历史数据</p>';
+    return;
+  }
+
+  const dateSet = new Set(dates);
+  const todayStr = new Date().toISOString().split('T')[0];
+
+  // Determine which months to show (from available data)
+  const monthKeys = new Set();
+  dates.forEach(d => { const [y, m] = d.split('-'); monthKeys.add(`${y}-${m}`); });
+  const sortedMonths = [...monthKeys].sort().reverse();
+
+  const weekHeaders = ['一','二','三','四','五','六','日'];
+
+  let html = '<div class="w-full space-y-4">';
+  for (const monthKey of sortedMonths) {
+    const [y, m] = monthKey.split('-');
+    const mi = parseInt(m) - 1;
+    const daysInMonth = new Date(parseInt(y), mi + 1, 0).getDate();
+    // Monday=0 ... Sunday=6
+    let firstDow = new Date(parseInt(y), mi, 1).getDay(); // 0=Sun
+    firstDow = firstDow === 0 ? 6 : firstDow - 1; // convert to Mon=0
+
+    html += `<div>
+      <div class="text-[11px] text-slate-500 font-mono mb-2">${y} 年 ${parseInt(m)} 月</div>
+      <div class="grid grid-cols-7 gap-1">
+        ${weekHeaders.map(w => `<div class="text-center text-[9px] text-slate-600 font-mono pb-1">${w}</div>`).join('')}`;
+
+    // Empty cells before first day
+    for (let i = 0; i < firstDow; i++) {
+      html += '<div></div>';
+    }
+
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dateStr = `${y}-${String(parseInt(m)).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const hasData = dateSet.has(dateStr);
+      const isSelected = _selectedHistoryDate === dateStr;
+      const isToday = dateStr === todayStr;
+
+      if (hasData) {
+        const selCls = isSelected
+          ? 'bg-cyan-500/20 border-cyan-500/40 ring-1 ring-cyan-500/20 text-cyan-300'
+          : 'border-white/[0.08] text-white hover:bg-white/[0.08] hover:border-white/[0.15]';
+        html += `<button onclick="selectHistoryDate('${dateStr}')"
+          class="relative flex items-center justify-center h-9 rounded-md border cursor-pointer transition-all duration-150 ${selCls}">
+          ${isToday ? '<span class="absolute top-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-emerald-400"></span>' : ''}
+          <span class="text-xs font-semibold">${day}</span>
+        </button>`;
+      } else {
+        html += `<div class="flex items-center justify-center h-9 rounded-md">
+          ${isToday ? '<span class="text-xs font-medium text-emerald-600">' + day + '</span>' : '<span class="text-xs text-slate-700">' + day + '</span>'}
+        </div>`;
+      }
+    }
+
+    html += '</div></div>';
+  }
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+function selectHistoryDate(dateStr) {
+  _selectedHistoryDate = dateStr;
+  // Re-render timeline to update selection state
+  loadDates();
+  loadHistory(dateStr);
 }
 
 async function loadHistory(dateStr) {
   try {
     const res = await fetch(API.history(dateStr));
-    if (!res.ok) {
-      document.getElementById("history-header-wrap").style.display = "none";
-      document.getElementById("history-list").innerHTML = renderEmptyState();
-      return;
-    }
+    if (!res.ok) { document.getElementById("card-sections").innerHTML = renderEmptyState(); return; }
     const data = await res.json();
-    renderDashboard(data, "history");
-  } catch (e) {
-    console.error("Failed to load history:", e);
-  }
+    _currentData = data;
+    renderDashboard(data);
+  } catch (e) { console.error("Failed to load history:", e); }
 }
 
-// ── Rendering ──
-function renderDashboard(data, prefix) {
-  _currentData = data;
-  _currentPrefix = prefix;
-  const cards = data.cards || [];
-  window._currentCards = cards;
+// ── Main Render ──
+function renderDashboard(data) {
+  const allCards = data.cards || [];
 
-  renderSummaryBar(cards);
+  // Header date
+  document.getElementById("header-date").textContent = data.run_date
+    ? `数据更新于 ${data.run_date}`
+    : "";
 
-  // Header (Layer 1-3)
-  const headerWrap = document.getElementById(`${prefix}-header-wrap`);
-  const headerEl = document.getElementById(`${prefix}-header`);
-  if (data.header_markdown) {
-    headerWrap.style.display = "";
-    headerEl.innerHTML = marked.parse(data.header_markdown);
-    headerEl.style.display = headerState[prefix] ? "" : "none";
-    updateChevron(prefix);
-  } else {
-    headerWrap.style.display = "none";
-  }
-
-  const listEl = document.getElementById(`${prefix}-list`);
-  const filterBarEl = document.getElementById(`${prefix}-filter-bar`);
-
-  if (!cards.length) {
-    listEl.innerHTML = renderEmptyState();
-    if (filterBarEl) filterBarEl.style.display = "none";
-    return;
-  }
-
-  renderFilterBar(prefix);
-
-  // Sort: P0 first, then P1, then P2
-  const sorted = [...cards].sort((a, b) => {
-    const order = { P0: 0, P1: 1, P2: 2 };
-    return (order[a.priority] ?? 2) - (order[b.priority] ?? 2);
+  // Filter
+  const filtered = allCards.filter(card => {
+    if (filterPriority !== "ALL" && card.priority !== filterPriority) return false;
+    if (filterChannel !== "ALL" && !(card.channels || []).some(c => c.name === filterChannel)) return false;
+    if (filterSite !== "ALL") {
+      const site = normalizeSite(card.site);
+      if (site !== filterSite && site !== "Both") return false;
+    }
+    return true;
   });
 
-  const filtered = currentFilter === "all"
-    ? sorted
-    : sorted.filter(c => {
-        if (currentFilter === "P2") return !c.priority || c.priority === "P2";
-        return c.priority === currentFilter;
-      });
+  renderFilterButtons();
+  document.getElementById("filter-count").textContent = `显示 ${filtered.length} / ${allCards.length} 条`;
+  renderHeroStats(allCards);
 
-  listEl.innerHTML = filtered.map((card, i) => renderCard(card, i)).join("");
+  // Group by priority
+  const p0 = filtered.filter(c => c.priority === "P0");
+  const p1 = filtered.filter(c => c.priority === "P1");
+  const p2 = filtered.filter(c => !c.priority || c.priority === "P2");
+
+  let html = "";
+  if (p0.length > 0) html += renderPrioritySection("P0", "当日启动", p0);
+  if (p1.length > 0) html += renderPrioritySection("P1", "计划跟进", p1);
+  if (p2.length > 0) html += renderPrioritySection("P2", "轻量参与", p2);
+  if (filtered.length === 0) html = renderEmptyState();
+
+  document.getElementById("card-sections").innerHTML = html;
+  renderSidebar(data);
+
+  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${data.run_date || ""}`;
+  document.getElementById("footer-right").textContent = `基于四层漏斗筛选 · ${allCards.length} 个行动包`;
 }
 
-function renderSummaryBar(cards) {
-  const bar = document.getElementById("summary-bar");
-  if (!cards.length) { bar.style.display = "none"; return; }
-  bar.style.display = "";
+// ── Hero Stats ──
+function renderHeroStats(cards) {
   const p0 = cards.filter(c => c.priority === "P0").length;
   const p1 = cards.filter(c => c.priority === "P1").length;
   const p2 = cards.filter(c => !c.priority || c.priority === "P2").length;
-  bar.innerHTML =
-    statCard("PACKAGES", cards.length, "bg-emerald-500/10 text-emerald-400 border-emerald-500/20") +
-    statCard("P0 URGENT", p0, "bg-red-500/10 text-red-400 border-red-500/20", p0 > 0) +
-    statCard("P1 PLANNED", p1, "bg-blue-500/10 text-blue-400 border-blue-500/20") +
-    statCard("P2 LIGHT", p2, "bg-slate-500/10 text-slate-400 border-slate-500/20");
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="text-center"><div class="text-xl font-display font-bold text-white">${cards.length}</div><div class="text-[10px] text-slate-500 font-mono">行动包</div></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-red-400">${p0}</div><div class="text-[10px] text-slate-500 font-mono">P0 紧急</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-amber-400">${p1}</div><div class="text-[10px] text-slate-500 font-mono">P1 跟进</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-slate-400">${p2}</div><div class="text-[10px] text-slate-500 font-mono">P2 轻量</div></div>`;
 }
 
-function renderFilterBar(prefix) {
-  const filterBarEl = document.getElementById(`${prefix}-filter-bar`);
-  if (!filterBarEl) return;
-  filterBarEl.style.display = "";
-  const pills = [
-    { f: "all", label: "全部" },
-    { f: "P0", label: "P0 紧急" },
-    { f: "P1", label: "P1 计划" },
-    { f: "P2", label: "P2 轻量" },
-  ];
-  filterBarEl.innerHTML = pills.map(({ f, label }) => {
-    const active = currentFilter === f;
-    const cls = active
-      ? "bg-white/10 text-white border-white/20"
-      : "text-slate-500 border-slate-700 hover:border-slate-500 hover:text-slate-300";
-    return `<button onclick="setFilter('${f}')" data-filter="${f}"
-      class="px-3 py-1.5 rounded-lg text-xs font-mono border transition-all duration-150 ${cls}">${label}</button>`;
-  }).join("");
-}
+// ── Priority Section ──
+function renderPrioritySection(priority, label, cards) {
+  const cfg = PRIORITY_CONFIG[priority];
+  const isP0 = priority === "P0";
+  const dotHtml = isP0
+    ? `<span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full ${cfg.bar} opacity-60"></span><span class="relative inline-flex rounded-full h-3 w-3 ${cfg.bar}"></span></span>`
+    : `<span class="h-3 w-3 rounded-full ${cfg.bar} shrink-0"></span>`;
 
-function setFilter(f) {
-  currentFilter = f;
-  if (_currentData && _currentPrefix) {
-    renderDashboard(_currentData, _currentPrefix);
-  }
-}
-
-function statCard(label, count, classes, pulse = false) {
-  return `<div class="rounded-xl border ${classes} p-4 transition-all duration-300 hover:scale-[1.02]"
-    style="animation: fadeSlideIn 0.4s ease-out both">
-    <div class="text-[10px] font-mono tracking-widest opacity-60 mb-2">${label}</div>
-    <div class="text-3xl font-display font-800 tabular-nums ${pulse ? 'animate-pulse' : ''}">${count}</div>
-  </div>`;
+  return `<section>
+    <div class="flex items-center gap-3 mb-4">
+      ${dotHtml}
+      <h2 class="text-sm font-display font-bold ${cfg.color} tracking-wide uppercase">${priority} — ${label}</h2>
+      <div class="flex-1 h-px ${cfg.divider}"></div>
+      <span class="text-[10px] font-mono ${cfg.color} opacity-60">${cards.length} 条</span>
+    </div>
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+      ${cards.map((card, i) => renderCard(card, i)).join("")}
+    </div>
+  </section>`;
 }
 
 // ── Card ──
 function renderCard(card, index) {
   const p = card.priority || "P2";
-  const borderColor = { P0: "border-l-red-500", P1: "border-l-blue-500", P2: "border-l-slate-600" }[p];
-  const isP0 = p === "P0";
-  const glowStyle = isP0
-    ? "box-shadow: inset 0 0 80px -20px rgba(239,68,68,0.1), 0 0 40px -10px rgba(239,68,68,0.15);"
-    : p === "P1" ? "box-shadow: inset 0 0 60px -20px rgba(59,130,246,0.04);" : "";
-  const topBorder = isP0 ? "border-t-2 border-t-red-500" : "";
-  const titleSize = isP0 ? "text-xl" : "text-[17px]";
+  const pCfg = PRIORITY_CONFIG[p] || PRIORITY_CONFIG.P2;
+  const timing = parseTimingKey(card.timing);
+  const tCfg = URGENCY_CONFIG[timing] || URGENCY_CONFIG.Day;
+  const site = normalizeSite(card.site);
+  const sCfg = SITE_CONFIG[site] || SITE_CONFIG.Both;
+  const exec = card.executability || "D";
+  const eCfg = EXEC_CONFIG[exec] || EXEC_CONFIG.D;
 
-  const badges = [
-    priorityBadge(p),
-    card.category ? tagBadge(card.category, "bg-slate-700/50 text-slate-300") : "",
-    card.timing ? timingBadge(card.timing) : "",
-    card.site ? tagBadge(card.site, "bg-indigo-500/10 text-indigo-300 border border-indigo-500/20") : "",
-    card.executability ? execBadge(card.executability) : "",
-  ].filter(Boolean).join("");
-
-  const summary = card.summary
-    ? `<p class="text-sm text-slate-300 leading-relaxed mt-3">${esc(card.summary)}</p>` : "";
-
-  const dontDo = card.dont_do
-    ? `<p class="text-xs text-slate-500 mt-2 border-l-2 border-slate-600 pl-2"><span class="text-slate-600">⚠ 不做：</span>${esc(card.dont_do)}</p>`
+  const pulseDot = p === "P0"
+    ? '<span class="relative flex h-2.5 w-2.5 shrink-0 mt-[3px]"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-60"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span></span>'
     : "";
 
-  // Sources
-  const sources = (card.sources || []).map(s =>
-    `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"
-        class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-mono bg-slate-700/40 text-slate-400 border border-slate-600/30 hover:bg-slate-600/50 hover:text-slate-200 transition-colors duration-150">
-      <svg class="w-3 h-3 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-      ${esc(s.name)}</a>`
-  ).join("");
-  const sourcesHtml = sources ? `<div class="flex flex-wrap gap-1.5 mt-3">${sources}</div>` : "";
+  const channelTabs = (card.channels || []).map((ch, ci) => {
+    const chCfg = CHANNEL_CONFIG[ch.name] || { label: ch.name, icon: '📋', color: 'text-slate-300', bg: 'bg-slate-500/15', activeCls: 'text-slate-300 bg-slate-500/15' };
+    return `<button onclick="toggleChannelTab('${card.id}',${ci})" id="ch-tab-${card.id}-${ci}" data-channel="${esc(ch.name)}"
+      class="ch-tab inline-flex items-center gap-1 px-2.5 py-1 rounded text-[10px] font-medium transition-colors duration-150 text-slate-400 bg-white/[0.05] hover:bg-white/10 hover:text-slate-200">
+      <span>${chCfg.icon}</span>${chCfg.label}<span class="ml-0.5 transition-transform duration-150" id="ch-arrow-${card.id}-${ci}">▾</span>
+    </button>`;
+  }).join("");
 
-  // Channel sub-cards
-  const channels = (card.channels || []).map((ch, ci) => renderChannelCard(ch, card.id, ci)).join("");
-
-  return `
-  <div class="rounded-xl bg-surface border border-white/5 border-l-[3px] ${borderColor} ${topBorder} overflow-hidden transition-all duration-300 hover:border-white/10"
-       style="${glowStyle} animation: fadeSlideIn 0.5s ease-out both; animation-delay: ${index * 0.08}s"
-       id="card-${card.id}">
-    <div class="p-5">
-      <div class="flex flex-wrap items-center gap-2 mb-3">${badges}</div>
-      <h3 class="font-display font-700 ${titleSize} text-white leading-snug tracking-tight">${esc(card.title)}</h3>
-      ${summary}
-      ${dontDo}
-      ${sourcesHtml}
-    </div>
-    <!-- Channel sub-cards -->
-    ${channels ? `<div class="px-5 pb-5 grid gap-3 sm:grid-cols-2">${channels}</div>` : ""}
-  </div>`;
-}
-
-// ── Channel Sub-Card ──
-function renderChannelCard(ch, cardId, chIndex) {
-  const cfg = CHANNEL_ICONS[ch.name] || { icon: "\u{1F539}", color: "slate" };
-  const colorMap = {
-    purple: { border: "border-purple-500/20", bg: "bg-purple-500/5", text: "text-purple-300", icon: "text-purple-400" },
-    sky:    { border: "border-sky-500/20",    bg: "bg-sky-500/5",    text: "text-sky-300",    icon: "text-sky-400" },
-    emerald:{ border: "border-emerald-500/20",bg: "bg-emerald-500/5",text: "text-emerald-300",icon: "text-emerald-400" },
-    amber:  { border: "border-amber-500/20",  bg: "bg-amber-500/5",  text: "text-amber-300",  icon: "text-amber-400" },
-    slate:  { border: "border-slate-500/20",  bg: "bg-slate-500/5",  text: "text-slate-300",  icon: "text-slate-400" },
-  };
-  const c = colorMap[cfg.color] || colorMap.slate;
-  const chId = `${cardId}-ch-${chIndex}`;
-
-  return `
-  <div class="rounded-lg border ${c.border} ${c.bg} overflow-hidden transition-all duration-200 hover:border-opacity-40">
-    <button onclick="toggleChannel('${chId}')"
-      class="w-full flex items-center justify-between px-4 py-3 cursor-pointer">
-      <div class="flex items-center gap-2">
-        <span class="${c.icon}">${cfg.icon}</span>
-        <span class="text-sm font-medium ${c.text}">${esc(ch.name)}</span>
+  const channelPanels = (card.channels || []).map((ch, ci) => {
+    const chCfg = CHANNEL_CONFIG[ch.name] || { label: ch.name, icon: '📋', color: 'text-slate-300', bg: 'bg-slate-500/15' };
+    return `<div id="ch-panel-${card.id}-${ci}" class="hidden border border-white/[0.08] rounded-md bg-[#0f1623] p-3 mb-2 mt-1 ch-panel" data-channel="${esc(ch.name)}">
+      <div class="flex items-center justify-between mb-2">
+        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-medium ${chCfg.color} ${chCfg.bg}"><span>${chCfg.icon}</span>${chCfg.label}</span>
+        <button onclick="copyPanelContent('ch-md-${card.id}-${ci}')" class="text-[10px] font-mono px-2 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-500/40 hover:text-cyan-400 hover:bg-cyan-500/5 transition-colors duration-150">复制</button>
       </div>
-      <svg class="w-3.5 h-3.5 text-slate-500 transition-transform duration-200" id="ch-chevron-${chId}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-      </svg>
-    </button>
-    <div id="ch-body-${chId}" class="channel-body px-4 pb-4 prose-container text-[13px] leading-relaxed" style="display:none"
-         data-md="${encodeURIComponent(ch.markdown)}"></div>
+      <div class="prose-container text-[12px] leading-relaxed" data-md="${encodeURIComponent(ch.markdown || '')}" id="ch-md-${card.id}-${ci}"></div>
+    </div>`;
+  }).join("");
+
+  const sources = (card.sources || []).map(s => {
+    return `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"
+      class="text-[11px] text-slate-500 hover:text-cyan-400 transition-colors duration-150 underline underline-offset-2 decoration-slate-700 hover:decoration-cyan-500/50">${esc(s.name)}</a>`;
+  }).join('<span class="text-slate-700 mx-1">·</span>');
+
+  const dontDo = card.dont_do
+    ? `<div class="flex items-start gap-2 bg-red-500/[0.08] border border-red-500/20 rounded px-3 py-2 mb-3">
+        <span class="text-red-400 text-[11px] shrink-0 font-mono">⚠ 禁区</span>
+        <p class="text-[11px] text-red-300/80 leading-relaxed font-body">${esc(card.dont_do)}</p>
+      </div>` : "";
+
+  return `
+  <div class="card-item relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.06}s">
+    <div class="absolute left-0 top-0 bottom-0 w-1 ${pCfg.bar}"></div>
+    <div class="pl-4 pr-4 pt-4 pb-3">
+      <div class="flex items-start justify-between gap-3 mb-2">
+        <div class="flex items-start gap-2 min-w-0">
+          ${pulseDot}
+          <div class="min-w-0">
+            <h3 class="text-sm font-display font-semibold text-white leading-snug">${esc(card.title)}</h3>
+            <p class="text-[11px] text-slate-400 mt-0.5 font-body">${esc(card.category || "")}</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-semibold ${pCfg.color} ${pCfg.bg}">${p}</span>
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-medium border ${tCfg.color} ${tCfg.bg} ${tCfg.border}">${tCfg.label}</span>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-1.5 mb-3">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono ${sCfg.color} ${sCfg.bg}">${sCfg.label}</span>
+        <span class="text-[10px] font-mono ${eCfg.color}">${eCfg.label}</span>
+        <span class="text-[10px] text-slate-500 font-mono">关联:${esc(card.relation || "")}</span>
+        <span class="text-[10px] text-slate-500 font-mono">意图:${esc(card.intent || "")}</span>
+      </div>
+      <p class="text-[12px] text-slate-300 leading-relaxed font-body mb-3">${esc(card.summary || "")}</p>
+      ${dontDo}
+      <div class="flex flex-wrap gap-1.5 mb-2">${channelTabs}</div>
+      ${channelPanels}
+      <div class="flex flex-wrap items-center gap-x-0 gap-y-1 pt-2 border-t border-white/[0.05]">
+        ${sources}
+      </div>
+    </div>
   </div>`;
 }
 
-function toggleChannel(chId) {
-  const body = document.getElementById(`ch-body-${chId}`);
-  const chevron = document.getElementById(`ch-chevron-${chId}`);
-  const isHidden = body.style.display === "none";
+// ── Channel Tab Toggle ──
+function toggleChannelTab(cardId, idx) {
+  const panel = document.getElementById(`ch-panel-${cardId}-${idx}`);
+  const arrow = document.getElementById(`ch-arrow-${cardId}-${idx}`);
+  const tab = document.getElementById(`ch-tab-${cardId}-${idx}`);
+  if (!panel) return;
 
-  if (isHidden) {
-    if (!body.dataset.rendered) {
-      body.innerHTML = marked.parse(decodeURIComponent(body.dataset.md));
-      body.dataset.rendered = "1";
+  const cardEl = panel.closest('.card-item');
+  const wasHidden = panel.classList.contains("hidden");
+
+  // Close all panels in this card
+  cardEl.querySelectorAll('.ch-panel').forEach(p => p.classList.add("hidden"));
+  cardEl.querySelectorAll('[id^="ch-arrow-"]').forEach(a => a.style.transform = "");
+  // Reset all tabs: only swap color/bg, never touch padding/border/ring
+  cardEl.querySelectorAll('.ch-tab').forEach(t => {
+    t.dataset.active = "";
+    t.classList.remove(
+      'text-amber-300','text-emerald-300','text-cyan-300','text-violet-300','text-slate-300',
+      'bg-amber-500/15','bg-emerald-500/15','bg-cyan-500/15','bg-violet-500/15','bg-slate-500/15'
+    );
+    t.classList.add('text-slate-400', 'bg-white/[0.05]');
+  });
+
+  if (wasHidden) {
+    panel.classList.remove("hidden");
+    arrow.style.transform = "rotate(180deg)";
+    lazyRenderMd(`ch-md-${cardId}-${idx}`);
+    // Apply active color only (no ring, no border, no padding change)
+    const cards = _currentData ? (_currentData.cards || []) : [];
+    const card = cards.find(c => c.id === cardId);
+    if (card && card.channels[idx]) {
+      const chCfg = CHANNEL_CONFIG[card.channels[idx].name];
+      if (chCfg && chCfg.activeCls) {
+        tab.classList.remove('text-slate-400', 'bg-white/[0.05]');
+        chCfg.activeCls.split(' ').forEach(c => tab.classList.add(c));
+        tab.dataset.active = "1";
+      }
     }
-    body.style.display = "";
-    chevron.style.transform = "rotate(180deg)";
-  } else {
-    body.style.display = "none";
-    chevron.style.transform = "";
   }
 }
 
-// ── Badges ──
-function priorityBadge(p) {
-  const s = {
-    P0: "bg-red-500/15 text-red-400 border-red-500/30 ring-1 ring-red-500/20",
-    P1: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-    P2: "bg-slate-600/30 text-slate-400 border-slate-500/30",
-  };
-  return `<span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-mono font-600 border ${s[p] || s.P2}">${p}</span>`;
+function lazyRenderMd(elId) {
+  const mdEl = document.getElementById(elId);
+  if (mdEl && !mdEl.dataset.rendered && mdEl.dataset.md) {
+    mdEl.innerHTML = marked.parse(decodeURIComponent(mdEl.dataset.md));
+    mdEl.dataset.rendered = "1";
+  }
 }
 
-function timingBadge(timing) {
-  const icon = timing === "Day" ? "\u26A1" : timing === "Wave" ? "\u{1F30A}" : "\u{1F4C8}";
-  return `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-mono bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">${icon} ${esc(timing)}</span>`;
+function autoExpandChannel(channelName) {
+  document.querySelectorAll('.card-item').forEach(cardEl => {
+    // Find the tab that matches the channel
+    const tabs = cardEl.querySelectorAll('.ch-tab');
+    tabs.forEach((tab, idx) => {
+      if (tab.dataset.channel === channelName) {
+        const cardId = tab.id.replace('ch-tab-', '').replace(/-\d+$/, '');
+        const panel = document.getElementById(`ch-panel-${cardId}-${idx}`);
+        if (panel && panel.classList.contains('hidden')) {
+          toggleChannelTab(cardId, idx);
+        }
+      }
+    });
+  });
 }
 
-function execBadge(exec) {
-  const c = {
-    A: "bg-emerald-500/10 text-emerald-300 border-emerald-500/20",
-    B: "bg-sky-500/10 text-sky-300 border-sky-500/20",
-    C: "bg-amber-500/10 text-amber-300 border-amber-500/20",
-    D: "bg-slate-600/20 text-slate-400 border-slate-500/20",
-  };
-  return `<span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-mono border ${c[exec] || c.D}">Exec:${exec}</span>`;
+function copyPanelContent(mdElId) {
+  const el = document.getElementById(mdElId);
+  if (!el) return;
+  const text = el.innerText || el.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = el.closest('.ch-panel').querySelector('button');
+    if (btn) {
+      const orig = btn.textContent;
+      btn.textContent = '✓ 已复制';
+      btn.classList.add('text-emerald-400', 'border-emerald-500/40');
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.classList.remove('text-emerald-400', 'border-emerald-500/40');
+      }, 1500);
+    }
+  });
 }
 
-function tagBadge(text, cls) {
-  return `<span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-mono ${cls}">${esc(text)}</span>`;
+// ── Sidebar ──
+function renderSidebar(data) {
+  let html = "";
+
+  // Header markdown as gap signals
+  if (data.header_markdown) {
+    html += `<div class="rounded-lg border border-amber-500/20 bg-amber-500/5 overflow-hidden">
+      <div class="px-4 py-3 border-b border-amber-500/15 flex items-center gap-2">
+        <span class="text-amber-400">💡</span>
+        <h3 class="text-xs font-display font-semibold text-amber-300">产品缺口信号</h3>
+      </div>
+      <div class="px-4 py-3 prose-container text-[11px]">${marked.parse(data.header_markdown)}</div>
+    </div>`;
+  }
+
+  // Urgency legend
+  html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">时效说明</h3>
+    <div class="space-y-2">${Object.entries(URGENCY_CONFIG).map(([, v]) =>
+      `<div class="flex items-center gap-2"><span class="text-[10px] font-mono font-medium ${v.color}">${v.label}</span></div>`
+    ).join("")}</div>
+  </div>`;
+
+  // Channel legend
+  html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">渠道图例</h3>
+    <div class="space-y-2">${Object.entries(CHANNEL_CONFIG).map(([, v]) =>
+      `<div class="flex items-center gap-2"><span class="text-sm">${v.icon}</span><span class="text-[10px] font-mono ${v.color}">${v.label}</span></div>`
+    ).join("")}</div>
+  </div>`;
+
+  document.getElementById("sidebar-content").innerHTML = html;
+}
+
+// ── Helpers ──
+function normalizeSite(site) {
+  if (!site) return "Both";
+  if (site.includes("HK") && site.includes("Global")) return "Both";
+  if (site.includes("Both")) return "Both";
+  if (site.includes("HK")) return "HK";
+  if (site.includes("Global")) return "Global";
+  return "Both";
+}
+
+function parseTimingKey(timing) {
+  if (!timing) return "Day";
+  const t = timing.toLowerCase();
+  if (t.startsWith("flash") || t.includes("<4h")) return "Flash";
+  if (t.startsWith("day") || t.includes("4-48h")) return "Day";
+  if (t.startsWith("wave") || t.includes("2-7d")) return "Wave";
+  if (t.startsWith("trend") || t.includes("1-4w")) return "Trend";
+  return "Day";
 }
 
 function renderEmptyState() {
-  return `<div class="text-center py-20">
-    <div class="text-4xl mb-3 opacity-20">\u25D1</div>
-    <p class="text-sm text-slate-500 font-mono">NO DATA AVAILABLE</p>
-    <p class="text-xs text-slate-600 mt-1">Waiting for today's pipeline to complete</p>
+  return `<div class="text-center py-20 text-slate-500 font-body">
+    <div class="text-4xl mb-3">🔍</div>
+    <p class="text-sm">当前筛选条件下无行动包</p>
+    <p class="text-xs text-slate-600 mt-1">等待今日数据处理完成</p>
   </div>`;
-}
-
-// ── Header Toggle ──
-function toggleHeader(prefix) {
-  headerState[prefix] = !headerState[prefix];
-  document.getElementById(`${prefix}-header`).style.display = headerState[prefix] ? "" : "none";
-  updateChevron(prefix);
-}
-
-function updateChevron(prefix) {
-  const ch = document.getElementById(`${prefix}-header-chevron`);
-  if (ch) ch.style.transform = headerState[prefix] ? "rotate(90deg)" : "";
 }
 
 function esc(str) {
