@@ -9,3 +9,6 @@ __pycache__/
 .claude/
 knowledge/
 .venv/
+scripts/test_*
+scripts/twitter_data.md
+scripts/reextract.py
