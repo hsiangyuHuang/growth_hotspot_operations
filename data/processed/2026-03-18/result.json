@@ -3,7 +3,7 @@
   "header_markdown": "",
   "cards": [
     {
-      "title": "#1 BTC 突破 $75K：机构买盘叠加，行情窗口打开",
+      "title": "#1 BTC 突破 $75K：机构买盘三重叠加，行情窗口打开",
       "priority": "P0",
       "category": "行情热点",
       "timing": "Day",
@@ -11,24 +11,24 @@
       "intent": "交易转化（主）/ 新客获取（次）",
       "site": "Both",
       "executability": "A",
-      "summary": "借 BTC 突破 6 周高点 $75K、Strategy $1.57B 大买、ETF 连续 6 日净流入三重利好叠加，全渠道推动 BTC 现货交易，同时引导 Global 站合约用户和 StableHub 避险用户。",
-      "dont_do": "不做价格预测（\"BTC 将涨至 $85K\"）；不做收益承诺；不点名竞对；HK 站不推合约",
+      "summary": "借 BTC 突破 6 周高点 $75K、Strategy $15.7 亿大买、ETF 连续 6 日净流入三重利好叠加，全渠道推动 BTC 现货交易。",
+      "dont_do": "不做价格预测；不做收益承诺；不点名竞对；HK 站不推合约",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\n- **HK 站**：Google Search（\"比特币 现在 买\" \"BTC 行情\" \"比特币 香港 交易所\"）+ Meta 兴趣（加密货币、投资理财、香港金融）\n- **Global 站**：Google Web 台湾中文用户（\"比特币 突破\" \"BTC 交易\" \"加密货币 交易所\"）+ TikTok 印尼\n### 素材形式\n静态图 + 6-10s 竖屏短视频\n### 文案\n- **Hook**：「BTC 突破 $75,000 | 机构资金连续 6 天净流入」\n- **CTA**：「立即开户，首入金最高奖励 XXX」（Global）/ 「了解 OSL 专业交易」（HK）"
+          "markdown": "### 受众定向\n- **HK 站**：Google Search（“比特币 现在 买” “BTC 行情”）+ Meta 兴趣（加密货币、香港金融）\n- **Global 站**：Google Web 台湾中文用户 + TikTok 印尼加密兴趣\n### 素材与文案\n- **素材形式**：静态图 + 6-10s 竖屏短视频\n- **核心策略**：强调 **BTC 突破 $75,000** 与 **机构买盘** 信号\n- **CTA**：立即开户，首入金最高奖励 XXX\n### 注意事项\n- HK 站需强调持牌安全，不推衍生品"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### Onsite\n首页 Banner 更新为「BTC 突破 $75K | 机构持续买入」\n### Push (Global)\n- **人群**：已注册未入金 + 已入金未交易\n- **文案**：「BTC 突破 $75,000，机构连续 6 日净买入。立即交易 →」\n### EDM\n- **主题**：「比特币突破 6 周高点，机构资金正在入场」\n- **目标人群**：VIP 用户 + 合约活跃用户 + 沉默用户召回"
+          "markdown": "### 站内触达\n- **Banner**：首页更新 “BTC 突破 $75K | 机构持续买入”，链接至交易页\n- **Push**：针对未入金/交易用户推送 **“BTC 突破 $75,000，机构连续 6 日净买入”**\n### EDM 策略\n- **受众**：VIP + 沉默用户\n- **内容**：行情数据 + 机构买盘信号 + OSL 交易入口"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\n主词：比特币突破 75000；长尾词：「比特币现在能买吗 2026」「机构买入比特币是什么信号」\n### 内容类型\n热点快讯型 + 解读型"
+          "markdown": "### 关键词优化\n- **核心词**：**比特币突破 75000**\n- **长尾词**：比特币现在能买吗 2026、Strategy 购买比特币影响\n### 内容布局\n- **快讯**：4h 内发布突破快讯\n- **深度**：24h 内发布机构买盘与阻力位分析文章"
         },
         {
           "name": "社区",
-          "markdown": "### 话题角度\n「机构在买，散户怎么看？」\n### 脚本\n「BTC 刚刚突破 $75,000，创 6 周新高。Strategy 本周买入 22,337 枚 BTC，美国 BTC ETF 已连续 6 天净流入。机构在悄悄买入，你怎么看这波行情？」"
+          "markdown": "### 互动策略\n- **话题**：机构在买，散户怎么看？引导用户讨论持仓策略\n- **物料**：ETF 净流入图表 + 实时行情链接\n- **KPI**：引导至 OSL 实时行情页查看"
         }
       ],
       "sources": [
@@ -51,25 +51,25 @@
       "title": "#2 美联储 FOMC 决议（今日/明日）：宏观事件驱动定投引导",
       "priority": "P0",
       "category": "宏观事件",
-      "timing": null,
+      "timing": "Day",
       "relation": "Indirect",
       "intent": "定投转化（主）/ 用户教育（次）",
-      "site": "Global",
+      "site": "Both",
       "executability": "A",
-      "summary": "美联储 FOMC 决议本周公布（市场预期按兵不动），Citi 同步下调 BTC/ETH 目标价，市场情绪分歧加剧。借宏观不确定性推动定投计划渗透，引导用户\"不择时、定期买入\"逻辑。",
-      "dont_do": "不做利率预测；不做\"降息必涨\"等因果性收益暗示；不做恐慌性内容",
+      "summary": "美联储 FOMC 决议公布前夕，借宏观不确定性推动定投计划渗透，引导用户“不择时、定期买入”逻辑。",
+      "dont_do": "不做利率预测；不做“降息必涨”暗示；不做恐慌性内容",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\nGoogle Search（\"美联储 加密货币\" \"FOMC 比特币\" \"加密货币 定投\"）\n### 文案\n- **Hook**：「美联储今日决议，市场波动加剧」\n- **Body**：「不确定的宏观环境，定期定额投资比特币是更多机构的选择。OSL 定投计划，自动执行，无需盯盘。」"
+          "markdown": "### 受众定向\n- **主攻**：Google Search（“美联储 加密货币” “FOMC 比特币”），侧重台湾中文用户\n### 素材与文案\n- **策略**：**宏观波动时的资产避风港**\n- **CTA**：了解 OSL 定投计划"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### Push (Global)\n决议公布后 30 分钟内发出：「美联储维持利率不变，市场波动时定投是更稳的选择 →」\n### EDM\n主题：「美联储按兵不动，加密市场如何应对？」"
+          "markdown": "### Push 策略\n- **时机**：决议公布后 30 分钟内\n- **受众**：已入金未交易用户\n- **文案**：**“市场波动时定投是更稳的选择”**，Deep link 至定投页"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\n主词：美联储 比特币 2026；长尾词：「美联储不降息 比特币会跌吗」「加密货币定投是什么意思」"
+          "markdown": "### 关键词优化\n- **核心词**：**美联储 比特币 2026**\n- **长尾词**：加密货币定投是什么、FOMC 加密货币影响\n### 内容布局\n- **快讯**：决议公布后 2h 内发布实时解读文章"
         }
       ],
       "sources": [
@@ -93,24 +93,24 @@
       "intent": "品牌信任（主）/ 新客获取（次）",
       "site": "Both",
       "executability": "B",
-      "summary": "SEC+CFTC 联合发布 68 页监管框架，明确\"大多数加密资产不是证券\"，引入代币分类法。直接强化 OSL 持牌合规的叙事价值。",
-      "dont_do": "不夸大监管利好（\"加密货币现在完全合法\"）；不做投资建议；不点名竞对",
+      "summary": "SEC+CFTC 联合明确“大多数加密资产不是证券”，通过解读新规强化 OSL 在最严格监管框架（SFC）下的先行者优势。",
+      "dont_do": "不夸大监管利好；不做投资建议；不点名竞对",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\n- **HK 站**：Google Search（\"香港 加密货币 合规\" \"持牌 交易所 香港\"）\n### 文案\n「美国 SEC+CFTC 正式确认：大多数加密资产不是证券。OSL 持有 SFC 第 1、4、7、9 类牌照，始终在最严格的监管框架下运营。」"
+          "markdown": "### 受众定向\n- **HK 站**：Google Search（“香港 加密货币 合规” “持牌 交易所 香港”）\n- **素材**：突出政策解读卡片与 **OSL SFC 牌照背书**"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### EDM (VIP/机构)\n主题：「美国加密监管迎来历史性转折，OSL 如何看待？」"
+          "markdown": "### 资产教育\n- **帮助中心**：置顶新监管框架解读文档\n- **EDM**：面向 VIP 及机构用户发送深度研报，解读合规对资产安全的意义"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\nSEC CFTC 加密货币监管 2026；「SEC 加密货币不是证券 是什么意思」"
+          "markdown": "### 关键词优化\n- **核心词**：**SEC CFTC 加密货币监管 2026**\n- **长尾词**：SEC 加密货币不是证券意义、香港持牌交易所优势"
         },
         {
           "name": "社区",
-          "markdown": "### 脚本\n「重磅！美国 SEC 和 CFTC 今日联合发布加密资产监管框架，正式确认\"大多数加密资产不是证券\"... OSL 作为香港持牌交易所，始终在最严格的监管框架下运营。」"
+          "markdown": "### 运营要点\n- **话题**：美国监管清晰化对投资者的长期影响\n- **关键信息**：**OSL 始终在监管框架内运营**，是投资者的安全首选"
         }
       ],
       "sources": [
@@ -125,6 +125,10 @@
         {
           "name": "Decrypt",
           "url": "https://decrypt.co/361446/sec-most-crypto-assets-not-securities-staking-airdrops-bitcoin-mining"
+        },
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/03/17/senator-tim-scott-says-market-structure-negotiations-are-advancing"
         }
       ],
       "id": "ap_3"
@@ -138,24 +142,24 @@
       "intent": "产品渗透（主）/ 新客获取（次）",
       "site": "Global",
       "executability": "B",
-      "summary": "Mastercard $1.8B 收购 BVNK、PayPal PYUSD 扩展至 70 国、美国稳定币收益法案有望本周妥协。利用三重催化剂推广 StableHub 零滑点兑换与理财功能。",
-      "dont_do": "不做收益承诺（\"年化 X% 稳赚\"）；不夸大 PYUSD/BVNK 的竞争威胁；不推未上线稳定币产品",
+      "summary": "借 Mastercard 收购及 PayPal 扩张事件，推动 StableHub 零滑点兑换与理财功能。",
+      "dont_do": "不做收益承诺；不夸大竞争威胁；不推未上线产品",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\nGlobal 站：Google Web（\"stablecoin yield\" \"USDT earn\"）+ TikTok 印尼\n### 文案\n- **Hook**：「Mastercard 花 $18 亿买稳定币公司，你还不了解稳定币？」\n- **Body**：「OSL StableHub：零滑点兑换 USDT/USDC，新用户最高 100% APR 理财奖励。」"
+          "markdown": "### 受众定向\n- **区域**：台湾、印尼用户\n- **关键词**：stablecoin yield、USDT 生息\n### 素材与文案\n- **核心文案**：**Mastercard 押注稳定币，你的 USDT 还在吃灰？**\n- **CTA**：立即体验 StableHub"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### Push (Global)\n「Mastercard 花 $18 亿押注稳定币，你的 USDT 还在吃灰？StableHub 生息 →」\n### EDM\n主题：「稳定币正在颠覆全球支付，OSL StableHub 让你的稳定币也能赚钱」"
+          "markdown": "### 触达策略\n- **Push**：针对资产大于 1000 USDT 且未使用 StableHub 的用户\n- **EDM**：解读稳定币支付趋势，引导至 StableHub 奖励页"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\n稳定币理财 2026；「Mastercard 收购稳定币公司意味着什么」「USDT 怎么生息」"
+          "markdown": "### 关键词优化\n- **核心词**：**稳定币理财 2026**\n- **长尾词**：USDT 怎么生息、Mastercard 收购稳定币公司影响"
         },
         {
           "name": "社区",
-          "markdown": "### 脚本\n「大新闻！Mastercard 宣布以最高 $18 亿收购稳定币基础设施公司 BVNK... 稳定币正在从\"加密货币圈\"走向\"全球支付基础设施\"。在 OSL StableHub，它们还可以生息。」"
+          "markdown": "### 话题引导\n- **内容**：稳定币从交易工具转向全球支付基础设施的趋势\n- **KPI**：引导用户分享使用稳定币跨境支付的体验"
         }
       ],
       "sources": [
@@ -183,20 +187,20 @@
       "intent": "交易转化（主）",
       "site": "Both",
       "executability": "A",
-      "summary": "XRP 周涨近 10%，持有者突破 770 万创历史新高，市值超越 BNB 升至第四。针对 HK PI 及 Global 全量用户推广 XRP 交易。",
-      "dont_do": "不做 XRP 价格预测；HK 站需明确标注\"仅限专业投资者\"；不推 XRP ETF（未上线）",
+      "summary": "XRP 持有者突破 770 万创历史新高，市值超越 BNB，全渠道启动 XRP 交易专题推广。",
+      "dont_do": "不做价格预测；HK 站标注仅限 PI；不推 ETF",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\nHK (PI) + Global (All)；Google Search（\"XRP 香港 交易\" \"瑞波币 买入\"）\n### 文案\n「XRP 持有者突破 770 万，市值超越 BNB 升至第四。在 OSL 交易 XRP，持牌安全。」"
+          "markdown": "### 素材策略\n- **视觉**：突出 **XRP 持有者 770 万** 历史高位数据\n- **文案**：XRP 市值升至第四，立即在持牌平台交易\n- **定向**：Google XRP 交易相关搜索"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### Push (Global)\n「XRP 突破 $1.52，翻越 BNB 成市值第四！立即交易 →」\n### 站内信 (HK PI)\n「XRP 周涨近 10%，持有者创历史新高。您可在 OSL 专业投资者账户交易 XRP。」"
+          "markdown": "### 触达动作\n- **行情置顶**：行情页置顶展示 XRP 涨幅\n- **Push**：针对 XRP 历史交易者推送 **“XRP 突破关键位，立即查看”**"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\nXRP 价格 2026；「瑞波币 历史新高 持有者」「在香港买 XRP 哪个平台合规」"
+          "markdown": "### 关键词优化\n- **核心词**：**XRP 价格 2026**\n- **长尾词**：瑞波币持有者历史新高、在香港买 XRP 哪个平台合规"
         }
       ],
       "sources": [
@@ -220,25 +224,25 @@
       "intent": "交易转化（主）/ 产品渗透（次）",
       "site": "Both",
       "executability": "A",
-      "summary": "贝莱德带质押功能的 ETH ETF 上市，伴随鲸鱼大量从交易所提币，ETH 回升至 $2,300。强化机构生息叙事推广 ETH 交易。",
-      "dont_do": "不做 ETH 价格预测；不承诺 ETHB 质押收益；HK 站不推 StableHub（无产品）",
+      "summary": "贝莱德推出生息 ETH ETF，叠加鲸鱼链上大笔增持，推动 ETH 交易及生息产品转化。",
+      "dont_do": "不做价格预测；不承诺质押收益；HK 站不推 StableHub",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\nGoogle Search（\"以太坊 买入\" \"ETH 行情\" \"以太坊 ETF\"）\n### 文案\n「贝莱德推出质押 ETH ETF，机构鲸鱼大量买入。以太坊回升 $2,300，在 OSL 交易 ETH，持牌安全。」"
+          "markdown": "### 受众定向\n- **核心词**：以太坊 ETF 质押、ETH 行情\n- **素材**：贝莱德品牌背书 + 鲸鱼买入数据"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### Push (Global)\n「贝莱德推出质押 ETH ETF，鲸鱼大量买入，ETH 回升 $2,300 →」\n### Banner\n「ETH 回升 $2,300 | 贝莱德 ETHB 上市，机构生息叙事升温」"
+          "markdown": "### 站内触达\n- **Banner**：ETH 回升 $2,300，进入机构生息时代\n- **Push**：向持有 ETH 的用户推送机构增持利好快讯"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\n以太坊 ETF 质押 2026；「贝莱德 ETHB 是什么」「以太坊质押生息 哪个平台」"
+          "markdown": "### 关键词优化\n- **核心词**：**以太坊 ETF 质押 2026**\n- **长尾词**：贝莱德 ETHB 怎么买、以太坊质押生息平台"
         }
       ],
       "sources": [
         {
-          "name": "BlockBeats",
+          "name": "律动 BlockBeats",
           "url": "https://m.theblockbeats.info/news/61589"
         },
         {
@@ -261,24 +265,20 @@
       "intent": "品牌信任（主）/ 防流失（次）",
       "site": "Both",
       "executability": "B",
-      "summary": "Bitrefill 披露遭 Lazarus Group 攻击。借此机会发布 OSL 安全架构科普 + 防钓鱼指南，强化持牌交易所的安全信任背书。",
-      "dont_do": "不点名攻击 Bitrefill 或其他受害平台；不渲染恐慌；不暗示竞对不安全",
+      "summary": "借行业安全事件开展安全架构科普，强化 OSL 机构级冷热钱包分离与 SFC 监管背书。",
+      "dont_do": "不点名受害平台；不渲染恐慌；不暗示竞对不安全",
       "channels": [
         {
-          "name": "Paid Ads",
-          "markdown": "### 受众定向\nGoogle Search（\"加密货币 安全 交易所\" \"如何保护加密资产\"）\n### 文案\n「加密黑客再次出手，你的资产安全吗？OSL 持有 SFC 牌照，采用机构级冷热钱包分离架构。」"
-        },
-        {
           "name": "站内运营 / 用户触达",
-          "markdown": "### EDM (全量)\n主题：「安全提醒：加密黑客活动频繁，请核实 OSL 官方渠道」\n### Onsite\n帮助中心置顶「如何识别钓鱼网站和假冒 OSL 账号」"
+          "markdown": "### 安全教育\n- **帮助中心**：置顶“防范 Lazarus 攻击与钓鱼指南”\n- **EDM**：全量发送安全检查提醒，引导开启 2FA 与提现白名单"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\n加密货币 安全 交易所 2026；「Lazarus Group 加密黑客 如何防范」"
+          "markdown": "### 关键词优化\n- **核心词**：**加密货币安全交易所 2026**\n- **长尾词**：如何保护加密资产、OSL 持牌安全架构"
         },
         {
           "name": "社区",
-          "markdown": "### 脚本\n「安全提醒 🔒 近期加密行业再次出现黑客攻击事件... 请务必：①确认只在 OSL 官方网站操作；②开启双重验证；③不点击不明链接。」"
+          "markdown": "### 运营策略\n- **话题**：如何识别钓鱼网站与黑客手段科普\n- **调性**：**专业冷静**，强调持牌平台在黑客攻击下的防御优势"
         }
       ],
       "sources": [
@@ -288,13 +288,13 @@
         },
         {
           "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitrefill-links-lazarus-group-to-employee-laptop-hack"
+          "url": "https://cointelegraph.com/news/bitrefill-claims-lazarus-group-hacked-them-stole-funds"
         }
       ],
       "id": "ap_7"
     },
     {
-      "title": "#8 越南拟禁境外平台 + 地缘政治 BTC 避险叙事：合规迁移 + 数字黄金 SEO",
+      "title": "#8 越南禁令 + BTC 避险叙事：合规迁移 + 数字黄金 SEO",
       "priority": "P1",
       "category": "监管政策 + 宏观叙事",
       "timing": "Wave",
@@ -302,24 +302,24 @@
       "intent": "新客获取（主）/ 品牌教育（次）",
       "site": "Global",
       "executability": "C",
-      "summary": "越南拟立法禁止公民在境外平台交易。利用此监管变动引导越南用户迁移至合规平台，并结合地缘政治与美债危机强化 BTC 避险叙事。",
-      "dont_do": "不夸大越南监管风险制造恐慌；不做\"快来 OSL 避难\"式营销；不做地缘政治投资建议",
+      "summary": "针对越南监管收紧风险，引导用户迁移至持牌平台；同时布局 BTC 避险资产 SEO 内容。",
+      "dont_do": "不制造恐慌；不做“快来避难”营销；不做地缘政治投资建议",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向 (越南市场)\nTikTok 越南 + Google 越南语（\"sàn giao dịch crypto hợp pháp\"）\n### 文案 (越南语)\n「越南即将禁止境外平台，你准备好了吗？OSL 是持牌交易所，受 BMA 监管。」"
+          "markdown": "### 越南专项\n- **平台**：TikTok 越南 + Google 越南语（“sàn giao dịch crypto hợp pháp”）\n- **文案**：越南即将禁止境外平台，OSL 是您的合规选择"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### EDM (越南语)\n主题：「重要通知：越南加密监管新动向，OSL 如何保障您的权益」\n### Push (越南)\n「Tin tức: Việt Nam có thể hạn chế sàn nước ngoài. OSL là lựa chọn hợp pháp →」"
+          "markdown": "### 越南定向\n- **EDM**：向越南用户发送 KYC 教程与法币入金指南\n- **Push**：针对越南 IP 用户推送合规迁移公告"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词\n越南语词：sàn giao dịch crypto hợp pháp Việt Nam；中文词：比特币 数字黄金 避险资产"
+          "markdown": "### 避险叙事\n- **主关键词**：**比特币 数字黄金 避险资产**\n- **长尾词**：美债危机加密货币避险、战争时期比特币表现"
         },
         {
           "name": "社区",
-          "markdown": "### Telegram 越南社群\n脚本：「越南正在考虑关于加密交易的新规定，可能影响境外平台。OSL 是由 BMA 授权的持牌交易所，运营合法透明。」"
+          "markdown": "### 越南社群\n- **策略**：设立越南语专项答疑，强调 OSL 在 BMA 监管下的合法合规性"
         }
       ],
       "sources": [

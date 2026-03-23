@@ -16,36 +16,36 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "在受众定向方面，Global 站应重定向过去 30 天活跃但未交易的用户，HK 站则定向高净值人群及传统金融投资者。素材形式建议优先采用最快落地的静态图，或 6-10s 的真人竖屏短视频。文案设计上，Hook 可以是\"市场波动加剧，如何保护你的加密资产？\"，Body 部分强调\"利用 OSL 定投计划平摊成本，或在 StableHub 享受稳定收益，避开短期风暴\"，CTA 明确为\"立即开启定投 / 存入 StableHub\"。落地页应直接跳转至定投设置页或 StableHub 介绍页，而非官网首页。需要注意的是，HK 站主推定投和持牌安全叙事，Global 站主推 StableHub 避险功能。"
+          "markdown": "### 受众定向\n- **Global 站**：重定向过去 30 天活跃但未交易的用户\n- **HK 站**：定向高净值人群及传统金融投资者\n\n### 素材与文案\n- **素材形式**：静态图或 6-10s 真人竖屏短视频\n- **文案 Hook**：**市场波动加剧，如何保护你的加密资产？**\n- **核心策略**：利用 OSL 定投计划平摊成本，或在 StableHub 享受稳定收益\n- **CTA**：**立即开启定投 / 存入 StableHub**\n\n### 落地页\n- 直接跳转至**定投设置页**或 **StableHub 介绍页**"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位选择首页 Banner 或行情页置顶卡，文案统一为\"市场波动？用定投计划稳健布局，或转入 StableHub 避险\"，设置 1 跳直接跳转至定投或 StableHub 页面。该动作需即刻上线，保留 48 小时。在 Push 触达方面，文案设计为\"BTC 跌破 $68K。市场波动期，OSL 定投计划助您平摊成本，稳健投资。立即设置 >\"，人群圈选为 Global 站全量用户（排除近 7 日已触达），发送时段建议为当日 20:00-22:00（用户活跃高峰）。EDM 内容以\"市场波动应对指南\"为主题，正文分析当前宏观局势（中东局势升级、全网清算数据），提供 OSL 应对工具（定投、StableHub），并强调 OSL 的持牌安全属性。"
+          "markdown": "### 站内资源位\n- **Banner/行情页卡片**：文案“市场波动？用定投计划稳健布局，或转入 StableHub 避险”，一键跳转功能页\n- **时效**：即刻上线，保留 48 小时\n\n### 用户推送 (Push)\n- **受众**：Global 站全量用户（排除近 7 日已触达）\n- **文案**：**BTC 跌破 $68K**。市场波动期，OSL 定投计划助您平摊成本，稳健投资。立即设置 >\n\n### 邮件营销 (EDM)\n- **主题**：市场波动应对指南\n- **核心内容**：分析中东局势与清算数据，引导使用**定投**与 **StableHub** 避险"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词锁定为\"BTC 跌了怎么办\"，长尾词包括\"加密货币避险方法\"、\"地缘政治 比特币 2026\"、\"比特币定投怎么做\"。内容类型定位为热点快讯结合操作指南。大纲要点需涵盖：当前市场下跌原因分析（宏观地缘政治、清算数据）；在波动市中定投的策略优势（引用 Scaramucci 四年周期观点作为补充）；如何在 OSL 设置定投计划的 Step-by-Step 教程；以及 OSL StableHub 的避险功能介绍。内链建议指向定投功能页、StableHub 页面及 OSL 风险提示。该内容需在 4 小时内发布，以抢占 Google Top Story。"
+          "markdown": "### 核心关键词\n- **主词**：BTC 跌了怎么办\n- **长尾词**：加密货币避险方法、比特币定投怎么做、地缘政治 比特币 2026\n\n### 内容大纲\n1. 当前市场下跌原因分析（地缘政治、清算数据）\n2. **定投策略优势**：引用 Scaramucci 四年周期观点\n3. OSL 定投计划 Step-by-Step 教程\n4. StableHub 避险功能介绍\n\n### KPI 与时效\n- **时效要求**：**4 小时内发布**，抢占 Google Top Story"
         },
         {
           "name": "社区",
-          "markdown": "在全社群（华语/越南/印尼/通用）发起讨论，话题角度为\"市场大跌，大家在抄底还是避险？\"。形式采用投票加讨论，调性需保持客观、冷静，以安抚情绪为主。严禁讨论具体价格预测或带节奏。若有用户表达恐慌情绪，引导回复为\"市场波动是常态，定投是应对波动的成熟策略，欢迎了解 OSL 的定投计划\"。"
+          "markdown": "### 运营策略\n- **话题角度**：**市场大跌，大家在抄底还是避险？**\n- **互动形式**：投票 + 讨论，调性保持客观冷静\n- **注意事项**：严禁预测价格，引导恐慌用户关注**定投计划**"
         }
       ],
       "sources": [
         {
-          "name": "CryptoSlate：BTC 跌破 $68K，特朗普威胁打击伊朗",
+          "name": "CryptoSlate",
           "url": "https://cryptoslate.com/bitcoin-crashes-to-68000-as-us-threatens-to-obliterate-all-iranian-power-plants/"
         },
         {
-          "name": "CoinTelegraph：全网清算近 $4 亿",
+          "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/crypto-liquidations-near-400m-after-68k-bitcoin-price-dip"
         },
         {
-          "name": "律动BlockBeats：中东局势升级，特朗普48小时最后通牒",
+          "name": "律动BlockBeats",
           "url": "https://m.theblockbeats.info/flash/337529"
         },
         {
-          "name": "WatcherGuru：Saylor 暗示继续增持 BTC",
+          "name": "WatcherGuru",
           "url": "https://x.com/WatcherGuru/status/2035710363400859844"
         }
       ],
@@ -56,7 +56,7 @@
       "priority": "P1",
       "category": "机构/监管",
       "timing": "Wave",
-      "relation": "Direct",
+      "relation": "Brand",
       "intent": "信任评估（主）/ 深度研究（次）",
       "site": "HK",
       "executability": "B",
@@ -65,36 +65,32 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向聚焦于 HK 站的高净值人群和传统金融投资者（TradFi 背景用户）。素材形式采用政策解读类的静态图，配合简洁的数据可视化（如机构资金流入图表）。文案 Hook 为\"机构资金加速入场，加密资产合规化再迎里程碑\"，Body 阐述\"SEC 确认 BTC/ETH 非证券，NYSE 放开 ETF 期权，BlackRock 以太坊 ETF 单日净流入超 $1.5 亿。在香港首家持牌平台 OSL，与机构同行\"，CTA 引导\"了解 OSL VIP 专属服务\"。落地页指向 OSL VIP 权益介绍页。此广告仅限 HK 站投放，Global 站可同步发布 ETH 交易推广版本。"
+          "markdown": "### 受众定向\n- **HK 站**：高净值人群、传统金融投资者 (TradFi)\n\n### 素材与文案\n- **形式**：政策解读类静态图，数据可视化图表\n- **文案 Hook**：**机构资金加速入场，加密资产合规化再迎里程碑**\n- **核心策略**：强调 SEC 确认 BTC/ETH 非证券及 BlackRock 资金流入，背书 OSL 持牌地位\n- **CTA**：了解 OSL VIP 专属服务\n\n### 落地页\n- **OSL VIP 权益介绍页**"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "在 VIP 专区入口或通过站内信发布，文案为\"机构动态：加密 ETF 期权上限取消，BTC/ETH 获非证券确认，BlackRock ETF 大额净流入\"，设置 1 跳至研报精选版。需在 24 小时内上线并保留 7 天。针对 VIP 用户及高净值用户发送《Market Insights 深度分析》EDM，解读近期机构资金流入（BlackRock ETHB）及监管利好，并附带 1 对 1 BD 建联入口，引导高净值用户进入 BD 建联链路。"
+          "markdown": "### VIP 专区运营\n- **资源位**：VIP 入口或站内信\n- **内容**：机构动态周报（ETF 期权、SEC 表态、BlackRock 流入）\n\n### 用户触达\n- **EDM**：针对 VIP 用户发送《Market Insights 深度分析》\n- **核心 CTA**：**1 对 1 BD 建联入口**"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词为\"加密 ETF 期权\"，长尾词包括\"BTC ETH 非证券意味着什么\"、\"机构加密投资 2026\"、\"香港持牌加密交易所\"。内容类型为解读型。大纲要点包括：NYSE 取消加密 ETF 期权上限的背景与影响；SEC 主席最新表态解读（BTC/ETH 非证券确认）；机构资金流向分析（以 BlackRock ETHB 为例，摩根士丹利 ETF 申请为补充）；OSL 作为持牌平台的合规优势。内链建议指向 OSL 机构服务页、OTC 大宗交易页。需在 24 小时内发布。"
+          "markdown": "### 核心关键词\n- **主词**：加密 ETF 期权\n- **长尾词**：BTC ETH 非证券影响、香港持牌加密交易所、机构加密投资 2026\n\n### 内容要点\n- 解读 NYSE 取消上限背景\n- SEC 主席最新表态对行业的影响\n- **OSL 持牌优势**与机构服务介绍\n\n### 时效要求\n- **24 小时内发布**"
         },
         {
           "name": "社区",
-          "markdown": "在华语社群及 VIP 专属频道发布，话题角度为\"机构持续入场，加密合规化进程提速，你怎么看？\"。形式为深度讨论帖，调性专业、有深度。引导评论方向为机构资金对市场结构的影响，避免讨论具体价格预测。"
+          "markdown": "### 运营策略\n- **话题角度**：**机构持续入场，加密合规化进程提速，你怎么看？**\n- **形式**：华语社群及 VIP 频道深度讨论帖\n- **调性**：专业、深度，聚焦市场结构影响"
         }
       ],
       "sources": [
         {
-          "name": "The Block：NYSE 完成加密 ETF 期权上限取消",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394593/nyse-exchanges-complete-industry-wide-removal-of-crypto-etf-options-caps"
         },
         {
-          "name": "CoinTelegraph：NYSE 取消加密 ETF 期权上限",
-          "url": "https://cointelegraph.com/news/nyse-exchanges-scrap-crypto-options-cap"
-        },
-        {
-          "name": "WuBlockchain：SEC 主席确认 BTC/ETH 为非证券",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2035649572945740108"
         },
         {
-          "name": "CoinDesk：BlackRock ETHB 净流入超 $1.5 亿",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2035830400279363941"
         }
       ],
@@ -110,39 +106,39 @@
       "site": "Global",
       "executability": "A",
       "summary": "借参议院与白宫就稳定币收益达成协议的政策利好，以及欧洲银行代币化存款趋势，在 Global 站全渠道推广 StableHub，吸引寻求稳定收益的用户。",
-      "dont_do": "不在 HK 站推广 StableHub（HK 站无此产品），不使用\"保本稳赚\"等绝对化词汇，不承诺具体收益率。",
+      "dont_do": "不在 HK 站推广 StableHub，不使用“保本稳赚”等绝对化词汇，不承诺具体收益率。",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向为 Global 站（特别是台湾、印尼市场）对理财、被动收入感兴趣的用户，以及已注册但未使用 StableHub 的存量用户。素材形式采用\"一人分饰两角\"解释稳定币收益的真人竖屏视频（已验证效果优于静态图）。文案 Hook 为\"稳定币收益合法化迈出重要一步！\"，Body 介绍\"在 OSL StableHub，享受无需锁仓的稳定币理财，新用户更有专属高息福利\"，CTA 为\"立即开启 StableHub 理财\"。落地页指向 StableHub 专题页（活动专题页 CTR 已验证达 55%）。此广告仅限 Global 站投放。"
+          "markdown": "### 受众定向\n- **Global 站**：台湾、印尼市场对被动收入感兴趣的用户\n\n### 素材与文案\n- **素材形式**：真人竖屏解释类视频\n- **文案 Hook**：**稳定币收益合法化迈出重要一步！**\n- **核心策略**：强调无需锁仓、高息福利\n- **CTA**：**立即开启 StableHub 理财**\n\n### 落地页\n- **StableHub 专题页** (需确保 CTR 表现)"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位选择首页 Banner 或资产页模块，文案为\"稳定币理财新时代：OSL StableHub 助您轻松赚取收益\"，设置 1 跳至 StableHub 页面。即刻上线并保留 7 天。Push 文案设计为\"稳定币监管迎利好！来 OSL StableHub，体验安全、灵活的稳定币理财，新客享专属高息\"，人群圈选为已入金未使用 StableHub 的用户及稳定币高频转账用户。站内信触发条件为用户进入资产页，推送 StableHub 介绍。"
+          "markdown": "### 站内触达\n- **Banner**：首页或资产页“稳定币理财新时代”\n- **Push**：针对已入金未开启 StableHub 的用户\n- **文案**：稳定币监管迎利好！体验安全灵活的理财，**新客享专属高息**"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词为\"稳定币理财\"，长尾词包括\"稳定币法案最新进展\"、\"稳定币收益合法吗\"、\"OSL StableHub 怎么用\"。内容类型结合解读型与指南型。大纲要点涵盖：美国稳定币法案最新进展解读（参议院与白宫协议）；欧洲代币化存款趋势分析；什么是稳定币理财及其风险；OSL StableHub 的优势（无需锁仓、零滑点兑换）；参与 StableHub 的图文教程。内链建议指向 StableHub 功能页、法币出入金指南。需在 48 小时内发布。"
+          "markdown": "### 核心关键词\n- **主词**：稳定币理财\n- **长尾词**：稳定币法案最新进展、OSL StableHub 教程\n\n### 内容架构\n- 美国/欧洲稳定币政策解读\n- 稳定币理财风险与收益平衡\n- **OSL StableHub 优势**：无需锁仓、零滑点"
         },
         {
           "name": "社区",
-          "markdown": "在 Global 站全社群（越南/印尼/通用）发布，话题角度为\"稳定币监管利好来了，你的稳定币现在在哪里？\"。形式为讨论帖加产品介绍。调性轻松、实用，突出\"无需锁仓\"的灵活性。引导用户分享稳定币使用场景，并自然引出 StableHub 的优势。"
+          "markdown": "### 运营策略\n- **话题角度**：稳定币监管利好来了，你的稳定币现在在哪里？\n- **调性**：轻松、实用，突出灵活性"
         }
       ],
       "sources": [
         {
-          "name": "WatcherGuru：参议院与白宫就稳定币收益争议达成协议",
+          "name": "WatcherGuru",
           "url": "https://x.com/WatcherGuru/status/2035745003696214196"
         },
         {
-          "name": "CoinTelegraph：代币化存款，欧洲银行链上现金竞争加剧",
+          "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/tokenized-deposits-europe-banks-stablecoins"
         }
       ],
       "id": "ap_3"
     },
     {
-      "title": "DeFi 安全事件与 brand 信任建设",
+      "title": "DeFi 安全事件与品牌信任建设",
       "priority": "P1",
       "category": "安全/竞对",
       "timing": "Day",
@@ -150,34 +146,30 @@
       "intent": "信任评估（主）",
       "site": "Both",
       "executability": "A",
-      "summary": "针对 Resolv USR 遭攻击（套现 $2500 万）及 CoinDCX 冒充网站欺诈事件，发布安全科普内容，强调 OSL 的持牌合规与资产安全优势，同时发布防钓鱼官方指南。",
-      "dont_do": "不点名攻击 Resolv Labs 或 CoinDCX，不制造行业恐慌，不暗示\"DeFi 都不安全\"等绝对化表述。",
+      "summary": "针对 Resolv USR 遭攻击及 CoinDCX 冒充网站欺诈事件，发布安全科普内容，强调 OSL 的持牌合规与资产安全优势，同时发布防钓鱼官方指南。",
+      "dont_do": "不点名攻击竞对，不制造行业恐慌，不暗示 DeFi 绝对不安全。",
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "在帮助中心置顶或发布公告，文案为\"OSL 安全指南：如何防范钓鱼网站与保护资产安全\"，设置 1 跳至安全指南文章。即刻上线并保留 3 天。全量发送安全提醒 EDM，强调 OSL 官方域名（osl.com），提醒用户防范假冒网站，并重申 OSL 平台资产由持牌机构托管，采用冷热钱包隔离保障安全。Push 文案设计为\"安全提醒：认准 OSL 官方域名 osl.com，谨防钓鱼网站。点击查看官方安全指南 >\"，全量发送（排除近 24h 已触达用户）。"
+          "markdown": "### 安全提醒\n- **公告**：帮助中心置顶《OSL 安全指南》\n- **EDM**：全量发送，强调**官方域名 osl.com**\n- **Push**：提醒用户认准官方渠道，谨防钓鱼"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词为\"加密货币安全\"，长尾词包括\"如何识别假冒加密交易所\"、\"稳定币安全吗\"、\"DeFi 智能合约风险\"。内容类型为 FAQ 型结合指南型。大纲要点包括：近期行业安全事件盘点（不点名，仅描述智能合约漏洞、钓鱼网站等类型）；如何识别假冒交易所网站（7 个核实步骤）；OSL 如何保障用户资产安全（持牌、冷热钱包隔离、保险机制）。内链建议指向 OSL 帮助中心、官方安全指南、OSL 持牌信息页。需在 24 小时内发布。"
+          "markdown": "### 内容策略\n- **关键词**：加密货币安全、防范钓鱼网站、OSL 资产托管\n- **要点**：盘点近期攻击类型（不点名），提供 **7 个核实步骤**，介绍 OSL 冷热钱包隔离机制"
         },
         {
           "name": "社区",
-          "markdown": "在全社群（华语/越南/印尼/通用）发布，话题角度为\"近期行业安全事件频发，大家平时怎么保护自己的资产？\"。形式采用安全知识问答（Quiz）结合官方防钓鱼提醒。调性专业、负责、偏向教育。风险回复模板：若用户提及具体被黑项目，统一回复\"我们注意到了相关报道。OSL 始终将用户资产安全放在首位，我们采用严格的冷热钱包隔离和多重签名技术，并受监管机构严格监督。请大家务必认准官方域名 osl.com，如有疑问请联系官方客服\"。"
+          "markdown": "### 互动策略\n- **形式**：安全知识问答 (Quiz)\n- **回复模板**：强调 OSL 受监管监督，认准官方域名"
         }
       ],
       "sources": [
         {
-          "name": "The Block：Resolv Labs USR 稳定币遭攻击，套现约 $2500 万",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394582/resolvs-usr-stablecoin-depegs-after-attacker-mints-80-million-unbacked-tokens-extracts-roughly-25-million"
         },
         {
-          "name": "Odaily：Resolv 协议黑客攻击事件深度研究",
+          "name": "Odaily",
           "url": "https://www.odaily.news/zh-CN/post/5209872"
-        },
-        {
-          "name": "The Block：CoinDCX 联合创始人被捕，交易所称系冒充网站欺诈",
-          "url": "https://www.theblock.co/post/394589/coindcx-co-founders-arrested-by-indian-police-for-alleged-fraud-deny-wrongdoing-blame-impersonation-scheme-reports"
         }
       ],
       "id": "ap_4"
@@ -187,41 +179,41 @@
       "priority": "P2",
       "category": "机构/TradFi",
       "timing": "Wave",
-      "relation": "Indirect",
+      "relation": "Brand",
       "intent": "深度研究（主）",
       "site": "HK",
       "executability": "B",
       "summary": "结合 Nasdaq 代币化股票规则获批、博雅互动拟购入 $7000 万加密资产，以及企业加密财库管理趋势，输出深度内容，赋能 HK 站 BD 团队开拓机构客户。",
-      "dont_do": "不向零售用户过度推销复杂的 RWA 概念，不暗示 OSL 已有 RWA 交易产品（如无）。",
+      "dont_do": "不向零售用户过度推销复杂 RWA 概念，不暗示 OSL 已有 RWA 产品。",
       "channels": [
         {
           "name": "SEO",
-          "markdown": "主关键词为\"企业加密财库\"，长尾词包括\"企业如何购买比特币\"、\"代币化股票是什么\"、\"RWA 加密资产\"。内容类型为解读型深度文章。大纲要点探讨：为什么越来越多企业（如博雅互动、MicroStrategy）将加密资产纳入资产负债表（引用 FASB 公允价值会计规则、MiCA 等监管框架落地作为背景）；RWA 与代币化证券的最新进展（Nasdaq 规则获批、Fidelity 致函 SEC）；企业在选择加密托管平台时的核心考量（合规、安全、流动性）；OSL 为企业和机构提供的定制化服务（OTC、托管、大宗交易）。内链建议指向 OSL 机构服务页、OTC 大宗交易页、BD 建联入口。需在 3 天内发布。"
+          "markdown": "### 核心关键词\n- **主词**：企业加密财库\n- **长尾词**：上市公司买入比特币、RWA 加密资产、Nasdaq 代币化规则\n\n### 深度大纲\n- 企业配置加密资产的会计与监管背景\n- **RWA 与代币化证券**最新进展 (Fidelity/Nasdaq)\n- 企业如何选择持牌托管平台 (OSL OTC 优势)"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "将上述 SEO 深度文章精简后，通过 Substack 分发（外部公域流量抓手），并定向发送给 HK 站机构客户和潜在 BD 目标，EDM 附带专属客户经理联系方式及 BD 建联入口。"
+          "markdown": "### B 端触达\n- **渠道**：Substack 及定向 EDM\n- **目标**：HK 站机构客户及潜在 BD 目标\n- **CTA**：**预约客户经理咨询**"
         },
         {
           "name": "社区",
-          "markdown": "在 HK 站 VIP 专属频道及华语社群发布，话题角度为\"香港上市公司开始大规模布局加密资产，机构时代真的来了？\"。形式为深度讨论帖，调性专业、有深度，适合高净值用户圈层。"
+          "markdown": "### 互动策略\n- **话题**：香港上市公司开始布局加密资产，机构时代真的来了？\n- **调性**：专业、高端，适合 VIP 圈层"
         }
       ],
       "sources": [
         {
-          "name": "WuBlockchain：Boyaa Interactive 拟购入最多 $7000 万加密资产",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2035711693364375829"
         },
         {
-          "name": "WatcherGuru：SEC 批准 Nasdaq 代币化股票规则",
+          "name": "WatcherGuru",
           "url": "https://x.com/WatcherGuru/status/2035745003696214196"
         },
         {
-          "name": "CoinTelegraph：Fidelity 致函 SEC 支持代币化证券 ATS 交易",
+          "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/fidelity-letter-sec-alternative-trading-systems"
         },
         {
-          "name": "Odaily：企业加密财库管理趋势",
+          "name": "Odaily",
           "url": "https://www.odaily.news/zh-CN/post/5209867"
         }
       ],

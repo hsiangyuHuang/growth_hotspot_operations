@@ -16,32 +16,32 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向建议覆盖近期搜索过\"BTC 下跌\"或\"加密货币避险\"的用户，Global 站可重点定向台湾与印尼市场。素材形式推荐使用静态图，展示散户抛售与机构增持的数据对比。文案 Hook 可设为\"市场波动加剧，你的资产如何避险？\"，Body 部分强调\"机构资金仍在持续布局。在 OSL 开启定投计划，平摊市场成本；或将资金转入 StableHub，享受稳定收益\"，CTA 引导\"立即开启定投 / 了解 StableHub\"。落地页方面，HK 站主推定投计划介绍页，Global 站主推 StableHub 专题页。"
+          "markdown": "### 受众定向\n- **核心受众**：近期搜索过\"BTC 下跌\"或\"加密货币避险\"的用户\n- **地域定向**：Global 站重点定向台湾与印尼市场\n### 素材与文案\n- **素材形式**：静态图，展示散户抛售与机构增持的数据对比\n- **文案 Hook**：\"市场波动加剧，你的资产如何避险？\"\n- **核心策略**：强调机构持续布局，推广 OSL 定投计划（平摊成本）与 StableHub（稳定收益）\n- **CTA**：立即开启定投 / 了解 StableHub\n### 落地页\n- **HK 站**：主推定投计划介绍页\n- **Global 站**：主推 StableHub 专题页"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "在首页 Banner 和资产页模块上线相关提示，文案为\"应对市场波动：开启定投计划，或探索 StableHub 稳定收益\"，点击后直接跳转至定投设置页或 StableHub 页面。该资源位即日上线，保留 48 小时。同时，向用户发送 Push，文案为\"BTC 跌破 $70K？市场波动期，用 OSL 定投计划平摊成本，或在 StableHub 寻找避风港\"。针对 VIP Loss 用户和已入金未交易用户，发送包含市场洞察（提及机构增持数据）的 EDM，引导其设置定投。"
+          "markdown": "### 站内展示\n- **资源位**：首页 Banner 和资产页模块上线提示\n- **文案**：\"应对市场波动：开启定投计划，或探索 StableHub 稳定收益\"\n- **时效性**：即日上线，保留 48 小时\n### 用户触达\n- **Push**：针对全量用户发送\"BTC 跌破 $70K？用定投计划平摊成本，或在 StableHub 寻找避风港\"\n- **EDM**：针对 **VIP Loss 用户**和已入金未交易用户发送市场洞察，引导设置定投"
         },
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"BTC 下跌怎么办\"、\"加密货币定投\"、\"稳定币避险\"和\"StableHub 收益\"。内容类型定位为热点快讯与指南的结合。文章大纲应涵盖市场现状（BTC 回调与 ETF 流出）、机构动向（DDC、Strive 增持）、应对策略（定投的优势）以及稳定币避险（StableHub 介绍）。该内容需在 24 小时内发布。"
+          "markdown": "### 核心策略\n- **关键词**：BTC 下跌怎么办、加密货币定投、稳定币避险、StableHub 收益\n- **文章大纲**：分析市场现状（BTC 回调/ETF 流出）、引证机构动向（DDC/Strive 增持）、解读定投优势及 StableHub 介绍\n- **KPI**：24 小时内完成发布"
         },
         {
           "name": "社区",
-          "markdown": "在 Telegram（华语/通用）社群发起讨论，话题角度为\"理性看待回调，分享你的定投策略\"。形式上，通过主贴发起讨论并附带投票（选项：A. 开启定投 B. 转入稳定币 C. 观望），整体调性需保持客观、理性与长期主义。"
+          "markdown": "### 话题经营\n- **讨论话题**：理性看待回调，分享你的定投策略\n- **运营形式**：TG 社群发起投票（开启定投/转入稳定币/观望）\n- **调性要求**：保持客观、理性与长期主义"
         }
       ],
       "sources": [
         {
-          "name": "The Block：Bitcoin wobbles around $70,000",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394303/bitcoin-wobbles-around-70000"
         },
         {
-          "name": "WuBlockchain：Binance market data shows Bitcoin fell below $70,000",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2034535571318878243"
         },
         {
-          "name": "CryptoSlate：Retail rushed into gold, but institutions are buying Bitcoin again",
+          "name": "CryptoSlate",
           "url": "https://cryptoslate.com/retail-rushed-into-gold-but-institutions-are-buying-bitcoin-again/"
         }
       ],
@@ -61,28 +61,28 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向聚焦于关注黄金、白银、大宗商品交易的传统投资者。素材形式建议采用 6-10s 的真人创意短视频，展示传统投资者看着黄金暴跌图表，随后转向加密资产。文案 Hook 为\"传统避险资产正在失效？\"，Body 说明\"黄金单日下跌 7.2%。在全球不确定性加剧时，探索数字资产的避险潜力。OSL 提供安全、合规的法币出入金通道\"，CTA 引导\"了解数字资产避险属性\"。落地页建议指向 OSL Learn 学院页的数字资产基础知识部分。"
+          "markdown": "### 受众定向\n- **目标用户**：关注黄金、白银、大宗商品交易的传统投资者\n### 素材与文案\n- **素材形式**：6-10s 真人创意短视频，对比传统资产暴跌与数字资产潜力\n- **文案 Hook**：\"传统避险资产正在失效？\"\n- **Body**：黄金单日下跌 7.2%。在全球不确定性加剧时，探索 OSL 合规法币出入金通道\n- **CTA**：了解数字资产避险属性\n### 落地页\n- 定向至 OSL Learn 学院页数字资产基础知识"
         },
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"黄金暴跌原因\"、\"中东局势避险资产\"、\"比特币避险属性\"和\"如何购买 USDT\"。内容类型为解读型。文章大纲应分析黄金与白银暴跌的宏观背景，探讨地缘政治冲突下的资产表现，解释为什么资金转向稳定币（引用 USDC 大额转账数据），并指导如何安全配置数字资产。该内容需在 48 小时内发布。"
+          "markdown": "### 核心策略\n- **关键词**：黄金暴跌原因、中东局势避险资产、比特币避险属性、如何购买 USDT\n- **文章大纲**：分析宏观背景与地缘冲突，解释资金转向稳定币原因，指导安全配置数字资产\n- **KPI**：48 小时内发布"
         },
         {
           "name": "社区",
-          "markdown": "在 Telegram（全语种）社群发布图文主贴，对比黄金跌幅与稳定币资金流入，话题角度为\"传统避险资产 vs 数字资产，你的选择是什么？\"。评论区需引导用户讨论 StableHub 作为资金避风港的体验。"
+          "markdown": "### 话题经营\n- **形式**：TG 社群发布图文对比图（黄金跌幅 vs 稳定币流入）\n- **话题角度**：\"传统避险资产 vs 数字资产，你的选择是什么？\"\n- **核心互动**：引导用户讨论 StableHub 作为资金避风港的体验"
         }
       ],
       "sources": [
         {
-          "name": "律动 BlockBeats：黄金单日暴跌 7%，战争没救避险",
+          "name": "律动 BlockBeats",
           "url": "https://m.theblockbeats.info/news/61627"
         },
         {
-          "name": "WatcherGuru：Brent crude oil surges to $116",
+          "name": "WatcherGuru",
           "url": "https://x.com/WatcherGuru/status/2034553479809700179"
         },
         {
-          "name": "CoinDesk：Capital is rotating into stablecoins",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2034722092927877413"
         }
       ],
@@ -102,28 +102,28 @@
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "在帮助中心置顶相关内容，并在 VIP 专区添加入口。向 VIP 和机构用户发送 EDM，主题为《OSL 市场洞察：美国监管框架明朗化对数字资产的影响》，重点强调 OSL 的持牌优势和资产安全保障。"
+          "markdown": "### 站内运营\n- **资源位**：帮助中心置顶，VIP 专区入口增加\n### 客户触达\n- **EDM**：针对 VIP 和机构用户，发送《OSL 市场洞察：美国监管框架明朗化对数字资产的影响》\n- **核心卖点**：强调 OSL 持牌优势和资产安全保障"
         },
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"SEC 加密监管框架\"、\"加密市场结构法案\"、\"香港持牌加密交易所\"和\"OSL 合规优势\"。内容类型为解读型。文章大纲应提炼 SEC 主席 Atkins 讲话核心要点，跟进市场结构法案进展（特别是稳定币收益条款），分析监管明朗化对机构投资者的意义，并阐述 OSL 的合规护城河。该内容需在 48 小时内发布。"
+          "markdown": "### 核心策略\n- **关键词**：SEC 加密监管框架、加密市场结构法案、香港持牌加密交易所、OSL 合规优势\n- **内容要点**：提炼 SEC 主席 Atkins 讲话、跟进稳定币收益条款、分析监管对机构的意义\n- **KPI**：48 小时内完成"
         },
         {
           "name": "社区",
-          "markdown": "在 Telegram（华语）社群发布长文主贴，提炼 SEC 讲话重点，话题角度为\"全球监管趋严，为什么选择持牌平台至关重要？\"。"
+          "markdown": "### 话题经营\n- **频道**：TG 华语社群\n- **内容**：长文提炼 SEC 讲话重点\n- **话题角度**：\"全球监管趋严，为什么选择持牌平台至关重要？\""
         }
       ],
       "sources": [
         {
-          "name": "CoinTelegraph：SEC interpretation on crypto laws ‘a beginning, not an end,‘ says Atkins",
+          "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/sec-interpretation-crypto-laws-paul-atkins"
         },
         {
-          "name": "EleanorTerrett：Senate Banking Republicans pressed to release stablecoin yield study",
+          "name": "EleanorTerrett",
           "url": "https://x.com/EleanorTerrett/status/2034682111358026172"
         },
         {
-          "name": "CryptoSlate：SEC drastically reduces KYC pressure on Bitcoin, XRP, and Solana",
+          "name": "CryptoSlate",
           "url": "https://cryptoslate.com/sec-redrawn-crypto-rules-quietly-eases-kyc-pressure-on-bitcoin-xrp-and-solana/"
         }
       ],
@@ -143,28 +143,28 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向针对金融专业人士和企业财务决策者（优先考虑 LinkedIn 渠道）。素材形式为专业数据图表，展示企业国库 BTC 持有量的增长趋势。文案 Hook 为\"华尔街巨头入场，企业国库正在加速配置比特币\"，Body 说明\"摩根士丹利 BTC ETF 即将上市。OSL 为专业投资者和机构提供安全、深度的 OTC 交易与合规托管服务\"，CTA 引导\"联系我们的机构服务团队\"。落地页建议指向机构服务或 OTC 介绍页。"
+          "markdown": "### 受众定向\n- **渠道**：LinkedIn 优先\n- **目标受众**：金融专业人士、企业财务决策者\n### 素材与文案\n- **素材形式**：专业数据图表（展示企业国库 BTC 增长趋势）\n- **文案 Hook**：\"华尔街巨头入场，企业国库正在加速配置比特币\"\n- **核心策略**：宣传 OSL 安全、深度的 OTC 交易与合规托管服务\n- **CTA**：联系我们的机构服务团队\n### 落地页\n- 指向机构服务或 OTC 介绍页"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "向高净值潜在客户发送定向 EDM，主题为《与机构同行：2026 企业数字资产配置指南》，并在邮件内嵌 BD 建联入口。"
+          "markdown": "### 客户触达\n- **定向 EDM**：面向高净值潜在客户发送《与机构同行：2026 企业数字资产配置指南》\n- **建联路径**：邮件内嵌 BD 咨询入口"
         },
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"摩根士丹利比特币 ETF\"、\"企业国库比特币\"、\"机构加密货币托管\"和\"大宗加密交易\"。内容类型为解读型。文章大纲应探讨 $MSBT 上市的标志性意义，分析 DDC、Strive 等企业增持案例，并介绍机构配置数字资产的合规路径（即 OSL 解决方案）。"
+          "markdown": "### 核心策略\n- **关键词**：摩根士丹利比特币 ETF、企业国库比特币、机构加密货币托管、大宗加密交易\n- **文章大纲**：分析 $MSBT 上市意义、DDC/Strive 案例、OSL 机构合规解决方案"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk：Morgan Stanley’s Bitcoin ETF ticker will be $MSBT",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2034671455007326261"
         },
         {
-          "name": "The Block：DDC adds 200 bitcoin as corporate treasuries lean into BTC price weakness",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394375/ddc-adds-200-bitcoin-corporate-treasuries-btc-price-weakness"
         },
         {
-          "name": "CoinDesk：Ripple survey shows 72% view digital assets as table stakes",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2034693928855674965"
         }
       ],
@@ -184,16 +184,16 @@
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "发送 Push，文案为\"关注 3 月底市场流动性变化。提前配置 StableHub，锁定稳定收益，从容应对波动\"。针对活跃交易用户触发站内信，提示近期重大市场事件日历，并引导查看 OSL 研究院的相关分析。"
+          "markdown": "### 用户触达\n- **Push**：\"关注 3 月底市场流动性变化。提前配置 StableHub，锁定稳定收益\"\n- **站内信**：针对活跃用户提示市场事件日历，引导查看研究院深度分析"
         },
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"FTX 赔款时间表\"、\"FTX 资金分发影响\"、\"比特币卖压分析\"和\"如何应对加密市场波动\"。内容类型为热点快讯与分析。文章大纲应涵盖 FTX 第四轮分配细节（$22 亿规模）、历史分配对市场的影响复盘，以及投资者的防御性策略（如定投、稳定币理财）。该内容需在本周内发布，并持续发酵至月底。"
+          "markdown": "### 核心策略\n- **关键词**：FTX 赔款时间表、FTX 资金分发影响、比特币卖压分析、应对市场波动\n- **文章大纲**：分配细节（$22 亿）、历史复盘、防御性策略（定投/稳定币理财）\n- **KPI**：本周内发布并持续至月底"
         }
       ],
       "sources": [
         {
-          "name": "CryptoSlate：Over $2B in “lost” Bitcoin to hit markets this month",
+          "name": "CryptoSlate",
           "url": "https://cryptoslate.com/over-2b-in-lost-bitcoin-to-hit-markets-this-month-creating-sell-pressure-within-fragile-67k-74k-range/"
         }
       ],
@@ -213,20 +213,20 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"加密货币交易所安全性\"、\"如何选择靠谱的加密平台\"和\"香港上市加密公司\"。内容类型为 FAQ 或指南型。文章大纲应探讨行业动荡期的资产安全原则，解释为什么透明度与合规是核心考量，并详细介绍 OSL 的稳健运营与审计标准。"
+          "markdown": "### 核心策略\n- **关键词**：加密货币交易所安全性、如何选择靠谱的加密平台、香港上市加密公司\n- **内容要点**：探讨资产安全原则、透明度与合规的重要性、OSL 稳健运营与审计标准"
         },
         {
           "name": "社区",
-          "markdown": "在 Telegram（全语种）社群发起互动问答，话题角度为\"在快速变化的行业中，你最看重交易平台的哪些特质？\"。官方客服需适时介入评论区，强调 OSL 的资金隔离和合规审计机制。"
+          "markdown": "### 话题经营\n- **形式**：TG 全语种社群发起互动问答\n- **话题角度**：\"在快速变化的行业中，你最看重交易平台的哪些特质？\"\n- **官方干预**：客服适时强调 OSL 资金隔离和合规审计机制"
         }
       ],
       "sources": [
         {
-          "name": "The Block：Crypto.com cuts around 12% of staff",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394318/crypto-com-cuts-around-12-of-staff-as-ceo-pushes-ai-integration"
         },
         {
-          "name": "WuBlockchain：Gemini has cut about 30% of its workforce",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2034805383689281659"
         }
       ],
@@ -246,24 +246,24 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"RWA 代币化\"、\"代币化基金\"、\"Amundi 代币化\"和\"现实世界资产上链\"。内容类型为深度解读。文章大纲应分析 RWA 市场规模突破 $250 亿的驱动力，探讨传统资管巨头（如 Amundi）的入场路径，并评估代币化资产的合规挑战与未来发展。文章内需包含指向 OSL 机构服务页面的内链。"
+          "markdown": "### 核心策略\n- **关键词**：RWA 代币化、代币化基金、Amundi 代币化、现实世界资产上链\n- **内容要点**：分析 $250 亿规模驱动力、资管巨头入场路径、合规挑战，内链指向 OSL 机构服务页"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "在 OSL Learn 学院页上线相关内容。向 VIP 用户点对点分发研报精选版 EDM，主题为《RWA 崛起：传统金融与数字资产的融合》。"
+          "markdown": "### 站内运营\n- **OSL Learn**：上线 RWA 专题深度内容\n### 客户触达\n- **EDM**：面向 VIP 分发研报精选，主题《RWA 崛起：传统金融与数字资产的融合》"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk：RWA tokenization has hit $25B",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2034558474432999663"
         },
         {
-          "name": "The Block：Amundi debuts $100 million tokenized fund",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394348/europes-largest-asset-manager-amundi-debuts-100-million-tokenized-fund-on-ethereum-stellar"
         },
         {
-          "name": "WuBlockchain：The market capitalization of tokenized equities has reached $1.5 billion",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2034617853991858464"
         }
       ],
@@ -283,27 +283,27 @@
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "在帮助中心置顶安全指南。全量发送站内信，主题为《OSL 安全提醒：防范假冒代币与钓鱼攻击》，并在正文中明确强调官方绝不会要求提供明文助记词。"
+          "markdown": "### 站内运营\n- **帮助中心**：置顶最新安全指南\n### 用户触达\n- **全量站内信**：主题《OSL 安全提醒：防范假冒代币与钓鱼攻击》，严正声明绝不索取助记词"
         },
         {
           "name": "社区",
-          "markdown": "在 Telegram（全语种）社群发布防钓鱼与官方核验指南图文，话题角度为\"近期链上安全事件频发，如何保护你的资产？\"。准备风险回复模板，提供官方渠道验证链接，提醒用户警惕非官方私信。"
+          "markdown": "### 话题经营\n- **内容**：发布防钓鱼及官方核验指南图文\n- **话题角度**：\"近期链上安全事件频发，如何保护你的资产？\"\n- **风险管理**：准备回复模板，提醒用户警惕非官方私信"
         }
       ],
       "sources": [
         {
-          "name": "The Block：FBI warns of fake tokens impersonating agency",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394441/fbi-warns-fake-tokens-impersonating-agency-tron-network"
         },
         {
-          "name": "WuBlockchain：SlowMist Cos: There is extremely unsafe behavior on Coinbase Commerce's Withdraw page",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2034463593866080594"
         }
       ],
       "id": "ap_8"
     },
     {
-      "title": "Hyperliquid 7×24 原油交易走走红，链上衍生品爆发",
+      "title": "Hyperliquid 7×24 原油交易走红，链上衍生品爆发",
       "priority": "P1",
       "category": "产品趋势",
       "timing": "Wave",
@@ -316,20 +316,20 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向针对关注 DeFi、衍生品交易以及 Hyperliquid 的 Global 站目标市场用户。素材形式采用轮播图，重点展示 OSL 合约界面的流畅度与深度。文案 Hook 为\"寻找更流畅的加密衍生品交易体验？\"，Body 说明\"体验 OSL Global 永续合约。深度优、低延迟，支持主流资产\"，CTA 引导\"立即开启合约交易\"。落地页建议指向合约交易引导页。"
+          "markdown": "### 受众定向\n- **核心受众**：关注 DeFi、衍生品交易、Hyperliquid 的 Global 站用户\n### 素材与文案\n- **素材形式**：轮播图，展示 OSL 合约界面深度与流畅度\n- **文案 Hook**：\"寻找更流畅的加密衍生品交易体验？\"\n- **CTA**：立即开启合约交易\n### 落地页\n- 合约交易引导页"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "针对已入金未交易用户触发 Push，文案为\"探索加密衍生品市场？完成适用性评估，开启 OSL 永续合约交易之旅\"。"
+          "markdown": "### 用户触达\n- **Push**：针对已入金未交易用户，提示完成适用性评估并开启合约交易"
         }
       ],
       "sources": [
         {
-          "name": "The Block：JPMorgan notes Hyperliquid gaining traction",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394380/jpmorgan-hyperliquid-crypto-traction-24-7-oil-trading"
         },
         {
-          "name": "律动 BlockBeats：交易量暴涨60倍，下一代金融基础设施",
+          "name": "律动 BlockBeats",
           "url": "https://m.theblockbeats.info/news/61624"
         }
       ],
@@ -349,16 +349,16 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "核心关键词包括\"年轻人如何投资\"、\"加密货币入门\"、\"Z 世代理财\"和\"小额投资加密货币\"。内容类型为指南型。文章大纲应探讨为什么越来越多年轻人关注数字资产，分析风险与机遇并存的现状以帮助建立正确的投资观，并提供新手第一步指南（如何在 OSL 安全购买第一笔加密资产）。"
+          "markdown": "### 核心策略\n- **关键词**：年轻人如何投资、加密货币入门、Z 世代理财、小额投资加密货币\n- **文章大纲**：探讨 Gen Z 投资现状、建立正确风险观、OSL 新手安全买币指南"
         },
         {
           "name": "Paid Ads",
-          "markdown": "受众定向针对 18-25 岁、关注个人理财与科技趋势的用户（优先考虑 TikTok 渠道）。素材形式为达人科普向短视频。文案 Hook 为\"想了解加密货币但不知从何开始？\"，Body 强调\"拒绝盲目跟风。在 OSL Learn 掌握基础知识，安全开启你的数字资产之旅\"，CTA 引导\"免费学习并注册\"。"
+          "markdown": "### 受众定向\n- **渠道**：TikTok 优先\n- **目标用户**：18-25 岁、关注个人理财与科技趋势\n### 素材与文案\n- **素材形式**：达人科普向短视频\n- **文案 Hook**：\"想了解加密货币但不知从何开始？\"\n- **核心策略**：强调 OSL Learn 基础知识学习，引导安全开启数字资产之旅\n- **CTA**：免费学习并注册"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk：Gen Z has the highest risk appetite of any generation",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2034769913324188071"
         }
       ],

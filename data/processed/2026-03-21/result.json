@@ -16,32 +16,32 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "* **平台/渠道**：Google Search (HK & Global), Meta Leads (HK)\n* **素材类型**：静态图 / 6-10s 短视频\n* **文案**：Hook: 机构持续增持 BTC，市场关键位博弈。Body: 把握市场机遇，在 OSL 安全交易 BTC。\n* **受众定向**：关注加密货币、比特币、投资理财的用户。"
+          "markdown": "### 受众定向\n**关注加密货币、比特币、投资理财的用户**。\n### 素材与文案\n- **平台/渠道**: Google Search (HK & Global), Meta Leads (HK)\n- **Hook**: 机构持续增持 BTC，市场关键位博弈。\n- **Body**: 把握市场机遇，在 OSL 安全交易 BTC。香港持牌平台，资金安全有保障。\n- **CTA**: 立即注册，开启安全交易之旅。\n### 注意事项\n**HK 站强调持牌背书**；Global 站强调 0 费率和法币出入金。"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "* **资源位**：首页 Banner / 行情页置顶卡\n* **文案**：BTC 关键位震荡，机构持续增持，立即查看最新行情。\n* **Push 文案**：BTC 价格在 $70K 附近震荡，机构持续增持，点击查看最新行情。"
+          "markdown": "### 核心策略\n**全量用户覆盖，重点召回已入金未交易用户**。\n### 触达形式\n- **资源位**: 首页 Banner / 行情页置顶卡\n- **Push 文案**: BTC 价格在 $70K 附近震荡，机构持续增持，点击查看最新行情。\n- **跳转**: 直接跳转至 **BTC 交易对页面**。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：BTC 底部, BTC 抄底, 比特币机构增持, BTC 价格走势\n* **大纲要点**：H2: BTC 价格在 $70K 附近震荡；H2: 长期持有者抛售放缓，机构持续增持。"
+          "markdown": "### 关键词簇\n**BTC 底部, BTC 抄底, 比特币机构增持, BTC 价格走势**\n### 内容结构\n- **H2**: BTC 价格在 $70K 附近震荡；\n- **H2**: 长期持有者抛售放缓，机构持续增持；\n- **H2**: 如何在 OSL 安全交易 BTC。"
         },
         {
           "name": "社区",
-          "markdown": "* **话题角度**：分享机构增持 BTC 的数据，讨论市场长期价值。\n* **评论引导**：大家认为 BTC 下一步走势如何？"
+          "markdown": "### 话题角度\n**分享机构增持 BTC 的数据**，讨论市场长期价值。\n### 引导目标\n引导用户分享看法，**提升社群活跃度**。"
         }
       ],
       "sources": [
         {
-          "name": "The Block: Bitcoin long-term holder selling slows",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394467/bitcoin-long-term-holder-activity-slows-vaneck"
         },
         {
-          "name": "CoinTelegraph: Bitcoin price aims to hold $70K",
+          "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bitcoin-price-aims-to-hold-70k-amid-rising-inflation-concerns"
         },
         {
-          "name": "lookonchain: BlackRock deposits ETH and BTC",
+          "name": "lookonchain",
           "url": "https://x.com/lookonchain/status/2034940940973150671"
         }
       ],
@@ -61,28 +61,28 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "* **平台/渠道**：Google Search (HK & Global)\n* **文案**：Hook: ETH 交易量创 3 年新高，巨鲸持续买入。CTA: 立即交易 ETH。"
+          "markdown": "### 受众定向\n**关注以太坊、智能合约、DeFi 的用户**。\n### 素材文案\n- **Hook**: ETH 交易量创 3 年新高，巨鲸持续买入。\n- **Body**: 紧跟市场趋势，在 OSL 交易 ETH。安全、合规、高效。\n- **CTA**: 立即交易 ETH。"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "* **资源位**：行情页置顶卡\n* **Push 文案**：ETH 交易量创 3 年新高，巨鲸持续买入，点击查看行情。"
+          "markdown": "### 人群圈选\n**持有 ETH 或曾交易过 ETH 的用户**。\n### 触达形式\n- **资源位**: 行情页置顶卡\n- **Push**: ETH 交易量创 3 年新高，巨鲸持续买入，点击查看行情。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：ETH 买入时机, 以太坊交易量, ETH 巨鲸买入\n* **大纲要点**：H2: ETH Taker 成交量创 3 年新高；H2: 巨鲸持续买入 ETH。"
+          "markdown": "### 关键词簇\n**ETH 买入时机, 以太坊交易量, ETH 巨鲸买入**\n### 大纲要点\n- **H2**: ETH Taker 成交量创 3 年新高；\n- **H2**: 巨鲸持续买入 ETH；\n- **H2**: 在 OSL 交易 ETH 的优势。"
         }
       ],
       "sources": [
         {
-          "name": "CoinTelegraph: Ether taker volume hits 3-year high",
+          "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/ether-taker-volume-hits-3-year-high-will-eth-avoid-a-19percent-price-decline"
         },
         {
-          "name": "lookonchain: Whale buys 14,425 ETH",
+          "name": "lookonchain",
           "url": "https://x.com/lookonchain/status/2035023649984663876"
         },
         {
-          "name": "律动: Bitmine 质押 ETH 总量达 314 万枚",
+          "name": "律动 BlockBeats",
           "url": "https://m.theblockbeats.info/flash/337371"
         }
       ],
@@ -102,32 +102,32 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "* **文案**：Hook: 保护您的加密资产安全。Body: OSL 作为香港持牌平台，全方位保障您的资金安全。"
+          "markdown": "### 核心策略\n**强调安全合规**，转化搜索安全风险关键词的用户。\n### 文案要求\n- **Hook**: 保护您的加密资产安全。\n- **Body**: OSL 作为香港持牌平台，采用机构级安全标准，全方位保障您的资金安全。\n- **CTA**: 了解 OSL 安全机制。"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "* **资源位**：帮助中心置顶 / 首页 Banner\n* **站内信**：发送安全提醒，提示用户更新 iOS 系统，警惕不明链接。"
+          "markdown": "### 行动要点\n- **帮助中心**: 置顶安全提醒，发布 **OSL 安全指南**。\n- **站内信**: 提示用户更新 iOS 系统，警惕不明链接。\n- **首页 Banner**: 滚动播放近期安全防范提示。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：加密钱包被盗, iOS 恶意软件, 防钓鱼指南\n* **大纲要点**：H2: 近期 iOS 恶意软件解析；H2: OSL 的机构级安全保障。"
+          "markdown": "### 关键词簇\n**加密钱包被盗, iOS 恶意软件, 防钓鱼指南, OSL 安全**\n### 大纲要求\n- **H2**: 近期 iOS 恶意软件及钓鱼事件解析；\n- **H2**: 如何保护您的加密资产安全；\n- **H2**: OSL 的机构级安全保障。"
         },
         {
           "name": "社区",
-          "markdown": "* **话题角度**：发布防钓鱼/官方核验提醒，安抚用户情绪。"
+          "markdown": "### 风险回复模板\n**OSL 采用多重安全机制保障用户资产**，请认准官方域名 osl.com，切勿点击不明链接。"
         }
       ],
       "sources": [
         {
-          "name": "CoinTelegraph: Google Threat Intel flags 'Ghostblade' crypto-stealing malware",
+          "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/google-ghostblade-crypto-stealing-malware"
         },
         {
-          "name": "WuBlockchain: Google disclosed DarkSword iOS exploit chain",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2034964742704370075"
         },
         {
-          "name": "Odaily: BONKfun 遭社工攻击",
+          "name": "Odaily",
           "url": "https://www.odaily.news/zh-CN/newsflash/473174"
         }
       ],
@@ -147,28 +147,28 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "* **平台/渠道**：Google Web (Global), TikTok (印尼)\n* **文案**：Hook: 市场波动加剧，寻找资产避风港？Body: OSL StableHub 提供稳定币理财。"
+          "markdown": "### 受众定向\n**关注宏观经济、避险资产、理财的用户**。\n### 素材策略\n- **形式**: 短视频（对比传统资产波动与稳定币收益）\n- **文案**: 市场波动加剧，寻找资产避风港？OSL StableHub 提供稳定币理财，灵活存取。\n- **KPI**: 转化 StableHub 的申购率。"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "* **资源位**：资产页模块 / 活动专题页\n* **Push 文案**：市场波动加剧，OSL StableHub 为您提供资产避风港。"
+          "markdown": "### 人群圈选\n**已入金但未使用 StableHub 的用户**，以及稳定币高频转账用户。\n### 触达路径\n- **Push**: 市场波动加剧，OSL StableHub 为您提供资产避风港。\n- **跳转**: 1 跳至 StableHub 页面。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：加密避险, 稳定币理财, USDT 收益\n* **内容类型**：解读型 / 指南型"
+          "markdown": "### 关键词簇\n**加密避险, 稳定币理财, USDT 收益, USDC 机构使用**\n### 结构要点\n- **H2**: 稳定币为何成为新的避风港；\n- **H2**: 如何使用 OSL StableHub 获取稳定收益。"
         }
       ],
       "sources": [
         {
-          "name": "Odaily: 黄金创 43 年最大单周跌幅",
+          "name": "Odaily",
           "url": "https://www.odaily.news/zh-CN/newsflash/473175"
         },
         {
-          "name": "律动: 美股单日蒸发 1 万亿",
+          "name": "律动 BlockBeats",
           "url": "https://m.theblockbeats.info/flash/337367"
         },
         {
-          "name": "whale_alert: USDC 大规模铸造",
+          "name": "whale_alert",
           "url": "https://x.com/whale_alert/status/2035105797793829100"
         }
       ],
@@ -179,7 +179,7 @@
       "priority": "P1",
       "category": "监管与政策",
       "timing": "Day",
-      "relation": "Indirect",
+      "relation": "Brand",
       "intent": "深度研究 / 信任评估",
       "site": "Both",
       "executability": "B",
@@ -188,24 +188,24 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "* **文案**：Hook: 全球监管趋严，合规是加密投资的基石。CTA: 了解 OSL 合规优势。"
+          "markdown": "### 核心策略\n**强化合规心智**，在 HK 站投放合规广告。\n### 文案要求\n- **Hook**: 全球监管趋严，合规是加密投资的基石。\n- **Body**: OSL 作为香港首家持牌数字资产平台，始终拥抱监管。\n- **CTA**: 了解 OSL 合规优势。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：稳定币监管, CLARITY Act, 合规交易所\n* **大纲要点**：H2: 美国稳定币立法最新进展解析；H2: 监管清晰化对加密市场的影响。"
+          "markdown": "### 关键词簇\n**稳定币监管, CLARITY Act, 加密货币立法, 合规交易所**\n### 核心内容\n深度解析稳定币立法最新进展及对市场的长期影响。"
         },
         {
           "name": "社区",
-          "markdown": "* **话题角度**：讨论稳定币立法对行业的影响，强调 OSL 的合规优势。"
+          "markdown": "### 引导方向\n**讨论稳定币立法对行业的影响**，强调 OSL 的合规前瞻性。"
         }
       ],
       "sources": [
         {
-          "name": "The Block: Lawmakers reach breakthrough with ‘agreement in principle’ over stablecoin yield",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394554/lawmakers-breakthrough-agreement-in-principle-stablecoin-yield-sweeping-crypto-bill"
         },
         {
-          "name": "WatcherGuru: Senators reach deal with White House to resolve crypto stablecoin yield dispute",
+          "name": "WatcherGuru",
           "url": "https://x.com/WatcherGuru/status/2035073481709146379"
         }
       ],
@@ -225,24 +225,24 @@
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "* **EDM**：向 HK 站 VIP 及机构用户发送深度研报，解读 SEC 代币化证券框架。\n* **主题**：【OSL 洞察】SEC 批准代币化证券框架，RWA 赛道迎来新机遇。"
+          "markdown": "### 目标人群\n**HK 站 VIP 及机构用户**。\n### 核心内容\n- **EDM**: 向高净值用户发送深度研报，解读 SEC 框架。\n- **主题**: 【OSL 洞察】SEC 批准代币化证券框架，RWA 赛道迎来新机遇。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：代币化证券, RWA, SEC 监管框架\n* **大纲要点**：H2: SEC 明确数字资产五类分类；H2: OSL 在代币化资产领域的合规探索。"
+          "markdown": "### 关键词簇\n**代币化证券, RWA, SEC 监管框架, 数字资产分类**\n### 大纲结构\n- **H2**: SEC 明确数字资产五类分类；\n- **H2**: OSL 在代币化资产领域的合规探索。"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk: SEC approved Nasdaq's tokenized securities framework",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2035077377223802936"
         },
         {
-          "name": "Odaily: SEC 新规终结“Gensler时代”模糊标准",
+          "name": "Odaily",
           "url": "https://www.odaily.news/zh-CN/newsflash/473180"
         },
         {
-          "name": "EleanorTerrett: FinancialCmte hearing on tokenization",
+          "name": "EleanorTerrett",
           "url": "https://x.com/EleanorTerrett/status/2035126649897759158"
         }
       ],
@@ -262,24 +262,24 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "* **平台/渠道**：LinkedIn, Google Search (HK)\n* **文案**：Hook: 机构加速布局加密资产。Body: OSL 为机构客户提供合规的交易与托管服务。"
+          "markdown": "### 受众定向\n**金融机构从业者、高净值人群**。\n### 平台策略\n- **LinkedIn**: 针对机构客户投放专业静态图。\n- **CTA**: 联系 OSL 机构服务团队。"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "* **EDM**：向 HK 站 VIP 及机构用户发送市场动态更新。"
+          "markdown": "### 核心动作\n向 HK 站 VIP 发送市场动态更新，**强调机构级托管服务的安全性**。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：机构加密投资, BTC 保证金, OSL 机构服务"
+          "markdown": "### 关键词簇\n**机构加密投资, BTC 保证金, CFTC 加密监管, OSL 机构服务**\n### 内容重点\n解读 CFTC 新规对机构入场的助推作用。"
         }
       ],
       "sources": [
         {
-          "name": "saylor: CFTC announces Futures Commission Merchants can accept Bitcoin as margin collateral",
+          "name": "saylor",
           "url": "https://x.com/saylor/status/2035020067134476530"
         },
         {
-          "name": "The Block: Morgan Stanley advances bitcoin ETF application",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394448/morgan-stanley-amended-s-1-filing"
         }
       ],
@@ -294,26 +294,22 @@
       "intent": "信任评估",
       "site": "Global",
       "executability": "C",
-      "summary": "发布 OSL Global 合约差异化内容，投放 brand 信任广告，社区引导用户关注 OSL 的合规与稳定。",
+      "summary": "发布 OSL Global 合约差异化内容，投放品牌信任广告，社区引导用户关注 OSL 的合规与稳定。",
       "dont_do": "绝对不点名攻击竞品（如 Gemini）。",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "* **文案**：Hook: 寻找稳定可靠的加密交易平台？Body: OSL Global 提供透明、安全的合约交易体验。"
+          "markdown": "### 核心文案\n- **Hook**: 寻找稳定可靠的加密交易平台？\n- **Body**: OSL Global 提供流畅的合约交易体验，透明、安全、值得信赖。\n- **CTA**: 立即体验 OSL 合约交易。"
         },
         {
           "name": "社区",
-          "markdown": "* **话题角度**：收集用户对当前合约产品的反馈，作为产品迭代参考。"
+          "markdown": "### 话题方向\n**收集用户对合约产品的反馈**，调研用户对股票永续等新增交易对的需求。"
         }
       ],
       "sources": [
         {
-          "name": "The Block: Coinbase launches stock perpetual futures",
+          "name": "The Block",
           "url": "https://www.theblock.co/post/394485/coinbase-launches-stock-perpetual-futures-for-magnificent-7-names-including-apple-tesla-and-nvidia-expanding-everything-exchange-push"
-        },
-        {
-          "name": "The Block: Gemini hit with investor lawsuit",
-          "url": "https://www.theblock.co/post/394477/gemini-faces-investor-lawsuit-earnings-layoffs"
         }
       ],
       "id": "ap_8"
@@ -332,20 +328,20 @@
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "* **EDM**：向越南用户发送越南语邮件，强调 OSL 的全球合规背景。"
+          "markdown": "### 核心动作\n向越南用户发送 **越南语 EDM**，强调 OSL 的全球合规背景，安抚资金安全顾虑。"
         },
         {
           "name": "SEO",
-          "markdown": "* **关键词簇**：越南加密禁令, 合规加密交易所 (越南语本地化)"
+          "markdown": "### 关键词簇\n**越南加密禁令, 合规加密交易所, 安全交易平台** (需本地化翻译)\n### 形式\n**FAQ 问答型文章**，解答当地合规性疑虑。"
         },
         {
           "name": "社区",
-          "markdown": "* **平台**：越南社群\n* **话题角度**：解答用户关于平台合规性的疑问，重申安全承诺。"
+          "markdown": "### 引导策略\n在越南社群重申 **OSL 对用户资产安全的承诺**，稳定用户情绪。"
         }
       ],
       "sources": [
         {
-          "name": "WuBlockchain: Vietnam Plans to Ban Overseas Crypto Platforms",
+          "name": "WuBlockchain",
           "url": "https://x.com/WuBlockchain/status/2034980600151453997"
         }
       ],

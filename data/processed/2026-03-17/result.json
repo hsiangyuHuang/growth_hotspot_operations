@@ -3,7 +3,7 @@
   "header_markdown": "",
   "cards": [
     {
-      "title": "BTC突破$75K创六周新高，机构买盘强劲",
+      "title": "BTC 突破 $75K，机构买盘强劲",
       "priority": "P0",
       "category": "行情驱动",
       "timing": "Day",
@@ -16,19 +16,19 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向：HK 站定向高净值/金融从业者；Global 站定向有加密交易经验用户。 素材形式：6-10s 真人短视频（\"3 点解释机构为何买入\"）+ 静态图（BTC 突破 $75K 走势图 + OSL Logo）。 文案：Hook：BTC 突破 $75,000，机构资金持续流入。Body：Strategy、Metaplanet 等机构持续增持，加密 ETP 连续三周净流入超 10 亿美元。在 OSL，与机构同行。CTA：立即登录 OSL 交易 BTC（HK 站：享 VIP 专属权益 / Global 站：体验 0 费率交易）。 落地页建议：直接跳转至 BTC 交易对页面。"
+          "markdown": "### 受众定向\n* **HK 站**：定向高净值/金融从业者\n* **Global 站**：定向有加密交易经验用户\n\n### 素材与文案\n* **素材形式**：6-10s 真人短视频（\"3 点解释机构为何买入\"）+ 静态图（BTC 突破 $75K 走势图 + OSL Logo）\n* **核心文案**：BTC 突破 $75,000，机构资金持续流入。Strategy、Metaplanet 等机构持续增持，加密 ETP 连续三周净流入超 10 亿美元。\n\n### 落地页\n* 直接跳转至 **BTC 交易对页面**"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位：首页 Banner（\"BTC 突破 $75K，把握市场机遇\"）+ 行情页置顶卡。 Push 文案：BTC 突破 $75,000 创六周新高！机构资金持续流入，立即登录 OSL 查看最新行情并开启交易。 EDM 内容：发送《市场快报：BTC 突破 $75K 背后的机构力量》，盘点 Strategy/Bitmine 增持数据，底部附带\"一键交易\"和\"开启定投\"按钮。 跳转路径：1 跳至 BTC 交易页。"
+          "markdown": "### 核心策略\n* **首页资源**：上线 Banner（\"BTC 突破 $75K，把握市场机遇\"）+ 行情页置顶卡\n* **Push 通知**：推送 **BTC 突破 $75,000 创六周新高** 消息，促活交易\n* **EDM 营销**：发送《市场快报：BTC 突破 $75K 背后的机构力量》，盘点机构增持数据\n\n### KPI 目标\n* 提升 **BTC 交易量** 与 **活跃交易人数**"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词：BTC 突破 75000 长尾词：比特币为什么涨、机构买入比特币、比特币 ETF 净流入 内容类型：热点快讯型 大纲要点：1. 行情回顾（突破 $75K）；2. 驱动因素（ETF 净流入、Strategy/Metaplanet 增持）；3. OSL 交易指南。 时效要求：4 小时内上线。"
+          "markdown": "### 关键词布局\n* **核心词**：**BTC 突破 75000**\n* **长尾词**：比特币为什么涨、机构买入比特币、比特币 ETF 净流入\n\n### 内容大纲\n1. 行情回顾（突破 $75K）\n2. 驱动因素（ETF 净流入、机构增持）\n3. **OSL 交易指南**\n\n### 交付要求\n* 4 小时内完成发稿"
         },
         {
           "name": "社区",
-          "markdown": "平台：全平台（华语/越南/印尼/通用） 话题角度：探讨机构持续买入对后市的影响，分享定投策略。 形式：行情播报图文 + 互动问答。 评论引导：1. \"大家觉得这波能稳住吗？\" 2. \"定投 BTC 的朋友现在收益如何？\" 3. \"在 OSL 交易 BTC，安全合规有保障。\""
+          "markdown": "### 话题方向\n* 探讨 **机构持续买入** 对后市的影响，分享定投策略\n* 引导用户讨论：\"大家觉得这波能稳住吗？\"\n\n### 互动策略\n* 发布 **行情播报图文** + 互动问答\n* 强调 **OSL 安全合规** 交易优势"
         }
       ],
       "sources": [
@@ -42,7 +42,7 @@
         },
         {
           "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/strategy-1-6-billion-bitcoin-buy-holdings-top-761k-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+          "url": "https://cointelegraph.com/news/strategy-1-6-billion-bitcoin-buy-holdings-top-761k-btc"
         }
       ],
       "id": "ap_1"
@@ -61,15 +61,15 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "主关键词：比特币 避险资产 长尾词：比特币 vs 黄金、地缘政治对比特币的影响、如何投资比特币避险 内容类型：解读型 大纲要点：1. 近期宏观背景（地缘紧张、油价波动）；2. 数据对比（BTC 跑赢黄金与标普 500）；3. 机构观点（QCP、Bernstein 视 BTC 为数字避险资产）；4. OSL 合规入金指南。 时效要求：24-48 小时内上线。"
+          "markdown": "### 关键词布局\n* **核心词**：**比特币 避险资产**\n* **长尾词**：比特币 vs 黄金、地缘政治对比特币的影响\n\n### 内容结构\n1. **宏观背景**：地缘紧张、油价波动分析\n2. **数据对比**：BTC 跑赢黄金与标普 500 的实证\n3. **OSL 指南**：如何在动荡中进行合规资产配置"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位：OSL Learn 学院页推荐阅读。 EDM 内容：针对 VIP 及高净值用户发送《OSL 宏观洞察：动荡市场中的数字避险资产》，强调 OSL 的安全合规属性，引导其将部分资产配置为 BTC。"
+          "markdown": "### 触达方案\n* **OSL Learn**：推荐深度分析文章\n* **EDM 定向**：针对 **VIP 及高净值用户** 发送《OSL 宏观洞察：数字避险资产》，强调 **安全合规属性**"
         },
         {
           "name": "社区",
-          "markdown": "平台：华语/通用社群 话题角度：讨论在当前宏观环境下，BTC 是否已经取代黄金成为首选避险资产。 形式：长文分析 + 投票（\"你更倾向于持有黄金还是 BTC？\"）。"
+          "markdown": "### 话题引导\n* **辩论角度**：\"BTC 是否已经取代黄金成为首选避险资产？\"\n* **内容形式**：长文分析 + 互动投票\n* **关键点**：强化 BTC 作为 **数字黄金** 的叙事"
         }
       ],
       "sources": [
@@ -98,15 +98,15 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向：Global 站（特别是台湾、印尼等对稳定币需求高的地区）有理财习惯的用户。 素材形式：静态图（对比图表：USDC 交易量增长 + StableHub 收益率）。 文案：Hook：稳定币市场格局生变，USDC 交易量首超 USDT。Body：监管趋严，合规稳定币成为主流选择。在 OSL Global 体验 StableHub，享零滑点兑换与稳健理财收益。CTA：立即开启 StableHub 理财（新用户享专属高息）。 落地页建议：跳转至 StableHub 专题页。"
+          "markdown": "### 受众定向\n* **Global 站**：侧重台湾、印尼等高需求地区有理财习惯的用户\n\n### 创意策略\n* **素材**：展示 **USDC 增长趋势** 与 **StableHub 收益率** 对比图\n* **核心文案**：监管趋严，合规稳定币成为主流选择。在 OSL 享 **零滑点兑换** 与稳健收益\n\n### CTA\n* 立即开启 **StableHub** 理财"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位：资产页模块提示 + 活动专题页。 Push 文案：稳定币监管升级？来 OSL StableHub，合规理财更安心，新客专享高达 100% APR！ 站内信：针对\"已入金未交易\"及\"稳定币高频转账\"用户，推送 StableHub 介绍及一键划转指引。"
+          "markdown": "### 站内触达\n* **Push 文案**：稳定币监管升级？来 OSL **StableHub**，新客专享高达 **100% APR**\n* **站内信**：定向推送给\"已入金未交易\"用户，提供一键划转指引\n* **资源位**：资产页置顶 StableHub 模块提示"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词：USDC USDT 对比 长尾词：FATF 稳定币监管、合规稳定币有哪些、稳定币理财平台推荐 内容类型：指南型/解读型 大纲要点：1. USDC 交易量反超原因分析；2. FATF 二级市场监管影响；3. OSL StableHub 优势（合规、零滑点、收益）。"
+          "markdown": "### 关键词布局\n* **主词**：**USDC USDT 对比**\n* **长尾词**：FATF 稳定币监管、合规稳定币推荐、稳定币理财\n\n### 内容重点\n* 强调 **OSL StableHub** 的合规性、零滑点与竞争性收益"
         }
       ],
       "sources": [
@@ -135,21 +135,21 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "主关键词：加密货币安全 长尾词：如何防范加密钓鱼诈骗、合规加密交易所推荐、资产隔离是什么 内容类型：指南型/FAQ 型 大纲要点：1. 近期行业风险事件盘点（钓鱼诈骗高发、平台挪用资金风险）；2. 识别\"授权钓鱼\"（Approval Phishing）的实用技巧；3. OSL 如何保障用户资产安全（持牌监管、100% 资产隔离、定期审计）。 时效要求：48 小时内上线。"
+          "markdown": "### 关键词布局\n* **核心词**：**加密货币安全**\n* **长尾词**：如何防范钓鱼诈骗、合规交易所推荐、资产隔离是什么\n\n### 内容要点\n* 盘点 **授权钓鱼**（Approval Phishing）技巧\n* 介绍 **OSL 资产安全机制**：100% 资产隔离、定期审计"
         },
         {
           "name": "社区",
-          "markdown": "平台：全平台（重点覆盖非华语区，提升信任度） 话题角度：分享防骗经验，科普资产隔离的重要性。 形式：安全防范 Checklist 图文 + 官方核验通道提醒。 评论引导：\"近期行业安全事件频发，请大家务必认准 OSL 官方域名，切勿随意点击不明链接或授权。OSL 严格遵守监管要求，实行 100% 客户资产隔离，保障您的资金安全。\""
+          "markdown": "### 互动策略\n* **形式**：发布 **安全防范 Checklist** 图文\n* **关键动作**：提醒用户认准官方域名，强调 OSL **持牌监管** 背景\n* **受众**：重点覆盖非华语区以提升全球信任度"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位：帮助中心置顶《OSL 官方防骗指南与安全声明》。 EDM 内容：全量发送安全提醒邮件，强调 OSL 的合规背书，安抚用户情绪。"
+          "markdown": "### 核心资源\n* **帮助中心**：置顶《OSL 官方防骗指南》\n* **EDM**：发送全量 **安全提醒邮件**，利用合规背书安抚用户情绪"
         }
       ],
       "sources": [
         {
           "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/us-uk-canada-enforcement-operation-crypto-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+          "url": "https://cointelegraph.com/news/us-uk-canada-enforcement-operation-crypto-fraud"
         },
         {
           "name": "Decrypt",
@@ -172,16 +172,16 @@
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "受众定向：香港地区，搜索竞品词（HashKey、香港加密交易所等）的用户。 素材形式：静态图（清晰展示 OSL 阶梯入金奖励层级）。 文案：Hook：在香港交易加密货币？选择首家持牌平台 OSL。Body：尊享 VIP 专属权益，完成阶梯入金任务，即领高达 1000 港币等值 BTC 奖励。安全、合规、高流动性。CTA：立即开户领奖。 落地页建议：跳转至 VIP 权益及入金奖励说明页。"
+          "markdown": "### 投放策略\n* **受众**：香港地区搜索 **竞品词**（如 HashKey、香港持牌交易所）的用户\n* **核心卖点**：OSL **首家持牌平台** 身份 + 阶梯入金奖励\n\n### 文案示例\n* **Hook**：在香港交易加密货币？选择首家持牌平台 OSL\n* **Body**：入金即领高达 **1000 HKD 等值 BTC**"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位：首页 Banner 突出\"新客入金领 BTC\"活动。 Push 文案：OSL 迎新福利！完成首笔入金，最高可获 1000 HKD 等值 BTC，立即参与！ 站内信：针对\"新注册未入金\"用户，发送 Step-by-Step 入金指引及奖励提醒。"
+          "markdown": "### 触达动作\n* **首页 Banner**：突出\"新客入金领 BTC\"活动\n* **Push**：定向推送给注册未入金用户，发送 **Step-by-Step 入金指引**"
         }
       ],
       "sources": [
         {
-          "name": "Twitter @HashKeyExchange",
+          "name": "HashKey Exchange",
           "url": "https://x.com/HashKeyExchange/status/2033473973976273314"
         }
       ],
@@ -201,16 +201,16 @@
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "HK 站 (仅限 PI)：通过 EDM 和 1 对 1 BD 建联，向 PI 用户发送《XRP 市场异动分析》，提示交易机会。 Global 站：资源位：行情页置顶 XRP 交易对。Push 文案：XRP 强势反弹，重夺 900 亿美元市值！立即在 OSL Global 把握交易良机。 跳转路径：1 跳至 XRP 现货/合约交易页。"
+          "markdown": "### 定向策略\n* **Global 站**：全量推送 **XRP 现货/合约交易** 机会\n* **HK 站**：仅限 **PI 用户**，通过 EDM 和 1 对 1 BD 发送《XRP 市场异动分析》\n\n### 资源位\n* 行情页置顶 **XRP 交易对**"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词：XRP 价格走势 长尾词：XRP 为什么涨、PayFi 是什么、哪里可以交易 XRP 内容类型：热点快讯型 大纲要点：1. XRP 近期价格表现及市值突破；2. PayFi 板块整体走势分析；3. OSL 交易指引（需明确区分 HK PI 与 Global 权限）。"
+          "markdown": "### 关键词布局\n* **核心词**：**XRP 价格走势**\n* **长尾词**：XRP 为什么涨、PayFi 是什么、哪里可以交易 XRP\n\n### 内容结构\n* 播报市值突破，分析 **PayFi 板块** 走势，植入 OSL 交易指引"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk Twitter",
+          "name": "CoinDesk",
           "url": "https://x.com/CoinDesk/status/2033548208308199840"
         }
       ],
@@ -230,21 +230,21 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "主关键词：加密货币合规 长尾词：香港加密货币牌照、澳大利亚加密法案、持牌加密交易所优势 内容类型：解读型 大纲要点：1. 全球监管动态（澳洲立法、SEC 态度软化）；2. 持牌经营成为行业必然趋势；3. OSL 的合规护城河（SFC 牌照、审计标准）。 时效要求：2-3 天内上线。"
+          "markdown": "### 关键词布局\n* **核心词**：**加密货币合规**\n* **长尾词**：香港加密牌照、澳大利亚加密法案、持牌交易所优势\n\n### 内容核心\n* 论证 **持牌经营** 是行业必然趋势，强调 OSL 的 **SFC 牌照** 护城河"
         },
         {
           "name": "社区",
-          "markdown": "平台：华语社群 话题角度：探讨全球监管趋严对普通投资者的影响。 形式：长文分析 + 互动讨论。 评论引导：\"大家在选择交易所时，最看重哪些合规指标？\""
+          "markdown": "### 讨论引导\n* **话题**：\"全球监管趋严对投资者的影响？\"\n* **核心动作**：互动讨论持牌指标的重要性，提升用户对 **合规平台** 的认知度"
         }
       ],
       "sources": [
         {
           "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/australian-senate-committee-backs-new-crypto-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+          "url": "https://cointelegraph.com/news/australian-senate-committee-backs-new-crypto-bill"
         },
         {
           "name": "The Block",
-          "url": "https://www.theblock.co/post/393803/sec-hester-peirce-encourages-firms-tokenization-come-in-talk-to-us?utm_source=rss&utm_medium=rss"
+          "url": "https://www.theblock.co/post/393803/sec-hester-peirce-encourages-firms-tokenization-come-in-talk-to-us"
         }
       ],
       "id": "ap_7"
@@ -263,11 +263,11 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "主关键词：AI 加密货币 长尾词：AI 概念币有哪些、如何购买加密货币、加密货币入门指南 内容类型：指南型/热点快讯型 大纲要点：1. 英伟达 GTC 大会引发的 AI 赛道热潮；2. AI 与 Web3 结合的潜力分析；3. 新手如何安全合规地进入加密市场（OSL 注册与法币入金教程）。 时效要求：24 小时内上线。"
+          "markdown": "### 关键词布局\n* **核心词**：**AI 加密货币**\n* **长尾词**：AI 概念币、如何购买加密货币、加密货币入门\n\n### 转化逻辑\n* 利用 **英伟达 GTC** 热度吸引科技圈流量，落地页提供 **OSL 注册与法币入金教程**"
         },
         {
           "name": "社区",
-          "markdown": "平台：全平台 话题角度：AI 与 Crypto 的结合是噱头还是未来？ 形式：话题讨论。 评论引导：\"大家觉得 AI 赛道还有哪些未被发掘的机会？\""
+          "markdown": "### 话题方向\n* **内容**：讨论 AI 与 Crypto 结合的长期潜力\n* **互动**：引导用户思考除了代币，Web3 为 AI 提供了哪些基础设施"
         }
       ],
       "sources": [
@@ -292,11 +292,11 @@
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "资源位：行情页置顶 SOL 交易对。 Push 文案：SOL 现货 ETF 持续净流入！机构资金加持，立即在 OSL 把握 SOL 交易机会。 跳转路径：1 跳至 SOL 交易页。"
+          "markdown": "### 触达动作\n* **Push**：SOL 现货 ETF 持续净流入，机构资金加持！立即交易\n* **行情置顶**：行情页置顶 **SOL 交易对**\n* **跳转**：一跳直达交易页面"
         },
         {
           "name": "SEO",
-          "markdown": "主关键词：SOL ETF 净流入 长尾词：Solana 生态发展、SOL 价格预测分析、如何购买 SOL 内容类型：热点快讯型 大纲要点：1. SOL ETF 资金流入数据播报；2. Solana 网络近期数据表现；3. OSL 交易指引。"
+          "markdown": "### 关键词布局\n* **主词**：**SOL ETF 净流入**\n* **长尾词**：Solana 生态发展、SOL 价格预测、购买 SOL\n\n### 内容重点\n* 播报资金流入数据，结合 **Solana 网络数据** 表现产出快讯"
         }
       ],
       "sources": [
@@ -321,20 +321,20 @@
       "channels": [
         {
           "name": "SEO",
-          "markdown": "主关键词：DeFi 安全风险 长尾词：智能合约漏洞、预言机操纵、CeFi 与 DeFi 区别 内容类型：解读型/FAQ 型 大纲要点：1. 近期 DeFi 安全事件复盘（价格误差、操纵攻击）；2. DeFi 常见的系统性风险；3. OSL 作为合规 CeFi 平台的安全机制（冷热钱包隔离、多重签名、保险覆盖）。 时效要求：48 小时内上线。"
+          "markdown": "### 关键词布局\n* **核心词**：**DeFi 安全风险**\n* **长尾词**：智能合约漏洞、预言机操纵、CeFi 与 DeFi 区别\n\n### 内容大纲\n1. 近期 DeFi 事件复盘\n2. **DeFi 系统性风险** 解析\n3. **OSL 安全标准**：冷热钱包隔离、多重签名、保险覆盖"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "EDM 内容：向高净值及机构用户发送《OSL 托管安全报告》，结合近期 DeFi 风险事件，重申 OSL 的资产保护措施，增强大资金留存信心。"
+          "markdown": "### 针对性触达\n* **EDM**：向 **高净值及机构用户** 发送《OSL 托管安全报告》，增强大资金留存信心"
         }
       ],
       "sources": [
         {
           "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/how-a-2-85-price-error-triggered-27m-in-liquidations-on-aave?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+          "url": "https://cointelegraph.com/news/how-a-2-85-price-error-triggered-27m-in-liquidations-on-aave"
         },
         {
-          "name": "Twitter @lookonchain",
+          "name": "Lookonchain",
           "url": "https://x.com/lookonchain/status/2033371536875491706"
         }
       ],
