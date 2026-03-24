@@ -49,36 +49,20 @@
     </div>
   </header>
 
-  <!-- Navigation Bar -->
+  <!-- Filter Bar -->
   <div id="filter-bar" class="sticky top-0 z-20 bg-navy/95 backdrop-blur-md border-b border-white/[0.08]">
     <div class="max-w-7xl mx-auto px-6 py-3">
       <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <!-- 顶级导航：热点情报 / 竞品动态 -->
-        <div class="flex items-center gap-1 bg-white/[0.04] rounded-lg p-0.5">
-          <button class="nav-btn active text-xs font-semibold px-4 py-1.5 rounded-md transition-all duration-200" data-section="hotspot">热点情报</button>
-          <button class="nav-btn text-xs font-semibold px-4 py-1.5 rounded-md transition-all duration-200" data-section="competitors">竞品动态</button>
+        <div class="flex items-center gap-1.5">
+          <button class="tab-btn active text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="today">📡 今日</button>
+          <button class="tab-btn text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="history">📂 历史存档</button>
         </div>
         <div class="w-px h-5 bg-white/10"></div>
-        <!-- 热点子 Tab -->
-        <div class="flex items-center gap-1.5" id="hotspot-sub-tabs">
-          <button class="tab-btn active text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="today">今日</button>
-          <button class="tab-btn text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="history">历史存档</button>
-        </div>
-        <!-- 热点筛选器 -->
-        <div id="hotspot-filters" class="flex items-center gap-x-4 gap-y-2 flex-wrap">
-          <div class="w-px h-5 bg-white/10"></div>
-          <div class="flex items-center gap-1.5" id="filter-priority"><span class="text-xs text-slate-500 font-medium mr-1">优先级</span></div>
-          <div class="w-px h-5 bg-white/10"></div>
-          <div class="flex items-center gap-1.5" id="filter-channel"><span class="text-xs text-slate-500 font-medium mr-1">渠道</span></div>
-          <div class="w-px h-5 bg-white/10"></div>
-          <div class="flex items-center gap-1.5" id="filter-site"><span class="text-xs text-slate-500 font-medium mr-1">站点</span></div>
-        </div>
-        <!-- 竞品筛选器 -->
-        <div id="comp-filters" class="hidden flex items-center gap-x-4 gap-y-2 flex-wrap">
-          <div class="flex items-center gap-1.5" id="comp-region-filter"></div>
-          <div class="w-px h-5 bg-white/10"></div>
-          <div class="flex items-center gap-1.5" id="comp-name-filter"></div>
-        </div>
+        <div class="flex items-center gap-1.5" id="filter-priority"><span class="text-xs text-slate-500 font-medium mr-1">优先级</span></div>
+        <div class="w-px h-5 bg-white/10"></div>
+        <div class="flex items-center gap-1.5" id="filter-channel"><span class="text-xs text-slate-500 font-medium mr-1">渠道</span></div>
+        <div class="w-px h-5 bg-white/10"></div>
+        <div class="flex items-center gap-1.5" id="filter-site"><span class="text-xs text-slate-500 font-medium mr-1">站点</span></div>
         <div class="ml-auto text-xs text-slate-500 font-mono" id="filter-count"></div>
       </div>
     </div>
