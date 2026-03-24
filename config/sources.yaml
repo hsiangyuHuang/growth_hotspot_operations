@@ -75,6 +75,11 @@ twitter:
     - "Bybit_Official"    # Bybit 官方
     - "KrakenExchange"    # Kraken
     - "coinbase"          # Coinbase 官方
+    - "saylor"            # Michael Saylor
+    - "BlockBeatsAsia"    # BlockBeats 亚洲
+    - "AltcoinDaily"      # Altcoin Daily
+    - "MicroStrategy"     # MicroStrategy
+    - "PANews"            # PANews
   max_tweets_per_account: 20
 
 # telegram:  # 暂时屏蔽：需要交互式登录

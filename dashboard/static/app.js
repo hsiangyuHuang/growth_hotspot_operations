@@ -1,17 +1,25 @@
 // ── Config ──
 const REFRESH_INTERVAL = 5 * 60 * 1000;
+let currentSection = "hotspot"; // "hotspot" | "competitors"
 let currentTab = "today";
 let filterPriority = "ALL";
 let filterChannel = "ALL";
 let filterSite = "ALL";
 let _currentData = null;
 let refreshTimer = null;
+let _compExpandedSet = new Set();
 
 // Auto-detect: static site (Vercel) vs local FastAPI
 const IS_STATIC = !window.location.port || window.location.hostname !== 'localhost';
 const API = IS_STATIC
-  ? { today: "./data/latest.json", dates: "./data/dates.json", history: (d) => `./data/${d}.json` }
-  : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}` };
+  ? { today: "./data/latest.json", dates: "./data/dates.json", history: (d) => `./data/${d}.json`,
+      compToday: "./data/competitors/latest.json", compDates: "./data/competitors/dates.json", compHistory: (d) => `./data/competitors/${d}.json` }
+  : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}`,
+      compToday: "/api/competitors/today", compDates: "/api/competitors/dates", compHistory: (d) => `/api/competitors/history?date=${d}` };
+
+let _compData = null;
+let compFilterName = "ALL";
+let compFilterRegion = "ALL";
 
 // ── Design Tokens ──
 const URGENCY_CONFIG = {
@@ -49,34 +57,77 @@ const EXEC_CONFIG = {
 
 // ── Bootstrap ──
 document.addEventListener("DOMContentLoaded", () => {
-  setupTabs();
+  setupNav();
   loadToday();
-  refreshTimer = setInterval(loadToday, REFRESH_INTERVAL);
+  refreshTimer = setInterval(() => { if (currentSection === 'hotspot') loadToday(); }, REFRESH_INTERVAL);
 });
 
-function setupTabs() {
-  document.querySelectorAll(".tab-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
+function _activateBtn(btn, allSelector) {
+  document.querySelectorAll(allSelector).forEach(b => {
+    b.classList.remove("active", "bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
+    b.classList.add("text-slate-400");
+  });
+  btn.classList.add("active", "bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
+  btn.classList.remove("text-slate-400");
+}
+
+function _switchSection(section) {
+  currentSection = section;
+  const hotspotSubs = document.getElementById('hotspot-sub-tabs');
+  const hotspotFilters = document.getElementById('hotspot-filters');
+  const compFilters = document.getElementById('comp-filters');
+  const dateSel = document.getElementById('date-selector');
+
+  if (section === 'hotspot') {
+    hotspotSubs.classList.remove('hidden');
+    hotspotFilters.classList.remove('hidden');
+    compFilters.classList.add('hidden');
+    if (currentTab === 'today') {
+      dateSel.style.display = 'none';
+      loadToday();
+    } else {
+      dateSel.style.display = '';
+      loadDates();
+    }
+  } else {
+    hotspotSubs.classList.add('hidden');
+    hotspotFilters.classList.add('hidden');
+    compFilters.classList.remove('hidden');
+    dateSel.style.display = 'none';
+    loadCompetitors();
+  }
+}
+
+function setupNav() {
+  // 顶级导航
+  document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      _activateBtn(btn, '.nav-btn');
+      _switchSection(btn.dataset.section);
+    });
+  });
+  // 初始化顶级导航样式
+  document.querySelector('.nav-btn.active').classList.add('bg-white/[0.12]', 'text-white', 'ring-1', 'ring-inset', 'ring-white/15', 'shadow-sm');
+  document.querySelectorAll('.nav-btn:not(.active)').forEach(b => b.classList.add('text-slate-400'));
+
+  // 热点子 Tab
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
       currentTab = btn.dataset.tab;
-      document.querySelectorAll(".tab-btn").forEach(b => {
-        b.classList.remove("active", "bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
-        b.classList.add("text-slate-400");
-      });
-      btn.classList.add("active", "bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
-      btn.classList.remove("text-slate-400");
-      const dateSel = document.getElementById("date-selector");
-      if (currentTab === "today") {
-        dateSel.style.display = "none";
+      _activateBtn(btn, '.tab-btn');
+      const dateSel = document.getElementById('date-selector');
+      if (currentTab === 'today') {
+        dateSel.style.display = 'none';
         _selectedHistoryDate = null;
         loadToday();
-      } else {
-        dateSel.style.display = "";
+      } else if (currentTab === 'history') {
+        dateSel.style.display = '';
         loadDates();
       }
     });
   });
-  document.querySelector('.tab-btn.active').classList.add("bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
-  document.querySelectorAll('.tab-btn:not(.active)').forEach(b => b.classList.add("text-slate-400"));
+  document.querySelector('.tab-btn.active').classList.add('bg-white/[0.12]', 'text-white', 'ring-1', 'ring-inset', 'ring-white/15', 'shadow-sm');
+  document.querySelectorAll('.tab-btn:not(.active)').forEach(b => b.classList.add('text-slate-400'));
 }
 
 // ── Filter Rendering ──
@@ -541,4 +592,289 @@ function renderEmptyState() {
 
 function esc(str) {
   return String(str || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── Competitor Intelligence Module ──
+// ══════════════════════════════════════════════════════════════
+
+const REGION_CONFIG = {
+  'HK':     { label: '香港站',   color: 'text-sky-400',     bg: 'bg-sky-500/10',     bar: 'bg-sky-500',     border: 'border-sky-500/25' },
+  'VN':     { label: '越南站',   color: 'text-emerald-400', bg: 'bg-emerald-500/10', bar: 'bg-emerald-500', border: 'border-emerald-500/25' },
+  'EU':     { label: '欧洲站',   color: 'text-indigo-400',  bg: 'bg-indigo-500/10',  bar: 'bg-indigo-500',  border: 'border-indigo-500/25' },
+  'ID':     { label: '印尼站',   color: 'text-amber-400',   bg: 'bg-amber-500/10',   bar: 'bg-amber-500',   border: 'border-amber-500/25' },
+  'BROKER': { label: '跨区域券商', color: 'text-violet-400', bg: 'bg-violet-500/10', bar: 'bg-violet-500', border: 'border-violet-500/25' },
+};
+
+const IMPORTANCE_CONFIG = {
+  high:   { label: '重要', color: 'text-red-400', bg: 'bg-red-500/10' },
+  medium: { label: '常规', color: 'text-amber-400', bg: 'bg-amber-500/10' },
+  low:    { label: '日常', color: 'text-slate-400', bg: 'bg-slate-500/10' },
+};
+
+const CATEGORY_LABELS = {
+  '新币上线': { color: 'text-teal-400', bg: 'bg-teal-500/10' },
+  '产品更新': { color: 'text-blue-400', bg: 'bg-blue-500/10' },
+  '活动推广': { color: 'text-orange-400', bg: 'bg-orange-500/10' },
+  '合作伙伴': { color: 'text-purple-400', bg: 'bg-purple-500/10' },
+  '监管合规': { color: 'text-yellow-400', bg: 'bg-yellow-500/10' },
+  '融资/IPO': { color: 'text-green-400', bg: 'bg-green-500/10' },
+  '人事变动': { color: 'text-pink-400', bg: 'bg-pink-500/10' },
+  '其他':     { color: 'text-slate-400', bg: 'bg-slate-500/10' },
+};
+
+async function loadCompetitors() {
+  try {
+    const res = await fetch(API.compToday);
+    if (!res.ok) { renderCompetitorEmpty(); return; }
+    const data = await res.json();
+    _compData = data;
+    renderCompetitorDashboard(data);
+  } catch (e) {
+    console.error("Failed to load competitors:", e);
+    renderCompetitorEmpty();
+  }
+}
+
+function renderCompetitorEmpty() {
+  document.getElementById("card-sections").innerHTML = `
+    <div class="text-center py-20 text-slate-500 font-body">
+      <p class="text-sm">暂无竞品动态数据</p>
+      <p class="text-xs text-slate-600 mt-1">等待数据抓取与处理完成</p>
+    </div>`;
+}
+
+function renderCompetitorDashboard(data) {
+  const competitors = data.competitors || [];
+  if (!competitors.length) { renderCompetitorEmpty(); return; }
+
+  document.getElementById("header-date").textContent = data.run_date
+    ? `数据更新于 ${data.run_date}` : "";
+
+  // Filters
+  renderCompetitorFilter(competitors);
+
+  // Apply region + name filter
+  let filtered = competitors;
+  if (compFilterRegion !== "ALL") {
+    filtered = filtered.filter(c => c.region === compFilterRegion);
+  }
+  if (compFilterName !== "ALL") {
+    filtered = filtered.filter(c => c.name === compFilterName);
+  }
+
+  // Stats
+  const totalEvents = competitors.reduce((s, c) => s + (c.events || []).length, 0);
+  const highEvents = competitors.reduce((s, c) => s + (c.events || []).filter(e => e.importance === 'high').length, 0);
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="text-center"><div class="text-xl font-display font-bold text-white">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-cyan-400">${totalEvents}</div><div class="text-[10px] text-slate-500 font-mono">动态事件</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-red-400">${highEvents}</div><div class="text-[10px] text-slate-500 font-mono">重要事件</div></div>`;
+
+  // Group by region and render
+  const regionOrder = ['HK', 'VN', 'EU', 'ID', 'BROKER'];
+  const byRegion = {};
+  filtered.forEach(c => {
+    const r = c.region || 'HK';
+    (byRegion[r] = byRegion[r] || []).push(c);
+  });
+
+  let html = '';
+  let cardIdx = 0;
+  regionOrder.forEach(region => {
+    const comps = byRegion[region];
+    if (!comps || !comps.length) return;
+    const rc = REGION_CONFIG[region] || REGION_CONFIG.HK;
+    const regionEvents = comps.reduce((s, c) => s + (c.events || []).length, 0);
+
+    html += `<section class="mb-6">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="h-3 w-3 rounded-full ${rc.bar} shrink-0"></span>
+        <h2 class="text-sm font-display font-bold ${rc.color} tracking-wide uppercase">${rc.label}</h2>
+        <div class="flex-1 h-px bg-white/[0.06]"></div>
+        <span class="text-[10px] font-mono text-slate-500">${comps.length} 家 · ${regionEvents} 条动态</span>
+      </div>
+      <div class="space-y-3">
+        ${comps.map(comp => renderCompetitorCard(comp, cardIdx++)).join('')}
+      </div>
+    </section>`;
+  });
+
+  if (!html) html = '<div class="text-center py-10 text-slate-500 text-sm">当前筛选无结果</div>';
+
+  document.getElementById("card-sections").innerHTML = html;
+  renderCompetitorSidebar(competitors);
+
+  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${data.run_date || ""}`;
+  document.getElementById("footer-right").textContent = `竞品监测 · ${competitors.length} 家竞品 · ${totalEvents} 条动态`;
+  document.getElementById("filter-count").textContent = `${filtered.length} / ${competitors.length} 家竞品`;
+}
+
+function renderCompetitorFilter(competitors) {
+  const base = 'text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer select-none';
+  const activeCls = 'bg-white/[0.12] text-white ring-1 ring-inset ring-white/15 shadow-sm';
+  const inactiveCls = 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.06]';
+
+  // Region filter
+  const regions = [...new Set(competitors.map(c => c.region || 'HK'))];
+  const regionBtns = ["ALL", ...regions];
+  document.getElementById("comp-region-filter").innerHTML =
+    '<span class="text-xs text-slate-500 font-medium mr-1">地区</span>' +
+    regionBtns.map(r => {
+      const rc = REGION_CONFIG[r];
+      const label = r === "ALL" ? "全部" : (rc ? rc.label : r);
+      const isActive = compFilterRegion === r;
+      return `<button onclick="setCompRegion('${esc(r)}')" class="${base} ${isActive ? activeCls : inactiveCls}">${label}</button>`;
+    }).join("");
+
+  // Name filter (within selected region)
+  let namePool = competitors;
+  if (compFilterRegion !== "ALL") {
+    namePool = competitors.filter(c => (c.region || 'HK') === compFilterRegion);
+  }
+  const names = ["ALL", ...namePool.map(c => c.name)];
+  document.getElementById("comp-name-filter").innerHTML =
+    '<span class="text-xs text-slate-500 font-medium mr-1">竞品</span>' +
+    names.map(n => {
+      const label = n === "ALL" ? "全部" : n;
+      const isActive = compFilterName === n;
+      return `<button onclick="setCompName('${esc(n)}')" class="${base} ${isActive ? activeCls : inactiveCls}">${label}</button>`;
+    }).join("");
+}
+
+function setCompRegion(region) {
+  compFilterRegion = region;
+  compFilterName = "ALL";
+  if (_compData) renderCompetitorDashboard(_compData);
+}
+
+function setCompName(name) {
+  compFilterName = name;
+  if (_compData) renderCompetitorDashboard(_compData);
+}
+
+function renderCompetitorCard(comp, index) {
+  const region = comp.region || 'HK';
+  const rc = REGION_CONFIG[region] || REGION_CONFIG.HK;
+  const events = comp.events || [];
+  const highCount = events.filter(e => e.importance === 'high').length;
+  const isExpanded = _compExpandedSet.has(comp.name);
+
+  const eventCountBadge = highCount > 0
+    ? `<span class="text-[10px] font-mono text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded">${highCount} 重要</span>`
+    : '';
+
+  const eventsHtml = events.map((ev, ei) => {
+    const imp = IMPORTANCE_CONFIG[ev.importance] || IMPORTANCE_CONFIG.low;
+    const catStyle = CATEGORY_LABELS[ev.category] || CATEGORY_LABELS['其他'];
+    const sources = (ev.sources || []).map(s =>
+      `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"
+        class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors underline underline-offset-2 decoration-slate-700 hover:decoration-cyan-500/50">${esc(s.name)}</a>`
+    ).join('<span class="text-slate-700 mx-1">·</span>');
+
+    return `<div class="flex items-start gap-3 py-2.5 ${ei > 0 ? 'border-t border-white/[0.05]' : ''}">
+      <div class="min-w-0 flex-1">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-[10px] font-mono px-1.5 py-0.5 rounded ${catStyle.color} ${catStyle.bg}">${esc(ev.category)}</span>
+          <span class="text-[10px] font-mono ${imp.color}">${imp.label}</span>
+        </div>
+        <h4 class="text-[12px] font-display font-semibold text-white leading-snug mb-1">${esc(ev.title)}</h4>
+        <div class="prose-container text-[11px] leading-relaxed text-slate-400" data-md="${encodeURIComponent(ev.summary || '')}" id="comp-md-${index}-${ei}"></div>
+        ${sources ? `<div class="flex flex-wrap items-center gap-1 mt-1.5">${sources}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  // Initials as avatar
+  const initials = comp.name.replace(/[^A-Za-z\u4e00-\u9fff]/g, '').slice(0, 2).toUpperCase();
+
+  return `
+  <div class="comp-card relative rounded-lg border ${isExpanded ? rc.border : 'border-white/[0.08]'} bg-navy-light overflow-hidden transition-all duration-200 hover:shadow-lg hover:shadow-black/30"
+       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.04}s">
+    <div class="absolute left-0 top-0 bottom-0 w-1 ${rc.bar}"></div>
+    <div class="pl-4 pr-4 pt-3.5 pb-3">
+      <button onclick="toggleCompCard('${esc(comp.name)}', ${index})" class="w-full text-left">
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="w-8 h-8 rounded-md ${rc.bg} ${rc.color} flex items-center justify-center text-[11px] font-bold font-mono shrink-0">${initials}</div>
+            <div class="min-w-0">
+              <h3 class="text-sm font-display font-semibold text-white leading-snug">${esc(comp.name)}</h3>
+              <p class="text-[11px] text-slate-400 mt-0.5 font-body truncate">${esc(comp.summary)}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            ${eventCountBadge}
+            <span class="text-[10px] font-mono text-slate-500">${events.length} 条</span>
+            <span class="text-slate-500 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}" id="comp-arrow-${index}">▾</span>
+          </div>
+        </div>
+      </button>
+      <div id="comp-detail-${index}" class="${isExpanded ? '' : 'hidden'} mt-3 pt-3 border-t border-white/[0.06]">
+        ${events.length > 0 ? eventsHtml : '<p class="text-[11px] text-slate-500 py-2">今日无重大动态</p>'}
+      </div>
+    </div>
+  </div>`;
+}
+
+function toggleCompCard(compName, index) {
+  const detail = document.getElementById(`comp-detail-${index}`);
+  const arrow = document.getElementById(`comp-arrow-${index}`);
+  if (!detail) return;
+
+  const wasHidden = detail.classList.contains('hidden');
+  if (wasHidden) {
+    detail.classList.remove('hidden');
+    arrow.classList.add('rotate-180');
+    _compExpandedSet.add(compName);
+    detail.querySelectorAll('.prose-container[data-md]').forEach(el => {
+      if (!el.dataset.rendered && el.dataset.md) {
+        el.innerHTML = marked.parse(decodeURIComponent(el.dataset.md));
+        el.dataset.rendered = "1";
+      }
+    });
+  } else {
+    detail.classList.add('hidden');
+    arrow.classList.remove('rotate-180');
+    _compExpandedSet.delete(compName);
+  }
+}
+
+function renderCompetitorSidebar(competitors) {
+  const catCounts = {};
+  competitors.forEach(c => (c.events || []).forEach(e => {
+    catCounts[e.category] = (catCounts[e.category] || 0) + 1;
+  }));
+
+  let html = '';
+
+  html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">事件分类</h3>
+    <div class="space-y-2">${Object.entries(catCounts).sort((a,b) => b[1]-a[1]).map(([cat, cnt]) => {
+      const cs = CATEGORY_LABELS[cat] || CATEGORY_LABELS['其他'];
+      return `<div class="flex items-center justify-between gap-2">
+        <span class="text-[10px] font-body ${cs.color}">${cat}</span>
+        <span class="text-[10px] font-mono text-slate-500">${cnt}</span>
+      </div>`;
+    }).join("")}</div>
+  </div>`;
+
+  // By region
+  const regionOrder = ['HK', 'VN', 'EU', 'ID', 'BROKER'];
+  html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">竞品活跃度</h3>
+    <div class="space-y-2">${competitors.map(c => {
+      const rc = REGION_CONFIG[c.region] || REGION_CONFIG.HK;
+      const n = (c.events || []).length;
+      return `<div class="flex items-center justify-between gap-2">
+        <span class="text-[10px] font-body text-slate-400">${c.name}</span>
+        <div class="flex items-center gap-2">
+          <span class="text-[10px] font-mono ${rc.color}">${(REGION_CONFIG[c.region] || REGION_CONFIG.HK).label}</span>
+          <span class="text-[10px] font-mono text-slate-500">${n}</span>
+        </div>
+      </div>`;
+    }).join("")}</div>
+  </div>`;
+
+  document.getElementById("sidebar-content").innerHTML = html;
 }

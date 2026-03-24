@@ -10,6 +10,7 @@ from fastapi.staticfiles import StaticFiles
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
+COMP_DIR = DATA_DIR / "competitors" / "processed"
 
 app = FastAPI(title="OSL Growth Hotspot Dashboard")
 
@@ -61,6 +62,60 @@ async def get_dates():
         [
             d.name
             for d in PROCESSED_DIR.iterdir()
+            if d.is_dir() and (d / "result.json").exists()
+        ],
+        reverse=True,
+    )
+    return {"dates": dates}
+
+
+# ── Competitor API ──
+
+def _load_comp_result(date_str: str) -> Optional[dict]:
+    json_path = COMP_DIR / date_str / "result.json"
+    if json_path.exists():
+        with open(json_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return None
+
+
+@app.get("/api/competitors/today")
+async def get_comp_today():
+    today = date.today().isoformat()
+    result = _load_comp_result(today)
+    if not result:
+        # 回退到最近可用日期
+        if COMP_DIR.exists():
+            dates = sorted(
+                [d.name for d in COMP_DIR.iterdir() if d.is_dir() and (d / "result.json").exists()],
+                reverse=True,
+            )
+            if dates:
+                result = _load_comp_result(dates[0])
+                if result:
+                    return result
+        return JSONResponse({"run_date": today, "competitors": []})
+    return result
+
+
+@app.get("/api/competitors/history")
+async def get_comp_history(date: Optional[str] = Query(None)):
+    if not date:
+        raise HTTPException(status_code=400, detail="date parameter required")
+    result = _load_comp_result(date)
+    if not result:
+        raise HTTPException(status_code=404, detail=f"No competitor data for {date}")
+    return result
+
+
+@app.get("/api/competitors/dates")
+async def get_comp_dates():
+    if not COMP_DIR.exists():
+        return {"dates": []}
+    dates = sorted(
+        [
+            d.name
+            for d in COMP_DIR.iterdir()
             if d.is_dir() and (d / "result.json").exists()
         ],
         reverse=True,

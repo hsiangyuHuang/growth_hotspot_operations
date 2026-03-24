@@ -1,0 +1,155 @@
+# 竞品监测配置 — 按 OSL 业务辖区分组
+lookback_hours: 24
+content_limit: 500
+
+competitors:
+
+  # ── 香港站（SFC VATP 持牌/申牌） ──
+  - name: "HashKey"
+    region: "HK"
+    twitter: ["HashKeyExchange", "HashKeyGroup", "HSKChain"]
+    rss: []
+    web:
+      - url: "https://group.hashkey.com/en/newsroom"
+        type: "newsroom"
+      - url: "https://support.hashkey.com/hc/en-gb/categories/16026270600089-Announcement"
+        type: "announcement"
+
+  - name: "HKVAX"
+    region: "HK"
+    twitter: []
+    rss: []
+    web:
+      - url: "https://www.hkvax.com/news"
+        type: "newsroom"
+
+  - name: "HKbitEX"
+    region: "HK"
+    twitter: ["HKbitEX"]
+    rss: []
+    web: []
+
+  - name: "VDX"
+    region: "HK"
+    twitter: []
+    rss: []
+    web: []
+
+  - name: "Bullish"
+    region: "HK"
+    twitter: ["Bullish"]
+    rss: []
+    web:
+      - url: "https://bullish.com/blog"
+        type: "blog"
+
+  # ── 越南站 ──
+  - name: "VNDC"
+    region: "VN"
+    twitter: ["VNDCWallet"]
+    rss: []
+    web: []
+
+  - name: "Remitano"
+    region: "VN"
+    twitter: ["Remitano"]
+    rss: []
+    web: []
+
+  # ── 欧洲站（MiCA 合规） ──
+  - name: "Bitstamp"
+    region: "EU"
+    twitter: ["Bitstamp"]
+    rss: []
+    web:
+      - url: "https://www.bitstamp.net/blog/"
+        type: "blog"
+
+  - name: "Bitpanda"
+    region: "EU"
+    twitter: ["Bitpanda"]
+    rss: []
+    web: []
+
+  - name: "Kraken"
+    region: "EU"
+    twitter: ["KrakenExchange"]
+    rss:
+      - url: "https://blog.kraken.com/feed"
+        name: "Kraken Blog"
+    web: []
+
+  - name: "Coinbase"
+    region: "EU"
+    twitter: ["coinbase"]
+    rss:
+      - url: "https://www.coinbase.com/blog/rss.xml"
+        name: "Coinbase Blog"
+    web: []
+
+  # ── 印尼站（Bappebti） ──
+  - name: "Indodax"
+    region: "ID"
+    twitter: ["indodax"]
+    rss: []
+    web:
+      - url: "https://indodax.com/blog"
+        type: "blog"
+
+  - name: "Tokocrypto"
+    region: "ID"
+    twitter: ["Tokocrypto"]
+    rss: []
+    web: []
+
+  - name: "PINTU"
+    region: "ID"
+    twitter: ["PintuID"]
+    rss: []
+    web: []
+
+  - name: "Upbit Indonesia"
+    region: "ID"
+    twitter: ["UPBITIndonesia"]
+    rss: []
+    web: []
+
+  # ── 跨区域券商（传统金融跨界） ──
+  - name: "富途/Moomoo"
+    region: "BROKER"
+    twitter: ["MoomooApp"]
+    rss: []
+    web: []
+
+  - name: "老虎证券"
+    region: "BROKER"
+    twitter: ["TigerBrokers"]
+    rss: []
+    web: []
+
+  - name: "盈透证券"
+    region: "BROKER"
+    twitter: ["IBKR"]
+    rss: []
+    web: []
+
+# 媒体关键词过滤
+media_keywords:
+  HashKey:   ["HashKey", "HSK", "3887.HK"]
+  HKVAX:     ["HKVAX"]
+  HKbitEX:   ["HKbitEX"]
+  VDX:       ["VDX", "Victory Securities"]
+  Bullish:   ["Bullish"]
+  VNDC:      ["VNDC"]
+  Remitano:  ["Remitano"]
+  Bitstamp:  ["Bitstamp"]
+  Bitpanda:  ["Bitpanda"]
+  Kraken:    ["Kraken"]
+  Coinbase:  ["Coinbase", "COIN", "Brian Armstrong"]
+  Indodax:   ["Indodax"]
+  Tokocrypto: ["Tokocrypto"]
+  PINTU:     ["PINTU"]
+  "Upbit Indonesia": ["Upbit Indonesia", "Upbit ID"]
+  "富途/Moomoo": ["Moomoo", "Futu", "富途"]
+  "老虎证券": ["Tiger Brokers", "老虎证券"]
+  "盈透证券": ["IBKR", "Interactive Brokers", "盈透"]

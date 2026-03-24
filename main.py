@@ -73,6 +73,36 @@ async def run_fetch_and_process():
         logger.warning(f"跳过 Manus 处理：{e}")
         logger.info(f"原始数据已保存至 {out_path}，配置好 MANUS_API_KEY 后重新运行即可")
 
+    # 竞品抓取 + Gemini 提取
+    await run_competitor_pipeline(today, rss_items + twitter_items + telegram_items)
+
+
+async def run_competitor_pipeline(today: str, hotspot_items: list | None = None):
+    """竞品抓取 + Gemini 提取"""
+    logger.info("=== 开始竞品抓取 ===")
+    comp_raw_path = DATA_DIR / "competitors" / "raw" / today / "items.json"
+    comp_raw_path.parent.mkdir(parents=True, exist_ok=True)
+
+    from fetcher import competitor as comp_fetcher
+    items = await comp_fetcher.fetch_all(comp_raw_path, hotspot_items)
+    logger.info(f"竞品抓取完成：{len(items)} 条")
+
+    if not items:
+        logger.warning("未抓取到竞品数据，跳过 Gemini 提取")
+        return
+
+    logger.info("=== 开始竞品 Gemini 提取 ===")
+    from processor import competitor_extractor
+    try:
+        result = competitor_extractor.extract(items, today)
+        comp_out = DATA_DIR / "competitors" / "processed" / today / "result.json"
+        comp_out.parent.mkdir(parents=True, exist_ok=True)
+        with open(comp_out, "w", encoding="utf-8") as f:
+            json.dump(result, f, ensure_ascii=False, indent=2)
+        logger.info(f"竞品提取完成 → {comp_out}")
+    except Exception as e:
+        logger.error(f"竞品 Gemini 提取失败：{e}")
+
 
 def sync_dashboard():
     """将 data/processed/{date}/result.json 同步到 dashboard/data/"""
@@ -107,6 +137,44 @@ def sync_dashboard():
     with open(DASHBOARD_DATA_DIR / "dates.json", "w", encoding="utf-8") as f:
         json.dump(dates, f, ensure_ascii=False, indent=2)
     logger.info(f"[sync] dates.json 已更新，共 {len(dates)} 条记录")
+
+    # ── 竞品数据同步 ──
+    sync_competitor_dashboard()
+
+
+def sync_competitor_dashboard():
+    """将 data/competitors/processed/{date}/result.json 同步到 dashboard/data/competitors/"""
+    comp_processed = DATA_DIR / "competitors" / "processed"
+    comp_dashboard = DASHBOARD_DATA_DIR / "competitors"
+    if not comp_processed.exists():
+        logger.info("[sync] data/competitors/processed/ 不存在，跳过竞品同步")
+        return
+
+    comp_dashboard.mkdir(parents=True, exist_ok=True)
+
+    dates = sorted(
+        [d.name for d in comp_processed.iterdir() if d.is_dir() and (d / "result.json").exists()],
+        reverse=True,
+    )
+
+    if not dates:
+        logger.info("[sync] 没有找到竞品 result.json")
+        return
+
+    for date_str in dates:
+        src = comp_processed / date_str / "result.json"
+        dst = comp_dashboard / f"{date_str}.json"
+        shutil.copy2(src, dst)
+        logger.info(f"[sync:comp] {src} → {dst}")
+
+    # latest.json
+    shutil.copy2(comp_processed / dates[0] / "result.json", comp_dashboard / "latest.json")
+    logger.info(f"[sync:comp] latest.json → {dates[0]}")
+
+    # dates.json
+    with open(comp_dashboard / "dates.json", "w", encoding="utf-8") as f:
+        json.dump({"dates": dates}, f, ensure_ascii=False, indent=2)
+    logger.info(f"[sync:comp] dates.json 已更新，共 {len(dates)} 条记录")
 
 
 def run_dashboard():
@@ -150,6 +218,8 @@ if __name__ == "__main__":
 
     if cmd == "fetch":
         asyncio.run(run_fetch_and_process())
+    elif cmd == "comp":
+        asyncio.run(run_competitor_pipeline(date.today().isoformat()))
     elif cmd == "sync":
         sync_dashboard()
     elif cmd == "dashboard":
