@@ -2,7 +2,6 @@
 
 用法：
   python main.py fetch          # 立即抓取 + 处理（一次性）
-  python main.py sync           # 同步 data/processed/ → dashboard/data/
   python main.py dashboard      # 只启动看板
   python main.py                # 调度器模式：每日 09:00 自动执行 + 启动看板
 """
@@ -27,7 +26,6 @@ logging.basicConfig(
 logger = logging.getLogger("main")
 
 DATA_DIR = Path(__file__).parent / "data"
-DASHBOARD_DATA_DIR = Path(__file__).parent / "dashboard" / "data"
 
 _DATE_RE = __import__("re").compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -114,82 +112,29 @@ async def run_fetch_and_process():
         except Exception as e:
             logger.warning(f"竞品提取失败：{e}")
 
+    # 生成静态索引文件（供 Vercel 静态模式使用）
+    _generate_index_files()
 
-def sync_dashboard():
-    """将 data/processed/{date}/result.json + 竞品数据同步到 dashboard/data/"""
-    processed_dir = DATA_DIR / "processed"
-    competitors_dir = DATA_DIR / "competitors"
 
-    if not processed_dir.exists():
-        logger.warning("data/processed/ 不存在，无数据可同步")
-        return
-
-    DASHBOARD_DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-    # 同步主流程数据
-    dates = sorted(
-        [d.name for d in processed_dir.iterdir() if _is_date_dir(d)],
-        reverse=True,
-    )
-
-    if not dates:
-        logger.warning("没有找到任何 result.json")
-        return
-
-    for date_str in dates:
-        src = processed_dir / date_str / "result.json"
-        dst = DASHBOARD_DATA_DIR / f"{date_str}.json"
-        shutil.copy2(src, dst)
-        logger.info(f"[sync] {src} → {dst}")
-
-    # 更新 latest.json
-    latest_src = processed_dir / dates[0] / "result.json"
-    shutil.copy2(latest_src, DASHBOARD_DATA_DIR / "latest.json")
-    logger.info(f"[sync] latest.json → {dates[0]}")
-
-    # 更新 dates.json
-    with open(DASHBOARD_DATA_DIR / "dates.json", "w", encoding="utf-8") as f:
-        json.dump(dates, f, ensure_ascii=False, indent=2)
-    logger.info(f"[sync] dates.json 已更新，共 {len(dates)} 条记录")
-
-    # 同步竞品数据
-    if competitors_dir.exists():
-        comp_dashboard_dir = DASHBOARD_DATA_DIR / "competitors"
-        comp_dashboard_dir.mkdir(parents=True, exist_ok=True)
-
-        comp_dates = sorted(
-            [d.name for d in competitors_dir.iterdir() if _is_date_dir(d)],
+def _generate_index_files():
+    """生成 dates.json + latest.json 索引文件（供 Vercel 静态模式）"""
+    for subdir in ["processed", "competitors"]:
+        target_dir = DATA_DIR / subdir
+        if not target_dir.exists():
+            continue
+        dates = sorted(
+            [d.name for d in target_dir.iterdir() if _is_date_dir(d)],
             reverse=True,
         )
-
-        for date_str in comp_dates:
-            src = competitors_dir / date_str / "result.json"
-            dst = comp_dashboard_dir / f"{date_str}.json"
-            shutil.copy2(src, dst)
-            logger.info(f"[sync:competitors] {src} → {dst}")
-
-        if comp_dates:
-            shutil.copy2(
-                competitors_dir / comp_dates[0] / "result.json",
-                comp_dashboard_dir / "latest.json",
-            )
-            with open(comp_dashboard_dir / "dates.json", "w", encoding="utf-8") as f:
-                json.dump(comp_dates, f, ensure_ascii=False, indent=2)
-            logger.info(f"[sync:competitors] 已更新，共 {len(comp_dates)} 条记录")
-
-    # 同步信源配置
-    import yaml
-    sources_path = Path(__file__).parent / "config" / "sources.yaml"
-    if sources_path.exists():
-        with open(sources_path, "r", encoding="utf-8") as f:
-            sources_data = yaml.safe_load(f)
-        sources_out = {
-            "rss": sources_data.get("rss", []),
-            "twitter": sources_data.get("twitter", {}),
-        }
-        with open(DASHBOARD_DATA_DIR / "sources.json", "w", encoding="utf-8") as f:
-            json.dump(sources_out, f, ensure_ascii=False, indent=2)
-        logger.info("[sync] sources.json 已更新")
+        if not dates:
+            continue
+        # dates.json
+        with open(target_dir / "dates.json", "w", encoding="utf-8") as f:
+            json.dump(dates, f, ensure_ascii=False, indent=2)
+        # latest.json — 复制最新日期的 result.json
+        latest_src = target_dir / dates[0] / "result.json"
+        shutil.copy2(latest_src, target_dir / "latest.json")
+        logger.info(f"[index] {subdir}: dates.json ({len(dates)} 条) + latest.json → {dates[0]}")
 
 
 def run_dashboard():
@@ -233,8 +178,6 @@ if __name__ == "__main__":
 
     if cmd == "fetch":
         asyncio.run(run_fetch_and_process())
-    elif cmd == "sync":
-        sync_dashboard()
     elif cmd == "dashboard":
         run_dashboard()
     else:

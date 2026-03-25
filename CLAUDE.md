@@ -8,7 +8,6 @@
 
 ```bash
 python main.py fetch      # 一次性抓取 + AI 处理
-python main.py sync       # 同步数据到 dashboard/data/（供静态部署）
 python main.py dashboard  # 启动看板（默认 :8080）
 python main.py            # 调度模式：每日 09:00 自动执行 + 看板
 ```
@@ -45,16 +44,16 @@ python main.py            # 调度模式：每日 09:00 自动执行 + 看板
 
 ### 数据读取路径（双模式）
 
-- FastAPI 动态模式：`dashboard/app.py` 直接读 `data/processed/` 和 `data/competitors/`
-- 静态部署模式：前端 JS 读 `dashboard/data/`（由 `sync` 命令从源目录复制）
+- FastAPI 动态模式：`dashboard/app.py` 直接读 `data/processed/` 和 `data/competitors/`，信源读 `config/*.yaml`
+- Vercel 静态模式：前端 JS 直接读 `data/processed/`、`data/competitors/`、`config/*.yaml`（js-yaml 解析）
 
 ## 目录结构
 
 ```
-main.py                   # 入口：命令分发 + 调度 + fetch/sync/dashboard
+main.py                   # 入口：命令分发 + 调度 + fetch/dashboard
 config/
   sources.yaml            # 主流程信源（RSS 11个 + Twitter 25+账号）
-  competitors.yaml        # 竞品配置（32个竞品，T1-T4 分层，7 区域，含媒体关键词）
+  competitors.yaml        # 竞品配置（30个竞品，T1-T4 分层，7 区域，含媒体关键词）
 fetcher/
   rss.py                  # RSS 并发抓取，feedparser 解析，24h 时间过滤
   twitter.py              # TwitterAPI.io 串行抓取（避免 429），指数退避重试
@@ -66,11 +65,11 @@ processor/
   competitor_extractor.py # Gemini 提取竞品简报 JSON + 按配置补全所有竞品（async）
 dashboard/
   app.py                  # FastAPI 看板（7 个 API 端点，含 /api/sources）
-  index.html              # Vercel 静态部署入口（与 templates/index.html 同步）
+  index.html              # Vercel 静态部署入口
   templates/index.html    # FastAPI 单页模板
   static/app.js           # 前端交互（三栏切换：热点/竞品/信源，过滤/日历/自动刷新 5min）
   static/style.css        # 样式（侧边栏导航 + 卡片 + 动画）
-  data/                   # sync 输出目录（供静态部署）
+vercel.json               # Vercel rewrite 规则（根目录部署）
 knowledge/                # 业务知识库（SOP、周会纪要等）
 ```
 
@@ -82,13 +81,13 @@ knowledge/                # 业务知识库（SOP、周会纪要等）
 - `TELEGRAM_API_ID` / `TELEGRAM_API_HASH` — Telegram（可选，目前已注释）
 - `DASHBOARD_PORT` — 看板端口（默认 8080）
 
-## 竞品分层（32 家，7 区域）
+## 竞品分层（30 家，7 区域）
 
-- T1 HK 核心竞对：HashKey、HKVAX、HKbitEX、VDX、Bullish
+- T1 HK 核心竞对：HashKey、HKVAX、VDX、Bullish
 - T2 头部交易所：Binance、OKX、Bybit、Coinbase、Kraken
 - T3 区域竞品：
   - JP(bitFlyer/Coincheck/GMO Coin/bitbank/SBI VC Trade/Rakuten Wallet)
-  - VN(VNDC/Remitano)
+  - VN(Remitano)
   - EU(Bitstamp/Bitpanda/Bitvavo/Crypto.com/Gemini)
   - ID(Indodax/Tokocrypto/PINTU/Upbit/Luno/Reku)
 - T4 BROKER 轻量监控：富途/老虎/盈透（仅关注加密相关）
@@ -97,8 +96,8 @@ knowledge/                # 业务知识库（SOP、周会纪要等）
 
 - Web 可爬（12 家）：HKVAX、Bullish、Coincheck、bitbank、Bitstamp、Bitpanda、Crypto.com、Gemini、Indodax、PINTU、Luno、Reku
 - RSS/API（9 家）：Binance(API)、Bybit(API)、Coinbase(RSS)、Kraken(RSS)、GMO Coin(RSS)、bitbank(RSS)、Tokocrypto(RSS)、富途(RSS)、老虎(RSS)、盈透(RSS)
-- 仅 Twitter（11 家）：HashKey、HKbitEX、VDX、OKX、VNDC、Remitano、bitFlyer、SBI VC Trade、Rakuten Wallet、Bitvavo、Upbit Indonesia
-- Web 不可用原因：SPA 需 JS 渲染（HKbitEX/SBI VC Trade）、WAF 拦截（HashKey/Rakuten Wallet/Bitvavo/bitFlyer）、地区限制（OKX）
+- 仅 Twitter（9 家）：HashKey、VDX、OKX、Remitano、bitFlyer、SBI VC Trade、Rakuten Wallet、Bitvavo、Upbit Indonesia
+- Web 不可用原因：SPA 需 JS 渲染（SBI VC Trade）、WAF 拦截（HashKey/Rakuten Wallet/Bitvavo/bitFlyer）、地区限制（OKX）
 
 ## 数据存储结构
 
@@ -108,14 +107,13 @@ data/
 ├── processed/{date}/
 │   ├── result.md                      # Manus 输出的 Markdown
 │   └── result.json                    # Gemini 结构化行动包
-└── competitors/{date}/
-    ├── items.json                     # 竞品原始数据（官方渠道 + 媒体过滤）
-    └── result.json                    # Gemini 结构化竞品简报
-
-dashboard/data/                        # sync 输出（静态部署用）
-├── {date}.json / latest.json / dates.json
-├── competitors/{date}.json / latest.json / dates.json
-└── sources.json                       # 信源配置（sync 从 config/sources.yaml 生成）
+├── processed/dates.json               # 可用日期索引（fetch 自动生成）
+├── processed/latest.json              # 最新日期数据副本
+├── competitors/{date}/
+│   ├── items.json                     # 竞品原始数据（官方渠道 + 媒体过滤）
+│   └── result.json                    # Gemini 结构化竞品简报
+├── competitors/dates.json             # 竞品日期索引
+└── competitors/latest.json            # 最新竞品数据副本
 ```
 
 ## API 端点
@@ -149,6 +147,7 @@ Python 3.13 + httpx + feedparser + BeautifulSoup4 + FastAPI + google-genai + APS
 
 ## CI/CD
 
-- GitHub Action `daily_fetch.yml`：每日北京时间 07:30（UTC 23:30）自动执行 fetch + sync + commit + push
-- 提交范围：`data/**/*.json`、`data/**/*.md`、`dashboard/data/*.json`、`dashboard/data/competitors/*.json`、`dashboard/data/sources.json`
-- Vercel 静态部署：`dashboard/` 目录，`index.html` + `static/` + `data/`
+- GitHub Action `daily_fetch.yml`：每日北京时间 07:30（UTC 23:30）自动执行 fetch + commit + push
+- fetch 结束自动生成 `dates.json` + `latest.json` 索引文件
+- 提交范围：`data/**/*.json`、`data/**/*.md`
+- Vercel 静态部署：仓库根目录，`vercel.json` 配置 rewrite 规则，前端直接读 `data/` 和 `config/`

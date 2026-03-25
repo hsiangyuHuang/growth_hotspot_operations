@@ -11,14 +11,11 @@ let refreshTimer = null;
 // Auto-detect: static site (Vercel) vs local FastAPI
 const IS_STATIC = !window.location.port || window.location.hostname !== 'localhost';
 const API = IS_STATIC
-  ? { today: "./data/latest.json", dates: "./data/dates.json", history: (d) => `./data/${d}.json` }
+  ? { today: "./data/processed/latest.json", dates: "./data/processed/dates.json", history: (d) => `./data/processed/${d}/result.json` }
   : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}` };
 const COMP_API = IS_STATIC
-  ? { today: "./data/competitors/latest.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}.json` }
+  ? { today: "./data/competitors/latest.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}/result.json` }
   : { today: "/api/competitors/today", dates: "/api/competitors/dates", history: (d) => `/api/competitors/history?date=${d}` };
-const SRC_API = IS_STATIC
-  ? { sources: "./data/sources.json" }
-  : { sources: "/api/sources" };
 
 // ── Design Tokens ──
 const URGENCY_CONFIG = {
@@ -855,9 +852,26 @@ _compMdObserver.observe(document.body, { childList: true, subtree: true });
 
 async function loadSources() {
   try {
-    const res = await fetch(SRC_API.sources);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
+    let data;
+    if (IS_STATIC) {
+      const [srcRes, compRes] = await Promise.all([
+        fetch("./config/sources.yaml"),
+        fetch("./config/competitors.yaml"),
+      ]);
+      if (!srcRes.ok) throw new Error(`sources.yaml HTTP ${srcRes.status}`);
+      if (!compRes.ok) throw new Error(`competitors.yaml HTTP ${compRes.status}`);
+      const srcYaml = jsyaml.load(await srcRes.text());
+      const compYaml = jsyaml.load(await compRes.text());
+      data = {
+        rss: (srcYaml && srcYaml.rss) || [],
+        twitter: (srcYaml && srcYaml.twitter) || {},
+        competitors: (compYaml && compYaml.competitors) || [],
+      };
+    } else {
+      const res = await fetch("/api/sources");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      data = await res.json();
+    }
     renderSourcesDashboard(data);
   } catch (e) {
     console.error("Failed to load sources:", e);
@@ -868,50 +882,88 @@ async function loadSources() {
   }
 }
 
+
 function renderSourcesDashboard(data) {
   const rssList = data.rss || [];
   const twitterAccounts = (data.twitter && data.twitter.accounts) || [];
+  const competitors = data.competitors || [];
 
-  // Header
+  const compTwitter = competitors.reduce((n, c) => n + (c.twitter || []).length, 0);
+  const compRss = competitors.reduce((n, c) => n + (c.rss || []).length, 0);
+  const compWeb = competitors.reduce((n, c) => n + (c.web || []).length, 0);
+  const compApi = competitors.reduce((n, c) => n + (c.api || []).length, 0);
+  const compChannels = compTwitter + compRss + compWeb + compApi;
+
   document.getElementById("header-date").textContent = "信源配置";
-  document.getElementById("header-subtitle").textContent = `共 ${rssList.length + twitterAccounts.length} 个数据源`;
-  document.getElementById("filter-count").textContent =
-    `${rssList.length} RSS · ${twitterAccounts.length} Twitter`;
+  document.getElementById("header-subtitle").textContent = `热点 ${rssList.length + twitterAccounts.length} 源 · 竞品 ${competitors.length} 家 ${compChannels} 渠道`;
+  document.getElementById("filter-count").textContent = '';
 
-  // Hero stats
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-xl font-display font-bold text-white">${rssList.length + twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">总信源</div></div>
-    <div class="w-px h-8 bg-white/10"></div>
     <div class="text-center"><div class="text-xl font-display font-bold text-orange-400">${rssList.length}</div><div class="text-[10px] text-slate-500 font-mono">RSS</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-sky-400">${twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">Twitter</div></div>`;
+    <div class="text-center"><div class="text-xl font-display font-bold text-sky-400">${twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">Twitter</div></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-violet-400">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-emerald-400">${compChannels}</div><div class="text-[10px] text-slate-500 font-mono">监测渠道</div></div>`;
 
-  // Render RSS section
   let html = '';
-  html += renderSourceSection('RSS 订阅源', 'bg-orange-500', 'text-orange-400',
+  html += renderSourceSection('热点 · RSS 订阅源', 'bg-orange-500', 'text-orange-400',
     rssList.map((s, i) => renderRssSourceCard(s, i)).join(''));
-
-  // Render Twitter section
-  html += renderSourceSection('Twitter 账号', 'bg-sky-500', 'text-sky-400',
+  html += renderSourceSection('热点 · Twitter 账号', 'bg-sky-500', 'text-sky-400',
     twitterAccounts.map((handle, i) => renderTwitterSourceCard(handle, i)).join(''));
+
+  if (competitors.length > 0) {
+    const COMP_REGION_CFG = {
+      HK:     { label: 'T1 HK 核心竞对',   color: 'text-rose-400',    bar: 'bg-rose-500' },
+      GLOBAL: { label: 'T2 头部交易所',     color: 'text-blue-400',    bar: 'bg-blue-500' },
+      JP:     { label: 'T3 日本',           color: 'text-pink-400',    bar: 'bg-pink-500' },
+      VN:     { label: 'T3 越南',           color: 'text-teal-400',    bar: 'bg-teal-500' },
+      EU:     { label: 'T3 欧洲',           color: 'text-indigo-400',  bar: 'bg-indigo-500' },
+      ID:     { label: 'T3 印尼',           color: 'text-amber-400',   bar: 'bg-amber-500' },
+      BROKER: { label: 'T4 券商',           color: 'text-slate-400',   bar: 'bg-slate-500' },
+    };
+    const regionOrder = ["HK", "GLOBAL", "JP", "VN", "EU", "ID", "BROKER"];
+    const byRegion = {};
+    for (const c of competitors) {
+      const r = c.region || "HK";
+      if (!byRegion[r]) byRegion[r] = [];
+      byRegion[r].push(c);
+    }
+    for (const region of regionOrder) {
+      const comps = byRegion[region];
+      if (!comps || comps.length === 0) continue;
+      const cfg = COMP_REGION_CFG[region] || COMP_REGION_CFG.HK;
+      html += renderSourceSection('竞品 · ' + cfg.label, cfg.bar, cfg.color,
+        comps.map((c, i) => renderCompetitorSourceCard(c, i)).join(''));
+    }
+  }
 
   document.getElementById("card-sections").innerHTML = html;
 
-  // Sidebar
   const zhCount = rssList.filter(s => s.lang === 'zh').length;
   const enCount = rssList.filter(s => s.lang === 'en').length;
   document.getElementById("sidebar-content").innerHTML = `
     <div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
-      <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">信源概览</h3>
+      <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">热点信源</h3>
       <div class="space-y-2">
         <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">RSS 源</span><span class="text-[10px] font-mono text-orange-400">${rssList.length}</span></div>
-        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">Twitter 账号</span><span class="text-[10px] font-mono text-sky-400">${twitterAccounts.length}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">Twitter</span><span class="text-[10px] font-mono text-sky-400">${twitterAccounts.length}</span></div>
         <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">中文源</span><span class="text-[10px] font-mono text-slate-300">${zhCount}</span></div>
         <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">英文源</span><span class="text-[10px] font-mono text-slate-300">${enCount}</span></div>
+      </div>
+    </div>
+    <div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+      <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">竞品监测</h3>
+      <div class="space-y-2">
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">竞品数</span><span class="text-[10px] font-mono text-violet-400">${competitors.length}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">Twitter</span><span class="text-[10px] font-mono text-sky-400">${compTwitter}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">RSS</span><span class="text-[10px] font-mono text-orange-400">${compRss}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">Web 爬取</span><span class="text-[10px] font-mono text-emerald-400">${compWeb}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">API</span><span class="text-[10px] font-mono text-cyan-400">${compApi}</span></div>
       </div>
     </div>`;
 
   document.getElementById("footer-left").textContent = 'OSL Growth Intelligence';
-  document.getElementById("footer-right").textContent = `信源配置 · ${rssList.length + twitterAccounts.length} 个数据源`;
+  document.getElementById("footer-right").textContent = `信源配置 · ${rssList.length + twitterAccounts.length} 热点源 · ${competitors.length} 竞品`;
 }
 
 function renderSourceSection(title, barColor, textColor, cardsHtml) {
@@ -957,6 +1009,36 @@ function renderTwitterSourceCard(handle, index) {
       </div>
       <a href="https://x.com/${esc(handle)}" target="_blank" rel="noopener noreferrer"
          class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors block font-mono">x.com/${esc(handle)}</a>
+    </div>
+  </div>`;
+}
+
+function renderCompetitorSourceCard(comp, index) {
+  const channels = [];
+  (comp.twitter || []).forEach(h => channels.push({ type: 'Twitter', label: '@' + h, url: 'https://x.com/' + h }));
+  (comp.rss || []).forEach(r => channels.push({ type: 'RSS', label: r.name || r.url, url: r.url }));
+  (comp.web || []).forEach(w => channels.push({ type: 'Web', label: w.type || 'web', url: w.url }));
+  (comp.api || []).forEach(a => channels.push({ type: 'API', label: 'API', url: a.url }));
+
+  const tierBadge = `<span class="text-[9px] font-mono px-1.5 py-0.5 rounded text-slate-300 bg-white/[0.06]">T${comp.tier || '?'}</span>`;
+  const channelHtml = channels.length > 0
+    ? channels.map(ch => {
+        const colors = { Twitter: 'text-sky-400', RSS: 'text-orange-400', Web: 'text-emerald-400', API: 'text-cyan-400' };
+        const color = colors[ch.type] || 'text-slate-400';
+        return `<a href="${esc(ch.url)}" target="_blank" rel="noopener noreferrer" class="text-[9px] font-mono ${color} hover:underline">${esc(ch.type)}: ${esc(ch.label)}</a>`;
+      }).join('<span class="text-slate-600 mx-1">&middot;</span>')
+    : '<span class="text-[9px] font-mono text-slate-600">仅媒体关键词匹配</span>';
+
+  return `
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.04}s">
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-violet-500"></div>
+    <div class="pl-4 pr-4 py-3">
+      <div class="flex items-center justify-between gap-2 mb-1.5">
+        <span class="text-[12px] font-display font-semibold text-white">${esc(comp.name)}</span>
+        ${tierBadge}
+      </div>
+      <div class="flex flex-wrap items-center gap-x-0 gap-y-1">${channelHtml}</div>
     </div>
   </div>`;
 }

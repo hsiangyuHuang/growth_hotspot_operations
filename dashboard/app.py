@@ -128,12 +128,16 @@ async def get_competitors_dates():
 @app.get("/api/sources")
 async def get_sources():
     import yaml
+    result = {"rss": [], "twitter": {"accounts": []}, "competitors": []}
     sources_path = CONFIG_DIR / "sources.yaml"
-    if not sources_path.exists():
-        return {"rss": [], "twitter": {"accounts": []}}
-    with open(sources_path, "r", encoding="utf-8") as f:
-        data = yaml.safe_load(f)
-    return {
-        "rss": data.get("rss", []),
-        "twitter": data.get("twitter", {}),
-    }
+    if sources_path.exists():
+        with open(sources_path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        result["rss"] = data.get("rss", [])
+        result["twitter"] = data.get("twitter", {})
+    competitors_path = CONFIG_DIR / "competitors.yaml"
+    if competitors_path.exists():
+        with open(competitors_path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        result["competitors"] = data.get("competitors", [])
+    return result

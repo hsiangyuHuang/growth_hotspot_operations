@@ -1,0 +1,376 @@
+# 竞品监测配置 — 按 OSL 业务辖区分层
+lookback_hours: 24
+content_limit: 500
+
+# ══════════════════════════════════════════════════════════════
+# T1 — HK 核心竞对（SFC 持牌同行，最高优先级）
+# ══════════════════════════════════════════════════════════════
+
+competitors:
+
+  - name: "HashKey"
+    region: "HK"
+    tier: 1
+    twitter: ["HashKeyExchange", "HashKeyGroup", "HSKChain"]
+    rss: []
+    web: []  # newsroom 连接超时 + support 页 Cloudflare 403，仅靠 Twitter
+    api: []
+
+  - name: "HKVAX"
+    region: "HK"
+    tier: 1
+    twitter: ["HKVAX_Official"]
+    rss: []
+    web:
+      - url: "https://www.hkvax.com/news"
+        type: "newsroom"
+    api: []
+
+  # - name: "HKbitEX"  # 已撤回 SFC 牌照申请，域名停放，实质退出市场（2024）
+  #   region: "HK"
+  #   tier: 1
+
+  - name: "VDX"
+    region: "HK"
+    tier: 1
+    twitter: ["VDX_HK"]
+    rss: []
+    web: []
+    api: []
+
+  - name: "Bullish"
+    region: "HK"
+    tier: 1
+    twitter: ["Bullish"]
+    rss: []
+    web:
+      - url: "https://www.bullish.com/news-insights"
+        type: "newsroom"
+        selectors: ["a[href*='/news-insights/']"]
+    api: []
+
+# ══════════════════════════════════════════════════════════════
+# T2 — 头部交易所（Global 站竞对，独立监控）
+# ══════════════════════════════════════════════════════════════
+
+  - name: "Binance"
+    region: "GLOBAL"
+    tier: 2
+    twitter: ["binance", "_RichardTeng"]
+    rss: []
+    web: []
+    api:
+      - url: "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query"
+        params: { type: 1, catalogId: 48, pageNo: 1, pageSize: 20 }
+        articles_path: "data.catalogs[].articles[]"
+        id_field: "id"
+        title_field: "title"
+        date_field: "releaseDate"
+        date_format: "timestamp_ms"
+        url_template: "https://www.binance.com/en/support/announcement/{code}"
+
+  - name: "OKX"
+    region: "GLOBAL"
+    tier: 2
+    twitter: ["okx", "star_xu"]
+    rss: []
+    web: []  # 公告页连接超时（疑似地区限制），仅靠 Twitter
+    api: []
+
+  - name: "Bybit"
+    region: "GLOBAL"
+    tier: 2
+    twitter: ["Bybit_Official"]
+    rss: []
+    web: []
+    api:
+      - url: "https://api.bybit.com/v5/announcements/index"
+        params: { locale: "en-US", limit: 20 }
+        articles_path: "result.list[]"
+        id_field: "url"
+        title_field: "title"
+        date_field: "publishTime"
+        date_format: "timestamp_ms"
+        url_template: "{url}"
+
+  - name: "Coinbase"
+    region: "GLOBAL"
+    tier: 2
+    twitter: ["coinbase"]
+    rss:
+      - url: "https://www.coinbase.com/blog/rss.xml"
+        name: "Coinbase Blog"
+    web: []
+    api: []
+
+  - name: "Kraken"
+    region: "GLOBAL"
+    tier: 2
+    twitter: ["KrakenExchange"]
+    rss:
+      - url: "https://blog.kraken.com/feed"
+        name: "Kraken Blog"
+    web: []
+    api: []
+
+# ══════════════════════════════════════════════════════════════
+# T3 — 区域竞品
+# ══════════════════════════════════════════════════════════════
+
+  # ── 越南站 ──
+  # - name: "VNDC"  # 已转型为 DeFi 协议（Liquidity-Backed Protocol），不再是交易所
+  #   region: "VN"
+  #   tier: 3
+
+  - name: "Remitano"
+    region: "VN"
+    tier: 3
+    twitter: ["Remitano"]
+    rss: []
+    web: []
+    api: []
+
+  # ── 日本站（FSA 持牌） ──
+  - name: "bitFlyer"
+    region: "JP"
+    tier: 3
+    twitter: ["bitFlyer"]
+    rss: []
+    web: []  # bitflyer.com 返回连接错误，仅靠 Twitter
+    api: []
+
+  - name: "Coincheck"
+    region: "JP"
+    tier: 3
+    twitter: ["coincheckjp"]
+    rss: []
+    web:
+      - url: "https://coincheck.com/ja/article"
+        type: "blog"
+    api: []
+
+  - name: "GMO Coin"
+    region: "JP"
+    tier: 3
+    twitter: ["gmo_coin"]  # 官网确认，非 @gaboratory
+    rss:
+      - url: "https://coin.z.com/jp/news/feed/press-release.xml"
+        name: "GMO Coin Press Release"
+    web: []  # Web 页面需 JS 渲染，改用 RSS
+    api: []
+
+  - name: "bitbank"
+    region: "JP"
+    tier: 3
+    twitter: ["bitbank_inc"]
+    rss:
+      - url: "https://bitbank.cc/knowledge/feed"
+        name: "bitbank Knowledge"
+    web:
+      - url: "https://bitbank.cc/knowledge/"
+        type: "blog"
+    api: []
+
+  - name: "SBI VC Trade"
+    region: "JP"
+    tier: 3
+    twitter: ["sbivc_official"]
+    rss: []
+    web: []  # /news 需 JS 动态加载，仅靠 Twitter
+    api: []
+
+  - name: "Rakuten Wallet"
+    region: "JP"
+    tier: 3
+    twitter: ["Rakuten_Wallet"]  # 官网确认带下划线
+    rss: []
+    web: []  # 403 WAF 拦截，仅靠 Twitter
+    api: []
+
+  # ── 欧洲站（MiCA 合规） ──
+  - name: "Bitstamp"
+    region: "EU"
+    tier: 3
+    twitter: ["Bitstamp"]
+    rss: []
+    web:
+      - url: "https://blog.bitstamp.net/"
+        type: "blog"
+        selectors: ["a[href*='/post/']", ".post-card a", ".gh-card a"]
+    api: []
+
+  - name: "Bitpanda"
+    region: "EU"
+    tier: 3
+    twitter: ["Bitpanda"]
+    rss: []
+    web:
+      - url: "https://blog.bitpanda.com/en"
+        type: "blog"
+        selectors: ["a[href*='/en/']"]
+    api: []
+
+  - name: "Bitvavo"
+    region: "EU"
+    tier: 3
+    twitter: ["BitvavoExchange"]
+    rss: []
+    web: []  # 403 Cloudflare WAF，仅靠 Twitter
+    api: []
+
+  - name: "Crypto.com"
+    region: "EU"
+    tier: 3
+    twitter: ["cryptocom"]
+    rss: []
+    web:
+      - url: "https://crypto.com/company-news"
+        type: "newsroom"
+    api: []
+
+  - name: "Gemini"
+    region: "EU"
+    tier: 3
+    twitter: ["GeminiTrustCo"]  # @gemini 已被 Google AI 占用
+    rss: []
+    web:
+      - url: "https://www.gemini.com/blog"
+        type: "blog"
+    api: []
+
+  # ── 印尼站（Bappebti） ──
+  - name: "Indodax"
+    region: "ID"
+    tier: 3
+    twitter: ["indodax"]
+    rss:
+      - url: "https://blog.indodax.com/category/pengumuman/feed/"
+        name: "Indodax Announcements"
+    web:
+      - url: "https://blog.indodax.com/"
+        type: "blog"
+        selectors: ["a[href*='blog.indodax.com/']"]
+    api: []
+
+  - name: "Tokocrypto"
+    region: "ID"
+    tier: 3
+    twitter: ["Tokocrypto"]
+    rss:
+      - url: "https://news.tokocrypto.com/feed/"
+        name: "Tokocrypto News"
+    web: []
+    api: []
+
+  - name: "PINTU"
+    region: "ID"
+    tier: 3
+    twitter: ["PintuID"]
+    rss: []
+    web:
+      - url: "https://pintu.co.id/blog"
+        type: "blog"
+        selectors: ["a[href*='/blog/']"]
+    api: []
+
+  - name: "Upbit Indonesia"
+    region: "ID"
+    tier: 3
+    twitter: ["UPBITIndonesia"]
+    rss: []
+    web: []
+    api: []
+
+  - name: "Luno"
+    region: "ID"
+    tier: 3
+    twitter: ["LunoGlobal"]
+    rss: []
+    web:
+      - url: "https://discover.luno.com/"
+        type: "blog"
+    api: []
+
+  - name: "Reku"
+    region: "ID"
+    tier: 3
+    twitter: ["reku_id"]
+    rss: []
+    web:
+      - url: "https://reku.id/blog"
+        type: "blog"
+    api: []
+
+# ══════════════════════════════════════════════════════════════
+# T4 — BROKER 轻量监控（仅关注加密相关动态）
+# ══════════════════════════════════════════════════════════════
+
+  - name: "富途/Moomoo"
+    region: "BROKER"
+    tier: 4
+    twitter: ["MoomooApp"]
+    rss:
+      - url: "https://ir.futuholdings.com/rss/news-releases.xml"
+        name: "Futu Holdings IR News"
+    web: []
+    api: []
+
+  - name: "老虎证券"
+    region: "BROKER"
+    tier: 4
+    twitter: ["TigerBrokers"]
+    rss:
+      - url: "https://ir.itigerup.com/rss/news-releases.xml"
+        name: "UP Fintech IR News"
+    web: []
+    api: []
+
+  - name: "盈透证券"
+    region: "BROKER"
+    tier: 4
+    twitter: ["IBKR"]
+    rss:
+      - url: "https://www.interactivebrokers.com/campus/feed/"
+        name: "IBKR Campus"
+      - url: "https://www.interactivebrokers.com/campus/category/traders-insight/feed/"
+        name: "IBKR Traders Insight"
+    web: []
+    api: []
+
+#══════════════════════════════════════════════════════
+# 媒体关键词过滤（从主流程热点中筛选竞品相关报道）
+# 注意：使用正则词边界匹配，避免误匹配
+# ══════════════════════════════════════════════════════════════
+media_keywords:
+  HashKey:       ["HashKey", "HSK", "3887.HK"]
+  HKVAX:         ["HKVAX"]
+  # HKbitEX 已退出
+  VDX:           ["VDX", "Victory Securities"]
+  Bullish:       ["Bullish exchange", "Bullish.com", "bullish.com"]
+  # VNDC 已转型 DeFi
+  Remitano:      ["Remitano"]
+  Bitstamp:      ["Bitstamp"]
+  Bitpanda:      ["Bitpanda"]
+  Kraken:        ["Kraken exchange", "KrakenExchange", "Kraken crypto"]
+  Coinbase:      ["Coinbase", "Brian Armstrong"]
+  Binance:       ["Binance", "CZ Binance", "Richard Teng"]
+  OKX:           ["OKX", "OKX exchange"]
+  Bybit:         ["Bybit"]
+  Indodax:       ["Indodax"]
+  Tokocrypto:    ["Tokocrypto"]
+  PINTU:         ["PINTU crypto", "Pintu Indonesia"]
+  "Upbit Indonesia": ["Upbit Indonesia", "Upbit ID"]
+  "富途/Moomoo": ["Moomoo crypto", "Futu crypto", "富途加密"]
+  "老虎证券":    ["Tiger Brokers crypto", "老虎证券加密"]
+  "盈透证券":    ["IBKR crypto", "Interactive Brokers crypto"]
+  bitFlyer:      ["bitFlyer"]
+  Coincheck:     ["Coincheck"]
+  "GMO Coin":    ["GMO Coin", "GMOコイン"]
+  bitbank:       ["bitbank"]
+  "SBI VC Trade": ["SBI VC Trade", "SBI VCトレード"]
+  "Rakuten Wallet": ["Rakuten Wallet", "楽天ウォレット"]
+  Bitvavo:       ["Bitvavo"]
+  "Crypto.com":  ["Crypto.com", "CRO token"]
+  Gemini:        ["Gemini exchange", "Gemini crypto", "Winklevoss"]
+  Luno:          ["Luno"]
+  Reku:          ["Reku", "Rekeningku"]
