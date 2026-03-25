@@ -29,9 +29,19 @@ logger = logging.getLogger("main")
 DATA_DIR = Path(__file__).parent / "data"
 DASHBOARD_DATA_DIR = Path(__file__).parent / "dashboard" / "data"
 
+_DATE_RE = __import__("re").compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def _is_date_dir(d: Path) -> bool:
+    return d.is_dir() and bool(_DATE_RE.match(d.name)) and (d / "result.json").exists()
+
 
 def raw_path(date_str: str) -> Path:
     return DATA_DIR / "raw" / date_str / "items.json"
+
+
+def competitor_path(date_str: str) -> Path:
+    return DATA_DIR / "competitors" / date_str / "items.json"
 
 
 def processed_path(date_str: str) -> Path:
@@ -39,9 +49,10 @@ def processed_path(date_str: str) -> Path:
 
 
 async def run_fetch_and_process():
-    """抓取所有信源 + 调用 Manus 处理"""
+    """抓取所有信源（主流程 + 竞品）+ 调用 Manus 处理"""
     today = date.today().isoformat()
     out_path = raw_path(today)
+    comp_path = competitor_path(today)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     logger.info(f"=== 开始抓取 {today} ===")
@@ -49,16 +60,27 @@ async def run_fetch_and_process():
     from fetcher import rss as rss_fetcher
     from fetcher import twitter as twitter_fetcher
     from fetcher import telegram as telegram_fetcher
+    from fetcher import competitor as competitor_fetcher
 
-    # 并发抓取 RSS + Twitter；Telegram 串行（需要交互式登录）
-    rss_items, twitter_items = await asyncio.gather(
-        rss_fetcher.fetch_all(out_path),
-        twitter_fetcher.fetch_all(out_path),
+    # 并发抓取：主流程（RSS + Twitter）+ 竞品官方渠道
+    (rss_items, twitter_items), comp_items = await asyncio.gather(
+        asyncio.gather(
+            rss_fetcher.fetch_all(out_path),
+            twitter_fetcher.fetch_all(out_path),
+        ),
+        competitor_fetcher.fetch_all(comp_path),
     )
+
+    # Telegram 串行（需要交互式登录）
     telegram_items = await telegram_fetcher.fetch_all(out_path)
 
-    total = len(rss_items) + len(twitter_items) + len(telegram_items)
+    # 媒体关键词过滤：从主流程热点中筛选竞品相关报道，追加到竞品数据
+    hotspot_items = rss_items + twitter_items + telegram_items
+    competitor_fetcher.append_media_items(comp_path, hotspot_items)
+
+    total = len(hotspot_items)
     logger.info(f"抓取完成：RSS {len(rss_items)} + Twitter {len(twitter_items)} + Telegram {len(telegram_items)} = {total} 条")
+    logger.info(f"竞品抓取完成：{len(comp_items)} 条")
 
     if total == 0:
         logger.warning("未抓取到任何条目，跳过 Manus 处理")
@@ -73,18 +95,40 @@ async def run_fetch_and_process():
         logger.warning(f"跳过 Manus 处理：{e}")
         logger.info(f"原始数据已保存至 {out_path}，配置好 MANUS_API_KEY 后重新运行即可")
 
+    # 竞品 Gemini 提取
+    if comp_path.exists():
+        logger.info("=== 开始竞品 Gemini 提取 ===")
+        try:
+            from processor import competitor_extractor
+            with open(comp_path, "r", encoding="utf-8") as f:
+                comp_items = json.load(f)
+            if comp_items:
+                comp_result = await competitor_extractor.extract(comp_items, today)
+                # 写入结构化结果
+                result_path = comp_path.parent / "result.json"
+                with open(result_path, "w", encoding="utf-8") as f:
+                    json.dump(comp_result, f, ensure_ascii=False, indent=2)
+                logger.info(f"竞品提取完成：{result_path}")
+            else:
+                logger.info("竞品数据为空，跳过 Gemini 提取")
+        except Exception as e:
+            logger.warning(f"竞品提取失败：{e}")
+
 
 def sync_dashboard():
-    """将 data/processed/{date}/result.json 同步到 dashboard/data/"""
+    """将 data/processed/{date}/result.json + 竞品数据同步到 dashboard/data/"""
     processed_dir = DATA_DIR / "processed"
+    competitors_dir = DATA_DIR / "competitors"
+
     if not processed_dir.exists():
         logger.warning("data/processed/ 不存在，无数据可同步")
         return
 
     DASHBOARD_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+    # 同步主流程数据
     dates = sorted(
-        [d.name for d in processed_dir.iterdir() if d.is_dir() and (d / "result.json").exists()],
+        [d.name for d in processed_dir.iterdir() if _is_date_dir(d)],
         reverse=True,
     )
 
@@ -107,6 +151,45 @@ def sync_dashboard():
     with open(DASHBOARD_DATA_DIR / "dates.json", "w", encoding="utf-8") as f:
         json.dump(dates, f, ensure_ascii=False, indent=2)
     logger.info(f"[sync] dates.json 已更新，共 {len(dates)} 条记录")
+
+    # 同步竞品数据
+    if competitors_dir.exists():
+        comp_dashboard_dir = DASHBOARD_DATA_DIR / "competitors"
+        comp_dashboard_dir.mkdir(parents=True, exist_ok=True)
+
+        comp_dates = sorted(
+            [d.name for d in competitors_dir.iterdir() if _is_date_dir(d)],
+            reverse=True,
+        )
+
+        for date_str in comp_dates:
+            src = competitors_dir / date_str / "result.json"
+            dst = comp_dashboard_dir / f"{date_str}.json"
+            shutil.copy2(src, dst)
+            logger.info(f"[sync:competitors] {src} → {dst}")
+
+        if comp_dates:
+            shutil.copy2(
+                competitors_dir / comp_dates[0] / "result.json",
+                comp_dashboard_dir / "latest.json",
+            )
+            with open(comp_dashboard_dir / "dates.json", "w", encoding="utf-8") as f:
+                json.dump(comp_dates, f, ensure_ascii=False, indent=2)
+            logger.info(f"[sync:competitors] 已更新，共 {len(comp_dates)} 条记录")
+
+    # 同步信源配置
+    import yaml
+    sources_path = Path(__file__).parent / "config" / "sources.yaml"
+    if sources_path.exists():
+        with open(sources_path, "r", encoding="utf-8") as f:
+            sources_data = yaml.safe_load(f)
+        sources_out = {
+            "rss": sources_data.get("rss", []),
+            "twitter": sources_data.get("twitter", {}),
+        }
+        with open(DASHBOARD_DATA_DIR / "sources.json", "w", encoding="utf-8") as f:
+            json.dump(sources_out, f, ensure_ascii=False, indent=2)
+        logger.info("[sync] sources.json 已更新")
 
 
 def run_dashboard():

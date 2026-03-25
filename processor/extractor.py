@@ -1,8 +1,8 @@
 """调用 Gemini 从 Manus markdown 中提取结构化行动包 JSON。"""
+import asyncio
 import json
 import logging
 import os
-import time
 
 from google import genai
 from google.genai.types import GenerateContentConfig
@@ -76,7 +76,7 @@ RESPONSE_SCHEMA = {
 }
 
 
-def extract(markdown: str, run_date: str) -> dict:
+async def extract(markdown: str, run_date: str) -> dict:
     """用 Gemini 从 markdown 提取结构化行动包。失败时直接报错，不做 fallback。"""
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
@@ -119,7 +119,7 @@ def extract(markdown: str, run_date: str) -> dict:
             if attempt < max_retries:
                 wait = min(2 ** attempt, 30)
                 logger.warning(f"[Extractor] Attempt {attempt} failed: {e}, retrying in {wait}s...")
-                time.sleep(wait)
+                await asyncio.sleep(wait)
 
     logger.error(f"[Extractor] All {max_retries} attempts failed: {last_error}")
     raise RuntimeError(f"Gemini extraction failed after {max_retries} attempts: {last_error}") from last_error

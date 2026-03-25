@@ -25,9 +25,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <link rel="stylesheet" href="/static/style.css?v=4">
+  <link rel="stylesheet" href="/static/style.css?v=5">
 </head>
 <body class="min-h-screen bg-navy text-slate-200 font-body antialiased grid-bg">
+
+  <!-- Left Navigation -->
+  <nav id="left-nav" class="fixed left-0 top-0 bottom-0 w-52 bg-navy-light border-r border-white/[0.08] z-30 flex flex-col pt-5 pb-4 px-3">
+    <div class="flex items-center gap-2.5 mb-8 px-2">
+      <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-sm font-bold text-navy">O</div>
+      <div class="leading-tight">
+        <div class="text-[11px] font-display font-bold text-white tracking-wide">OSL GROWTH</div>
+        <div class="text-[10px] font-display text-slate-400 tracking-wider">INTELLIGENCE</div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-1 flex-1">
+      <button class="nav-item active" data-section="hotspot" onclick="switchSection('hotspot')">
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z"/></svg>
+        <span class="nav-label">热点看板</span>
+      </button>
+      <button class="nav-item" data-section="competitors" onclick="switchSection('competitors')">
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+        <span class="nav-label">竞品动态</span>
+      </button>
+      <button class="nav-item" data-section="sources" onclick="switchSection('sources')">
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/></svg>
+        <span class="nav-label">信源管理</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- App Content (offset by left-nav width) -->
+  <div id="app-content" class="ml-52">
 
   <!-- Hero Header -->
   <header id="hero-header" class="relative overflow-hidden border-b border-white/[0.08]">
@@ -52,16 +80,22 @@
   <div id="filter-bar" class="sticky top-0 z-20 bg-navy/95 backdrop-blur-md border-b border-white/[0.08]">
     <div class="max-w-7xl mx-auto px-6 py-3">
       <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <div class="flex items-center gap-1.5">
-          <button class="tab-btn active text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="today">📡 今日</button>
-          <button class="tab-btn text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="history">📂 历史存档</button>
+        <div class="flex items-center gap-1.5" id="sub-tabs-hotspot">
+          <button class="tab-btn active text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="today">今日</button>
+          <button class="tab-btn text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200" data-tab="history">历史存档</button>
         </div>
-        <div class="w-px h-5 bg-white/10"></div>
+        <div class="flex items-center gap-1.5" id="sub-tabs-competitors" style="display:none">
+        </div>
+        <div class="flex items-center gap-1.5" id="sub-tabs-sources" style="display:none">
+        </div>
+        <div class="w-px h-5 bg-white/10" id="filter-divider"></div>
+        <div id="main-filters" class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <div class="flex items-center gap-1.5" id="filter-priority"><span class="text-xs text-slate-500 font-medium mr-1">优先级</span></div>
         <div class="w-px h-5 bg-white/10"></div>
         <div class="flex items-center gap-1.5" id="filter-channel"><span class="text-xs text-slate-500 font-medium mr-1">渠道</span></div>
         <div class="w-px h-5 bg-white/10"></div>
         <div class="flex items-center gap-1.5" id="filter-site"><span class="text-xs text-slate-500 font-medium mr-1">站点</span></div>
+        </div>
         <div class="ml-auto text-xs text-slate-500 font-mono" id="filter-count"></div>
       </div>
     </div>
@@ -85,6 +119,8 @@
     </div>
   </footer>
 
+  </div><!-- /app-content -->
+
 <script>
 window.onerror = function(msg, src, line, col, err) {
   document.body.insertAdjacentHTML('afterbegin',
@@ -93,6 +129,6 @@ window.onerror = function(msg, src, line, col, err) {
     (err && err.stack ? '\n' + err.stack : '') + '</div>');
 };
 </script>
-<script src="/static/app.js?v=4"></script>
+<script src="/static/app.js?v=5"></script>
 </body>
 </html>

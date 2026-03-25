@@ -1,5 +1,6 @@
 // ── Config ──
 const REFRESH_INTERVAL = 5 * 60 * 1000;
+let currentSection = "hotspot"; // "hotspot" or "competitors"
 let currentTab = "today";
 let filterPriority = "ALL";
 let filterChannel = "ALL";
@@ -12,6 +13,12 @@ const IS_STATIC = !window.location.port || window.location.hostname !== 'localho
 const API = IS_STATIC
   ? { today: "./data/latest.json", dates: "./data/dates.json", history: (d) => `./data/${d}.json` }
   : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}` };
+const COMP_API = IS_STATIC
+  ? { today: "./data/competitors/latest.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}.json` }
+  : { today: "/api/competitors/today", dates: "/api/competitors/dates", history: (d) => `/api/competitors/history?date=${d}` };
+const SRC_API = IS_STATIC
+  ? { sources: "./data/sources.json" }
+  : { sources: "/api/sources" };
 
 // ── Design Tokens ──
 const URGENCY_CONFIG = {
@@ -49,16 +56,61 @@ const EXEC_CONFIG = {
 
 // ── Bootstrap ──
 document.addEventListener("DOMContentLoaded", () => {
-  setupTabs();
+  setupSubTabs();
   loadToday();
-  refreshTimer = setInterval(loadToday, REFRESH_INTERVAL);
+  refreshTimer = setInterval(() => {
+    if (currentSection === "hotspot" && currentTab === "today") loadToday();
+  }, REFRESH_INTERVAL);
 });
 
-function setupTabs() {
-  document.querySelectorAll(".tab-btn").forEach(btn => {
+// ── Left Nav Section Switch ──
+function switchSection(section) {
+  currentSection = section;
+  document.querySelectorAll(".nav-item").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.section === section);
+  });
+
+  const hotspotTabs = document.getElementById("sub-tabs-hotspot");
+  const compTabs = document.getElementById("sub-tabs-competitors");
+  const sourcesTabs = document.getElementById("sub-tabs-sources");
+  const mainFilters = document.getElementById("main-filters");
+  const dateSel = document.getElementById("date-selector");
+  const filterDivider = document.getElementById("filter-divider");
+
+  // 默认全部隐藏
+  hotspotTabs.style.display = "none";
+  compTabs.style.display = "none";
+  sourcesTabs.style.display = "none";
+  mainFilters.style.display = "none";
+  dateSel.style.display = "none";
+  filterDivider.style.display = "none";
+
+  if (section === "hotspot") {
+    hotspotTabs.style.display = "";
+    mainFilters.style.display = "";
+    filterDivider.style.display = "";
+    if (currentTab === "history") {
+      dateSel.style.display = "";
+      loadDates();
+    } else {
+      currentTab = "today";
+      loadToday();
+    }
+  } else if (section === "competitors") {
+    compTabs.style.display = "";
+    currentTab = "competitors";
+    loadCompetitors();
+  } else if (section === "sources") {
+    currentTab = "sources";
+    loadSources();
+  }
+}
+
+function setupSubTabs() {
+  document.querySelectorAll("#sub-tabs-hotspot .tab-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       currentTab = btn.dataset.tab;
-      document.querySelectorAll(".tab-btn").forEach(b => {
+      document.querySelectorAll("#sub-tabs-hotspot .tab-btn").forEach(b => {
         b.classList.remove("active", "bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
         b.classList.add("text-slate-400");
       });
@@ -69,14 +121,17 @@ function setupTabs() {
         dateSel.style.display = "none";
         _selectedHistoryDate = null;
         loadToday();
-      } else {
+      } else if (currentTab === "history") {
         dateSel.style.display = "";
         loadDates();
       }
     });
   });
-  document.querySelector('.tab-btn.active').classList.add("bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
-  document.querySelectorAll('.tab-btn:not(.active)').forEach(b => b.classList.add("text-slate-400"));
+  const activeBtn = document.querySelector('#sub-tabs-hotspot .tab-btn.active');
+  if (activeBtn) {
+    activeBtn.classList.add("bg-white/[0.12]", "text-white", "ring-1", "ring-inset", "ring-white/15", "shadow-sm");
+  }
+  document.querySelectorAll('#sub-tabs-hotspot .tab-btn:not(.active)').forEach(b => b.classList.add("text-slate-400"));
 }
 
 // ── Filter Rendering ──
@@ -541,4 +596,367 @@ function renderEmptyState() {
 
 function esc(str) {
   return String(str || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+// ══════════════════════════════════════════════════════════════
+// ── Competitor Dashboard ──
+// ══════════════════════════════════════════════════════════════
+
+let _currentCompData = null;
+let filterRegion = "ALL";
+
+const REGION_CONFIG = {
+  HK:     { label: 'HK 核心竞对', color: 'text-rose-400',    bg: 'bg-rose-500/10',    bar: 'bg-rose-500' },
+  GLOBAL: { label: '头部交易所',   color: 'text-blue-400',    bg: 'bg-blue-500/10',    bar: 'bg-blue-500' },
+  VN:     { label: '越南',         color: 'text-emerald-400', bg: 'bg-emerald-500/10', bar: 'bg-emerald-500' },
+  EU:     { label: '欧洲',         color: 'text-violet-400',  bg: 'bg-violet-500/10',  bar: 'bg-violet-500' },
+  ID:     { label: '印尼',         color: 'text-amber-400',   bg: 'bg-amber-500/10',   bar: 'bg-amber-500' },
+  JP:     { label: '日本',         color: 'text-pink-400',    bg: 'bg-pink-500/10',    bar: 'bg-pink-500' },
+  BROKER: { label: 'Broker',       color: 'text-slate-400',   bg: 'bg-slate-500/10',   bar: 'bg-slate-500' },
+};
+
+const IMPORTANCE_CONFIG = {
+  high:   { label: '重要', color: 'text-red-400',   bg: 'bg-red-500/10',   dot: 'bg-red-500' },
+  medium: { label: '一般', color: 'text-amber-400', bg: 'bg-amber-500/10', dot: 'bg-amber-500' },
+  low:    { label: '日常', color: 'text-slate-400', bg: 'bg-slate-500/10', dot: 'bg-slate-500' },
+};
+
+const CATEGORY_ICONS = {
+  '新币上线': '🪙', '产品更新': '🔧', '活动推广': '🎯', '合作伙伴': '🤝',
+  '监管合规': '📋', '融资/IPO': '💰', '人事变动': '👤', '其他': '📌',
+};
+
+async function loadCompetitors() {
+  try {
+    const res = await fetch(COMP_API.today);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    _currentCompData = data;
+    renderCompetitorDashboard(data);
+  } catch (e) {
+    console.error("Failed to load competitors:", e);
+    document.getElementById("card-sections").innerHTML =
+      '<div class="text-center py-20 text-slate-500"><div class="text-4xl mb-3">🏢</div><p class="text-sm">暂无竞品数据</p><p class="text-xs text-slate-600 mt-1">运行 python main.py fetch 抓取竞品数据</p></div>';
+    document.getElementById("hero-stats").innerHTML = '';
+    document.getElementById("sidebar-content").innerHTML = '';
+  }
+}
+
+function setFilterRegion(v) {
+  if (v === "ALL") {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  const el = document.getElementById(`region-${v}`);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function renderCompetitorDashboard(data) {
+  const competitors = data.competitors || [];
+
+  // Header
+  document.getElementById("header-date").textContent = data.run_date
+    ? `竞品数据 ${data.run_date}` : "";
+
+  // Filter by region — always show all (scroll-based navigation)
+  const filtered = competitors;
+
+  // Hero stats
+  const withEvents = competitors.filter(c => (c.events || []).length > 0);
+  const allEvents = competitors.flatMap(c => c.events || []);
+  const highCount = allEvents.filter(e => e.importance === 'high').length;
+  const medCount = allEvents.filter(e => e.importance === 'medium').length;
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="text-center"><div class="text-xl font-display font-bold text-white">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-cyan-400">${withEvents.length}</div><div class="text-[10px] text-slate-500 font-mono">有动态</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-amber-400">${medCount}</div><div class="text-[10px] text-slate-500 font-mono">一般</div></div>`;
+
+  // Region filter buttons
+  const regions = ["ALL", ...Object.keys(REGION_CONFIG)];
+  const regionBtns = regions.map(r => {
+    const cfg = r !== "ALL" ? REGION_CONFIG[r] : null;
+    const label = r === "ALL" ? "全部" : cfg.label;
+    const isActive = filterRegion === r;
+    const base = 'text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer select-none';
+    const active = cfg
+      ? `${cfg.color} ${cfg.bg} ring-1 ring-inset ring-white/10 shadow-sm`
+      : 'bg-white/[0.12] text-white ring-1 ring-inset ring-white/15 shadow-sm';
+    const inactive = 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.06]';
+    return `<button onclick="setFilterRegion('${r}')" class="${base} ${isActive ? active : inactive}">${label}</button>`;
+  }).join("");
+  document.getElementById("sub-tabs-competitors").innerHTML =
+    '<div class="flex items-center gap-1.5"><span class="text-xs text-slate-500 font-medium mr-1">区域</span>' + regionBtns + '</div>';
+  document.getElementById("filter-count").textContent = `${filtered.length} / ${competitors.length} 家`;
+
+  // Group by region
+  const byRegion = {};
+  for (const comp of filtered) {
+    const r = comp.region || "HK";
+    if (!byRegion[r]) byRegion[r] = [];
+    byRegion[r].push(comp);
+  }
+
+  // Render sections
+  const regionOrder = ["HK", "GLOBAL", "VN", "EU", "ID", "BROKER"];
+  let html = "";
+  for (const region of regionOrder) {
+    const comps = byRegion[region];
+    if (!comps || comps.length === 0) continue;
+    html += renderRegionSection(region, comps);
+  }
+  if (!html) html = '<div class="text-center py-20 text-slate-500"><p class="text-sm">该区域暂无竞品数据</p></div>';
+
+  document.getElementById("card-sections").innerHTML = html;
+
+  // Render competitor sidebar
+  renderCompetitorSidebar(competitors);
+
+  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${data.run_date || ""}`;
+  document.getElementById("footer-right").textContent = `竞品监控 · ${competitors.length} 家竞品`;
+}
+
+function renderRegionSection(region, comps) {
+  const cfg = REGION_CONFIG[region] || REGION_CONFIG.HK;
+  const activeComps = comps.filter(c => (c.events || []).length > 0);
+  const inactiveComps = comps.filter(c => (c.events || []).length === 0);
+
+  return `<section id="region-${region}" class="mb-6 scroll-mt-16">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="h-3 w-3 rounded-full ${cfg.bar} shrink-0"></span>
+      <h2 class="text-sm font-display font-bold ${cfg.color} tracking-wide uppercase">${cfg.label}</h2>
+      <div class="flex-1 h-px bg-white/[0.08]"></div>
+      <span class="text-[10px] font-mono ${cfg.color} opacity-60">${activeComps.length}/${comps.length} 有动态</span>
+    </div>
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+      ${activeComps.map((comp, i) => renderCompetitorCard(comp, i, cfg)).join("")}
+    </div>
+    ${inactiveComps.length > 0 ? `<div class="mt-3 flex flex-wrap gap-2">
+      ${inactiveComps.map(c => `<span class="text-[10px] font-mono text-slate-600 px-2 py-1 rounded border border-white/[0.05] bg-white/[0.02]">${esc(c.name)} — 今日无动态</span>`).join("")}
+    </div>` : ""}
+  </section>`;
+}
+
+function renderCompetitorCard(comp, index, regionCfg) {
+  const events = comp.events || [];
+  const maxImportance = events.reduce((max, e) => {
+    const order = { high: 3, medium: 2, low: 1 };
+    return (order[e.importance] || 0) > (order[max] || 0) ? e.importance : max;
+  }, "low");
+  const impCfg = IMPORTANCE_CONFIG[maxImportance] || IMPORTANCE_CONFIG.low;
+
+  const eventsHtml = events.map(e => renderEventItem(e)).join("");
+
+  return `
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.06}s">
+    <div class="absolute left-0 top-0 bottom-0 w-1 ${impCfg.dot}"></div>
+    <div class="pl-4 pr-4 pt-4 pb-3">
+      <div class="flex items-start justify-between gap-3 mb-2">
+        <div class="min-w-0">
+          <h3 class="text-sm font-display font-semibold text-white leading-snug">${esc(comp.name)}</h3>
+          <p class="text-[11px] text-slate-400 mt-0.5 font-body">${esc(comp.summary || "")}</p>
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono ${regionCfg.color} ${regionCfg.bg}">${esc(comp.region)}</span>
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono ${impCfg.color} ${impCfg.bg}">${events.length} 事件</span>
+        </div>
+      </div>
+      <div class="space-y-2 mt-3">
+        ${eventsHtml}
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderEventItem(event) {
+  const impCfg = IMPORTANCE_CONFIG[event.importance] || IMPORTANCE_CONFIG.low;
+  const catIcon = CATEGORY_ICONS[event.category] || '📌';
+  const sources = (event.sources || []).map(s =>
+    `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors underline underline-offset-2 decoration-slate-700 hover:decoration-cyan-500/50">${esc(s.name)}</a>`
+  ).join('<span class="text-slate-700 mx-0.5">·</span>');
+
+  const summaryId = 'comp-ev-' + Math.random().toString(36).slice(2, 8);
+
+  return `<div class="border border-white/[0.06] rounded-md bg-[#0f1623] p-3">
+    <div class="flex items-start justify-between gap-2 mb-1.5">
+      <div class="flex items-center gap-1.5 min-w-0">
+        <span class="text-sm shrink-0">${catIcon}</span>
+        <span class="text-[11px] font-medium text-white truncate">${esc(event.title)}</span>
+      </div>
+      <div class="flex items-center gap-1 shrink-0">
+        <span class="text-[9px] font-mono px-1.5 py-0.5 rounded ${impCfg.color} ${impCfg.bg}">${impCfg.label}</span>
+        <span class="text-[9px] font-mono text-slate-600">${esc(event.category)}</span>
+      </div>
+    </div>
+    <div class="prose-container text-[11px] leading-relaxed text-slate-300" data-md="${encodeURIComponent(event.summary || '')}" id="${summaryId}"></div>
+    ${sources ? `<div class="flex flex-wrap items-center gap-x-0 gap-y-1 mt-2 pt-1.5 border-t border-white/[0.04]">${sources}</div>` : ""}
+  </div>`;
+}
+
+function renderCompetitorSidebar(competitors) {
+  const allEvents = competitors.flatMap(c => c.events || []);
+  const byCat = {};
+  allEvents.forEach(e => {
+    const cat = e.category || '其他';
+    byCat[cat] = (byCat[cat] || 0) + 1;
+  });
+
+  let html = `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">事件分类统计</h3>
+    <div class="space-y-2">${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([cat, count]) =>
+      `<div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">${CATEGORY_ICONS[cat] || '📌'} ${cat}</span><span class="text-[10px] font-mono text-slate-500">${count}</span></div>`
+    ).join("")}</div>
+  </div>`;
+
+  // Region breakdown
+  const byRegion = {};
+  competitors.forEach(c => {
+    const r = c.region || 'HK';
+    if (!byRegion[r]) byRegion[r] = { total: 0, active: 0 };
+    byRegion[r].total++;
+    if ((c.events || []).length > 0) byRegion[r].active++;
+  });
+
+  html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">区域覆盖</h3>
+    <div class="space-y-2">${Object.entries(byRegion).map(([r, v]) => {
+      const cfg = REGION_CONFIG[r] || REGION_CONFIG.HK;
+      return `<div class="flex items-center justify-between"><span class="text-[10px] font-mono ${cfg.color}">${cfg.label}</span><span class="text-[10px] font-mono text-slate-500">${v.active}/${v.total}</span></div>`;
+    }).join("")}</div>
+  </div>`;
+
+  // Importance legend
+  html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">重要性说明</h3>
+    <div class="space-y-2">${Object.entries(IMPORTANCE_CONFIG).map(([, v]) =>
+      `<div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full ${v.dot}"></span><span class="text-[10px] font-mono ${v.color}">${v.label}</span></div>`
+    ).join("")}</div>
+  </div>`;
+
+  document.getElementById("sidebar-content").innerHTML = html;
+}
+
+// Lazy render markdown for competitor events adate
+const _compMdObserver = new MutationObserver(() => {
+  document.querySelectorAll('[id^="comp-ev-"]').forEach(el => {
+    if (!el.dataset.rendered && el.dataset.md) {
+      el.innerHTML = marked.parse(decodeURIComponent(el.dataset.md));
+      el.dataset.rendered = "1";
+    }
+  });
+});
+_compMdObserver.observe(document.body, { childList: true, subtree: true });
+
+// ── Sources (信源) ──────────────────────────────────────────────
+
+async function loadSources() {
+  try {
+    const res = await fetch(SRC_API.sources);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    renderSourcesDashboard(data);
+  } catch (e) {
+    console.error("Failed to load sources:", e);
+    document.getElementById("card-sections").innerHTML =
+      '<div class="text-center py-20 text-slate-500"><p class="text-sm">无法加载信源配置</p></div>';
+    document.getElementById("hero-stats").innerHTML = '';
+    document.getElementById("sidebar-content").innerHTML = '';
+  }
+}
+
+function renderSourcesDashboard(data) {
+  const rssList = data.rss || [];
+  const twitterAccounts = (data.twitter && data.twitter.accounts) || [];
+
+  // Header
+  document.getElementById("header-date").textContent = "信源配置";
+  document.getElementById("header-subtitle").textContent = `共 ${rssList.length + twitterAccounts.length} 个数据源`;
+  document.getElementById("filter-count").textContent =
+    `${rssList.length} RSS · ${twitterAccounts.length} Twitter`;
+
+  // Hero stats
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="text-center"><div class="text-xl font-display font-bold text-white">${rssList.length + twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">总信源</div></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-orange-400">${rssList.length}</div><div class="text-[10px] text-slate-500 font-mono">RSS</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-sky-400">${twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">Twitter</div></div>`;
+
+  // Render RSS section
+  let html = '';
+  html += renderSourceSection('RSS 订阅源', 'bg-orange-500', 'text-orange-400',
+    rssList.map((s, i) => renderRssSourceCard(s, i)).join(''));
+
+  // Render Twitter section
+  html += renderSourceSection('Twitter 账号', 'bg-sky-500', 'text-sky-400',
+    twitterAccounts.map((handle, i) => renderTwitterSourceCard(handle, i)).join(''));
+
+  document.getElementById("card-sections").innerHTML = html;
+
+  // Sidebar
+  const zhCount = rssList.filter(s => s.lang === 'zh').length;
+  const enCount = rssList.filter(s => s.lang === 'en').length;
+  document.getElementById("sidebar-content").innerHTML = `
+    <div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+      <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">信源概览</h3>
+      <div class="space-y-2">
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">RSS 源</span><span class="text-[10px] font-mono text-orange-400">${rssList.length}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">Twitter 账号</span><span class="text-[10px] font-mono text-sky-400">${twitterAccounts.length}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">中文源</span><span class="text-[10px] font-mono text-slate-300">${zhCount}</span></div>
+        <div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">英文源</span><span class="text-[10px] font-mono text-slate-300">${enCount}</span></div>
+      </div>
+    </div>`;
+
+  document.getElementById("footer-left").textContent = 'OSL Growth Intelligence';
+  document.getElementById("footer-right").textContent = `信源配置 · ${rssList.length + twitterAccounts.length} 个数据源`;
+}
+
+function renderSourceSection(title, barColor, textColor, cardsHtml) {
+  return `<section class="mb-6">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="h-3 w-3 rounded-full ${barColor} shrink-0"></span>
+      <h2 class="text-sm font-display font-bold ${textColor} tracking-wide uppercase">${title}</h2>
+      <div class="flex-1 h-px bg-white/[0.08]"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+      ${cardsHtml}
+    </div>
+  </section>`;
+}
+
+function renderRssSourceCard(source, index) {
+  const langBadge = source.lang === 'zh'
+    ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded text-amber-300 bg-amber-500/10">中文</span>'
+    : '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded text-emerald-300 bg-emerald-500/10">EN</span>';
+  return `
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.04}s">
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-orange-500"></div>
+    <div class="pl-4 pr-4 py-3">
+      <div class="flex items-center justify-between gap-2">
+        <span class="text-[12px] font-display font-semibold text-white truncate">${esc(source.name)}</span>
+        ${langBadge}
+      </div>
+      <a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer"
+         class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors truncate block mt-1 font-mono">${esc(source.url)}</a>
+    </div>
+  </div>`;
+}
+
+function renderTwitterSourceCard(handle, index) {
+  return `
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.04}s">
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-sky-500"></div>
+    <div class="pl-4 pr-4 py-3">
+      <div class="flex items-center gap-2">
+        <span class="text-[12px] font-display font-semibold text-white">@${esc(handle)}</span>
+      </div>
+      <a href="https://x.com/${esc(handle)}" target="_blank" rel="noopener noreferrer"
+         class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors block font-mono">x.com/${esc(handle)}</a>
+    </div>
+  </div>`;
 }

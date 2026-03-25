@@ -180,7 +180,7 @@ async def process(raw_path: Path, output_path: Path, run_date: str) -> str:
     from processor.extractor import extract
     json_path = output_path.parent / "result.json"
     try:
-        parsed = extract(result, run_date)
+        parsed = await extract(result, run_date)
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(parsed, f, ensure_ascii=False, indent=2)
         logger.info(f"[Manus] Parsed JSON written to {json_path}")
