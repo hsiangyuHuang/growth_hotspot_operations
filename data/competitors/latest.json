@@ -1,36 +1,11 @@
 {
-  "run_date": "2026-03-27",
+  "run_date": "2026-03-28",
   "competitors": [
     {
       "name": "HashKey",
-      "summary": "HashKey 公布了其 2025 年度稳健的业绩数据，并深化了与谷歌云在 AI 安全方面的合作。",
-      "events": [
-        {
-          "title": "发布 2025 年度业绩报告",
-          "category": "其他",
-          "summary": "**HashKey Group 公布 2025 年财务摘要**：\\n- **总收入**：7.23亿港元。\\n- **交易规模**：交易促进服务成交额达 5908亿港元。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@HashKeyGroup",
-              "url": "https://x.com/HashKeyGroup/status/2037513236648710147"
-            }
-          ]
-        },
-        {
-          "title": "与谷歌云合作提升 HSK 链安全性",
-          "category": "合作伙伴",
-          "summary": "**HashKey Chain 宣布利用 AI 与谷歌云（Google Cloud）合作**，通过 AI 驱动的安全监测，增强 Web3 生态系统的链上安全性和效率。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@HSKChain",
-              "url": "https://x.com/HSKChain/status/2037448544576225433"
-            }
-          ]
-        }
-      ],
-      "region": "HK"
+      "region": "HK",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "HKVAX",
@@ -46,59 +21,55 @@
     },
     {
       "name": "Bullish",
+      "region": "HK",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "HK"
+      "events": []
     },
     {
       "name": "Binance",
-      "summary": "币安因在澳大利亚误分类零售客户被罚款690万美元，同时上线了 $XAUT 现货与衍生品交易并推出系列激励活动。",
+      "summary": "机构业务表现亮眼，OTC 交易量大幅增长，同时持续推广 TradFi 永续合约及理财活动。",
       "events": [
         {
-          "title": "币安澳大利亚分部因合规问题被罚款6.9亿澳元",
-          "category": "监管合规",
-          "summary": "**澳大利亚联邦法院对币安澳大利亚衍生品公司处以690万澳元（约450万美元）罚款**。主要要点：\\n- **违规行为**：币安将524名零售客户错误分类为批发投资者，导致其在缺乏法律保护的情况下接触高风险衍生品。\\n- **损失情况**：受影响的零售投资者因此损失了约600万美元。\\n- **后续影响**：币安已承认错误，该处罚突显了监管机构对加密平台用户分类的严格审查。",
+          "title": "2026年首两月 OTC 交易量大幅增长",
+          "category": "其他",
+          "summary": "**Binance 机构业务需求强劲**：\n* 2026年前两个月的 OTC 交易量已达到 2025 年总量的 **25%**\n* 比特币 OTC 份额从 1 月的 **4.91%** 激增至 2 月的 **45.81%**\n* 稳定币与法币流入占比从 **21.43%** 升至 **48.95%**",
           "importance": "high",
           "sources": [
             {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/395437/binance-australia-derivatives-fined-6-9-million-over-compliance-and-onboarding-failures?utm_source=rss&utm_medium=rss"
+              "name": "twitter:@_RichardTeng",
+              "url": "https://x.com/_RichardTeng/status/2037773782639865938"
             },
             {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/australia-court-fines-binance-6-9-million-onboarding-failures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-            },
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/362582/binance-australia-6-9m-fine-investors-lose-millions"
-            },
-            {
-              "name": "WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2037461656364626341"
+              "name": "twitter:@WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2037788711849734611"
             }
           ]
         },
         {
-          "title": "上线 Tether Gold (XAUT) 交易竞赛",
-          "category": "新币上线",
-          "summary": "**币安在现货和期货市场同步上线 XAUT 并推出奖励活动**：\\n- **现货锦标赛**：瓜分200 XAUT 代币券。\\n- **期货挑战赛**：交易 XAUTUSDT 永续合约，争夺90 XAUT 奖励池。",
+          "title": "上线 TradFi 永续合约",
+          "category": "产品更新",
+          "summary": "**一站式交易多种资产**：\n* 支持以 **USDT** 结算黄金、白银及顶级股票指数永续合约\n* 提供杠杆交易且无到期日，旨在吸引传统金融交易者",
           "importance": "medium",
           "sources": [
             {
               "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2037469833713909902"
+              "url": "https://x.com/binance/status/2037738213893411093"
             }
           ]
         },
         {
-          "title": "推出 500,000 USDC 三月挑战赛",
-          "category": "活动推广",
-          "summary": "**币安三月挑战赛进入最后阶段**。用户通过完成邀请好友和交易等简单任务，可瓜分 **500,000 USDC** 奖池。",
+          "title": "理财与交易工具更新",
+          "category": "产品更新",
+          "summary": "**优化自动化交易与收益产品**：\n* 推出 **合约 DCA 机器人**，允许用户灵活调整交易策略\n* 推广 **USD1 空投活动**，提供最高 **6.52%** 的 APR 收益",
           "importance": "medium",
           "sources": [
             {
               "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2037636099875438914"
+              "url": "https://x.com/binance/status/2037817389853573413"
+            },
+            {
+              "name": "twitter:@binance",
+              "url": "https://x.com/binance/status/2037907572595073032"
             }
           ]
         }
@@ -107,29 +78,29 @@
     },
     {
       "name": "OKX",
-      "summary": "OKX 计划与纽交所合作探索代币化股票，并正式向美国市场引入原生交易机器人功能。",
+      "summary": "推进 AI 与链上钱包的深度集成，并预告欧洲市场新动态。",
       "events": [
         {
-          "title": "拟与纽交所合作推出代币化股权交易",
-          "category": "合作伙伴",
-          "summary": "**OKX 宣布计划与纽交所（NYSE）合作**，在监管批准的前提下，为全球1.2亿用户提供代币化股权的访问权限。此举标志着传统华尔街金融与区块链技术的进一步深度融合。",
+          "title": "推出 OKX Agentic Wallet",
+          "category": "产品更新",
+          "summary": "**AI 驱动的链上交互**：\n* 支持 **自然语言输入** 直接转化为链上执行指令\n* 降低非技术用户与 Web3 交互的门槛",
           "importance": "high",
           "sources": [
             {
               "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2037599097159381400"
+              "url": "https://x.com/okx/status/2037723120983834729"
             }
           ]
         },
         {
-          "title": "在美国市场正式上线交易机器人功能",
-          "category": "产品更新",
-          "summary": "**OKX 在美国市场推出了原生交易机器人系列产品**，包括：\\n- **现货网格 (Spot Grid)**\\n- **定投机器人 (Spot DCA)**\\n- **智能组合 (Smart Portfolio)**\\n旨在为美国用户提供无需代码的自动化交易策略。",
-          "importance": "high",
+          "title": "预告欧洲市场扩张动作",
+          "category": "其他",
+          "summary": "**潜在的市场准入或合规动作**：\n* 官方发布带有欧盟旗帜的 \"Probably nothing\" 预告，暗示将在 **欧洲市场** 有重大发布",
+          "importance": "medium",
           "sources": [
             {
               "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2037525060227875312"
+              "url": "https://x.com/okx/status/2037752313272496339"
             }
           ]
         }
@@ -138,29 +109,17 @@
     },
     {
       "name": "Bybit",
-      "summary": "Bybit 密集上线了 $XAUT、$CL 和 $BASED 等多个交易对，并针对特定地区开展激励活动。",
+      "summary": "持续推进 AI 辅助交易功能的应用与教育。",
       "events": [
         {
-          "title": "上线 XAUT、CL 及 BASED 交易支持",
-          "category": "新币上线",
-          "summary": "**Bybit 近期连续增加多个资产的交易支持**：\\n- **XAUT**：支持 USDT 保证金的期货与期权交易。\\n- **$CLUSDT**：上线最高50倍杠杆的永续合约。\\n- **$BASED**：即将在现货平台上线。",
+          "title": "推广 Bybit AI Hub 交易中心",
+          "category": "产品更新",
+          "summary": "**简化交易工作流**：\n* 通过 **AI Hub** 整合复杂的工作流程，提供更直观、简单的交易交互方式",
           "importance": "medium",
           "sources": [
             {
               "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2037499878419378273"
-            }
-          ]
-        },
-        {
-          "title": "在肯尼亚地区启动 Bybit Pay 奖励活动",
-          "category": "活动推广",
-          "summary": "针对肯尼亚用户推出存款、使用 Bybit Pay 或进行商家交易的激励，**总奖池为 8,000 USDT**。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2037530330467311781"
+              "url": "https://x.com/Bybit_Official/status/2037892466049781854"
             }
           ]
         }
@@ -169,69 +128,29 @@
     },
     {
       "name": "Coinbase",
-      "summary": "Coinbase 联手房贷巨头推出比特币抵押贷款，同时在预测市场监管和稳定币立法的博弈中处于核心地位。",
+      "summary": "深耕加密资产在实体经济中的应用，通过合作伙伴关系探索比特币抵押贷款。",
       "events": [
         {
-          "title": "推出比特币抵押贷款购房服务",
+          "title": "与 Better Home & Finance 达成抵押贷款合作",
           "category": "合作伙伴",
-          "summary": "**Coinbase 与房贷金融机构 Better Home & Finance 合作推出由房利美（Fannie Mae）支持的加密抵押贷款**：\\n- **核心功能**：允许合格借款人使用 **BTC 或 USDC 作为抵押品支付首付款**。\\n- **主要优势**：无需出售数字资产即可购房，从而避免产生资本利得税，并保留资产增值潜力。",
+          "summary": "**探索加密资产作为首付抵押品**：\n* 购房者可使用账户中的 **BTC** 或 **USDC** 作为首付款抵押品\n* 该贷款与传统房利美支持的抵押贷款相互独立，提升资产流动性",
           "importance": "high",
           "sources": [
             {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/homebuyers-can-now-borrow-against-bitcoin-to-get-a-mortgage-without-selling-or-liquidation-risk/"
-            },
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5209972"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/crypto-currents-better-coinbase-launch-token-backed-mortgage/"
+              "name": "twitter:@WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2037703304696959290"
             }
           ]
         },
         {
-          "title": "底特律市介入 Coinbase 预测市场诉讼案",
-          "category": "监管合规",
-          "summary": "**底特律市计划提交法律咨询意见书，支持密歇根州对抗 Coinbase 的诉讼**。此案源于 Coinbase 在该州推出预测市场前发起的法律挑战，反映了美国各州对该业务的严监管趋势。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/detroit-michigan-lawsuit-coinbase-prediction-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-            }
-          ]
-        },
-        {
-          "title": "稳定币收益条款导致加密法案陷入僵局",
-          "category": "监管合规",
-          "summary": "**Coinbase 对 CLARITY 法案中有关稳定币收益/奖励的限制条款表示不满**。北卡罗来纳州参议员计划下周发布新的立法文本，试图解决这一影响整个美国加密市场规则制定的僵局。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/coinbase-standoff-over-stablecoin-reward-clarity-is-now-holding-up-rules-for-the-entire-us-crypto-market/"
-            },
-            {
-              "name": "twitter:@EleanorTerrett",
-              "url": "https://x.com/EleanorTerrett/status/2037591050005741900"
-            }
-          ]
-        },
-        {
-          "title": "贝莱德等大额资产流入 Coinbase Prime",
+          "title": "GameStop 使用 Coinbase Prime 开展备兑看涨期权策略",
           "category": "其他",
-          "summary": "**机构资金持续向 Coinbase 转移**：\\n- **贝莱德**：向 Coinbase Prime 存入了 68,568 ETH（约1.39亿美元）和 612 BTC（约4140万美元）。\\n- **Jump Trading**：向 Coinbase 转移了 900 BTC（约5918万美元）。",
+          "summary": "**机构客户策略更新**：\n* GameStop 将价值 **3.15 亿美元** 的比特币通过 Coinbase Prime 开展 **备兑看涨期权 (Covered Call)** 策略以获取额外收益",
           "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@lookonchain",
-              "url": "https://x.com/lookonchain/status/2037478779791270219"
-            },
-            {
-              "name": "twitter:@whale_alert",
-              "url": "https://x.com/whale_alert/status/2037609400160944382"
+              "name": "Decrypt",
+              "url": "https://decrypt.co/362632/why-gamestop-bitcoin-covered-call-strategy"
             }
           ]
         }
@@ -240,34 +159,9 @@
     },
     {
       "name": "Kraken",
-      "summary": "Kraken 通过合作伙伴关系进入私募科技投资代币化领域，并在英国市场推出具备工资匹配奖励的新账户。",
-      "events": [
-        {
-          "title": "与 Fundrise 合作将风投基金代币化",
-          "category": "合作伙伴",
-          "summary": "**Kraken 旗下的 xStocks 与 Fundrise 达成合作**，将新推出的 **Fundrise Innovation Fund (VCX)** 进行代币化。用户可以通过链上方式获得顶级私募科技公司的投资敞口。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/xstocks/fundrise-vcx-tokenize-leading-private-tech-companies"
-            }
-          ]
-        },
-        {
-          "title": "在英国上线具备工资匹配奖励的本地账户",
-          "category": "产品更新",
-          "summary": "**Kraken 在英国推出了基于 Faster Payments 和 SEPA 的本地账户**：\\n- **功能**：可直接接收薪资及支付账单。\\n- **激励**：提供 **1% 的工资匹配奖励**，旨在将加密账户转化为用户的主要金融账户。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/krak/uk-accounts-salary-match"
-            }
-          ]
-        }
-      ],
-      "region": "GLOBAL"
+      "region": "GLOBAL",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Remitano",
@@ -277,84 +171,45 @@
     },
     {
       "name": "bitFlyer",
+      "region": "JP",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "JP"
+      "events": []
     },
     {
       "name": "Coincheck",
-      "summary": "Coincheck 与警察机构开展人才交流以加强犯罪对策。",
-      "events": [
-        {
-          "title": "开展与警方的犯罪对策人才交流",
-          "category": "其他",
-          "summary": "Coincheck 宣布与警察机关进行人才交流计划，旨在共同打击加密资产相关的犯罪活动，提升行业安全性。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@coincheckjp",
-              "url": "https://x.com/coincheckjp/status/2037349097921999005"
-            }
-          ]
-        }
-      ],
-      "region": "JP"
+      "region": "JP",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "GMO Coin",
+      "region": "JP",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "JP"
+      "events": []
     },
     {
       "name": "bitbank",
-      "summary": "bitbank 通过赞助和参会加强在 Web3 商业领域的影响力。",
-      "events": [
-        {
-          "title": "赞助及参与 Web3 行业峰会",
-          "category": "合作伙伴",
-          "summary": "- **Enterprise Vision Summit**：bitbank 担任银牌赞助商。\\n- **TEAMZ WEB3/AI SUMMIT 2026**：市场分析师长谷川将发表关于 2026 市场前景的演讲。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@bitbank_inc",
-              "url": "https://x.com/bitbank_inc/status/2037454587666260178"
-            }
-          ]
-        }
-      ],
-      "region": "JP"
+      "region": "JP",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "SBI VC Trade",
-      "summary": "SBI VC Trade 继续深耕 Berachain 生态合作，并针对新上年代币开展投教活动。",
-      "events": [
-        {
-          "title": "与 Berachain 展开深度战略合作",
-          "category": "合作伙伴",
-          "summary": "**SBI 代表与 Berachain 财团举行高层对话**，探讨 BERA 在国内首发后的未来前景，并计划于 3月30日举行联合线上研讨会。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@sbivc_official",
-              "url": "https://x.com/sbivc_official/status/2037457649152020972"
-            }
-          ]
-        }
-      ],
-      "region": "JP"
+      "region": "JP",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Rakuten Wallet",
+      "region": "JP",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "JP"
+      "events": []
     },
     {
       "name": "Bitstamp",
+      "region": "EU",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "EU"
+      "events": []
     },
     {
       "name": "Bitpanda",
@@ -388,29 +243,21 @@
     },
     {
       "name": "Tokocrypto",
-      "summary": "Tokocrypto 通过与主流支付渠道合作提供返现，并紧跟国际监管和区块链扩张趋势。",
+      "summary": "侧重于印尼本土市场的支付渠道优惠及行情资讯分发。",
       "events": [
         {
-          "title": "与 OVO 和 ShopeePay 推出存款返现优惠",
+          "title": "推出 OVO 与 ShopeePay 充值优惠",
           "category": "活动推广",
-          "summary": "通过 OVO 存款 100万印尼盾可获 2.5万点奖励；使用 ShopeePay 存款可获最高 5万个 Shopee 币返现。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2037522778224787652"
-            }
-          ]
-        },
-        {
-          "title": "报道 McLaren 加入 Hedera 委员会",
-          "category": "合作伙伴",
-          "summary": "**迈凯伦车队正式加入 Hedera 理事会**，将参与 Hedera 网络的发展决策，并可能推出免费数字资产以扩展其区块链布局。",
+          "summary": "**深耕印尼本土市场**：\n* 使用 **OVO** 充值满 100 万印尼盾可获 2.5 万 OVO 积分返现\n* 同步推行 **ShopeePay** 新用户充值福利",
           "importance": "medium",
           "sources": [
             {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/mclaren-ekspansi-blockchain-bagikan-aset-digital-gratis/"
+              "name": "twitter:@Tokocrypto",
+              "url": "https://x.com/Tokocrypto/status/2037899510798823572"
+            },
+            {
+              "name": "twitter:@Tokocrypto",
+              "url": "https://x.com/Tokocrypto/status/2037793813511479738"
             }
           ]
         }
@@ -419,9 +266,9 @@
     },
     {
       "name": "PINTU",
+      "region": "ID",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "ID"
+      "events": []
     },
     {
       "name": "Upbit Indonesia",
@@ -431,28 +278,15 @@
     },
     {
       "name": "Luno",
-      "summary": "Luno 在马来西亚市场大幅扩充了其加密资产篮子，新增 29 种代币。",
-      "events": [
-        {
-          "title": "在马来西亚上线 29 种新资产",
-          "category": "新币上线",
-          "summary": "**Luno 宣布在马来西亚进行其历史上规模最大的代币上线活动**：\\n- **新增代币**：包括 $ONDO, $FET, $RNDR, $JUP, $PYTH 等 29 种资产。\\n- **领域涵盖**：AI、DeFi 及 RWA 赛道。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@LunoGlobal",
-              "url": "https://x.com/LunoGlobal/status/2037472392256311466"
-            }
-          ]
-        }
-      ],
-      "region": "ID"
+      "region": "ID",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Reku",
+      "region": "ID",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "ID"
+      "events": []
     },
     {
       "name": "富途/Moomoo",
@@ -468,9 +302,9 @@
     },
     {
       "name": "盈透证券",
+      "region": "BROKER",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "BROKER"
+      "events": []
     }
   ]
 }
