@@ -3,17 +3,29 @@
   "competitors": [
     {
       "name": "HashKey",
-      "summary": "筹备 2026 链上金融峰会，展示合规发展成果。",
+      "summary": "今日公布了 2026 年链上金融峰会计划，并获媒体关注其 2025 年业绩表现。",
       "events": [
         {
-          "title": "举办 2026 HashKey 链上金融峰会",
+          "title": "宣布 2026 年 HashKey 链上金融峰会",
           "category": "活动推广",
-          "summary": "HashKey 宣布将于 **2026年4月23日** 在香港会展中心举办峰会：\n* 主题聚焦 **链上金融基础设施** 的未来。\n* 汇集全球机构、开发者及生态合作伙伴。",
+          "summary": "HashKey 计划举办 **HashKey On-Chain Finance Summit 2026**：\n* **时间**：2026 年 4 月 23 日。\n* **地点**：香港会议展览中心 (HKCEC)。\n* **核心目标**：汇聚全球机构探讨链上金融基础设施的未来。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "HashKey Group",
               "url": "https://x.com/HSKChain/status/2038466512592207942"
+            }
+          ]
+        },
+        {
+          "title": "财新报道分析 HashKey Group 战略转型",
+          "category": "其他",
+          "summary": "《财新》对 HashKey 2025 年年度业绩进行了深度报道：\n* **战略重点**：HashKey 正向 **代币化 (Tokenisation)**、**链上基础设施**及 **AI** 方向转型。\n* **合规框架**：强调在受监管框架下理解数字资产平台。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "HashKey Group",
+              "url": "https://x.com/HashKeyGroup/status/2038507971081289895"
             }
           ]
         }
@@ -22,9 +34,9 @@
     },
     {
       "name": "HKVAX",
+      "region": "HK",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "HK"
+      "events": []
     },
     {
       "name": "VDX",
@@ -34,48 +46,43 @@
     },
     {
       "name": "Bullish",
-      "summary": "披露了强劲的月度及季度经营业绩，并有人事变动。",
-      "events": [
-        {
-          "title": "2026年2月月度运营指标发布",
-          "category": "其他",
-          "summary": "Bullish 发布 **2026年2月月度数据**：\n* 平台在 **全球现货成交量** 中排名 **第三**。\n* 展示了机构级加密资产市场的持续增长。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Bullish",
-              "url": "https://www.bullish.com/news-insights/bullish-releases-february-2026-monthly-metrics"
-            }
-          ]
-        },
-        {
-          "title": "任命 Jay Yarow 为 CoinDesk Insights 总裁",
-          "category": "人事变动",
-          "summary": "Bullish 任命前 CNBC 数字执行主编 **Jay Yarow** 担任 **CoinDesk Insights 总裁**：\n* 此举意在加强其在加密行业资讯领域的专业度与领导力。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Bullish",
-              "url": "https://www.bullish.com/news-insights/bullish-appoints-jay-yarow-former-cnbc-digital-executive-editor-as-president-coindesk-insights"
-            }
-          ]
-        }
-      ],
-      "region": "HK"
+      "region": "HK",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Binance",
-      "summary": "公布了 Alpha R2 协议空投积分门槛，常规运营动态较多。",
+      "summary": "今日重点在于公布了 Binance Alpha R2 Protocol 的空投积分门槛，并持续输出多维度行业洞察。",
       "events": [
         {
-          "title": "Binance Alpha R2 协议空投门槛公布",
-          "category": "其他",
-          "summary": "**Binance Alpha R2 Protocol (R2)** 公布空投参与规则：\n* 用户需达到 **252 分 Alpha 积分** 方可参与。\n* 活动参与将消耗 **15 积分**，于今日 18:00 开启。",
-          "importance": "medium",
+          "title": "Binance Alpha R2 Protocol 空投门槛公布",
+          "category": "活动推广",
+          "summary": "**Binance Alpha R2 Protocol (R2)** 公布空投参与规则：\n* **积分门槛**：用户需达到 **252 分 Alpha 积分**方可参与。\n* **消耗机制**：参与活动将消耗 **15 积分**。\n* **开启时间**：活动于今日 **18:00** 正式开启。",
+          "importance": "high",
           "sources": [
             {
               "name": "律动 BlockBeats",
               "url": "https://m.theblockbeats.info/flash/338727"
+            }
+          ]
+        },
+        {
+          "title": "发布多项行业深度内容与市场周报",
+          "category": "其他",
+          "summary": "Binance 今日发布了一系列教育与市场洞察内容：\n* **购买力平价 (PPP)** 对全球加密资产使用的影响分析。\n* **区块链实际应用案例** 的深度解读。\n* **本周重要公告汇总**（Weekly Announcements）。",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "Binance Blog",
+              "url": "https://x.com/binance/status/2038436256850280618"
+            },
+            {
+              "name": "Binance Blog",
+              "url": "https://x.com/binance/status/2038255074338554041"
+            },
+            {
+              "name": "Binance Blog",
+              "url": "https://x.com/binance/status/2038183257859350682"
             }
           ]
         }
@@ -84,33 +91,53 @@
     },
     {
       "name": "OKX",
-      "summary": "深度整合 Aave 协议并推出全天候股票永续合约产品。",
+      "summary": "今日完成了重大产品集成，DeFi 龙头 Aave 正式上线其 L2 网络 X Layer。",
       "events": [
         {
-          "title": "Aave 在 X Layer 正式上线",
-          "category": "合作伙伴",
-          "summary": "DeFi 巨头 **Aave** 集成至 OKX 的以太坊 L2 网络 **X Layer**：\n* OKX 钱包用户可直接参与借贷并赚取收益，无需跨链。\n* 支持 **USDT0、xBTC、xETH** 等资产，eMode 最高可提供 **88% LTV**。",
+          "title": "Aave 正式上线 OKX X Layer 网络",
+          "category": "产品更新",
+          "summary": "DeFi 借贷协议 **Aave** 已在 OKX 的以太坊 L2 **X Layer** 上线：\n* **功能**：支持用户提供资产（如 USDT0, xBTC, xETH）并赚取自动复利收益。\n* **参数**：提供 6 个专用 eMode，最高可达 **88% LTV**。\n* **地位**：X Layer 是 Aave 集成的第 **21 条区块链**。",
           "importance": "high",
           "sources": [
             {
-              "name": "OKX",
+              "name": "OKX Official",
               "url": "https://x.com/okx/status/2038422555183214740"
             },
             {
               "name": "The Block",
               "url": "https://www.theblock.co/post/395594/aave-goes-live-okx-x-layer"
+            },
+            {
+              "name": "CoinTelegraph",
+              "url": "https://cointelegraph.com/news/okx-integrates-aave-on-eth-l2-x-layer"
             }
           ]
         },
         {
-          "title": "上线股票永续合约产品",
+          "title": "推广股票永续合约与 AI 代理功能",
           "category": "产品更新",
-          "summary": "OKX 推出 **Stock Perpetuals**：\n* 实现 **24/7 全天候交易** 美股价格指数，不受市场开盘时间限制。\n* 在单一 App 内实现股票与加密资产的统一操作。",
+          "summary": "OKX 持续推进其 \"New Money App\" 的功能：\n* **股票永续 (Stock Perpetuals)**：提供 24/7 全天候美股价格敞口，打破市场交易时段限制。\n* **AI 代理 (AI Agent)**：利用智能代理捕捉市场增益。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "OKX Official",
               "url": "https://x.com/okx/status/2038232793033871741"
+            },
+            {
+              "name": "OKX Official",
+              "url": "https://x.com/okx/status/2038458969883111837"
+            }
+          ]
+        },
+        {
+          "title": "有奖互动竞猜活动",
+          "category": "活动推广",
+          "summary": "OKX 发起代币识别有奖竞猜：\n* **奖金**：**100 USDT**。\n* **规则**：识别指定代币并关注官方账号即可参与抽奖。",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "OKX Official",
+              "url": "https://x.com/okx/status/2038368374510498274"
             }
           ]
         }
@@ -119,29 +146,33 @@
     },
     {
       "name": "Bybit",
-      "summary": "推出 BASED 代币相关上线活动并持续优化 AI 交易功能。",
+      "summary": "今日上线了 $BASED 充值活动并重点推广其 AI 交易与支付卡功能。",
       "events": [
         {
-          "title": "$BASED 上线 Launchpool",
-          "category": "新币上线",
-          "summary": "Bybit 宣布上线 **$BASED** 代币：\n* 开启 **Launchpool**，支持质押 BASED 或 MNT 瓜分 300 万个 BASED 奖励。\n* 开放基于以太坊链的充值通道。",
+          "title": "$BASED 充值活动开启",
+          "category": "活动推广",
+          "summary": "Bybit 宣布支持通过以太坊链进行 **$BASED** 充值：\n* **奖励池**：参与者有机会瓜分 **4,500,000 $BASED** 的奖金池。\n* **合作对象**：与 **BasedOneX** 合作推进。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Bybit",
-              "url": "https://announcements.bybit.com/en-US/article/bybit-launchpool-stake-based-or-mnt-to-earn-a-share-of-3-000-000-based-bltc2cd52ad8c0d9cb4/"
+              "name": "Bybit Official",
+              "url": "https://x.com/Bybit_Official/status/2038194453479854089"
             }
           ]
         },
         {
-          "title": "Bybit AI Hub 自动化交易功能优化",
+          "title": "推广 Bybit AI Hub 与 Bybit Card 支付功能",
           "category": "产品更新",
-          "summary": "Bybit 推介其 **AI Hub** 核心优势：\n* 支持自然语言指令直接转化为 **交易执行**。\n* 涵盖下单、仓位管理及实时数据访问，简化交易流程。",
+          "summary": "Bybit 持续推广其交易与支付生态：\n* **AI Hub**：支持将自然语言指令转化为交易执行，简化调仓与数据访问流程。\n* **Bybit Card**：强调从加密货币到日常消费的即时转化能力。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "Bybit Official",
               "url": "https://x.com/Bybit_Official/status/2038164256160448968"
+            },
+            {
+              "name": "Bybit Official",
+              "url": "https://x.com/Bybit_Official/status/2038269952860324217"
             }
           ]
         }
@@ -150,12 +181,24 @@
     },
     {
       "name": "Coinbase",
-      "summary": "出现大额资金异常流入。",
+      "summary": "行业研究显示 Coinbase 在 AI 驱动服务领域处于领先地位，且今日监测到大额 USDC 流入。",
       "events": [
         {
-          "title": "超 1 亿枚 USDC 流入 Coinbase",
+          "title": "Tiger Research 报告称 Coinbase 引领 AI 服务潮流",
           "category": "其他",
-          "summary": "监测到 **109,052,697 枚 USDC**（约 1.09 亿美元）从未知钱包转入 **Coinbase**：\n* 这通常预示着潜在的机构买盘或流动性调整。",
+          "summary": "研究报告显示：\n* **Coinbase 与 Binance** 等盈利型公司正在引领加密与 AI 的融合。\n* AI 已从理论转变为交易所防止用户流失的**实际操作必需品**。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Odaily",
+              "url": "https://www.odaily.news/zh-CN/post/5209995"
+            }
+          ]
+        },
+        {
+          "title": "监测到超过 1.09 亿枚 USDC 流入",
+          "category": "其他",
+          "summary": "**Whale Alert** 监测到：\n* **109,052,697 USDC**（约 1.09 亿美元）从未知钱包转移至 **Coinbase**。",
           "importance": "low",
           "sources": [
             {
@@ -169,13 +212,13 @@
     },
     {
       "name": "Kraken",
-      "summary": "在澳洲金融评选中获得多项行业大奖。",
+      "summary": "今日重点在于其在澳大利亚市场获得多项行业大奖。",
       "events": [
         {
-          "title": "获得 2026 年澳洲多项加密货币大奖",
+          "title": "荣获 2026 年多项澳大利亚加密货币奖项",
           "category": "其他",
-          "summary": "Kraken 在 **WeMoney** 和 **Finder** 的评选中获得最高荣誉：\n* 被评为“年度最佳加密货币平台”。\n* 巩固了其在澳洲市场的领先地位。",
-          "importance": "low",
+          "summary": "Kraken 在澳大利亚两项主要评选中获得最高荣誉：\n* **WeMoney Cryptocurrency Awards**：获得相关奖项。\n* **Finder’s Product Awards**：被评为领先的加密货币平台。",
+          "importance": "medium",
           "sources": [
             {
               "name": "Kraken Blog",
@@ -200,9 +243,9 @@
     },
     {
       "name": "Coincheck",
+      "region": "JP",
       "summary": "今日无重大动态",
-      "events": [],
-      "region": "JP"
+      "events": []
     },
     {
       "name": "GMO Coin",
@@ -212,16 +255,16 @@
     },
     {
       "name": "bitbank",
-      "summary": "更新了高管人事结构以强化公司治理。",
+      "summary": "今日进行了高管层人事调整以强化治理。",
       "events": [
         {
-          "title": "宣布新任董事及管理层任命",
+          "title": "宣布新任执行役员人事任命",
           "category": "人事变动",
-          "summary": "bitbank 公布新的 **役员人事体制**：\n* 旨在建立更有效的**公司治理结构**。\n* 致力于提升企业价值及提供更安全的服务。",
+          "summary": "bitbank 宣布建立新的管理体制：\n* **目标**：实现更有效的**公司治理**，提升企业价值。\n* **核心理念**：确保向客户提供安心、安全的服务。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "bitbank",
               "url": "https://x.com/bitbank_inc/status/2038451144825987282"
             }
           ]
@@ -231,17 +274,29 @@
     },
     {
       "name": "SBI VC Trade",
-      "summary": "引入 BIMI 邮件验证技术，强化用户信息安全。",
+      "summary": "今日重点在于引入 BIMI 认证技术，强化用户邮件安全。",
       "events": [
         {
-          "title": "引入企业徽标邮件认证技术 BIMI",
+          "title": "引入 BIMI 邮件认证技术强化反钓鱼安全",
+          "category": "产品更新",
+          "summary": "SBI VC Trade 宣布自 2026 年 3 月 30 日起导入 **BIMI (Brand Indicators for Message Identification)**：\n* **功能**：在官方邮件上显示企业 Logo，帮助用户一眼识别真伪。\n* **目标**：通过身份可视化减少钓鱼诈骗受害者。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "SBI VC Trade",
+              "url": "https://x.com/sbivc_official/status/2038436334495576365"
+            }
+          ]
+        },
+        {
+          "title": "发布 4 月 1 日系统定期维护预告",
           "category": "其他",
-          "summary": "SBI VC Trade 正式采用 **BIMI 认证技术**：\n* 在发给客户的邮件中显示官方 LOGO。\n* 旨在通过可视化认证防范**钓鱼诈骗**。",
+          "summary": "SBI VC Trade 计划于 **2026 年 4 月 1 日 12:00-13:00 HKT** 进行维护，届时将暂停所有交易功能。",
           "importance": "low",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/sbivc_official/status/2038436334495576365"
+              "name": "SBI VC Trade",
+              "url": "https://x.com/sbivc_official/status/2038469907055341590"
             }
           ]
         }
@@ -250,107 +305,34 @@
     },
     {
       "name": "Rakuten Wallet",
-      "summary": "今日无重大动态",
-      "events": [],
+      "summary": "今日与乐天生态系统联动进行积分抽奖推广。",
+      "events": [
+        {
+          "title": "乐天 TV 春假特别企划抽奖",
+          "category": "活动推广",
+          "summary": "利用乐天生态系统进行交叉推广：\n* **奖励**：**10,000 乐天积分**（1名）。\n* **参与方式**：关注指定账号并转发推文。",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "Rakuten Wallet",
+              "url": "https://x.com/Rakuten_Wallet/status/2038457447187390569"
+            }
+          ]
+        }
+      ],
       "region": "JP"
     },
     {
       "name": "Bitstamp",
-      "summary": "合规牌照与全球排名表现优异，持续优化支付支持。",
-      "events": [
-        {
-          "title": "获得英属维尔京群岛 VASP 注册",
-          "category": "监管合规",
-          "summary": "Bitstamp by Robinhood 成功获得 **BVI VASP（虚拟资产服务商）注册**：\n* 进一步扩展了其 **全球监管版图**。\n* 强化了平台的合规性声誉。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Bitstamp",
-              "url": "https://blog.bitstamp.net/post/bitstamp-by-robinhood-secures-bvi-vasp-registration-expanding-its-global-regulatory-footprint/"
-            }
-          ]
-        },
-        {
-          "title": "在 Kaiko 及 CoinDesk 评级中名列前茅",
-          "category": "其他",
-          "summary": "Bitstamp 多个季度获得顶级评价：\n* 在 **Kaiko 2026 Q1 交易所排名** 中位列 **第二**。\n* 连续第 10 次获得 **CoinDesk/CCData 的 AA 评级**，排名超越 Coinbase。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Bitstamp",
-              "url": "https://blog.bitstamp.net/post/bitstamp-by-robinhood-rises-to-2-in-kaikos-q1-2026-exchange-ranking/"
-            }
-          ]
-        },
-        {
-          "title": "上线 SGD 新元支付支持",
-          "category": "产品更新",
-          "summary": "Bitstamp 针对新加坡用户推出新功能：\n* 支持 **PayNow** 进行 **SGD 充值与提现**。\n* 提供 **USD/SGD 兑换服务**。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Bitstamp",
-              "url": "https://blog.bitstamp.net/post/sgd-is-here-simpler-faster-and-more-local/"
-            }
-          ]
-        }
-      ],
-      "region": "EU"
+      "region": "EU",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Bitpanda",
-      "summary": "在合规、人事及 Web3 基础设施方面有重大动作。",
-      "events": [
-        {
-          "title": "推出 Vision Protocol 与 Vision Chain",
-          "category": "产品更新",
-          "summary": "**Vision Protocol** 正式发布，作为 Bitpanda **Web3 网关** 的骨干基础设施：\n* 旨在支持 Web3 生态系统的集成与扩展。\n* 强化了平台在区块链底层技术层面的布局。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Bitpanda",
-              "url": "https://blog.bitpanda.com/en/introducing-vision-protocol-backbone-bitpandas-web3-gateway"
-            }
-          ]
-        },
-        {
-          "title": "通过 SOC 2 Type II 安全审计认证",
-          "category": "监管合规",
-          "summary": "Bitpanda 获得 **SOC 2® Type II 鉴证报告**：\n* 进一步强化了其在**安全性、可用性和数据隐私**方面的合规承诺。\n* 针对企业级客户提升了平台的可信度。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Bitpanda",
-              "url": "https://blog.bitpanda.com/en/reinforcing-our-commitment-security-bitpanda-achieves-soc-2-type-ii-attestation"
-            }
-          ]
-        },
-        {
-          "title": "董事会成员关键任命",
-          "category": "人事变动",
-          "summary": "Bitpanda 宣布任命 **3 位杰出董事会成员**：\n* 旨在加强公司治理水平。\n* 助力公司在全球市场进行战略扩张。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Bitpanda",
-              "url": "https://blog.bitpanda.com/en/bitpanda-strengthens-board-directors-key-appointments"
-            }
-          ]
-        },
-        {
-          "title": "与 360T 达成合作伙伴关系",
-          "category": "合作伙伴",
-          "summary": "Bitpanda 与 **360T** 合作：\n* 旨在扩大在欧洲市场的 **数字资产访问渠道**。\n* 为金融机构提供更便捷的交易路径。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Bitpanda",
-              "url": "https://blog.bitpanda.com/en/bitpanda-and-360t-partner-expand-digital-asset-access-europe"
-            }
-          ]
-        }
-      ],
-      "region": "EU"
+      "region": "EU",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Bitvavo",
@@ -360,120 +342,63 @@
     },
     {
       "name": "Crypto.com",
-      "summary": "在全球合规牌照和银行业务准入上取得突破性进展。",
-      "events": [
-        {
-          "title": "获得美国 OCC 国家信托银行章程有条件批准",
-          "category": "监管合规",
-          "summary": "Crypto.com 获得 **OCC（美国货币监理署）** 对其 **国家信托银行章程** 的 **有条件批准**：\n* 这是平台迈向传统金融与数字资产融合的重大战略里程碑。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Crypto.com",
-              "url": "https://crypto.com/sg/company-news/cryptocom-receives-conditional-approval-from-occ-for-national-trust-bank-charter"
-            }
-          ]
-        },
-        {
-          "title": "获得欧洲有限金融机构执照",
-          "category": "监管合规",
-          "summary": "Crypto.com 在欧洲市场成功获得 **有限金融机构执照**：\n* 进一步强化了其在欧盟境内的合法运营基础。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Crypto.com",
-              "url": "https://crypto.com/sg/company-news/cryptocom-receives-limited-financial-institutions-licence-in-europe"
-            }
-          ]
-        },
-        {
-          "title": "与韩国 KG Inicis 达成战略合作",
-          "category": "合作伙伴",
-          "summary": "Crypto.com 与韩国支付巨头 **KG Inicis** 合作：\n* 旨在扩展韩国市场的 **数字资产支付规模**。\n* 通过支付基础设施整合加密货币使用场景。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Crypto.com",
-              "url": "https://crypto.com/sg/company-news/cryptocom-partners-with-kg-inicis-to-scale-digital-asset-payments-in-south-korea"
-            }
-          ]
-        },
-        {
-          "title": "推出加密原生混合资产个人退休账户 (IRA)",
-          "category": "产品更新",
-          "summary": "Crypto.com 发布首款 **加密原生混合资产退休账户 (IRA)**：\n* 允许用户在退休投资组合中直接配置加密资产。\n* 标志着其产品向主流金融财富管理领域的延伸。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Crypto.com",
-              "url": "https://crypto.com/sg/company-news/introducing-cryptocom-iras-the-first-ever-crypto-native-mixed-asset-retirement-account-offering"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "EU"
     },
     {
       "name": "Gemini",
-      "summary": "上线 SUI 并推出 Zcash 版信用卡，同时关闭 Nifty Gateway。",
+      "region": "EU",
+      "summary": "今日无重大动态",
+      "events": []
+    },
+    {
+      "name": "Indodax",
+      "summary": "今日主要通过社交媒体举办 SuperDAX 互动奖励活动。",
       "events": [
         {
-          "title": "Sui (SUI) 正式上线 Gemini",
-          "category": "新币上线",
-          "summary": "Gemini 客户现已可以购买、出售和存储 **SUI**：\n* 进一步丰富了平台的公链代币支持。",
-          "importance": "medium",
+          "title": "SuperDAX \"Back To Reality\" 挑战活动",
+          "category": "活动推广",
+          "summary": "Indodax 推出社交媒体互动挑战：\n* **活动内容**：用户需在图片中寻找隐藏的 XAUT 和 PAXG 代币图标。\n* **奖金**：总额 **360 万印尼盾 (USDT)**，奖励 12 名优胜者。",
+          "importance": "low",
           "sources": [
             {
-              "name": "Gemini",
-              "url": "https://www.gemini.com/en-SG/blog/sui-is-now-available-on-gemini"
-            }
-          ]
-        },
-        {
-          "title": "推出 Zcash 版 Gemini 信用卡",
-          "category": "产品更新",
-          "summary": "Gemini 发布 **Zcash Edition 信用卡**：\n* 用户在刷卡消费时可获得高达 **4% 的 Zcash (ZEC) 返现**。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Gemini",
-              "url": "https://www.gemini.com/en-SG/blog/gemini-unveils-gemini-credit-card-zcash-edition"
-            }
-          ]
-        },
-        {
-          "title": "宣布 Nifty Gateway 平台关闭",
-          "category": "其他",
-          "summary": "Gemini 宣布旗下 NFT 平台 **Nifty Gateway 正式停止运营**：\n* 标志着公司业务焦点的战略调整。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Gemini",
-              "url": "https://www.gemini.com/en-SG/blog/announcing-nifty-gateways-closure"
+              "name": "Indodax",
+              "url": "https://x.com/indodax/status/2038481459481030768"
             }
           ]
         }
       ],
-      "region": "EU"
-    },
-    {
-      "name": "Indodax",
-      "summary": "今日主要为日常社群活动和行情通报，无重大动态。",
-      "events": [],
       "region": "ID"
     },
     {
       "name": "Tokocrypto",
-      "summary": "主要开展存款激励活动和社群抽奖，无核心产品变革。",
+      "summary": "今日主要开展支付渠道合作推广及联合抽奖活动。",
       "events": [
         {
-          "title": "推出 OVO 与 ShopeePay 存款奖励",
+          "title": "Apel x UTDC 联合抽奖活动",
           "category": "活动推广",
-          "summary": "Tokocrypto 开展支付渠道促销：\n* 通过 **OVO** 存款可获额外奖励。\n* 通过 **ShopeePay** 存款最高可获 5 万 Shopee 币返现。",
+          "summary": "Tokocrypto 举办联合推广活动：\n* **奖池**：总计达 **6000 万印尼盾**。\n* **参与方式**：App 签到并邀请好友。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Tokocrypto",
+              "url": "https://x.com/Tokocrypto/status/2038426482515796073"
+            }
+          ]
+        },
+        {
+          "title": "支付渠道（OVO/ShopeePay）充值返现",
+          "category": "活动推广",
+          "summary": "Tokocrypto 推出支付平台联动活动：\n* **OVO**：提供额外充值奖励。\n* **ShopeePay**：提供高达 **50,000 Shopee 币**的返现奖励。",
           "importance": "low",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "Tokocrypto",
+              "url": "https://x.com/Tokocrypto/status/2038414656008773692"
+            },
+            {
+              "name": "Tokocrypto",
               "url": "https://x.com/Tokocrypto/status/2038267937845596322"
             }
           ]
@@ -483,46 +408,9 @@
     },
     {
       "name": "PINTU",
-      "summary": "高频上线新代币并推出 VIP 忠诚度计划和合约交易新功能。",
-      "events": [
-        {
-          "title": "上线多款新代币 (BREV, SKR 等)",
-          "category": "新币上线",
-          "summary": "PINTU 开启大规模上币计划：\n* 上线 **BREV, SKR** 及其他 7-8 个新代币。\n* 包含 **Humanity Protocol** 和 **Morpho** 等热门项目。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "PINTU",
-              "url": "https://pintu.co.id/blog/pintu-listing-8-token-baru-maret-2026"
-            }
-          ]
-        },
-        {
-          "title": "正式推出 Pintu VIP 忠诚度计划",
-          "category": "活动推广",
-          "summary": "针对专业交易者推出 **Pintu VIP 专属忠诚度计划**：\n* 提供专属权益与福利，旨在提升高净值用户的留存。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "PINTU",
-              "url": "https://pintu.co.id/blog/pintu-vip-resmi-diluncurkan"
-            }
-          ]
-        },
-        {
-          "title": "合约交易上线“反向开仓”功能",
-          "category": "产品更新",
-          "summary": "Pintu Futures 推出 **Reverse Positions** 功能：\n* 允许交易者一键反转仓位，旨在帮助用户快速捕捉市场动向。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "PINTU",
-              "url": "https://pintu.co.id/blog/fitur-reverse-positions-pintu-futures"
-            }
-          ]
-        }
-      ],
-      "region": "ID"
+      "region": "ID",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Upbit Indonesia",
@@ -532,22 +420,9 @@
     },
     {
       "name": "Luno",
-      "summary": "公司领导层发生重大人事变动。",
-      "events": [
-        {
-          "title": "Luno 宣布领导层更迭",
-          "category": "人事变动",
-          "summary": "Luno 官方宣布 **领导层转型方案**：\n* 旨在适应新的市场阶段和监管环境。\n* 将对公司未来的战略方向产生直接影响。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Luno",
-              "url": "https://discover.luno.com/luno-announces-leadership-transition/"
-            }
-          ]
-        }
-      ],
-      "region": "ID"
+      "region": "ID",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Reku",

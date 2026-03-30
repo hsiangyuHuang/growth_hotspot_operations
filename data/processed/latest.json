@@ -3,20 +3,20 @@
   "header_markdown": "",
   "cards": [
     {
-      "title": "地缘冲突加剧致比特币跌破6.5万美元，避险情绪升温",
+      "title": "地缘风险驱动BTC下跌与避险情绪",
       "priority": "P0",
-      "category": "宏观/价格",
+      "category": "宏观/行情",
       "timing": "Day",
-      "relation": "Indirect",
-      "intent": "避险/观望",
-      "site": "Global",
+      "relation": "Direct",
+      "intent": "避险保值/恐慌抛售",
+      "site": "Both",
       "executability": "A",
-      "summary": "行情下跌避险，暂停激进转化素材，切换至 StableHub 避风港与定投教育。",
-      "dont_do": "不做价格预测，不使用恐慌措辞，不推激进转化素材。",
+      "summary": "暂停激进转化素材，全渠道推 StableHub 避风港与定投计划。",
+      "dont_do": "不做收益暗示、不做价格预测、避免恐慌措辞，禁止\"兴奋时刻\"等不当表述。",
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方式\n**Push + EDM**\n\n### 目标人群\n* **VIP Loss 用户**\n* **已入金未交易用户**\n\n### 核心策略\n强调市场波动风险，引导用户将资金转入 **StableHub** 享受稳定收益，或开启**定投计划**以平摊入场成本。\n\n### 落地页\n**StableHub 页面** / **定投计划设置页**"
+          "markdown": "### 触达方式\n- **Push + EDM**\n### 目标人群\n- **VIP Loss 用户**\n- **已入金未交易**\n### 核心信息\n- **市场波动加剧**，使用 **StableHub** 赚取稳定收益或开启**定投计划**平摊成本。\n### 关联产品/页面\n- StableHub 页面\n- 定投计划页面"
         }
       ],
       "sources": [
@@ -25,84 +25,100 @@
           "url": "https://www.coindesk.com/markets/2026/03/30/bitcoin-recovers-to-usd67-400-after-dipping-below-usd65-200-as-houthis-enter-iran-war"
         },
         {
-          "name": "WatcherGuru",
-          "url": "https://x.com/WatcherGuru/status/2038389417472127331"
+          "name": "CryptoSlate",
+          "url": "https://cryptoslate.com/bitcoin-drops-as-rubio-privately-signals-iran-war-may-last-weeks-locking-in-high-oil-prices/"
         }
       ],
       "id": "ap_1"
     },
     {
-      "title": "稳定币支付在东南亚隐形普及，成加密VC新宠",
-      "priority": "P1",
-      "category": "稳定币/行业趋势",
-      "timing": "Wave",
+      "title": "以太坊基金会史上最大ETH质押与ETH地位争议",
+      "priority": "P0",
+      "category": "链上数据/技术",
+      "timing": "Day",
       "relation": "Direct",
-      "intent": "深度研究/使用",
-      "site": "Global",
+      "intent": "深度研究/趋势判断",
+      "site": "Both",
       "executability": "B",
-      "summary": "围绕稳定币支付趋势撰写深度文章，截流搜索流量并推广 StableHub。",
-      "dont_do": "不承诺绝对收益，不涉及未合规地区的推广。",
+      "summary": "输出以太坊基本面分析，引导用户进行 ETH 定投或参与相关交易赛。",
+      "dont_do": "不做投资建议，不点名攻击竞品。",
       "channels": [
         {
           "name": "SEO",
-          "markdown": "### 关键词定向\n优先 bits 业务场景词：**StableHub**、**稳定币理财**、**USDT 兑换**\n\n### 内容生产\n* **深度解读**：分析东南亚支付趋势\n* **实操指南**：如何利用合规平台进行稳定币管理\n\n### 关键 KPI\n* **48 小时内发布**\n* 建立 **StableHub 产品页**内链"
-        }
-      ],
-      "sources": [
-        {
-          "name": "CoinDesk",
-          "url": "https://www.coindesk.com/business/2026/03/29/stablecoin-payments-go-invisible-in-southeast-asia-as-crypto-card-business-surges"
-        },
-        {
-          "name": "律动 BlockBeats",
-          "url": "https://m.theblockbeats.info/news/61733"
-        }
-      ],
-      "id": "ap_2"
-    },
-    {
-      "title": "以太坊基金会进行有史以来最大规模ETH质押",
-      "priority": "P1",
-      "category": "链上数据/机构动态",
-      "timing": "Day",
-      "relation": "Direct",
-      "intent": "跟风质押/信任评估",
-      "site": "HK",
-      "executability": "A",
-      "summary": "向 VIP 用户推送机构级市场洞察，顺势提及 HK 站的 Staking 服务。",
-      "dont_do": "不暗示散户跟单必赚，不提供投资建议。",
-      "channels": [
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方式\n**EDM (研报精选版)**\n\n### 目标人群\n**VIP 用户** / **高净值客户**\n\n### 核心信息\n分析以太坊基金会质押行为体现的**长期信心**，同步推介 OSL 香港站**合规安全**的 **Staking 服务**。\n\n### CTA\n**联系 1 对 1 专属客户经理 (BD)**"
+          "markdown": "### 关键词方向\n- 优先 **bits 业务场景词**（买 ETH、香港买以太坊）\n### 内容类型\n- **热点快讯 + 解读**\n### 时效要求\n- **12 小时内**发布\n### 内链方向\n- 关联 **OSL 定投页面**\n- 关联**合约交易赛 S2 页面**"
         }
       ],
       "sources": [
         {
           "name": "律动 BlockBeats",
           "url": "https://m.theblockbeats.info/flash/338732"
+        },
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/474463"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/etheruem-flippening-odds-rise-wont-involve-bitcoin"
+        }
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "稳定币监管叙事（GENIUS Act/PARITY法案/VC转向）",
+      "priority": "P1",
+      "category": "监管/合规",
+      "timing": "Wave",
+      "relation": "Direct",
+      "intent": "信任评估/资产配置",
+      "site": "Global",
+      "executability": "B",
+      "summary": "强化 OSL 合规稳定币叙事，放大 StableHub 优势。",
+      "dont_do": "不扩散未经证实信息，不点名攻击竞品。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词方向\n- **稳定币词根**（StableHub、稳定币理财、合规交易所）\n### 内容类型\n- **解读 + 指南**\n### 时效要求\n- **24 小时内**发布\n### 内链方向\n- 关联 **StableHub 产品页**"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/03/29/no-one-is-100-happy-with-the-stablecoin-yield-agreement-state-of-crypto"
+        },
+        {
+          "name": "CryptoSlate",
+          "url": "https://cryptoslate.com/congress-to-remove-widely-used-bitcoin-tax-loophole-and-give-it-to-regulated-stablecoins/"
+        },
+        {
+          "name": "律动 BlockBeats",
+          "url": "https://m.theblockbeats.info/news/61733"
         }
       ],
       "id": "ap_3"
     },
     {
-      "title": "法国巴黎银行（BNP Paribas）为零售客户增加比特币和以太坊ETN",
+      "title": "机构资金流向：BTC/ETH ETF净流出与传统机构入场",
       "priority": "P1",
-      "category": "机构/合规",
+      "category": "机构/宏观",
       "timing": "Wave",
       "relation": "Brand",
-      "intent": "信任评估",
+      "intent": "深度研究/跟单机构",
       "site": "HK",
       "executability": "B",
-      "summary": "借传统金融巨头入局，强化 OSL 作为香港持牌交易所的安全合规叙事。",
-      "dont_do": "不夸大传统金融的入场规模，不针对中国大陆用户营销。",
+      "summary": "生成 VIP 专属市场洞察，配合 VIP 精英迁徙活动进行 1 对 1 触达。",
+      "dont_do": "不做价格预测，不做投资建议。",
       "channels": [
         {
-          "name": "Paid Ads",
-          "markdown": "### 投放渠道\n**Meta / Google (仅限 HK 站)**\n\n### 素材策略\n* **真人竖屏视频**：探讨传统金融结合趋势\n* **核心卖点**：**SFC 持牌背书**、**VIP 专属权益**、**法币即时到账**\n\n### 转化目标\n**注册转化** / **VIP 服务预约**"
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 触达方式\n- **EDM + 1 对 1 BD 建联**\n### 目标人群\n- **VIP 用户 / 高净值**\n### 核心信息\n- **机构资金流向深度解析**，OSL VIP 专属服务及迁徙福利。\n### 关联产品/页面\n- **VIP 精英迁徙活动页**"
         }
       ],
       "sources": [
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/474465"
+        },
         {
           "name": "CoinTelegraph",
           "url": "https://cointelegraph.com/news/bnp-paribas-bitcoin-ether-etns-france-retail"
@@ -111,101 +127,105 @@
       "id": "ap_4"
     },
     {
-      "title": "Strategy近30日增持约4.5万枚BTC，占储备型公司需求约76%",
+      "title": "稳定币支付东南亚兴起",
       "priority": "P1",
-      "category": "机构动态",
-      "timing": "Day",
-      "relation": "Indirect",
-      "intent": "FOMO 买入/深度研究",
-      "site": "HK",
-      "executability": "A",
-      "summary": "将机构巨头持续增持的动态作为 Market Insights 发送给高净值用户，促进 BD 建联。",
-      "dont_do": "不直接鼓动散户高位接盘，不承诺收益。",
+      "category": "行业趋势",
+      "timing": "Wave",
+      "relation": "Direct",
+      "intent": "出入金/支付需求",
+      "site": "Global",
+      "executability": "B",
+      "summary": "针对东南亚（如印尼、越南）用户推广 StableHub 及法币出入金通道。",
+      "dont_do": "严禁针对中国大陆用户进行营销。",
       "channels": [
         {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方式\n**EDM**\n\n### 目标受众\n**VIP 用户** / **大额交易意向客户**\n\n### 核心话术\n揭示头部机构大额增持数据，强调 OSL 为高净值客户提供的**大额法币出入金**与**专属场外交易 (OTC)** 服务能力。"
+          "name": "Paid Ads",
+          "markdown": "### 渠道 + 站点\n- **Google 自投 / Meta** (Global 站 / 印尼站)\n### 卖点组合\n- **法币出入金通道 + StableHub 稳定币理财**（无需锁仓）\n### 素材方向\n- **真人竖屏视频 / AI 口播**\n### 落地页指向\n- **StableHub / 注册页**"
         }
       ],
       "sources": [
         {
-          "name": "Odaily",
-          "url": "https://www.odaily.news/zh-CN/newsflash/474456"
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/03/29/stablecoin-payments-go-invisible-in-southeast-asia-as-crypto-card-business-surges"
         }
       ],
       "id": "ap_5"
     },
     {
-      "title": "美国国会提议取消比特币税收漏洞，转向受监管稳定币",
-      "priority": "P1",
-      "category": "监管/合规",
-      "timing": "Wave",
-      "relation": "Brand",
-      "intent": "深度研究/合规避险",
-      "site": "Both",
-      "executability": "B",
-      "summary": "撰写税务新规与合规稳定币相关文章，突出 OSL 合规优势及 StableHub。",
-      "dont_do": "不提供具体的税务建议，不评价他国政策好坏。",
+      "title": "下周大额代币解锁（HYPE/SUI/ENA等）",
+      "priority": "P0",
+      "category": "链上数据/行情",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "寻找交易机会/套利",
+      "site": "Global",
+      "executability": "A",
+      "summary": "提醒活跃交易用户关注解锁带来的波动，联动合约交易赛 S2。",
+      "dont_do": "不做价格预测，不做投资建议。",
       "channels": [
         {
-          "name": "SEO",
-          "markdown": "### 关键词布局\n**合规交易所**、**安全交易所**、**StableHub**\n\n### 内容规划\n* **政策解读**：合规化对稳定币市场的长远影响\n* **FAQ**：常见合规疑问解答\n\n### 内链策略\n关联 **OSL 合规资质页** 与 **StableHub 产品详情页**"
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 触达方式\n- **Push**\n### 目标人群\n- **合约/杠杆活跃用户**\n### 核心信息\n- **HYPE/SUI 等大额解锁**即将来临，参与**合约交易赛 S2 享 0 费率**。\n### 关联产品/页面\n- **合约交易赛 S2 活动页**"
         }
       ],
       "sources": [
         {
-          "name": "CryptoSlate",
-          "url": "https://cryptoslate.com/congress-to-remove-widely-used-bitcoin-tax-loophole-and-give-it-to-regulated-stablecoins/"
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2038451393074516182"
         }
       ],
       "id": "ap_6"
     },
     {
-      "title": "鲍威尔今晚发表讲话，宏观数据或引发市场波动",
-      "priority": "P0",
-      "category": "宏观经济",
-      "timing": "Flash",
-      "relation": "Indirect",
-      "intent": "观望/交易",
-      "site": "Global",
-      "executability": "A",
-      "summary": "在社群发布前瞻讨论，引导用户关注行情波动，适时预热合约交易赛。",
-      "dont_do": "不预测讲话内容对币价的具体影响，不带美元符号。",
+      "title": "HashKey 2025年报曝光",
+      "priority": "P1",
+      "category": "竞对动态",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "平台对比/信任评估",
+      "site": "HK",
+      "executability": "C",
+      "summary": "输出 OSL 差异化优势内容，配合 VIP 迁徙活动。",
+      "dont_do": "绝不点名攻击竞品，只正面输出 OSL 优势。",
       "channels": [
         {
-          "name": "社区",
-          "markdown": "### 平台\n**Telegram / Discord**\n\n### 互动策略\n* **前瞻讨论**：以“今晚讲话对市场波动的影响”为题发起投票或竞猜\n* **调性控制**：使用 Web3 原生语言，保持轻松幽默\n\n### 引导动作\n顺势预热 **OSL 合约交易赛 S2**，提升活跃度"
+          "name": "SEO",
+          "markdown": "### 关键词方向\n- **竞品对比**（香港持牌交易所、如何选择安全交易所）\n### 内容类型\n- **指南 / FAQ**\n### 时效要求\n- **48 小时内**发布\n### 内链方向\n- 关联 **VIP 权益页**\n- 关联**入金奖励页**"
         }
       ],
       "sources": [
         {
-          "name": "律动 BlockBeats",
-          "url": "https://m.theblockbeats.info/flash/338722"
+          "name": "HashKeyGroup",
+          "url": "https://x.com/HashKeyGroup/status/2038507971081289895"
         }
       ],
       "id": "ap_7"
     },
     {
-      "title": "Solana链上Meme币VDOR市值突破1500万美元",
+      "title": "比特币矿企转型AI（挖矿成本倒挂）",
       "priority": "P2",
-      "category": "Meme/热点",
-      "timing": "Flash",
-      "relation": "Gap",
-      "intent": "FOMO 买入",
-      "site": "Global",
-      "executability": "C",
-      "summary": "结合热门 Meme 币制作梗图在社区传播，保持社群活跃度。",
-      "dont_do": "不推荐购买未上线币种，不提供合约地址。",
+      "category": "行业趋势",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "深度研究/长线投资",
+      "site": "Both",
+      "executability": "D",
+      "summary": "通过社区 Meme 或趣味科普，探讨 BTC 成本支撑，引导定投。",
+      "dont_do": "不做价格预测。",
       "channels": [
         {
           "name": "社区",
-          "markdown": "### 平台\n**Twitter / Telegram**\n\n### 内容创意\n* **梗图 (Meme)**：制作关于 VDOR 暴涨与用户“踏空”心态的视觉素材\n* **调性**：纯活跃气氛，**无任何交易引导**\n\n### 目标\n增加社区互动率与品牌曝光度"
+          "markdown": "### 平台\n- **Twitter / Telegram**\n### 适用社群\n- **通用 / 华语**\n### 内容形式\n- **Meme 图 / 话题讨论**\n### 话题角度 + 调性\n- 结合**挖矿亏本转行 AI**的热点，用 **Web3 原生梗**调侃，顺势引出**直接定投 BTC**的稳健策略。"
         }
       ],
       "sources": [
         {
           "name": "律动 BlockBeats",
-          "url": "https://m.theblockbeats.info/flash/338723"
+          "url": "https://m.theblockbeats.info/news/61736"
+        },
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/post/5209985"
         }
       ],
       "id": "ap_8"
