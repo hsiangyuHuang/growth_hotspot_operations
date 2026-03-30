@@ -1,11 +1,24 @@
 {
-  "run_date": "2026-03-28",
+  "run_date": "2026-03-29",
   "competitors": [
     {
       "name": "HashKey",
-      "region": "HK",
-      "summary": "今日无重大动态",
-      "events": []
+      "summary": "发布 2025 年业务里程碑展望。",
+      "events": [
+        {
+          "title": "2025 年度业绩与战略展望",
+          "category": "其他",
+          "summary": "HashKey Group 披露其 **2025 年战略蓝图**：\n- 强调受监管数字资产金融领域的持续进化\n- 标志着 HashKey 发展的**里程碑年份**",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "twitter:@HSKChain",
+              "url": "https://x.com/HSKChain/status/2038145576257388847"
+            }
+          ]
+        }
+      ],
+      "region": "HK"
     },
     {
       "name": "HKVAX",
@@ -27,49 +40,29 @@
     },
     {
       "name": "Binance",
-      "summary": "机构业务表现亮眼，OTC 交易量大幅增长，同时持续推广 TradFi 永续合约及理财活动。",
+      "summary": "主要更新了跟单交易的对比分析功能，并录得显著的 BTC 净流入。",
       "events": [
         {
-          "title": "2026年首两月 OTC 交易量大幅增长",
+          "title": "跟单交易功能升级",
+          "category": "产品更新",
+          "summary": "**跟单交易系统**进行了功能优化：\n- 支持**并排对比**最多四名交易员\n- 提供 **ROI、PnL** 及详细统计数据的深度审查\n- 旨在简化用户筛选 Lead Trader 的流程",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "twitter:@binance",
+              "url": "https://x.com/binance/status/2038088974552482166"
+            }
+          ]
+        },
+        {
+          "title": "大额资金流入监测",
           "category": "其他",
-          "summary": "**Binance 机构业务需求强劲**：\n* 2026年前两个月的 OTC 交易量已达到 2025 年总量的 **25%**\n* 比特币 OTC 份额从 1 月的 **4.91%** 激增至 2 月的 **45.81%**\n* 稳定币与法币流入占比从 **21.43%** 升至 **48.95%**",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@_RichardTeng",
-              "url": "https://x.com/_RichardTeng/status/2037773782639865938"
-            },
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2037788711849734611"
-            }
-          ]
-        },
-        {
-          "title": "上线 TradFi 永续合约",
-          "category": "产品更新",
-          "summary": "**一站式交易多种资产**：\n* 支持以 **USDT** 结算黄金、白银及顶级股票指数永续合约\n* 提供杠杆交易且无到期日，旨在吸引传统金融交易者",
+          "summary": "根据 Coinglass 数据监测：\n- 过去 24 小时内，Binance 录得 **3,168.14 枚 BTC** 净流入\n- 在所有主流交易平台中位居**流入量首位**",
           "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2037738213893411093"
-            }
-          ]
-        },
-        {
-          "title": "理财与交易工具更新",
-          "category": "产品更新",
-          "summary": "**优化自动化交易与收益产品**：\n* 推出 **合约 DCA 机器人**，允许用户灵活调整交易策略\n* 推广 **USD1 空投活动**，提供最高 **6.52%** 的 APR 收益",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2037817389853573413"
-            },
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2037907572595073032"
+              "name": "律动 BlockBeats 快讯",
+              "url": "https://m.theblockbeats.info/flash/338666"
             }
           ]
         }
@@ -78,29 +71,41 @@
     },
     {
       "name": "OKX",
-      "summary": "推进 AI 与链上钱包的深度集成，并预告欧洲市场新动态。",
+      "summary": "本周上线了美股永续合约及智能交易套件，深度联动 F1 铃鹿站推广。",
       "events": [
         {
-          "title": "推出 OKX Agentic Wallet",
+          "title": "美股永续合约与交易工具升级",
           "category": "产品更新",
-          "summary": "**AI 驱动的链上交互**：\n* 支持 **自然语言输入** 直接转化为链上执行指令\n* 降低非技术用户与 Web3 交互的门槛",
+          "summary": "**交易产品线**重大扩展：\n- 推出 **Stock Perpetuals**，支持 24/7 交易美股标的价格波动\n- 针对美国用户上线**交易机器人**\n- **Agent Trade Kit** 新增 70+ 个技术指标",
           "importance": "high",
           "sources": [
             {
               "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2037723120983834729"
+              "url": "https://x.com/okx/status/2038059126752788743"
             }
           ]
         },
         {
-          "title": "预告欧洲市场扩张动作",
-          "category": "其他",
-          "summary": "**潜在的市场准入或合规动作**：\n* 官方发布带有欧盟旗帜的 \"Probably nothing\" 预告，暗示将在 **欧洲市场** 有重大发布",
+          "title": "$MON 现货上线",
+          "category": "新币上线",
+          "summary": "正式添加 **$MON 现货交易**，并同步启动 **X Drops Club** 激励活动。",
           "importance": "medium",
           "sources": [
             {
               "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2037752313272496339"
+              "url": "https://x.com/okx/status/2038059126752788743"
+            }
+          ]
+        },
+        {
+          "title": "F1 铃鹿大奖赛联动推广",
+          "category": "合作伙伴",
+          "summary": "作为 **McLaren F1 车队**合作伙伴：\n- 展开针对**日本铃鹿站**的品牌推广\n- 庆祝车队本赛季首次登上领奖台，强化“极致执行”品牌形象",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "twitter:@okx",
+              "url": "https://x.com/okx/status/2038096334054359299"
             }
           ]
         }
@@ -109,17 +114,41 @@
     },
     {
       "name": "Bybit",
-      "summary": "持续推进 AI 辅助交易功能的应用与教育。",
+      "summary": "近期重点发力 AI 驱动的交易工具更新及 $BASED 新币上线。",
       "events": [
         {
-          "title": "推广 Bybit AI Hub 交易中心",
-          "category": "产品更新",
-          "summary": "**简化交易工作流**：\n* 通过 **AI Hub** 整合复杂的工作流程，提供更直观、简单的交易交互方式",
+          "title": "$BASED 上线及激励活动",
+          "category": "新币上线",
+          "summary": "Bybit 宣布支持通过以太坊链充值 **$BASED**：\n- 开启总额为 **4,500,000 $BASED** 的奖池活动\n- 针对充值用户提供代币激励",
           "importance": "medium",
           "sources": [
             {
               "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2037892466049781854"
+              "url": "https://x.com/Bybit_Official/status/2038194453479854089"
+            }
+          ]
+        },
+        {
+          "title": "AI Hub 自动化功能升级",
+          "category": "产品更新",
+          "summary": "更新 **AI Hub** 交易系统：\n- 支持将用户自然语言指令直接转化为**交易执行**\n- 涵盖**下单、仓位管理**及实时数据访问的自动化处理",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "twitter:@Bybit_Official",
+              "url": "https://x.com/Bybit_Official/status/2038164256160448968"
+            }
+          ]
+        },
+        {
+          "title": "Bybit Card 支付推广",
+          "category": "活动推广",
+          "summary": "持续推进 **Bybit Card** 的全球应用：\n- 强调加密货币与日常结账场景的结合\n- 推动加密借记卡的市场渗透率",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "twitter:@Bybit_Official",
+              "url": "https://x.com/Bybit_Official/status/2038269952860324217"
             }
           ]
         }
@@ -128,29 +157,21 @@
     },
     {
       "name": "Coinbase",
-      "summary": "深耕加密资产在实体经济中的应用，通过合作伙伴关系探索比特币抵押贷款。",
+      "summary": "平台录得显著的 BTC 及 USDC 资金流入。",
       "events": [
         {
-          "title": "与 Better Home & Finance 达成抵押贷款合作",
-          "category": "合作伙伴",
-          "summary": "**探索加密资产作为首付抵押品**：\n* 购房者可使用账户中的 **BTC** 或 **USDC** 作为首付款抵押品\n* 该贷款与传统房利美支持的抵押贷款相互独立，提升资产流动性",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2037703304696959290"
-            }
-          ]
-        },
-        {
-          "title": "GameStop 使用 Coinbase Prime 开展备兑看涨期权策略",
+          "title": "大额资金流向监测",
           "category": "其他",
-          "summary": "**机构客户策略更新**：\n* GameStop 将价值 **3.15 亿美元** 的比特币通过 Coinbase Prime 开展 **备兑看涨期权 (Covered Call)** 策略以获取额外收益",
+          "summary": "**链上资金流动**显示：\n- 过去 24 小时 Coinbase Pro 录得 **850.42 枚 BTC** 净流入\n- 监测到单笔 **1.09 亿枚 USDC** 从未知钱包转入 Coinbase 平台",
           "importance": "medium",
           "sources": [
             {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/362632/why-gamestop-bitcoin-covered-call-strategy"
+              "name": "律动 BlockBeats 快讯",
+              "url": "https://m.theblockbeats.info/flash/338666"
+            },
+            {
+              "name": "twitter:@whale_alert",
+              "url": "https://x.com/whale_alert/status/2038326694847631379"
             }
           ]
         }
@@ -159,9 +180,22 @@
     },
     {
       "name": "Kraken",
-      "region": "GLOBAL",
-      "summary": "今日无重大动态",
-      "events": []
+      "summary": "在澳大利亚加密货币奖项评选中获得多项大奖。",
+      "events": [
+        {
+          "title": "荣获 2026 澳大利亚金融奖项",
+          "category": "其他",
+          "summary": "Kraken 在澳大利亚两项主要评选中获胜：\n- **WeMoney 奖**：获评为最佳加密货币平台\n- **Finder 产品奖**：巩固了其在澳洲市场的领先地位",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "Kraken Blog",
+              "url": "https://blog.kraken.com/news/industry-news/2026_finder_wemoney_awards"
+            }
+          ]
+        }
+      ],
+      "region": "GLOBAL"
     },
     {
       "name": "Remitano",
@@ -243,21 +277,17 @@
     },
     {
       "name": "Tokocrypto",
-      "summary": "侧重于印尼本土市场的支付渠道优惠及行情资讯分发。",
+      "summary": "联合印尼主流支付平台 ShopeePay 和 OVO 推出充值促销。",
       "events": [
         {
-          "title": "推出 OVO 与 ShopeePay 充值优惠",
+          "title": "支付平台充值返现活动",
           "category": "活动推广",
-          "summary": "**深耕印尼本土市场**：\n* 使用 **OVO** 充值满 100 万印尼盾可获 2.5 万 OVO 积分返现\n* 同步推行 **ShopeePay** 新用户充值福利",
+          "summary": "联合印尼头部电子钱包：\n- **ShopeePay**：提供高达 **50,000 积分**的充值返现\n- **OVO**：推出存款额外收益优惠",
           "importance": "medium",
           "sources": [
             {
               "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2037899510798823572"
-            },
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2037793813511479738"
+              "url": "https://x.com/Tokocrypto/status/2038267937845596322"
             }
           ]
         }
