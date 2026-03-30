@@ -16,6 +16,9 @@ const API = IS_STATIC
 const COMP_API = IS_STATIC
   ? { today: "./data/competitors/latest.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}/result.json` }
   : { today: "/api/competitors/today", dates: "/api/competitors/dates", history: (d) => `/api/competitors/history?date=${d}` };
+const SENT_API = IS_STATIC
+  ? { today: "./data/sentiment/latest.json", dates: "./data/sentiment/dates.json" }
+  : { today: "/api/sentiment/today", dates: "/api/sentiment/dates" };
 
 // ── Design Tokens ──
 const URGENCY_CONFIG = {
@@ -66,10 +69,14 @@ function switchSection(section) {
   document.querySelectorAll(".nav-item").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.section === section);
   });
+  document.querySelectorAll(".mobile-tab").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.section === section);
+  });
 
   const hotspotTabs = document.getElementById("sub-tabs-hotspot");
   const compTabs = document.getElementById("sub-tabs-competitors");
   const sourcesTabs = document.getElementById("sub-tabs-sources");
+  const sentimentTabs = document.getElementById("sub-tabs-sentiment");
   const mainFilters = document.getElementById("main-filters");
   const dateSel = document.getElementById("date-selector");
   const filterDivider = document.getElementById("filter-divider");
@@ -78,6 +85,7 @@ function switchSection(section) {
   hotspotTabs.style.display = "none";
   compTabs.style.display = "none";
   sourcesTabs.style.display = "none";
+  sentimentTabs.style.display = "none";
   mainFilters.style.display = "none";
   dateSel.style.display = "none";
   filterDivider.style.display = "none";
@@ -100,6 +108,10 @@ function switchSection(section) {
   } else if (section === "sources") {
     currentTab = "sources";
     loadSources();
+  } else if (section === "sentiment") {
+    sentimentTabs.style.display = "";
+    currentTab = "sentiment";
+    loadSentiment();
   }
 }
 
@@ -1039,6 +1051,128 @@ function renderCompetitorSourceCard(comp, index) {
         ${tierBadge}
       </div>
       <div class="flex flex-wrap items-center gap-x-0 gap-y-1">${channelHtml}</div>
+    </div>
+  </div>`;
+}
+
+// ── Sentiment (舆情监控) ──
+
+const PLATFORM_CONFIG = {
+  twitter:    { label: 'Twitter',  color: 'text-sky-400',    bg: 'bg-sky-500/15',    border: 'border-sky-500/30' },
+  reddit:     { label: 'Reddit',   color: 'text-orange-400', bg: 'bg-orange-500/15', border: 'border-orange-500/30' },
+  youtube:    { label: 'YouTube',  color: 'text-red-400',    bg: 'bg-red-500/15',    border: 'border-red-500/30' },
+};
+
+let _currentSentimentFilter = "ALL";
+
+async function loadSentiment() {
+  try {
+    const res = await fetch(SENT_API.today);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    let data = await res.json();
+    if (Array.isArray(data)) {
+      data = { run_date: "", total_raw: 0, items: data };
+    }
+    renderSentimentDashboard(data);
+  } catch (e) {
+    console.error("Failed to load sentiment:", e);
+    document.getElementById("card-sections").innerHTML =
+      '<div class="text-center py-20 text-slate-500"><div class="text-4xl mb-3">&#128226;</div><p class="text-sm">暂无舆情数据</p><p class="text-xs text-slate-600 mt-1">运行 python main.py fetch 抓取舆情数据</p></div>';
+    document.getElementById("hero-stats").innerHTML = '';
+    document.getElementById("sidebar-content").innerHTML = '';
+  }
+}
+
+function renderSentimentDashboard(data) {
+  const items = data.items || [];
+  const totalRaw = data.total_raw || 0;
+
+  document.getElementById("header-date").textContent = data.run_date
+    ? `舆情数据 ${data.run_date}` : "";
+
+  const highCount = items.filter(i => i.importance === 'high').length;
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="text-center"><div class="text-xl font-display font-bold text-white">${totalRaw}</div><div class="text-[10px] text-slate-500 font-mono">原始数据</div></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-cyan-400">${items.length}</div><div class="text-[10px] text-slate-500 font-mono">有效提及</div></div>
+    <div class="text-center"><div class="text-xl font-display font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>`;
+
+  const IMP_CFG = {
+    high:   { label: '重要', color: 'text-red-400',   bg: 'bg-red-500/15',   border: 'border-red-500/30' },
+    medium: { label: '一般', color: 'text-amber-400', bg: 'bg-amber-500/15', border: 'border-amber-500/30' },
+    low:    { label: '日常', color: 'text-slate-400',  bg: 'bg-slate-500/15', border: 'border-slate-500/30' },
+  };
+  const levels = ["ALL", "high"];
+  const filterBtns = levels.map(l => {
+    const cfg = l !== "ALL" ? IMP_CFG[l] : null;
+    const label = l === "ALL" ? "全部" : cfg.label;
+    const isActive = _currentSentimentFilter === l;
+    const base = 'text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer select-none';
+    const active = cfg
+      ? `${cfg.color} ${cfg.bg} ring-1 ring-inset ring-white/10 shadow-sm`
+      : 'bg-white/[0.12] text-white ring-1 ring-inset ring-white/15 shadow-sm';
+    const inactive = 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.06]';
+    return `<button onclick="setSentimentFilter('${l}')" class="${base} ${isActive ? active : inactive}">${label}</button>`;
+  }).join("");
+  document.getElementById("sub-tabs-sentiment").innerHTML =
+    '<div class="flex items-center gap-1.5"><span class="text-xs text-slate-500 font-medium mr-1">重要性</span>' + filterBtns + '</div>';
+
+  const filtered = _currentSentimentFilter === "ALL"
+    ? items
+    : items.filter(i => i.importance === _currentSentimentFilter);
+
+  document.getElementById("filter-count").textContent = `${filtered.length} / ${items.length} 条`;
+
+  if (!filtered.length) {
+    document.getElementById("card-sections").innerHTML =
+      '<div class="text-center py-20 text-slate-500"><p class="text-sm">暂无匹配的舆情数据</p></div>';
+  } else {
+    document.getElementById("card-sections").innerHTML =
+      '<div class="space-y-3">' + filtered.map((item, i) => renderSentimentCard(item, i)).join("") + '</div>';
+  }
+
+  document.getElementById("sidebar-content").innerHTML = '';
+  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${data.run_date || ""}`;
+  document.getElementById("footer-right").textContent = `舆情监控 · ${items.length} 条有效提及（原始 ${totalRaw} 条）`;
+  window._sentimentData = data;
+}
+
+function setSentimentFilter(v) {
+  _currentSentimentFilter = v;
+  if (window._sentimentData) renderSentimentDashboard(window._sentimentData);
+}
+
+function renderSentimentCard(item, index) {
+  const IMP_CFG = {
+    high:   { label: '重要', color: 'text-red-400',   bg: 'bg-red-500/15',   border: 'border-red-500/30' },
+    medium: { label: '一般', color: 'text-amber-400', bg: 'bg-amber-500/15', border: 'border-amber-500/30' },
+    low:    { label: '日常', color: 'text-slate-400',  bg: 'bg-slate-500/15', border: 'border-slate-500/30' },
+  };
+  const impCfg = IMP_CFG[item.importance] || IMP_CFG.low;
+  const sources = item.sources || [];
+  const timeStr = item.published_at ? new Date(item.published_at).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }) : "";
+
+  const sourcesHtml = sources.map(s => {
+    const pCfg = PLATFORM_CONFIG[s.platform] || { label: s.platform || '', color: 'text-slate-400' };
+    const authorStr = s.author ? ` ${esc(s.author)}` : '';
+    return s.url
+      ? `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" class="text-[9px] font-mono ${pCfg.color} hover:underline">${pCfg.label || esc(s.platform)}${authorStr}</a>`
+      : `<span class="text-[9px] font-mono ${pCfg.color}">${pCfg.label || esc(s.platform)}${authorStr}</span>`;
+  }).join('<span class="text-slate-600 mx-1">&middot;</span>');
+
+  return `
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.03}s">
+    <div class="absolute left-0 top-0 bottom-0 w-1 ${impCfg.bg.replace('/15', '')}"></div>
+    <div class="pl-4 pr-4 py-3">
+      <div class="flex items-center gap-2 mb-1.5">
+        <span class="text-[9px] font-mono ${impCfg.color} ${impCfg.bg} ${impCfg.border} border px-1.5 py-0.5 rounded">${impCfg.label}</span>
+        <span class="text-[9px] font-mono text-slate-500 bg-white/[0.04] px-1.5 py-0.5 rounded">${esc(item.category || '')}</span>
+        ${timeStr ? `<span class="text-[9px] font-mono text-slate-600 ml-auto">${timeStr}</span>` : ''}
+      </div>
+      <h3 class="text-[13px] font-medium text-white mb-1 leading-snug">${esc(item.title)}</h3>
+      ${item.summary ? `<div class="text-[11px] text-slate-400 leading-relaxed prose-container">${marked.parse(item.summary)}</div>` : ""}
+      <div class="flex flex-wrap items-center gap-x-1 gap-y-1 mt-2">${sourcesHtml}</div>
     </div>
   </div>`;
 }

@@ -52,6 +52,10 @@
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/></svg>
         <span class="nav-label">信源管理</span>
       </button>
+      <button class="nav-item" data-section="sentiment" onclick="switchSection('sentiment')">
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+        <span class="nav-label">舆情监控</span>
+      </button>
     </div>
   </nav>
 
@@ -88,6 +92,8 @@
         <div class="flex items-center gap-1.5" id="sub-tabs-competitors" style="display:none">
         </div>
         <div class="flex items-center gap-1.5" id="sub-tabs-sources" style="display:none">
+        </div>
+        <div class="flex items-center gap-1.5" id="sub-tabs-sentiment" style="display:none">
         </div>
         <div class="w-px h-5 bg-white/10" id="filter-divider"></div>
         <div id="main-filters" class="flex flex-wrap items-center gap-x-4 gap-y-2">

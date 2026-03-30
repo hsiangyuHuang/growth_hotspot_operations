@@ -265,3 +265,38 @@
   background: rgba(34, 211, 238, 0.2);
   color: #f1f5f9;
 }
+
+/* ── Mobile Bottom Tab Bar ── */
+.mobile-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.mobile-tab.active {
+  color: #22d3ee;
+}
+
+.mobile-tab svg {
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-tab span {
+  font-size: 11px;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+/* ── Mobile Responsive ── */
+@media (max-width: 767px) {
+  #filter-divider { display: none !important; }
+  #hero-stats { flex-wrap: wrap; }
+}

@@ -126,7 +126,7 @@ async def extract(items: list[dict], run_date: str) -> dict:
     # 过滤无效 items
     valid_items = [
         item for item in items
-        if item.get("title", "").strip() and len(item.get("title", "")) >= 5
+        if item.get("title", "").strip() and len(item.get("title", "")) >= 10
     ]
     if len(valid_items) < len(items):
         logger.info(f"[CompetitorExtractor] Filtered {len(items) - len(valid_items)} invalid items")

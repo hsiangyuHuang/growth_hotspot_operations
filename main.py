@@ -34,12 +34,20 @@ def _is_date_dir(d: Path) -> bool:
     return d.is_dir() and bool(_DATE_RE.match(d.name)) and (d / "result.json").exists()
 
 
+def _is_sentiment_date_dir(d: Path) -> bool:
+    return d.is_dir() and bool(_DATE_RE.match(d.name)) and (d / "items.json").exists()
+
+
 def raw_path(date_str: str) -> Path:
     return DATA_DIR / "raw" / date_str / "items.json"
 
 
 def competitor_path(date_str: str) -> Path:
     return DATA_DIR / "competitors" / date_str / "items.json"
+
+
+def sentiment_path(date_str: str) -> Path:
+    return DATA_DIR / "sentiment" / date_str / "items.json"
 
 
 def processed_path(date_str: str) -> Path:
@@ -59,14 +67,17 @@ async def run_fetch_and_process():
     from fetcher import twitter as twitter_fetcher
     from fetcher import telegram as telegram_fetcher
     from fetcher import competitor as competitor_fetcher
+    from fetcher import sentiment as sentiment_fetcher
 
-    # 并发抓取：主流程（RSS + Twitter）+ 竞品官方渠道
-    (rss_items, twitter_items), comp_items = await asyncio.gather(
+    # 并发抓取：主流程（RSS + Twitter）+ 竞品官方渠道 + 舆情监控
+    sent_path = sentiment_path(today)
+    (rss_items, twitter_items), comp_items, sent_items = await asyncio.gather(
         asyncio.gather(
             rss_fetcher.fetch_all(out_path),
             twitter_fetcher.fetch_all(out_path),
         ),
         competitor_fetcher.fetch_all(comp_path),
+        sentiment_fetcher.fetch_all(sent_path),
     )
 
     # Telegram 串行（需要交互式登录）
@@ -79,6 +90,7 @@ async def run_fetch_and_process():
     total = len(hotspot_items)
     logger.info(f"抓取完成：RSS {len(rss_items)} + Twitter {len(twitter_items)} + Telegram {len(telegram_items)} = {total} 条")
     logger.info(f"竞品抓取完成：{len(comp_items)} 条")
+    logger.info(f"舆情抓取完成：{len(sent_items)} 条")
 
     if total == 0:
         logger.warning("未抓取到任何条目，跳过 Manus 处理")
@@ -112,13 +124,31 @@ async def run_fetch_and_process():
         except Exception as e:
             logger.warning(f"竞品提取失败：{e}")
 
+    # 舆情 Gemini 提取
+    if sent_path.exists():
+        logger.info("=== 开始舆情 Gemini 提取 ===")
+        try:
+            from processor import sentiment_extractor
+            with open(sent_path, "r", encoding="utf-8") as f:
+                sent_raw = json.load(f)
+            if sent_raw:
+                sent_result = await sentiment_extractor.extract(sent_raw, today)
+                result_path = sent_path.parent / "result.json"
+                with open(result_path, "w", encoding="utf-8") as f:
+                    json.dump(sent_result, f, ensure_ascii=False, indent=2)
+                logger.info(f"舆情提取完成：{result_path}")
+            else:
+                logger.info("舆情数据为空，跳过 Gemini 提取")
+        except Exception as e:
+            logger.warning(f"舆情提取失败：{e}")
+
     # 生成静态索引文件（供 Vercel 静态模式使用）
     _generate_index_files()
 
 
 def _generate_index_files():
     """生成 dates.json + latest.json 索引文件（供 Vercel 静态模式）"""
-    for subdir in ["processed", "competitors"]:
+    for subdir in ["processed", "competitors", "sentiment"]:
         target_dir = DATA_DIR / subdir
         if not target_dir.exists():
             continue

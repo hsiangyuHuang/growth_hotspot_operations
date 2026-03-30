@@ -19,10 +19,11 @@ import feedparser
 import httpx
 import yaml
 
+from fetcher.utils import retry_get
+
 logger = logging.getLogger(__name__)
 
 CONFIG_PATH = Path(__file__).parent.parent / "config" / "competitors.yaml"
-MAX_RETRIES = 3
 
 
 def _load_config() -> dict:
@@ -38,44 +39,6 @@ def _strip_html(text: str) -> str:
     import html as html_mod
     cleaned = re.sub(r"<[^>]+>", "", text or "")
     return html_mod.unescape(cleaned).strip()
-
-
-# ── 通用重试请求 ──────────────────────────────────────────────
-
-async def _retry_request(client: httpx.AsyncClient, url: str, *,
-                         max_retries: int = MAX_RETRIES,
-                         timeout: float = 15.0,
-                         label: str = "",
-                         **kwargs) -> httpx.Response | None:
-    """带重试、429 退避、5xx 重试的通用 HTTP GET。"""
-    for attempt in range(max_retries):
-        try:
-            resp = await client.get(url, timeout=timeout, **kwargs)
-            if resp.status_code == 429:
-                wait = int(resp.headers.get("Retry-After", 5 * (attempt + 1)))
-                logger.info(f"[{label}] 429 rate limited, retry {attempt+1}/{max_retries} in {wait}s")
-                await asyncio.sleep(wait)
-                continue
-            if resp.status_code >= 500 and attempt < max_retries - 1:
-                logger.info(f"[{label}] {resp.status_code}, retry {attempt+1}/{max_retries}")
-                await asyncio.sleep(2 * (attempt + 1))
-                continue
-            resp.raise_for_status()
-            return resp
-        except (httpx.ConnectError, httpx.ReadTimeout, httpx.ConnectTimeout) as e:
-            if attempt < max_retries - 1:
-                logger.info(f"[{label}] {type(e).__name__}, retry {attempt+1}/{max_retries}")
-                await asyncio.sleep(2 * (attempt + 1))
-                continue
-            logger.warning(f"[{label}] {url} failed after {max_retries} retries: {e}")
-            return None
-        except Exception as e:
-            if attempt < max_retries - 1:
-                await asyncio.sleep(2 * (attempt + 1))
-                continue
-            logger.warning(f"[{label}] {url} failed: {e}")
-            return None
-    return None
 
 
 # ── Twitter 抓取（带重试） ───────────────────────────────────
@@ -96,7 +59,7 @@ async def _fetch_twitter(client: httpx.AsyncClient, accounts: list[str],
     items = []
 
     for handle in accounts:
-        resp = await _retry_request(
+        resp = await retry_get(
             client, base_url,
             params={"userName": handle, "includeReplies": "false"},
             headers=headers, label=f"Competitor:Twitter:@{handle}",
@@ -151,7 +114,7 @@ async def _fetch_api(client: httpx.AsyncClient, api_sources: list[dict],
 
     for src in api_sources:
         url = src.get("url", "")
-        resp = await _retry_request(
+        resp = await retry_get(
             client, url, params=src.get("params", {}),
             label=f"Competitor:API:{competitor_name}",
         )
@@ -247,7 +210,7 @@ async def _fetch_rss(client: httpx.AsyncClient, rss_sources: list[dict],
     for src in rss_sources:
         url = src.get("url", "")
         name = src.get("name", url)
-        resp = await _retry_request(
+        resp = await retry_get(
             client, url, label=f"Competitor:RSS:{name}",
         )
         if resp is None:
@@ -298,7 +261,7 @@ async def _fetch_web(client: httpx.AsyncClient, web_sources: list[dict],
 
     for src in web_sources:
         url = src.get("url", "")
-        resp = await _retry_request(
+        resp = await retry_get(
             client, url, timeout=20.0,
             label=f"Competitor:Web:{competitor_name}",
         )
@@ -532,14 +495,25 @@ def append_media_items(output_path: Path, hotspot_items: list[dict]) -> list[dic
 
 
 def _dedup_and_write(output_path: Path, new_items: list[dict]) -> int:
-    """ID + URL 双重去重后写入文件，返回实际新增条数。"""
+    """ID + URL 双重去重后写入文件，返回实际新增条数。
+    同时过滤掉不在当前配置中的竞品数据（防止已移除竞品的幽灵数据残留）。
+    """
+    # 加载当前配置中的有效竞品名称
+    cfg = _load_config()
+    valid_competitors = {comp["name"] for comp in cfg.get("competitors", [])}
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     existing = []
     if output_path.exists():
         with open(output_path, "r", encoding="utf-8") as f:
             existing = json.load(f)
+
+    # 过滤掉不在当前配置中的竞品
+    existing = [item for item in existing if item.get("competitor", "") in valid_competitors]
+
     existing_ids = {item["id"] for item in existing}
-    deduped = [item for item in new_items if item["id"] not in existing_ids]
+    deduped = [item for item in new_items
+               if item["id"] not in existing_ids and item.get("competitor", "") in valid_competitors]
     existing.extend(deduped)
 
     # URL 级去重

@@ -32,7 +32,7 @@
 <body class="min-h-screen bg-navy text-slate-200 font-body antialiased grid-bg">
 
   <!-- Left Navigation -->
-  <nav id="left-nav" class="fixed left-0 top-0 bottom-0 w-52 bg-navy-light border-r border-white/[0.08] z-30 flex flex-col pt-5 pb-4 px-3">
+  <nav id="left-nav" class="fixed left-0 top-0 bottom-0 w-52 bg-navy-light border-r border-white/[0.08] z-30 hidden md:flex flex-col pt-5 pb-4 px-3">
     <div class="flex items-center gap-2.5 mb-8 px-2">
       <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-sm font-bold text-navy">O</div>
       <div class="leading-tight">
@@ -53,11 +53,15 @@
         <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/></svg>
         <span class="nav-label">信源管理</span>
       </button>
+      <button class="nav-item" data-section="sentiment" onclick="switchSection('sentiment')">
+        <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+        <span class="nav-label">舆情监控</span>
+      </button>
     </div>
   </nav>
 
   <!-- App Content (offset by left-nav width) -->
-  <div id="app-content" class="ml-52">
+  <div id="app-content" class="md:ml-52">
 
   <!-- Hero Header -->
   <header id="hero-header" class="relative overflow-hidden border-b border-white/[0.08]">
@@ -90,6 +94,8 @@
         </div>
         <div class="flex items-center gap-1.5" id="sub-tabs-sources" style="display:none">
         </div>
+        <div class="flex items-center gap-1.5" id="sub-tabs-sentiment" style="display:none">
+        </div>
         <div class="w-px h-5 bg-white/10" id="filter-divider"></div>
         <div id="main-filters" class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <div class="flex items-center gap-1.5" id="filter-priority"><span class="text-xs text-slate-500 font-medium mr-1">优先级</span></div>
@@ -114,7 +120,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-white/[0.08] mt-8">
+  <footer class="border-t border-white/[0.08] mt-8 pb-16 md:pb-0">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <span class="text-[10px] text-slate-600 font-mono" id="footer-left"></span>
       <span class="text-[10px] text-slate-600 font-mono" id="footer-right"></span>
@@ -122,6 +128,26 @@
   </footer>
 
   </div><!-- /app-content -->
+
+  <!-- Mobile Bottom Tab Bar -->
+  <nav id="mobile-tab-bar" class="fixed bottom-0 left-0 right-0 z-40 bg-navy-light border-t border-white/[0.08] flex md:hidden">
+    <button class="mobile-tab active" data-section="hotspot" onclick="switchSection('hotspot')">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z"/></svg>
+      <span>热点</span>
+    </button>
+    <button class="mobile-tab" data-section="competitors" onclick="switchSection('competitors')">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/></svg>
+      <span>竞品</span>
+    </button>
+    <button class="mobile-tab" data-section="sources" onclick="switchSection('sources')">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/></svg>
+      <span>信源</span>
+    </button>
+    <button class="mobile-tab" data-section="sentiment" onclick="switchSection('sentiment')">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+      <span>舆情</span>
+    </button>
+  </nav>
 
 <script>
 window.onerror = function(msg, src, line, col, err) {

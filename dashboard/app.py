@@ -11,6 +11,7 @@ from fastapi.staticfiles import StaticFiles
 DATA_DIR = Path(__file__).parent.parent / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 COMPETITORS_DIR = DATA_DIR / "competitors"
+SENTIMENT_DIR = DATA_DIR / "sentiment"
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 
 app = FastAPI(title="OSL Growth Hotspot Dashboard")
@@ -118,6 +119,53 @@ async def get_competitors_dates():
         return {"dates": []}
     dates = sorted(
         [d.name for d in COMPETITORS_DIR.iterdir() if _is_date_dir(d)],
+        reverse=True,
+    )
+    return {"dates": dates}
+
+
+# ── 舆情 API ──────────────────────────────────────────────────
+
+def _load_sentiment_result(date_str: str) -> dict | None:
+    json_path = SENTIMENT_DIR / date_str / "result.json"
+    if json_path.exists():
+        with open(json_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return None
+
+
+@app.get("/api/sentiment/today")
+async def get_sentiment_today():
+    today = date.today().isoformat()
+    result = _load_sentiment_result(today)
+    if not result and SENTIMENT_DIR.exists():
+        dates = sorted(
+            [d.name for d in SENTIMENT_DIR.iterdir() if _is_date_dir(d)],
+            reverse=True,
+        )
+        if dates:
+            result = _load_sentiment_result(dates[0])
+    if not result:
+        return JSONResponse({"run_date": today, "total_raw": 0, "items": []})
+    return result
+
+
+@app.get("/api/sentiment/history")
+async def get_sentiment_history(date: Optional[str] = Query(None)):
+    if not date:
+        raise HTTPException(status_code=400, detail="date parameter required (YYYY-MM-DD)")
+    result = _load_sentiment_result(date)
+    if not result:
+        raise HTTPException(status_code=404, detail=f"No sentiment data for {date}")
+    return result
+
+
+@app.get("/api/sentiment/dates")
+async def get_sentiment_dates():
+    if not SENTIMENT_DIR.exists():
+        return {"dates": []}
+    dates = sorted(
+        [d.name for d in SENTIMENT_DIR.iterdir() if _is_date_dir(d)],
         reverse=True,
     )
     return {"dates": dates}

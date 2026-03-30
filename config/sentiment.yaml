@@ -1,0 +1,22 @@
+# 舆情监控配置
+lookback_hours: 168  # 7天，OSL 品牌提及频率较低，24h 数据太少
+content_limit: 500
+
+keywords:
+  # Twitter 搜索（英文精准词组，中文搜索噪音太大已移除）
+  twitter: ["OSL crypto", "OSL exchange", "OSL Digital Securities", "OSL Hong Kong crypto"]
+  # Reddit 搜索（每月仅 50 次免费请求，只用最精准的词）
+  reddit: ["OSL crypto exchange Hong Kong"]
+  # YouTube 搜索
+  youtube: ["OSL exchange crypto", "OSL Digital Securities"]
+
+platforms:
+  twitter:
+    enabled: true
+    # 复用 TwitterAPI.io，搜索端点
+  reddit:
+    enabled: true
+    # RapidAPI reddit34
+  youtube:
+    enabled: true
+    # Google YouTube Data API v3
