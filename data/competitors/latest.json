@@ -3,29 +3,29 @@
   "competitors": [
     {
       "name": "HashKey",
-      "summary": "今日公布了 2026 年链上金融峰会计划，并获媒体关注其 2025 年业绩表现。",
+      "summary": "上线 ETH 质押服务，并宣布举办链上金融峰会。",
       "events": [
         {
-          "title": "宣布 2026 年 HashKey 链上金融峰会",
-          "category": "活动推广",
-          "summary": "HashKey 计划举办 **HashKey On-Chain Finance Summit 2026**：\n* **时间**：2026 年 4 月 23 日。\n* **地点**：香港会议展览中心 (HKCEC)。\n* **核心目标**：汇聚全球机构探讨链上金融基础设施的未来。",
+          "title": "上线 ETH 质押服务",
+          "category": "产品更新",
+          "summary": "**HashKey Exchange** 正式上线 **ETH 质押 (Staking)** 功能，降低了个人运行节点需 32 ETH 的门槛。",
           "importance": "medium",
           "sources": [
             {
-              "name": "HashKey Group",
-              "url": "https://x.com/HSKChain/status/2038466512592207942"
+              "name": "HashKey Exchange",
+              "url": "https://x.com/HashKeyExchange/status/2038510192971972771"
             }
           ]
         },
         {
-          "title": "财新报道分析 HashKey Group 战略转型",
-          "category": "其他",
-          "summary": "《财新》对 HashKey 2025 年年度业绩进行了深度报道：\n* **战略重点**：HashKey 正向 **代币化 (Tokenisation)**、**链上基础设施**及 **AI** 方向转型。\n* **合规框架**：强调在受监管框架下理解数字资产平台。",
+          "title": "举办 2026 链上金融峰会",
+          "category": "活动推广",
+          "summary": "计划于 2026 年 4 月 23 日在 **香港会议展览中心 (HKCEC)** 举办 **HashKey On-Chain Finance Summit**。",
           "importance": "medium",
           "sources": [
             {
-              "name": "HashKey Group",
-              "url": "https://x.com/HashKeyGroup/status/2038507971081289895"
+              "name": "HSKChain",
+              "url": "https://x.com/HSKChain/status/2038466512592207942"
             }
           ]
         }
@@ -52,37 +52,61 @@
     },
     {
       "name": "Binance",
-      "summary": "今日重点在于公布了 Binance Alpha R2 Protocol 的空投积分门槛，并持续输出多维度行业洞察。",
+      "summary": "推出大宗商品永续合约并上线多个新交易对，同时优化了返佣合作伙伴服务。",
       "events": [
         {
-          "title": "Binance Alpha R2 Protocol 空投门槛公布",
-          "category": "活动推广",
-          "summary": "**Binance Alpha R2 Protocol (R2)** 公布空投参与规则：\n* **积分门槛**：用户需达到 **252 分 Alpha 积分**方可参与。\n* **消耗机制**：参与活动将消耗 **15 积分**。\n* **开启时间**：活动于今日 **18:00** 正式开启。",
+          "title": "上线大宗商品永续合约",
+          "category": "新币上线",
+          "summary": "**Binance Futures** 将于4月1日上线以 **USDT** 结算的 **WTI原油 (CLUSDT)**、**布伦特原油 (BZUSDT)** 和 **天然气 (NATGASUSDT)** 永续合约，最高支持 **100倍杠杆**。",
           "importance": "high",
           "sources": [
             {
-              "name": "律动 BlockBeats",
-              "url": "https://m.theblockbeats.info/flash/338727"
+              "name": "Binance",
+              "url": "https://www.binance.com/en/support/announcement/e7a10ca855524655ab3dea73add40ef4"
+            },
+            {
+              "name": "WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2038609774430875871"
             }
           ]
         },
         {
-          "title": "发布多项行业深度内容与市场周报",
-          "category": "其他",
-          "summary": "Binance 今日发布了一系列教育与市场洞察内容：\n* **购买力平价 (PPP)** 对全球加密资产使用的影响分析。\n* **区块链实际应用案例** 的深度解读。\n* **本周重要公告汇总**（Weekly Announcements）。",
+          "title": "上线BASEDUSDT永续合约及现货新交易对",
+          "category": "新币上线",
+          "summary": "- **Binance Futures** 已上线 **BASEDUSDT** 永续合约。\n- **Binance Spot** 将于3月31日上线新的交易对并启用交易机器人服务。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Binance",
+              "url": "https://www.binance.com/en/support/announcement/63341635f7b94af2835eba2dc72d07d4"
+            },
+            {
+              "name": "Binance",
+              "url": "https://www.binance.com/en/support/announcement/16404ccfa2494b38aef6a39b08960d1d"
+            }
+          ]
+        },
+        {
+          "title": "推出返佣信息中心 (Affiliate Information Hub)",
+          "category": "产品更新",
+          "summary": "为新加入的 **Binance Affiliates** 提供的综合资源指南，旨在帮助合作伙伴快速上手。",
           "importance": "low",
           "sources": [
             {
-              "name": "Binance Blog",
-              "url": "https://x.com/binance/status/2038436256850280618"
-            },
+              "name": "Binance",
+              "url": "https://x.com/binance/status/2038557445723656260"
+            }
+          ]
+        },
+        {
+          "title": "RLUSD 赚币活动",
+          "category": "活动推广",
+          "summary": "推出 **RLUSD** 申购活动，提供高达 **8% 的年化收益率 (APR)**，个人限额 5,000 RLUSD。",
+          "importance": "medium",
+          "sources": [
             {
-              "name": "Binance Blog",
-              "url": "https://x.com/binance/status/2038255074338554041"
-            },
-            {
-              "name": "Binance Blog",
-              "url": "https://x.com/binance/status/2038183257859350682"
+              "name": "Binance",
+              "url": "https://x.com/binance/status/2038647277565223422"
             }
           ]
         }
@@ -91,53 +115,61 @@
     },
     {
       "name": "OKX",
-      "summary": "今日完成了重大产品集成，DeFi 龙头 Aave 正式上线其 L2 网络 X Layer。",
+      "summary": "与纽交所合作布局合规期货，Aave 正式集成至 X Layer 网络。",
       "events": [
         {
-          "title": "Aave 正式上线 OKX X Layer 网络",
-          "category": "产品更新",
-          "summary": "DeFi 借贷协议 **Aave** 已在 OKX 的以太坊 L2 **X Layer** 上线：\n* **功能**：支持用户提供资产（如 USDT0, xBTC, xETH）并赚取自动复利收益。\n* **参数**：提供 6 个专用 eMode，最高可达 **88% LTV**。\n* **地位**：X Layer 是 Aave 集成的第 **21 条区块链**。",
+          "title": "与纽交所 (NYSE) 合作开发合规加密期货平台",
+          "category": "合作伙伴",
+          "summary": "**OKX** 宣布与 **ICE 旗下的纽交所 (NYSE)** 建立合作伙伴关系，共同构建具有机构级清算和风险管理能力的 **合规加密期货平台**。",
           "importance": "high",
           "sources": [
             {
-              "name": "OKX Official",
+              "name": "OKX",
+              "url": "https://x.com/okx/status/2038625065357480419"
+            }
+          ]
+        },
+        {
+          "title": "Aave 正式上线 OKX 的 L2 网络 X Layer",
+          "category": "产品更新",
+          "summary": "**Aave** 已在 **X Layer** 上线，OKX 钱包用户可直接进行链上借贷，支持 6 个专用 eMode，最高 LTV 可达 **88%**。",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "OKX",
               "url": "https://x.com/okx/status/2038422555183214740"
             },
             {
               "name": "The Block",
-              "url": "https://www.theblock.co/post/395594/aave-goes-live-okx-x-layer"
+              "url": "https://x.com/okx/status/2038620812496826490"
             },
             {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/okx-integrates-aave-on-eth-l2-x-layer"
+              "name": "Cointelegraph",
+              "url": "https://x.com/okx/status/2038616357382562044"
             }
           ]
         },
         {
-          "title": "推广股票永续合约与 AI 代理功能",
-          "category": "产品更新",
-          "summary": "OKX 持续推进其 \"New Money App\" 的功能：\n* **股票永续 (Stock Perpetuals)**：提供 24/7 全天候美股价格敞口，打破市场交易时段限制。\n* **AI 代理 (AI Agent)**：利用智能代理捕捉市场增益。",
+          "title": "现货市场上线 BASED 及其交易奖励活动",
+          "category": "新币上线",
+          "summary": "**BASED** 已上线现货交易，并开启 **700万 BASED** 的交易赚币 (Trade-and-Earn) 活动。",
           "importance": "medium",
           "sources": [
             {
-              "name": "OKX Official",
-              "url": "https://x.com/okx/status/2038232793033871741"
-            },
-            {
-              "name": "OKX Official",
-              "url": "https://x.com/okx/status/2038458969883111837"
+              "name": "OKX",
+              "url": "https://x.com/okx/status/2038564425766936681"
             }
           ]
         },
         {
-          "title": "有奖互动竞猜活动",
-          "category": "活动推广",
-          "summary": "OKX 发起代币识别有奖竞猜：\n* **奖金**：**100 USDT**。\n* **规则**：识别指定代币并关注官方账号即可参与抽奖。",
-          "importance": "low",
+          "title": "开放新交易体验内测预约",
+          "category": "产品更新",
+          "summary": "即将推出针对专业交易者的 **全新交易体验**，主打高性能、透明度和问责机制，现已开放候补名单。",
+          "importance": "medium",
           "sources": [
             {
-              "name": "OKX Official",
-              "url": "https://x.com/okx/status/2038368374510498274"
+              "name": "OKX",
+              "url": "https://x.com/okx/status/2038549294068711626"
             }
           ]
         }
@@ -146,33 +178,29 @@
     },
     {
       "name": "Bybit",
-      "summary": "今日上线了 $BASED 充值活动并重点推广其 AI 交易与支付卡功能。",
+      "summary": "上线 BASED 现货及 Launchpool，并推广 AI 双资产策略升级。",
       "events": [
         {
-          "title": "$BASED 充值活动开启",
-          "category": "活动推广",
-          "summary": "Bybit 宣布支持通过以太坊链进行 **$BASED** 充值：\n* **奖励池**：参与者有机会瓜分 **4,500,000 $BASED** 的奖金池。\n* **合作对象**：与 **BasedOneX** 合作推进。",
+          "title": "上线 BASED 现货及 Launchpool",
+          "category": "新币上线",
+          "summary": "**BASED** 已上线现货市场。用户可通过质押 **BASED** 或 **MNT** 瓜分 **3,000,000 BASED** 的 Launchpool 奖励。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Bybit Official",
-              "url": "https://x.com/Bybit_Official/status/2038194453479854089"
+              "name": "Bybit",
+              "url": "https://x.com/Bybit_Official/status/2038556849801220571"
             }
           ]
         },
         {
-          "title": "推广 Bybit AI Hub 与 Bybit Card 支付功能",
+          "title": "AI 双资产 (Dual Asset) 策略升级",
           "category": "产品更新",
-          "summary": "Bybit 持续推广其交易与支付生态：\n* **AI Hub**：支持将自然语言指令转化为交易执行，简化调仓与数据访问流程。\n* **Bybit Card**：强调从加密货币到日常消费的即时转化能力。",
+          "summary": "升级后的 AI 工具支持 **结构化收益** 和 **早期代币机会** 的捕捉。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Bybit Official",
-              "url": "https://x.com/Bybit_Official/status/2038164256160448968"
-            },
-            {
-              "name": "Bybit Official",
-              "url": "https://x.com/Bybit_Official/status/2038269952860324217"
+              "name": "Bybit",
+              "url": "https://x.com/Bybit_Official/status/2038617492168335630"
             }
           ]
         }
@@ -181,29 +209,61 @@
     },
     {
       "name": "Coinbase",
-      "summary": "行业研究显示 Coinbase 在 AI 驱动服务领域处于领先地位，且今日监测到大额 USDC 流入。",
+      "summary": "与房利美达成加密房贷合作，并与CoinTracker联合发布税务调研报告。",
       "events": [
         {
-          "title": "Tiger Research 报告称 Coinbase 引领 AI 服务潮流",
-          "category": "其他",
-          "summary": "研究报告显示：\n* **Coinbase 与 Binance** 等盈利型公司正在引领加密与 AI 的融合。\n* AI 已从理论转变为交易所防止用户流失的**实际操作必需品**。",
-          "importance": "medium",
+          "title": "联手房利美推出加密抵押贷款",
+          "category": "合作伙伴",
+          "summary": "**Coinbase** 与 **房利美 (Fannie Mae)** 合作，允许使用加密货币和稳定币支付住房贷款和抵押贷款，旨在打通加密资产与房地产市场的流动性。",
+          "importance": "high",
           "sources": [
             {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5209995"
+              "name": "BlockBeats",
+              "url": "https://m.theblockbeats.info/news/61740"
             }
           ]
         },
         {
-          "title": "监测到超过 1.09 亿枚 USDC 流入",
+          "title": "发布 2025 加密税务合规调研报告",
           "category": "其他",
-          "summary": "**Whale Alert** 监测到：\n* **109,052,697 USDC**（约 1.09 亿美元）从未知钱包转移至 **Coinbase**。",
-          "importance": "low",
+          "summary": "**Coinbase** 与 **CoinTracker** 对3000名用户调研发现：\n- **74%** 的用户知道加密活动需缴税，但超过 **60%** 的用户不了解2025年新规（如 Form 1099-DA）。\n- 仅有 **8%** 的用户使用专业的税务工具。",
+          "importance": "medium",
           "sources": [
             {
-              "name": "Whale Alert",
-              "url": "https://x.com/whale_alert/status/2038326694847631379"
+              "name": "CoinDesk",
+              "url": "https://x.com/CoinDesk/status/2038584172269171092"
+            },
+            {
+              "name": "WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2038594473349812543"
+            }
+          ]
+        },
+        {
+          "title": "Coinbase Ventures 参投 Midas A 轮融资",
+          "category": "融资/IPO",
+          "summary": "代币化收益产品平台 **Midas** 完成 **5000万美元** A轮融资，由 RRE Ventures 领投，**Coinbase Ventures** 等参投。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2038575331355787775"
+            }
+          ]
+        },
+        {
+          "title": "大额机构资金流入",
+          "category": "其他",
+          "summary": "**贝莱德 (BlackRock)** 向 **Coinbase Prime** 存入了 **3,061 枚 BTC**（约2.06亿美元）和 **35,642 枚 ETH**（约7300万美元）。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Lookonchain",
+              "url": "https://x.com/lookonchain/status/2038662725929439536"
+            },
+            {
+              "name": "BlockBeats",
+              "url": "https://m.theblockbeats.info/flash/338825"
             }
           ]
         }
@@ -212,22 +272,9 @@
     },
     {
       "name": "Kraken",
-      "summary": "今日重点在于其在澳大利亚市场获得多项行业大奖。",
-      "events": [
-        {
-          "title": "荣获 2026 年多项澳大利亚加密货币奖项",
-          "category": "其他",
-          "summary": "Kraken 在澳大利亚两项主要评选中获得最高荣誉：\n* **WeMoney Cryptocurrency Awards**：获得相关奖项。\n* **Finder’s Product Awards**：被评为领先的加密货币平台。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/news/industry-news/2026_finder_wemoney_awards"
-            }
-          ]
-        }
-      ],
-      "region": "GLOBAL"
+      "region": "GLOBAL",
+      "summary": "今日无重大动态",
+      "events": []
     },
     {
       "name": "Remitano",
@@ -255,12 +302,12 @@
     },
     {
       "name": "bitbank",
-      "summary": "今日进行了高管层人事调整以强化治理。",
+      "summary": "今日主要动态为公司管理层的人事调整。",
       "events": [
         {
-          "title": "宣布新任执行役员人事任命",
+          "title": "宣布新任执行董事任命",
           "category": "人事变动",
-          "summary": "bitbank 宣布建立新的管理体制：\n* **目标**：实现更有效的**公司治理**，提升企业价值。\n* **核心理念**：确保向客户提供安心、安全的服务。",
+          "summary": "**bitbank** 宣布了新的高管体制，旨在加强 **公司治理** 并提升企业价值。",
           "importance": "medium",
           "sources": [
             {
@@ -274,29 +321,17 @@
     },
     {
       "name": "SBI VC Trade",
-      "summary": "今日重点在于引入 BIMI 认证技术，强化用户邮件安全。",
+      "summary": "引入 BIMI 邮件验证技术以加强反钓鱼安全。",
       "events": [
         {
-          "title": "引入 BIMI 邮件认证技术强化反钓鱼安全",
+          "title": "引入企业徽标邮件认证技术 (BIMI)",
           "category": "产品更新",
-          "summary": "SBI VC Trade 宣布自 2026 年 3 月 30 日起导入 **BIMI (Brand Indicators for Message Identification)**：\n* **功能**：在官方邮件上显示企业 Logo，帮助用户一眼识别真伪。\n* **目标**：通过身份可视化减少钓鱼诈骗受害者。",
+          "summary": "自 3 月 30 日起导入 **BIMI (Brand Indicators for Message Identification)** 技术，在发送给客户的邮件中显示官方 Logo，防止钓鱼诈骗。",
           "importance": "medium",
           "sources": [
             {
               "name": "SBI VC Trade",
               "url": "https://x.com/sbivc_official/status/2038436334495576365"
-            }
-          ]
-        },
-        {
-          "title": "发布 4 月 1 日系统定期维护预告",
-          "category": "其他",
-          "summary": "SBI VC Trade 计划于 **2026 年 4 月 1 日 12:00-13:00 HKT** 进行维护，届时将暂停所有交易功能。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "SBI VC Trade",
-              "url": "https://x.com/sbivc_official/status/2038469907055341590"
             }
           ]
         }
@@ -305,21 +340,8 @@
     },
     {
       "name": "Rakuten Wallet",
-      "summary": "今日与乐天生态系统联动进行积分抽奖推广。",
-      "events": [
-        {
-          "title": "乐天 TV 春假特别企划抽奖",
-          "category": "活动推广",
-          "summary": "利用乐天生态系统进行交叉推广：\n* **奖励**：**10,000 乐天积分**（1名）。\n* **参与方式**：关注指定账号并转发推文。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Rakuten Wallet",
-              "url": "https://x.com/Rakuten_Wallet/status/2038457447187390569"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "JP"
     },
     {
@@ -354,63 +376,21 @@
     },
     {
       "name": "Indodax",
-      "summary": "今日主要通过社交媒体举办 SuperDAX 互动奖励活动。",
-      "events": [
-        {
-          "title": "SuperDAX \"Back To Reality\" 挑战活动",
-          "category": "活动推广",
-          "summary": "Indodax 推出社交媒体互动挑战：\n* **活动内容**：用户需在图片中寻找隐藏的 XAUT 和 PAXG 代币图标。\n* **奖金**：总额 **360 万印尼盾 (USDT)**，奖励 12 名优胜者。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax",
-              "url": "https://x.com/indodax/status/2038481459481030768"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "ID"
     },
     {
       "name": "Tokocrypto",
-      "summary": "今日主要开展支付渠道合作推广及联合抽奖活动。",
-      "events": [
-        {
-          "title": "Apel x UTDC 联合抽奖活动",
-          "category": "活动推广",
-          "summary": "Tokocrypto 举办联合推广活动：\n* **奖池**：总计达 **6000 万印尼盾**。\n* **参与方式**：App 签到并邀请好友。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2038426482515796073"
-            }
-          ]
-        },
-        {
-          "title": "支付渠道（OVO/ShopeePay）充值返现",
-          "category": "活动推广",
-          "summary": "Tokocrypto 推出支付平台联动活动：\n* **OVO**：提供额外充值奖励。\n* **ShopeePay**：提供高达 **50,000 Shopee 币**的返现奖励。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2038414656008773692"
-            },
-            {
-              "name": "Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2038267937845596322"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "ID"
     },
     {
       "name": "PINTU",
-      "region": "ID",
       "summary": "今日无重大动态",
-      "events": []
+      "events": [],
+      "region": "ID"
     },
     {
       "name": "Upbit Indonesia",
@@ -420,15 +400,32 @@
     },
     {
       "name": "Luno",
-      "region": "ID",
-      "summary": "今日无重大动态",
-      "events": []
+      "summary": "在马来西亚获批新增29种数字资产，总持币种类增至51种。",
+      "events": [
+        {
+          "title": "马来西亚站新增29种数字资产",
+          "category": "新币上线",
+          "summary": "**Luno Malaysia** 宣布新增 29 种经马来西亚证监会 (SC) 批准的加密资产，使其平台提供的资产总数达到 **51 种**，成为该国受监管交易所中选择最多的平台。",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "Soya_Cincau",
+              "url": "https://x.com/LunoGlobal/status/2038510355044073837"
+            },
+            {
+              "name": "The Sun Daily",
+              "url": "https://x.com/LunoGlobal/status/2038510322525638663"
+            }
+          ]
+        }
+      ],
+      "region": "ID"
     },
     {
       "name": "Reku",
-      "region": "ID",
       "summary": "今日无重大动态",
-      "events": []
+      "events": [],
+      "region": "ID"
     },
     {
       "name": "富途/Moomoo",
@@ -444,9 +441,9 @@
     },
     {
       "name": "盈透证券",
-      "region": "BROKER",
       "summary": "今日无重大动态",
-      "events": []
+      "events": [],
+      "region": "BROKER"
     }
   ]
 }

@@ -3,8 +3,22 @@
   "total_raw": 24,
   "items": [
     {
-      "title": "OSL Global 与 Plume Network 战略合作",
-      "summary": "OSL Global 与 **Plume Network** 达成战略合作，计划通过 RWA（真实世界资产）整合解锁数十亿加密货币流动性，提升机构级市场准入。",
+      "title": "CoinPayments 与 OSL 达成合作伙伴关系以扩张亚洲市场",
+      "summary": "**CoinPayments** 宣布与 **OSL** 建立合作伙伴关系，旨在利用 OSL 的合规平台在亚洲关键区域市场共同推动加密货币支付业务的增长。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@CryptoEconomyEN",
+          "url": "https://x.com/CryptoEconomyEN/status/2037588417442161031"
+        }
+      ],
+      "published_at": "2026-03-27T17:51:49+00:00"
+    },
+    {
+      "title": "Plume Network 与 OSL 合作解锁数十亿加密流动性",
+      "summary": "**Plume Network** 与 **OSL Global** 达成战略合作。通过 OSL 的合规交易基础设施，此举被认为将为 RWA 领域解锁 **数十亿美元的加密资产流动性**。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -22,29 +36,39 @@
       "published_at": "2026-03-27T02:24:54+00:00"
     },
     {
-      "title": "CoinPayments 进军亚洲并与 OSL 达成合作",
-      "summary": "**CoinPayments** 宣布与 OSL 建立合作伙伴关系，旨在扩大其在亚洲的加密支付服务并巩固在关键区域市场的地位。",
-      "category": "合作伙伴",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@CryptoEconomyEN",
-          "url": "https://x.com/CryptoEconomyEN/status/2037588417442161031"
-        }
-      ],
-      "published_at": "2026-03-27T17:51:49+00:00"
-    },
-    {
-      "title": "OSL Indonesia 推出零手续费提币及品牌重塑反馈",
-      "summary": "用户热议 OSL Indonesia（原 Koinsayang）的品牌升级。平台自 2026 年 3 月起提供 **0 手续费提取印尼卢比及链上资产**（如 USDT、ETH、SUI、BNB），并简化了银行与电子钱包的出入金流程。",
-      "category": "用户反馈",
+      "title": "OSL 印尼站品牌升级及推出零手续费提现等多项新功能",
+      "summary": "**OSL Indonesia** (原 Koinsayang) 完成品牌升级，正式推出 **Launchpool**（支持质押 USDT/BTC 赚取新代币）及 **零手续费链上/法币提现** 优惠（覆盖 USDT, ETH, SUI, BNB 等），旨在简化当地用户的出入金流程。",
+      "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
           "author": "@bangdevzz",
+          "url": "https://x.com/bangdevzz/status/2038602833352630594"
+        },
+        {
+          "platform": "twitter",
+          "author": "@bangdevzz",
           "url": "https://x.com/bangdevzz/status/2037861705775198502"
+        },
+        {
+          "platform": "twitter",
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2036663968769675722"
+        }
+      ],
+      "published_at": "2026-03-30T13:02:45+00:00"
+    },
+    {
+      "title": "市场分析：OSL 的合规地位与严苛的上币准则获机构认可",
+      "summary": "分析指出 **OSL 作为香港持牌交易所**，其上币审核流程极度严格（目前仅上市不足 30 种代币），这种 **高门槛被视为一种强力背书**。同时，其受印尼 OJK 监管的合规身份正在吸引全球机构投资者的关注。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@MACK6343263832",
+          "url": "https://x.com/MACK6343263832/status/2037529672368652527"
         },
         {
           "platform": "twitter",
@@ -53,15 +77,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@Delightpro_",
-          "url": "https://x.com/Delightpro_/status/2037796197969121498"
+          "author": "@idcryptonetwork",
+          "url": "https://x.com/idcryptonetwork/status/2037412258004025357"
         }
       ],
       "published_at": "2026-03-30T00:09:06+00:00"
     },
     {
-      "title": "OSL 越南举办 Alpha Collective 交易员之夜",
-      "summary": "OSL 在河内成功举办 **OSL Night: Alpha Collective** 线下活动，汇聚超过 40 名资深交易员和投资者，旨在建立越南核心交易社区网络。",
+      "title": "OSL 越南河内 Alpha Collective 线下活动成功举办",
+      "summary": "OSL 在河内举办了 **OSL Night: Alpha Collective** 线下交流会，汇聚了 40 多名资深交易员和投资者，旨在建立越南本地的 **专业加密交易社区**。",
       "category": "活动推广",
       "importance": "medium",
       "sources": [
@@ -79,22 +103,32 @@
       "published_at": "2026-03-27T07:07:23+00:00"
     },
     {
-      "title": "用户对 OSL 上币审查流程的评价",
-      "summary": "有用户指出 OSL 作为一个受监管的交易所，其上币审查流程**极其严苛**（目前仅支持不到 30 种代币），认为在 OSL 上架是项目获得**强力背书**的体现。",
-      "category": "市场分析",
+      "title": "用户正面反馈：OSL 印尼站出入金便捷且运营“慷慨”",
+      "summary": "多位用户在社交媒体上对 OSL 的 **零手续费提现** 和 **银行/电子钱包直连** 功能表示好评，认为其降低了交易摩擦。此外，用户对 OSL 频繁举办的激励活动（如开户空投、Umrah 大奖）表示欢迎。",
+      "category": "用户反馈",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@MACK6343263832",
-          "url": "https://x.com/MACK6343263832/status/2037529672368652527"
+          "author": "@bangdevzz",
+          "url": "https://x.com/bangdevzz/status/2037164021984747843"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Delightpro_",
+          "url": "https://x.com/Delightpro_/status/2037796197969121498"
+        },
+        {
+          "platform": "twitter",
+          "author": "@TecnoPop549448",
+          "url": "https://x.com/TecnoPop549448/status/2036495944649417037"
         }
       ],
-      "published_at": "2026-03-27T13:58:24+00:00"
+      "published_at": "2026-03-28T07:37:28+00:00"
     },
     {
-      "title": "OSL Exchange Airdrop 与促销活动",
-      "summary": "OSL 针对新用户推出 **25 美元注册及交易空投奖励**。此外，印尼市场刚结束了包括 **Umrah 朝圣大奖** 在内的交易挑战赛，用户反馈社区互动积极。",
+      "title": "OSL 推出新用户空投及交易大奖促销活动",
+      "summary": "OSL 针对新用户推出了 **25 美元注册及交易奖励** 活动，并圆满完成奖励交易量领先者的 **Umrah（朝觐）大奖** 抽奖，以此活跃社区氛围。",
       "category": "活动推广",
       "importance": "medium",
       "sources": [
@@ -107,18 +141,13 @@
           "platform": "twitter",
           "author": "@bangdevzz",
           "url": "https://x.com/bangdevzz/status/2037163490088280108"
-        },
-        {
-          "platform": "twitter",
-          "author": "@TecnoPop549448",
-          "url": "https://x.com/TecnoPop549448/status/2036495944649417037"
         }
       ],
       "published_at": "2026-03-26T13:43:19+00:00"
     },
     {
-      "title": "OSL 官方女性月专题及市场周报",
-      "summary": "OSL 发布“**女性与数字资产**”专题系列访谈；同时发布市场周报，分析了**能源价格上升、通胀及 SEC/CFTC 监管变化**对 BTC 和 ETH 价格回调的影响。",
+      "title": "OSL 庆祝国际妇女月并探讨女性在数字资产领域的崛起",
+      "summary": "OSL 官方频道联合 Women in Web3 HK 制作专题视频，邀请多位行业先驱探讨 **加密文化、信心构建以及女性在数字资产领域的发展**，通过社会责任活动提升品牌形象。",
       "category": "其他",
       "importance": "low",
       "sources": [
@@ -126,11 +155,6 @@
           "platform": "twitter",
           "author": "@osldotcom",
           "url": "https://x.com/osldotcom/status/2038493685713862818"
-        },
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2036281694064615691"
         }
       ],
       "published_at": "2026-03-30T05:49:02+00:00"
