@@ -26,14 +26,17 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           MANUS_API_KEY: ${{ secrets.MANUS_API_KEY }}
           MANUS_PROJECT_ID: ${{ secrets.MANUS_PROJECT_ID }}
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python main.py fetch
 
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          shopt -s globstar
           git add data/**/*.json data/**/*.md
-          git diff --cached --quiet || git commit -m "data: publish $(date +%Y-%m-%d)"
+          git diff --cached --quiet || git commit -m "data: publish $(TZ=Asia/Shanghai date +%Y-%m-%d)"
           git checkout -- .
           git pull --rebase origin main
           git push

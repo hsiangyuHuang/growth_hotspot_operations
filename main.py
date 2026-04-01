@@ -11,7 +11,7 @@ import logging
 import os
 import shutil
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -56,7 +56,7 @@ def processed_path(date_str: str) -> Path:
 
 async def run_fetch_and_process():
     """抓取所有信源（主流程 + 竞品）+ 调用 Manus 处理"""
-    today = date.today().isoformat()
+    today = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
     out_path = raw_path(today)
     comp_path = competitor_path(today)
     out_path.parent.mkdir(parents=True, exist_ok=True)

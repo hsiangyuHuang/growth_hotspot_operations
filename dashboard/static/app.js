@@ -47,13 +47,6 @@ const SITE_CONFIG = {
   Both:   { label: 'HK + Global', color: 'text-teal-300',  bg: 'bg-teal-500/15' },
 };
 
-const EXEC_CONFIG = {
-  A: { label: 'A 级 2-4h',  color: 'text-green-400' },
-  B: { label: 'B 级 1-2d',  color: 'text-yellow-400' },
-  C: { label: 'C 级 2-3d',  color: 'text-orange-400' },
-  D: { label: 'D 级 纯内容', color: 'text-slate-400' },
-};
-
 // ── Bootstrap ──
 document.addEventListener("DOMContentLoaded", () => {
   setupSubTabs();
@@ -231,9 +224,12 @@ function renderDateTimeline(dates) {
   const dateSet = new Set(dates);
   const todayStr = new Date().toISOString().split('T')[0];
 
-  // Determine which months to show (from available data)
+  // Determine which months to show (from available data + current month)
   const monthKeys = new Set();
   dates.forEach(d => { const [y, m] = d.split('-'); monthKeys.add(`${y}-${m}`); });
+  // Always include current month for cross-month context
+  const now = new Date();
+  monthKeys.add(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`);
   const sortedMonths = [...monthKeys].sort().reverse();
 
   const weekHeaders = ['一','二','三','四','五','六','日'];
@@ -386,8 +382,6 @@ function renderCard(card, index) {
   const tCfg = URGENCY_CONFIG[timing] || URGENCY_CONFIG.Day;
   const site = normalizeSite(card.site);
   const sCfg = SITE_CONFIG[site] || SITE_CONFIG.Both;
-  const exec = card.executability || "D";
-  const eCfg = EXEC_CONFIG[exec] || EXEC_CONFIG.D;
 
   const pulseDot = p === "P0"
     ? '<span class="relative flex h-2.5 w-2.5 shrink-0 mt-[3px]"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-60"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span></span>'
@@ -443,7 +437,6 @@ function renderCard(card, index) {
       </div>
       <div class="flex flex-wrap items-center gap-1.5 mb-3">
         <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono ${sCfg.color} ${sCfg.bg}">${sCfg.label}</span>
-        <span class="text-[10px] font-mono ${eCfg.color}">${eCfg.label}</span>
         <span class="text-[10px] text-slate-500 font-mono">关联:${esc(card.relation || "")}</span>
         <span class="text-[10px] text-slate-500 font-mono">意图:${esc(card.intent || "")}</span>
       </div>

@@ -20,16 +20,21 @@ def _load_config() -> dict:
 
 
 def _build_markdown(items: list[dict], run_date: str) -> str:
-    """将热点 items 转为精简 Markdown，用于文件附件上传。"""
+    """将热点 items 转为精简 Markdown，用于文件附件上传。
+
+    URL 直接绑在来源名上（markdown link 格式），
+    这样 Manus 在四层漏斗中引用信源时能自然保留链接。
+    """
     lines = [f"# 原始热点 {run_date}", "", f"共 {len(items)} 条", ""]
     for it in items:
         source = it.get("source", "")
         title = it.get("title", "")
         content = it.get("content", "")[:200]
         url = it.get("url", "")
+        # 把 URL 绑在来源名上，漏斗过程中自然跟着走
+        source_ref = f"[{source}]({url})" if url else source
         lines.append(f"## {title}")
-        lines.append(f"- 来源: {source}")
-        lines.append(f"- 链接: {url}")
+        lines.append(f"- 来源: {source_ref}")
         lines.append(f"- 摘要: {content}")
         lines.append("")
     return "\n".join(lines)
