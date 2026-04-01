@@ -9,21 +9,21 @@ from google.genai.types import GenerateContentConfig
 
 logger = logging.getLogger(__name__)
 
-EXTRACTION_PROMPT = “””你是一个结构化数据提取器。从以下 markdown 中提取所有行动包。
+EXTRACTION_PROMPT = """你是一个结构化数据提取器。从以下 markdown 中提取所有行动包。
 
 要求：
 1. 只提取行动包部分（忽略前面的原始数据和 Layer 1-3 中间过程）
-2. 渠道 name 只能是：”Paid Ads”、”站内运营 / 用户触达”、”SEO”、”社区”
-3. priority 只能是 P0/P1/P2，从上下文推断（如 section 标题”P0 级”或元数据行）
+2. 渠道 name 只能是："Paid Ads"、"站内运营 / 用户触达"、"SEO"、"社区"
+3. priority 只能是 P0/P1/P2，从上下文推断（如 section 标题"P0 级"或元数据行）
 4. 如果某个字段在原文中找不到，设为 null
-5. sources 中的 name 只填写媒体/来源的名称（如 “CoinDesk”、”律动 BlockBeats”、”WuBlockchain”），不要包含文章标题或其他内容
+5. sources 中的 name 只填写媒体/来源的名称（如 "CoinDesk"、"律动 BlockBeats"、"WuBlockchain"），不要包含文章标题或其他内容
 6. sources 中的 url：从信源引用中的 markdown 链接提取，格式如 [媒体名](url)，将 url 部分填入。如果没有链接则设为空字符串
 7. channels 中的 markdown 字段必须使用结构化的 Markdown 格式，而不是纯文本段落。要求：
    - 用 **加粗** 标注关键信息（受众定向、核心策略、CTA、KPI 等）
    - 用分段小标题（如 `### 受众定向`、`### 素材与文案`、`### 落地页`、`### 注意事项`）分割内容
    - 用有序或无序列表列举具体步骤、要点或注意事项
    - 确保内容可扫读，避免大段文字
-“””
+"""
 
 RESPONSE_SCHEMA = {
     "type": "object",
