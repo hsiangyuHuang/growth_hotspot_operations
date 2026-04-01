@@ -214,6 +214,10 @@ async function loadDates() {
   } catch (e) { console.error("Failed to load dates:", e); }
 }
 
+let _calendarMonthIndex = 0; // 0 = latest month
+let _calendarMonths = [];
+let _calendarDates = [];
+
 function renderDateTimeline(dates) {
   const container = document.getElementById("date-selector");
   if (!dates.length) {
@@ -221,64 +225,105 @@ function renderDateTimeline(dates) {
     return;
   }
 
+  _calendarDates = dates;
   const dateSet = new Set(dates);
   const todayStr = new Date().toISOString().split('T')[0];
 
   // Determine which months to show (from available data + current month)
   const monthKeys = new Set();
   dates.forEach(d => { const [y, m] = d.split('-'); monthKeys.add(`${y}-${m}`); });
-  // Always include current month for cross-month context
   const now = new Date();
   monthKeys.add(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`);
-  const sortedMonths = [...monthKeys].sort().reverse();
+  _calendarMonths = [...monthKeys].sort().reverse();
+
+  renderCalendarMonth(container, dateSet, todayStr);
+}
+
+function renderCalendarMonth(container, dateSet, todayStr) {
+  if (!dateSet) {
+    dateSet = new Set(_calendarDates);
+    todayStr = new Date().toISOString().split('T')[0];
+  }
+
+  const monthKey = _calendarMonths[_calendarMonthIndex];
+  if (!monthKey) return;
+
+  const [y, m] = monthKey.split('-');
+  const mi = parseInt(m) - 1;
+  const daysInMonth = new Date(parseInt(y), mi + 1, 0).getDate();
+  let firstDow = new Date(parseInt(y), mi, 1).getDay();
+  firstDow = firstDow === 0 ? 6 : firstDow - 1;
 
   const weekHeaders = ['一','二','三','四','五','六','日'];
+  const hasPrev = _calendarMonthIndex < _calendarMonths.length - 1;
+  const hasNext = _calendarMonthIndex > 0;
 
-  let html = '<div class="w-full space-y-4">';
-  for (const monthKey of sortedMonths) {
-    const [y, m] = monthKey.split('-');
-    const mi = parseInt(m) - 1;
-    const daysInMonth = new Date(parseInt(y), mi + 1, 0).getDate();
-    // Monday=0 ... Sunday=6
-    let firstDow = new Date(parseInt(y), mi, 1).getDay(); // 0=Sun
-    firstDow = firstDow === 0 ? 6 : firstDow - 1; // convert to Mon=0
-
-    html += `<div>
-      <div class="text-[11px] text-slate-500 font-mono mb-2">${y} 年 ${parseInt(m)} 月</div>
-      <div class="grid grid-cols-7 gap-1">
-        ${weekHeaders.map(w => `<div class="text-center text-[9px] text-slate-600 font-mono pb-1">${w}</div>`).join('')}`;
-
-    // Empty cells before first day
-    for (let i = 0; i < firstDow; i++) {
-      html += '<div></div>';
-    }
-
-    for (let day = 1; day <= daysInMonth; day++) {
-      const dateStr = `${y}-${String(parseInt(m)).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
-      const hasData = dateSet.has(dateStr);
-      const isSelected = _selectedHistoryDate === dateStr;
-      const isToday = dateStr === todayStr;
-
-      if (hasData) {
-        const selCls = isSelected
-          ? 'bg-cyan-500/20 border-cyan-500/40 ring-1 ring-cyan-500/20 text-cyan-300'
-          : 'border-white/[0.08] text-white hover:bg-white/[0.08] hover:border-white/[0.15]';
-        html += `<button onclick="selectHistoryDate('${dateStr}')"
-          class="relative flex items-center justify-center h-9 rounded-md border cursor-pointer transition-all duration-150 ${selCls}">
-          ${isToday ? '<span class="absolute top-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-emerald-400"></span>' : ''}
-          <span class="text-xs font-semibold">${day}</span>
-        </button>`;
-      } else {
-        html += `<div class="flex items-center justify-center h-9 rounded-md">
-          ${isToday ? '<span class="text-xs font-medium text-emerald-600">' + day + '</span>' : '<span class="text-xs text-slate-700">' + day + '</span>'}
-        </div>`;
-      }
-    }
-
-    html += '</div></div>';
+  // Count data days in this month
+  let dataCount = 0;
+  for (let day = 1; day <= daysInMonth; day++) {
+    const ds = `${y}-${String(parseInt(m)).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    if (dateSet.has(ds)) dataCount++;
   }
-  html += '</div>';
+
+  let html = '<div class="w-full">';
+
+  // Month header with nav arrows
+  html += `<div class="flex items-center justify-between mb-2">
+    <button onclick="calendarPrev()" class="w-7 h-7 flex items-center justify-center rounded-md transition-colors ${hasPrev ? 'text-slate-400 hover:text-white hover:bg-white/[0.08] cursor-pointer' : 'text-slate-700 cursor-default'}" ${hasPrev ? '' : 'disabled'}>‹</button>
+    <div class="text-center">
+      <span class="text-[11px] text-slate-400 font-mono">${y} 年 ${parseInt(m)} 月</span>
+      <span class="text-[10px] text-slate-600 font-mono ml-1.5">${dataCount} 天有数据</span>
+    </div>
+    <button onclick="calendarNext()" class="w-7 h-7 flex items-center justify-center rounded-md transition-colors ${hasNext ? 'text-slate-400 hover:text-white hover:bg-white/[0.08] cursor-pointer' : 'text-slate-700 cursor-default'}" ${hasNext ? '' : 'disabled'}>›</button>
+  </div>`;
+
+  // Week headers
+  html += '<div class="grid grid-cols-7 gap-1">';
+  html += weekHeaders.map(w => `<div class="text-center text-[9px] text-slate-600 font-mono pb-1">${w}</div>`).join('');
+
+  // Empty cells before first day
+  for (let i = 0; i < firstDow; i++) {
+    html += '<div></div>';
+  }
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${y}-${String(parseInt(m)).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const hasData = dateSet.has(dateStr);
+    const isSelected = _selectedHistoryDate === dateStr;
+    const isToday = dateStr === todayStr;
+
+    if (hasData) {
+      const selCls = isSelected
+        ? 'bg-cyan-500/20 border-cyan-500/40 ring-1 ring-cyan-500/20 text-cyan-300'
+        : 'border-white/[0.08] text-white hover:bg-white/[0.08] hover:border-white/[0.15]';
+      html += `<button onclick="selectHistoryDate('${dateStr}')"
+        class="relative flex items-center justify-center h-9 rounded-md border cursor-pointer transition-all duration-150 ${selCls}">
+        ${isToday ? '<span class="absolute top-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-emerald-400"></span>' : ''}
+        <span class="text-xs font-semibold">${day}</span>
+      </button>`;
+    } else {
+      html += `<div class="flex items-center justify-center h-9 rounded-md">
+        ${isToday ? '<span class="text-xs font-medium text-emerald-600">' + day + '</span>' : '<span class="text-xs text-slate-700">' + day + '</span>'}
+      </div>`;
+    }
+  }
+
+  html += '</div></div>';
   container.innerHTML = html;
+}
+
+function calendarPrev() {
+  if (_calendarMonthIndex < _calendarMonths.length - 1) {
+    _calendarMonthIndex++;
+    renderCalendarMonth(document.getElementById("date-selector"));
+  }
+}
+
+function calendarNext() {
+  if (_calendarMonthIndex > 0) {
+    _calendarMonthIndex--;
+    renderCalendarMonth(document.getElementById("date-selector"));
+  }
 }
 
 function selectHistoryDate(dateStr) {
