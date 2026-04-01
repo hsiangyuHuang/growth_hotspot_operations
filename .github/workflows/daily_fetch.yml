@@ -38,5 +38,5 @@ jobs:
           git add data/**/*.json data/**/*.md
           git diff --cached --quiet || git commit -m "data: publish $(TZ=Asia/Shanghai date +%Y-%m-%d)"
           git checkout -- .
-          git pull --rebase origin main
+          git pull --rebase -X theirs origin main || true
           git push
