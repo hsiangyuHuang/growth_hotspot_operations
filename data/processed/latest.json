@@ -1,27 +1,27 @@
 {
-  "run_date": "2026-03-30",
+  "run_date": "2026-03-31",
   "header_markdown": "",
   "cards": [
     {
-      "title": "地缘政治冲突引发市场避险情绪，BTC 震荡回落",
+      "title": "美伊态度软化，和平曙光初现，加密市场与美股同步走强",
       "priority": "P0",
       "category": "宏观/行情",
       "timing": "Day",
-      "relation": "Indirect",
-      "intent": "恐慌避险",
+      "relation": "Direct",
+      "intent": "FOMO 买入/交易",
       "site": "Both",
       "executability": "A",
-      "summary": "引导避险资金进入 StableHub，并向长线用户推送定投计划。",
-      "dont_do": "不做价格预测，不渲染恐慌情绪，不使用美元符号",
+      "summary": "借势行情回暖与避险情绪消退，主推现货交易与合约交易赛，刺激用户交易活跃度。",
+      "dont_do": "不做价格预测，不涉及任何政治立场表态。",
       "channels": [
         {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方式\n- Push + EDM\n\n### 目标人群\n- **已入金未交易**\n- **VIP Loss 用户**\n\n### 核心信息\n- 市场波动期，将闲置资金转入 **StableHub** 享受确定性收益；或开启 **定投计划**，平摊长线建仓成本。\n\n### 关联产品/页面\n- StableHub 页面\n- 定投计划设置页"
+          "name": "Paid Ads",
+          "markdown": "### 渠道与站点\\n- **渠道**：Google Search (品牌词+竞品词) / Meta\\n- **站点**：Global 站 & HK 站\\n\\n### 卖点组合与素材\\n- **HK 站核心**：持牌背书（SFC 牌照）、阶梯式入金奖励（488-1000 HKD）、**法币快充** (FPS/eDDA)。\\n- **Global 站核心**：上市背景 (83.HK)、**10 倍杠杆合约**、Flash Trade **0 费率**。\\n- **素材建议**：采用真人竖屏视频，传达“行情回暖，立即交易”氛围。\\n\\n### 落地页指向\\n- **HK 站**：注册页 / 现货交易页\\n- **Global 站**：合约交易赛 S2 活动页"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk",
+          "name": "律动 BlockBeats",
           "url": ""
         },
         {
@@ -32,141 +32,141 @@
       "id": "ap_1"
     },
     {
-      "title": "以太坊基金会质押大额 ETH，贝莱德向 Coinbase 存入资产",
+      "title": "谷歌量子计算突破引发比特币安全担忧",
       "priority": "P1",
-      "category": "机构/链上异动",
-      "timing": "Day",
-      "relation": "Direct",
-      "intent": "深度研究",
-      "site": "HK",
+      "category": "技术/安全",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "信任评估/深度研究",
+      "site": "Both",
       "executability": "B",
-      "summary": "作为 VIP 专属市场洞察素材，结合 VIP 精英迁徙活动进行 1 对 1 触达。",
-      "dont_do": "不承诺跟随机构必赚钱，不做投资建议",
+      "summary": "以专业科普安抚用户，借机强调 OSL 的机构级托管安全与合规保障。",
+      "dont_do": "不制造恐慌，不夸大\"量子威胁\"的即时性，不暗示 OSL 已完全解决量子问题。",
       "channels": [
         {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方式\n- **EDM + BD 1对1建联**\n\n### 目标人群\n- **VIP 用户 / 高净值**\n\n### 核心信息\n- 机构巨鲸近期链上动作频频，OSL 为您提供深度 **Market Insights**；欢迎参与 **VIP 精英迁徙活动**，享受专属费率与服务。\n\n### 关联产品/页面\n- VIP 精英迁徙活动专题页\n- 研报精选版"
+          "name": "SEO",
+          "markdown": "### 内容策略\\n- **关键词定向**：**安全交易所**、**香港持牌交易所**、比特币量子计算、加密资产安全。\\n- **内容类型**：发布专业 **FAQ 或科普解读**，解释量子计算对比特币的实际影响。\\n\\n### 核心目标\\n- **CTA**：引导用户了解 OSL 的**机构级托管方案**。\\n- **内链指向**：关联 OSL 托管介绍页及合规牌照详情页。"
         }
       ],
       "sources": [
         {
-          "name": "Lookonchain",
+          "name": "The Block",
           "url": ""
         },
         {
-          "name": "Whale Alert",
+          "name": "Odaily",
           "url": ""
         }
       ],
       "id": "ap_2"
     },
     {
-      "title": "超半数加密投资者不了解税务规则",
-      "priority": "P1",
-      "category": "行业研报/教育",
-      "timing": "Trend",
-      "relation": "Brand",
-      "intent": "合规/税务求助",
-      "site": "Both",
-      "executability": "B",
-      "summary": "发布合规与资产安全相关的 SEO 指南，强调 OSL 的持牌合规优势。",
-      "dont_do": "不提供具体的税务法律建议，不针对中国大陆用户营销",
+      "title": "美联储巴尔警示稳定币风险，强调强化监管",
+      "priority": "P0",
+      "category": "监管/稳定币",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "信任评估/避险",
+      "site": "Global",
+      "executability": "A",
+      "summary": "借监管收紧的叙事，凸显 OSL 平台合规优势，大力推广 StableHub 作为安全可靠的稳定币理财选择。",
+      "dont_do": "不攻击其他稳定币项目，不承诺绝对无风险。",
       "channels": [
         {
-          "name": "SEO",
-          "markdown": "### 关键词方向\n- 优先 bits 业务场景词：**香港持牌交易所**、**合规交易所**、**安全交易所**\n\n### 内容类型\n- **指南 / FAQ**\n\n### 时效要求\n- **48 小时内发布**\n\n### 内链方向\n- OSL VIP 介绍页\n- 法币出入金教程"
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 触达策略\\n- **工具**：App Push + EDM 邮件营销。\\n- **受众定向**：稳定币高频转账用户、已入金但未活跃交易的用户。\\n\\n### 核心话术\\n- **安全背书**：强调 **StableHub** 的合规安全性，通过“监管收紧不用慌”为切口，吸引避险资金。\\n\\n### 转化路径\\n- **KPI**：提升 StableHub 专题页访问量及存入金额。"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk",
+          "name": "The Block",
           "url": ""
         },
         {
-          "name": "CoinTelegraph",
+          "name": "Odaily",
           "url": ""
         }
       ],
       "id": "ap_3"
     },
     {
-      "title": "DeFi 收益协议 Midas 融资 5000 万，Aave V4 上线",
-      "priority": "P0",
-      "category": "DeFi/理财",
-      "timing": "Wave",
-      "relation": "Indirect",
-      "intent": "寻求收益",
-      "site": "Global",
+      "title": "巨鲸休眠 5 年后转移 5,500 枚比特币",
+      "priority": "P1",
+      "category": "链上数据/行情",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "市场洞察/交易",
+      "site": "HK",
       "executability": "A",
-      "summary": "在理财社区和广告中截流寻求收益的用户，主推 StableHub 确定性收益。",
-      "dont_do": "不攻击 DeFi 风险，不承诺绝对高息，不使用美元符号",
+      "summary": "作为 VIP 级市场洞察素材，由 BD 1对1 触达高净值用户，促进入金与交易。",
+      "dont_do": "不提供投资建议，不猜测巨鲸具体身份。",
       "channels": [
         {
-          "name": "Paid Ads",
-          "markdown": "### 渠道 + 站点\n- **Meta / Google 自投 + Global 站**\n\n### 卖点组合\n- **上市背景 + 股票代码（83.HK）**\n- **StableHub 稳定币理财**（无需锁仓）\n\n### 素材方向\n- **真人竖屏视频**\n\n### 落地页指向\n- StableHub 页面"
+          "name": "站内运营 / 用户触达",
+          "markdown": "### VIP 服务流程\\n- **触达媒介**：EDM (Market Insights) + BD **1对1 专属服务** (WhatsApp/Email)。\\n- **目标用户**：**VIP 客户** 及高净值潜在客户。\\n\\n### 核心价值传递\\n- **市场洞察**：以“远古巨鲸苏醒”作为流动性变局信号，凸显 OSL **专业交易深度**。\\n\\n### 服务闭环\\n- **业务链接**：引导至 VIP 专属服务页或大宗 **OTC 交易服务**。"
         }
       ],
       "sources": [
         {
-          "name": "The Block",
+          "name": "律动 BlockBeats",
           "url": ""
         },
         {
-          "name": "CoinTelegraph",
+          "name": "Lookonchain",
           "url": ""
         }
       ],
       "id": "ap_4"
     },
     {
-      "title": "加密基金出现 5 周来首次资金净流出",
+      "title": "美国劳工部拟议规则：401(k) 计划或纳入加密货币",
       "priority": "P1",
-      "category": "机构/资金流向",
-      "timing": "Day",
+      "category": "宏观/机构",
+      "timing": "Trend",
       "relation": "Indirect",
-      "intent": "观望/避险",
-      "site": "Both",
-      "executability": "A",
-      "summary": "针对行情横盘/回调期，向活跃交易用户推送 0 费率活动或 StableHub。",
-      "dont_do": "不制造市场见顶恐慌，不做价格预测",
+      "intent": "深度研究/长期配置",
+      "site": "HK",
+      "executability": "B",
+      "summary": "制作深度研报，向传统金融配置用户和高净值人群传递\"加密资产主流化\"信号，配合 VIP 精英迁徙活动。",
+      "dont_do": "不暗示香港强积金（MPF）已有类似政策，不提供税务建议。",
       "channels": [
         {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方式\n- **Push**\n\n### 目标人群\n- **合约/杠杆活跃**\n- **稳定币高频转账**\n\n### 核心信息\n- 市场资金流向生变，参与 **OSL 合约交易赛** 享 **0 费率**，或将资金转入 **StableHub** 避险。\n\n### 关联产品/页面\n- 合约交易赛 S2 活动页\n- StableHub 页面"
+          "name": "SEO",
+          "markdown": "### 内容营销\\n- **核心关键词**：**买 BTC**、**香港买比特币**、加密资产配置、机构入场。\\n- **文章方向**：深度解读“美国 401(k) 拥抱加密货币”的里程碑意义，定调**资产主流化**。\\n\\n### 营销联动\\n- **转化入口**：内链关联 **VIP 精英迁徙活动页**及定投计划介绍。\\n- **发布时效**：48 小时内。"
         }
       ],
       "sources": [
         {
-          "name": "The Block",
+          "name": "CoinDesk",
           "url": ""
         },
         {
-          "name": "CoinTelegraph",
+          "name": "Odaily",
           "url": ""
         }
       ],
       "id": "ap_5"
     },
     {
-      "title": "Square 为数百万美国商户自动启用比特币支付",
-      "priority": "P1",
-      "category": "支付/应用",
+      "title": "Interactive Brokers 在欧洲推出加密货币交易",
+      "priority": "P2",
+      "category": "竞对/行业",
       "timing": "Wave",
-      "relation": "Direct",
-      "intent": "支付/出入金",
-      "site": "Global",
-      "executability": "B",
-      "summary": "借势加密支付普及热点，推广 Global 站 OSL Pay 及法币出入金功能。",
-      "dont_do": "不夸大 OSL Pay 的适用范围，不针对中国大陆用户营销",
+      "relation": "Brand",
+      "intent": "信任评估/平台对比",
+      "site": "Both",
+      "executability": "C",
+      "summary": "传统券商入局印证行业合规化趋势，OSL 借此强化自身作为\"原生合规加密券商\"的先发优势与专业性。",
+      "dont_do": "不直接攻击 IBKR，不涉及未覆盖的欧洲市场营销。",
       "channels": [
         {
-          "name": "SEO",
-          "markdown": "### 关键词方向\n- 优先 bits 业务场景词：**法币出入金**、**买 BTC**、**USDT 兑换**\n\n### 内容类型\n- **热点快讯 / 工具页**\n\n### 时效要求\n- **24 小时内发布**\n\n### 内链方向\n- OSL Pay 介绍页\n- 卡买币及法币对教程"
+          "name": "社区",
+          "markdown": "### 社交媒体运营\\n- **平台**：Twitter (X) / LinkedIn。\\n- **调性控制**：专业、稳健的**行业老兵**口吻。\\n\\n### 讨论角度\\n- **行业趋势**：传统巨头入场证明了“合规是唯一出路”。\\n- **品牌优势**：强调 OSL 作为**首批持牌机构**的先发优势和行业深耕。"
         }
       ],
       "sources": [
         {
-          "name": "CoinDesk",
+          "name": "The Block",
           "url": ""
         },
         {
@@ -177,20 +177,20 @@
       "id": "ap_6"
     },
     {
-      "title": "Strategy 13 周来首次暂停购买比特币",
+      "title": "Plume 推出 RWA 薪酬试点（代币化货币市场基金）",
       "priority": "P2",
-      "category": "机构/大户",
+      "category": "RWA/创新",
       "timing": "Wave",
       "relation": "Indirect",
-      "intent": "市场情绪评估",
-      "site": "Both",
+      "intent": "深度研究/收益探索",
+      "site": "HK",
       "executability": "C",
-      "summary": "在社区引发讨论，用 Web3 原生语言探讨机构建仓节奏，软植入 OSL 定投。",
-      "dont_do": "不评价其投资策略的对错，不做投资建议",
+      "summary": "借 RWA 热度，科普 RWA 概念，并自然引出 OSL HK 站已有的 RWA 产品（如 CAMMF）。",
+      "dont_do": "不承诺 OSL 即将推出类似薪酬功能。",
       "channels": [
         {
-          "name": "社区",
-          "markdown": "### 平台\n- **Telegram / Twitter**\n\n### 适用社群\n- **华语 / 通用**\n\n### 内容形式\n- **话题讨论 / Meme 图**\n\n### 话题角度 + 调性\n- 结合热点，用 **Web3 原生梗** 探讨“连微策略都停手了，散户该怎么办？”，幽默引出“**定投才是王道**”的结论。"
+          "name": "SEO",
+          "markdown": "### 科普传播\\n- **关键词定向**：**OSL 理财**、稳定币理财、RWA 投资、代币化基金。\\n- **内容要点**：通过“代币化薪酬”案例解释 RWA 现实落地，强调其**真实资产支撑**。\\n\\n### 业务关联\\n- **内链引导**：推广 OSL HK 站已有的 **CAMMF** 等 RWA 理财产品。"
         }
       ],
       "sources": [
@@ -199,61 +199,57 @@
           "url": ""
         },
         {
-          "name": "CoinTelegraph",
+          "name": "The Defiant",
           "url": ""
         }
       ],
       "id": "ap_7"
     },
     {
-      "title": "Resolv 稳定币协议遭黑客攻击",
-      "priority": "P0",
-      "category": "安全事件",
+      "title": "某新钱包存入 1960 万 USDC 做多原油",
+      "priority": "P1",
+      "category": "链上数据/衍生品",
       "timing": "Flash",
-      "relation": "Brand",
-      "intent": "资产安全担忧",
-      "site": "Both",
+      "relation": "Direct",
+      "intent": "FOMO 交易/策略跟随",
+      "site": "Global",
       "executability": "A",
-      "summary": "第一时间发布安全提醒，正面强调 OSL 的持牌、资金隔离与保险优势。",
-      "dont_do": "绝不点名攻击竞品或幸灾乐祸，不扩散未经证实信息",
+      "summary": "结合地缘政治与原油波动，推广 Global 站的永续合约功能，吸引衍生品交易用户。",
+      "dont_do": "不鼓励盲目跟单，不提供高杠杆投资建议。",
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方式\n- **Push + Onsite 资源位**\n\n### 目标人群\n- **全量用户**（安全事件例外）\n\n### 核心信息\n- 近期链上安全事件频发，OSL 提醒您注意资产安全。OSL 拥有 **SFC 持牌**、**资金隔离**及**巨额保险**，为您保驾护航。\n\n### 关联产品/页面\n- 官方安全指南\n- 品牌合规介绍页"
+          "markdown": "### 动态触达\\n- **形式**：实时 App Push。\\n- **受众**：合约及杠杆交易活跃用户。\\n\\n### 核心话术\\n- **热点锚点**：以“巨资做多原油”为由头，引导用户关注大宗商品联动下的加密市场机会。\\n\\n### 活动联动\\n- **CTA**：直达 **Global 站合约交易赛 S2** 活动页。"
         }
       ],
       "sources": [
         {
-          "name": "Odaily",
+          "name": "Lookonchain",
           "url": ""
         }
       ],
       "id": "ap_8"
     },
     {
-      "title": "美国参议员提出《美国挖矿法案》及战略比特币储备",
+      "title": "俄罗斯拟限制加密交易仅通过持牌中介进行",
       "priority": "P2",
-      "category": "监管/政策",
+      "category": "监管/合规",
       "timing": "Wave",
       "relation": "Brand",
-      "intent": "深度研究",
-      "site": "HK",
+      "intent": "信任评估",
+      "site": "Both",
       "executability": "B",
-      "summary": "作为宏观政策利好，输出专业解读文章，提升 OSL 品牌专业度。",
-      "dont_do": "不涉及政治立场表态，不做价格预测",
+      "summary": "全球监管趋严，再次印证\"持牌中介\"的必要性，强化 OSL 的合规护城河。",
+      "dont_do": "不针对俄罗斯用户进行营销，不评论他国政治。",
       "channels": [
         {
-          "name": "SEO",
-          "markdown": "### 关键词方向\n- 次优先（解读/教育）：**监管政策解读**、**宏观经济关联**\n\n### 内容类型\n- **解读**\n\n### 时效要求\n- **48 小时内发布**\n\n### 内链方向\n- OSL Learn（新手学院）\n- 研报精选版"
+          "name": "社区",
+          "markdown": "### 社群激活\\n- **平台**：Telegram / Discord。\\n- **内容形式**：制作 **Web3 原生 Meme 图**。\\n\\n### 核心对比\\n- **策略**：幽默对比“野鸡交易所用户”的焦虑与“OSL 持牌平台用户”的安稳。\\n- **价值点**：潜移默化植入 **OSL 的合规护城河**。"
         }
       ],
       "sources": [
         {
-          "name": "The Block",
-          "url": ""
-        },
-        {
-          "name": "Decrypt",
+          "name": "CoinTelegraph",
           "url": ""
         }
       ],
