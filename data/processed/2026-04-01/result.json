@@ -3,308 +3,208 @@
   "header_markdown": "",
   "cards": [
     {
-      "title": "美伊停战预期升温，BTC 重回 6.8 万美元",
+      "title": "美伊局势缓和，比特币与美股齐涨，市场情绪反转",
       "priority": "P0",
-      "category": "行情/宏观",
+      "category": "宏观/行情",
       "timing": "Day",
       "relation": "Direct",
       "intent": "FOMO 买入",
       "site": "Both",
-      "summary": "行情由恐慌转向修复，地缘风险降温叠加 BTC 重回 6.8 万，是当日最高优先级转化窗口，联动合约交易赛 S2 和 Referral 改版首日。",
-      "dont_do": "不做价格预测，不使用\"暴涨\"\"立即抄底\"等激进措辞；不承诺收益；HK 站禁止向公众提供奖励。",
+      "summary": "借势行情反弹，HK 站主推 VIP 迁徙活动，Global 站主推合约交易赛。",
+      "dont_do": "不做价格预测，不承诺收益，不使用美元符号（$）。",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 渠道与站点\n- **Global 站**：Google/Meta 加大品牌词竞价（BTC 买入、比特币交易所）\n- **HK 站**：Meta Instant Form → WhatsApp BD 建联，推 **VIP 精英迁徙活动**\n\n### 卖点组合\n- **核心优势**：上市背景 (83.HK) + 合约功能 (10x 杠杆) + 0 费率 Flash Trade\n- **限时奖励**：HK 站阶梯入金奖励 (**488-1000 港币**等值 BTC)\n\n### 素材与落地页\n- **素材**：真人竖屏视频 (BTC 价格走势) + AI 口播\n- **落地页**：合约页 / VIP 精英迁徙活动页"
+          "markdown": "### 受众定向\n- **HK 站点**: Google Search / Meta，针对关注合规、VIP 权益的用户。\n- **Global 站点**: Google Search / Meta，针对对合约交易、高杠杆、0 费率感兴趣的用户。\n### 核心策略\n- **HK 卖点**: 强调 **SFC 持牌**（1/4/7/9 类）及 **VIP 阶梯入金奖励**。\n- **Global 卖点**: 强调 **上市背景**（83.HK）及 **合约交易赛 S2**（10x 杠杆、0 费率）。\n### 素材与落地页\n- **素材方向**: 真人竖屏视频，强调行情反转，抓住交易时机。\n- **落地页**: HK 指向 VIP 活动页；Global 指向合约交易赛页。"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 触达策略\n- **Push + Onsite Banner**：覆盖 HK 与 Global 站点\n\n### 目标人群与核心信息\n- **合约活跃用户**：推 **合约交易赛 S2**，主打手续费减免\n- **未交易用户**：行情回暖引导首次交易，联动 **Referral 改版**\n- **高净值用户**：提醒 **VIP 精英迁徙活动** 今日上线\n\n### KPI 引导\n- **CTA**：立即参与交易赛 / 领取 VIP 权益"
+          "markdown": "### 目标人群\n- **重点用户**: 已入金未交易、合约/杠杆活跃用户。\n### 触达策略\n- **核心信息**: 市场情绪回暖，BTC 突破 68K，提醒用户参与合约交易赛或升级 VIP。\n- **渠道**: Push + EDM。\n### CTA 引导\n- **操作**: 立即参与 **合约交易赛享手续费全免** / **升级 VIP 享专属权益**。"
         }
       ],
       "sources": [
         {
           "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-stocks-soar-as-markets-respond-to-chance-of-us-and-israel-iran-war-ending"
-        },
-        {
-          "name": "律动 BlockBeats",
-          "url": "https://m.theblockbeats.info/flash/339064"
+          "url": "https://cointelegraph.com/news/bitcoin-stocks-soar-as-markets-respond-to-chance-of-us-and-israel-iran-war-ending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "id": "ap_1"
     },
     {
-      "title": "香港 HKD 稳定币牌照迟迟未发，监管进展受关注",
+      "title": "谷歌量子计算突破引发比特币安全恐慌",
       "priority": "P0",
-      "category": "监管/香港",
-      "timing": "Day",
+      "category": "安全/技术",
+      "timing": "Wave",
       "relation": "Brand",
-      "intent": "信任评估",
-      "site": "HK",
-      "summary": "香港 HKD 稳定币牌照 3 月目标未达成引发市场关注，是强化 OSL 持牌合规叙事的绝佳窗口。",
-      "dont_do": "不评论监管机构决策，不暗示 OSL 有未经证实的牌照进展；不扩散未经证实信息。",
+      "intent": "信任评估/避险",
+      "site": "Both",
+      "summary": "正面回应量子计算恐慌，强调 OSL 的机构级安全架构、持牌合规与资产隔离优势，安抚用户并建立信任。",
+      "dont_do": "不制造过度恐慌，不攻击其他平台，不涉及投资建议。",
       "channels": [
         {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：香港持牌交易所、香港稳定币监管、香港加密货币合规、SFC 持牌交易所\n\n### 内容策略\n- **文章标题**：香港 HKD 稳定币牌照延迟发放：用户如何选择真正合规的交易平台？\n- **植入要点**：强调 OSL 持有 **SFC 1/4/7/9 类牌照**、上市背景及 **10 亿美元保险**\n\n### 时效与内链\n- **时效**：4 小时内发快讯，24 小时发深度稿\n- **内链**：指向 OSL 合规页及入金指引"
+          "markdown": "### 关键词定位\n- **业务场景词**: **安全交易所**、**香港持牌交易所**、**如何保护比特币安全**。\n### 内容生产\n- **形式**: 深度解读 / FAQ。\n- **内链方向**: 关联 OSL **机构级托管** 介绍页、**合规牌照** 展示页。\n### 时效性\n- **发布要求**: 24 小时内发布。"
         },
         {
           "name": "社区",
-          "markdown": "### 平台与形式\n- **X (Twitter) + Telegram**：华语社群为主\n\n### 互动策略\n- **话题讨论**：HKD 稳定币延迟，你会怎么选平台？\n- **Meme 图**：对比「等牌照」vs「已持牌」，正面突出 OSL 现成合规优势"
-        }
-      ],
-      "sources": [
-        {
-          "name": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/04/01/hong-kong-hasn-t-issued-a-single-hkd-stablecoin-license-after-march-target"
-        }
-      ],
-      "id": "ap_2"
-    },
-    {
-      "title": "BTC/ETH 现货 ETF 持续净流入，机构资金回暖信号明确",
-      "priority": "P0",
-      "category": "机构/ETF",
-      "timing": "Day",
-      "relation": "Indirect",
-      "intent": "深度研究 / 信任评估",
-      "site": "HK",
-      "summary": "BTC ETF 昨日净流入 1.18 亿美元，机构资金持续回流是 HK 站 VIP 大户的高质量 talking point，直接联动今日上线的 VIP 精英迁徙活动。",
-      "dont_do": "不做价格预测，不暗示 ETF 流入必然带动价格上涨；不做投资建议。",
-      "channels": [
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达渠道\n- **EDM (VIP 专属)** + 研报精选点对点分发\n\n### 目标人群\n- **VIP/高净值用户**：提供 Market Insights 深度分析\n- **流失 VIP 用户**：以机构回流信号作为定投引导并召回\n\n### 核心策略\n- **核心信息**：贝莱德 IBIT 净流入信号 + **VIP 精英迁徙活动** 权益领取"
-        },
-        {
-          "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：比特币 ETF 净流入、机构买入比特币、贝莱德 IBIT\n\n### 内容策略\n- **内容类型**：热点快讯「BTC/ETH ETF 双双净流入，机构资金 Q2 开局回暖」\n- **内链引导**：关联 OSL 现货交易页、**定投计划页**及 VIP 权益页"
-        }
-      ],
-      "sources": [
-        {
-          "name": "Odaily",
-          "url": "https://www.odaily.news/zh-CN/newsflash/474788"
-        },
-        {
-          "name": "律动 BlockBeats",
-          "url": "https://m.theblockbeats.info/flash/339073"
-        }
-      ],
-      "id": "ap_3"
-    },
-    {
-      "title": "标准渣打：稳定币市值 2028 年将达 2 万亿，使用速度超预期",
-      "priority": "P0",
-      "category": "稳定币/机构",
-      "timing": "Wave",
-      "relation": "Direct",
-      "intent": "深度研究 / 理财需求",
-      "site": "Global",
-      "summary": "标准渣打权威背书稳定币赛道高速增长，是 StableHub 最强外部信用背书之一，直接联动 Global 站推广。",
-      "dont_do": "不做收益承诺，不暗示稳定币无风险；不使用美元符号（$）。",
-      "channels": [
-        {
-          "name": "Paid Ads",
-          "markdown": "### 渠道定向\n- **Global 站**：Google 搜索广告 + Meta 信息流\n\n### 卖点组合\n- **Hook**：标准渣打预测 2 万亿市场，你的稳定币在帮你赚钱吗？\n- **CTA**：体验 **StableHub** 稳定币理财，无需锁仓，法币极速出入金\n\n### 素材方向\n- AI 口播视频：对比传统存储与 StableHub 收益"
-        },
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 运营动作\n- **Push + Banner**：精准触达稳定币高频转账用户及新注册未入金用户\n\n### 核心信息\n- **收益驱动**：你的 USDT/USDC 正在 StableHub 赚取收益\n- **灵活性**：强调无需锁仓，随时存取"
-        },
-        {
-          "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：稳定币理财、USDT 理财、StableHub、稳定币收益\n\n### 内容策略\n- **深度文章**：标准渣打报告解读 + OSL StableHub 如何实现增值\n- **内链指向**：StableHub 产品页 / 法币出入金指引"
+          "markdown": "### 平台与形式\n- **渠道**: Twitter / Telegram。\n- **内容**: **Meme 图** + **安全科普**。\n### 话题引导\n- **调性**: 幽默调侃“量子计算焦虑”，顺势科普 OSL 的 **冷热钱包隔离** 与 **$1B 保险**。\n- **核心价值**: 传达“在 OSL，你的资产比量子还稳”的信任感。"
         }
       ],
       "sources": [
         {
           "name": "The Block",
-          "url": "https://www.theblock.co/post/395867/unstable-velocity-standard-chartered-says-stablecoin-usage-rising-faster-than-expected-as-new-use-cases-emerge"
+          "url": "https://www.theblock.co/post/395944/no-longer-drill-googles-latest-quantum-breakthrough-debate-bitcoins-security?utm_source=rss&utm_medium=rss"
+        }
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "渣打银行预测稳定币市值将达 2 万亿，使用量激增",
+      "priority": "P1",
+      "category": "行业趋势/稳定币",
+      "timing": "Trend",
+      "relation": "Direct",
+      "intent": "深度研究/理财配置",
+      "site": "Global",
+      "summary": "借渣打银行背书，大力推广 StableHub，吸引寻求稳定收益的用户。",
+      "dont_do": "不承诺固定收益率，不涉及中国大陆用户营销。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 受众定向\n- **目标用户**: 稳定币高频转账用户。\n### 核心信息\n- **文案**: 渣打银行看好稳定币未来！将闲置稳定币存入 **StableHub**，享灵活理财，无需锁仓。\n### 转化路径\n- **工具**: Push。\n- **落地页**: **StableHub** 详情页。"
         },
         {
-          "name": "Decrypt",
-          "url": "https://decrypt.co/362882/stablecoin-market-2-trillion-2028-velocity-doubles-standard-chartered"
+          "name": "SEO",
+          "markdown": "### 关键词定位\n- **业务词**: **StableHub**、**稳定币理财**、**USDT 兑换**。\n### 内容规划\n- **形式**: 操作指南 / 行业深度解读。\n- **内链**: 指向 StableHub 产品页、法币出入金教程。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395867/unstable-velocity-standard-chartered-says-stablecoin-usage-rising-faster-than-expected-as-new-use-cases-emerge?utm_source=rss&utm_medium=rss"
+        }
+      ],
+      "id": "ap_3"
+    },
+    {
+      "title": "盈透证券（Interactive Brokers）在欧洲扩展加密货币交易",
+      "priority": "P1",
+      "category": "机构/合规",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "信任评估/机构入场",
+      "site": "HK",
+      "summary": "利用传统券商入局加密市场的新闻，作为 BD 触达高净值/传统金融用户的谈资，推广 VIP 迁徙活动。",
+      "dont_do": "不提及未在 HK 站上线的币种，不提供交易奖励。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### BD 触达策略\n- **方式**: **1 对 1 EDM / 线下建联**。\n- **目标**: VIP 用户 / 高净值（传统金融配置背景）。\n### 核心话术\n- **内容**: 传统金融巨头加速布局。OSL 作为香港持牌交易所，提供机构级体验与 **VIP 迁徙权益**。\n### 落地页\n- **链接**: VIP 迁徙活动页。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/interactive-brokers-expands-crypto-trading-to-retail-investors-in-europe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
         }
       ],
       "id": "ap_4"
     },
     {
-      "title": "谷歌量子计算论文：破解比特币密码所需资源骤降 20 倍",
+      "title": "美联储官员呼吁加强稳定币监管",
       "priority": "P1",
-      "category": "技术/安全",
-      "timing": "Wave",
+      "category": "监管/稳定币",
+      "timing": "Day",
       "relation": "Brand",
-      "intent": "信任评估 / 安全担忧",
+      "intent": "信任评估",
       "site": "Both",
-      "summary": "谷歌量子 AI 论文引发市场对资产安全的关注，是强化 OSL 机构级安全叙事（持牌、资金隔离、10 亿美元保险）的高价值窗口。",
-      "dont_do": "不扩散恐慌情绪，不暗示用户资产面临即时风险；不做耸人听闻表述；不做投资建议。",
+      "summary": "借监管收紧趋势，强化 OSL “拥抱监管、合规透明”的品牌形象，巩固用户信任。",
+      "dont_do": "不评价监管政策好坏，不涉及政治立场。",
       "channels": [
         {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **关键词**：量子计算比特币安全、香港持牌交易所安全、加密资产保险\n\n### 内容策略\n- **FAQ 文章**：谷歌量子论文热议：你的比特币真的安全吗？\n- **核心背书**：植入 **SOC 2 Type 2 审计**、SFC 资金隔离要求及 **Lloyd's 保险**"
-        },
-        {
-          "name": "社区",
-          "markdown": "### 社交策略\n- **平台**：Twitter/X + Telegram\n- **内容形式**：Meme 图「量子计算机 vs 你的私钥」，幽默科普量子威胁\n- **CTA**：引导用户选择持牌交易所作为资产避风港"
+          "markdown": "### 核心关键词\n- **定位**: **合规交易所**、**香港持牌交易所**、**安全稳定币**。\n### 内容策略\n- **形式**: 热点快讯 / 政策解读。\n- **内链**: 关联 OSL **合规牌照页**、**StableHub** 介绍页（强调合规资产）。\n### 时效性\n- **发布要求**: 24 小时内发布。"
         }
       ],
       "sources": [
         {
-          "name": "CryptoSlate",
-          "url": "https://cryptoslate.com/google-slashes-quantum-cracking-estimates-by-20x-creating-600-billion-quantum-countdown-for-bitcoin-and-ethereum/"
-        },
-        {
-          "name": "律动 BlockBeats",
-          "url": "https://m.theblockbeats.info/news/61773"
-        },
-        {
-          "name": "CoinDesk",
-          "url": "https://www.coindesk.com/tech/2026/03/31/google-warns-five-quantum-attack-paths-could-put-usd100-billion-on-ethereum-at-risk"
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395970/feds-barr-invokes-long-painful-history-encouraging-strong-stablecoin-oversight?utm_source=rss&utm_medium=rss"
         }
       ],
       "id": "ap_5"
     },
     {
-      "title": "HashKey Exchange 上线 XAUM 黄金代币 OTC 交易",
+      "title": "某鲸鱼 20 倍做多 BTC 和 ETH，仓位价值 8000 万美元",
       "priority": "P1",
-      "category": "竞对/RWA",
-      "timing": "Day",
-      "relation": "Indirect",
-      "intent": "RWA 配置需求 / 避险",
-      "site": "HK",
-      "summary": "黄金代币/RWA 需求升温。OSL HK 站可借势输出差异化叙事，关联 CAMMF 及 OSL Wealth 机构级服务。",
-      "dont_do": "不点名攻击竞对，不做负面评价；不承诺 RWA 收益。",
+      "category": "链上数据/行情",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "FOMO 买入/跟随交易",
+      "site": "Global",
+      "summary": "利用巨鲸异动数据刺激交易活跃度，引导用户参与合约交易赛。",
+      "dont_do": "不鼓励盲目加杠杆，不提供投资建议。",
       "channels": [
         {
-          "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：香港黄金代币、RWA 代币化资产、香港买黄金 Token\n\n### 内容策略\n- **文章方向**：机构投资者如何通过持牌平台配置 RWA？\n- **内链引导**：指向 **OSL Wealth** 及 CAMMF 产品页"
-        },
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达动作\n- **EDM (VIP 专属)**：针对高净值用户发送黄金配置专题\n- **关联活动**：联动今日上线的 **VIP 精英迁徙活动**"
+          "name": "社区",
+          "markdown": "### 运营话术\n- **平台**: Telegram / Discord。\n- **切入点**: 分享巨鲸 8000 万多单链上数据，引发讨论。\n### 转化引导\n- **CTA**: 提醒关注风险的同时，引导参与 **OSL 合约交易赛 S2**。\n- **福利**: 强调 **交易免手续费** 优势。"
         }
       ],
       "sources": [
         {
-          "name": "HashKeyExchange",
-          "url": "https://x.com/HashKeyExchange/status/2038870862557008053"
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/474800"
         }
       ],
       "id": "ap_6"
     },
     {
-      "title": "香港 Web3 嘉年华（4 月 20-23 日）周边活动一览",
-      "priority": "P1",
-      "category": "行业活动/香港",
-      "timing": "Wave",
-      "relation": "Brand",
-      "intent": "行业参与 / 社交需求",
-      "site": "HK",
-      "summary": "香港 Web3 嘉年华将近，是 HK 站 VIP 获取和品牌声量预热的重要节点。",
-      "dont_do": "不做活动收益承诺；不点名竞对参与情况；不扩散未经证实的参会信息。",
+      "title": "Polymarket 手续费暴涨引发社区不满",
+      "priority": "P2",
+      "category": "竞对/行业事件",
+      "timing": "Flash",
+      "relation": "Indirect",
+      "intent": "寻找替代平台/抱怨费率",
+      "site": "Global",
+      "summary": "借用户对高昂手续费的不满，宣传 OSL 的 0 费率（Flash Trade）优势，截流对费率敏感的用户。",
+      "dont_do": "绝不点名攻击 Polymarket，不落井下石。",
       "channels": [
         {
-          "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：香港 Web3 嘉年华 2026、香港加密货币活动 2026\n\n### 内容策略\n- **指南文章**：2026 香港 Web3 嘉年华完全指南，包含 OSL 参与亮点及 VIP 权益预热"
-        },
-        {
-          "name": "社区",
-          "markdown": "### 互动策略\n- **话题预热**：倒计时讨论，强调 OSL 在香港生态的领军地位\n- **品牌联动**：结合 4/2 集团首页改版进行品牌曝光"
+          "name": "Paid Ads",
+          "markdown": "### 广告投放\n- **渠道**: Google Search (Global)。\n- **卖点组合**: **0 费率 (Flash Trade)** + **法币出入金通道** + **上市背景**。\n### 素材方向\n- **内容**: 强调“交易本该简单，0 费率无隐藏成本”。\n### 落地页\n- **页面**: 注册页 / Flash Trade 产品页。"
         }
       ],
       "sources": [
         {
-          "name": "律动 BlockBeats",
-          "url": "https://m.theblockbeats.info/news/61723"
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/post/5210052"
         }
       ],
       "id": "ap_7"
     },
     {
-      "title": "FTX 第四轮债权人分配：22 亿美元流动性入场",
-      "priority": "P1",
-      "category": "行情/流动性",
-      "timing": "Day",
-      "relation": "Indirect",
-      "intent": "资金再配置 / 入场需求",
-      "site": "Global",
-      "summary": "22 亿美元流动性返还债权人，通过 StableHub + 合约 + 法币出入金进行截流。",
-      "dont_do": "不做价格预测；不承诺收益；不使用美元符号（$）。",
-      "channels": [
-        {
-          "name": "Paid Ads",
-          "markdown": "### 竞价策略\n- **搜索词**：FTX 赔付、FTX 债权人、FTX Payout\n\n### 卖点组合\n- **Hook**：赔付到账？选择上市背景合规平台配置资金\n- **CTA**：立即体验 **StableHub** 或 0 费率交易"
-        },
-        {
-          "name": "SEO",
-          "markdown": "### 内容定向\n- **指南文章**：FTX 22 亿美元赔付启动：收到资金后，如何在合规平台重新配置？\n- **关联引导**：指向注册页及法币出入金指引"
-        }
-      ],
-      "sources": [
-        {
-          "name": "CryptoSlate",
-          "url": "https://cryptoslate.com/2b-ftx-payouts-begins-today-bitcoin-liquidity-test/"
-        }
-      ],
-      "id": "ap_8"
-    },
-    {
-      "title": "KuCoin 被 CFTC 罚款后永久禁止服务美国用户",
-      "priority": "P1",
-      "category": "监管/竞对",
-      "timing": "Day",
-      "relation": "Brand",
-      "intent": "信任评估 / 平台迁移",
-      "site": "Global",
-      "summary": "监管收紧背景下，截流关注平台合规性与安全性的用户。",
-      "dont_do": "不点名攻击竞对；不渲染负面事件；正面输出 OSL 合规优势。",
-      "channels": [
-        {
-          "name": "Paid Ads",
-          "markdown": "### 竞品截流\n- **竞标词**：KuCoin 替代、合规交易所、Safe Exchange\n\n### 卖点组合\n- **核心叙事**：全球 40+ 牌照 + 上市公司背景\n- **CTA**：立即迁移至 OSL，尊享安全保障"
-        },
-        {
-          "name": "SEO",
-          "markdown": "### 关键词定向\n- **关键词**：合规加密货币交易所、持牌交易所、安全交易所 2026\n\n### 内容策略\n- **行业对比**：全球监管收紧下的 5 个交易所核心标准，自然植入 OSL 牌照优势"
-        }
-      ],
-      "sources": [
-        {
-          "name": "Decrypt",
-          "url": "https://decrypt.co/362873/us-users-barred-from-kucoin-after-500k-cftc-settlement"
-        }
-      ],
-      "id": "ap_9"
-    },
-    {
-      "title": "Referral 改版今日上线：EFTD 转化率从 1% 提至 15%",
-      "priority": "P0",
-      "category": "产品/拉新",
+      "title": "LML 遭黑客攻击导致代币暴跌 99.6%",
+      "priority": "P2",
+      "category": "安全事件",
       "timing": "Flash",
-      "relation": "Direct",
-      "intent": "邀请好友 / 获取奖励",
-      "site": "Global",
-      "summary": "Referral 改版上线，配合行情回暖是拉新的最佳时机，需当日启动全渠道推广。",
-      "dont_do": "不承诺具体金额；加强越南/印尼羊毛党风控；HK 站禁止向公众提供奖励。",
+      "relation": "Brand",
+      "intent": "避险/安全教育",
+      "site": "Both",
+      "summary": "借安全事件进行防范教育，再次强调 OSL 的资产安全保障，提升品牌好感度。",
+      "dont_do": "不提及 LML 代币名称，不嘲笑受害者。",
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 运营动作\n- **Push + Banner + EDM**：全量覆盖 Global 站活跃及未入金用户\n\n### 核心信息\n- **奖励激励**：邀请好友入金，双方共享奖励\n- **行情联动**：行情回暖，现在邀请正当时"
-        },
-        {
-          "name": "社区",
-          "markdown": "### 平台定向\n- **Telegram + Discord**：重点覆盖华语、越南、印尼社群（需过滤风控名单）\n\n### 内容形式\n- **公告帖**：Referral 大升级详细说明\n- **Meme 图**：拉朋友入场赚奖励，Web3 原生风格"
+          "markdown": "### 全量安全触达\n- **方式**: **Push (全量推送)**。\n- **核心内容**: 警惕钓鱼链接与合约授权。强调 OSL **机构级资产隔离** 与 **多重签名**。\n### 品牌价值\n- **目标**: 建立资产安全守护者形象。\n- **落地页**: OSL 安全中心 / 帮助中心。"
         }
       ],
       "sources": [
         {
-          "name": "OSL",
-          "url": ""
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/474803"
         }
       ],
-      "id": "ap_10"
+      "id": "ap_8"
     }
   ]
 }

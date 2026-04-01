@@ -3,9 +3,9 @@
   "total_raw": 24,
   "items": [
     {
-      "title": "OSL 集团发布 2025 年度业绩并进行战略转型",
-      "summary": "OSL 集团公布 **2025 年度业绩**，收入创历史新高。集团正推进重大战略转型，目标从纯数字资产交易所演进为 **全球稳定币支付及交易平台**，这一动向被市场分析视为重要的催化剂。",
-      "category": "市场分析",
+      "title": "OSL Group 2025年度业绩与战略转型",
+      "summary": "OSL集团发布**2025年年度业绩报告**，营收创历史新高。集团宣布完成从数字资产交易所向**全球稳定币支付与交易平台**的战略转型。",
+      "category": "其他",
       "importance": "high",
       "sources": [
         {
@@ -22,8 +22,8 @@
       "published_at": "2026-03-31T14:38:50+00:00"
     },
     {
-      "title": "香港金管局稳定币牌照进度及 OSL 获牌预测",
-      "summary": "消息指出 **香港金管局 (HKMA)** 为加强风险控制推迟了首批稳定币牌照的发放。汇丰及渣打旗下的 Anchorpoint 为首选候选者，而 **OSL 与富途证券** 预计将在后续轮次中获得牌照。",
+      "title": "香港金管局稳定币牌照动态",
+      "summary": "香港金管局（HKMA）延迟首批稳定币牌照发放。分析指出**OSL与富途证券**可能在后续轮次中获得牌照，反映了监管机构加强风险控制的立场。",
       "category": "监管合规",
       "importance": "high",
       "sources": [
@@ -36,9 +36,9 @@
       "published_at": "2026-03-31T14:26:58+00:00"
     },
     {
-      "title": "OSL 印尼站上线首个 Launchpool 质押项目",
-      "summary": "OSL Indonesia 正式推出首个 **Launchpool** 业务，支持用户通过质押 **USDT 或 XAUT (Tether Gold)** 赚取总计 1.5 亿印尼盾的黄金代币奖励，活动期为 3 月 31 日至 4 月 10 日。",
-      "category": "产品动态",
+      "title": "OSL Indonesia 推出首个 Launchpool 项目",
+      "summary": "OSL Indonesia 正式启动首个 Launchpool 计划，支持用户通过**质押 USDT 或 XAUT (Tether Gold)** 获取奖励，总奖金池达 1.5 亿印尼盾。此举旨在结合加密流动性与**实物黄金价值**。",
+      "category": "活动推广",
       "importance": "medium",
       "sources": [
         {
@@ -48,34 +48,44 @@
         },
         {
           "platform": "twitter",
+          "author": "@ThisEmmy_1",
+          "url": "https://x.com/ThisEmmy_1/status/2039026956033777933"
+        },
+        {
+          "platform": "twitter",
           "author": "@bangdevzz",
           "url": "https://x.com/bangdevzz/status/2038940773325107327"
         },
         {
           "platform": "twitter",
-          "author": "@ThisEmmy_1",
-          "url": "https://x.com/ThisEmmy_1/status/2039026956033777933"
+          "author": "@Airdropfinds",
+          "url": "https://x.com/Airdropfinds/status/2038822429703974969"
         }
       ],
       "published_at": "2026-04-01T02:01:07+00:00"
     },
     {
-      "title": "OSL 印尼站推行提币零手续费优惠",
-      "summary": "OSL 印尼站宣布自 2026 年 3 月起，用户提取 **USDT、ETH、SUI、BNB** 等主流资产至私人钱包将享受 **零手续费 (Zero Withdrawal Fee)** 政策。",
-      "category": "活动推广",
+      "title": "OSL Indonesia 用户功能与手续费反馈",
+      "summary": "用户反馈 OSL Indonesia 针对 USDT、ETH 等资产实行**零提币手续费（Zero Withdrawal Fee）**，并显著提升了通过**本地银行和电子钱包**出入金的便捷程度。",
+      "category": "用户反馈",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
           "author": "@bangdevzz",
           "url": "https://x.com/bangdevzz/status/2037861705775198502"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Delightpro_",
+          "url": "https://x.com/Delightpro_/status/2037796197969121498"
         }
       ],
       "published_at": "2026-03-28T11:57:46+00:00"
     },
     {
-      "title": "用户对 OSL 平台合规性及币种筛选机制的反馈",
-      "summary": "多名用户讨论并称赞 OSL 的 **受监管属性 (OJK/香港持牌)**，特别提到其 **极度严格的币种审核 (due diligence)**。目前仅上线不足 30 个代币，这被社区视为一种“强力背书”；同时，其本地银行/电子钱包的出入金便利性也获得好评。",
+      "title": "OSL 平台合规性与上币标准讨论",
+      "summary": "社区讨论指出 OSL 受**印尼 OJK 和香港牌照**双重监管。用户强调其上币审核流程极度严格，全平台**仅列出不到 30 种代币**，被视为高质量资产的背书。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -86,11 +96,6 @@
         },
         {
           "platform": "twitter",
-          "author": "@Delightpro_",
-          "url": "https://x.com/Delightpro_/status/2037796197969121498"
-        },
-        {
-          "platform": "twitter",
           "author": "@mizzelaalphax",
           "url": "https://x.com/mizzelaalphax/status/2038408137850618298"
         }
@@ -98,8 +103,8 @@
       "published_at": "2026-03-30T00:09:06+00:00"
     },
     {
-      "title": "OSL 将联合主办 Cypher Asia 加密金融高管峰会",
-      "summary": "OSL 将作为联合主办方，参与 2026 年 4 月 21 日在香港数码港举行的 **Cypher Asia: Crypto Finance Executive Summit**，届时将汇集加密金融领域的行业领袖。",
+      "title": "OSL 联合主办 Cypher Asia 加密金融峰会",
+      "summary": "OSL 宣布作为联合主办方参加将于 4 月 21 日在香港数码港举办的 **Cypher Asia：加密金融高管峰会**，探讨行业未来趋势。",
       "category": "活动推广",
       "importance": "medium",
       "sources": [
@@ -112,8 +117,8 @@
       "published_at": "2026-03-31T05:31:32+00:00"
     },
     {
-      "title": "OSL 与 Plume Network 达成战略合作",
-      "summary": "社区关注到 **OSL 与 Plume Network** 的战略连接，指出 OSL 不仅是一个交易所，更是 RWA 领域的重要入口，建议投资者关注双方在 **Plume 网络** 上的战略布局。",
+      "title": "OSL 与 Plume Network 战略合作",
+      "summary": "社区关注 OSL Global 与 **Plume Network** 的战略布局，认为这是 OSL 在交易所业务之外拓展生态影响力的重要一步。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -124,6 +129,25 @@
         }
       ],
       "published_at": "2026-03-27T02:24:54+00:00"
+    },
+    {
+      "title": "OSL 官方发布宏观分析与妇女月专题",
+      "summary": "OSL 官方发布近期**加密市场与宏观经济**的相关性分析，并上线“Women in Digital Assets”专题节目，庆祝女性在 Web3 领域的贡献。",
+      "category": "市场分析",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2038561125956997449"
+        },
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2038493685713862818"
+        }
+      ],
+      "published_at": "2026-03-30T10:17:01+00:00"
     }
   ]
 }

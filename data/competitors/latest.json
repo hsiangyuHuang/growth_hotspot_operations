@@ -3,29 +3,17 @@
   "competitors": [
     {
       "name": "HashKey",
-      "summary": "上线实物黄金 RWA 代币 XAUM 并启动 2026 香港 Web3 嘉年华筹备。",
+      "summary": "上线 RWA 金币代币 XAUM 并筹备 2026 香港 Web3 嘉年华。",
       "events": [
         {
-          "title": "上线黄金代币 XAUM (Matrixdock)",
+          "title": "上线实物黄金代币 XAUM",
           "category": "新币上线",
-          "summary": "**HashKey Exchange** 引入实物黄金 RWA：\n* 上线 **$XAUM**（由 Matrixdock 发行，代表实物黄金所有权）\n* 开放面向专业投资者的 **OTC 交易服务**",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/HashKeyExchange/status/2038870862557008053"
-            }
-          ]
-        },
-        {
-          "title": "主办 2026 香港 Web3 嘉年华",
-          "category": "活动推广",
-          "summary": "由 **HashKey Group** 与万向区块链实验室联合举办：\n* 定于 **4 月 20 日至 23 日**在香港会议展览中心举行，汇聚全球专家与项目方",
+          "summary": "**RWA 交易**：HashKey Exchange 上线由 Matrixdock 发行的 **XAUM**。专业投资者现可通过 OTC 市场交易该代表实物黄金所有权的代币。",
           "importance": "medium",
           "sources": [
             {
-              "name": "BlockBeats",
-              "url": "https://m.theblockbeats.info/news/61723"
+              "name": "twitter:@HashKeyExchange",
+              "url": "https://x.com/HashKeyExchange/status/2038870862557008053"
             }
           ]
         }
@@ -52,57 +40,45 @@
     },
     {
       "name": "Binance",
-      "summary": "推出了默认交易设置功能，并拓展了 TradFi 股票与大宗商品永续合约市场。",
+      "summary": "推出默认交易设置功能，并通过币安钱包集成去中心化预测市场，同时扩展了 TradFi 永续合约产品。",
       "events": [
         {
           "title": "上线默认交易设置功能",
           "category": "产品更新",
-          "summary": "**Binance** 推出默认交易设置功能：\n* 用户可预设**杠杆倍数、保证金模式和触发类型**\n* 旨在简化交易流程，提升用户操作效率",
+          "summary": "**功能更新**：币安合约现已支持在首选项中一次性设置**杠杆、保证金模式和触发类型**，旨在优化交易流程。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "twitter:@binance",
               "url": "https://x.com/binance/status/2039176034893889640"
             }
           ]
         },
         {
-          "title": "推出 TradFi 股票及大宗商品永续合约",
+          "title": "币安钱包将上线预测市场功能",
           "category": "产品更新",
-          "summary": "**Binance Futures** 拓展产品线：\n* 支持**股票、ETF 及大宗商品**永续合约交易\n* 针对 RWA（现实世界资产）市场需求提供**0 Maker 手续费**及高达 50% 的 Taker 手续费折扣",
+          "summary": "**聚合模式**：币安钱包将通过聚合第三方平台推出**预测市场功能**。\n* **主要合作伙伴**：目前的初期供应商为基于 BNB Smart Chain 的去中心化协议 **Predict (Predict Fun)**。",
           "importance": "high",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/_RichardTeng/status/2038924016455647456"
-            },
-            {
-              "name": "Twitter",
-              "url": "https://x.com/binance/status/2039009622594363558"
-            }
-          ]
-        },
-        {
-          "title": "Binance 钱包将上线预测市场功能",
-          "category": "产品更新",
-          "summary": "**Binance Wallet** 计划集成第三方预测市场：\n* 首个主要提供商为基于 BNB Chain 的 **Predict (Predict Fun)**\n* 允许用户直接在钱包内参与去中心化预测市场",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "WuBlockchain",
+              "name": "twitter:@WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2038865281494442030"
             }
           ]
         },
         {
-          "title": "上线免息灵活贷款凭证活动",
-          "category": "活动推广",
-          "summary": "针对 **ETH Simple Earn** 用户提供奖励：\n* 申购灵活定期产品可获得**免息贷款凭证**\n* 最高可免费借入 **1,000 USDC**",
+          "title": "推出 TradFi 永续合约 0 挂单费活动",
+          "category": "产品更新",
+          "summary": "**交易种类扩展**：用户可在币安合约交易**股票、ETF 和大宗商品永续合约**。\n* **优惠详情**：限时享受 **0 挂单费**及最高 **50% 的吃单费折扣**。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/binance/status/2039085474971627581"
+              "name": "twitter:@binance",
+              "url": "https://x.com/binance/status/2039009622594363558"
+            },
+            {
+              "name": "twitter:@_RichardTeng",
+              "url": "https://x.com/_RichardTeng/status/2038924016455647456"
             }
           ]
         }
@@ -111,16 +87,16 @@
     },
     {
       "name": "OKX",
-      "summary": "X Layer 集成 Aave 协议，并强化 AI 交易代理开发基础设施。",
+      "summary": "L2 网络 X Layer 成功集成 Aave，并发布针对 AI 交易代理的开发者套件。",
       "events": [
         {
-          "title": "Aave 协议上线 OKX X Layer 网络",
+          "title": "Aave 在 OKX X Layer 上线",
           "category": "合作伙伴",
-          "summary": "DeFi 借贷龙头 **Aave** 正式集成 **OKX X Layer**：\n* 支持用户在该 L2 网络进行资产借贷，最高 **LTV 达 88%**\n* 标志着 Aave 完成第 21 个区块链集成",
+          "summary": "**DeFi 集成**：借贷协议 **Aave** 正式部署至 OKX 的以太坊 L2 网络 **X Layer**。\n* **独特性**：提供 OKX 原生资产作为抵押品选项，最高支持 **88% 的 LTV**。",
           "importance": "high",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "twitter:@okx",
               "url": "https://x.com/okx/status/2039011826369773704"
             },
             {
@@ -130,26 +106,14 @@
           ]
         },
         {
-          "title": "发布 AI 代理开发工具栈",
+          "title": "发布 AI 交易代理开发者基础设施",
           "category": "产品更新",
-          "summary": "**OKX** 为开发者提供 AI 代理基础设施：\n* 支持覆盖 **60 多条链**的 Spot、Futures 及 DeFi 操作\n* 提供 **MCP、CLI 及 Skills 接口**，助力构建可执行交易的 AI 代理",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/okx/status/2038941919707791654"
-            }
-          ]
-        },
-        {
-          "title": "美国市场上线新币种交易",
-          "category": "新币上线",
-          "summary": "面向美国交易者新增上线：\n* **$MON、$KAT、$ROBO** 现已开放交易",
+          "summary": "**技术赋能**：OKX 推出支持 AI 代理的开发堆栈，涵盖 **现货、期货、期权及 60 多个链的 DeFi 协议**，提供 MCP、CLI 和 Skills 接口。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/okx/status/2039047851502719441"
+              "name": "twitter:@okx",
+              "url": "https://x.com/okx/status/2038941919707791654"
             }
           ]
         }
@@ -158,45 +122,29 @@
     },
     {
       "name": "Bybit",
-      "summary": "上线 AI 技能中心并建立 Tomorrowland 跨界合作伙伴关系。",
+      "summary": "推出 AI Skills Hub 简化交易流程，并与 Tomorrowland Brasil 达成长期战略合作。",
       "events": [
         {
           "title": "上线 Bybit AI Skills Hub",
           "category": "产品更新",
-          "summary": "**Bybit** 发布 AI 技能中心：\n* 简化用户交易需求，通过 AI 辅助交易决策与操作",
+          "summary": "**AI 集成**：推出 **AI Skills Hub**，通过人工智能简化用户的交易需求和策略操作。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "twitter:@Bybit_Official",
               "url": "https://x.com/Bybit_Official/status/2038979879547396400"
             }
           ]
         },
         {
-          "title": "与 Tomorrowland Brasil 2027 达成合作",
+          "title": "宣布与 Tomorrowland Brasil 2027 合作",
           "category": "合作伙伴",
-          "summary": "**Bybit** 成为 Tomorrowland Brasil 2027 官方伙伴：\n* 提供独家福利与活动早期参与权，通过加密技术提升娱乐体验",
+          "summary": "**品牌跨界**：Bybit 成为 **Tomorrowland Brasil 2027** 的官方合作伙伴，将为用户提供早期购票通道和专属活动福利。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
+              "name": "twitter:@Bybit_Official",
               "url": "https://x.com/Bybit_Official/status/2038964530198220898"
-            }
-          ]
-        },
-        {
-          "title": "多款新币种及永续合约上线",
-          "category": "新币上线",
-          "summary": "新增资产交易支持：\n* 上线 **$EDGE** 现货交易及其永续合约\n* 上线 **$BASEDUSDT** 25 倍杠杆永续合约",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Bybit_Official/status/2038981344126980175"
-            },
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Bybit_Official/status/2038956980371378584"
             }
           ]
         }
@@ -205,17 +153,17 @@
     },
     {
       "name": "Coinbase",
-      "summary": "重点推进 Base 网络对 AI 代理的支持及 RWA 战略布局。",
+      "summary": "公布 Base 链 2026 战略重点，聚焦代币化市场与 AI 代理支持。",
       "events": [
         {
-          "title": "Base 网络升级以支持 AI 代理",
-          "category": "产品更新",
-          "summary": "**Coinbase L2 网络 Base** 发布 2026 战略：\n* 计划升级链上基础设施，使 **AI 代理**能像开发者一样直接调用链上资源\n* 核心支柱包括：**代币化市场、稳定币支付及链上开发者生态**",
+          "title": "Base 发布 2026 战略路线图",
+          "category": "其他",
+          "summary": "**战略支柱**：Coinbase 的 L2 网络 Base 明确了年度三大焦点：\n* **代币化资产**：建立全球代币化资产市场。\n* **稳定币支付**：扩大稳定币支付规模。\n* **AI 代理**：将 Base 定位为 **Onchain Builder** 和 AI 代理的默认家园。",
           "importance": "high",
           "sources": [
             {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/base-joins-ethereum-tron-others-betting-big-ai-agent-future"
+              "name": "CoinDesk",
+              "url": "https://www.coindesk.com/tech/2026/03/31/coinbase-s-base-to-focus-on-tokenized-markets-stablecoins-developers-this-year"
             },
             {
               "name": "The Defiant",
@@ -224,26 +172,14 @@
           ]
         },
         {
-          "title": "IRS 加密税表 1099-DA 调查报告",
-          "category": "监管合规",
-          "summary": "**Coinbase** 联合 CoinTracker 发布调查：\n* 61% 的美国加密用户对 **2025 年新申报规则**不了解\n* 警示新的 IRS 税表可能在用户确认实际欠税前标记其销售行为",
+          "title": "Base 升级以支持 AI 代理交互",
+          "category": "产品更新",
+          "summary": "**技术演进**：Base 宣布进行链升级，允许 **AI 代理**像人类开发者或交易者一样直接使用区块链网络。",
           "importance": "medium",
           "sources": [
             {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/irs-new-forms-may-leave-crypto-investors-guessing-their-tax-bill/"
-            }
-          ]
-        },
-        {
-          "title": "支持投资组合 CoinDCX 推出反欺诈网络",
-          "category": "其他",
-          "summary": "受 **Coinbase** 支持的印度交易所 **CoinDCX** 宣布：\n* 投入 **1100 万美元**建立反欺诈网络，打击冒充及网络诈骗行为",
-          "importance": "low",
-          "sources": [
-            {
               "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/coindcx-plans-11-million-fraud-crackdown"
+              "url": "https://cointelegraph.com/news/base-joins-ethereum-tron-others-betting-big-ai-agent-future"
             }
           ]
         }
@@ -252,12 +188,12 @@
     },
     {
       "name": "Kraken",
-      "summary": "推出金属万事达借记卡及全球旅游礼宾服务。",
+      "summary": "推出实体金属借记卡及全球旅行礼宾服务，进一步进军加密金融生活支付领域。",
       "events": [
         {
-          "title": "发布 Krak 金属借记卡",
+          "title": "发布 Krak 金属万事达借记卡",
           "category": "产品更新",
-          "summary": "**Kraken** 推出由不锈钢精制而成的 **Krak Metal Mastercard**：\n* 与 Krak 资金管理 App 直接集成，支持多资产支付及奖励赚取",
+          "summary": "**硬件支付**：推出由精密不锈钢制成的 **Krak Metal Mastercard**，直接集成在 Krak 全球资金应用中，支持多资产消费和奖励赚取。",
           "importance": "high",
           "sources": [
             {
@@ -267,26 +203,14 @@
           ]
         },
         {
-          "title": "上线 Krak Concierge 礼宾服务",
+          "title": "上线 Krak Concierge 旅行服务",
           "category": "产品更新",
-          "summary": "推出应用内旅行预订功能：\n* 用户可直接预订酒店与行程，并获得高达 **6% 的返现奖励**",
+          "summary": "**生活服务**：Krak App 内置 **礼宾服务**，用户可直接预订酒店和行程，并获得高达 **6% 的现金返还**。",
           "importance": "medium",
           "sources": [
             {
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/product/krak/concierge"
-            }
-          ]
-        },
-        {
-          "title": "新增多款欧元保证金交易对",
-          "category": "新币上线",
-          "summary": "**Kraken Margin** 新增支持：\n* **BNB、W、HYPE、HBAR、JUP** 兑欧元交易对，最高支持 3 倍杠杆",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/margin/eur-pairs-bnb-w-hype-hbar-jup"
             }
           ]
         }
@@ -307,67 +231,41 @@
     },
     {
       "name": "Coincheck",
-      "summary": "完成定期残高确认，已恢复加密资产送金及 NFT 出库服务。",
-      "events": [
-        {
-          "title": "恢复加密资产送金与 NFT 出库服务",
-          "category": "其他",
-          "summary": "因**定期残高确认**完成，**Coincheck** 已全面恢复送金、NFT 出库及 OnRamp 购买功能。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/coincheckjp/status/2039015299794567490"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "JP"
     },
     {
       "name": "GMO Coin",
-      "summary": "冠名赞助的“GMO 竞技场埼玉”正式更名并公布 2027 演艺活动计划。",
-      "events": [
-        {
-          "title": "埼玉超级竞技场更名为“GMO 竞技场埼玉”",
-          "category": "合作伙伴",
-          "summary": "* 通过**冠名权合作**，埼玉超级竞技场正式更名为 **GMO アリーナさいたま**\n* 宣布 **GMO SONIC 2027** 将于 2027 年 4 月在此举办",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/gmo_coin/status/2038929852942938563"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "JP"
     },
     {
       "name": "bitbank",
-      "summary": "获得 5 亿日元融资额度且 COO 连任行业协会要职。",
+      "summary": "COO 连任行业协会要职，并获得银行 5 亿日元承诺信贷额度。",
       "events": [
         {
-          "title": "获きらぼし银行 5 亿日元信贷额度",
-          "category": "融资/IPO",
-          "summary": "**bitbank** 与きらぼし银行签署承诺线合同：\n* 获得总计 **5 亿日元**的融资额度，用于强化资金周转能力",
-          "importance": "high",
+          "title": "COO 野田连任 JPCrypto-ISAC 代表理事",
+          "category": "人事变动",
+          "summary": "**行业任职**：bitbank 执行董事兼 COO 野田正式连任 **JPCrypto-ISAC**（日本加密资产信息共享与分析中心）代表理事。",
+          "importance": "low",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/bitbank_inc/status/2038860346346324449"
+              "name": "twitter:@bitbank_inc",
+              "url": "https://x.com/bitbank_inc/status/2039162222455459908"
             }
           ]
         },
         {
-          "title": "COO 野田连任 JPCrypto-ISAC 代表理事",
-          "category": "人事变动",
-          "summary": "**bitbank** 执行董事 COO **野田** 再次当选为日本加密资产 ISAC 代表理事：\n* 负责推进行业自律与安全体制建设",
+          "title": "与 Kiraboshi 银行签订承诺信贷协议",
+          "category": "融资/IPO",
+          "summary": "**资金保障**：bitbank 与 Kiraboshi 银行签署了总额为 **5 亿日元**的承诺信贷额度协议（Commitment Line），增强财务流动性。",
           "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/bitbank_inc/status/2039162222455459908"
+              "name": "twitter:@bitbank_inc",
+              "url": "https://x.com/bitbank_inc/status/2038860346346324449"
             }
           ]
         }
@@ -376,77 +274,26 @@
     },
     {
       "name": "SBI VC Trade",
-      "region": "JP",
       "summary": "今日无重大动态",
-      "events": []
+      "events": [],
+      "region": "JP"
     },
     {
       "name": "Rakuten Wallet",
-      "summary": "执行每周例行系统维护并更新资产报价。",
-      "events": [
-        {
-          "title": "完成每周例行系统维护",
-          "category": "其他",
-          "summary": "现物销售所与证据金交易所已完成例行停机维护并恢复服务。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Rakuten_Wallet/status/2039175971925045374"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "JP"
     },
     {
       "name": "Bitstamp",
-      "summary": "联合 Robinhood 平台上线多款新代币交易。",
-      "events": [
-        {
-          "title": "上线 PAXG、MNT 等新资产",
-          "category": "新币上线",
-          "summary": "**Bitstamp by Robinhood** 开放新币种交易：\n* 包括 **$PAXG (黄金代币)、$MNT (Mantle)、$XTZ (Tezos)、$AERO**",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Bitstamp/status/2038972086316613923"
-            }
-          ]
-        },
-        {
-          "title": "发布 2 月借贷报告",
-          "category": "其他",
-          "summary": "报告显示**所有贷款均按计划履行**，涵盖 11 家机构借款人，组合表现稳健。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Bitstamp/status/2038989832249057785"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "EU"
     },
     {
       "name": "Bitpanda",
-      "summary": "持续开展交易竞赛活动。",
-      "events": [
-        {
-          "title": "Grenbaud 交易挑战赛进入第 6 周",
-          "category": "活动推广",
-          "summary": "**Bitpanda** 举办的交易竞赛持续进行，目前竞争激烈。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Bitpanda/status/2038927562055831903"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "EU"
     },
     {
@@ -457,28 +304,16 @@
     },
     {
       "name": "Crypto.com",
-      "summary": "针对 BTC、ETH 和 CRO 推出了多项用户增长及交易奖励活动。",
+      "summary": "今日动态主要集中在常规的市场营销与奖励活动。",
       "events": [
         {
-          "title": "推出 CRO Champs 活动",
+          "title": "推出费城 76 人队主场门票抽奖活动",
           "category": "活动推广",
-          "summary": "* 买入至少 **$50 CRO** 可瓜分 **$10,000 BTC** 奖池\n* 欧洲经济区（EEA）用户有机会赢取 **UEFA 欧冠决赛门票**",
-          "importance": "medium",
+          "summary": "**营销活动**：购买 100 美元以上 BTC 的用户有机会赢取 **76ers VIP 场边座位门票**及签名球衣。",
+          "importance": "low",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/cryptocom/status/2039062927852884009"
-            }
-          ]
-        },
-        {
-          "title": "买 BTC 赢 76 人队 VIP 场边票",
-          "category": "活动推广",
-          "summary": "用户购买 **$100 以上 BTC** 即可参与抽奖，奖品包括 **VIP 场边席位、签名球衣及 BTC 奖励**。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
+              "name": "twitter:@cryptocom",
               "url": "https://x.com/cryptocom/status/2039108228139647324"
             }
           ]
@@ -494,60 +329,35 @@
     },
     {
       "name": "Indodax",
-      "summary": "推出多项针对印尼市场的新用户注册与交易返现奖励。",
-      "events": [
-        {
-          "title": "新用户 100% 注册返现",
-          "category": "活动推广",
-          "summary": "新用户完成 KYC 并首笔存入交易满 **Rp100,000** 即可获得等值 **BTC 返现**。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/indodax/status/2039191088473293128"
-            }
-          ]
-        },
-        {
-          "title": "发布 SuperDax 4 月奖励活动",
-          "category": "活动推广",
-          "summary": "通过在社交平台互动（评论、解答问题），用户可瓜分总额 **800 万印尼盾**的奖金。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Blog",
-              "url": "https://blog.indodax.com/sobat-superdax-apr26/"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "ID"
     },
     {
       "name": "Tokocrypto",
-      "summary": "上线 XAUT 代币并与 ShopeePay 合作开展支付返现活动。",
+      "summary": "大幅调整 Aster 代币经济学并上线 XAUT 金币代币，同时获得杜拜衍生品新规的潜在利好。",
       "events": [
         {
-          "title": "上线 Tether Gold (XAUT)",
-          "category": "新币上线",
-          "summary": "**Tokocrypto** 正式上线黄金支持代币 **$XAUT**，丰富用户的避险资产配置。",
-          "importance": "medium",
+          "title": "Aster 调整代币经济学：减排 97%",
+          "category": "其他",
+          "summary": "**通缩举措**：Aster 宣布停止每月 7840 万 ASTER 的生态解锁，转而采用新分配模型，**削减 emmission 达 97%**，旨在应对通胀。",
+          "importance": "high",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/Tokocrypto/status/2038942640306270531"
+              "name": "Tokocrypto News",
+              "url": "https://news.tokocrypto.com/strategi-baru-tokenomics-aster-pangkas-emisi-token-97-demi-supply-shock-maksimal/"
             }
           ]
         },
         {
-          "title": "ShopeePay 充值返现活动",
-          "category": "活动推广",
-          "summary": "用户通过 **ShopeePay** 充值可获得最高 **5 万 Shopee 币**返现。",
-          "importance": "low",
+          "title": "上线 XAUT (Tether Gold)",
+          "category": "新币上线",
+          "summary": "**RWA资产**：正式上线锚定实物黄金的代币 **XAUT**，丰富用户的避险资产配置。",
+          "importance": "medium",
           "sources": [
             {
-              "name": "Twitter",
-              "url": "https://x.com/Tokocrypto/status/2038962766833193376"
+              "name": "twitter:@Tokocrypto",
+              "url": "https://x.com/Tokocrypto/status/2038942640306270531"
             }
           ]
         }
@@ -556,21 +366,8 @@
     },
     {
       "name": "PINTU",
-      "summary": "为 VIP 会员提供独家市场洞察，并发布期货交易代金券。",
-      "events": [
-        {
-          "title": "发布 Pintu VIP 每周市场洞察",
-          "category": "活动推广",
-          "summary": "专为 **Pintu VIP** 成员提供经过筛选的市场条件、情绪分析及价格预测报告。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/PintuID/status/2038934567630127583"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "ID"
     },
     {
@@ -581,21 +378,8 @@
     },
     {
       "name": "Luno",
-      "summary": "推广包含代币化美股和加密资产的组合产品。",
-      "events": [
-        {
-          "title": "推广 Blue Chip+ 捆绑包",
-          "category": "产品更新",
-          "summary": "该产品结合了**主流加密资产与代币化美国科技股**，提供跨资产组合投资。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/LunoGlobal/status/2038877146584662422"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "ID"
     },
     {
@@ -618,21 +402,8 @@
     },
     {
       "name": "盈透证券",
-      "summary": "发布关于伊朗冲突及美国利率前景的市场宏观分析报告。",
-      "events": [
-        {
-          "title": "发布伊朗战争对油价与经济的影响报告",
-          "category": "其他",
-          "summary": "**IBKR** 发布宏观分析，指出特朗普对伊朗的和平态度缓解了市场压力，并关注**霍尔木兹海峡**的通航情况对油价的影响。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/markets-rally-after-trump-said-he-can-accept-peace-with-iran-even-if-strait-of-hormuz-isnt-open/"
-            }
-          ]
-        }
-      ],
+      "summary": "今日无重大动态",
+      "events": [],
       "region": "BROKER"
     }
   ]
