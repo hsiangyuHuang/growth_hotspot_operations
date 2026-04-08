@@ -25,7 +25,8 @@ const TRACK_API = {
 };
 
 // ── Tracking State ──
-let _trackingData = {};  // { "ap_1": ["uuid1", ...], ... }
+// _trackingData: { "ap_1": { title, accepts: [{user_id, accepted_at}] }, ... }
+let _trackingData = {};
 function getBrowserId() {
   let id = localStorage.getItem('osl_browser_id');
   if (!id) { id = crypto.randomUUID(); localStorage.setItem('osl_browser_id', id); }
@@ -200,7 +201,7 @@ function setFilterSite(v) { filterSite = v; rerender(); }
 function rerender() { if (_currentData) renderDashboard(_currentData); }
 
 // ── Tracking ──
-// _trackingData 结构: { "ap_1": { "Paid Ads": ["uuid1"], "SEO": ["uuid2"] }, ... }
+// _trackingData 结构: { "ap_1": { title, accepts: [{user_id, accepted_at}] }, ... }
 async function loadTracking(dateStr) {
   _trackingData = {};
   try {
@@ -209,49 +210,49 @@ async function loadTracking(dateStr) {
   } catch (e) { console.warn("loadTracking failed:", e); }
 }
 
-function _acceptBtnId(cardId, chName) {
-  return `accept-btn-${cardId}-${chName.replace(/[^a-zA-Z0-9]/g, '_')}`;
+function _isCardAccepted(cardId) {
+  const card = _trackingData[cardId];
+  if (!card || !card.accepts) return false;
+  return card.accepts.some(a => a.user_id === getBrowserId());
 }
 
-function _getChannelIds(cardId, chName) {
-  return (_trackingData[cardId] && _trackingData[cardId][chName]) || [];
+function _getAcceptCount(cardId) {
+  const card = _trackingData[cardId];
+  if (!card || !card.accepts) return 0;
+  return card.accepts.length;
 }
 
-async function toggleAccept(cardId, chName) {
+async function acceptCard(cardId) {
   const bid = getBrowserId();
   const dateStr = _currentData?.run_date;
   if (!dateStr) return;
+  if (_isCardAccepted(cardId)) return; // 幂等
 
   // 乐观更新 UI
-  if (!_trackingData[cardId]) _trackingData[cardId] = {};
-  const ids = _trackingData[cardId][chName] || [];
-  const idx = ids.indexOf(bid);
-  if (idx >= 0) ids.splice(idx, 1); else ids.push(bid);
-  _trackingData[cardId][chName] = ids;
-  renderAcceptBtn(cardId, chName);
+  if (!_trackingData[cardId]) _trackingData[cardId] = { accepts: [] };
+  _trackingData[cardId].accepts.push({ user_id: bid, accepted_at: new Date().toISOString() });
+  renderAcceptBtns(cardId);
 
   // 持久化
   try {
     await fetch(TRACK_API.accept, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ date: dateStr, card_id: cardId, channel: chName, browser_id: bid }),
+      body: JSON.stringify({ date: dateStr, card_id: cardId, user_id: bid }),
     });
-  } catch (e) { console.warn("toggleAccept failed:", e); }
+  } catch (e) { console.warn("acceptCard failed:", e); }
 }
 
-function renderAcceptBtn(cardId, chName) {
-  const btn = document.getElementById(_acceptBtnId(cardId, chName));
-  if (!btn) return;
-  const ids = _getChannelIds(cardId, chName);
-  const accepted = ids.includes(getBrowserId());
-  const count = ids.length;
-  btn.className = `inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-medium transition-all duration-200 ${
-    accepted
-      ? 'text-emerald-400 bg-emerald-500/15 border border-emerald-500/30'
-      : 'text-slate-500 border border-white/10 hover:text-emerald-400 hover:border-emerald-500/30'
-  }`;
-  btn.innerHTML = `<span>${accepted ? '✓' : '○'}</span>采纳此渠道建议${count > 0 ? `<span class="text-[10px] opacity-60">${count}</span>` : ''}`;
+function renderAcceptBtns(cardId) {
+  const accepted = _isCardAccepted(cardId);
+  const count = _getAcceptCount(cardId);
+  // 更新该卡片下所有 Copy/Accept 按钮
+  document.querySelectorAll(`[data-accept-card="${cardId}"]`).forEach(btn => {
+    if (accepted) {
+      btn.className = 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-medium text-emerald-400 bg-emerald-500/15 border border-emerald-500/30';
+      btn.innerHTML = `<span>✓</span>Copied${count > 1 ? `<span class="text-[9px] opacity-60">${count}人</span>` : ''}`;
+    }
+  });
 }
 
 // ── Data Loading ──
@@ -450,6 +451,11 @@ function renderDashboard(data) {
   document.getElementById("card-sections").innerHTML = html;
   renderSidebar(data);
 
+  // 渲染已采纳按钮状态
+  for (const card of allCards) {
+    if (_trackingData[card.id]) renderAcceptBtns(card.id);
+  }
+
   document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${data.run_date || ""}`;
   document.getElementById("footer-right").textContent = `基于四层漏斗筛选 · ${allCards.length} 个行动包`;
 }
@@ -511,16 +517,11 @@ function renderCard(card, index) {
 
   const channelPanels = (card.channels || []).map((ch, ci) => {
     const chCfg = CHANNEL_CONFIG[ch.name] || { label: ch.name, icon: '📋', color: 'text-slate-300', bg: 'bg-slate-500/15' };
-    const count = _getChannelIds(card.id, ch.name).length;
-    const countHtml = count > 0 ? `<span class="text-[9px] text-emerald-400/60 ml-1">${count}人已采纳</span>` : '';
     return `<div id="ch-panel-${card.id}-${ci}" class="hidden border border-white/[0.08] rounded-md bg-[#0f1623] p-3 mb-2 mt-1 ch-panel" data-channel="${esc(ch.name)}">
       <div class="flex items-center justify-between mb-2">
         <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-medium ${chCfg.color} ${chCfg.bg}"><span>${chCfg.icon}</span>${chCfg.label}</span>
-        <div class="flex items-center gap-2">
-          ${countHtml}
-          <button onclick="copyAndAccept('${card.id}','${esc(ch.name)}','ch-md-${card.id}-${ci}')" id="${_acceptBtnId(card.id, ch.name)}"
-            class="text-[10px] font-mono px-2 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-500/40 hover:text-cyan-400 hover:bg-cyan-500/5 transition-colors duration-150">Copy / Accept</button>
-        </div>
+        <button onclick="copyAndAccept('${card.id}','ch-md-${card.id}-${ci}')" data-accept-card="${card.id}"
+          class="text-[10px] font-mono px-2 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-500/40 hover:text-cyan-400 hover:bg-cyan-500/5 transition-colors duration-150">Copy / Accept</button>
       </div>
       <div class="prose-container text-[12px] leading-relaxed" data-md="${encodeURIComponent(ch.markdown || '')}" id="ch-md-${card.id}-${ci}"></div>
     </div>`;
@@ -654,15 +655,11 @@ function copyPanelContent(mdElId) {
   });
 }
 
-function copyAndAccept(cardId, chName, mdElId) {
+function copyAndAccept(cardId, mdElId) {
   // 复制内容
   copyPanelContent(mdElId);
-  // 静默记录采纳（不重复记录同一浏览器）
-  const bid = getBrowserId();
-  const ids = _getChannelIds(cardId, chName);
-  if (!ids.includes(bid)) {
-    toggleAccept(cardId, chName);
-  }
+  // 静默记录采纳（同一 browser_id 幂等）
+  acceptCard(cardId);
 }
 
 // ── Sidebar ──

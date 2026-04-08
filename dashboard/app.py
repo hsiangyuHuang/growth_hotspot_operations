@@ -200,24 +200,38 @@ async def get_tracking(date: str = Query(...)):
 
 @app.post("/api/tracking/accept")
 async def accept_card(request: Request):
+    from datetime import datetime as dt, timezone as tz, timedelta as td
     body = await request.json()
     date_str = body.get("date")
     card_id = body.get("card_id")
-    channel = body.get("channel")
-    browser_id = body.get("browser_id")
-    if not all([date_str, card_id, channel, browser_id]):
-        raise HTTPException(400, "date, card_id, channel, browser_id required")
+    user_id = body.get("user_id")
+    if not all([date_str, card_id, user_id]):
+        raise HTTPException(400, "date, card_id, user_id required")
 
     data = _load_tracking(date_str)
-    card_data = data["cards"].setdefault(card_id, {})
-    ids = card_data.get(channel, [])
-    if browser_id in ids:
-        ids.remove(browser_id)
-    else:
-        ids.append(browser_id)
-    card_data[channel] = ids
+    card_data = data["cards"].get(card_id)
+
+    if card_data is None:
+        # 首次采纳，从 result.json 读取标题
+        title = ""
+        result = _load_result(date_str)
+        if result:
+            for card in result.get("cards", []):
+                if card.get("id") == card_id:
+                    title = card.get("title", "")
+                    break
+        card_data = {"title": title, "accepts": []}
+        data["cards"][card_id] = card_data
+
+    # 同一 user_id 幂等：已存在则跳过
+    existing_ids = {a["user_id"] for a in card_data["accepts"]}
+    if user_id in existing_ids:
+        return {"ok": True, "already": True, "count": len(card_data["accepts"])}
+
+    now = dt.now(tz(td(hours=8))).isoformat()
+    card_data["accepts"].append({"user_id": user_id, "accepted_at": now})
     _save_tracking(date_str, data)
-    return {"ok": True, "count": len(ids), "accepted": browser_id in ids}
+    return {"ok": True, "already": False, "count": len(card_data["accepts"])}
 
 
 @app.get("/api/tracking/stats")
@@ -230,7 +244,6 @@ async def get_tracking_stats(days: int = Query(30)):
         "total_accepted": 0,
         "by_priority": {},
         "by_category": {},
-        "by_channel": {},
         "top_cards": [],
     }
     all_cards = []
@@ -243,11 +256,7 @@ async def get_tracking_stats(days: int = Query(30)):
         for card in result["cards"]:
             cid = card.get("id", "")
             card_tracking = tracking["cards"].get(cid, {})
-            # 汇总该卡片所有渠道的去重采纳人数
-            all_uids = set()
-            for ch_ids in card_tracking.values():
-                all_uids.update(ch_ids)
-            accept_count = len(all_uids)
+            accept_count = len(card_tracking.get("accepts", []))
             priority = card.get("priority", "P2")
             category = card.get("category", "未分类")
             stats["total_cards"] += 1
@@ -261,19 +270,10 @@ async def get_tracking_stats(days: int = Query(30)):
             bc["total"] += 1
             if accept_count > 0:
                 bc["accepted"] += 1
-            # 按渠道统计
-            for ch_name, ch_ids in card_tracking.items():
-                bch = stats["by_channel"].setdefault(ch_name, {"total": 0, "unique_users": set()})
-                bch["total"] += len(ch_ids)
-                bch["unique_users"].update(ch_ids)
             all_cards.append({
                 "date": d, "card_id": cid, "title": card.get("title", ""),
                 "priority": priority, "accept_count": accept_count,
-                "channels": {ch: len(ids) for ch, ids in card_tracking.items()},
             })
-    # set 不能 JSON 序列化，转为 count
-    for ch_data in stats["by_channel"].values():
-        ch_data["unique_users"] = len(ch_data["unique_users"])
     all_cards.sort(key=lambda x: x["accept_count"], reverse=True)
     stats["top_cards"] = all_cards[:20]
     return stats
