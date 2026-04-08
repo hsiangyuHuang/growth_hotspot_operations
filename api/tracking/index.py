@@ -4,7 +4,7 @@ from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 import urllib.request
 
-REPO = "hsiangyuHuang/osl_growth_hotspot_agent"
+REPO = "hsiangyuHuang/growth_hotspot_operations"
 
 
 def _github_read(date_str):

@@ -5,7 +5,7 @@ import base64
 from http.server import BaseHTTPRequestHandler
 import urllib.request
 
-REPO = "hsiangyuHuang/osl_growth_hotspot_agent"
+REPO = "hsiangyuHuang/growth_hotspot_operations"
 
 
 def _gh_api(path, method="GET", data=None):
