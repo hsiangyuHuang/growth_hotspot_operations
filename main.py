@@ -38,6 +38,10 @@ def _is_sentiment_date_dir(d: Path) -> bool:
     return d.is_dir() and bool(_DATE_RE.match(d.name)) and (d / "items.json").exists()
 
 
+def _is_tracking_date_dir(d: Path) -> bool:
+    return d.is_dir() and bool(_DATE_RE.match(d.name)) and (d / "status.json").exists()
+
+
 def raw_path(date_str: str) -> Path:
     return DATA_DIR / "raw" / date_str / "items.json"
 
@@ -165,6 +169,19 @@ def _generate_index_files():
         latest_src = target_dir / dates[0] / "result.json"
         shutil.copy2(latest_src, target_dir / "latest.json")
         logger.info(f"[index] {subdir}: dates.json ({len(dates)} 条) + latest.json → {dates[0]}")
+
+    # tracking 索引（status.json 而非 result.json）
+    tracking_dir = DATA_DIR / "tracking"
+    if tracking_dir.exists():
+        dates = sorted(
+            [d.name for d in tracking_dir.iterdir() if _is_tracking_date_dir(d)],
+            reverse=True,
+        )
+        if dates:
+            with open(tracking_dir / "dates.json", "w", encoding="utf-8") as f:
+                json.dump(dates, f, ensure_ascii=False, indent=2)
+            shutil.copy2(tracking_dir / dates[0] / "status.json", tracking_dir / "latest.json")
+            logger.info(f"[index] tracking: dates.json ({len(dates)} 条) + latest.json → {dates[0]}")
 
 
 def run_dashboard():

@@ -4,7 +4,7 @@ from datetime import date
 from pathlib import Path
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -12,6 +12,7 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 COMPETITORS_DIR = DATA_DIR / "competitors"
 SENTIMENT_DIR = DATA_DIR / "sentiment"
+TRACKING_DIR = DATA_DIR / "tracking"
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 
 app = FastAPI(title="OSL Growth Hotspot Dashboard")
@@ -169,6 +170,113 @@ async def get_sentiment_dates():
         reverse=True,
     )
     return {"dates": dates}
+
+
+# ── 追踪 API ──────────────────────────────────────────────────
+
+def _is_tracking_date_dir(d: Path) -> bool:
+    return d.is_dir() and bool(_DATE_RE.match(d.name)) and (d / "status.json").exists()
+
+
+def _load_tracking(date_str: str) -> dict:
+    p = TRACKING_DIR / date_str / "status.json"
+    if p.exists():
+        with open(p, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"run_date": date_str, "cards": {}}
+
+
+def _save_tracking(date_str: str, data: dict):
+    d = TRACKING_DIR / date_str
+    d.mkdir(parents=True, exist_ok=True)
+    with open(d / "status.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+@app.get("/api/tracking")
+async def get_tracking(date: str = Query(...)):
+    return _load_tracking(date)
+
+
+@app.post("/api/tracking/accept")
+async def accept_card(request: Request):
+    body = await request.json()
+    date_str = body.get("date")
+    card_id = body.get("card_id")
+    channel = body.get("channel")
+    browser_id = body.get("browser_id")
+    if not all([date_str, card_id, channel, browser_id]):
+        raise HTTPException(400, "date, card_id, channel, browser_id required")
+
+    data = _load_tracking(date_str)
+    card_data = data["cards"].setdefault(card_id, {})
+    ids = card_data.get(channel, [])
+    if browser_id in ids:
+        ids.remove(browser_id)
+    else:
+        ids.append(browser_id)
+    card_data[channel] = ids
+    _save_tracking(date_str, data)
+    return {"ok": True, "count": len(ids), "accepted": browser_id in ids}
+
+
+@app.get("/api/tracking/stats")
+async def get_tracking_stats(days: int = Query(30)):
+    from datetime import timedelta as td
+    today = date.today()
+    stats = {
+        "period_days": days,
+        "total_cards": 0,
+        "total_accepted": 0,
+        "by_priority": {},
+        "by_category": {},
+        "by_channel": {},
+        "top_cards": [],
+    }
+    all_cards = []
+    for i in range(days):
+        d = (today - td(days=i)).isoformat()
+        result = _load_result(d)
+        if not result or not result.get("cards"):
+            continue
+        tracking = _load_tracking(d)
+        for card in result["cards"]:
+            cid = card.get("id", "")
+            card_tracking = tracking["cards"].get(cid, {})
+            # 汇总该卡片所有渠道的去重采纳人数
+            all_uids = set()
+            for ch_ids in card_tracking.values():
+                all_uids.update(ch_ids)
+            accept_count = len(all_uids)
+            priority = card.get("priority", "P2")
+            category = card.get("category", "未分类")
+            stats["total_cards"] += 1
+            if accept_count > 0:
+                stats["total_accepted"] += 1
+            bp = stats["by_priority"].setdefault(priority, {"total": 0, "accepted": 0})
+            bp["total"] += 1
+            if accept_count > 0:
+                bp["accepted"] += 1
+            bc = stats["by_category"].setdefault(category, {"total": 0, "accepted": 0})
+            bc["total"] += 1
+            if accept_count > 0:
+                bc["accepted"] += 1
+            # 按渠道统计
+            for ch_name, ch_ids in card_tracking.items():
+                bch = stats["by_channel"].setdefault(ch_name, {"total": 0, "unique_users": set()})
+                bch["total"] += len(ch_ids)
+                bch["unique_users"].update(ch_ids)
+            all_cards.append({
+                "date": d, "card_id": cid, "title": card.get("title", ""),
+                "priority": priority, "accept_count": accept_count,
+                "channels": {ch: len(ids) for ch, ids in card_tracking.items()},
+            })
+    # set 不能 JSON 序列化，转为 count
+    for ch_data in stats["by_channel"].values():
+        ch_data["unique_users"] = len(ch_data["unique_users"])
+    all_cards.sort(key=lambda x: x["accept_count"], reverse=True)
+    stats["top_cards"] = all_cards[:20]
+    return stats
 
 
 # ── 信源 API ──────────────────────────────────────────────────
