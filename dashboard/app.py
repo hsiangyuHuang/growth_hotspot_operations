@@ -4,7 +4,7 @@ from datetime import date
 from pathlib import Path
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -12,7 +12,6 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 COMPETITORS_DIR = DATA_DIR / "competitors"
 SENTIMENT_DIR = DATA_DIR / "sentiment"
-TRACKING_DIR = DATA_DIR / "tracking"
 CONFIG_DIR = Path(__file__).parent.parent / "config"
 
 app = FastAPI(title="OSL Growth Hotspot Dashboard")
@@ -84,7 +83,7 @@ async def get_dates():
     return {"dates": dates}
 
 
-# ── 竞品 API ──────────────────────────────────────────────────
+# ── 竞品 API ─────────────────────────────────────────
 
 @app.get("/api/competitors/today")
 async def get_competitors_today():
@@ -170,113 +169,6 @@ async def get_sentiment_dates():
         reverse=True,
     )
     return {"dates": dates}
-
-
-# ── 追踪 API ──────────────────────────────────────────────────
-
-def _is_tracking_date_dir(d: Path) -> bool:
-    return d.is_dir() and bool(_DATE_RE.match(d.name)) and (d / "status.json").exists()
-
-
-def _load_tracking(date_str: str) -> dict:
-    p = TRACKING_DIR / date_str / "status.json"
-    if p.exists():
-        with open(p, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"run_date": date_str, "cards": {}}
-
-
-def _save_tracking(date_str: str, data: dict):
-    d = TRACKING_DIR / date_str
-    d.mkdir(parents=True, exist_ok=True)
-    with open(d / "status.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-
-
-@app.get("/api/tracking")
-async def get_tracking(date: str = Query(...)):
-    return _load_tracking(date)
-
-
-@app.post("/api/tracking/accept")
-async def accept_card(request: Request):
-    from datetime import datetime as dt, timezone as tz, timedelta as td
-    body = await request.json()
-    date_str = body.get("date")
-    card_id = body.get("card_id")
-    user_id = body.get("user_id")
-    if not all([date_str, card_id, user_id]):
-        raise HTTPException(400, "date, card_id, user_id required")
-
-    data = _load_tracking(date_str)
-    card_data = data["cards"].get(card_id)
-
-    if card_data is None:
-        # 首次采纳，从 result.json 读取标题
-        title = ""
-        result = _load_result(date_str)
-        if result:
-            for card in result.get("cards", []):
-                if card.get("id") == card_id:
-                    title = card.get("title", "")
-                    break
-        card_data = {"title": title, "accepts": []}
-        data["cards"][card_id] = card_data
-
-    # 同一 user_id 幂等：已存在则跳过
-    existing_ids = {a["user_id"] for a in card_data["accepts"]}
-    if user_id in existing_ids:
-        return {"ok": True, "already": True, "count": len(card_data["accepts"])}
-
-    now = dt.now(tz(td(hours=8))).isoformat()
-    card_data["accepts"].append({"user_id": user_id, "accepted_at": now})
-    _save_tracking(date_str, data)
-    return {"ok": True, "already": False, "count": len(card_data["accepts"])}
-
-
-@app.get("/api/tracking/stats")
-async def get_tracking_stats(days: int = Query(30)):
-    from datetime import timedelta as td
-    today = date.today()
-    stats = {
-        "period_days": days,
-        "total_cards": 0,
-        "total_accepted": 0,
-        "by_priority": {},
-        "by_category": {},
-        "top_cards": [],
-    }
-    all_cards = []
-    for i in range(days):
-        d = (today - td(days=i)).isoformat()
-        result = _load_result(d)
-        if not result or not result.get("cards"):
-            continue
-        tracking = _load_tracking(d)
-        for card in result["cards"]:
-            cid = card.get("id", "")
-            card_tracking = tracking["cards"].get(cid, {})
-            accept_count = len(card_tracking.get("accepts", []))
-            priority = card.get("priority", "P2")
-            category = card.get("category", "未分类")
-            stats["total_cards"] += 1
-            if accept_count > 0:
-                stats["total_accepted"] += 1
-            bp = stats["by_priority"].setdefault(priority, {"total": 0, "accepted": 0})
-            bp["total"] += 1
-            if accept_count > 0:
-                bp["accepted"] += 1
-            bc = stats["by_category"].setdefault(category, {"total": 0, "accepted": 0})
-            bc["total"] += 1
-            if accept_count > 0:
-                bc["accepted"] += 1
-            all_cards.append({
-                "date": d, "card_id": cid, "title": card.get("title", ""),
-                "priority": priority, "accept_count": accept_count,
-            })
-    all_cards.sort(key=lambda x: x["accept_count"], reverse=True)
-    stats["top_cards"] = all_cards[:20]
-    return stats
 
 
 # ── 信源 API ──────────────────────────────────────────────────
