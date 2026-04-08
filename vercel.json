@@ -2,5 +2,11 @@
   "rewrites": [
     { "source": "/static/(.*)", "destination": "/dashboard/static/$1" },
     { "source": "/", "destination": "/dashboard/index.html" }
-  ]
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':!data/tracking'"
 }
