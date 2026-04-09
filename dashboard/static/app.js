@@ -9,7 +9,7 @@ let _currentData = null;
 let refreshTimer = null;
 
 // Auto-detect: static site (Vercel) vs local FastAPI
-const IS_STATIC = !window.location.port || window.location.hostname !== 'localhost';
+const IS_STATIC = !window.location.port || (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1');
 const API = IS_STATIC
   ? { today: "./data/processed/latest.json", dates: "./data/processed/dates.json", history: (d) => `./data/processed/${d}/result.json` }
   : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}` };
@@ -221,8 +221,6 @@ async function loadDates() {
   } catch (e) { console.error("Failed to load dates:", e); }
 }
 
-let _calendarMonthIndex = 0; // 0 = latest month
-let _calendarMonths = [];
 let _calendarDates = [];
 
 function renderDateTimeline(dates) {
@@ -236,106 +234,89 @@ function renderDateTimeline(dates) {
   const dateSet = new Set(dates);
   const todayStr = new Date().toISOString().split('T')[0];
 
-  // Determine which months to show (from available data + current month)
-  const monthKeys = new Set();
-  dates.forEach(d => { const [y, m] = d.split('-'); monthKeys.add(`${y}-${m}`); });
-  const now = new Date();
-  monthKeys.add(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`);
-  _calendarMonths = [...monthKeys].sort().reverse();
+  // Date range: earliest data → today, aligned to week boundaries (Mon–Sun)
+  const sorted = [...dates].sort();
+  const start = new Date(sorted[0]);
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7));
+  const end = new Date(todayStr);
+  end.setDate(end.getDate() + (6 - (end.getDay() + 6) % 7));
 
-  renderCalendarMonth(container, dateSet, todayStr);
-}
-
-function renderCalendarMonth(container, dateSet, todayStr) {
-  if (!dateSet) {
-    dateSet = new Set(_calendarDates);
-    todayStr = new Date().toISOString().split('T')[0];
+  // Generate all days
+  const allDays = [];
+  const cur = new Date(start);
+  while (cur <= end) {
+    allDays.push({
+      str: `${cur.getFullYear()}-${String(cur.getMonth()+1).padStart(2,'0')}-${String(cur.getDate()).padStart(2,'0')}`,
+      day: cur.getDate(),
+      month: cur.getMonth(),
+    });
+    cur.setDate(cur.getDate() + 1);
   }
 
-  const monthKey = _calendarMonths[_calendarMonthIndex];
-  if (!monthKey) return;
+  // Group into weeks (7 days each, Mon–Sun)
+  const weeks = [];
+  for (let i = 0; i < allDays.length; i += 7) weeks.push(allDays.slice(i, i + 7));
 
-  const [y, m] = monthKey.split('-');
-  const mi = parseInt(m) - 1;
-  const daysInMonth = new Date(parseInt(y), mi + 1, 0).getDate();
-  let firstDow = new Date(parseInt(y), mi, 1).getDay();
-  firstDow = firstDow === 0 ? 6 : firstDow - 1;
+  const MONTHS = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+  const dayLabels = ['一','','三','','五','',''];
 
-  const weekHeaders = ['一','二','三','四','五','六','日'];
-  const hasPrev = _calendarMonthIndex < _calendarMonths.length - 1;
-  const hasNext = _calendarMonthIndex > 0;
+  let html = '<div class="w-full overflow-x-auto pb-1">';
 
-  // Count data days in this month
-  let dataCount = 0;
-  for (let day = 1; day <= daysInMonth; day++) {
-    const ds = `${y}-${String(parseInt(m)).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
-    if (dateSet.has(ds)) dataCount++;
-  }
-
-  let html = '<div class="w-full">';
-
-  // Month header with nav arrows
+  // Legend row
   html += `<div class="flex items-center justify-between mb-2">
-    <button onclick="calendarPrev()" class="w-7 h-7 flex items-center justify-center rounded-md transition-colors ${hasPrev ? 'text-slate-400 hover:text-white hover:bg-white/[0.08] cursor-pointer' : 'text-slate-700 cursor-default'}" ${hasPrev ? '' : 'disabled'}>‹</button>
-    <div class="text-center">
-      <span class="text-[11px] text-slate-400 font-mono">${y} 年 ${parseInt(m)} 月</span>
-      <span class="text-[10px] text-slate-600 font-mono ml-1.5">${dataCount} 天有数据</span>
+    <span class="text-[11px] text-slate-400 font-mono">${dates.length} 天有数据</span>
+    <div class="flex items-center gap-[3px]">
+      <span class="text-[9px] text-slate-600 font-mono mr-1">Less</span>
+      <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#161b22"></span>
+      <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#0e4429"></span>
+      <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#006d32"></span>
+      <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#39d353"></span>
+      <span class="text-[9px] text-slate-600 font-mono ml-1">More</span>
     </div>
-    <button onclick="calendarNext()" class="w-7 h-7 flex items-center justify-center rounded-md transition-colors ${hasNext ? 'text-slate-400 hover:text-white hover:bg-white/[0.08] cursor-pointer' : 'text-slate-700 cursor-default'}" ${hasNext ? '' : 'disabled'}>›</button>
   </div>`;
 
-  // Week headers
-  html += '<div class="grid grid-cols-7 gap-1">';
-  html += weekHeaders.map(w => `<div class="text-center text-[9px] text-slate-600 font-mono pb-1">${w}</div>`).join('');
+  // Heatmap grid: day-label column + week columns
+  html += '<div class="inline-flex gap-[3px]">';
 
-  // Empty cells before first day
-  for (let i = 0; i < firstDow; i++) {
-    html += '<div></div>';
-  }
+  // Day-of-week labels
+  html += '<div class="flex flex-col gap-[3px] mr-[2px]">';
+  html += '<div style="height:14px"></div>';
+  dayLabels.forEach(l => {
+    html += `<div class="flex items-center text-[9px] text-slate-600 font-mono" style="height:11px">${l}</div>`;
+  });
+  html += '</div>';
 
-  for (let day = 1; day <= daysInMonth; day++) {
-    const dateStr = `${y}-${String(parseInt(m)).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
-    const hasData = dateSet.has(dateStr);
-    const isSelected = _selectedHistoryDate === dateStr;
-    const isToday = dateStr === todayStr;
+  // Week columns
+  weeks.forEach((week, wi) => {
+    const f = week[0];
+    let mLabel = '';
+    if (wi === 0 || f.month !== weeks[wi - 1][0].month) mLabel = MONTHS[f.month];
 
-    if (hasData) {
-      const selCls = isSelected
-        ? 'bg-cyan-500/20 border-cyan-500/40 ring-1 ring-cyan-500/20 text-cyan-300'
-        : 'border-white/[0.08] text-white hover:bg-white/[0.08] hover:border-white/[0.15]';
-      html += `<button onclick="selectHistoryDate('${dateStr}')"
-        class="relative flex items-center justify-center h-9 rounded-md border cursor-pointer transition-all duration-150 ${selCls}">
-        ${isToday ? '<span class="absolute top-0.5 right-0.5 w-1.5 h-1.5 rounded-full bg-emerald-400"></span>' : ''}
-        <span class="text-xs font-semibold">${day}</span>
-      </button>`;
-    } else {
-      html += `<div class="flex items-center justify-center h-9 rounded-md">
-        ${isToday ? '<span class="text-xs font-medium text-emerald-600">' + day + '</span>' : '<span class="text-xs text-slate-700">' + day + '</span>'}
-      </div>`;
-    }
-  }
+    html += '<div class="flex flex-col gap-[3px]">';
+    html += `<div class="text-[9px] text-slate-500 font-mono whitespace-nowrap" style="height:14px;line-height:14px">${mLabel}</div>`;
+
+    week.forEach(d => {
+      const has = dateSet.has(d.str);
+      const isSel = _selectedHistoryDate === d.str;
+      const isToday = d.str === todayStr;
+
+      const bg = isSel ? '#39d353' : (has ? '#26a641' : '#161b22');
+      const ring = isSel ? ' ring-1 ring-cyan-400' : (isToday ? ' ring-1 ring-slate-500' : '');
+      const click = has ? ` onclick="selectHistoryDate('${d.str}')"` : '';
+      const tip = `${d.month + 1}月${d.day}日`;
+
+      html += `<div class="hm-cell${ring}${has ? ' hm-has' : ''}" style="background:${bg}" data-tip="${tip}"${click}></div>`;
+    });
+
+    html += '</div>';
+  });
 
   html += '</div></div>';
   container.innerHTML = html;
 }
 
-function calendarPrev() {
-  if (_calendarMonthIndex < _calendarMonths.length - 1) {
-    _calendarMonthIndex++;
-    renderCalendarMonth(document.getElementById("date-selector"));
-  }
-}
-
-function calendarNext() {
-  if (_calendarMonthIndex > 0) {
-    _calendarMonthIndex--;
-    renderCalendarMonth(document.getElementById("date-selector"));
-  }
-}
-
 function selectHistoryDate(dateStr) {
   _selectedHistoryDate = dateStr;
-  // Re-render timeline to update selection state
   loadDates();
   loadHistory(dateStr);
 }
