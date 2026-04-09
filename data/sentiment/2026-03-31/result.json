@@ -1,0 +1,148 @@
+{
+  "run_date": "2026-03-31",
+  "total_raw": 24,
+  "items": [
+    {
+      "title": "OSL Group 发布 2025 年年度业绩并宣布战略转型",
+      "summary": "OSL Group 公布 2025 年财务业绩，**营收创历史新高**。公司宣布从数字资产交易所战略转型为**全球稳定币支付及交易平台**，稳定币业务成为核心增长点。",
+      "category": "产品动态",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2038989402131849323"
+        },
+        {
+          "platform": "twitter",
+          "author": "@charles_mo95",
+          "url": "https://x.com/charles_mo95/status/2039022657560076630"
+        }
+      ],
+      "published_at": "2026-03-31T14:38:50+00:00"
+    },
+    {
+      "title": "香港金管局稳定币牌照进度更新",
+      "summary": "香港金管局（HKMA）为强化风险控制推迟了首批稳定币牌照的发放。市场预期汇丰、渣打等为首批候选人，而 **OSL 预计将在后续轮次中获得牌照**。",
+      "category": "监管合规",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@nifty0x",
+          "url": "https://x.com/nifty0x/status/2038986413597716486"
+        }
+      ],
+      "published_at": "2026-03-31T14:26:58+00:00"
+    },
+    {
+      "title": "OSL Indonesia 推出首个 Launchpool 项目 XAUT",
+      "summary": "OSL Indonesia 正式上线 **Launchpool 功能**，首个项目支持通过质押 USDT、BTC、ETH 等资产赚取 **Tether Gold (XAUT)**。此举旨在将加密资产流动性与实物黄金价值结合。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@bangdevzz",
+          "url": "https://x.com/bangdevzz/status/2038940773325107327"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Airdropfinds",
+          "url": "https://x.com/Airdropfinds/status/2038822429703974969"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2038795027565129997"
+        },
+        {
+          "platform": "twitter",
+          "author": "@ThisEmmy_1",
+          "url": "https://x.com/ThisEmmy_1/status/2039026956033777933"
+        }
+      ],
+      "published_at": "2026-03-31T17:08:04+00:00"
+    },
+    {
+      "title": "OSL Indonesia 推出零手续费提币活动",
+      "summary": "OSL Indonesia 宣布从 2026 年 3 月起，新老用户可享受 **USDT、ETH、SUI、BNB 等热门代币的零提币手续费**（Zero Withdrawal Fee），以吸引用户将资产转入。",
+      "category": "活动推广",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@bangdevzz",
+          "url": "https://x.com/bangdevzz/status/2037861705775198502"
+        }
+      ],
+      "published_at": "2026-03-28T11:57:46+00:00"
+    },
+    {
+      "title": "用户对 OSL Indonesia 出金及品牌合规性的正面反馈",
+      "summary": "用户反馈 OSL Indonesia（原 Koinsayang 被 OSL Group 收购并更名）由于**受 OJK 监管**且支持银行、电子钱包出入金，使用体验大幅提升。社区对其**极严的上币审计流程**（仅支持不到30种币）表示认可。",
+      "category": "用户反馈",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2038408137850618298"
+        },
+        {
+          "platform": "twitter",
+          "author": "@MACK6343263832",
+          "url": "https://x.com/MACK6343263832/status/2037529672368652527"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Delightpro_",
+          "url": "https://x.com/Delightpro_/status/2037796197969121498"
+        }
+      ],
+      "published_at": "2026-03-30T00:09:06+00:00"
+    },
+    {
+      "title": "OSL 联合主办 Cypher Asia 加密金融峰会",
+      "summary": "OSL 将于 2026 年 4 月 21 日在香港数码港与复星财富、1783DAO 等机构联合举办 **Cypher Asia：加密金融高管峰会**，聚焦行业领袖对话。",
+      "category": "活动推广",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@1783Dao",
+          "url": "https://x.com/1783Dao/status/2038851669216346469"
+        }
+      ],
+      "published_at": "2026-03-31T05:31:32+00:00"
+    },
+    {
+      "title": "市场分析：OSL 与 Plume Network 的关联",
+      "summary": "市场讨论指出，OSL Global 不仅仅是一个交易所，其与 **Plume Network 的战略动作**值得关注，暗示双方在现实世界资产（RWA）或相关领域的潜在合作。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@UDR_CHANNEL",
+          "url": "https://x.com/UDR_CHANNEL/status/2037355147404206097"
+        }
+      ],
+      "published_at": "2026-03-27T02:24:54+00:00"
+    },
+    {
+      "title": "OSL 举办国际妇女月系列访谈",
+      "summary": "OSL 与 Women in Web3 HK 合作，在**国际妇女月**期间推出特别专题，探讨女性在数字资产领域的信心、文化和机遇。",
+      "category": "其他",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2038493223744921723"
+        }
+      ],
+      "published_at": "2026-03-30T05:47:12+00:00"
+    }
+  ]
+}

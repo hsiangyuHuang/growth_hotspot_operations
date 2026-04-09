@@ -1,0 +1,310 @@
+{
+  "run_date": "2026-03-28",
+  "header_markdown": "",
+  "cards": [
+    {
+      "title": "BTC 突破 67000 + Saylor 激光眼看多信号",
+      "priority": "P0",
+      "category": "行情/机构",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "FOMO 买入/交易",
+      "site": "Both",
+      "summary": "全渠道推广 BTC 交易，通过 Push 触达活跃用户，社区发起互动。禁止承诺收益、预测具体点位。",
+      "dont_do": "不承诺收益，不预测具体点位，不使用“兴奋时刻”等过度 FOMO 词汇。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 投放策略\n**定向加密货币兴趣人群与近期活跃交易者**\n\n### 素材\n* **6-10s 真人创意短视频**\n* Hook：\"BTC 突破 67000 美元，市场情绪回暖！\"\n* Body：\"在 OSL 交易 BTC，享受安全合规的交易体验，新客更享专属奖励\"\n* CTA：**立即注册/交易**\n\n### 落地页\n直接指向 **BTC 交易对页面**\n\n### 站点差异\n* **HK 站**：强调持牌安全与 VIP 阶梯奖励\n* **Global 站**：强调 0 费率与便捷出入金"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 目的\n**促活交易**\n\n### Push\n* 人群圈选：**已入金未交易**、**合约/杠杆活跃用户**\n* 文案：\"BTC 突破 67000 美元！立即前往 OSL 把握市场机遇\"\n* Deep link 跳转 **BTC 交易页**\n\n### Onsite\n* 行情页**置顶卡片**，提示 BTC 最新价格异动\n* 点击跳转交易"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**全平台（华语/通用）**\n\n### 互动策略\n* 话题讨论 Saylor 的\"激光眼\"信号与市场情绪\n* 通过**话题讨论与投票**形式引导用户回站交易"
+        }
+      ],
+      "sources": [
+        {
+          "name": "律动 BlockBeats",
+          "url": "https://m.theblockbeats.info/flash/338611"
+        },
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/474361"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037786144407171099"
+        }
+      ],
+      "id": "ap_1"
+    },
+    {
+      "title": "ETH 跌破 2000 USDT 关口",
+      "priority": "P0",
+      "category": "行情",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "恐慌避险/抄底",
+      "site": "Both",
+      "summary": "通过 CRM 触达 ETH 持仓用户，引导定投计划或 StableHub 避险。禁止制造恐慌。",
+      "dont_do": "不制造恐慌，不建议用户抄底或割肉。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 目的\n**防流失与避险引导**\n\n### Push\n* 人群圈选：**ETH 持仓用户**、**VIP Loss 用户**\n* 文案：\"市场波动加剧？探索 OSL 定投计划或 StableHub，稳健应对行情变化\"\n* Deep link 跳转**定投或 StableHub 页**\n\n### EDM\n* 主题：\"应对市场波动的稳健策略\"\n* 正文：详细介绍**定投平摊成本**的优势及 **StableHub 的保本避险属性**"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**全平台**\n\n### 内容策略\n* 话题：如何在波动市中保持稳健收益\n* 形式：**科普长文或图文**\n* 调性：**专业与安抚**"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/474366"
+        }
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "XRP 鲸鱼积累，风险回报改善",
+      "priority": "P0",
+      "category": "链上/行情",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "FOMO 买入/交易",
+      "site": "Global",
+      "summary": "在 Global 站全渠道推广 XRP 交易，结合链上数据分析吸引交易用户。禁止向 HK 零售用户推广 XRP。",
+      "dont_do": "不向 HK 零售用户推广 XRP，不预测 XRP 价格。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 投放策略\n**定向 Global 站覆盖地区（台湾、拉美等）的加密交易者**\n\n### 素材\n* **展示链上数据图表的静态图**\n* Hook：\"XRP 鲸鱼持续积累，市场异动！\"\n* Body：\"来 OSL Global 站交易 XRP，享受 0 费率与深度流动性\"\n* CTA：**立即交易**"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### Push\n* 人群圈选：**Global 站活跃交易用户**\n* 文案：\"XRP 链上数据异动，鲸鱼正在积累！来 OSL 把握交易机会。\""
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**通用社群**\n\n### 内容策略\n* 分享 **XRP 链上数据与风险回报分析**\n* 引导客观讨论"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/xrp-risk-reward-improves-as-whale-accumulation-rises-will-price-follow"
+        }
+      ],
+      "id": "ap_3"
+    },
+    {
+      "title": "Morgan Stanley BTC ETF 费率 0.14%，全市场最低",
+      "priority": "P1",
+      "category": "机构/产品",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "学习入圈/迁移转换",
+      "site": "HK",
+      "summary": "针对 HK 站 PI 用户发布机构入场分析，通过 SEO 截流 ETF 搜索，突出 OSL 直接持币优势。",
+      "dont_do": "不贬低竞争对手，不向零售用户推销未获批产品。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n**Morgan Stanley 比特币 ETF**、**比特币 ETF 费率**、**香港购买比特币**、**OSL PI 开户**\n\n### 内容类型\n**热点快讯型 + 解读型**\n\n### 大纲\n* 摩根士丹利 ETF 费率战分析\n* ETF 与直接持有现货的**优劣势对比**\n* OSL HK 站**合规交易指南**"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 目的\n**PI 转化与促活**\n\n### EDM\n* 人群圈选：**HK 站高净值与 PI 用户**\n* 主题：\"华尔街加速布局：摩根士丹利低费率 ETF 启示\"\n* 正文：深入分析机构入场趋势，强调 OSL **机构级托管与交易深度**"
+        },
+        {
+          "name": "Paid Ads",
+          "markdown": "### 投放策略\n**定向香港地区高净值人群与传统金融投资者**\n\n### 素材\n* **静态图或轮播素材**\n* Hook：\"华尔街巨头加速布局比特币！\"\n* Body：\"在香港首家持牌平台 OSL，安全合规地直接持有加密资产，尊享 VIP 专属权益\"\n* CTA：**了解 PI 认证**"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395568/morgan-stanley-sets-spot-bitcoin-etf-fee-at-0-14-undercutting-every-rival-on-the-market"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/morgan-stanley-sets-ultra-low-fee-for-bitcoin-etf"
+        }
+      ],
+      "id": "ap_4"
+    },
+    {
+      "title": "BTC ETF 净流出 2.96 亿 + 宏观避险情绪",
+      "priority": "P1",
+      "category": "机构/宏观",
+      "timing": "Day",
+      "relation": "Indirect",
+      "intent": "恐慌避险/深度研究",
+      "site": "Both",
+      "summary": "发布市场观察内容，引导用户使用 StableHub 避险及定投策略。",
+      "dont_do": "不渲染宏观经济危机，不直接攻击 ETF 产品。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n**比特币 ETF 流出**、**加密货币避险**、**稳定币理财**、**BTC 定投**\n\n### 内容类型\n**解读型 + 指南型**\n\n### 大纲\n* ETF 资金流出原因分析\n* 宏观不确定性下的**资产配置建议**\n* OSL **StableHub 与定投指南**"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### Onsite\n* 首页 Banner 替换为：\"市场波动避风港：**StableHub 高达 100% APR**\"\n* 点击跳转至 **StableHub 专题页**"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**华语与通用社群**\n\n### 内容策略\n* 话题：**ETF 资金流向解读**与机构资金动向分析"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-etfs-break-4-week-inflow-streak-outflows-directional-risk"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037800633882059135"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/potential-bitcoin-crash-below-dollar60k-may-delay-recovery-to-2027-data"
+        }
+      ],
+      "id": "ap_5"
+    },
+    {
+      "title": "Binance OTC 机构需求创纪录（竞对数据）",
+      "priority": "P1",
+      "category": "竞对/机构",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "迁移转换/信任评估",
+      "site": "Both",
+      "summary": "利用机构 OTC 需求爆发的背景，制作 OSL OTC/RFQ 优势材料，赋能 BD 团队定向拓客。",
+      "dont_do": "不点名攻击竞对，不夸大自身 OTC 数据。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 目的\n**机构获客**\n\n### 触达方式\n* 通过 **EDM 或 1 对 1** 触达潜在机构客户与高净值线索\n* 主题：\"2026 机构入场加速：OSL 大宗交易解决方案\"\n* 正文：强调 OSL 作为持牌平台的**合规性**、**深度流动性**及**定制化 RFQ 服务**"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n**加密货币 OTC**、**大宗交易平台**、**香港持牌 OTC**、**机构加密交易**\n\n### 内容类型\n**解读型**\n\n### 大纲\n* 2026 年机构 OTC 需求激增趋势\n* 机构选择 OTC 平台的核心考量（**合规、深度、安全**）\n* OSL OTC 服务优势"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037788711849734611"
+        }
+      ],
+      "id": "ap_6"
+    },
+    {
+      "title": "稳定币 ChatGPT 时刻，2025 年交易量超 33 万亿",
+      "priority": "P2",
+      "category": "行业/数据",
+      "timing": "Wave",
+      "relation": "Direct",
+      "intent": "深度研究/信任评估",
+      "site": "Global",
+      "summary": "强化 StableHub 叙事，通过 SEO 和站内资源位推广稳定币理财产品。",
+      "dont_do": "不承诺 StableHub 绝对无风险，必须附带常规免责声明。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n**稳定币交易量**、**稳定币理财**、**USDT 收益**、**OSL StableHub**\n\n### 内容类型\n**解读型 + 指南型**\n\n### 大纲\n* 稳定币市场爆发式增长数据解读\n* 稳定币在**跨境支付与理财**中的应用\n* OSL StableHub **零滑点兑换与收益指南**"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### Onsite\n* 资产页模块增加 **StableHub 快捷入口**\n* 文案：\"把握稳定币红利，享专属 APR\"\n\n### Push\n* 人群圈选：**稳定币高频转账用户**\n* 文案：\"您的稳定币正在闲置？存入 StableHub 赚取收益，随存随取！\""
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/stablecoins-will-be-cryptos-chatgpt-moment-ripple-garlinghouse"
+        },
+        {
+          "name": "whale_alert",
+          "url": "https://x.com/whale_alert/status/2038038019291140190"
+        }
+      ],
+      "id": "ap_7"
+    },
+    {
+      "title": "BTC 估值压缩 + GameStop 机构 BTC 策略",
+      "priority": "P2",
+      "category": "机构/投研",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "深度研究/学习入圈",
+      "site": "HK",
+      "summary": "产出深度研报与 SEO 内容，解析机构 BTC 策略，吸引 TradFi 背景的潜在 PI 用户。",
+      "dont_do": "不提供具体投资建议，不保证期权策略收益。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n**比特币估值**、**机构比特币策略**、**Covered Call 加密货币**、**香港 PI 投资**\n\n### 内容类型\n**解读型**\n\n### 大纲\n* BTC 当前估值模型与下行风险分析\n* GameStop 的 **BTC Covered Call 策略**案例解析\n* 传统机构如何**合规配置加密资产**"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 触达方式\n**研报精选版点对点分发**\n\n### 目标人群\n**HK 站 VIP 用户**\n\n### 核心内容\n提供深度 **Market Insights**，解析机构级 BTC 策略"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/03/28/why-bitcoin-s-compressed-valuation-offers-reduced-downside-risk-versus-stocks"
+        },
+        {
+          "name": "Decrypt",
+          "url": "https://decrypt.co/362632/why-gamestop-bitcoin-covered-call-strategy"
+        }
+      ],
+      "id": "ap_8"
+    },
+    {
+      "title": "华尔街代币化加速 + AI 代理加密支付 + 量子安全",
+      "priority": "P2",
+      "category": "技术/宏观",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "深度研究/信任评估",
+      "site": "Both",
+      "summary": "发布系列前沿趋势文章，提升 OSL 品牌专业度与 Geo/AI 搜索可见度。",
+      "dont_do": "不夸大技术威胁（如量子计算），不承诺 OSL 具备未上线的 AI 或 RWA 产品。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n**RWA 代币化**、**AI 加密支付**、**比特币量子安全**、**Web3 趋势 2026**\n\n### 内容类型\n**热点快讯型 + 解读型**\n\n### 大纲\n* 华尔街 RWA 布局最新进展\n* AI 代理如何重塑加密支付层\n* 区块链网络应对量子计算的准备\n* OSL 对前沿技术的**安全合规跟进**"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**全平台**\n\n### 内容策略\n* 探讨 **AI 与 Crypto 的结合点**\n* 讨论量子计算对加密货币的长期影响\n* 目标：**活跃社区氛围**"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CryptoSlate",
+          "url": "https://cryptoslate.com/heres-why-wall-street-suddenly-obsessed-with-tokenization-but-on-its-own-terms/"
+        },
+        {
+          "name": "CryptoSlate",
+          "url": "https://cryptoslate.com/the-crypto-winners-from-ai-may-not-be-ai-coins-at-all-as-agents-start-spending-autonomously/"
+        },
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/03/28/watch-out-bitcoin-devs-google-says-post-quantum-migration-needs-to-happen-by-2029"
+        }
+      ],
+      "id": "ap_9"
+    }
+  ]
+}

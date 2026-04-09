@@ -1,0 +1,259 @@
+{
+  "run_date": "2026-03-31",
+  "header_markdown": "",
+  "cards": [
+    {
+      "title": "美伊态度软化，和平曙光初现，加密市场与美股同步走强",
+      "priority": "P0",
+      "category": "宏观/行情",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "FOMO 买入/交易",
+      "site": "Both",
+      "executability": "A",
+      "summary": "借势行情回暖与避险情绪消退，主推现货交易与合约交易赛，刺激用户交易活跃度。",
+      "dont_do": "不做价格预测，不涉及任何政治立场表态。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 渠道与站点\\n- **渠道**：Google Search (品牌词+竞品词) / Meta\\n- **站点**：Global 站 & HK 站\\n\\n### 卖点组合与素材\\n- **HK 站核心**：持牌背书（SFC 牌照）、阶梯式入金奖励（488-1000 HKD）、**法币快充** (FPS/eDDA)。\\n- **Global 站核心**：上市背景 (83.HK)、**10 倍杠杆合约**、Flash Trade **0 费率**。\\n- **素材建议**：采用真人竖屏视频，传达“行情回暖，立即交易”氛围。\\n\\n### 落地页指向\\n- **HK 站**：注册页 / 现货交易页\\n- **Global 站**：合约交易赛 S2 活动页"
+        }
+      ],
+      "sources": [
+        {
+          "name": "律动 BlockBeats",
+          "url": ""
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": ""
+        }
+      ],
+      "id": "ap_1"
+    },
+    {
+      "title": "谷歌量子计算突破引发比特币安全担忧",
+      "priority": "P1",
+      "category": "技术/安全",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "信任评估/深度研究",
+      "site": "Both",
+      "executability": "B",
+      "summary": "以专业科普安抚用户，借机强调 OSL 的机构级托管安全与合规保障。",
+      "dont_do": "不制造恐慌，不夸大\"量子威胁\"的即时性，不暗示 OSL 已完全解决量子问题。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 内容策略\\n- **关键词定向**：**安全交易所**、**香港持牌交易所**、比特币量子计算、加密资产安全。\\n- **内容类型**：发布专业 **FAQ 或科普解读**，解释量子计算对比特币的实际影响。\\n\\n### 核心目标\\n- **CTA**：引导用户了解 OSL 的**机构级托管方案**。\\n- **内链指向**：关联 OSL 托管介绍页及合规牌照详情页。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": ""
+        },
+        {
+          "name": "Odaily",
+          "url": ""
+        }
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "美联储巴尔警示稳定币风险，强调强化监管",
+      "priority": "P0",
+      "category": "监管/稳定币",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "信任评估/避险",
+      "site": "Global",
+      "executability": "A",
+      "summary": "借监管收紧的叙事，凸显 OSL 平台合规优势，大力推广 StableHub 作为安全可靠的稳定币理财选择。",
+      "dont_do": "不攻击其他稳定币项目，不承诺绝对无风险。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 触达策略\\n- **工具**：App Push + EDM 邮件营销。\\n- **受众定向**：稳定币高频转账用户、已入金但未活跃交易的用户。\\n\\n### 核心话术\\n- **安全背书**：强调 **StableHub** 的合规安全性，通过“监管收紧不用慌”为切口，吸引避险资金。\\n\\n### 转化路径\\n- **KPI**：提升 StableHub 专题页访问量及存入金额。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": ""
+        },
+        {
+          "name": "Odaily",
+          "url": ""
+        }
+      ],
+      "id": "ap_3"
+    },
+    {
+      "title": "巨鲸休眠 5 年后转移 5,500 枚比特币",
+      "priority": "P1",
+      "category": "链上数据/行情",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "市场洞察/交易",
+      "site": "HK",
+      "executability": "A",
+      "summary": "作为 VIP 级市场洞察素材，由 BD 1对1 触达高净值用户，促进入金与交易。",
+      "dont_do": "不提供投资建议，不猜测巨鲸具体身份。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### VIP 服务流程\\n- **触达媒介**：EDM (Market Insights) + BD **1对1 专属服务** (WhatsApp/Email)。\\n- **目标用户**：**VIP 客户** 及高净值潜在客户。\\n\\n### 核心价值传递\\n- **市场洞察**：以“远古巨鲸苏醒”作为流动性变局信号，凸显 OSL **专业交易深度**。\\n\\n### 服务闭环\\n- **业务链接**：引导至 VIP 专属服务页或大宗 **OTC 交易服务**。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "律动 BlockBeats",
+          "url": ""
+        },
+        {
+          "name": "Lookonchain",
+          "url": ""
+        }
+      ],
+      "id": "ap_4"
+    },
+    {
+      "title": "美国劳工部拟议规则：401(k) 计划或纳入加密货币",
+      "priority": "P1",
+      "category": "宏观/机构",
+      "timing": "Trend",
+      "relation": "Indirect",
+      "intent": "深度研究/长期配置",
+      "site": "HK",
+      "executability": "B",
+      "summary": "制作深度研报，向传统金融配置用户和高净值人群传递\"加密资产主流化\"信号，配合 VIP 精英迁徙活动。",
+      "dont_do": "不暗示香港强积金（MPF）已有类似政策，不提供税务建议。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 内容营销\\n- **核心关键词**：**买 BTC**、**香港买比特币**、加密资产配置、机构入场。\\n- **文章方向**：深度解读“美国 401(k) 拥抱加密货币”的里程碑意义，定调**资产主流化**。\\n\\n### 营销联动\\n- **转化入口**：内链关联 **VIP 精英迁徙活动页**及定投计划介绍。\\n- **发布时效**：48 小时内。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": ""
+        },
+        {
+          "name": "Odaily",
+          "url": ""
+        }
+      ],
+      "id": "ap_5"
+    },
+    {
+      "title": "Interactive Brokers 在欧洲推出加密货币交易",
+      "priority": "P2",
+      "category": "竞对/行业",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "信任评估/平台对比",
+      "site": "Both",
+      "executability": "C",
+      "summary": "传统券商入局印证行业合规化趋势，OSL 借此强化自身作为\"原生合规加密券商\"的先发优势与专业性。",
+      "dont_do": "不直接攻击 IBKR，不涉及未覆盖的欧洲市场营销。",
+      "channels": [
+        {
+          "name": "社区",
+          "markdown": "### 社交媒体运营\\n- **平台**：Twitter (X) / LinkedIn。\\n- **调性控制**：专业、稳健的**行业老兵**口吻。\\n\\n### 讨论角度\\n- **行业趋势**：传统巨头入场证明了“合规是唯一出路”。\\n- **品牌优势**：强调 OSL 作为**首批持牌机构**的先发优势和行业深耕。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": ""
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": ""
+        }
+      ],
+      "id": "ap_6"
+    },
+    {
+      "title": "Plume 推出 RWA 薪酬试点（代币化货币市场基金）",
+      "priority": "P2",
+      "category": "RWA/创新",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "深度研究/收益探索",
+      "site": "HK",
+      "executability": "C",
+      "summary": "借 RWA 热度，科普 RWA 概念，并自然引出 OSL HK 站已有的 RWA 产品（如 CAMMF）。",
+      "dont_do": "不承诺 OSL 即将推出类似薪酬功能。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 科普传播\\n- **关键词定向**：**OSL 理财**、稳定币理财、RWA 投资、代币化基金。\\n- **内容要点**：通过“代币化薪酬”案例解释 RWA 现实落地，强调其**真实资产支撑**。\\n\\n### 业务关联\\n- **内链引导**：推广 OSL HK 站已有的 **CAMMF** 等 RWA 理财产品。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": ""
+        },
+        {
+          "name": "The Defiant",
+          "url": ""
+        }
+      ],
+      "id": "ap_7"
+    },
+    {
+      "title": "某新钱包存入 1960 万 USDC 做多原油",
+      "priority": "P1",
+      "category": "链上数据/衍生品",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "FOMO 交易/策略跟随",
+      "site": "Global",
+      "executability": "A",
+      "summary": "结合地缘政治与原油波动，推广 Global 站的永续合约功能，吸引衍生品交易用户。",
+      "dont_do": "不鼓励盲目跟单，不提供高杠杆投资建议。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 动态触达\\n- **形式**：实时 App Push。\\n- **受众**：合约及杠杆交易活跃用户。\\n\\n### 核心话术\\n- **热点锚点**：以“巨资做多原油”为由头，引导用户关注大宗商品联动下的加密市场机会。\\n\\n### 活动联动\\n- **CTA**：直达 **Global 站合约交易赛 S2** 活动页。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Lookonchain",
+          "url": ""
+        }
+      ],
+      "id": "ap_8"
+    },
+    {
+      "title": "俄罗斯拟限制加密交易仅通过持牌中介进行",
+      "priority": "P2",
+      "category": "监管/合规",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "信任评估",
+      "site": "Both",
+      "executability": "B",
+      "summary": "全球监管趋严，再次印证\"持牌中介\"的必要性，强化 OSL 的合规护城河。",
+      "dont_do": "不针对俄罗斯用户进行营销，不评论他国政治。",
+      "channels": [
+        {
+          "name": "社区",
+          "markdown": "### 社群激活\\n- **平台**：Telegram / Discord。\\n- **内容形式**：制作 **Web3 原生 Meme 图**。\\n\\n### 核心对比\\n- **策略**：幽默对比“野鸡交易所用户”的焦虑与“OSL 持牌平台用户”的安稳。\\n- **价值点**：潜移默化植入 **OSL 的合规护城河**。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": ""
+        }
+      ],
+      "id": "ap_9"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "run_date": "2026-03-26",
+  "total_raw": 43,
+  "items": [
+    {
+      "title": "OSL Night: Alpha Collective 越南线下活动顺利举行",
+      "summary": "OSL 在河内举办了 **OSL Night: Alpha Collective** 交流活动，吸引了超过40名资深交易员、投资者及 Media Partner 参与。活动强调了 OSL 作为连接 **传统金融 (TradFi) 与加密市场** 的合规基础设施定位。",
+      "category": "活动推广",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@CapCapital68",
+          "url": "https://x.com/CapCapital68/status/2036740414921998570"
+        },
+        {
+          "platform": "twitter",
+          "author": "@emacrypto_vn",
+          "url": "https://x.com/emacrypto_vn/status/2034916742976467320"
+        },
+        {
+          "platform": "twitter",
+          "author": "@erikhieubnb",
+          "url": "https://x.com/erikhieubnb/status/2034815628734079083"
+        }
+      ],
+      "published_at": "2026-03-25T09:42:10+00:00"
+    },
+    {
+      "title": "Plume Network 与 OSL Global 达成 RWA 业务合作",
+      "summary": "OSL Global 与 **Plume Network** 确认战略合作，旨在通过 **RWA（现实世界资产）** 代币化技术解锁数十亿美元的加密流动性，引起市场及研究频道的广泛关注。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@UDR_CHANNEL",
+          "url": "https://x.com/UDR_CHANNEL/status/2036302907549819224"
+        },
+        {
+          "platform": "youtube",
+          "author": "Underdog Research Channel",
+          "url": "https://www.youtube.com/watch?v=oiVDMa--TSo"
+        }
+      ],
+      "published_at": "2026-03-25T02:36:21+00:00"
+    },
+    {
+      "title": "香港稳定币牌照预期及监管动态",
+      "summary": "市场传闻香港金管局将于3月底发放 **首批稳定币牌照**，**OSL** 与汇丰、渣打等银行系机构呼声最高。同时，香港计划于2026年夏季推进虚拟资产托管立法。",
+      "category": "监管合规",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Jnn928175328437",
+          "url": "https://x.com/Jnn928175328437/status/2035563129636270212"
+        }
+      ],
+      "published_at": "2026-03-22T03:44:03+00:00"
+    },
+    {
+      "title": "OSL 印度尼西亚站 25 美元 Airdrop 推广与 KYC 违规风险",
+      "summary": "OSL 在印尼推广 **25美元新用户奖励**，活动反响热烈，用户评价其为“最慷慨的本地交易所”。但社区出现非法 **买卖 OSL KYC 账户** 的黑灰产迹象，需警惕合规及账户安全风险。",
+      "category": "用户反馈",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@terseragh",
+          "url": "https://x.com/terseragh/status/2035891268115710342"
+        },
+        {
+          "platform": "twitter",
+          "author": "@kriptocanavr",
+          "url": "https://x.com/kriptocanavr/status/2035685922247688211"
+        },
+        {
+          "platform": "twitter",
+          "author": "@TecnoPop549448",
+          "url": "https://x.com/TecnoPop549448/status/2036495944649417037"
+        }
+      ],
+      "published_at": "2026-03-24T17:30:44+00:00"
+    },
+    {
+      "title": "OSL 推出 Flash Trade 功能并上线 XAU₮ 黄金资产",
+      "summary": "OSL 印度尼西亚站上线了 **Flash Trade（闪兑）功能**，支持用户锁定价格交易。此外，平台引入了 **XAU₮ (Tether Gold)**，允许用户通过加密货币进行实物黄金投资。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@bangdevzz",
+          "url": "https://x.com/bangdevzz/status/2036107219595620598"
+        }
+      ],
+      "published_at": "2026-03-23T15:46:04+00:00"
+    },
+    {
+      "title": "知名 KOL 评测 OSL 香港站出金优势",
+      "summary": "YouTube KOL “脑哥” 发布视频评测 OSL 香港交易平台，重点推荐其 **USDC 与 USD 1:1 零滑点兑换** 及美元电汇服务，称其为最划算的合规出金渠道之一。",
+      "category": "用户反馈",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "youtube",
+          "author": "腦哥 Chill塊鏈",
+          "url": "https://www.youtube.com/watch?v=lKNJaUwoe30"
+        }
+      ],
+      "published_at": "2026-03-23T13:15:08+00:00"
+    },
+    {
+      "title": "OSL 市场分析：宏观风险导致加密市场回撤",
+      "summary": "OSL 官方发布市场周报，分析 **能源价格、通胀及 SEC/CFTC 监管** 因素导致 BTC 和 ETH 近期出现大幅回调，提醒投资者关注政策敏感期的波动。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2036281694064615691"
+        }
+      ],
+      "published_at": "2026-03-24T03:19:22+00:00"
+    }
+  ]
+}

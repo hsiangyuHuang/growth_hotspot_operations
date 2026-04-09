@@ -1,0 +1,246 @@
+{
+  "run_date": "2026-03-29",
+  "header_markdown": "",
+  "cards": [
+    {
+      "title": "BTC/ETH/SOL 全线下跌与宏观风险加剧（美伊冲突+加息预期）",
+      "priority": "P0",
+      "category": "Price/Macro",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "Panic Hedging",
+      "site": "Both",
+      "executability": "A",
+      "summary": "全渠道启动避险叙事，Global 站主推 StableHub 避风港与 BTC 定投，HK 站主推 VIP 确定性入金奖励。",
+      "dont_do": "禁止恐慌营销，禁止使用"兴奋时刻"等表述；不预测底部，不推荐做空；不涉及未上线币种。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n东南亚及拉美活跃交易者、近期搜索过"加密货币下跌"的用户\n\n### 素材形式\n静态图或 **6-10s 短视频**，展示市场波动与稳定收益的对比\n\n### 文案\n* **Hook**：市场波动加剧？寻找资金避风港\n* **Body**：OSL StableHub 提供高达 **100% APY** 的新客稳定币理财，保本避险\n* **CTA**：立即转入 USDC/USDT，锁定收益\n\n### 落地页\n**StableHub 专题页**"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### Onsite (Both)\n首页 Banner 替换为"**应对市场波动：开启定投计划**"，支持一跳至定投设置页\n\n### CRM Push (Global)\n* **目标人群**：已入金未交易 + 稳定币高频转账用户\n* **文案**：市场波动无需焦虑，将闲置资金转入 StableHub 赚取稳定收益\n* **Deep link**：StableHub\n\n### CRM EDM (HK)\n* **目标人群**：VIP Loss 用户\n* **主题**：市场回调期的确定性收益\n* **正文**：强调阶梯式入金奖励（达标领现金），引导回流"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**Telegram / Discord**（华语及通用社群）\n\n### 互动策略\n* 发布宏观解读主贴，分析**地缘冲突与加息预期**如何影响大盘，安抚情绪\n* 通过互动问答引导用户分享避险策略（如定投、转入稳定币）"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 主关键词\n**地缘风险 加密市场**\n\n### 长尾词\n* 比特币下跌原因\n* 如何在加密市场避险\n* 稳定币理财推荐\n\n### 内容类型\n**热点快讯型**，需 4 小时内上线"
+        }
+      ],
+      "sources": [
+        {"name": "CryptoSlate", "url": "https://cryptoslate.com/the-next-bitcoin-shock-could-be-where-wall-street-finally-loses-faith-and-starts-selling/"},
+        {"name": "WatcherGuru", "url": "https://x.com/WatcherGuru/status/2038389417472127331"},
+        {"name": "律动 BlockBeats", "url": "https://m.theblockbeats.info/flash/338669"},
+        {"name": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/03/29/markets-move-to-price-in-rate-hikes-as-inflation-fears-and-geopolitics-reshape-fed-expectations"}
+      ],
+      "id": "ap_1"
+    },
+    {
+      "title": "FTX 赔付 3 月 31 日启动（截流回归用户）",
+      "priority": "P0",
+      "category": "Competitor/Security",
+      "timing": "Flash",
+      "relation": "Brand",
+      "intent": "Migration",
+      "site": "Both",
+      "executability": "A",
+      "summary": "截流 FTX 赔付资金回归用户，主打"安全、持牌、透明"的品牌信任。",
+      "dont_do": "不直接嘲讽 FTX 受害者，不使用攻击性语言。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n搜索过"**FTX 赔付**"、"**FTX claim**"的用户，重定向流失的老用户\n\n### 素材形式\n静态图，对比未受监管与持牌合规的差异\n\n### 文案\n* **Hook**：资金重回加密市场？这次选择安全的第一站\n* **Body**：OSL 是香港 **SFC 持牌**及百慕大 **BMA 监管**的数字资产平台，资金隔离托管，拒绝挪用\n* **CTA**：注册 OSL，体验机构级安全"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 主关键词\n**FTX 赔付**\n\n### 长尾词\n* FTX 赔付时间表\n* FTX 资金去哪\n* 合规加密货币交易所推荐\n\n### 内容类型\n**指南型**和**解读型**"
+        }
+      ],
+      "sources": [
+        {"name": "Odaily", "url": "https://www.odaily.news/zh-CN/post/5209983"}
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "Goldman Sachs 底部叙事与 Strategy 暂停增持",
+      "priority": "P1",
+      "category": "Institutional",
+      "timing": "Day",
+      "relation": "Indirect",
+      "intent": "Deep Research",
+      "site": "HK",
+      "executability": "B",
+      "summary": "面向 HK 机构及 PI 用户推送机构视角的 Market Insights，SEO 截流"加密底部"搜索。",
+      "dont_do": "不作为投资建议，不承诺"必涨"或"抄底必赚"。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 触达方式\n**CRM EDM (HK)**\n\n### 目标人群\n**VIP 用户** / **高净值用户**\n\n### 核心信息\n* 主题：Market Insights：高盛称加密价格或近周期底部，机构如何布局？\n* 引用高盛数据（跌幅接近历史均值）和 **Strategy 暂停增持**分析\n* 结合 OSL 独家观点\n\n### CTA\n**1对1 BD 建联入口**"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 主关键词\n**加密市场底部**\n\n### 长尾词\n* 比特币底部预测\n* 高盛加密货币报告\n* 机构比特币持仓\n\n### 内容类型\n**解读型**（研报精选版）"
+        }
+      ],
+      "sources": [
+        {"name": "WuBlockchain", "url": "https://x.com/WuBlockchain/status/2038062144638656686"},
+        {"name": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/03/29/strategy-may-have-paused-bitcoin-accumulation-last-week-ending-a-thirteen-week-buying-streak"}
+      ],
+      "id": "ap_3"
+    },
+    {
+      "title": "BNP Paribas 入局与机构托管风险争议",
+      "priority": "P1",
+      "category": "Institutional/Security",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "Trust Evaluation",
+      "site": "HK",
+      "executability": "B",
+      "summary": "强化 OSL 持牌托管优势，针对 HK 机构客户进行 BD 触达与品牌曝光。",
+      "dont_do": "不点名攻击其他托管机构（如 Coinbase Custody）。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\nLinkedIn 上的**金融机构高管**、**家族办公室决策者**\n\n### 素材形式\n专业数据图表或静态图\n\n### 文案\n* **Hook**：传统金融加速拥抱加密资产，您的托管方案足够安全吗？\n* **Body**：消除交易对手风险。OSL 提供 **SFC 监管**下的机构级数字资产托管服务\n* **CTA**：联系我们的机构专家"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 主关键词\n**比特币托管安全**\n\n### 长尾词\n* 香港持牌加密托管\n* 机构数字资产托管\n* 消除交易对手风险\n\n### 内容类型\n**解读型**和**指南型**"
+        }
+      ],
+      "sources": [
+        {"name": "CoinTelegraph", "url": "https://cointelegraph.com/news/bnp-paribas-bitcoin-ether-etns-france-retail"},
+        {"name": "CoinTelegraph", "url": "https://cointelegraph.com/news/institutions-bitcoin-custodians-added-risk"}
+      ],
+      "id": "ap_4"
+    },
+    {
+      "title": "东南亚稳定币支付激增（StableHub + BizPay）",
+      "priority": "P1",
+      "category": "Regional/Adoption",
+      "timing": "Wave",
+      "relation": "Direct",
+      "intent": "Migration/Utility",
+      "site": "Global",
+      "executability": "B",
+      "summary": "在东南亚核心市场（印尼/越南）推广 StableHub 与 BizPay，截流稳定币支付需求。",
+      "dont_do": "不涉及未合规的支付承诺，注意印尼和越南当地的法币兑换合规红线。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n印尼、越南的**加密活跃用户**及**跨境电商从业者**\n\n### 素材形式\n本地化语言的**真人竖屏视频**\n\n### 文案\n* **Hook**：稳定币正在成为日常支付的隐形引擎\n* **Body**：使用 OSL Global，零滑点兑换稳定币，更有 StableHub 赚取高额 APY\n* **CTA**：立即下载 OSL App"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 主关键词\n**东南亚稳定币支付**\n\n### 长尾词\n* USDT 支付应用\n* 印尼加密货币卡\n* 稳定币跨境结算\n\n### 内容类型\n**指南型**和**热点快讯型**"
+        }
+      ],
+      "sources": [
+        {"name": "CoinDesk", "url": "https://www.coindesk.com/business/2026/03/29/stablecoin-payments-go-invisible-in-southeast-asia-as-crypto-card-business-surges"}
+      ],
+      "id": "ap_5"
+    },
+    {
+      "title": "Walmart OnePay 加密新手入场（截流新手流量）",
+      "priority": "P1",
+      "category": "Adoption",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "FOMO Buy/Utility",
+      "site": "Global",
+      "executability": "B",
+      "summary": "截流传统金融平台带来的加密新手流量，主打 Global 站的易用性与法币通道。",
+      "dont_do": "绝对禁止使用 Walmart 商标或暗示合作关系。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n对理财、金融科技感兴趣的**非加密原生用户**（如台湾、拉美等地区）\n\n### 素材形式\n展示 **Step-by-Step 入金流程**的轮播图\n\n### 文案\n* **Hook**：传统巨头纷纷入局，是时候开启你的加密之旅了\n* **Body**：OSL Global 支持**信用卡/Apple Pay** 轻松买币，新手友好的第一站\n* **CTA**：注册领取新手奖励"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 主关键词\n**加密新手入门**\n\n### 长尾词\n* 如何买加密货币\n* 最安全的加密货币平台\n* 信用卡买币教程\n\n### 内容类型\n**指南型**（OSL Learn 学院页）"
+        }
+      ],
+      "sources": [
+        {"name": "CoinTelegraph", "url": "https://cointelegraph.com/news/walmart-backed-onepay-adds-a-dozen-new-tokens-in-push-to-serve-new-to-crypto-customers"}
+      ],
+      "id": "ap_6"
+    },
+    {
+      "title": "吴杰庄发起香港–韩国 Web3 政策联盟",
+      "priority": "P2",
+      "category": "Regulation",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "Trust Evaluation",
+      "site": "HK",
+      "executability": "C",
+      "summary": "借势香港 Web3 政策推进，强化 OSL 作为首家持牌平台的品牌背书。",
+      "dont_do": "不过度解读政策细节，不代表官方立场发声。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词布局\n* **香港加密监管**\n* **香港 Web3 政策**\n\n### 内容类型\n政策解读型文章"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**华语社群**（Telegram / Discord）\n\n### 互动策略\n* 转发相关新闻，配以官方评论\n* **话术**：香港持续完善 Web3 生态，OSL 作为首家持牌平台，将继续为用户提供合规、安全的交易环境"
+        }
+      ],
+      "sources": [
+        {"name": "Odaily", "url": "https://www.odaily.news/zh-CN/newsflash/474415"}
+      ],
+      "id": "ap_7"
+    },
+    {
+      "title": "美国监管不确定性（CLARITY Act 僵局）",
+      "priority": "P2",
+      "category": "Regulation",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "Trust Evaluation",
+      "site": "Both",
+      "executability": "D",
+      "summary": "通过对比凸显香港及百慕大监管框架的确定性，增强用户信任。",
+      "dont_do": "不评价美国政治，不攻击美国监管机构。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词布局\n* **合规加密平台**\n* **持牌交易所**\n* **稳定币监管法案**\n\n### 内容类型\n**解读型**文章，对比凸显香港及百慕大监管框架的确定性"
+        }
+      ],
+      "sources": [
+        {"name": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/03/29/no-one-is-100-happy-with-the-stablecoin-yield-agreement-state-of-crypto"}
+      ],
+      "id": "ap_8"
+    },
+    {
+      "title": "竞对产品升级（OKX 股票永续合约与 Bybit AI Hub）",
+      "priority": "P2",
+      "category": "Competitor/Innovation",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "Deep Research",
+      "site": "Global",
+      "executability": "C",
+      "summary": "收集用户对 AI 交易及新合约资产的需求，作为产品迭代参考。",
+      "dont_do": "不直接对比未上线功能，不贬低竞品。",
+      "channels": [
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**Global 站核心社群**\n\n### 互动策略\n* 发起互动调研：你最期待的 **AI 交易辅助功能**是什么？\n* 发起投票：除了加密资产，你还希望在 OSL 交易哪些标的？\n\n### 目标\n收集一手用户反馈，为产品迭代提供依据"
+        }
+      ],
+      "sources": [
+        {"name": "OKX", "url": "https://x.com/okx/status/2038232793033871741"},
+        {"name": "Bybit", "url": "https://x.com/Bybit_Official/status/2038164256160448968"}
+      ],
+      "id": "ap_9"
+    }
+  ]
+}

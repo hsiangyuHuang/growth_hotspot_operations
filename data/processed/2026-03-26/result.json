@@ -1,0 +1,338 @@
+{
+  "run_date": "2026-03-26",
+  "header_markdown": "",
+  "cards": [
+    {
+      "title": "BTC 宏观震荡与避险属性凸显",
+      "priority": "P0",
+      "category": "市场行情",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "恐慌避险/深度研究",
+      "site": "Both",
+      "summary": "利用 BTC 避险叙事，全渠道引导用户进行定投和现货交易，同时通过 CRM 召回沉默用户。",
+      "dont_do": "不做价格预测，不使用'抄底'等煽动性词汇，不承诺收益。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n* **HK 站**：香港高净值人群\n* **Global 站**：台湾/印尼存量未入金用户\n\n### 素材形式\n**静态图**，展示黄金 ETF 净流出 $110 亿与 BTC 净流入的对比数据\n\n### 文案框架\n* **Hook**：市场剧烈波动，资金正在流向何处？\n* **Body**：摩根大通最新报告指出，BTC 展现出强于传统资产的避险韧性\n* **CTA**：立即在 OSL 开启您的 BTC 定投计划\n\n### 落地页\n**OSL 官网定投计划专题页**，附标准免责声明"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 资源位\n**首页 Banner + 资产页模块**，一跳至定投设置页，当日上线\n\n### Push\n* **目标**：已入金未交易用户\n* **文案**（≤45字）：市场波动加剧？了解为何机构视 BTC 为避险资产，开启定投平摊风险\n* **发送时段**：当日 20:00-22:00\n\n### EDM\n* **主题**：【OSL 市场洞察】宏观压力下的资产配置策略\n* **正文**：引用摩根大通数据，市场背景 → 数据解读 → 定投操作指引 → CTA"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n* **主词**：BTC 避险资产\n* **长尾**：比特币 熊市底部、比特币 宏观经济、加密货币 定投策略\n\n### 内容大纲\n1. 宏观经济压力与加密市场现状\n2. 摩根大通报告：BTC 与黄金白银的对比\n3. 如何在波动市场中利用定投降低风险\n\n### 时效\n**24 小时内发布**"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**华语/通用社群**\n\n### 话题\n理性探讨宏观经济对加密市场的影响，附投票'您认为当前是定投 BTC 的好时机吗？'\n\n### 评论引导\n1. 鼓励用户分享定投策略\n2. 引导阅读 OSL Learn 定投教程\n3. 引导回站查看行情数据"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395313/bitcoin-trades-narrow-corridor-macro-pressures-throttle-liquidity-potential-breakout"
+        },
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395369/jpmorgan-bitcoin-crypto-iran-war-gold-silver"
+        },
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bitcoin-gained-655percent-the-last-time-this-supply-in-profit-metric-dropped-to-50percent"
+        }
+      ],
+      "id": "ap_1"
+    },
+    {
+      "title": "黄金代币化热潮与地缘避险",
+      "priority": "P0",
+      "category": "产品创新/宏观",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "恐慌避险/FOMO 买入",
+      "site": "HK",
+      "summary": "结合地缘避险情绪与竞对已上线 XAUT 活动的市场压力，在 HK 站向 PI 用户推广 XAUT/PAXG。",
+      "dont_do": "不对地缘政治事件发表立场，不夸大黄金代币的收益，不做保值绝对化承诺。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n**Global 站**对黄金/避险资产感兴趣的用户\n\n### 素材形式\n**6-10s 短视频**，展示传统黄金与代币化黄金在流动性、可分割性上的对比优势\n\n### 文案框架\n* **Hook**：寻找地缘波动中的避风港？\n* **Body**：探索代币化黄金，兼具黄金保值属性与区块链流动性\n* **CTA**：立即在 OSL 交易 XAUT\n\n### 落地页\n**XAUT 交易对页面**，HK 站需标注'仅限专业投资者'"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 行情页\n**置顶卡片**展示 XAUT/PAXG 交易对，当日上线\n\n### Push\n* **目标**：Global 站活跃交易用户\n* **文案**（≤45字）：黄金代币化热潮来袭！在 OSL 交易 XAUT，把握避险资产机遇\n\n### EDM\n* **目标**：HK 站 PI 用户\n* **主题**：【OSL 投资前沿】代币化黄金：数字时代的避险新选择"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**通用社群**\n\n### 话题\n地缘动荡下的资产配置：代币化黄金的崛起\n\n### 形式\n**科普长文**，禁止讨论价格预测和地缘政治立场"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/defi/tether-gold-expands-to-bnb-chain-as-tokenized-gold-market-approaches-usd5-billion"
+        },
+        {
+          "name": "Binance",
+          "url": "https://x.com/binance/status/2037121277207732512"
+        },
+        {
+          "name": "Bybit",
+          "url": "https://x.com/Bybit_Official/status/2037107292731027478"
+        }
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "稳定币市值突破 $3000 亿与 StableHub 推广",
+      "priority": "P0",
+      "category": "行业趋势",
+      "timing": "Wave",
+      "relation": "Direct",
+      "intent": "深度研究/信任评估",
+      "site": "Global",
+      "summary": "利用稳定币市场增长叙事（市值 $3,080 亿，+50% YoY），大力推广 Global 站 StableHub 产品。",
+      "dont_do": "不使用保本保息等绝对化承诺词汇，需说明理财风险。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n**台湾、印尼**等关注理财、高息存款的用户\n\n### 素材形式\n**真人竖屏视频**，对比传统存款的繁琐与 StableHub 的灵活性\n\n### 文案框架\n* **Hook**：您的闲置资金还在睡大觉？\n* **Body**：稳定币市值突破 3000 亿美元！加入 OSL StableHub，享受灵活的稳定币理财\n* **CTA**：注册即享新客专属收益\n\n### 落地页\n**StableHub 专题页**，HK 站不适用"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 资产页模块\n增加 **StableHub 快捷入口**，提示'您的 USDC 可产生收益'，一跳至 StableHub 页面\n\n### Push\n* **目标**：稳定币高频转账用户及已入金未交易用户\n* **文案**（≤45字）：让您的稳定币为您工作！探索 OSL StableHub，无需锁仓，灵活理财\n\n### EDM\n* **主题**：【OSL 理财前沿】稳定币市场爆发，您的资产准备好了吗？"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n* **主词**：稳定币理财\n* **长尾**：USDC 收益、加密货币 活期理财、StableHub 教程\n\n### 内容大纲\n1. 稳定币市场 2026 发展趋势\n2. 什么是 StableHub？\n3. 如何在 OSL 开启稳定币理财（Step-by-Step）"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://x.com/CoinDesk/status/2037205945063735519"
+        },
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/03/26/stablecoin-rewards-restrictions-can-slow-but-not-stop-circle-s-usdc-says-citigroup"
+        }
+      ],
+      "id": "ap_3"
+    },
+    {
+      "title": "HashKey Exchange 上线 ETH Staking（竞对直接动作）",
+      "priority": "P1",
+      "category": "竞对动态",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "信任评估/迁移转换",
+      "site": "HK",
+      "summary": "针对竞对 HashKey 在 HK 市场上线 ETH Staking，OSL 采取防御性策略，强化持牌安全与机构级托管优势。",
+      "dont_do": "不点名攻击竞对，不承诺 OSL 即将上线 ETH Staking，不夸大竞对产品的风险。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### EDM\n* **目标**：HK 站 VIP 及高净值用户\n* **主题**：【OSL 资产安全】了解您的数字资产是如何被妥善托管的\n* **正文**：强调 OSL 冷热钱包隔离、保险覆盖及 SFC 严格监管"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 社群**\n\n### 话题\n以太坊质押的机制与潜在风险科普（流动性锁定、Slashing 机制等）\n\n### 形式\n**科普长文 + 互动问答**，调性专业客观，不带竞对比较色彩"
+        }
+      ],
+      "sources": [
+        {
+          "name": "HashKey Exchange",
+          "url": "https://x.com/HashKeyExchange/status/2037084766076625066"
+        },
+        {
+          "name": "HashKey Group",
+          "url": "https://x.com/HashKeyGroup/status/2037093484302393550"
+        }
+      ],
+      "id": "ap_4"
+    },
+    {
+      "title": "Fannie Mae 接受加密抵押贷款，BTC/USDC 迈向主流",
+      "priority": "P1",
+      "category": "机构/企业动态",
+      "timing": "Day",
+      "relation": "Indirect",
+      "intent": "学习入圈/深度研究",
+      "site": "Both",
+      "summary": "借势美国房贷巨头接受 BTC 和 USDC 作为首付抵押的里程碑新闻，输出品牌教育内容。",
+      "dont_do": "不暗示 OSL 提供抵押贷款服务，不对贷款产品细节做任何承诺。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n* **主词**：加密货币 抵押贷款\n* **长尾**：BTC 购房、USDC 实际应用、加密资产 主流化\n\n### 内容大纲\n1. Fannie Mae 加密抵押贷款政策解析\n2. BTC 与 USDC 在传统金融中的应用拓展\n3. OSL 如何保障您的主流加密资产安全\n\n### 时效\n**48 小时内发布**"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**华语/通用社群**\n\n### 话题\n加密货币在现实生活中的应用场景拓展\n\n### 互动\n开放式讨论：如果可能，您会用加密货币付首付吗？"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395253/fannie-mae-to-accept-crypto-backed-mortgages-in-first-for-us-housing-finance-wsj"
+        },
+        {
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/cefi/coinbase-and-better-launch-crypto-backed-mortgages-with-fannie-mae-backing"
+        }
+      ],
+      "id": "ap_5"
+    },
+    {
+      "title": "美国监管友好信号与 OSL 合规优势",
+      "priority": "P1",
+      "category": "监管政策",
+      "timing": "Wave",
+      "relation": "Brand",
+      "intent": "信任评估",
+      "site": "Both",
+      "summary": "借美国 SEC 放松监管及 401(k) 开放加密投资的东风，强化 OSL 持牌机构的合规与安全品牌形象。",
+      "dont_do": "不对美国具体政策细节做过度承诺或误导性解读，不将美国政策变化等同于香港监管放松。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n* **主词**：加密货币 监管合规\n* **长尾**：SEC 加密政策、401k 比特币、香港持牌交易所\n\n### 内容大纲\n1. 美国加密监管政策的最新转向\n2. 机构资金入场：401(k) 与代币化的双重驱动\n3. 为什么选择持牌平台（OSL 的合规护城河）"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### EDM\n* **目标**：全量 VIP 及机构用户\n* **主题**：【OSL 行业观察】全球监管趋于明朗，机构加速布局加密资产\n* **正文**：分析美国政策动态，重申 OSL 的 SFC 及 BMA 双重合规标准"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395230/white-house-clears-review-of-rule-that-could-open-path-for-crypto-in-10-trillion-401k-market"
+        },
+        {
+          "name": "WatcherGuru",
+          "url": "https://x.com/WatcherGuru/status/2036954890270834956"
+        }
+      ],
+      "id": "ap_6"
+    },
+    {
+      "title": "竞对合规风波与 OSL 安全品牌建设",
+      "priority": "P1",
+      "category": "竞对动态/监管",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "信任评估/迁移转换",
+      "site": "Global",
+      "summary": "在竞对面临监管警告及东南亚诈骗生态被打击的背景下，通过正面宣传 OSL 的合规资质和安全保障。",
+      "dont_do": "绝对禁止点名攻击 KuCoin 或任何竞对，不落井下石。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n**印尼、台湾**等亚太地区加密交易用户\n\n### 素材形式\n**静态图**，突出 BMA 牌照、安全审计认证等合规信息\n\n### 文案框架\n* **Hook**：交易加密资产，安全合规是首要考量\n* **Body**：OSL Global 受百慕大金融管理局（BMA）监管\n* **CTA**：立即注册，体验安心交易"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**印尼、越南社群**\n\n### 话题\n如何选择安全可靠的加密货币交易所\n\n### 形式\n**安全指南长贴 + 互动问答**，附防钓鱼/官方核验提醒"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/japan-fsa-kucoin-otc-derivatives-transactions"
+        },
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395287/uk-sanctions-crypto-linked-marketplace-xinbi-amid-crackdown-on-southeast-asia-scam-centers"
+        }
+      ],
+      "id": "ap_7"
+    },
+    {
+      "title": "LiteLLM 供应链攻击与加密钱包安全教育",
+      "priority": "P1",
+      "category": "安全事件",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "信任评估",
+      "site": "Both",
+      "summary": "针对 LiteLLM 供应链攻击事件，发布安全防范指南，凸显 OSL 平台托管的安全优势。",
+      "dont_do": "不制造恐慌，不夸大黑客攻击的影响范围。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 帮助中心\n**置顶**防范加密钱包窃取与供应链攻击安全指南\n\n### 内容要点\n1. 如何检测可疑软件\n2. 私钥保护最佳实践\n3. 为什么选择受监管平台托管资产"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 平台\n**全社群**\n\n### 主贴\n**安全警示贴**：近期 LiteLLM 供应链攻击事件解析及个人资产安全防护建议\n\n### 评论引导\n1. 解答如何保护私钥\n2. 强调大额资产存放在受监管合规平台的优势\n3. 引导查看 OSL 官方安全指南"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CryptoSlate",
+          "url": "https://cryptoslate.com/hackers-sneak-crypto-wallet-stealing-code-into-a-popular-ai-tool-that-runs-every-time/"
+        }
+      ],
+      "id": "ap_8"
+    },
+    {
+      "title": "Morgan Stanley 自有品牌 BTC ETF 上市",
+      "priority": "P2",
+      "category": "机构动态",
+      "timing": "Day",
+      "relation": "Indirect",
+      "intent": "深度研究",
+      "site": "HK",
+      "summary": "利用华尔街巨头以自有品牌入局 BTC 的新闻，向 HK 站 PI 和机构用户传递市场信心。",
+      "dont_do": "不将 ETF 表现等同于直接持有 BTC 的表现，不提供投资建议。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### EDM\n* **目标**：HK 站 PI 及机构用户\n* **主题**：【OSL 机构洞察】摩根士丹利入局，传统金融加速拥抱比特币\n* **正文**：解读 MSBT 上市的意义，介绍 OSL 为机构和 PI 提供的专属交易服务"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n* **主词**：比特币 ETF 机构\n* **长尾**：摩根士丹利 BTC ETF、机构加密投资、香港 BTC 交易\n\n### 内容类型\n**热点快讯型**，48 小时内发布"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CryptoSlate",
+          "url": "https://cryptoslate.com/morgan-stanley-nears-launch-of-msbt-bitcoin-etf/"
+        }
+      ],
+      "id": "ap_9"
+    },
+    {
+      "title": "AI 赛道爆发（Bittensor $TAO）与产品缺口记录",
+      "priority": "P2",
+      "category": "技术创新",
+      "timing": "Wave",
+      "relation": "Gap",
+      "intent": "学习入圈",
+      "site": "Global",
+      "summary": "$TAO 月涨超 160%，黄仁勋公开点名。OSL 暂无相关代币，重心在于 SEO 截流科技圈用户的入圈搜索流量。",
+      "dont_do": "严禁推广 OSL 未上线的币种，不提供买入建议。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词\n* **主词**：AI 加密货币\n* **长尾**：去中心化 AI、Bittensor 原理、AI 与区块链结合\n\n### 内容大纲\n1. AI 与 Web3 的融合趋势\n2. 去中心化算力网络科普（以 Bittensor 为例）\n3. 如何在 OSL 开启您的加密探索之旅"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bittensor-tao-price-may-punge-40percent-five-weeks"
+        },
+        {
+          "name": "律动 BlockBeats",
+          "url": "https://m.theblockbeats.info/news/61708"
+        }
+      ],
+      "id": "ap_10"
+    }
+  ]
+}
