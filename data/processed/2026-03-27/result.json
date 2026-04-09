@@ -1,0 +1,370 @@
+{
+  "run_date": "2026-03-27",
+  "header_markdown": "",
+  "cards": [
+    {
+      "title": "BTC/ETH 大跌 + 宏观压力 → 避险与定投引导",
+      "priority": "P0",
+      "category": "价格/宏观",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "恐慌避险（主）/ 学习入圈（次）",
+      "site": "Both",
+      "summary": "BTC 跌破 $66K、ETH 跌破 $2,000，季度期权到期叠加 ETF 净流出和美伊战争升级三重压力。全渠道安抚恐慌情绪，将用户引导至 StableHub 避险或定投计划，防止资产流失。",
+      "dont_do": "禁止使用\"抄底好时机\"、\"兴奋时刻\"等诱导性词汇；不预测底部点位；不做硬广强转化。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 受众定向\n- **目标用户**: 入金未交易用户、活跃用户（排除沉默 >30 天者）。\n- **VIP 触达**: 定向 **VIP Loss 用户** 及合约/杠杆活跃用户。\n### 执行要点\n1. **首页 Banner**: 标题「市场波动加剧？OSL StableHub 提供稳定币避险港湾」，配置 **1 跳直达**，保留 48 小时。\n2. **App Push**: 45 字内，文案「市场波动无需恐慌，OSL StableHub 稳健避险 👉」，发送时间 **18:00-21:00**。\n3. **EDM**: 主题「市场大幅回调，您的资产策略需要调整吗？」，提供 **StableHub 避险** 和 **定投** 路径。"
+        },
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n- **HK 站**: 香港加密持仓用户、传统金融投资者。\n- **Global 站**: 台湾中文用户、东南亚（印尼/越南）活跃交易者。\n### 素材与文案\n- **Hook**: 「市场剧烈波动，您的资产安全吗？」\n- **Body**: OSL StableHub 稳定币理财，**无需锁仓，随时存取**。\n### 落地页与 CTA\n- **CTA**: 立即了解 StableHub。\n- **落地页**: **StableHub 产品页**（含合规风险提示）。"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 加密市场下跌怎么办\n- **长尾词**: BTC 为什么跌、加密货币避险方法、定投比特币策略\n### 内容大纲\n1. **原因分析**: 宏观压力 + 季度期权交割 + ETF 净流出。\n2. **历史复盘**: 数据证明 **长期定投** 优势。\n3. **承接产品**: OSL StableHub 避险实操指南。\n### 时效要求\n- **发布**: 4 小时内上线，窗口期 48 小时。"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 话题营销\n- **核心调性**: 专业、冷静、安抚。\n- **互动角度**: 「理性看待期权交割，分享您的避险或定投策略」。\n### 互动引导\n- **引导提问**: 「大跌时你会选择空仓还是定投？」\n- **风险回复**: 模板式回复，强调 **风险承受能力** 与 **StableHub 无锁仓** 特性。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395446/bitcoin-dips-below-67k-ether-under-2k-as-etf-outflows-and-dollar-strength-pressure-liquidity-analysts"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037541603636580539"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037454516841333143"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037385565839196352"
+        }
+      ],
+      "id": "ap_1"
+    },
+    {
+      "title": "Binance Australia 被罚 $690万 → 强化 OSL 合规信任",
+      "priority": "P1",
+      "category": "竞对/监管",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "信任评估（主）",
+      "site": "HK",
+      "summary": "澳大利亚联邦法院以客户分类失误（85% 用户被错误归类为批发投资者）为由对 Binance Australia Derivatives 罚款 $690 万。借此事件强化 OSL 作为香港首家 SFC 持牌平台的合规优势。",
+      "dont_do": "不点名攻击 Binance，不落井下石，不做\"竞对出事我们最安全\"的直接比较广告。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n- **目标**: 香港高净值人群、传统金融投资者、搜索「加密交易所安全」的用户。\n### 素材与文案\n- **Hook**: 「您的数字资产安全吗？」\n- **Body**: OSL 作为 **香港首家 SFC 持牌** 平台，严格隔离客户资金，提供机构级安全保障。\n### 落地页\n- **页面**: 专门设计的 **合规信任页**，展示 SFC 牌照编号与审计报告。"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 香港持牌加密交易所\n- **长尾词**: 如何选择安全的加密平台、SFC 监管要求、资产隔离是什么\n### 内容大纲\n1. **背景**: 全球监管趋严（以澳洲案例引出）。\n2. **核心**: 为什么 **客户分类** 与 **资金隔离** 是红线。\n3. **OSL 优势**: 展示合规护城河与审计机构背书。"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 互动角度\n- **科普话题**: 「全球监管趋严，如何判断一个交易所是否合规？」\n- **引导**: 聚焦合规知识普及，不提及具体竞对，强调 **持牌平台** 对资金的法律保护。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395437/binance-australia-derivatives-fined-6-9-million-over-compliance-and-onboarding-failures"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037461656364626341"
+        }
+      ],
+      "id": "ap_2"
+    },
+    {
+      "title": "Tether KPMG 审计 + 稳定币立法僵局 → StableHub 信任营销",
+      "priority": "P0",
+      "category": "监管/机构",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "深度研究（主）/ 迁移转换（次）",
+      "site": "Global",
+      "summary": "Tether 聘用四大 KPMG 进行首次全面审计，提升 USDT 透明度。叠加美国稳定币立法僵局，反衬 OSL 受监管框架的稳定性，推广 Global 站 StableHub 产品。",
+      "dont_do": "不承诺绝对无风险，不涉及未获批的稳定币，不对立法结果做预测。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 核心策略\n- **Banner**: 标题「Tether 迎四大审计，USDT 信任升级！」，**1 跳直达** StableHub。\n- **EDM**: 主题「USDT 迎重大审计里程碑，您的资产在 OSL 更安全」，发送给全量 Global 用户。\n- **App Push**: 定向已入金未使用 StableHub 者，文案「USDT 审计升级，OSL StableHub 让资产安全生息 👉」。"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: Tether 审计\n- **长尾词**: USDT 安全吗 2026、稳定币理财平台推荐、StableHub 收益\n### 内容大纲\n1. **事件**: Tether 聘请 KPMG 审计的里程碑意义。\n2. **对比**: 美国立法僵局 vs 持牌平台稳定性。\n3. **产品**: 详解 StableHub **无锁仓** 赚取收益的流程。"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 话题营销\n- **话题**: 「Tether 审计对市场意味着什么？为什么现在是配置稳定币的好时机？」\n- **互动**: 科普长文形式，引导讨论 USDT 信任度提升对资产配置的影响。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395423/tether-taps-kpmg-for-first-financial-audit"
+        },
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395549/what-the-hell-crypto-frustration-boils-over-as-stablecoin-fight-stalls-bill"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037412739958853663"
+        }
+      ],
+      "id": "ap_3"
+    },
+    {
+      "title": "Morgan Stanley BTC ETF 0.14% + 机构入场 → HK 站 PI 转化",
+      "priority": "P1",
+      "category": "机构/价格",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "FOMO买入（主）/ 深度研究（次）",
+      "site": "HK",
+      "summary": "摩根士丹利计划推出费率仅 0.14% 的现货 BTC ETF，叠加 BlackRock 增持与养老金关注信号，机构入场叙事强化。定向向 HK 站 PI 用户推送研报，促进行动。",
+      "dont_do": "不向零售用户推送 PI 专属内容，不提供投资建议，不暗示 BTC 价格将上涨。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### CRM 策略\n- **人群**: HK 站高净值用户、已认证但近 30 天未活跃的 **PI 用户**。\n- **EDM**: 主题「华语独家 | Morgan Stanley 入局，机构加速配置 BTC」，提供 **1 对 1 BD 建联入口**。"
+        },
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n- **渠道**: LinkedIn、Google Search (品牌词+「机构比特币」)。\n- **素材**: 专业数据图表、研报封面。\n- **Body**: 获取 OSL 独家 **机构级市场洞察**。落地页收集邮箱后引导 PI 开户。"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 机构比特币 ETF\n- **长尾词**: Morgan Stanley 比特币 ETF 费率、香港 PI 认证条件\n### 内容大纲\n1. **趋势**: ETF 费率战背后的机构增量逻辑。\n2. **对比**: 直接持有现货 vs ETF 的优劣（突出 **OSL 现货优势**）。\n3. **转化**: 指引 PI 用户快速完成 OSL 认证。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://x.com/CoinDesk/status/2037628571552809388"
+        },
+        {
+          "name": "EleanorTerrett",
+          "url": "https://x.com/EleanorTerrett/status/2037640568403120307"
+        },
+        {
+          "name": "lookonchain",
+          "url": "https://x.com/lookonchain/status/2037478779791270219"
+        },
+        {
+          "name": "WuBlockchain",
+          "url": "https://x.com/WuBlockchain/status/2037500195215134764"
+        }
+      ],
+      "id": "ap_4"
+    },
+    {
+      "title": "HashKey 2025 年报亮眼 → 竞对防御与品牌发声",
+      "priority": "P2",
+      "category": "竞对",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "信任评估（主）",
+      "site": "HK",
+      "summary": "直接竞对 HashKey 公布亮眼年度业绩。OSL 需在社区和公关层面强化自身「上市背景 + 合规先发 + 机构服务深度」的差异化定位，防止用户流失。",
+      "dont_do": "不直接对比数据，不贬低竞对，不做\"我们比 HashKey 更好\"的直接比较。",
+      "channels": [
+        {
+          "name": "社区",
+          "markdown": "### 话题营销\n- **渠道**: LinkedIn、Twitter (X)。\n- **角度**: 祝贺香港合规市场繁荣，强调 OSL 作为 **先行者** 的长期承诺。\n- **核心**: 强调 **上市母公司背书** 与 **VIP 体系深度**。"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **关键词**: 香港加密货币交易所排名、OSL 交易所评测、香港持牌交易所对比\n### 内容大纲\n1. **盘点**: 香港合规市场核心持牌平台盘点。\n2. **标准**: 选择交易所的维度（资金安全、产品深度、合规资质）。\n3. **差异化**: 详细介绍 OSL 的 **机构级托管** 与 **先发优势**。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "HashKeyGroup",
+          "url": "https://x.com/HashKeyGroup/status/2037513236648710147"
+        }
+      ],
+      "id": "ap_5"
+    },
+    {
+      "title": "OKX × NYSE 代币化股票 + RWA 叙事升温 → 叙事截流与教育",
+      "priority": "P1",
+      "category": "创新/竞对",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "学习入圈（主）",
+      "site": "Both",
+      "summary": "OKX 与 NYSE 合作及 Ondo 增长标志着 RWA 叙事升温。OSL 通过 SEO 截流前沿搜索量，建立专业形象并收集用户对代币化资产的需求反馈。",
+      "dont_do": "不承诺 OSL 即将上线代币化股票，不推广未上线的 RWA 代币。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 代币化股票是什么\n- **长尾词**: RWA 赛道解析 2026、加密货币买美股操作、Ondo Finance 介绍\n### 内容大纲\n1. **定义**: 代币化股票的运作机制与 OKX × NYSE 合作意义。\n2. **趋势**: 传统金融与链上金融的融合挑战。\n3. **引导**: 引流至 OSL 已上线相关概念币（如 **LINK**）。"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 互动角度\n- **话题**: 「华尔街把金融体系搬上区块链？大家怎么看代币化股票？」\n- **调研**: 配合发布 **用户需求调研**：「你最希望 OSL 上线哪类 RWA 产品？」反馈同步产品侧。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OKX",
+          "url": "https://x.com/okx/status/2037599097159381400"
+        },
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/post/5209968"
+        },
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/post/5209975"
+        }
+      ],
+      "id": "ap_6"
+    },
+    {
+      "title": "BTC 流通量突破 2,000 万枚 → 品牌传播与稀缺性共识",
+      "priority": "P2",
+      "category": "链上/舆论",
+      "timing": "Day",
+      "relation": "Brand",
+      "intent": "学习入圈（主）/ FOMO买入（次）",
+      "site": "Both",
+      "summary": "BTC 流通量达到 2,000 万枚历史性里程碑。利用此节点进行品牌传播，强化比特币的稀缺性共识，吸引新客关注。",
+      "dont_do": "不暗示价格将立刻暴涨，不做投资建议。",
+      "channels": [
+        {
+          "name": "社区",
+          "markdown": "### 传播素材\n- **海报**: 2000/2100 进度条视觉设计。\n- **话题**: 「见证历史！仅剩 100 万枚待开采，你拥有多少分之一？」\n- **活动**: 轻量级互动，如转发抽奖送少量 **体验金**。"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 比特币总量\n- **长尾词**: 比特币 2000 万枚意义、比特币减半机制、比特币稀缺价值\n### 内容大纲\n1. **科普**: 2000 万枚里程碑的意义与剩余开采时间（约 120 年）。\n2. **价值**: 为什么稀缺性是 BTC 的核心价值。\n3. **行动**: 在 OSL 安全购买首笔 BTC 的指南。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "OKX",
+          "url": "https://x.com/okx/status/2037339845396177076"
+        }
+      ],
+      "id": "ap_7"
+    },
+    {
+      "title": "David Sacks 卸任 + 美国监管变局 → 政策解读与香港合规定调",
+      "priority": "P2",
+      "category": "监管",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "深度研究（主）",
+      "site": "HK",
+      "summary": "美国「加密沙皇」卸任但 SEC 新主席支持创新，监管信号复杂。通过深度解读反衬香港 SFC 监管框架的稳定性，强化 HK 站合规叙事。",
+      "dont_do": "不对美国政治做主观评判，不预测具体立法结果。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 美国加密监管政策 2026\n- **长尾词**: SEC 新主席 Paul Atkins 态度、香港与美国加密监管对比\n### 内容大纲\n1. **解读**: 美国监管格局演变（David Sacks 离职 vs Atkins 友好表态）。\n2. **对比**: 香港 **确定性优势** 凸显。\n3. **建议**: 机构投资者为何应优先选择香港合规平台。"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 核心观点\n- **文案**: 「美国政策进入真空期，香港的确定性优势更加凸显。」\n- **分发**: 研报精选版点对点推送给 **VIP 用户** 与研究院订阅者。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "The Block",
+          "url": "https://www.theblock.co/post/395399/crypto-czar-david-sacks-leaves-post-to-go-to-broader-white-house-tech-role-as-legislation-faces-challenges"
+        },
+        {
+          "name": "EleanorTerrett",
+          "url": "https://x.com/EleanorTerrett/status/2037624066002063397"
+        },
+        {
+          "name": "WatcherGuru",
+          "url": "https://x.com/WatcherGuru/status/2037668510839558214"
+        }
+      ],
+      "id": "ap_8"
+    },
+    {
+      "title": "美伊战争 + 宏观避险情绪 → 战争背景下的加密资产表现",
+      "priority": "P1",
+      "category": "宏观",
+      "timing": "Wave",
+      "relation": "Indirect",
+      "intent": "恐慌避险（主）/ 深度研究（次）",
+      "site": "Both",
+      "summary": "中东局势升级驱动宏观避险需求。输出深度分析内容，截流搜索「加密避险」的用户，引导至 StableHub 与定投产品。",
+      "dont_do": "不消费战争灾难，保持客观中立；不直接称 BTC 为\"战争避险资产\"。",
+      "channels": [
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 加密货币避险属性\n- **长尾词**: 比特币在战争中表现、黄金与比特币相关性 2026\n### 内容大纲\n1. **复盘**: 历史冲突中 BTC 的价格走势客观呈现。\n2. **分析**: 为什么相关性在发生变化（BTC vs 黄金）。\n3. **策略**: 动荡环境下的 **资产配置思路**（StableHub 避险）。"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 话题营销\n- **话题**: 「地缘政治不确定性下，大家如何调整加密资产配置？」\n- **引导**: 保持客观中立，收集反馈，介绍 **StableHub 的稳定性**。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/474303"
+        },
+        {
+          "name": "WatcherGuru",
+          "url": "https://x.com/WatcherGuru/status/2037615078711660769"
+        },
+        {
+          "name": "APompliano",
+          "url": "https://x.com/APompliano/status/2037592147675812106"
+        },
+        {
+          "name": "Bybit_Official",
+          "url": "https://x.com/Bybit_Official/status/2037514979499204719"
+        }
+      ],
+      "id": "ap_9"
+    },
+    {
+      "title": "Bybit 推出 XAUT 期权 + 黄金避险叙事 → 黄金代币化 PI 教育",
+      "priority": "P2",
+      "category": "竞对/创新",
+      "timing": "Day",
+      "relation": "Direct",
+      "intent": "学习入圈（主）/ 迁移转换（次）",
+      "site": "HK",
+      "summary": "Bybit 上线黄金代币衍生品。借此热度向 OSL HK 站 PI 用户普及已有的 XAUT/PAXG 交易，满足合规黄金避险需求。",
+      "dont_do": "XAUT/PAXG 严禁向零售用户推广；不承诺任何黄金理财收益。",
+      "channels": [
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### CRM 策略\n- **目标**: HK 站 **已认证 PI 用户**（排除已有持仓者）。\n- **站内信**: 用户登录资产页触发，文案「在 OSL 轻松配置代币化黄金，享受避险敞口」。\n- **EDM**: 主题「PI 专属 | 代币化黄金，链上持有黄金的新方式」。"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 关键词规划\n- **主关键词**: 黄金代币化\n- **长尾词**: XAUT 是什么、PAXG 怎么买、加密货币买黄金方法\n### 内容大纲\n1. **优势**: 黄金代币化对比实物的流动性优势。\n2. **对比**: XAUT 与 PAXG 异同。\n3. **指南**: **OSL PI 用户** 交易 Step-by-Step 指南。"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Bybit_Official",
+          "url": "https://x.com/Bybit_Official/status/2037499878419378273"
+        }
+      ],
+      "id": "ap_10"
+    }
+  ]
+}
