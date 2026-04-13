@@ -53,6 +53,28 @@ competitors:
         selectors: ["a[href*='/news-insights/']"]
     api: []
 
+  - name: "Alchemy Pay"
+    region: "HK"
+    tier: 1
+    logo: "https://www.google.com/s2/favicons?domain=alchemypay.org&sz=64"
+    twitter: ["AlchemyPay"]
+    rss: []
+    web:
+      - url: "https://alchemypay.org/blog"
+        type: "blog"
+    api: []
+
+  - name: "First Digital Labs"
+    region: "HK"
+    tier: 1
+    logo: "https://www.google.com/s2/favicons?domain=firstdigitallabs.com&sz=64"
+    twitter: ["FDLabsHQ"]
+    rss: []
+    web:
+      - url: "https://firstdigitallabs.com/blog"
+        type: "blog"
+    api: []
+
 # ══════════════════════════════════════════════════════════════
 # T2 — 头部交易所（Global 站竞对，独立监控）
 # ══════════════════════════════════════════════════════════════
@@ -377,6 +399,8 @@ media_keywords:
   # HKbitEX 已退出
   VDX:           ["VDX", "Victory Securities"]
   Bullish:       ["Bullish exchange", "Bullish.com", "bullish.com"]
+  "Alchemy Pay":  ["Alchemy Pay", "AlchemyPay", "ACH token"]
+  "First Digital Labs": ["FDUSD", "First Digital", "FD121", "First Digital Labs"]
   # VNDC 已转型 DeFi
   Remitano:      ["Remitano"]
   Bitstamp:      ["Bitstamp"]
