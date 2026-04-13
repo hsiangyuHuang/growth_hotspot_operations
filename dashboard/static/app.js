@@ -7,17 +7,10 @@ let filterSite = "ALL";
 let _currentData = null;
 let refreshTimer = null;
 
-// Auto-detect: static site (Vercel) vs local FastAPI
-const IS_STATIC = !window.location.port || (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1');
-const API = IS_STATIC
-  ? { today: "./data/processed/latest.json", dates: "./data/processed/dates.json", history: (d) => `./data/processed/${d}/result.json` }
-  : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}` };
-const COMP_API = IS_STATIC
-  ? { today: "./data/competitors/pool.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}/result.json` }
-  : { today: "/api/competitors/today", dates: "/api/competitors/dates", history: (d) => `/api/competitors/history?date=${d}` };
-const SENT_API = IS_STATIC
-  ? { today: "./data/sentiment/pool.json", dates: "./data/sentiment/dates.json" }
-  : { today: "/api/sentiment/today", dates: "/api/sentiment/dates" };
+// Data paths — always use static files (works on both Vercel and local FastAPI)
+const API = { today: "./data/processed/latest.json", dates: "./data/processed/dates.json", history: (d) => `./data/processed/${d}/result.json` };
+const COMP_API = { today: "./data/competitors/pool.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}/result.json` };
+const SENT_API = { today: "./data/sentiment/pool.json", dates: "./data/sentiment/dates.json" };
 
 // ── Browser ID ──
 function getBrowserId() {
@@ -977,26 +970,19 @@ _compMdObserver.observe(document.body, { childList: true, subtree: true });
 async function loadSources() {
   showSkeleton();
   try {
-    let data;
-    if (IS_STATIC) {
-      const [srcRes, compRes] = await Promise.all([
-        fetch("./config/sources.yaml"),
-        fetch("./config/competitors.yaml"),
-      ]);
-      if (!srcRes.ok) throw new Error(`sources.yaml HTTP ${srcRes.status}`);
-      if (!compRes.ok) throw new Error(`competitors.yaml HTTP ${compRes.status}`);
-      const srcYaml = jsyaml.load(await srcRes.text());
-      const compYaml = jsyaml.load(await compRes.text());
-      data = {
-        rss: (srcYaml && srcYaml.rss) || [],
-        twitter: (srcYaml && srcYaml.twitter) || {},
-        competitors: (compYaml && compYaml.competitors) || [],
-      };
-    } else {
-      const res = await fetch("/api/sources");
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      data = await res.json();
-    }
+    const [srcRes, compRes] = await Promise.all([
+      fetch("./config/sources.yaml"),
+      fetch("./config/competitors.yaml"),
+    ]);
+    if (!srcRes.ok) throw new Error(`sources.yaml HTTP ${srcRes.status}`);
+    if (!compRes.ok) throw new Error(`competitors.yaml HTTP ${compRes.status}`);
+    const srcYaml = jsyaml.load(await srcRes.text());
+    const compYaml = jsyaml.load(await compRes.text());
+    const data = {
+      rss: (srcYaml && srcYaml.rss) || [],
+      twitter: (srcYaml && srcYaml.twitter) || {},
+      competitors: (compYaml && compYaml.competitors) || [],
+    };
     renderSourcesDashboard(data);
   } catch (e) {
     console.error("Failed to load sources:", e);
