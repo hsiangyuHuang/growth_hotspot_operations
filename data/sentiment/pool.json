@@ -1,51 +1,9 @@
 {
-  "date_range": {
-    "from": "2026-04-07",
-    "to": "2026-04-13"
-  },
-  "total_raw": 61,
+  "total_raw": 23,
   "items": [
     {
-      "title": "OSL Pay 联合 Bitunix 推出限时零手续费活动",
-      "summary": "OSL Pay 与 Bitunix 合作，在 **4 月 24 日前**提供限时**零手续费购币**优惠。新用户最高支持 **500 USDT** 额度，现有用户最高支持 **300 USDT** 额度。",
-      "category": "活动推广",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@cryptopuxiii",
-          "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
-        },
-        {
-          "platform": "twitter",
-          "author": "@BitunixOfficial",
-          "url": "https://x.com/BitunixOfficial/status/2042505610927784126"
-        }
-      ],
-      "published_at": "2026-04-12T09:30:04+00:00"
-    },
-    {
-      "title": "OSL Group 收购印尼交易所并完成更名",
-      "summary": "OSL Group 出资 **1500 万美元**收购印尼本地交易所 Koinsayang，并正式更名为 **OSL Indonesia**。该平台受印尼 **OJK 监管**，并已上线 Launchpool 等理财产品。",
-      "category": "其他",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@valenttt____",
-          "url": "https://x.com/valenttt____/status/2043230002163200115"
-        },
-        {
-          "platform": "twitter",
-          "author": "@iniheksa",
-          "url": "https://x.com/iniheksa/status/2042165024752586843"
-        }
-      ],
-      "published_at": "2026-04-12T07:29:28+00:00"
-    },
-    {
-      "title": "香港首批稳定币牌照预期及 OSL 监管动态",
-      "summary": "市场热议香港**首批稳定币牌照**名单，虽然首批倾向于银行（如汇丰、渣打），但分析师认为 **OSL 作为最早的持牌交易所**具备极高稳定性。OSL 股价此前因牌照预期**上涨约 20%**，反映出市场对其合规地位的高度关注。",
+      "title": "香港稳定币牌照申请进展与市场预期",
+      "summary": "市场热议香港**首批稳定币牌照**发放进度。虽然 OSL 此前因获牌传闻导致股价上涨，但最新消息指出金管局或优先发放给**银行（如汇丰、渣打）**，OSL 预计在后续轮次中获批。分析称 OSL 作为合规持牌交易所表现稳健，但面临银行机构的竞争压力。",
       "category": "监管合规",
       "importance": "high",
       "sources": [
@@ -61,43 +19,87 @@
         },
         {
           "platform": "twitter",
-          "author": "@dachong007",
-          "url": "https://x.com/dachong007/status/2042479152566358441"
+          "author": "@apacfinstab",
+          "url": "https://x.com/apacfinstab/status/2039312023461507572"
+        },
+        {
+          "platform": "twitter",
+          "author": "@nifty0x",
+          "url": "https://x.com/nifty0x/status/2038986413597716486"
         }
       ],
       "published_at": "2026-04-10T14:34:11+00:00"
     },
     {
-      "title": "OSL Group 延长 USDGO 稳定币奖励计划",
-      "summary": "OSL Group 宣布将通过 StableHub 延长其稳定币 **USDGO 的利息奖励计划**，旨在提高用户持有积极性。",
+      "title": "OSL 集团公布 2025 年度业绩：收入创纪录并转型稳定币平台",
+      "summary": "OSL 集团正式发布 **2025 年年度业绩**，实现**创纪录收入**与强劲增长。集团正从数字资产交易所战略转型为**全球稳定币支付与交易平台**，市场分析师对公司迈向盈利的路径表示乐观。",
+      "category": "市场分析",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2038989402131849323"
+        },
+        {
+          "platform": "twitter",
+          "author": "@charles_mo95",
+          "url": "https://x.com/charles_mo95/status/2039022657560076630"
+        },
+        {
+          "platform": "twitter",
+          "author": "@periodtrader_",
+          "url": "https://x.com/periodtrader_/status/2040086446757847231"
+        }
+      ],
+      "published_at": "2026-03-31T14:38:50+00:00"
+    },
+    {
+      "title": "OSL 进军印尼市场：收购 Koinsayang 并上线 Launchpool",
+      "summary": "OSL 集团以 **1500 万美元**收购印尼本土交易所 Koinsayang 并更名为 **OSL Indonesia**。该平台现已推出首个 **Launchpool**，支持 **Tether Gold (XAUT)** 质押奖励，奖励金额达 1.5 亿印尼盾，标志着其在东南亚合规市场的扩张。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@valenttt____",
+          "url": "https://x.com/valenttt____/status/2043230002163200115"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2039161103683592590"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Airdropfinds",
+          "url": "https://x.com/Airdropfinds/status/2038822429703974969"
+        }
+      ],
+      "published_at": "2026-04-12T07:29:28+00:00"
+    },
+    {
+      "title": "OSL Pay 推广活动：零手续费买币福利",
+      "summary": "OSL Pay 联合 Bitunix 等合作伙伴推出限时**零手续费买币**活动。新旧用户通过卡支付可享受额度不等的费用减免，活动持续至 4 月 24 日，旨在吸引更多用户通过其支付系统进行资金存取。",
       "category": "活动推广",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@LeeDG_GF",
-          "url": "https://x.com/LeeDG_GF/status/2042223606504345927"
-        }
-      ],
-      "published_at": "2026-04-09T12:50:25+00:00"
-    },
-    {
-      "title": "OSL 场外交易（OTC）业务讨论",
-      "summary": "用户反馈 OSL Exchange 的 **OTC 门槛为 1 亿印尼盾**。该业务主要面向追求**低于市场价**且交易便捷的大额投资者或出口贸易公司。",
-      "category": "产品动态",
-      "importance": "low",
-      "sources": [
+          "author": "@BitunixOfficial",
+          "url": "https://x.com/BitunixOfficial/status/2042505610927784126"
+        },
         {
           "platform": "twitter",
-          "author": "@hoteliercrypto",
-          "url": "https://x.com/hoteliercrypto/status/2041432532013740164"
+          "author": "@cryptopuxiii",
+          "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
         }
       ],
-      "published_at": "2026-04-07T08:26:58+00:00"
+      "published_at": "2026-04-12T09:30:04+00:00"
     },
     {
-      "title": "Banxa 与 OSL 在 TON 链上交易额突破 5000 万美元",
-      "summary": "支付基础设施 Banxa 与 OSL 合作，在 **TON 区块链**上的处理交易量达到 **5000 万美元**，展示了机构级和消费端加密支付的增长。",
+      "title": "OSL 与 Banxa 合作在 TON 链处理量突破 5000 万美元",
+      "summary": "OSL 与 Banxa 宣布在 **TON 区块链**上的处理交易量已达 **5000 万美元**。该里程碑展示了机构和消费者对基于 TON 基础设施的加密支付采用率不断增长。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -110,8 +112,8 @@
       "published_at": "2026-04-06T10:00:02+00:00"
     },
     {
-      "title": "用户反馈：要求 OSL 尽快上线人民币及港币稳定币",
-      "summary": "用户对 **OSL Exchange** 表达不满，强烈建议平台尽快上线**人民币（CNY）稳定币**及**香港稳定币**，反映出用户对本地化稳定币资产的迫切交易需求。",
+      "title": "用户反馈：建议上线港元及人民币稳定币",
+      "summary": "用户在社交媒体向 OSL 官方反馈，强烈要求平台尽快上线**港元稳定币（HKD Stablecoin）**和**人民币稳定币（Yuan Stablecoin）**，认为当前产品线在稳定币选择上存在滞后。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -124,36 +126,8 @@
       "published_at": "2026-04-05T09:04:00+00:00"
     },
     {
-      "title": "分析师预测 OSL Group 2025 年盈利路径",
-      "summary": "市场人士对 OSL Group 2025 年业绩进行预测，看好其专注于**持牌、机构级加密服务**所带来的**强劲增长与盈利潜力**。",
-      "category": "市场分析",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@periodtrader_",
-          "url": "https://x.com/periodtrader_/status/2040086446757847231"
-        }
-      ],
-      "published_at": "2026-04-03T15:18:06+00:00"
-    },
-    {
-      "title": "OSL 印度尼西亚分部招聘加密内容专家",
-      "summary": "OSL 正在为其**印尼（Indonesia）业务**招募**加密内容专家（Crypto content specialist）**，显示其正在加强东南亚市场的运营投入。",
-      "category": "其他",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@0xkaccy",
-          "url": "https://x.com/0xkaccy/status/2039786256008368199"
-        }
-      ],
-      "published_at": "2026-04-02T19:25:15+00:00"
-    },
-    {
-      "title": "OSL 与 Plume 合作构建加密支付系统",
-      "summary": "**$PLUME 与 OSL** 正在合作**构建支付系统**，旨在加密货币市场发生重大波动前完成基础设施的战略布局。",
+      "title": "OSL 与 Plume 合作布局加密支付系统",
+      "summary": "**Plume** 与 **OSL** 达成合作，共同构建支付系统。此举被视为双方在加密支付基础设施领域的深度布局，旨在通过合规渠道提升支付效率。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -166,38 +140,10 @@
       "published_at": "2026-04-01T17:12:51+00:00"
     },
     {
-      "title": "香港首批稳定币牌照发放延迟，OSL 仍在等待中",
-      "summary": "**香港金管局（HKMA）**推迟了首批**稳定币牌照**的发放，涉及机构包括汇丰、标准普尔及 **OSL**，反映出监管机构对合规性的审慎态度。",
-      "category": "监管合规",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@apacfinstab",
-          "url": "https://x.com/apacfinstab/status/2039312023461507572"
-        }
-      ],
-      "published_at": "2026-04-01T12:00:49+00:00"
-    },
-    {
-      "title": "OSL 印尼站正式上线首个 Launchpool 业务",
-      "summary": "**OSL Indonesia** 宣布推出首个 **Launchpool**，用户可通过质押 USDT 或 **XAUT（实物黄金抵押代币）**参与获取奖励。",
+      "title": "OSL 将在香港联合主办加密金融高管峰会",
+      "summary": "OSL 宣布将于 4 月 21 日在香港数码港与复星财富、FinChain 等机构联合主办 **Cypher Asia：加密金融高管峰会**，探讨行业领导力与金融科技未来。",
       "category": "活动推广",
       "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2039161103683592590"
-        }
-      ],
-      "published_at": "2026-04-01T02:01:07+00:00"
-    },
-    {
-      "title": "OSL 联合主办香港 Cypher Asia 加密金融峰会",
-      "summary": "OSL 将作为**联合主办方**，参与 4 月 21 日在香港举办的 **Cypher Asia 加密金融高管峰会**，探讨加密金融基础设施与行业发展。",
-      "category": "活动推广",
-      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -206,30 +152,10 @@
         }
       ],
       "published_at": "2026-03-31T05:31:32+00:00"
-    },
-    {
-      "title": "OSL 印度尼西亚上线首个 Launchpool 活动",
-      "summary": "OSL 印度尼西亚推出首个 **Launchpool** 平台功能，支持用户通过质押 **USDT 或 XAUT（Tether Gold）** 获取奖励。活动总奖池为 **1.5 亿印尼盾**，旨在结合加密流动性与实物黄金价值。",
-      "category": "活动推广",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2038795027565129997"
-        },
-        {
-          "platform": "twitter",
-          "author": "@Airdropfinds",
-          "url": "https://x.com/Airdropfinds/status/2038822429703974969"
-        },
-        {
-          "platform": "twitter",
-          "author": "@ThisEmmy_1",
-          "url": "https://x.com/ThisEmmy_1/status/2039026956033777933"
-        }
-      ],
-      "published_at": "2026-03-31T01:46:28+00:00"
     }
-  ]
+  ],
+  "date_range": {
+    "from": "2026-04-07",
+    "to": "2026-04-13"
+  }
 }

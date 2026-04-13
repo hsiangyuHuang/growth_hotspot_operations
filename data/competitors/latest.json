@@ -1,567 +1,484 @@
 {
-  "run_date": "2026-04-10",
+  "run_date": "2026-04-13",
   "competitors": [
     {
       "name": "HashKey",
-      "summary": "近期动态频繁，主要围绕机构级合作伙伴关系的建立以及香港 Web3 嘉年华的筹备。",
+      "summary": "全面公布 2026 香港 Web3 嘉年华议程，并举办 Asia Connect Forum 亚洲连接论坛。",
       "events": [
         {
-          "title": "与 Oceanus Group 建立战略合作伙伴关系",
-          "category": "合作伙伴",
-          "summary": "双方将利用 **HashKey OTC** 的合规结算轨道和 Oceanus 的 **ODIN** 平台，推进受监管的稳定币在贸易金融中的结算。**目标**：打破传统贸易融资与数字资产之间的隔阂。",
+          "title": "2026 香港 Web3 嘉年华全议程揭晓",
+          "category": "活动推广",
+          "summary": "**公布核心议题与发展方向**\n- **核心焦点**：AI、代币化 (RWA)、稳定币及机构采用\n- **定位**：反映加密叙事向现实金融基础设施的转型",
+          "date": "2026-04-13",
           "importance": "high",
           "sources": [
             {
-              "name": "twitter:@HashKeyGroup",
-              "url": "https://x.com/HashKeyGroup/status/2042148334400631145"
+              "name": "Twitter",
+              "url": "https://x.com/HashKeyGroup/status/2043530125694902437"
             }
           ]
         },
         {
-          "title": "通过持牌交易所提供 ETH 质押服务",
-          "category": "产品更新",
-          "summary": "由 **HashKey Cloud** 提供技术支持，面向机构和专业投资者提供透明、合规的以太坊质押参与路径。",
+          "title": "举办亚洲连接论坛 (Asia Connect Forum)",
+          "category": "合作伙伴",
+          "summary": "**联合多位行业领袖探讨合规与生态增长**\n- **合作伙伴**：AWS、FCC Analytics、UnifiedLabs 等\n- **议题**：涵盖 RWA 演进、合规交易所技术及跨境协作",
+          "date": "2026-04-13",
           "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@HashKeyExchange",
-              "url": "https://x.com/HashKeyExchange/status/2042094213261881379"
-            }
-          ]
-        },
-        {
-          "title": "2026 香港 Web3 嘉年华议程发布",
-          "category": "活动推广",
-          "summary": "第四届嘉年华将于 **4 月 20-23 日**举行。**参与方**：万向区块链与 HashKey Group 联合主办，将汇集 1200 多位行业领袖。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5210171"
+              "name": "Twitter",
+              "url": "https://x.com/HashKeyExchange/status/2043609624558047574"
             }
           ]
         }
       ],
-      "region": "HK"
+      "region": "HK",
+      "logo": "https://www.google.com/s2/favicons?domain=hashkey.com&sz=64"
     },
     {
       "name": "HKVAX",
       "region": "HK",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=hkvax.com&sz=64",
+      "summary": "近7日未监测到 HKVAX 的公开动态",
       "events": []
     },
     {
       "name": "VDX",
       "region": "HK",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=vdx.com&sz=64",
+      "summary": "近7日未监测到 VDX 的公开动态",
       "events": []
     },
     {
       "name": "Bullish",
       "region": "HK",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=bullish.com&sz=64",
+      "summary": "近7日未监测到 Bullish 的公开动态",
       "events": []
     },
     {
       "name": "Binance",
-      "summary": "今日侧重于预测市场与机构级基础设施的发布，同时积极参与打击欺诈的国际执法行动。",
+      "summary": "宣布上线首发币种 GENIUS 并开启空投，同时推出 BTC 零手续费活动并深度参与 2026 香港 Web3 嘉年华。",
       "events": [
         {
-          "title": "Binance 钱包集成 Predict.fun 推出零 Gas 费预测市场",
-          "category": "产品更新",
-          "summary": "**Binance 钱包**已集成基于 BNB 链的 **Predict.fun** 平台，支持用户直接参与政治、体育等领域的预测。**关键信息**：Binance 将赞助所有交易的 Gas 费用，旨在进军目前交易量激增至 200 亿美元的预测市场领域，对标 Polymarket 等平台。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Binance Blog",
-              "url": "https://x.com/binance/status/2042181226836975992"
-            },
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/396858/binance-wallet-rolls-out-gas-free-prediction-markets-via-predict-fun-integration"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/binance-prediction-markets-app"
-            }
-          ]
-        },
-        {
-          "title": "Binance Capital Connect 机构级交易平台上线",
-          "category": "产品更新",
-          "summary": "针对专业投资者推出 **Binance Capital Connect**。**主要功能**：提供机构级基础设施，支持专业交易团队直接在 Binance 生态内进行原生资产管理与连接。",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@_RichardTeng",
-              "url": "https://x.com/_RichardTeng/status/2042150136856637473"
-            }
-          ]
-        },
-        {
-          "title": "Binance 支持英国 NCA 冻结 1200 万美元诈骗资金",
-          "category": "监管合规",
-          "summary": "Binance 联合英国 **NCA**、美国特勤局及加拿大当局开展“大西洋行动”。**成果**：成功冻结价值 **1200 万美元**的审批钓鱼诈骗资金，识别出超过 2 万名潜在受害者。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2042289294598160494"
-            }
-          ]
-        },
-        {
-          "title": "Binance 广场推出 Tip to Chat 打赏私聊功能",
-          "category": "产品更新",
-          "summary": "创作者可以通过设置打赏阈值开启 **1-on-1 私信**。**影响**：为内容创作者提供新的收入来源，增强粉丝与头部创作者的直接互动。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2042272007446810726"
-            }
-          ]
-        },
-        {
-          "title": "Binance 上线 USDS 并开启相关理财与杠杆服务",
+          "title": "上线 Genius Foundation (GENIUS) 及积分空投",
           "category": "新币上线",
-          "summary": "平台新增对 **USDS** 稳定币的支持。**涉及产品**：包括赚币（Earn）、买币、闪兑、VIP 借贷以及杠杆交易。",
-          "importance": "medium",
+          "summary": "**Binance Alpha 宣布首发上线 GENIUS**\n- **交易开启**：2026-04-13 19:00 (UTC+8)\n- **空投申领**：持有至少 230 Alpha 积分的用户可领取 240 枚代币\n- **动态门槛**：若未领完，积分要求每 5 分钟降低 5 分",
+          "date": "2026-04-13",
+          "importance": "high",
           "sources": [
             {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/0a9581bcaef24410a1dace51722112c8"
+              "name": "律动 BlockBeats",
+              "url": "https://m.theblockbeats.info/flash/340884"
             }
           ]
         },
         {
-          "title": "Binance 计划下架 BIFI、FIO 等 6 个代币",
-          "category": "其他",
-          "summary": "计划于 **2026 年 4 月 23 日**下架 BIFI、FIO、FUN、MDT、OXT、WAN。**提示**：用户需在截止日期前完成提现或资产转换。",
-          "importance": "low",
+          "title": "推出 BTC/U 交易对零手续费促销",
+          "category": "活动推广",
+          "summary": "**BTC/U 现货交易对开启免佣金活动**\n- **主要内容**：针对特定 BTC 交易对提供零手续费优惠\n- **目标**：提升核心资产流动性并回馈交易者",
+          "date": "2026-04-13",
+          "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2042121788910661957"
+              "name": "Twitter",
+              "url": "https://x.com/binance/status/2043564943606476899"
+            }
+          ]
+        },
+        {
+          "title": "双 CEO 将出席 2026 香港 Web3 嘉年华",
+          "category": "合作伙伴",
+          "summary": "**Richard Teng 与何一受邀作为演讲嘉宾**\n- **时间**：2026年4月20日\n- **详情**：何一 (13:30-14:00) 与 Richard Teng (15:50-16:30) 将在首日发表重要演说",
+          "date": "2026-04-13",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/binance/status/2043509480042779021"
+            }
+          ]
+        },
+        {
+          "title": "跟单交易上线自动投资功能",
+          "category": "产品更新",
+          "summary": "**新增 Copy Trading Auto Invest 功能**\n- **功能点**：允许用户在跟单时，按固定周期自动向被跟单组合追加资金\n- **目的**：实现跟单资产的长期自动增长",
+          "date": "2026-04-13",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/binance/status/2043162191696990476"
+            }
+          ]
+        },
+        {
+          "title": "集成 Predict.fun 预测市场交易",
+          "category": "产品更新",
+          "summary": "**Binance 钱包集成预测市场功能**\n- **核心内容**：用户可直接通过钱包余额进行预测市场合约交易\n- **技术合作**：通过 Predict.fun 实现无需跨链或转移资金的直接交易",
+          "date": "2026-04-13",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Tokocrypto News",
+              "url": "https://news.tokocrypto.com/prediction-market-masuk-aplikasi-binance-era-baru-trading/"
             }
           ]
         }
       ],
-      "region": "GLOBAL"
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=binance.com&sz=64"
     },
     {
       "name": "OKX",
-      "summary": "大力推广 AI 代理钱包，同时 CEO Star 在合规与诚信问题上对 Binance 前 CEO CZ 做出公开回应。",
+      "summary": "深入参与欧洲加密监管框架制定，并在美国市场新增多种代币上线。",
       "events": [
         {
-          "title": "OKX 推出支持 AI 代理生态的智能钱包",
-          "category": "产品更新",
-          "summary": "**技术特点**：支持所有运行 MCP/CLI 的框架，覆盖约 20 条链。**安全性**：私钥安全存储于 **TEE**（可信执行环境）中，进军 AI 代理经济。",
+          "title": "深度参与欧洲 MiCA 监管框架对话",
+          "category": "监管合规",
+          "summary": "**全球合伙人 Haider 与欧盟委员会顾问进行炉边谈话**\n- **主题**：探讨 MiCA 监管后的发展方向\n- **目标**：为欧洲货币市场构建可信的基础设施",
+          "date": "2026-04-13",
           "importance": "high",
           "sources": [
             {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2042090901955108903"
+              "name": "Twitter",
+              "url": "https://x.com/okx/status/2043124467228930504"
             }
           ]
         },
         {
-          "title": "OKX CEO Star 回应 CZ 10 亿美元赌约指控",
-          "category": "监管合规",
-          "summary": "Star 明确表示基于合规要求**不会参与公开对赌**。**立场**：对 CZ 书籍及采访中的不实表述进行澄清，并质疑此类对赌行为是否符合受监管公司受益人（UBO）的操守。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/newsflash/476073"
-            }
-          ]
-        },
-        {
-          "title": "OKX 现货上线 OneFootball 粉丝代币 OFC",
+          "title": "在美国市场上架 MON、KAT 和 ROBO",
           "category": "新币上线",
-          "summary": "上线 **$OFC** 代币并开启交易赚币活动。**详情**：用户参与活动可瓜分 1000 万 OFC 奖池。",
+          "summary": "**多币种正式面向美国交易者开放**\n- **代币列表**：$MON, $KAT, $ROBO\n- **市场进展**：进一步扩大美国合规交易市场的资产覆盖",
+          "date": "2026-04-13",
           "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2042218473666056674"
+              "name": "Twitter",
+              "url": "https://x.com/okx/status/2043396505516515770"
+            }
+          ]
+        },
+        {
+          "title": "Orbit 跟单系统功能升级",
+          "category": "产品更新",
+          "summary": "**上线基于业绩的数据过滤功能**\n- **关键指标**：支持按 ROI、胜率和验证历史过滤交易员\n- **策略**：强调实盘业绩而非单纯的社区关注度",
+          "date": "2026-04-13",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/okx/status/2043207528876523642"
             }
           ]
         }
       ],
-      "region": "GLOBAL"
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=okx.com&sz=64"
     },
     {
       "name": "Bybit",
-      "summary": "今日动态集中在区域性合规调整、AI 交易工具推广及黄金挂钩产品的激励活动。",
+      "summary": "积极参与 2026 巴黎区块链周，并与合作伙伴启动全球影响力加速器计划。",
       "events": [
         {
-          "title": "Bybit P2P 停止支持保加利亚列弗 (BGN)",
-          "category": "监管合规",
-          "summary": "受监管更新影响，将于 **4 月 10 日**起停止 P2P 平台的 BGN 交易。**用户操作**：系统将自动取消所有未完成订单。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2042361915263922649"
-            }
-          ]
-        },
-        {
-          "title": "Bybit AI Hub 升级及 NVDAX 空投活动",
-          "category": "产品更新",
-          "summary": "推出 **AI Hub** 升级版，支持通过 Prompt 指令进行交易。同时开启 **NVDAX 空投**，用户通过完成 10 美元的交易任务即可领取奖励。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2042271320499441920"
-            }
-          ]
-        },
-        {
-          "title": "XAUT 期权手续费优惠与理财年化提升",
+          "title": "倒计时参与巴黎区块链周 (Paris Block Week)",
           "category": "活动推广",
-          "summary": "黄金代币 XAUT 相关优惠：**期权手续费**上限从 7% 降至 6%；**赚币产品**年化收益率提升至最高 11%。",
-          "importance": "low",
+          "summary": "**作为重要参与方出席欧洲区块链盛会**\n- **时间**：倒计时 3 天\n- **目标**：推动加密货币未来发展的行业对话",
+          "date": "2026-04-13",
+          "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2042214905055453317"
+              "name": "Twitter",
+              "url": "https://x.com/Bybit_Official/status/2043350208172773408"
+            }
+          ]
+        },
+        {
+          "title": "启动 BGA 全球影响力加速器",
+          "category": "合作伙伴",
+          "summary": "**Bybit Global Alliance (BGA) 联合多方发布新基金**\n- **合作方**：Burnt (XION) 及 HackQuest\n- **目的**：通过 Joint Fund 支持具有社会影响力的 Web3 项目",
+          "date": "2026-04-13",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/Bybit_Official/status/2043566798503895231"
             }
           ]
         }
       ],
-      "region": "GLOBAL"
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=bybit.com&sz=64"
     },
     {
       "name": "Coinbase",
-      "summary": "今日聚焦于传统金融人才的流向以及与 MarketVector 合作推出的创新指数。",
+      "summary": "向国际合格交易者推出美股科技巨头杠杆产品，并面临比特币 ETF 托管集中度风险的讨论。",
       "events": [
         {
-          "title": "Coinbase 前高管 Brett Redfearn 出任 Securitize 总裁",
-          "category": "人事变动",
-          "summary": "**背景**：Redfearn 曾任 Coinbase 资本市场负责人及 SEC 官员。**意义**：显示加密人才持续流入 RWA 与代币化基建领域。",
-          "importance": "medium",
+          "title": "推出“七巨头”美股杠杆交易产品",
+          "category": "产品更新",
+          "summary": "**上线 Mag 7 杠杆敞口产品**\n- **包含标的**：AAPL, AMZN, GOOGL, META, MSFT, NVDA, TSLA\n- **适用人群**：美国以外的合格交易者\n- **优势**：无需传统经纪账户即可获得杠杆敞口",
+          "date": "2026-04-13",
+          "importance": "high",
           "sources": [
             {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/sec-official-securitize-president-board"
+              "name": "Twitter",
+              "url": "https://x.com/coinbase/status/2043298264888508639"
             }
           ]
         },
         {
-          "title": "与 MarketVector 合作推出 BTC 与代币化黄金指数",
-          "category": "产品更新",
-          "summary": "新指数旨在跟踪 **BTC 与黄金**的协同表现。**目的**：探讨加密货币在价值存储角色中与传统避险资产的相关性。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/marketvector-coinbase-bitcoin-gold-index-store-of-value-debate"
-            }
-          ]
-        }
-      ],
-      "region": "GLOBAL"
-    },
-    {
-      "name": "Kraken",
-      "summary": "今日动态以产品功能优化为主。",
-      "events": [
-        {
-          "title": "上线 NEAR 协议 5% 年化质押服务",
-          "category": "产品更新",
-          "summary": "支持一键参与 **NEAR** 质押，无需管理验证器。**收益率**：提供高达 5% 的 APY。",
+          "title": "首席法律官将出席 Consensus 迈阿密峰会",
+          "category": "其他",
+          "summary": "**Paul Grewal 确认参加 Consensus 2026**\n- **身份**：Coinbase 首席法律官，加密行业法律风向标人物\n- **关注点**：将讨论监管政策与法律诉讼进展",
+          "date": "2026-04-13",
           "importance": "low",
           "sources": [
             {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/staking/near-earn-up-to-5-apy"
+              "name": "Twitter",
+              "url": "https://x.com/CoinDesk/status/2043372070986256814"
             }
           ]
         }
       ],
-      "region": "GLOBAL"
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=coinbase.com&sz=64"
+    },
+    {
+      "name": "Kraken",
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=kraken.com&sz=64",
+      "summary": "近7日未监测到 Kraken 的公开动态",
+      "events": []
     },
     {
       "name": "Remitano",
-      "summary": "今日无重大动态",
-      "events": [],
-      "region": "VN"
+      "region": "VN",
+      "logo": "https://www.google.com/s2/favicons?domain=remitano.com&sz=64",
+      "summary": "近7日未监测到 Remitano 的公开动态",
+      "events": []
     },
     {
       "name": "bitFlyer",
       "region": "JP",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=bitflyer.com&sz=64",
+      "summary": "近7日未监测到 bitFlyer 的公开动态",
       "events": []
     },
     {
       "name": "Coincheck",
       "region": "JP",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=coincheck.com&sz=64",
+      "summary": "近7日未监测到 Coincheck 的公开动态",
       "events": []
     },
     {
       "name": "GMO Coin",
-      "summary": "今日无重大动态",
-      "events": [],
-      "region": "JP"
+      "summary": "持续运营中，近期主要针对定期积存交易的执行时间规则进行优化。",
+      "events": [
+        {
+          "title": "修改积存加密资产 (Tsumitate) 处理规则",
+          "category": "其他",
+          "summary": "**调整系统执行与申请受理时间**\n- **生效日期**：2026年4月18日\n- **目的**：优化定期定额投资业务的处理效率",
+          "date": "2026-04-13",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/gmo_coin/status/2043509486699303193"
+            }
+          ]
+        }
+      ],
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=coin.z.com&sz=64"
     },
     {
       "name": "bitbank",
-      "summary": "今日侧重于技术性系统维护。",
+      "summary": "持续运营中，近期受网络升级影响，暂时关闭了 FLR 和 DOT 的充提业务。",
       "events": [
         {
-          "title": "因银行系统维护暂停法币充提",
+          "title": "因网络升级暂停 FLR 与 DOT 充提",
           "category": "其他",
-          "summary": "受 **住信SBIネット銀行** 临时维护影响，bitbank 的日元出入金功能受到限制。",
+          "summary": "**临时维护公告**\n- **受影响币种**：Flare (FLR)、Polkadot (DOT)\n- **状态**：充值与提取业务暂时停止，直至网络升级完成",
+          "date": "2026-04-13",
           "importance": "low",
           "sources": [
             {
-              "name": "twitter:@bitbank_inc",
-              "url": "https://x.com/bitbank_inc/status/2042065212703175042"
+              "name": "Twitter",
+              "url": "https://x.com/bitbank_inc/status/2043513275619623156"
             }
           ]
         }
       ],
-      "region": "JP"
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=bitbank.cc&sz=64"
     },
     {
       "name": "SBI VC Trade",
-      "summary": "持续推进高收益稳定币理财产品。",
-      "events": [
-        {
-          "title": "USDC 借贷理财年化收益率维持 10%",
-          "category": "活动推广",
-          "summary": "**期限**：12 周。**规模**：名额有限，旨在通过高收益吸引 USDC 持有者进入其生态。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@sbivc_official",
-              "url": "https://x.com/sbivc_official/status/2042104961690132556"
-            }
-          ]
-        }
-      ],
-      "region": "JP"
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=sbivc.co.jp&sz=64",
+      "summary": "近7日未监测到 SBI VC Trade 的公开动态",
+      "events": []
     },
     {
       "name": "Rakuten Wallet",
-      "summary": "乐天钱包将于本月中旬扩充大量主流币种交易对。",
-      "events": [
-        {
-          "title": "宣布上线 XRP、DOGE 等 5 种新代币现货交易",
-          "category": "新币上线",
-          "summary": "计划于 **4 月 15 日**新增 XRP、DOGE、SHIB、TON 和 XLM。**促销活动**：对购买 XRP 达一定额度的用户提供额外代币奖励。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Rakuten_Wallet",
-              "url": "https://x.com/Rakuten_Wallet/status/2042167727968952428"
-            }
-          ]
-        }
-      ],
-      "region": "JP"
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=rakuten-wallet.co.jp&sz=64",
+      "summary": "近7日未监测到 Rakuten Wallet 的公开动态",
+      "events": []
     },
     {
       "name": "Bitstamp",
-      "summary": "Bitstamp 已在 Robinhood 框架下支持主流币种的永续合约交易。",
-      "events": [
-        {
-          "title": "Bitstamp 上线加密货币永续合约服务",
-          "category": "产品更新",
-          "summary": "**主要特点**：在受监管环境下提供服务，支持 BTC、ETH、SOL 和 XRP。**杠杆倍数**：最高支持 10 倍杠杆。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bitstamp",
-              "url": "https://x.com/Bitstamp/status/2042195820947116344"
-            }
-          ]
-        }
-      ],
-      "region": "EU"
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=bitstamp.net&sz=64",
+      "summary": "近7日未监测到 Bitstamp 的公开动态",
+      "events": []
     },
     {
       "name": "Bitpanda",
       "region": "EU",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=bitpanda.com&sz=64",
+      "summary": "近7日未监测到 Bitpanda 的公开动态",
       "events": []
     },
     {
       "name": "Bitvavo",
       "region": "EU",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=bitvavo.com&sz=64",
+      "summary": "近7日未监测到 Bitvavo 的公开动态",
       "events": []
     },
     {
       "name": "Crypto.com",
-      "summary": "重点拓展欧洲理财市场，并紧跟 MakerDAO 的品牌更名步伐。",
+      "summary": "庆祝品牌成立 10 周年，通过赞助 UFC 大型赛事及设立百万美元奖励池进行大规模推广。",
       "events": [
         {
-          "title": "在欧盟推出高达 3% 年化的现金收益产品",
-          "category": "产品更新",
-          "summary": "欧盟用户现可通过 App 赚取 **EUR 余额利息**。**政策**：年化最高 3%，无最低起存额，无锁定期。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@cryptocom",
-              "url": "https://x.com/cryptocom/status/2042165623577317686"
-            }
-          ]
-        },
-        {
-          "title": "支持 DAI 更名为 USDS 的代币置换",
-          "category": "产品更新",
-          "summary": "全面配合 MakerDAO 的品牌升级。**时效**：4 月 10 日后将永久停止旧版 DAI 的交易与充提。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@cryptocom",
-              "url": "https://x.com/cryptocom/status/2042157672624005243"
-            }
-          ]
-        }
-      ],
-      "region": "EU"
-    },
-    {
-      "name": "Gemini",
-      "summary": "面临收购压力，有买家正在评估其部分业务。",
-      "events": [
-        {
-          "title": "Gemini 寻求部分资产出售或收购",
-          "category": "融资/IPO",
-          "summary": "知情人士透露，潜在买家正对 **Gemini** 交易所进行评估。**背景**：该交易所由 Winklevoss 兄弟支持，当前正处于潜在的收购谈判中。",
+          "title": "赞助 UFC FREEDOM 250 并设立百万美元奖金",
+          "category": "活动推广",
+          "summary": "**庆祝 10 周年全球品牌活动**\n- **奖金池**：为“当晚最佳比赛”提供 **100 万美元 $CRO 奖金**\n- **历史意义**：配合美国 250 周年庆在白宫举行相关活动",
+          "date": "2026-04-13",
           "importance": "high",
           "sources": [
             {
-              "name": "CoinDesk",
-              "url": "https://x.com/CoinDesk/status/2042287954920415516"
+              "name": "Twitter",
+              "url": "https://x.com/cryptocom/status/2043166018382500220"
+            }
+          ]
+        },
+        {
+          "title": "开启布达佩斯欧冠决赛推广活动",
+          "category": "活动推广",
+          "summary": "**“Destination: Budapest” 交易赛上线**\n- **激励内容**：赢取高达 $3,000 BTC 及 **欧冠决赛特等票**\n- **参与门槛**：交易至少 $50 的 $CRO 即可参与",
+          "date": "2026-04-13",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/cryptocom/status/2043593786190602552"
             }
           ]
         }
       ],
-      "region": "EU"
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=crypto.com&sz=64"
+    },
+    {
+      "name": "Gemini",
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=gemini.com&sz=64",
+      "summary": "近7日未监测到 Gemini 的公开动态",
+      "events": []
     },
     {
       "name": "Indodax",
-      "summary": "通过上线美股代币化证券及举办多场黄金代币竞赛吸引交易流量。",
-      "events": [
-        {
-          "title": "上线代币化股票交易服务",
-          "category": "产品更新",
-          "summary": "用户现可交易 **Google、Tesla、NVIDIA** 等美股巨头的代币化证券。**优势**：降低了印尼用户参与美股投资的门槛。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@indodax",
-              "url": "https://x.com/indodax/status/2042077873553723794"
-            }
-          ]
-        },
-        {
-          "title": "启动 XAUt 交易竞赛与空投激励",
-          "category": "活动推广",
-          "summary": "推出总价值超过 **8000 万印尼盾**的 XAUt 奖励活动。**目标**：鼓励用户持有 Tether Gold，尤其是针对新用户发放空投。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/trading-competition-xaut/"
-            }
-          ]
-        }
-      ],
-      "region": "ID"
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=indodax.com&sz=64",
+      "summary": "近7日未监测到 Indodax 的公开动态",
+      "events": []
     },
     {
       "name": "Tokocrypto",
-      "summary": "与印尼监管机构 OJK 深度合作，同时跟随 Binance 同步下架多款代币。",
+      "summary": "举办 ROBO 代币返现活动，并持续提供每日市场深度分析报告。",
       "events": [
         {
-          "title": "与 OJK 共同开启 2026 加密文学月 (BLK)",
-          "category": "合作伙伴",
-          "summary": "由 **Tokocrypto**、OJK 和印尼区块链协会（ABI）联合发起。**目的**：通过官方教育项目加强市场对加密资产基本面的理解。",
+          "title": "ROBO 代币返现活动进入最后期限",
+          "category": "活动推广",
+          "summary": "**最后 2 天参与机会**\n- **奖励额度**：总奖池达 **1.95 亿印尼盾**\n- **方式**：通过交易 $ROBO 获得现金回馈",
+          "date": "2026-04-13",
           "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2042246591919292799"
-            }
-          ]
-        },
-        {
-          "title": "同步下架 BIFI、FIO、FUN 等代币",
-          "category": "其他",
-          "summary": "基于平台合规及流动性评估，将于 **4 月 23 日**停止相关代币交易。**涉及资产**：BIFI, FIO, FUN, MDT, OXT, WAN。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2042185576095568351"
+              "name": "Twitter",
+              "url": "https://x.com/Tokocrypto/status/2043589199421669578"
             }
           ]
         }
       ],
-      "region": "ID"
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=tokocrypto.com&sz=64"
     },
     {
       "name": "PINTU",
-      "summary": "正值 6 周年庆典，通过各类抽奖活动维持活跃度。",
-      "events": [
-        {
-          "title": "Pintu 6 周年庆直播与系列抽奖",
-          "category": "活动推广",
-          "summary": "**奖品**：包括 iPhone 17 Pro、Apple Watch Series 11 及 USDT。**周期**：周年庆活动贯穿 4 月中旬。",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@PintuID",
-              "url": "https://x.com/PintuID/status/2042120454832619924"
-            }
-          ]
-        }
-      ],
-      "region": "ID"
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=pintu.co.id&sz=64",
+      "summary": "近7日未监测到 PINTU 的公开动态",
+      "events": []
     },
     {
       "name": "Upbit Indonesia",
       "region": "ID",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=upbit.co.id&sz=64",
+      "summary": "近7日未监测到 Upbit Indonesia 的公开动态",
       "events": []
     },
     {
       "name": "Luno",
-      "summary": "今日无重大动态",
-      "events": [],
-      "region": "ID"
+      "summary": "针对 USDC 持有者推出高年化收益活动，并加强用户安全防诈骗教育。",
+      "events": [
+        {
+          "title": "推出限时 7% 年化 USDC 赚币活动",
+          "category": "产品更新",
+          "summary": "**四月专属储蓄优惠**\n- **利率提升**：年化收益率从标配 3.5% 翻倍至 **7%**\n- **规则**：无锁定期，无最低存款要求，随存随取",
+          "date": "2026-04-13",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/LunoGlobal/status/2043600936569131162"
+            }
+          ]
+        }
+      ],
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=luno.com&sz=64"
     },
     {
       "name": "Reku",
-      "summary": "今日无重大动态",
-      "events": [],
-      "region": "ID"
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=reku.id&sz=64",
+      "summary": "近7日未监测到 Reku 的公开动态",
+      "events": []
     },
     {
       "name": "富途/Moomoo",
       "region": "BROKER",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=moomoo.com&sz=64",
+      "summary": "近7日未监测到 富途/Moomoo 的公开动态",
       "events": []
     },
     {
       "name": "老虎证券",
       "region": "BROKER",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=tigerbrokers.com&sz=64",
+      "summary": "近7日未监测到 老虎证券 的公开动态",
       "events": []
     },
     {
       "name": "盈透证券",
       "region": "BROKER",
-      "summary": "今日无重大动态",
+      "logo": "https://www.google.com/s2/favicons?domain=interactivebrokers.com&sz=64",
+      "summary": "近7日未监测到 盈透证券 的公开动态",
       "events": []
     }
   ]

@@ -1,11 +1,54 @@
 {
-  "run_date": "2026-04-10",
-  "total_raw": 6,
+  "run_date": "2026-04-13",
+  "total_raw": 10,
   "items": [
     {
-      "title": "OSL Group 延长 USDGO 利率奖励计划",
-      "summary": "OSL Group 宣布通过 StableHub **延长其 USDGO 稳定币的利率奖励计划**，旨在持续推动亚洲地区的稳定币交易与支付。",
+      "title": "OSL Pay 推出限时 0 手续费购币活动",
+      "summary": "OSL Pay 联合 Bitunix 等平台推出**限时 0 手续费购币**优惠，针对新老用户提供最高 500 USDT 的免手续费额度，活动截止至 **4 月 24 日**。",
       "category": "活动推广",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@cryptopuxiii",
+          "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
+        },
+        {
+          "platform": "twitter",
+          "author": "@BitunixOfficial",
+          "url": "https://x.com/BitunixOfficial/status/2042505610927784126"
+        }
+      ],
+      "published_at": "2026-04-12T09:30:04+00:00"
+    },
+    {
+      "title": "香港稳定币牌照发放进展及 OSL 股价波动",
+      "summary": "市场讨论**香港首批稳定币牌照**优先发放给银行（汇丰、渣打），导致 **OSL 股价波动**。分析认为 OSL 作为**最早的合规持牌交易所**，合规性比 HashKey 更稳，但在牌照竞争中仍具不确定性。",
+      "category": "监管合规",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Pink_Piglet002",
+          "url": "https://x.com/Pink_Piglet002/status/2042612110140883360"
+        },
+        {
+          "platform": "twitter",
+          "author": "@dachong007",
+          "url": "https://x.com/dachong007/status/2042480892032307320"
+        },
+        {
+          "platform": "twitter",
+          "author": "@dachong007",
+          "url": "https://x.com/dachong007/status/2042479152566358441"
+        }
+      ],
+      "published_at": "2026-04-10T14:34:11+00:00"
+    },
+    {
+      "title": "OSL Group 延长 USDGO 利息奖励计划",
+      "summary": "OSL Group 宣布将通过 StableHub **延长其稳定币 USDGO 的利息奖励计划**，旨在提升该资产在支付和交易领域的活跃度。",
+      "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
@@ -17,22 +60,27 @@
       "published_at": "2026-04-09T12:50:25+00:00"
     },
     {
-      "title": "用户对 OSL 合规背景及 Launchpool 功能的讨论",
-      "summary": "社交媒体用户对 OSL 作为**受 OJK 监管的加密交易所**身份进行了科普，并探讨了其 **Launchpool** 类似股息的灵活资产奖励机制。",
-      "category": "市场分析",
-      "importance": "low",
+      "title": "OSL 进军印尼市场并完成品牌重塑",
+      "summary": "OSL Group 以 **1500 万美元收购印尼交易所 Koinsayang** 并更名为 **OSL Indonesia**。该平台受印尼 OJK 监管，社区正在关注其 **Launchpool** 等理财产品功能。",
+      "category": "其他",
+      "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
           "author": "@iniheksa",
           "url": "https://x.com/iniheksa/status/2042165024752586843"
+        },
+        {
+          "platform": "twitter",
+          "author": "@valenttt____",
+          "url": "https://x.com/valenttt____/status/2043230002163200115"
         }
       ],
-      "published_at": "2026-04-09T08:57:38+00:00"
+      "published_at": "2026-04-12T07:29:28+00:00"
     },
     {
-      "title": "OSL 与 Banxa 在 TON 网络处理交易额突破 5000 万美元",
-      "summary": "OSL 与 Banxa 合作在 **TON 区块链**上的处理量已突破 **5000 万美元**，反映出机构和消费者对加密支付基础建设的采纳度上升。",
+      "title": "Banxa 与 OSL 在 TON 网络交易额突破 5000 万美元",
+      "summary": "合作伙伴 Banxa 宣布与 OSL 在 **TON 区块链**上的支付与交易量已处理达 **5000 万美元**，反映了机构对加密支付基础设施的采用度增加。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -45,24 +93,10 @@
       "published_at": "2026-04-06T10:00:02+00:00"
     },
     {
-      "title": "分析师预测 OSL Group 2025 年盈利路径",
-      "summary": "市场人士对 OSL Group 2025 年业绩进行预测，看好其专注于**持牌、机构级加密服务**所带来的**强劲增长与盈利潜力**。",
-      "category": "市场分析",
+      "title": "用户讨论 OSL 大额 OTC 交易门槛与优势",
+      "summary": "用户分享关于 OSL 交易所 **OTC（场外交易）服务**的反馈，提到其起步门槛为 **1 亿（印尼盾等单位计）**，旨在为高净值个人及企业提供**优于市场账簿价格**的交易通道。",
+      "category": "用户反馈",
       "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@periodtrader_",
-          "url": "https://x.com/periodtrader_/status/2040086446757847231"
-        }
-      ],
-      "published_at": "2026-04-03T15:18:06+00:00"
-    },
-    {
-      "title": "OSL Exchange OTC 场外交易服务细节曝光",
-      "summary": "社交媒体分享了 OSL 的 **OTC 服务**，针对最低 1 亿（当地货币单位）的大额交易提供**优于市场挂单簿的价格**，主要面向大额投资者和企业。",
-      "category": "产品动态",
-      "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
@@ -71,20 +105,6 @@
         }
       ],
       "published_at": "2026-04-07T08:26:58+00:00"
-    },
-    {
-      "title": "用户敦促 OSL 上线人民币及港币稳定币",
-      "summary": "有用户对平台当前币种表示不满，**要求 OSL 尽快上线人民币 (Yuan) 和香港 (Hong Kong) 稳定币**，以提升交易体验。",
-      "category": "用户反馈",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@ichanghun294009",
-          "url": "https://x.com/ichanghun294009/status/2040717075413598380"
-        }
-      ],
-      "published_at": "2026-04-05T09:04:00+00:00"
     }
   ]
 }

@@ -3,8 +3,27 @@
   "total_raw": 10,
   "items": [
     {
-      "title": "香港首批稳定币牌照预期及 OSL 监管动态",
-      "summary": "市场热议香港**首批稳定币牌照**名单，虽然首批倾向于银行（如汇丰、渣打），但分析师认为 **OSL 作为最早的持牌交易所**具备极高稳定性。OSL 股价此前因牌照预期**上涨约 20%**，反映出市场对其合规地位的高度关注。",
+      "title": "OSL Pay 推出限时 0 手续费购币活动",
+      "summary": "OSL Pay 联合 Bitunix 等平台推出**限时 0 手续费购币**优惠，针对新老用户提供最高 500 USDT 的免手续费额度，活动截止至 **4 月 24 日**。",
+      "category": "活动推广",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@cryptopuxiii",
+          "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
+        },
+        {
+          "platform": "twitter",
+          "author": "@BitunixOfficial",
+          "url": "https://x.com/BitunixOfficial/status/2042505610927784126"
+        }
+      ],
+      "published_at": "2026-04-12T09:30:04+00:00"
+    },
+    {
+      "title": "香港稳定币牌照发放进展及 OSL 股价波动",
+      "summary": "市场讨论**香港首批稳定币牌照**优先发放给银行（汇丰、渣打），导致 **OSL 股价波动**。分析认为 OSL 作为**最早的合规持牌交易所**，合规性比 HashKey 更稳，但在牌照竞争中仍具不确定性。",
       "category": "监管合规",
       "importance": "high",
       "sources": [
@@ -27,46 +46,41 @@
       "published_at": "2026-04-10T14:34:11+00:00"
     },
     {
-      "title": "OSL Pay 联合 Bitunix 推出限时零手续费活动",
-      "summary": "OSL Pay 与 Bitunix 合作，在 **4 月 24 日前**提供限时**零手续费购币**优惠。新用户最高支持 **500 USDT** 额度，现有用户最高支持 **300 USDT** 额度。",
-      "category": "活动推广",
+      "title": "OSL Group 延长 USDGO 利息奖励计划",
+      "summary": "OSL Group 宣布将通过 StableHub **延长其稳定币 USDGO 的利息奖励计划**，旨在提升该资产在支付和交易领域的活跃度。",
+      "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@cryptopuxiii",
-          "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
-        },
-        {
-          "platform": "twitter",
-          "author": "@BitunixOfficial",
-          "url": "https://x.com/BitunixOfficial/status/2042505610927784126"
+          "author": "@LeeDG_GF",
+          "url": "https://x.com/LeeDG_GF/status/2042223606504345927"
         }
       ],
-      "published_at": "2026-04-12T09:30:04+00:00"
+      "published_at": "2026-04-09T12:50:25+00:00"
     },
     {
-      "title": "OSL Group 收购印尼交易所并完成更名",
-      "summary": "OSL Group 出资 **1500 万美元**收购印尼本地交易所 Koinsayang，并正式更名为 **OSL Indonesia**。该平台受印尼 **OJK 监管**，并已上线 Launchpool 等理财产品。",
+      "title": "OSL 进军印尼市场并完成品牌重塑",
+      "summary": "OSL Group 以 **1500 万美元收购印尼交易所 Koinsayang** 并更名为 **OSL Indonesia**。该平台受印尼 OJK 监管，社区正在关注其 **Launchpool** 等理财产品功能。",
       "category": "其他",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@valenttt____",
-          "url": "https://x.com/valenttt____/status/2043230002163200115"
+          "author": "@iniheksa",
+          "url": "https://x.com/iniheksa/status/2042165024752586843"
         },
         {
           "platform": "twitter",
-          "author": "@iniheksa",
-          "url": "https://x.com/iniheksa/status/2042165024752586843"
+          "author": "@valenttt____",
+          "url": "https://x.com/valenttt____/status/2043230002163200115"
         }
       ],
       "published_at": "2026-04-12T07:29:28+00:00"
     },
     {
-      "title": "Banxa 与 OSL 在 TON 链上交易额突破 5000 万美元",
-      "summary": "支付基础设施 Banxa 与 OSL 合作，在 **TON 区块链**上的处理交易量达到 **5000 万美元**，展示了机构级和消费端加密支付的增长。",
+      "title": "Banxa 与 OSL 在 TON 网络交易额突破 5000 万美元",
+      "summary": "合作伙伴 Banxa 宣布与 OSL 在 **TON 区块链**上的支付与交易量已处理达 **5000 万美元**，反映了机构对加密支付基础设施的采用度增加。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -79,23 +93,9 @@
       "published_at": "2026-04-06T10:00:02+00:00"
     },
     {
-      "title": "OSL Group 延长 USDGO 稳定币奖励计划",
-      "summary": "OSL Group 宣布将通过 StableHub 延长其稳定币 **USDGO 的利息奖励计划**，旨在提高用户持有积极性。",
-      "category": "活动推广",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@LeeDG_GF",
-          "url": "https://x.com/LeeDG_GF/status/2042223606504345927"
-        }
-      ],
-      "published_at": "2026-04-09T12:50:25+00:00"
-    },
-    {
-      "title": "OSL 场外交易（OTC）业务讨论",
-      "summary": "用户反馈 OSL Exchange 的 **OTC 门槛为 1 亿印尼盾**。该业务主要面向追求**低于市场价**且交易便捷的大额投资者或出口贸易公司。",
-      "category": "产品动态",
+      "title": "用户讨论 OSL 大额 OTC 交易门槛与优势",
+      "summary": "用户分享关于 OSL 交易所 **OTC（场外交易）服务**的反馈，提到其起步门槛为 **1 亿（印尼盾等单位计）**，旨在为高净值个人及企业提供**优于市场账簿价格**的交易通道。",
+      "category": "用户反馈",
       "importance": "low",
       "sources": [
         {
