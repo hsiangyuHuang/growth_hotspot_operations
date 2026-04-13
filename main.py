@@ -26,6 +26,7 @@ logging.basicConfig(
 logger = logging.getLogger("main")
 
 DATA_DIR = Path(__file__).parent / "data"
+POOL_WINDOW = 7  # 滚动信息池窗口天数
 
 _DATE_RE = __import__("re").compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -52,6 +53,37 @@ def sentiment_path(date_str: str) -> Path:
 
 def processed_path(date_str: str) -> Path:
     return DATA_DIR / "processed" / date_str / "result.md"
+
+
+def _collect_pool_items(subdir: str, window: int = POOL_WINDOW) -> tuple[list[dict], str, str]:
+    """合并近 N 天的 items.json，代码层 URL 去重，返回 (items, date_from, date_to)。"""
+    target_dir = DATA_DIR / subdir
+    if not target_dir.exists():
+        return [], "", ""
+    date_dirs = sorted(
+        [d.name for d in target_dir.iterdir()
+         if d.is_dir() and _DATE_RE.match(d.name) and (d / "items.json").exists()],
+        reverse=True,
+    )[:window]
+
+    if not date_dirs:
+        return [], "", ""
+
+    seen_urls: set[str] = set()
+    merged: list[dict] = []
+    for d in date_dirs:
+        items_path = target_dir / d / "items.json"
+        with open(items_path, "r", encoding="utf-8") as f:
+            items = json.load(f)
+        for item in items:
+            url = item.get("url", "")
+            if url and url in seen_urls:
+                continue
+            if url:
+                seen_urls.add(url)
+            merged.append(item)
+
+    return merged, date_dirs[-1], date_dirs[0]
 
 
 async def run_fetch_and_process():
@@ -142,6 +174,42 @@ async def run_fetch_and_process():
         except Exception as e:
             logger.warning(f"舆情提取失败：{e}")
 
+    # ── 竞品 7 日 Pool 提取 ──
+    logger.info("=== 生成竞品 7 日 Pool ===")
+    try:
+        comp_pool_items, comp_from, comp_to = _collect_pool_items("competitors")
+        if comp_pool_items:
+            from processor import competitor_extractor
+            pool_result = await competitor_extractor.extract(comp_pool_items, today)
+            pool_result["date_range"] = {"from": comp_from, "to": comp_to}
+            pool_result.pop("run_date", None)
+            pool_path = DATA_DIR / "competitors" / "pool.json"
+            with open(pool_path, "w", encoding="utf-8") as f:
+                json.dump(pool_result, f, ensure_ascii=False, indent=2)
+            logger.info(f"竞品 Pool 生成：{len(comp_pool_items)} items（去重后）→ {pool_path}")
+        else:
+            logger.info("无竞品历史数据，跳过 Pool 生成")
+    except Exception as e:
+        logger.warning(f"竞品 Pool 生成失败：{e}")
+
+    # ── 舆情 7 日 Pool 提取 ──
+    logger.info("=== 生成舆情 7 日 Pool ===")
+    try:
+        sent_pool_items, sent_from, sent_to = _collect_pool_items("sentiment")
+        if sent_pool_items:
+            from processor import sentiment_extractor
+            pool_result = await sentiment_extractor.extract(sent_pool_items, today)
+            pool_result["date_range"] = {"from": sent_from, "to": sent_to}
+            pool_result.pop("run_date", None)
+            pool_path = DATA_DIR / "sentiment" / "pool.json"
+            with open(pool_path, "w", encoding="utf-8") as f:
+                json.dump(pool_result, f, ensure_ascii=False, indent=2)
+            logger.info(f"舆情 Pool 生成：{len(sent_pool_items)} items（去重后）→ {pool_path}")
+        else:
+            logger.info("无舆情历史数据，跳过 Pool 生成")
+    except Exception as e:
+        logger.warning(f"舆情 Pool 生成失败：{e}")
+
     # 生成静态索引文件（供 Vercel 静态模式使用）
     _generate_index_files()
 
@@ -158,9 +226,24 @@ def _generate_index_files():
         )
         if not dates:
             continue
-        # dates.json
-        with open(target_dir / "dates.json", "w", encoding="utf-8") as f:
-            json.dump(dates, f, ensure_ascii=False, indent=2)
+        # dates.json — processed 包含每日卡片数量，其他保持纯日期列表
+        if subdir == "processed":
+            dates_with_count = []
+            for d in dates:
+                count = 0
+                result_path = target_dir / d / "result.json"
+                try:
+                    with open(result_path, "r", encoding="utf-8") as rf:
+                        result_data = json.load(rf)
+                    count = len(result_data.get("cards", []))
+                except Exception:
+                    pass
+                dates_with_count.append({"date": d, "count": count})
+            with open(target_dir / "dates.json", "w", encoding="utf-8") as f:
+                json.dump(dates_with_count, f, ensure_ascii=False, indent=2)
+        else:
+            with open(target_dir / "dates.json", "w", encoding="utf-8") as f:
+                json.dump(dates, f, ensure_ascii=False, indent=2)
         # latest.json — 复制最新日期的 result.json
         latest_src = target_dir / dates[0] / "result.json"
         shutil.copy2(latest_src, target_dir / "latest.json")

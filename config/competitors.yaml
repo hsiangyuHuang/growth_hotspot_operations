@@ -11,6 +11,7 @@ competitors:
   - name: "HashKey"
     region: "HK"
     tier: 1
+    logo: "https://www.google.com/s2/favicons?domain=hashkey.com&sz=64"
     twitter: ["HashKeyExchange", "HashKeyGroup", "HSKChain"]
     rss: []
     web: []  # newsroom 连接超时 + support 页 Cloudflare 403，仅靠 Twitter
@@ -19,6 +20,7 @@ competitors:
   - name: "HKVAX"
     region: "HK"
     tier: 1
+    logo: "https://www.google.com/s2/favicons?domain=hkvax.com&sz=64"
     twitter: ["HKVAX_Official"]
     rss: []
     web:
@@ -33,6 +35,7 @@ competitors:
   - name: "VDX"
     region: "HK"
     tier: 1
+    logo: "https://www.google.com/s2/favicons?domain=vdx.com&sz=64"
     twitter: ["VDX_HK"]
     rss: []
     web: []
@@ -41,6 +44,7 @@ competitors:
   - name: "Bullish"
     region: "HK"
     tier: 1
+    logo: "https://www.google.com/s2/favicons?domain=bullish.com&sz=64"
     twitter: ["Bullish"]
     rss: []
     web:
@@ -56,6 +60,7 @@ competitors:
   - name: "Binance"
     region: "GLOBAL"
     tier: 2
+    logo: "https://www.google.com/s2/favicons?domain=binance.com&sz=64"
     twitter: ["binance", "_RichardTeng"]
     rss: []
     web: []
@@ -72,6 +77,7 @@ competitors:
   - name: "OKX"
     region: "GLOBAL"
     tier: 2
+    logo: "https://www.google.com/s2/favicons?domain=okx.com&sz=64"
     twitter: ["okx", "star_xu"]
     rss: []
     web: []  # 公告页连接超时（疑似地区限制），仅靠 Twitter
@@ -80,6 +86,7 @@ competitors:
   - name: "Bybit"
     region: "GLOBAL"
     tier: 2
+    logo: "https://www.google.com/s2/favicons?domain=bybit.com&sz=64"
     twitter: ["Bybit_Official"]
     rss: []
     web: []
@@ -96,6 +103,7 @@ competitors:
   - name: "Coinbase"
     region: "GLOBAL"
     tier: 2
+    logo: "https://www.google.com/s2/favicons?domain=coinbase.com&sz=64"
     twitter: ["coinbase"]
     rss:
       - url: "https://www.coinbase.com/blog/rss.xml"
@@ -106,6 +114,7 @@ competitors:
   - name: "Kraken"
     region: "GLOBAL"
     tier: 2
+    logo: "https://www.google.com/s2/favicons?domain=kraken.com&sz=64"
     twitter: ["KrakenExchange"]
     rss:
       - url: "https://blog.kraken.com/feed"
@@ -125,6 +134,7 @@ competitors:
   - name: "Remitano"
     region: "VN"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=remitano.com&sz=64"
     twitter: ["Remitano"]
     rss: []
     web: []
@@ -134,6 +144,7 @@ competitors:
   - name: "bitFlyer"
     region: "JP"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=bitflyer.com&sz=64"
     twitter: ["bitFlyer"]
     rss: []
     web: []  # bitflyer.com 返回连接错误，仅靠 Twitter
@@ -142,6 +153,7 @@ competitors:
   - name: "Coincheck"
     region: "JP"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=coincheck.com&sz=64"
     twitter: ["coincheckjp"]
     rss: []
     web:
@@ -152,6 +164,7 @@ competitors:
   - name: "GMO Coin"
     region: "JP"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=coin.z.com&sz=64"
     twitter: ["gmo_coin"]  # 官网确认，非 @gaboratory
     rss:
       - url: "https://coin.z.com/jp/news/feed/press-release.xml"
@@ -162,6 +175,7 @@ competitors:
   - name: "bitbank"
     region: "JP"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=bitbank.cc&sz=64"
     twitter: ["bitbank_inc"]
     rss:
       - url: "https://bitbank.cc/knowledge/feed"
@@ -174,6 +188,7 @@ competitors:
   - name: "SBI VC Trade"
     region: "JP"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=sbivc.co.jp&sz=64"
     twitter: ["sbivc_official"]
     rss: []
     web: []  # /news 需 JS 动态加载，仅靠 Twitter
@@ -182,6 +197,7 @@ competitors:
   - name: "Rakuten Wallet"
     region: "JP"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=rakuten-wallet.co.jp&sz=64"
     twitter: ["Rakuten_Wallet"]  # 官网确认带下划线
     rss: []
     web: []  # 403 WAF 拦截，仅靠 Twitter
@@ -191,6 +207,7 @@ competitors:
   - name: "Bitstamp"
     region: "EU"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=bitstamp.net&sz=64"
     twitter: ["Bitstamp"]
     rss: []
     web:
@@ -202,6 +219,7 @@ competitors:
   - name: "Bitpanda"
     region: "EU"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=bitpanda.com&sz=64"
     twitter: ["Bitpanda"]
     rss: []
     web:
@@ -213,6 +231,7 @@ competitors:
   - name: "Bitvavo"
     region: "EU"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=bitvavo.com&sz=64"
     twitter: ["BitvavoExchange"]
     rss: []
     web: []  # 403 Cloudflare WAF，仅靠 Twitter
@@ -221,6 +240,7 @@ competitors:
   - name: "Crypto.com"
     region: "EU"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=crypto.com&sz=64"
     twitter: ["cryptocom"]
     rss: []
     web:
@@ -231,6 +251,7 @@ competitors:
   - name: "Gemini"
     region: "EU"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=gemini.com&sz=64"
     twitter: ["GeminiTrustCo"]  # @gemini 已被 Google AI 占用
     rss: []
     web:
@@ -242,6 +263,7 @@ competitors:
   - name: "Indodax"
     region: "ID"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=indodax.com&sz=64"
     twitter: ["indodax"]
     rss:
       - url: "https://blog.indodax.com/category/pengumuman/feed/"
@@ -255,6 +277,7 @@ competitors:
   - name: "Tokocrypto"
     region: "ID"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=tokocrypto.com&sz=64"
     twitter: ["Tokocrypto"]
     rss:
       - url: "https://news.tokocrypto.com/feed/"
@@ -265,6 +288,7 @@ competitors:
   - name: "PINTU"
     region: "ID"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=pintu.co.id&sz=64"
     twitter: ["PintuID"]
     rss: []
     web:
@@ -276,6 +300,7 @@ competitors:
   - name: "Upbit Indonesia"
     region: "ID"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=upbit.co.id&sz=64"
     twitter: ["UPBITIndonesia"]
     rss: []
     web: []
@@ -284,6 +309,7 @@ competitors:
   - name: "Luno"
     region: "ID"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=luno.com&sz=64"
     twitter: ["LunoGlobal"]
     rss: []
     web:
@@ -294,6 +320,7 @@ competitors:
   - name: "Reku"
     region: "ID"
     tier: 3
+    logo: "https://www.google.com/s2/favicons?domain=reku.id&sz=64"
     twitter: ["reku_id"]
     rss: []
     web:
@@ -308,6 +335,7 @@ competitors:
   - name: "富途/Moomoo"
     region: "BROKER"
     tier: 4
+    logo: "https://www.google.com/s2/favicons?domain=moomoo.com&sz=64"
     twitter: ["MoomooApp"]
     rss:
       - url: "https://ir.futuholdings.com/rss/news-releases.xml"
@@ -318,6 +346,7 @@ competitors:
   - name: "老虎证券"
     region: "BROKER"
     tier: 4
+    logo: "https://www.google.com/s2/favicons?domain=tigerbrokers.com&sz=64"
     twitter: ["TigerBrokers"]
     rss:
       - url: "https://ir.itigerup.com/rss/news-releases.xml"
@@ -328,6 +357,7 @@ competitors:
   - name: "盈透证券"
     region: "BROKER"
     tier: 4
+    logo: "https://www.google.com/s2/favicons?domain=interactivebrokers.com&sz=64"
     twitter: ["IBKR"]
     rss:
       - url: "https://www.interactivebrokers.com/campus/feed/"

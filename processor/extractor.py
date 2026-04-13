@@ -14,7 +14,7 @@ EXTRACTION_PROMPT = """你是一个结构化数据提取器。从以下 markdown
 要求：
 1. 只提取行动包部分（忽略前面的原始数据和 Layer 1-3 中间过程）
 2. 渠道 name 只能是："Paid Ads"、"站内运营 / 用户触达"、"SEO"、"社区"
-3. priority 只能是 P0/P1/P2，从上下文推断（如 section 标题"P0 级"或元数据行）
+3. category 只能是以下 8 类之一："行情波动"、"监管政策"、"行业趋势"、"安全事件"、"宏观经济"、"行业大会"、"竞品动态"、"链上数据"
 4. 如果某个字段在原文中找不到，设为 null
 5. sources 中的 name 只填写媒体/来源的名称（如 "CoinDesk"、"律动 BlockBeats"、"WuBlockchain"），不要包含文章标题或其他内容
 6. sources 中的 url：从信源引用中的 markdown 链接提取，格式如 [媒体名](url)，将 url 部分填入。如果没有链接则设为空字符串
@@ -34,8 +34,7 @@ RESPONSE_SCHEMA = {
                 "type": "object",
                 "properties": {
                     "title": {"type": "string"},
-                    "priority": {"type": "string", "enum": ["P0", "P1", "P2"]},
-                    "category": {"type": "string", "nullable": True},
+                    "category": {"type": "string", "enum": ["行情波动", "监管政策", "行业趋势", "安全事件", "宏观经济", "行业大会", "竞品动态", "链上数据"]},
                     "timing": {"type": "string", "enum": ["Flash", "Day", "Wave", "Trend"], "nullable": True},
                     "relation": {"type": "string", "enum": ["Direct", "Indirect", "Brand", "Gap"], "nullable": True},
                     "intent": {"type": "string", "nullable": True},
@@ -68,7 +67,7 @@ RESPONSE_SCHEMA = {
                         },
                     },
                 },
-                "required": ["title", "priority"],
+                "required": ["title", "category"],
             },
         },
     },

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" style="scroll-behavior:smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OSL 热点行动仪表板</title>
+  <meta name="description" content="OSL Growth Intelligence — 加密行业热点监控、竞品动态追踪、品牌舆情监控看板">
+  <meta property="og:title" content="OSL 热点行动仪表板">
+  <meta property="og:description" content="每日自动抓取、AI 处理、生成结构化简报">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230ea5e9'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='bold' fill='%230f1623' font-family='system-ui'>O</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -80,7 +84,7 @@
             <span class="text-[10px] font-mono text-cyan-400 tracking-widest uppercase bg-cyan-500/10 border border-cyan-500/20 px-2 py-0.5 rounded">OSL Growth Intelligence</span>
             <span class="text-[10px] font-mono text-slate-500" id="header-date"></span>
           </div>
-          <h1 class="text-2xl md:text-3xl font-display font-bold text-white leading-tight">热点行动仪表板</h1>
+          <h1 class="text-3xl md:text-4xl font-display font-bold text-white leading-tight tracking-tight">热点行动仪表板</h1>
           <p class="text-sm text-slate-400 font-body mt-1" id="header-subtitle"></p>
         </div>
         <div class="flex items-center gap-4" id="hero-stats"></div>
@@ -105,8 +109,6 @@
         </div>
         <div class="w-px h-5 bg-white/10" id="filter-divider"></div>
         <div id="main-filters" class="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <div class="flex items-center gap-1.5" id="filter-priority"><span class="text-xs text-slate-500 font-medium mr-1">优先级</span></div>
-        <div class="w-px h-5 bg-white/10"></div>
         <div class="flex items-center gap-1.5" id="filter-channel"><span class="text-xs text-slate-500 font-medium mr-1">渠道</span></div>
         <div class="w-px h-5 bg-white/10"></div>
         <div class="flex items-center gap-1.5" id="filter-site"><span class="text-xs text-slate-500 font-medium mr-1">站点</span></div>
@@ -158,10 +160,7 @@
 
 <script>
 window.onerror = function(msg, src, line, col, err) {
-  document.body.insertAdjacentHTML('afterbegin',
-    '<div style="background:#7f1d1d;color:#fca5a5;padding:12px;margin:8px;border-radius:8px;font-family:monospace;font-size:12px;white-space:pre-wrap;z-index:9999">' +
-    '[JS ERROR] ' + msg + '\nFile: ' + src + ':' + line + ':' + col +
-    (err && err.stack ? '\n' + err.stack : '') + '</div>');
+  console.error('[JS ERROR]', msg, src + ':' + line + ':' + col, err);
 };
 </script>
 <script src="/static/app.js"></script>

@@ -76,21 +76,37 @@ async def get_history(date: Optional[str] = Query(None)):
 async def get_dates():
     if not PROCESSED_DIR.exists():
         return {"dates": []}
-    dates = sorted(
-        [d.name for d in PROCESSED_DIR.iterdir() if _is_date_dir(d)],
+    date_dirs = sorted(
+        [d for d in PROCESSED_DIR.iterdir() if _is_date_dir(d)],
+        key=lambda d: d.name,
         reverse=True,
     )
-    return {"dates": dates}
+    result = []
+    for d in date_dirs:
+        count = 0
+        try:
+            with open(d / "result.json", "r", encoding="utf-8") as f:
+                data = json.load(f)
+            count = len(data.get("cards", []))
+        except Exception:
+            pass
+        result.append({"date": d.name, "count": count})
+    return {"dates": result}
 
 
 # ── 竞品 API ─────────────────────────────────────────
 
 @app.get("/api/competitors/today")
 async def get_competitors_today():
+    # 优先读 7 日 pool
+    pool_path = COMPETITORS_DIR / "pool.json"
+    if pool_path.exists():
+        with open(pool_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    # fallback: 单日数据
     today = date.today().isoformat()
     result = _load_competitor_result(today)
     if not result:
-        # 回退到最近一天有数据的日期
         if COMPETITORS_DIR.exists():
             dates = sorted(
                 [d.name for d in COMPETITORS_DIR.iterdir() if _is_date_dir(d)],
@@ -136,6 +152,12 @@ def _load_sentiment_result(date_str: str) -> dict | None:
 
 @app.get("/api/sentiment/today")
 async def get_sentiment_today():
+    # 优先读 7 日 pool
+    pool_path = SENTIMENT_DIR / "pool.json"
+    if pool_path.exists():
+        with open(pool_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    # fallback: 单日数据
     today = date.today().isoformat()
     result = _load_sentiment_result(today)
     if not result and SENTIMENT_DIR.exists():

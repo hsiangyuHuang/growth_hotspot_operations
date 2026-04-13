@@ -2,7 +2,6 @@
 const REFRESH_INTERVAL = 5 * 60 * 1000;
 let currentSection = "hotspot"; // "hotspot" or "competitors"
 let currentTab = "today";
-let filterPriority = "ALL";
 let filterChannel = "ALL";
 let filterSite = "ALL";
 let _currentData = null;
@@ -14,10 +13,10 @@ const API = IS_STATIC
   ? { today: "./data/processed/latest.json", dates: "./data/processed/dates.json", history: (d) => `./data/processed/${d}/result.json` }
   : { today: "/api/today", dates: "/api/dates", history: (d) => `/api/history?date=${d}` };
 const COMP_API = IS_STATIC
-  ? { today: "./data/competitors/latest.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}/result.json` }
+  ? { today: "./data/competitors/pool.json", dates: "./data/competitors/dates.json", history: (d) => `./data/competitors/${d}/result.json` }
   : { today: "/api/competitors/today", dates: "/api/competitors/dates", history: (d) => `/api/competitors/history?date=${d}` };
 const SENT_API = IS_STATIC
-  ? { today: "./data/sentiment/latest.json", dates: "./data/sentiment/dates.json" }
+  ? { today: "./data/sentiment/pool.json", dates: "./data/sentiment/dates.json" }
   : { today: "/api/sentiment/today", dates: "/api/sentiment/dates" };
 
 // ── Browser ID ──
@@ -35,10 +34,16 @@ const URGENCY_CONFIG = {
   Trend: { label: 'Trend 1-4w', color: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/30' },
 };
 
-const PRIORITY_CONFIG = {
-  P0: { label: 'P0 当日启动', color: 'text-red-400', bg: 'bg-red-500/15', bar: 'bg-red-500', divider: 'bg-red-500/20' },
-  P1: { label: 'P1 计划跟进', color: 'text-amber-400', bg: 'bg-amber-500/15', bar: 'bg-amber-500', divider: 'bg-amber-500/20' },
-  P2: { label: 'P2 轻量参与', color: 'text-slate-400', bg: 'bg-slate-500/15', bar: 'bg-slate-500', divider: 'bg-slate-500/20' },
+const CATEGORY_ORDER = ['行情波动','监管政策','行业趋势','安全事件','宏观经济','行业大会','竞品动态','链上数据'];
+const CATEGORY_CONFIG = {
+  '行情波动': { label: '行情波动', color: 'text-red-400',     bg: 'bg-red-500/15',     bar: 'bg-red-500',     divider: 'bg-red-500/20' },
+  '监管政策': { label: '监管政策', color: 'text-amber-400',   bg: 'bg-amber-500/15',   bar: 'bg-amber-500',   divider: 'bg-amber-500/20' },
+  '行业趋势': { label: '行业趋势', color: 'text-emerald-400', bg: 'bg-emerald-500/15', bar: 'bg-emerald-500', divider: 'bg-emerald-500/20' },
+  '安全事件': { label: '安全事件', color: 'text-rose-400',    bg: 'bg-rose-500/15',    bar: 'bg-rose-500',    divider: 'bg-rose-500/20' },
+  '宏观经济': { label: '宏观经济', color: 'text-blue-400',    bg: 'bg-blue-500/15',    bar: 'bg-blue-500',    divider: 'bg-blue-500/20' },
+  '行业大会': { label: '行业大会', color: 'text-violet-400',  bg: 'bg-violet-500/15',  bar: 'bg-violet-500',  divider: 'bg-violet-500/20' },
+  '竞品动态': { label: '竞品动态', color: 'text-cyan-400',    bg: 'bg-cyan-500/15',    bar: 'bg-cyan-500',    divider: 'bg-cyan-500/20' },
+  '链上数据': { label: '链上数据', color: 'text-teal-400',    bg: 'bg-teal-500/15',    bar: 'bg-teal-500',    divider: 'bg-teal-500/20' },
 };
 
 const CHANNEL_CONFIG = {
@@ -145,7 +150,6 @@ function setupSubTabs() {
 
 // ── Filter Rendering ──
 function renderFilterButtons() {
-  const priorities = ["ALL", "P0", "P1", "P2"];
   const channels = ["ALL", "Paid Ads", "SEO", "站内运营 / 用户触达", "社区"];
   const sites = ["ALL", "HK", "Global"];
 
@@ -157,13 +161,6 @@ function renderFilterButtons() {
     const inactive = 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.06]';
     return `<button onclick="${onclick}" class="${base} ${isActive ? active : inactive}">${label}</button>`;
   }
-
-  document.getElementById("filter-priority").innerHTML =
-    '<span class="text-xs text-slate-500 font-medium mr-2">优先级</span>' +
-    priorities.map(p => {
-      const cfg = p !== "ALL" ? PRIORITY_CONFIG[p] : null;
-      return filterBtn(p, p === "ALL" ? "全部" : p, filterPriority === p, cfg, `setFilterPriority('${p}')`);
-    }).join("");
 
   document.getElementById("filter-channel").innerHTML =
     '<span class="text-xs text-slate-500 font-medium mr-2">渠道</span>' +
@@ -182,7 +179,6 @@ function renderFilterButtons() {
     }).join("");
 }
 
-function setFilterPriority(v) { filterPriority = v; rerender(); }
 function setFilterChannel(v) {
   filterChannel = v;
   rerender();
@@ -194,19 +190,42 @@ function setFilterChannel(v) {
 function setFilterSite(v) { filterSite = v; rerender(); }
 function rerender() { if (_currentData) renderDashboard(_currentData); }
 
+// ── Skeleton Loading ──
+function renderSkeleton(count = 4) {
+  const card = `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4 space-y-3">
+    <div class="flex items-center justify-between">
+      <div class="skeleton h-4 w-48"></div>
+      <div class="flex gap-1.5"><div class="skeleton h-5 w-10"></div><div class="skeleton h-5 w-20"></div></div>
+    </div>
+    <div class="skeleton h-3 w-32"></div>
+    <div class="space-y-2"><div class="skeleton h-3 w-full"></div><div class="skeleton h-3 w-4/5"></div></div>
+    <div class="flex gap-2"><div class="skeleton h-6 w-20"></div><div class="skeleton h-6 w-16"></div></div>
+  </div>`;
+  return `<div class="grid grid-cols-1 xl:grid-cols-2 gap-4">${card.repeat(count)}</div>`;
+}
+
+function showSkeleton() {
+  document.getElementById("card-sections").innerHTML = renderSkeleton();
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="skeleton h-8 w-12"></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="skeleton h-8 w-12"></div>
+    <div class="skeleton h-8 w-12"></div>
+    <div class="skeleton h-8 w-12"></div>`;
+}
+
 // ── Data Loading ──
 async function loadToday() {
+  showSkeleton();
   try {
     const res = await fetch(API.today);
     const data = await res.json();
-    console.log("[DEBUG] loadToday got", data.cards?.length, "cards");
     _currentData = data;
     renderDashboard(data);
-    console.log("[DEBUG] renderDashboard done");
   } catch (e) {
     console.error("Failed to load today:", e);
     document.getElementById("card-sections").innerHTML =
-      `<pre class="text-red-400 text-xs p-4">[DEBUG ERROR] ${e.message}\n${e.stack}</pre>` + renderEmptyState();
+      `<pre class="text-red-400 text-xs p-4">${e.message}</pre>` + renderEmptyState();
   }
 }
 
@@ -216,30 +235,36 @@ async function loadDates() {
   try {
     const res = await fetch(API.dates);
     const data = await res.json();
-    const dates = Array.isArray(data) ? data : (data.dates || []);
-    renderDateTimeline(dates);
+    // Support both old format ["2026-04-10", ...] and new format [{date, count}, ...]
+    let rawDates = Array.isArray(data) ? data : (data.dates || []);
+    const countMap = {};
+    const dateList = [];
+    for (const item of rawDates) {
+      if (typeof item === 'string') {
+        dateList.push(item);
+        countMap[item] = 1;
+      } else {
+        dateList.push(item.date);
+        countMap[item.date] = item.count || 0;
+      }
+    }
+    renderDateTimeline(dateList, countMap);
   } catch (e) { console.error("Failed to load dates:", e); }
 }
 
 let _calendarDates = [];
 
-function renderDateTimeline(dates) {
+function renderDateTimeline(dates, countMap) {
   const container = document.getElementById("date-selector");
-  if (!dates.length) {
-    container.innerHTML = '<p class="text-sm text-slate-500">暂无历史数据</p>';
-    return;
-  }
-
   _calendarDates = dates;
   const dateSet = new Set(dates);
   const todayStr = new Date().toISOString().split('T')[0];
 
-  // Date range: earliest data → today, aligned to week boundaries (Mon–Sun)
-  const sorted = [...dates].sort();
-  const start = new Date(sorted[0]);
-  start.setDate(start.getDate() - ((start.getDay() + 6) % 7));
-  const end = new Date(todayStr);
-  end.setDate(end.getDate() + (6 - (end.getDay() + 6) % 7));
+  // Fixed range: full year 2026, aligned to week boundaries (Mon–Sun)
+  const start = new Date('2026-01-01');
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7)); // align to Monday
+  const end = new Date('2026-12-31');
+  end.setDate(end.getDate() + (6 - (end.getDay() + 6) % 7)); // align to Sunday
 
   // Generate all days
   const allDays = [];
@@ -260,17 +285,26 @@ function renderDateTimeline(dates) {
   const MONTHS = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
   const dayLabels = ['一','','三','','五','',''];
 
+  // 3-level brightness based on card count
+  function heatColor(dateStr) {
+    const count = countMap[dateStr] || 0;
+    if (count === 0) return '#161b22';
+    if (count <= 5) return '#0e4429';
+    if (count <= 8) return '#006d32';
+    return '#26a641';
+  }
+
   let html = '<div class="w-full overflow-x-auto pb-1">';
 
   // Legend row
   html += `<div class="flex items-center justify-between mb-2">
-    <span class="text-[11px] text-slate-400 font-mono">${dates.length} 天有数据</span>
+    <span class="text-[11px] text-slate-400 font-mono">${dates.length} 天有数据 · 2026</span>
     <div class="flex items-center gap-[3px]">
       <span class="text-[9px] text-slate-600 font-mono mr-1">Less</span>
       <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#161b22"></span>
       <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#0e4429"></span>
       <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#006d32"></span>
-      <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#39d353"></span>
+      <span class="inline-block w-[10px] h-[10px] rounded-sm" style="background:#26a641"></span>
       <span class="text-[9px] text-slate-600 font-mono ml-1">More</span>
     </div>
   </div>`;
@@ -299,11 +333,12 @@ function renderDateTimeline(dates) {
       const has = dateSet.has(d.str);
       const isSel = _selectedHistoryDate === d.str;
       const isToday = d.str === todayStr;
+      const count = countMap[d.str] || 0;
 
-      const bg = isSel ? '#39d353' : (has ? '#26a641' : '#161b22');
+      const bg = isSel ? '#39d353' : heatColor(d.str);
       const ring = isSel ? ' ring-1 ring-cyan-400' : (isToday ? ' ring-1 ring-slate-500' : '');
       const click = has ? ` onclick="selectHistoryDate('${d.str}')"` : '';
-      const tip = `${d.month + 1}月${d.day}日`;
+      const tip = `${d.month + 1}月${d.day}日` + (count > 0 ? ` · ${count} 条` : '');
 
       html += `<div class="hm-cell${ring}${has ? ' hm-has' : ''}" style="background:${bg}" data-tip="${tip}"${click}></div>`;
     });
@@ -342,7 +377,6 @@ function renderDashboard(data) {
 
   // Filter
   const filtered = allCards.filter(card => {
-    if (filterPriority !== "ALL" && card.priority !== filterPriority) return false;
     if (filterChannel !== "ALL" && !(card.channels || []).some(c => c.name === filterChannel)) return false;
     if (filterSite !== "ALL") {
       const site = normalizeSite(card.site);
@@ -355,15 +389,26 @@ function renderDashboard(data) {
   document.getElementById("filter-count").textContent = `显示 ${filtered.length} / ${allCards.length} 条`;
   renderHeroStats(allCards);
 
-  // Group by priority
-  const p0 = filtered.filter(c => c.priority === "P0");
-  const p1 = filtered.filter(c => c.priority === "P1");
-  const p2 = filtered.filter(c => !c.priority || c.priority === "P2");
+  // Group by category
+  const byCategory = {};
+  for (const card of filtered) {
+    const cat = card.category || '行业趋势';
+    if (!byCategory[cat]) byCategory[cat] = [];
+    byCategory[cat].push(card);
+  }
 
   let html = "";
-  if (p0.length > 0) html += renderPrioritySection("P0", "当日启动", p0);
-  if (p1.length > 0) html += renderPrioritySection("P1", "计划跟进", p1);
-  if (p2.length > 0) html += renderPrioritySection("P2", "轻量参与", p2);
+  for (const cat of CATEGORY_ORDER) {
+    if (byCategory[cat] && byCategory[cat].length > 0) {
+      html += renderCategorySection(cat, byCategory[cat]);
+    }
+  }
+  // Render any categories not in CATEGORY_ORDER (fallback for old data)
+  for (const cat of Object.keys(byCategory)) {
+    if (!CATEGORY_ORDER.includes(cat)) {
+      html += renderCategorySection(cat, byCategory[cat]);
+    }
+  }
   if (filtered.length === 0) html = renderEmptyState();
 
   document.getElementById("card-sections").innerHTML = html;
@@ -375,29 +420,32 @@ function renderDashboard(data) {
 
 // ── Hero Stats ──
 function renderHeroStats(cards) {
-  const p0 = cards.filter(c => c.priority === "P0").length;
-  const p1 = cards.filter(c => c.priority === "P1").length;
-  const p2 = cards.filter(c => !c.priority || c.priority === "P2").length;
+  // Count by category
+  const catCounts = {};
+  for (const c of cards) {
+    const cat = c.category || '行业趋势';
+    catCounts[cat] = (catCounts[cat] || 0) + 1;
+  }
+  // Sort by count desc, take top categories
+  const sorted = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
+  const topStats = sorted.slice(0, 4).map(([cat, count]) => {
+    const cfg = CATEGORY_CONFIG[cat] || { color: 'text-slate-400', label: cat };
+    return `<div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold ${cfg.color}">${count}</div><div class="text-[10px] text-slate-500 font-mono">${cfg.label}</div></div>`;
+  }).join("");
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-xl font-display font-bold text-white">${cards.length}</div><div class="text-[10px] text-slate-500 font-mono">行动包</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-white">${cards.length}</div><div class="text-[10px] text-slate-500 font-mono">行动包</div></div>
     <div class="w-px h-8 bg-white/10"></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-red-400">${p0}</div><div class="text-[10px] text-slate-500 font-mono">P0 紧急</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-amber-400">${p1}</div><div class="text-[10px] text-slate-500 font-mono">P1 跟进</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-slate-400">${p2}</div><div class="text-[10px] text-slate-500 font-mono">P2 轻量</div></div>`;
+    ${topStats}`;
 }
 
-// ── Priority Section ──
-function renderPrioritySection(priority, label, cards) {
-  const cfg = PRIORITY_CONFIG[priority];
-  const isP0 = priority === "P0";
-  const dotHtml = isP0
-    ? `<span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full ${cfg.bar} opacity-60"></span><span class="relative inline-flex rounded-full h-3 w-3 ${cfg.bar}"></span></span>`
-    : `<span class="h-3 w-3 rounded-full ${cfg.bar} shrink-0"></span>`;
+// ── Category Section ──
+function renderCategorySection(category, cards) {
+  const cfg = CATEGORY_CONFIG[category] || { label: category, color: 'text-slate-400', bg: 'bg-slate-500/15', bar: 'bg-slate-500', divider: 'bg-slate-500/20' };
 
   return `<section>
     <div class="flex items-center gap-3 mb-4">
-      ${dotHtml}
-      <h2 class="text-sm font-display font-bold ${cfg.color} tracking-wide uppercase">${priority} — ${label}</h2>
+      <span class="h-3 w-3 rounded-full ${cfg.bar} shrink-0"></span>
+      <h2 class="text-sm font-display font-bold ${cfg.color} tracking-wide uppercase">${cfg.label}</h2>
       <div class="flex-1 h-px ${cfg.divider}"></div>
       <span class="text-[10px] font-mono ${cfg.color} opacity-60">${cards.length} 条</span>
     </div>
@@ -409,16 +457,12 @@ function renderPrioritySection(priority, label, cards) {
 
 // ── Card ──
 function renderCard(card, index) {
-  const p = card.priority || "P2";
-  const pCfg = PRIORITY_CONFIG[p] || PRIORITY_CONFIG.P2;
+  const cat = card.category || '行业趋势';
+  const catCfg = CATEGORY_CONFIG[cat] || CATEGORY_CONFIG['行业趋势'];
   const timing = parseTimingKey(card.timing);
   const tCfg = URGENCY_CONFIG[timing] || URGENCY_CONFIG.Day;
   const site = normalizeSite(card.site);
   const sCfg = SITE_CONFIG[site] || SITE_CONFIG.Both;
-
-  const pulseDot = p === "P0"
-    ? '<span class="relative flex h-2.5 w-2.5 shrink-0 mt-[3px]"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-60"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span></span>'
-    : "";
 
   const channelTabs = (card.channels || []).map((ch, ci) => {
     const chCfg = CHANNEL_CONFIG[ch.name] || { label: ch.name, icon: '📋', color: 'text-slate-300', bg: 'bg-slate-500/15', activeCls: 'text-slate-300 bg-slate-500/15' };
@@ -452,20 +496,18 @@ function renderCard(card, index) {
       </div>` : "";
 
   return `
-  <div class="card-item relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
-       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.06}s">
-    <div class="absolute left-0 top-0 bottom-0 w-1 ${pCfg.bar}"></div>
+  <div class="card-item relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden card-tinted-shadow"
+       style="--i:${index}; animation: fadeSlideIn 0.3s ease-out both; animation-delay: calc(var(--i) * 0.06s)">
+    <div class="absolute left-0 top-0 bottom-0 w-1 ${catCfg.bar}"></div>
     <div class="pl-4 pr-4 pt-4 pb-3">
       <div class="flex items-start justify-between gap-3 mb-2">
         <div class="flex items-start gap-2 min-w-0">
-          ${pulseDot}
           <div class="min-w-0">
             <h3 class="text-sm font-display font-semibold text-white leading-snug">${esc(card.title)}</h3>
-            <p class="text-[11px] text-slate-400 mt-0.5 font-body">${esc(card.category || "")}</p>
           </div>
         </div>
         <div class="flex items-center gap-1.5 shrink-0">
-          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-semibold ${pCfg.color} ${pCfg.bg}">${p}</span>
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-medium ${catCfg.color} ${catCfg.bg}">${esc(cat)}</span>
           <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-medium border ${tCfg.color} ${tCfg.bg} ${tCfg.border}">${tCfg.label}</span>
         </div>
       </div>
@@ -559,10 +601,12 @@ function copyPanelContent(mdElId) {
     if (btn) {
       const orig = btn.textContent;
       btn.textContent = '✓ Copied';
-      btn.classList.add('text-emerald-400', 'border-emerald-500/40');
+      btn.classList.add('text-emerald-400', 'border-emerald-500/40', 'bg-emerald-500/10');
+      btn.style.transform = 'scale(1.05)';
+      setTimeout(() => { btn.style.transform = ''; }, 200);
       setTimeout(() => {
         btn.textContent = orig;
-        btn.classList.remove('text-emerald-400', 'border-emerald-500/40');
+        btn.classList.remove('text-emerald-400', 'border-emerald-500/40', 'bg-emerald-500/10');
       }, 1500);
     }
   });
@@ -605,6 +649,15 @@ function renderSidebar(data) {
     <div class="space-y-2">${Object.entries(URGENCY_CONFIG).map(([, v]) =>
       `<div class="flex items-center gap-2"><span class="text-[10px] font-mono font-medium ${v.color}">${v.label}</span></div>`
     ).join("")}</div>
+  </div>`;
+
+  // Category legend
+  html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
+    <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">热点类型</h3>
+    <div class="space-y-2">${CATEGORY_ORDER.map(cat => {
+      const cfg = CATEGORY_CONFIG[cat];
+      return `<div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full ${cfg.bar}"></span><span class="text-[10px] font-mono ${cfg.color}">${cfg.label}</span></div>`;
+    }).join("")}</div>
   </div>`;
 
   // Channel legend
@@ -658,13 +711,13 @@ let _currentCompData = null;
 let filterRegion = "ALL";
 
 const REGION_CONFIG = {
-  HK:     { label: 'HK 核心竞对', color: 'text-rose-400',    bg: 'bg-rose-500/10',    bar: 'bg-rose-500' },
-  GLOBAL: { label: '头部交易所',   color: 'text-blue-400',    bg: 'bg-blue-500/10',    bar: 'bg-blue-500' },
-  VN:     { label: '越南',         color: 'text-emerald-400', bg: 'bg-emerald-500/10', bar: 'bg-emerald-500' },
-  EU:     { label: '欧洲',         color: 'text-violet-400',  bg: 'bg-violet-500/10',  bar: 'bg-violet-500' },
-  ID:     { label: '印尼',         color: 'text-amber-400',   bg: 'bg-amber-500/10',   bar: 'bg-amber-500' },
-  JP:     { label: '日本',         color: 'text-pink-400',    bg: 'bg-pink-500/10',    bar: 'bg-pink-500' },
-  BROKER: { label: 'Broker',       color: 'text-slate-400',   bg: 'bg-slate-500/10',   bar: 'bg-slate-500' },
+  HK:     { label: 'HK 核心竞对', color: 'text-rose-400',    bg: 'bg-rose-500/10',    bar: 'bg-rose-500',    hex: '#f43f5e' },
+  GLOBAL: { label: '头部交易所',   color: 'text-blue-400',    bg: 'bg-blue-500/10',    bar: 'bg-blue-500',    hex: '#3b82f6' },
+  VN:     { label: '越南',         color: 'text-emerald-400', bg: 'bg-emerald-500/10', bar: 'bg-emerald-500', hex: '#10b981' },
+  EU:     { label: '欧洲',         color: 'text-violet-400',  bg: 'bg-violet-500/10',  bar: 'bg-violet-500',  hex: '#8b5cf6' },
+  ID:     { label: '印尼',         color: 'text-amber-400',   bg: 'bg-amber-500/10',   bar: 'bg-amber-500',   hex: '#f59e0b' },
+  JP:     { label: '日本',         color: 'text-pink-400',    bg: 'bg-pink-500/10',    bar: 'bg-pink-500',    hex: '#ec4899' },
+  BROKER: { label: 'Broker',       color: 'text-slate-400',   bg: 'bg-slate-500/10',   bar: 'bg-slate-500',   hex: '#64748b' },
 };
 
 const IMPORTANCE_CONFIG = {
@@ -678,7 +731,19 @@ const CATEGORY_ICONS = {
   '监管合规': '📋', '融资/IPO': '💰', '人事变动': '👤', '其他': '📌',
 };
 
+const CATEGORY_STYLE = {
+  '新币上线': { dot: 'bg-yellow-500' },
+  '产品更新': { dot: 'bg-cyan-500' },
+  '活动推广': { dot: 'bg-green-500' },
+  '合作伙伴': { dot: 'bg-blue-500' },
+  '监管合规': { dot: 'bg-orange-500' },
+  '融资/IPO': { dot: 'bg-purple-500' },
+  '人事变动': { dot: 'bg-pink-500' },
+  '其他':     { dot: 'bg-slate-500' },
+};
+
 async function loadCompetitors() {
+  showSkeleton();
   try {
     const res = await fetch(COMP_API.today);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -695,37 +760,18 @@ async function loadCompetitors() {
 }
 
 function setFilterRegion(v) {
-  if (v === "ALL") {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    return;
-  }
-  const el = document.getElementById(`region-${v}`);
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+  filterRegion = v;
+  if (_currentCompData) renderCompetitorDashboard(_currentCompData);
 }
 
 function renderCompetitorDashboard(data) {
   const competitors = data.competitors || [];
 
   // Header
-  document.getElementById("header-date").textContent = data.run_date
-    ? `竞品数据 ${data.run_date}` : "";
-
-  // Filter by region — always show all (scroll-based navigation)
-  const filtered = competitors;
-
-  // Hero stats
-  const withEvents = competitors.filter(c => (c.events || []).length > 0);
-  const allEvents = competitors.flatMap(c => c.events || []);
-  const highCount = allEvents.filter(e => e.importance === 'high').length;
-  const medCount = allEvents.filter(e => e.importance === 'medium').length;
-  document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-xl font-display font-bold text-white">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
-    <div class="w-px h-8 bg-white/10"></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-cyan-400">${withEvents.length}</div><div class="text-[10px] text-slate-500 font-mono">有动态</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-amber-400">${medCount}</div><div class="text-[10px] text-slate-500 font-mono">一般</div></div>`;
+  const compDateLabel = data.date_range
+    ? `竞品动态 ${data.date_range.from} ~ ${data.date_range.to}`
+    : (data.run_date ? `竞品数据 ${data.run_date}` : "");
+  document.getElementById("header-date").textContent = compDateLabel;
 
   // Region filter buttons
   const regions = ["ALL", ...Object.keys(REGION_CONFIG)];
@@ -742,112 +788,135 @@ function renderCompetitorDashboard(data) {
   }).join("");
   document.getElementById("sub-tabs-competitors").innerHTML =
     '<div class="flex items-center gap-1.5"><span class="text-xs text-slate-500 font-medium mr-1">区域</span>' + regionBtns + '</div>';
-  document.getElementById("filter-count").textContent = `${filtered.length} / ${competitors.length} 家`;
 
-  // Group by region
-  const byRegion = {};
-  for (const comp of filtered) {
-    const r = comp.region || "HK";
-    if (!byRegion[r]) byRegion[r] = [];
-    byRegion[r].push(comp);
+  // Split active / inactive, apply region filter
+  const active = competitors.filter(c => (c.events || []).length > 0);
+  const inactive = competitors.filter(c => (c.events || []).length === 0);
+
+  const filteredActive = filterRegion === "ALL"
+    ? active
+    : active.filter(c => (c.region || "HK") === filterRegion);
+  const filteredInactive = filterRegion === "ALL"
+    ? inactive
+    : inactive.filter(c => (c.region || "HK") === filterRegion);
+
+  // Sort active by event count desc
+  filteredActive.sort((a, b) => (b.events || []).length - (a.events || []).length);
+
+  // Hero stats — computed from filtered set
+  const filteredAll = [...filteredActive, ...filteredInactive];
+  const filteredEvents = filteredAll.flatMap(c => c.events || []);
+  const highCount = filteredEvents.filter(e => e.importance === 'high').length;
+  const medCount = filteredEvents.filter(e => e.importance === 'medium').length;
+  document.getElementById("hero-stats").innerHTML = `
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-white">${filteredAll.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
+    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-cyan-400">${filteredActive.length}</div><div class="text-[10px] text-slate-500 font-mono">有动态</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-amber-400">${medCount}</div><div class="text-[10px] text-slate-500 font-mono">一般</div></div>`;
+
+  document.getElementById("filter-count").textContent = `${filteredAll.length} / ${competitors.length} 家`;
+
+  // Render columns
+  let html = '';
+  if (filteredActive.length > 0) {
+    const cols = filteredActive.map((comp, i) => renderCompetitorColumn(comp, i)).join("");
+    html += `<div class="competitor-columns">${cols}</div>`;
   }
 
-  // Render sections
-  const regionOrder = ["HK", "GLOBAL", "VN", "EU", "ID", "BROKER"];
-  let html = "";
-  for (const region of regionOrder) {
-    const comps = byRegion[region];
-    if (!comps || comps.length === 0) continue;
-    html += renderRegionSection(region, comps);
+  // Inactive competitors as tags
+  if (filteredInactive.length > 0) {
+    const tags = filteredInactive.map(c => {
+      const rCfg = REGION_CONFIG[c.region] || REGION_CONFIG.HK;
+      return `<span class="inline-flex items-center gap-1 text-[10px] font-mono text-slate-600 px-2 py-1 rounded border border-white/[0.05] bg-white/[0.02]"><span class="${rCfg.color}">${esc(c.region)}</span> ${esc(c.name)}</span>`;
+    }).join("");
+    html += `<div class="mt-4"><div class="text-[10px] text-slate-500 font-mono mb-2">近7日无动态 (${filteredInactive.length})</div><div class="flex flex-wrap gap-2">${tags}</div></div>`;
   }
+
   if (!html) html = '<div class="text-center py-20 text-slate-500"><p class="text-sm">该区域暂无竞品数据</p></div>';
 
   document.getElementById("card-sections").innerHTML = html;
 
-  // Render competitor sidebar
+  // Sidebar
   renderCompetitorSidebar(competitors);
 
-  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${data.run_date || ""}`;
+  const compFooterDate = data.date_range
+    ? `${data.date_range.from} ~ ${data.date_range.to}`
+    : (data.run_date || "");
+  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${compFooterDate}`;
   document.getElementById("footer-right").textContent = `竞品监控 · ${competitors.length} 家竞品`;
 }
 
-function renderRegionSection(region, comps) {
-  const cfg = REGION_CONFIG[region] || REGION_CONFIG.HK;
-  const activeComps = comps.filter(c => (c.events || []).length > 0);
-  const inactiveComps = comps.filter(c => (c.events || []).length === 0);
+function renderCompetitorColumn(comp, index) {
+  const events = (comp.events || []).slice();
+  const regionCfg = REGION_CONFIG[comp.region] || REGION_CONFIG.HK;
 
-  return `<section id="region-${region}" class="mb-6 scroll-mt-16">
-    <div class="flex items-center gap-3 mb-4">
-      <span class="h-3 w-3 rounded-full ${cfg.bar} shrink-0"></span>
-      <h2 class="text-sm font-display font-bold ${cfg.color} tracking-wide uppercase">${cfg.label}</h2>
-      <div class="flex-1 h-px bg-white/[0.08]"></div>
-      <span class="text-[10px] font-mono ${cfg.color} opacity-60">${activeComps.length}/${comps.length} 有动态</span>
-    </div>
-    <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
-      ${activeComps.map((comp, i) => renderCompetitorCard(comp, i, cfg)).join("")}
-    </div>
-    ${inactiveComps.length > 0 ? `<div class="mt-3 flex flex-wrap gap-2">
-      ${inactiveComps.map(c => `<span class="text-[10px] font-mono text-slate-600 px-2 py-1 rounded border border-white/[0.05] bg-white/[0.02]">${esc(c.name)} — 今日无动态</span>`).join("")}
-    </div>` : ""}
-  </section>`;
-}
-
-function renderCompetitorCard(comp, index, regionCfg) {
-  const events = comp.events || [];
-  const maxImportance = events.reduce((max, e) => {
-    const order = { high: 3, medium: 2, low: 1 };
-    return (order[e.importance] || 0) > (order[max] || 0) ? e.importance : max;
-  }, "low");
-  const impCfg = IMPORTANCE_CONFIG[maxImportance] || IMPORTANCE_CONFIG.low;
+  // Sort by date desc, then importance
+  events.sort((a, b) => {
+    const da = a.date || '';
+    const db = b.date || '';
+    if (db > da) return 1;
+    if (da > db) return -1;
+    const impOrder = { high: 3, medium: 2, low: 1 };
+    return (impOrder[b.importance] || 0) - (impOrder[a.importance] || 0);
+  });
 
   const eventsHtml = events.map(e => renderEventItem(e)).join("");
 
-  return `
-  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
-       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.06}s">
-    <div class="absolute left-0 top-0 bottom-0 w-1 ${impCfg.dot}"></div>
-    <div class="pl-4 pr-4 pt-4 pb-3">
-      <div class="flex items-start justify-between gap-3 mb-2">
-        <div class="min-w-0">
-          <h3 class="text-sm font-display font-semibold text-white leading-snug">${esc(comp.name)}</h3>
-          <p class="text-[11px] text-slate-400 mt-0.5 font-body">${esc(comp.summary || "")}</p>
+  // Logo with fallback to first letter avatar
+  const logoUrl = comp.logo || '';
+  const logoHtml = logoUrl
+    ? `<img src="${esc(logoUrl)}" alt="" class="w-5 h-5 rounded-full object-cover bg-white/10 shrink-0" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+      + `<span class="w-5 h-5 rounded-full bg-white/10 items-center justify-center text-[10px] font-bold text-white shrink-0" style="display:none">${esc(comp.name[0])}</span>`
+    : `<span class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center text-[10px] font-bold text-white shrink-0">${esc(comp.name[0])}</span>`;
+
+  return `<div class="competitor-column" style="--i:${index}; border-top: 2px solid ${regionCfg.hex}; animation: fadeSlideIn 0.3s ease-out both; animation-delay: calc(var(--i) * 0.06s)">
+    <div class="col-header relative" style="background: linear-gradient(135deg, ${regionCfg.hex}0a, transparent)">
+      <div class="absolute left-0 top-0 bottom-0 w-[3px] rounded-l ${regionCfg.bar}"></div>
+      <div class="flex items-center justify-between gap-2 mb-1.5 pl-2">
+        <div class="flex items-center gap-2 min-w-0">
+          ${logoHtml}
+          <h3 class="text-sm font-display font-semibold text-white truncate">${esc(comp.name)}</h3>
+          <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-mono ${regionCfg.color} ${regionCfg.bg}">${esc(comp.region)}</span>
         </div>
-        <div class="flex items-center gap-1.5 shrink-0">
-          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono ${regionCfg.color} ${regionCfg.bg}">${esc(comp.region)}</span>
-          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono ${impCfg.color} ${impCfg.bg}">${events.length} 事件</span>
-        </div>
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono ${regionCfg.color} ${regionCfg.bg} shrink-0">${events.length} 事件</span>
       </div>
-      <div class="space-y-2 mt-3">
-        ${eventsHtml}
-      </div>
+      <p class="text-[11px] text-slate-400 font-body leading-relaxed line-clamp-2 pl-2">${esc(comp.summary || "")}</p>
+    </div>
+    <div class="col-body space-y-2">
+      ${eventsHtml}
     </div>
   </div>`;
 }
 
 function renderEventItem(event) {
   const impCfg = IMPORTANCE_CONFIG[event.importance] || IMPORTANCE_CONFIG.low;
-  const catIcon = CATEGORY_ICONS[event.category] || '📌';
+  const catStyle = CATEGORY_STYLE[event.category] || CATEGORY_STYLE['其他'];
   const sources = (event.sources || []).map(s =>
     `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors underline underline-offset-2 decoration-slate-700 hover:decoration-cyan-500/50">${esc(s.name)}</a>`
   ).join('<span class="text-slate-700 mx-0.5">·</span>');
 
   const summaryId = 'comp-ev-' + Math.random().toString(36).slice(2, 8);
+  const dateStr = event.date || '';
+  const dateLabel = dateStr ? dateStr.slice(5) : '';
 
   return `<div class="border border-white/[0.06] rounded-md bg-[#0f1623] p-3">
     <div class="flex items-start justify-between gap-2 mb-1.5">
       <div class="flex items-center gap-1.5 min-w-0">
-        <span class="text-sm shrink-0">${catIcon}</span>
+        <span class="w-2 h-2 rounded-full ${catStyle.dot} shrink-0 mt-0.5"></span>
         <span class="text-[11px] font-medium text-white truncate">${esc(event.title)}</span>
       </div>
       <div class="flex items-center gap-1 shrink-0">
         <span class="text-[9px] font-mono px-1.5 py-0.5 rounded ${impCfg.color} ${impCfg.bg}">${impCfg.label}</span>
         <span class="text-[9px] font-mono text-slate-600">${esc(event.category)}</span>
+        ${dateLabel ? `<span class="text-[9px] font-mono text-slate-600">${esc(dateLabel)}</span>` : ''}
       </div>
     </div>
     <div class="prose-container text-[11px] leading-relaxed text-slate-300" data-md="${encodeURIComponent(event.summary || '')}" id="${summaryId}"></div>
     ${sources ? `<div class="flex flex-wrap items-center gap-x-0 gap-y-1 mt-2 pt-1.5 border-t border-white/[0.04]">${sources}</div>` : ""}
   </div>`;
 }
+
 
 function renderCompetitorSidebar(competitors) {
   const allEvents = competitors.flatMap(c => c.events || []);
@@ -860,7 +929,7 @@ function renderCompetitorSidebar(competitors) {
   let html = `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
     <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">事件分类统计</h3>
     <div class="space-y-2">${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([cat, count]) =>
-      `<div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400">${CATEGORY_ICONS[cat] || '📌'} ${cat}</span><span class="text-[10px] font-mono text-slate-500">${count}</span></div>`
+      `<div class="flex items-center justify-between"><span class="text-[10px] font-mono text-slate-400"><span class="inline-block w-1.5 h-1.5 rounded-full ${(CATEGORY_STYLE[cat] || CATEGORY_STYLE['其他']).dot} mr-1 align-middle"></span>${cat}</span><span class="text-[10px] font-mono text-slate-500">${count}</span></div>`
     ).join("")}</div>
   </div>`;
 
@@ -906,6 +975,7 @@ _compMdObserver.observe(document.body, { childList: true, subtree: true });
 // ── Sources (信源) ──────────────────────────────────────────────
 
 async function loadSources() {
+  showSkeleton();
   try {
     let data;
     if (IS_STATIC) {
@@ -954,11 +1024,11 @@ function renderSourcesDashboard(data) {
   document.getElementById("filter-count").textContent = '';
 
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-xl font-display font-bold text-orange-400">${rssList.length}</div><div class="text-[10px] text-slate-500 font-mono">RSS</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-sky-400">${twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">Twitter</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-orange-400">${rssList.length}</div><div class="text-[10px] text-slate-500 font-mono">RSS</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-sky-400">${twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">Twitter</div></div>
     <div class="w-px h-8 bg-white/10"></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-violet-400">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-emerald-400">${compChannels}</div><div class="text-[10px] text-slate-500 font-mono">监测渠道</div></div>`;
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-violet-400">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-emerald-400">${compChannels}</div><div class="text-[10px] text-slate-500 font-mono">监测渠道</div></div>`;
 
   let html = '';
   html += renderSourceSection('热点 · RSS 订阅源', 'bg-orange-500', 'text-orange-400',
@@ -1039,7 +1109,7 @@ function renderRssSourceCard(source, index) {
     ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded text-amber-300 bg-amber-500/10">中文</span>'
     : '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded text-emerald-300 bg-emerald-500/10">EN</span>';
   return `
-  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden card-tinted-shadow"
        style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.04}s">
     <div class="absolute left-0 top-0 bottom-0 w-1 bg-orange-500"></div>
     <div class="pl-4 pr-4 py-3">
@@ -1055,7 +1125,7 @@ function renderRssSourceCard(source, index) {
 
 function renderTwitterSourceCard(handle, index) {
   return `
-  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden card-tinted-shadow"
        style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.04}s">
     <div class="absolute left-0 top-0 bottom-0 w-1 bg-sky-500"></div>
     <div class="pl-4 pr-4 py-3">
@@ -1085,7 +1155,7 @@ function renderCompetitorSourceCard(comp, index) {
     : '<span class="text-[9px] font-mono text-slate-600">仅媒体关键词匹配</span>';
 
   return `
-  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden card-tinted-shadow"
        style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.04}s">
     <div class="absolute left-0 top-0 bottom-0 w-1 bg-violet-500"></div>
     <div class="pl-4 pr-4 py-3">
@@ -1109,6 +1179,7 @@ const PLATFORM_CONFIG = {
 let _currentSentimentFilter = "ALL";
 
 async function loadSentiment() {
+  showSkeleton();
   try {
     const res = await fetch(SENT_API.today);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -1130,15 +1201,17 @@ function renderSentimentDashboard(data) {
   const items = data.items || [];
   const totalRaw = data.total_raw || 0;
 
-  document.getElementById("header-date").textContent = data.run_date
-    ? `舆情数据 ${data.run_date}` : "";
+  const sentDateLabel = data.date_range
+    ? `舆情监控 ${data.date_range.from} ~ ${data.date_range.to}`
+    : (data.run_date ? `舆情数据 ${data.run_date}` : "");
+  document.getElementById("header-date").textContent = sentDateLabel;
 
   const highCount = items.filter(i => i.importance === 'high').length;
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-xl font-display font-bold text-white">${totalRaw}</div><div class="text-[10px] text-slate-500 font-mono">原始数据</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-white">${totalRaw}</div><div class="text-[10px] text-slate-500 font-mono">原始数据</div></div>
     <div class="w-px h-8 bg-white/10"></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-cyan-400">${items.length}</div><div class="text-[10px] text-slate-500 font-mono">有效提及</div></div>
-    <div class="text-center"><div class="text-xl font-display font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>`;
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-cyan-400">${items.length}</div><div class="text-[10px] text-slate-500 font-mono">有效提及</div></div>
+    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>`;
 
   const IMP_CFG = {
     high:   { label: '重要', color: 'text-red-400',   bg: 'bg-red-500/15',   border: 'border-red-500/30' },
@@ -1175,7 +1248,10 @@ function renderSentimentDashboard(data) {
   }
 
   document.getElementById("sidebar-content").innerHTML = '';
-  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${data.run_date || ""}`;
+  const sentFooterDate = data.date_range
+    ? `${data.date_range.from} ~ ${data.date_range.to}`
+    : (data.run_date || "");
+  document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${sentFooterDate}`;
   document.getElementById("footer-right").textContent = `舆情监控 · ${items.length} 条有效提及（原始 ${totalRaw} 条）`;
   window._sentimentData = data;
 }
@@ -1204,8 +1280,8 @@ function renderSentimentCard(item, index) {
   }).join('<span class="text-slate-600 mx-1">&middot;</span>');
 
   return `
-  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden transition-shadow duration-200 hover:shadow-lg hover:shadow-black/30"
-       style="animation: fadeSlideIn 0.3s ease-out both; animation-delay: ${index * 0.03}s">
+  <div class="relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden card-tinted-shadow"
+       style="--i:${index}; animation: fadeSlideIn 0.3s ease-out both; animation-delay: calc(var(--i) * 0.03s)">
     <div class="absolute left-0 top-0 bottom-0 w-1 ${impCfg.bg.replace('/15', '')}"></div>
     <div class="pl-4 pr-4 py-3">
       <div class="flex items-center gap-2 mb-1.5">

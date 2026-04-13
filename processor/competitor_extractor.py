@@ -26,10 +26,11 @@ EXTRACTION_PROMPT = """你是一个竞品情报分析师。从以下原始数据
 2. 事件分类 category 只能是以下之一：新币上线、产品更新、活动推广、合作伙伴、监管合规、融资/IPO、人事变动、其他
 3. 每个事件的 summary 使用结构化 Markdown：**加粗**关键信息，用列表列举要点
 4. importance 分三级：high（重大战略动作）、medium（常规运营）、low（日常信息）
-5. 如果某竞品当日无实质动态，仍需输出该竞品但 events 为空数组，summary 写"今日无重大动态"
-6. sources 中的 name 只填媒体/平台名称（如 "Binance Blog"、"CoinDesk"），不含文章标题
-7. 去重：同一事件即使来自多个渠道也只输出一次，但在 sources 中合并所有来源
-8. 忽略无实质内容的推文（如纯转发、表情包、无信息量内容）
+5. 每个事件需标注 date（YYYY-MM-DD 格式）。优先从原文提取明确日期；若无明确日期，根据发布时间或上下文推断最可能的日期
+6. 如果某竞品近期无重大事件，events 为空数组，summary 应简要描述该竞品近期的一般状态（如"持续运营中，近期以社区互动为主"），不要写"无重大动态"之类的空话
+7. sources 中的 name 只填媒体/平台名称（如 "Binance Blog"、"CoinDesk"），不含文章标题
+8. 去重：同一事件即使来自多个渠道也只输出一次，但在 sources 中合并所有来源
+9. 忽略无实质内容的推文（如纯转发、表情包、无信息量内容）
 """
 
 RESPONSE_SCHEMA = {
@@ -41,7 +42,7 @@ RESPONSE_SCHEMA = {
                 "type": "object",
                 "properties": {
                     "name": {"type": "string", "description": "竞品名称"},
-                    "summary": {"type": "string", "description": "一句话概览今日动态"},
+                    "summary": {"type": "string", "description": "一句话概览近期动态"},
                     "events": {
                         "type": "array",
                         "items": {
@@ -56,6 +57,10 @@ RESPONSE_SCHEMA = {
                                 "summary": {
                                     "type": "string",
                                     "description": "结构化 Markdown 摘要：用**加粗**和列表",
+                                },
+                                "date": {
+                                    "type": "string",
+                                    "description": "事件日期，格式 YYYY-MM-DD。从原文提取或根据上下文推断",
                                 },
                                 "importance": {
                                     "type": "string",
@@ -104,6 +109,9 @@ def _build_items_markdown(items: list[dict]) -> str:
             lines.append(f"### {title}")
             lines.append(f"- 来源: {src}")
             lines.append(f"- 链接: {url}")
+            pub_date = it.get("published", it.get("date", ""))
+            if pub_date:
+                lines.append(f"- 日期: {pub_date}")
             lines.append(f"- 内容: {content}")
             lines.append("")
 
@@ -121,7 +129,7 @@ async def extract(items: list[dict], run_date: str) -> dict:
     cfg = _load_config()
     comp_meta = {}
     for comp in cfg.get("competitors", []):
-        comp_meta[comp["name"]] = {"region": comp.get("region", "HK")}
+        comp_meta[comp["name"]] = {"region": comp.get("region", "HK"), "logo": comp.get("logo", "")}
 
     # 过滤无效 items
     valid_items = [
@@ -155,6 +163,7 @@ async def extract(items: list[dict], run_date: str) -> dict:
             for comp in result.get("competitors", []):
                 meta = comp_meta.get(comp["name"], {})
                 comp["region"] = meta.get("region", "HK")
+                comp["logo"] = meta.get("logo", "")
 
             # 按配置顺序填充完整竞品列表
             full_list = []
@@ -166,7 +175,8 @@ async def extract(items: list[dict], run_date: str) -> dict:
                     full_list.append({
                         "name": name,
                         "region": comp_cfg.get("region", "HK"),
-                        "summary": "今日无重大动态",
+                        "logo": comp_cfg.get("logo", ""),
+                        "summary": f"近7日未监测到 {name} 的公开动态",
                         "events": [],
                     })
 
