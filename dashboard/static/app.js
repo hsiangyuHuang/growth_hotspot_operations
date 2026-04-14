@@ -40,10 +40,10 @@ const CATEGORY_CONFIG = {
 };
 
 const CHANNEL_CONFIG = {
-  'Paid Ads':            { label: 'Paid Ads',    icon: '📣', color: 'text-amber-300',  bg: 'bg-amber-500/15',  activeCls: 'text-amber-300 bg-amber-500/15' },
-  'SEO':                 { label: 'SEO',         icon: '🔍', color: 'text-emerald-300', bg: 'bg-emerald-500/15', activeCls: 'text-emerald-300 bg-emerald-500/15' },
-  '站内运营 / 用户触达': { label: '站内运营/触达', icon: '🖥️', color: 'text-cyan-300',   bg: 'bg-cyan-500/15',   activeCls: 'text-cyan-300 bg-cyan-500/15' },
-  '社区':                { label: '社区运营',     icon: '💬', color: 'text-violet-300', bg: 'bg-violet-500/15', activeCls: 'text-violet-300 bg-violet-500/15' },
+  'Paid Ads':            { label: 'Paid Ads',    icon: '', color: 'text-amber-300',  bg: 'bg-amber-500/15',  activeCls: 'text-amber-300 bg-amber-500/15' },
+  'SEO':                 { label: 'SEO',         icon: '', color: 'text-emerald-300', bg: 'bg-emerald-500/15', activeCls: 'text-emerald-300 bg-emerald-500/15' },
+  '站内运营 / 用户触达': { label: '站内运营/触达', icon: '', color: 'text-cyan-300',   bg: 'bg-cyan-500/15',   activeCls: 'text-cyan-300 bg-cyan-500/15' },
+  '社区':                { label: '社区运营',     icon: '', color: 'text-violet-300', bg: 'bg-violet-500/15', activeCls: 'text-violet-300 bg-violet-500/15' },
 };
 
 const SITE_CONFIG = {
@@ -159,7 +159,7 @@ function renderFilterButtons() {
     '<span class="text-xs text-slate-500 font-medium mr-2">渠道</span>' +
     channels.map(c => {
       const cfg = c !== "ALL" ? CHANNEL_CONFIG[c] : null;
-      const label = c === "ALL" ? "全部" : (cfg ? `${cfg.icon} ${cfg.label}` : c);
+      const label = c === "ALL" ? "全部" : (cfg ? cfg.label : c);
       return filterBtn(c, label, filterChannel === c, cfg, `setFilterChannel('${esc(c)}')`);
     }).join("");
 
@@ -341,6 +341,10 @@ function renderDateTimeline(dates, countMap) {
 
   html += '</div></div>';
   container.innerHTML = html;
+
+  // 移动端自动滚动到最近日期区域
+  const scrollEl = container.querySelector('.overflow-x-auto');
+  if (scrollEl) scrollEl.scrollLeft = scrollEl.scrollWidth;
 }
 
 function selectHistoryDate(dateStr) {
@@ -423,11 +427,11 @@ function renderHeroStats(cards) {
   const sorted = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
   const topStats = sorted.slice(0, 4).map(([cat, count]) => {
     const cfg = CATEGORY_CONFIG[cat] || { color: 'text-slate-400', label: cat };
-    return `<div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold ${cfg.color}">${count}</div><div class="text-[10px] text-slate-500 font-mono">${cfg.label}</div></div>`;
+    return `<div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold ${cfg.color}">${count}</div><div class="text-[10px] text-slate-500 font-mono">${cfg.label}</div></div>`;
   }).join("");
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-white">${cards.length}</div><div class="text-[10px] text-slate-500 font-mono">行动包</div></div>
-    <div class="w-px h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-white">${cards.length}</div><div class="text-[10px] text-slate-500 font-mono">行动包</div></div>
+    <div class="w-px h-6 md:h-8 bg-white/10"></div>
     ${topStats}`;
 }
 
@@ -458,10 +462,10 @@ function renderCard(card, index) {
   const sCfg = SITE_CONFIG[site] || SITE_CONFIG.Both;
 
   const channelTabs = (card.channels || []).map((ch, ci) => {
-    const chCfg = CHANNEL_CONFIG[ch.name] || { label: ch.name, icon: '📋', color: 'text-slate-300', bg: 'bg-slate-500/15', activeCls: 'text-slate-300 bg-slate-500/15' };
+    const chCfg = CHANNEL_CONFIG[ch.name] || { label: ch.name, icon: '', color: 'text-slate-300', bg: 'bg-slate-500/15', activeCls: 'text-slate-300 bg-slate-500/15' };
     return `<button onclick="toggleChannelTab('${card.id}',${ci})" id="ch-tab-${card.id}-${ci}" data-channel="${esc(ch.name)}"
       class="ch-tab inline-flex items-center gap-1 px-2.5 py-1 rounded text-[10px] font-medium transition-colors duration-150 text-slate-400 bg-white/[0.05] hover:bg-white/10 hover:text-slate-200">
-      <span>${chCfg.icon}</span>${chCfg.label}<span class="ml-0.5 transition-transform duration-150" id="ch-arrow-${card.id}-${ci}">▾</span>
+      ${chCfg.label}<span class="ml-0.5 transition-transform duration-150" id="ch-arrow-${card.id}-${ci}">▾</span>
     </button>`;
   }).join("");
 
@@ -469,7 +473,7 @@ function renderCard(card, index) {
     const chCfg = CHANNEL_CONFIG[ch.name] || { label: ch.name, icon: '📋', color: 'text-slate-300', bg: 'bg-slate-500/15' };
     return `<div id="ch-panel-${card.id}-${ci}" class="hidden border border-white/[0.08] rounded-md bg-[#0f1623] p-3 mb-2 mt-1 ch-panel" data-channel="${esc(ch.name)}">
       <div class="flex items-center justify-between mb-2">
-        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-medium ${chCfg.color} ${chCfg.bg}"><span>${chCfg.icon}</span>${chCfg.label}</span>
+        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-medium ${chCfg.color} ${chCfg.bg}">${chCfg.label}</span>
         <button onclick="copyAndAccept('${card.id}','${esc(ch.name)}','ch-md-${card.id}-${ci}')"
           class="text-[10px] font-mono px-2 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-500/40 hover:text-cyan-400 hover:bg-cyan-500/5 transition-colors duration-150">Copy / Accept</button>
       </div>
@@ -491,13 +495,11 @@ function renderCard(card, index) {
   return `
   <div class="card-item relative rounded-lg border border-white/[0.08] bg-navy-light overflow-hidden card-tinted-shadow"
        style="--i:${index}; animation: fadeSlideIn 0.3s ease-out both; animation-delay: calc(var(--i) * 0.06s)">
-    <div class="absolute left-0 top-0 bottom-0 w-1 ${catCfg.bar}"></div>
-    <div class="pl-4 pr-4 pt-4 pb-3">
-      <div class="flex items-start justify-between gap-3 mb-2">
-        <div class="flex items-start gap-2 min-w-0">
-          <div class="min-w-0">
-            <h3 class="text-sm font-display font-semibold text-white leading-snug">${esc(card.title)}</h3>
-          </div>
+    <div class="absolute left-0 top-0 bottom-0 w-0.5 md:w-1 ${catCfg.bar}"></div>
+    <div class="pl-3 pr-3 pt-2.5 pb-2 md:pl-4 md:pr-4 md:pt-4 md:pb-3">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1.5 md:gap-3 mb-2">
+        <div class="min-w-0">
+          <h3 class="text-sm font-display font-semibold text-white leading-snug">${esc(card.title)}</h3>
         </div>
         <div class="flex items-center gap-1.5 shrink-0">
           <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-medium ${catCfg.color} ${catCfg.bg}">${esc(cat)}</span>
@@ -657,7 +659,7 @@ function renderSidebar(data) {
   html += `<div class="rounded-lg border border-white/[0.08] bg-navy-light p-4">
     <h3 class="text-xs font-display font-semibold text-slate-300 mb-3">渠道图例</h3>
     <div class="space-y-2">${Object.entries(CHANNEL_CONFIG).map(([, v]) =>
-      `<div class="flex items-center gap-2"><span class="text-sm">${v.icon}</span><span class="text-[10px] font-mono ${v.color}">${v.label}</span></div>`
+      `<div class="flex items-center gap-2"><span class="text-[10px] font-mono ${v.color}">${v.label}</span></div>`
     ).join("")}</div>
   </div>`;
 
@@ -704,13 +706,13 @@ let _currentCompData = null;
 let filterRegion = "ALL";
 
 const REGION_CONFIG = {
-  HK:     { label: 'HK 核心竞对', color: 'text-rose-400',    bg: 'bg-rose-500/10',    bar: 'bg-rose-500',    hex: '#f43f5e' },
-  GLOBAL: { label: '头部交易所',   color: 'text-blue-400',    bg: 'bg-blue-500/10',    bar: 'bg-blue-500',    hex: '#3b82f6' },
-  VN:     { label: '越南',         color: 'text-emerald-400', bg: 'bg-emerald-500/10', bar: 'bg-emerald-500', hex: '#10b981' },
-  EU:     { label: '欧洲',         color: 'text-violet-400',  bg: 'bg-violet-500/10',  bar: 'bg-violet-500',  hex: '#8b5cf6' },
-  ID:     { label: '印尼',         color: 'text-amber-400',   bg: 'bg-amber-500/10',   bar: 'bg-amber-500',   hex: '#f59e0b' },
-  JP:     { label: '日本',         color: 'text-pink-400',    bg: 'bg-pink-500/10',    bar: 'bg-pink-500',    hex: '#ec4899' },
-  BROKER: { label: 'Broker',       color: 'text-slate-400',   bg: 'bg-slate-500/10',   bar: 'bg-slate-500',   hex: '#64748b' },
+  HK:     { label: '香港',    color: 'text-rose-400',    bg: 'bg-rose-500/10',    bar: 'bg-rose-500',    hex: '#f43f5e' },
+  GLOBAL: { label: 'Global',  color: 'text-blue-400',    bg: 'bg-blue-500/10',    bar: 'bg-blue-500',    hex: '#3b82f6' },
+  VN:     { label: '越南',    color: 'text-emerald-400', bg: 'bg-emerald-500/10', bar: 'bg-emerald-500', hex: '#10b981' },
+  EU:     { label: '欧洲',    color: 'text-violet-400',  bg: 'bg-violet-500/10',  bar: 'bg-violet-500',  hex: '#8b5cf6' },
+  ID:     { label: '印尼',    color: 'text-amber-400',   bg: 'bg-amber-500/10',   bar: 'bg-amber-500',   hex: '#f59e0b' },
+  JP:     { label: '日本',    color: 'text-pink-400',    bg: 'bg-pink-500/10',    bar: 'bg-pink-500',    hex: '#ec4899' },
+  BROKER: { label: '券商',    color: 'text-slate-400',   bg: 'bg-slate-500/10',   bar: 'bg-slate-500',   hex: '#64748b' },
 };
 
 const IMPORTANCE_CONFIG = {
@@ -802,11 +804,11 @@ function renderCompetitorDashboard(data) {
   const highCount = filteredEvents.filter(e => e.importance === 'high').length;
   const medCount = filteredEvents.filter(e => e.importance === 'medium').length;
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-white">${filteredAll.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
-    <div class="w-px h-8 bg-white/10"></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-cyan-400">${filteredActive.length}</div><div class="text-[10px] text-slate-500 font-mono">有动态</div></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-amber-400">${medCount}</div><div class="text-[10px] text-slate-500 font-mono">一般</div></div>`;
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-white">${filteredAll.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
+    <div class="w-px h-6 md:h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-cyan-400">${filteredActive.length}</div><div class="text-[10px] text-slate-500 font-mono">有动态</div></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-amber-400">${medCount}</div><div class="text-[10px] text-slate-500 font-mono">一般</div></div>`;
 
   document.getElementById("filter-count").textContent = `${filteredAll.length} / ${competitors.length} 家`;
 
@@ -1010,11 +1012,11 @@ function renderSourcesDashboard(data) {
   document.getElementById("filter-count").textContent = '';
 
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-orange-400">${rssList.length}</div><div class="text-[10px] text-slate-500 font-mono">RSS</div></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-sky-400">${twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">Twitter</div></div>
-    <div class="w-px h-8 bg-white/10"></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-violet-400">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-emerald-400">${compChannels}</div><div class="text-[10px] text-slate-500 font-mono">监测渠道</div></div>`;
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-orange-400">${rssList.length}</div><div class="text-[10px] text-slate-500 font-mono">RSS</div></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-sky-400">${twitterAccounts.length}</div><div class="text-[10px] text-slate-500 font-mono">Twitter</div></div>
+    <div class="w-px h-6 md:h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-violet-400">${competitors.length}</div><div class="text-[10px] text-slate-500 font-mono">竞品</div></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-emerald-400">${compChannels}</div><div class="text-[10px] text-slate-500 font-mono">监测渠道</div></div>`;
 
   let html = '';
   html += renderSourceSection('热点 · RSS 订阅源', 'bg-orange-500', 'text-orange-400',
@@ -1024,13 +1026,13 @@ function renderSourcesDashboard(data) {
 
   if (competitors.length > 0) {
     const COMP_REGION_CFG = {
-      HK:     { label: 'T1 HK 核心竞对',   color: 'text-rose-400',    bar: 'bg-rose-500' },
-      GLOBAL: { label: 'T2 头部交易所',     color: 'text-blue-400',    bar: 'bg-blue-500' },
-      JP:     { label: 'T3 日本',           color: 'text-pink-400',    bar: 'bg-pink-500' },
-      VN:     { label: 'T3 越南',           color: 'text-teal-400',    bar: 'bg-teal-500' },
-      EU:     { label: 'T3 欧洲',           color: 'text-indigo-400',  bar: 'bg-indigo-500' },
-      ID:     { label: 'T3 印尼',           color: 'text-amber-400',   bar: 'bg-amber-500' },
-      BROKER: { label: 'T4 券商',           color: 'text-slate-400',   bar: 'bg-slate-500' },
+      HK:     { label: '香港',   color: 'text-rose-400',    bar: 'bg-rose-500' },
+      GLOBAL: { label: 'Global', color: 'text-blue-400',    bar: 'bg-blue-500' },
+      JP:     { label: '日本',   color: 'text-pink-400',    bar: 'bg-pink-500' },
+      VN:     { label: '越南',   color: 'text-teal-400',    bar: 'bg-teal-500' },
+      EU:     { label: '欧洲',   color: 'text-indigo-400',  bar: 'bg-indigo-500' },
+      ID:     { label: '印尼',   color: 'text-amber-400',   bar: 'bg-amber-500' },
+      BROKER: { label: '券商',   color: 'text-slate-400',   bar: 'bg-slate-500' },
     };
     const regionOrder = ["HK", "GLOBAL", "JP", "VN", "EU", "ID", "BROKER"];
     const byRegion = {};
@@ -1194,10 +1196,10 @@ function renderSentimentDashboard(data) {
 
   const highCount = items.filter(i => i.importance === 'high').length;
   document.getElementById("hero-stats").innerHTML = `
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-white">${totalRaw}</div><div class="text-[10px] text-slate-500 font-mono">原始数据</div></div>
-    <div class="w-px h-8 bg-white/10"></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-cyan-400">${items.length}</div><div class="text-[10px] text-slate-500 font-mono">有效提及</div></div>
-    <div class="text-center"><div class="text-2xl font-mono tabular-nums font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>`;
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-white">${totalRaw}</div><div class="text-[10px] text-slate-500 font-mono">原始数据</div></div>
+    <div class="w-px h-6 md:h-8 bg-white/10"></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-cyan-400">${items.length}</div><div class="text-[10px] text-slate-500 font-mono">有效提及</div></div>
+    <div class="text-center"><div class="text-lg md:text-2xl font-mono tabular-nums font-bold text-red-400">${highCount}</div><div class="text-[10px] text-slate-500 font-mono">重要</div></div>`;
 
   const IMP_CFG = {
     high:   { label: '重要', color: 'text-red-400',   bg: 'bg-red-500/15',   border: 'border-red-500/30' },

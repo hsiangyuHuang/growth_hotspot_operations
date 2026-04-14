@@ -28,6 +28,8 @@ jobs:
           MANUS_PROJECT_ID: ${{ secrets.MANUS_PROJECT_ID }}
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          LARK_WEBHOOK_URL: ${{ secrets.LARK_WEBHOOK_URL }}
+          DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
         run: python main.py fetch
 
       - name: Commit data

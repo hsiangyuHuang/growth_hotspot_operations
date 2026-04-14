@@ -213,6 +213,19 @@ async def run_fetch_and_process():
     # 生成静态索引文件（供 Vercel 静态模式使用）
     _generate_index_files()
 
+    # ── 飞书推送 ──
+    try:
+        from notifier.lark import push_hotspot_briefing
+        latest_path = DATA_DIR / "processed" / "latest.json"
+        if latest_path.exists():
+            with open(latest_path, "r", encoding="utf-8") as f:
+                latest = json.load(f)
+            cards = latest.get("cards", [])
+            if cards:
+                await push_hotspot_briefing(cards, today)
+    except Exception as e:
+        logger.warning(f"飞书推送异常：{e}")
+
 
 def _generate_index_files():
     """生成 dates.json + latest.json 索引文件（供 Vercel 静态模式）"""
