@@ -1,9 +1,9 @@
 {
-  "total_raw": 18,
+  "total_raw": 20,
   "items": [
     {
-      "title": "香港首批稳定币牌照动态及 OSL 市场预期",
-      "summary": "市场传闻**香港首批稳定币牌照**将由银行（如汇丰、渣打）包揽，**OSL** 虽被视为潜在持牌机构且股价一度受此提振，但最终名单尚存变数。舆情反映出市场对合规平台**领先优势**的认可，同时也存在对首批牌照未能即刻落地的失望情绪。",
+      "title": "香港稳定币牌照监管动态",
+      "summary": "关于**香港首批稳定币牌照**的讨论升温，虽传闻 **OSL** 有望入选且股价一度上涨 20%，但实际首批牌照由银行包揽。分析指出 OSL 作为**持牌交易所**较 HashKey 更稳健，目前仍在等待名单中，反映了监管层先让银行试水的策略。",
       "category": "监管合规",
       "importance": "high",
       "sources": [
@@ -26,8 +26,8 @@
       "published_at": "2026-04-10T14:34:11+00:00"
     },
     {
-      "title": "OSL Indonesia 推出首个实物资产 Launchpool",
-      "summary": "**OSL Indonesia**（由 Koinsayang 收购更名）正式推出印尼首个基于实物资产的 **Launchpool**，支持用户通过质押 USDT 或 **XAUT (Tether Gold)** 获取奖励。该举措标志着 OSL 在印尼市场深化 RWA 业务布局。",
+      "title": "OSL Indonesia 推出首个 RWA Launchpool",
+      "summary": "**OSL Indonesia**（原 Koinsayang）正式上线首个基于**真实世界资产（RWA）**的 **Launchpool**，支持质押 **USDT** 或 **XAUT**（实物黄金锚定币）以获取奖励。该业务受印尼 **OJK** 监管，标志着其在东南亚合规市场的进一步扩张。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -38,21 +38,21 @@
         },
         {
           "platform": "twitter",
-          "author": "@valenttt____",
-          "url": "https://x.com/valenttt____/status/2043230002163200115"
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2039161103683592590"
         },
         {
           "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2039161103683592590"
+          "author": "@iniheksa",
+          "url": "https://x.com/iniheksa/status/2042165024752586843"
         }
       ],
       "published_at": "2026-04-13T10:53:44+00:00"
     },
     {
-      "title": "OSL Pay 与 Bitunix 等平台推免手续费购币活动",
-      "summary": "**OSL Pay** 与多个交易平台合作，推出限时**零手续费购币**活动，针对新老用户提供 300-500 USDT 的免税额度，旨在通过其合规支付基础设施扩大市场份额。",
-      "category": "合作伙伴",
+      "title": "OSL Pay 合作伙伴 0 手续费促销",
+      "summary": "**OSL Pay** 联合 **Bitunix** 等平台推出限时优惠，用户通过信用卡购买加密货币可享受 **0 手续费**。新用户额度高达 **500 USDT**，现有用户为 300 USDT，旨在通过低成本入金吸引新用户。",
+      "category": "活动推广",
       "importance": "medium",
       "sources": [
         {
@@ -69,22 +69,27 @@
       "published_at": "2026-04-12T09:30:04+00:00"
     },
     {
-      "title": "OSL 与 Banxa 在 TON 区块链交易量突破 5000 万美元",
-      "summary": "**Banxa 与 OSL** 宣布在 **TON 区块链**上处理的交易量已达 **5000 万美元**，证明了机构和消费者对基于 TON 生态的加密支付采用率正在增长。",
+      "title": "OSL Group 基础设施与支付业务进展",
+      "summary": "OSL 旗下的 **Banxa** 宣布支持 **Google Pay** 入金，降低了法定货币转加密货币的摩擦。同时，OSL 与 Banxa 在 **TON 网络**上的处理交易量已达 **5,000 万美元**，展示了其在支付基础设施方面的增长。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2043886250055332041"
+        },
         {
           "platform": "twitter",
           "author": "@BanxaOfficial",
           "url": "https://x.com/BanxaOfficial/status/2041093568043896987"
         }
       ],
-      "published_at": "2026-04-06T10:00:02+00:00"
+      "published_at": "2026-04-14T02:57:10+00:00"
     },
     {
-      "title": "用户要求 OSL 上线法币稳定币及反馈",
-      "summary": "用户反馈要求 **OSL 交易所**尽快上线**人民币稳定币和港币稳定币**。此外，也有印尼用户分享了 OSL 的 **OTC 业务**门槛（1 亿印尼盾以上）及相关合规优势。",
+      "title": "用户反馈：要求上线人民币及港币稳定币",
+      "summary": "有用户在社交媒体上向 OSL 官方反馈，强烈要求平台尽快上线**离岸人民币稳定币**和**香港稳定币**交易对，反映了市场对本地化稳定币交易的迫切需求。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -92,6 +97,20 @@
           "platform": "twitter",
           "author": "@ichanghun294009",
           "url": "https://x.com/ichanghun294009/status/2040717075413598380"
+        }
+      ],
+      "published_at": "2026-04-05T09:04:00+00:00"
+    },
+    {
+      "title": "OSL Global 上线新交易对与 OTC 服务说明",
+      "summary": "**OSL Global** 宣布正式上线 **POL/USD** 交易对，支持专业交易模式。此外，社区讨论了其 **OTC（场外交易）** 服务，最低起购额为 1 亿印尼盾，旨在为大额投资者提供优于订单簿的价格。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@0x1manarmy",
+          "url": "https://x.com/0x1manarmy/status/2043973834546757813"
         },
         {
           "platform": "twitter",
@@ -99,25 +118,11 @@
           "url": "https://x.com/hoteliercrypto/status/2041432532013740164"
         }
       ],
-      "published_at": "2026-04-07T08:26:58+00:00"
+      "published_at": "2026-04-14T08:45:12+00:00"
     },
     {
-      "title": "OSL Group 宣布延长 USDGO 收益奖励计划",
-      "summary": "**OSL Group** 宣布通过 StableHub 平台延长其 **USDGO 稳定币**的收益奖励计划，旨在增强其稳定币产品的吸引力和流动性。",
-      "category": "产品动态",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@LeeDG_GF",
-          "url": "https://x.com/LeeDG_GF/status/2042223606504345927"
-        }
-      ],
-      "published_at": "2026-04-09T12:50:25+00:00"
-    },
-    {
-      "title": "OSL 与 PLUME 合作开发加密支付系统",
-      "summary": "**PLUME 与 OSL** 达成合作，共同构建基于 **RWA (现实世界资产)** 的支付系统，利用 OSL 的合规基础设施进行市场布局。",
+      "title": "OSL 与 Plume 达成支付系统合作",
+      "summary": "**Plume** 与 **OSL** 展开合作，共同构建**支付系统**。此举被视为双方在加密支付和 RWA 基础设施领域的深度布局。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -130,18 +135,23 @@
       "published_at": "2026-04-01T17:12:51+00:00"
     },
     {
-      "title": "市场分析：OSL Group 2025 年盈利预测",
-      "summary": "社交媒体流传关于 **OSL Group 2025 年的盈利预测**分析，预计公司将通过聚焦**持牌机构服务**实现强劲增长并走向盈利。",
-      "category": "市场分析",
+      "title": "OSL Indonesia 社区激励与招聘动态",
+      "summary": "**OSL Indonesia** 通过 Telegram 举办社区活动，以积分和奖金形式提升用户活跃度。同时，其正在招聘**加密内容专家**以支持印尼市场的本地化运营。",
+      "category": "活动推广",
       "importance": "low",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@periodtrader_",
-          "url": "https://x.com/periodtrader_/status/2040086446757847231"
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2043632532839965016"
+        },
+        {
+          "platform": "twitter",
+          "author": "@0xkaccy",
+          "url": "https://x.com/0xkaccy/status/2039786256008368199"
         }
       ],
-      "published_at": "2026-04-03T15:18:06+00:00"
+      "published_at": "2026-04-13T10:08:59+00:00"
     }
   ],
   "date_range": {

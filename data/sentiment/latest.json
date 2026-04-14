@@ -1,10 +1,10 @@
 {
   "run_date": "2026-04-14",
-  "total_raw": 11,
+  "total_raw": 13,
   "items": [
     {
-      "title": "香港稳定币牌照进度与 OSL 市场预期分析",
-      "summary": "社交媒体讨论香港**稳定币牌照**首批名单倾向于银行机构，OSL 虽作为**合规持牌交易所**被视为有力竞争者，但股价因市场预期波动出现回撤。KOL 评价 OSL 比 HashKey 表现更稳健，但在传统金融“收编”大势下仍面临不确定性。",
+      "title": "香港稳定币牌照监管讨论及 OSL 股价波动",
+      "summary": "社交媒体热议**香港稳定币牌照**发放进度。虽然首批牌照倾向于银行引发市场失望，导致 OSL **股价在传闻上涨后回调**，但分析师认为 OSL 作为**首家合规持牌交易所**，其稳健性优于竞争对手，在后续牌照竞争中仍具潜力。",
       "category": "监管合规",
       "importance": "high",
       "sources": [
@@ -27,38 +27,9 @@
       "published_at": "2026-04-10T14:34:11+00:00"
     },
     {
-      "title": "OSL 印尼业务重塑与实物资产 Launchpool 上线",
-      "summary": "OSL Group 完成对 Koinsayang 的收购并重塑为 **OSL Indonesia**，受 OJK 监管。该平台推出了印尼首个**基于实物资产 (RWA)** 的 Launchpool（支持 XAUT & USDT），并同步开展 Telegram 社区奖励活动。",
-      "category": "产品动态",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@valenttt____",
-          "url": "https://x.com/valenttt____/status/2043230002163200115"
-        },
-        {
-          "platform": "twitter",
-          "author": "@Fintaraid_",
-          "url": "https://x.com/Fintaraid_/status/2043643794491654518"
-        },
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2043632532839965016"
-        },
-        {
-          "platform": "twitter",
-          "author": "@iniheksa",
-          "url": "https://x.com/iniheksa/status/2042165024752586843"
-        }
-      ],
-      "published_at": "2026-04-13T10:53:44+00:00"
-    },
-    {
-      "title": "OSL Pay 联合 Bitunix 推免手续费促销活动",
-      "summary": "OSL Pay 与 Bitunix 合作推出限时福利，用户通过 **OSL Pay** 使用卡片充值可享受 **0 手续费**优惠。新用户限额 500 USDT，老用户限额 300 USDT，活动有效期至 4 月 24 日。",
-      "category": "合作伙伴",
+      "title": "OSL Pay 联合伙伴推出限时零手续费购币活动",
+      "summary": "**OSL Pay** 联合 Bitunix 等合作伙伴推出**零手续费购币**活动。用户通过信用卡或 OSL Pay 充值最高可享受 **500 USDT 额度免手续费**，活动持续至 4 月 24 日。",
+      "category": "活动推广",
       "importance": "medium",
       "sources": [
         {
@@ -75,8 +46,55 @@
       "published_at": "2026-04-12T09:30:04+00:00"
     },
     {
-      "title": "OSL Group 延长 USDGO 稳定币收益奖励计划",
-      "summary": "OSL Group 宣布将通过 StableHub 平台继续**延长 USDGO 的利率奖励计划**，旨在提升该稳定币在亚洲市场的支付与交易参与度。",
+      "title": "OSL Indonesia 推出 RWA Launchpool 产品",
+      "summary": "**OSL Indonesia** 正式上线基于**实物资产 (RWA)** 的 **Launchpool**，成为印尼首家推出此类产品的交易所。首批支持 **XAUT（黄金代币）**与 USDT 矿池，为投资者提供合规的现代投资工具。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Fintaraid_",
+          "url": "https://x.com/Fintaraid_/status/2043643794491654518"
+        },
+        {
+          "platform": "twitter",
+          "author": "@iniheksa",
+          "url": "https://x.com/iniheksa/status/2042165024752586843"
+        }
+      ],
+      "published_at": "2026-04-13T10:53:44+00:00"
+    },
+    {
+      "title": "OSL 集团旗下 Banxa 整合 Google Pay 支付",
+      "summary": "OSL 集团成员 **Banxa** 宣布正式上线 **Google Pay** 支付方式。此举旨在通过合规渠道优化**法币到加密货币**的入金流程，降低全球用户的使用门槛，支持 **USDGO** 等数字资产。",
+      "category": "合作伙伴",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2043886250055332041"
+        }
+      ],
+      "published_at": "2026-04-14T02:57:10+00:00"
+    },
+    {
+      "title": "OSL Global 上线 POL/USD 交易对",
+      "summary": "**OSL Global** 宣布在 Polygon 网络上正式推出 **POL/USD** 交易对，并支持 **Pro Trade** 专业交易功能。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@0x1manarmy",
+          "url": "https://x.com/0x1manarmy/status/2043973834546757813"
+        }
+      ],
+      "published_at": "2026-04-14T08:45:12+00:00"
+    },
+    {
+      "title": "OSL 延长 USDGO 收益奖励计划",
+      "summary": "**OSL Group** 宣布通过 StableHub 平台延长 **USDGO** 稳定币的**利息收益奖励**计划，旨在增强用户持有动力。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -89,8 +107,27 @@
       "published_at": "2026-04-09T12:50:25+00:00"
     },
     {
-      "title": "印尼用户讨论 OSL OTC 交易门槛与优势",
-      "summary": "社区用户分享了 OSL Exchange 的 **OTC（场外交易）** 细则，要求最低交易额为 **1 亿印尼盾**。该服务被认为适合高净值投资者和进出口企业，以获取优于订单簿的撮合价格。",
+      "title": "OSL Indonesia 市场扩张与社区活跃度提升",
+      "summary": "社区回顾了 OSL 以 **1500 万美元**收购 Koinsayang 并更名为 **OSL Indonesia** 的历程。同时，官方正通过 **Telegram 派对**和等级积分奖励等活动吸引当地活跃交易者。",
+      "category": "活动推广",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@valenttt____",
+          "url": "https://x.com/valenttt____/status/2043230002163200115"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2043632532839965016"
+        }
+      ],
+      "published_at": "2026-04-13T10:08:59+00:00"
+    },
+    {
+      "title": "OSL Exchange OTC 服务用户科普",
+      "summary": "用户在社交平台科普 **OSL 的场外交易 (OTC)** 服务，提到起步门槛为 **1 亿印尼盾**，优势在于可获得**低于订单簿挂单**的价格，适合大额交易者。",
       "category": "用户反馈",
       "importance": "low",
       "sources": [

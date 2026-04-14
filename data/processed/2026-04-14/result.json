@@ -3,73 +3,100 @@
   "header_markdown": "",
   "cards": [
     {
-      "title": "霍尔木兹封锁 + BTC 反弹至 74K+（双向行情承接）",
-      "category": "行情波动",
+      "title": "美伊霍尔木兹封锁：市场避险情绪升温",
+      "category": "宏观经济",
       "timing": "Day",
-      "relation": "Direct",
-      "intent": "FOMO 交易冲动 + 避险配置需求",
+      "relation": "Indirect",
+      "intent": "避险 / 稳定资产配置",
       "site": "Both",
-      "summary": "行情从 71K 反弹至 74K+，地缘不确定性持续，双线并行——上涨 FOMO 方向推 BTC/ETH 现货交易，避险方向推 StableHub（Global）+ 定投（HK），同步联动合约交易赛 S2。",
-      "dont_do": "不做价格预测（\"BTC 将突破 X 万\"），不用\"兴奋时刻\"等不当表述，不承诺收益，不扩散未经证实的战况信息。",
+      "summary": "美伊谈判破裂、霍尔木兹封锁令生效，市场短暂恐慌后回升。当前行情方向为“下跌后反弹”，需同时覆盖避险（StableHub + 定投）与 FOMO（合约交易赛）两个层次，HK 站额外推 VIP 专属避险咨询。",
+      "dont_do": "不做价格预测，不使用“危机”“崩盘”等恐慌措辞，不渲染战争情绪，不承诺收益。",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\n- **Global 站**：Meta/Google 定向稳定币及合约交易者\n- **HK 站**：Meta 定向 BTC 现货与定投意向用户\n\n### 素材与文案\n- **核心策略**：对比地缘动荡下的资产避险需求\n- **CTA**：立即入金获取稳定收益 / 开启定投布局\n\n### 落地页\n- Global：StableHub 页 / 合约交易赛活动页\n- HK：定投计划页 / 入金奖励页"
+          "markdown": "### 受众定向\n* **Global 站**：Meta / Google 广告受众\n### 素材与文案\n* **卖点组合**：**StableHub 稳定币理财**（无需锁仓）与**上市背景（83.HK）**信任组合\n* **素材方向**：AI 口播竖屏视频（文案：市场波动时，确定性收益才是真底气）\n### 落地页\n* **指向**：StableHub 页面"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 核心策略\n- **Push/Banner**：针对不同偏好用户进行差异化触达\n\n### 步骤与要点\n1. **合约活跃用户**：推送交易赛免手续费通知，强化 **KPI：参赛人数**\n2. **稳定币高频用户**：提醒 StableHub 收益，强化 **KPI：资产留存**\n3. **VIP 用户**：引导定投低位布局，强化 **KPI：交易频次**\n\n### 注意事项\n- 严禁在文案中出现战争伤亡相关描述。"
+          "markdown": "### 站内运营策略\n* **触达方式**：Onsite 资源位（Banner）\n* **目标人群**：**稳定币高频转账用户**\n* **核心内容**：StableHub 随时可入，无需锁仓，稳定收益不受影响\n### 用户直接触达\n* **方式**：EDM\n* **目标人群**：**VIP 用户 / 高净值（HK 站）**\n* **核心策略**：提供专属资产配置建议，推广 StableHub + 定投双轨并行方案"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：**BTC 现在能买吗**、**比特币避险**、**稳定币理财 2026**\n\n### 内容结构\n- **热点快讯**：霍尔木兹封锁对价格的即时影响分析\n- **配置指南**：地缘风险下加密资产配置策略\n\n### 内链策略\n- 指向 StableHub 产品页及定投计划页。"
+          "markdown": "### 内容策略\n* **核心关键词**：**稳定币理财**、**StableHub**、如何在市场波动中保值\n* **内容类型**：热点解读（宏观背景 + OSL 产品承接）\n### 发布要求\n* **时效性**：8 小时内发布\n* **内链布局**：StableHub 页面 + 定投教程"
         },
         {
           "name": "社区",
-          "markdown": "### 核心策略\n- **Meme 图营销**：对比黑天鹅事件与 BTC 韧性\n\n### 文案建议\n- **华语区**：\"波动是市场的语言，定投是你的答案。\"\n- **通用区**：\"The market speaks. Are you listening?\""
+          "markdown": "### 运营平台\n* **Telegram**（华语社群）\n### 话题策略\n* **调性**：轻松幽默，避免恐慌\n* **素材方向**：**Meme 图**（如“外面战鼓咚咚响，我在 OSL StableHub 里稳稳吃息”）\n* **核心话术**：强调“乱世中的确定性”是最好的资产配置"
         }
       ],
       "sources": [
         {
-          "name": "The Block",
-          "url": "https://www.theblock.co/post/397147/bitcoin-trump-blockade-hormuz"
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/04/13/crypto-markets-stall-as-oil-surges-past-usd100-on-strait-of-hormuz-blockade"
         },
         {
-          "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/bitcoin-bounces-to-dollar72-5k-as-markets-react-to-us-strait-of-hormuz-blockade"
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/post/5210245"
+        }
+      ],
+      "id": "ap_1"
+    },
+    {
+      "title": "BTC 反弹至 74K，空头爆仓 1.75 亿美元",
+      "category": "行情波动",
+      "timing": "Flash",
+      "relation": "Direct",
+      "intent": "FOMO 交易 / 合约机会",
+      "site": "Global",
+      "summary": "BTC 单日从 70,500 反弹至 74,000+，空头大规模爆仓，市场 FOMO 情绪升温。推合约交易赛 S2（手续费全免）+ 现货交易，联动 Referral 拉新。",
+      "dont_do": "不做价格预测，不承诺收益，不暗示“必涨”。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 受众定向\n* **Global 站**：Google Search 搜索意图受众\n### 素材与文案\n* **卖点组合**：**合约最高 10 倍杠杆** + **0 费率（Flash Trade）** + 上市背景\n* **素材方向**：真人竖屏视频（文案：BTC 反弹，合约交易赛 S2 手续费全免）\n### 落地页\n* **指向**：合约交易赛活动页"
+        },
+        {
+          "name": "站内运营 / 用户触达",
+          "markdown": "### 站内运营\n* **触达方式**：首页 Banner / App Push\n* **目标人群**：**合约 / 杠杆活跃用户**\n* **核心信息**：BTC 突破 74,000，合约交易赛 S2 进行中，交易满额**手续费全免**"
+        },
+        {
+          "name": "社区",
+          "markdown": "### 运营平台\n* **Twitter**\n### 话题策略\n* **调性**：专业、简洁，用数据说话\n* **素材方向**：**BTC 24H 涨幅数据截图** + 空头爆仓统计\n* **CTA**：引导参与合约交易赛 S2"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WatcherGuru",
+          "url": "https://x.com/WatcherGuru/status/2043827185010549203"
         },
         {
           "name": "Odaily",
           "url": "https://www.odaily.news/zh-CN/newsflash/476581"
         }
       ],
-      "id": "ap_1"
+      "id": "ap_2"
     },
     {
-      "title": "Strategy 10 亿美元购 BTC，持仓近 78 万枚",
+      "title": "Strategy 再购 10 亿美元 BTC，机构信心持续强化",
       "category": "行业趋势",
       "timing": "Day",
       "relation": "Indirect",
-      "intent": "机构背书 FOMO → BTC 交易冲动 + VIP 迁徙信心",
-      "site": "Both",
-      "summary": "Strategy 单周 10 亿美元购 BTC，持仓逼近 BlackRock IBIT，机构背书信号强烈。联动 VIP 精英迁徙活动，向高净值用户传递\"机构都在买，你的资产在哪里\"叙事。",
-      "dont_do": "不做价格预测，不暗示\"跟 Saylor 一起买就能赚\"，不承诺收益。",
+      "intent": "FOMO / 机构跟随 / 定投",
+      "site": "HK",
+      "summary": "机构持续增持信号强烈，借此向 HK 站 VIP 大户传递市场信心，推动大额定投与 VIP 精英迁徙活动。",
+      "dont_do": "不做投资建议，不暗示“跟着买就对了”。",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 受众定向\n- **HK 站**：Meta Instant Form 定向高净值人群\n- **Global 站**：Google 品牌词定向交易者\n\n### 核心策略\n- **卖点**：SFC 持牌 + 机构级托管 + $1B 保险\n- **文案**：\"机构单周买入 10 亿美元 BTC，散户如何跟上节奏？\""
+          "markdown": "### 受众定向\n* **HK 站**：Meta Instant Form 高净值潜在客户\n### 素材与文案\n* **卖点组合**：**SFC 第 1/4/7/9 类持牌背书** + VIP 权益 + 入金奖励\n* **素材方向**：真人竖屏视频（文案：机构在买，你的配置准备好了吗？）\n### 落地页\n* **指向**：VIP 精英迁徙活动页"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方案\n- **EDM**：针对 VIP 发送机构动态深度解读\n- **Push**：针对已入金未交易用户发送首交易引导\n\n### 关键信息\n- 强调 **VIP 精英迁徙活动** 专属入金奖励与 1 对 1 BD 服务。"
+          "markdown": "### 用户直接触达\n* **方式**：EDM\n* **目标人群**：**VIP 用户 / 高净值客户**\n* **核心策略**：通过 **Strategy 持仓数据** 强化市场信心，提供专属市场洞察与**定投方案**"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **搜索词**：**Strategy 购买比特币**、**机构买 BTC 散户怎么做**、**香港买比特币**\n\n### 内容类型\n- 撰写机构动态解读文章，内链至 VIP 权益页。"
-        },
-        {
-          "name": "社区",
-          "markdown": "### 互动策略\n- **数据对比图**：展示 Strategy 历年持仓增长与价格曲线\n- **文案**：\"他们没有停，你停了吗？\""
+          "markdown": "### 内容策略\n* **核心关键词**：**香港买比特币**、买 BTC、机构配置 BTC\n* **内容类型**：热点快讯\n### 执行要点\n* **时效**：12 小时内发布\n* **内链**：BTC 现货交易页 + 定投教程"
         }
       ],
       "sources": [
@@ -78,288 +105,236 @@
           "url": "https://www.theblock.co/post/397188/think-bigger-michael-saylors-strategy-buys-more-bitcoin"
         },
         {
-          "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/strategy-buys-13-927-bitcoin-1b-holdings-780-897-btc"
-        },
-        {
-          "name": "saylor",
-          "url": "https://x.com/saylor/status/2043661116300050583"
-        }
-      ],
-      "id": "ap_2"
-    },
-    {
-      "title": "Crypto ETP 单周净流入 11 亿美元（1 月来最强）",
-      "category": "行业趋势",
-      "timing": "Day",
-      "relation": "Indirect",
-      "intent": "机构信号激发散户信心 → 入金/交易冲动",
-      "site": "Both",
-      "summary": "以 ETP 数据为素材，向新注册未入金用户和 VIP 潜在客户传递\"机构资金正在流入\"的教育内容，联动合约交易赛 S2 和 VIP 迁徙活动。",
-      "dont_do": "不做\"ETP 净流入说明 BTC 一定涨\"的价格预测，不暗示收益。",
-      "channels": [
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 核心策略\n- **研究院早报**：发布 ETP 净流入分析\n- **新用户 Push**：\"机构单周买入 11 亿，你的第一笔在哪里？\"\n\n### 关键 KPI\n- **入金转化率**、**VIP 建联数**"
-        },
-        {
-          "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：**加密 ETF 净流入 2026**、**比特币 ETF 机构买入**\n\n### 内容要求\n- 快讯需在 24 小时内发布，内链至现货交易页。"
-        },
-        {
-          "name": "社区",
-          "markdown": "### 视觉素材\n- **柱状图**：展示近 8 周流入数据，突出本周峰值\n- **核心金句**：\"机构不说话，只用钱投票。\""
-        }
-      ],
-      "sources": [
-        {
-          "name": "The Block",
-          "url": "https://www.theblock.co/post/397191/crypto-funds-pull-in-1-1-billion-as-bitcoin-products-lead-strongest-inflow-week-since-january-coinshares"
-        },
-        {
-          "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/crypto-etp-1-1-billion-inflows-strongest-gains-january"
-        },
-        {
-          "name": "WuBlockchain",
-          "url": "https://x.com/WuBlockchain/status/2043627944770466290"
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/04/13/michael-saylor-s-strategy-added-13-927-bitcoin-for-usd1-billion"
         }
       ],
       "id": "ap_3"
     },
     {
-      "title": "Kraken 遭勒索：约 2000 用户数据暴露，拒绝支付",
-      "category": "安全事件",
+      "title": "Kraken 遭遇内部数据泄露勒索事件",
+      "category": "竞品动态",
       "timing": "Flash",
       "relation": "Brand",
-      "intent": "安全恐慌 → 迁移至更安全平台",
+      "intent": "平台迁移 / 资产安全",
       "site": "Both",
-      "summary": "Kraken 安全事件提供用户迁移窗口，第一时间正面输出 OSL 安全背书（持牌、$1B 保险、资金隔离），联动 VIP 精英迁徙活动。",
-      "dont_do": "绝不点名 Kraken，不幸灾乐祸，不攻击竞品。不扩散未经证实的细节。",
+      "summary": "竞对安全事故打开用户迁移窗口，正面强调 OSL 的持牌合规、资金隔离与保险机制，吸引关注资产安全的用户。",
+      "dont_do": "绝不点名攻击 Kraken，不幸灾乐祸，不夸大事件严重性。",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 核心策略\n- **Google 竞价**：覆盖竞品关键词\n- **卖点组合**：SFC 持牌 + $1B 资产保险 + 四大审计\n\n### 素材方向\n- \"选择交易所，安全是第一标准。OSL：持牌、保险、上市。\""
+          "markdown": "### 投放策略\n* **渠道**：Google Search **竞品词搜索截流**\n### 素材与文案\n* **核心卖点**：**上市背景（83.HK）** + 法币出入金通道 + **0 费率**\n* **视觉方向**：静态图（文案：选择持牌交易所，资产安全有保障）"
         },
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 核心策略\n- **全量 Push**：发布安全提醒（正面输出 OSL 机制）\n- **VIP EDM**：详解 OSL 机构级安全架构（SOC 2 Type 2）\n\n### 关联活动\n- 引导至 **VIP 精英迁徙活动页**"
+          "markdown": "### 触达策略\n* **方式**：App Push\n* **目标人群**：**新注册未入金用户**\n* **核心信息**：强调 OSL 采用严格**资金隔离**与多重保险机制，保障第一优先级安全"
         },
         {
           "name": "SEO",
-          "markdown": "### 内容方向\n- **核心词**：**香港持牌交易所**、**安全交易所 2026**\n- **内容类型**：\"如何判断一个加密交易所是否安全\"指南文章。"
+          "markdown": "### 内容策略\n* **关键词**：**安全交易所**、**香港持牌交易所**、如何选择安全交易所\n* **类型**：指南（“选择持牌交易所的 5 个关键指标”）\n* **发布**：24 小时内完成"
         },
         {
           "name": "社区",
-          "markdown": "### 素材建议\n- **对比图**：OSL vs 通用交易所的安全标准对比\n- **文案**：\"Not all exchanges are built the same.\""
+          "markdown": "### 运营平台\n* **Discord**\n### 话题策略\n* **调性**：专业严肃，以用户利益为中心\n* **素材方向**：**安全 Checklist**（持牌、资金隔离、第三方审计、保险覆盖）\n* **核心内容**：展示 OSL 全项达标，建立安全心智"
         }
       ],
       "sources": [
         {
-          "name": "The Block",
-          "url": "https://www.theblock.co/post/397260/kraken-security-says-exchange-wont-negotiate-faces-extortion-threat"
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/cefi/kraken-refuses-to-pay-extortionists-after-insider-breaches-expose-client-data"
         },
         {
           "name": "CoinDesk",
           "url": "https://www.coindesk.com/business/2026/04/13/crypto-exchange-kraken-targeted-in-extortion-attempt-but-says-there-was-no-breach-and-no-client-funds-at-risk"
-        },
-        {
-          "name": "Decrypt",
-          "url": "https://decrypt.co/364158/will-not-pay-criminals-crypto-exchange-kraken-extorted"
         }
       ],
       "id": "ap_4"
     },
     {
-      "title": "假冒 Ledger App 盗走 5.9 BTC（约 42 万美元）",
-      "category": "安全事件",
+      "title": "SEC 为 DeFi 前端与自托管钱包划定豁免边界",
+      "category": "监管政策",
       "timing": "Wave",
       "relation": "Brand",
-      "intent": "安全恐慌 → 寻找更安全的托管/交易方案",
-      "site": "Both",
-      "summary": "以假冒 App 事件为切入点，输出安全科普内容，正面强调 OSL 持牌平台的安全机制，建立品牌信任。",
-      "dont_do": "不暗示\"把币放 OSL 就绝对安全\"（不做绝对化承诺），不扩散受害者个人信息。",
+      "intent": "合规信任强化 / VIP 机构获客",
+      "site": "HK",
+      "summary": "SEC 主动为 DeFi 接口松绑，合规叙事升温，借机强化 OSL 作为香港 SFC 持牌交易所的差异化优势，联动 VIP 精英迁徙活动。",
+      "dont_do": "不承诺 OSL 产品受此政策直接影响，不做法律解读超出业务范围。",
       "channels": [
         {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 核心策略\n- **Push/Banner**：全量发送安全警示，提醒从官方渠道下载 App。"
+          "name": "Paid Ads",
+          "markdown": "### 投放策略\n* **渠道**：Meta Instant Form（HK 站）\n### 素材与文案\n* **卖点组合**：**SFC 1/4/7/9 类牌照** + VIP 专属权益\n* **素材方向**：真人竖屏视频（文案：监管趋严，持牌交易所是机构资金安全港）"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **搜索词**：**识别假冒加密 App**、**助记词保护方法**\n\n### 内容结构\n- 撰写 \"5 步识别假冒加密 App\" 指南。"
+          "markdown": "### 内容策略\n* **关键词**：**香港持牌交易所**、合规交易所、SEC 加密监管\n* **类型**：政策解读（“SEC 新规解读：持牌交易所为何更值得信赖”）\n* **内链**：合规介绍页 + VIP 活动页"
         },
         {
           "name": "社区",
-          "markdown": "### 互动素材\n- **安全提示图**：总结保护助记词的 4 个要点\n- **文案**：\"助记词是你最后的防线，永远不要在任何 App 里输入它。\""
+          "markdown": "### 运营平台\n* **Twitter**\n### 话题策略\n* **内容形式**：**长推文 + 信息图**\n* **核心方向**：制作“全球监管里程碑时间轴”，标注 OSL 持牌节点，展现专业前瞻性"
         }
       ],
       "sources": [
         {
-          "name": "The Block",
-          "url": "https://www.theblock.co/post/397155/g-love-loses-btc-fake-ledger"
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/regulation/sec-staff-guidance-broker-dealer-rules-for-defi"
         },
         {
           "name": "CoinTelegraph",
-          "url": "https://cointelegraph.com/news/musician-loses-420k-bitcoin-retirement-fund-after-installing-fake-ledger-app"
+          "url": "https://cointelegraph.com/news/sec-crypto-interfaces-registration-broker"
         }
       ],
       "id": "ap_5"
     },
     {
-      "title": "香港首批稳定币牌照发放（汇丰 + 渣打/Animoca/HKT）",
-      "category": "监管政策",
-      "timing": "Day",
-      "relation": "Brand",
-      "intent": "香港合规信心提升 → VIP 用户迁入 + 机构 BD 建联",
-      "site": "HK",
-      "summary": "香港金管局发放首批稳定币牌照，是香港合规叙事的重要里程碑。OSL 作为 SFC 持牌交易所，强化\"香港是全球最合规的加密中心\"叙事。",
-      "dont_do": "不做稳定币收益承诺，不暗示 OSL 将发行稳定币，不扩散未经证实的牌照细节。",
+      "title": "Hyperbridge 遭攻击增发 10 亿 DOT，跨链安全再受质疑",
+      "category": "安全事件",
+      "timing": "Flash",
+      "relation": "Indirect",
+      "intent": "避险 / 转向中心化平台",
+      "site": "Global",
+      "summary": "DeFi 跨链桥安全事故频发，用户对链上资产安全的担忧上升，借机推广 OSL 的中心化托管安全优势，引导用户将资产存入 OSL。",
+      "dont_do": "不攻击 Polkadot 技术，不传播恐慌，不暗示 DOT 价格走势。",
       "channels": [
         {
-          "name": "Paid Ads",
-          "markdown": "### 受众定向\n- **HK 站**：Meta Instant Form 定向本地高净值人群\n\n### 核心卖点\n- **卖点**：SFC 持牌（1/4/7/9 类）+ 香港合规生态领先\n- **CTA**：立即咨询 VIP 精英迁徙方案"
-        },
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方案\n- **VIP EDM**：解读香港稳定币监管框架及 OSL 优势\n- **新用户 Push**：介绍香港合规生态，引导入金\n\n### 核心 KPI\n- **BD 咨询量**、**大额入金数**"
-        },
-        {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：**香港稳定币牌照 2026**、**SFC 持牌加密交易所**\n\n### 内容要求\n- 4 小时内发布快讯，24 小时内发布深度解读。"
+          "markdown": "### 内容策略\n* **关键词**：**安全交易所**、如何入金、加密资产安全\n* **内容类型**：快讯 + 安全指南\n* **时效性**：6 小时内发布"
         },
         {
           "name": "社区",
-          "markdown": "### 核心策略\n- **官方解读**：在华语社群发布监管对用户资金安全的保障分析\n- **文案**：\"香港正在成为全球最合规的中心，OSL 一直在这里。\""
+          "markdown": "### 目标区域\n* **越南、印尼**（Telegram 社群）\n### 话题策略\n* **内容形式**：**本地语言对比图**\n* **核心逻辑**：DeFi 跨链桥（高风险）vs **OSL 中心化托管（持牌保障）**\n* **CTA**：引导用户转移资产至 OSL"
         }
       ],
       "sources": [
         {
-          "name": "WuBlockchain",
-          "url": "https://x.com/WuBlockchain/status/2043720929445073394"
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/hacker-steals-237k-1b-bridged-dot-hyperbridge"
         },
         {
-          "name": "Odaily",
-          "url": "https://www.odaily.news/zh-CN/post/5210232"
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/hacks/polkadot-hyperbridge-ethereum-gateway-exploit-sjb0ql"
         }
       ],
       "id": "ap_6"
     },
     {
-      "title": "美国 Clarity Act 重返参议院 + 白宫顾问\"分歧收敛\"",
-      "category": "监管政策",
+      "title": "某音乐人因假冒 Ledger App 损失 5.9 BTC",
+      "category": "安全事件",
       "timing": "Wave",
       "relation": "Brand",
-      "intent": "合规利好 → 机构/高净值用户信心提升 → VIP 迁徙 + 入金",
+      "intent": "资产安全 / 防钓鱼教育",
       "site": "Both",
-      "summary": "Clarity Act 重返参议院，合规叙事窗口打开。以 OSL 全球 40+ 牌照、SFC 持牌为背书，向机构和高净值用户传递\"合规是长期竞争力\"的信息。",
-      "dont_do": "不做立法时间表预测，不暗示\"法案通过后 BTC 一定涨\"。",
+      "summary": "钓鱼攻击高发期，开展防钓鱼安全教育，强化 OSL 官方渠道唯一性，顺带推广 OSL 托管服务的安全优势。",
+      "dont_do": "不嘲笑受害者，不暗示自托管一定不安全。",
       "channels": [
         {
           "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方案\n- **VIP EDM**：发送美国加密市场结构立法深度解读\n- **早报**：研究院分析合规化趋势对机构的影响"
-        },
-        {
-          "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：**美国加密监管 2026**、**Clarity Act 加密立法**\n\n### 内容建议\n- 深度文章：\"Clarity Act 重返参议院：对加密市场意味着什么\""
+          "markdown": "### 站内运营\n* **方式**：App 内 Banner / Push\n* **目标人群**：**新注册未入金用户**\n* **核心内容**：认准 OSL 官方渠道，警惕假冒 App，强调**持牌托管**优势"
         },
         {
           "name": "社区",
-          "markdown": "### 视觉素材\n- **立法进度条**：展示合规化进程\n- **核心金句**：\"不管法案何时通过，选择持牌交易所永远是正确答案。\""
+          "markdown": "### 目标社群\n* **华语 Discord**\n### 话题策略\n* **形式**：**Meme 图对比**\n* **文案方向**：自保管私钥的焦虑 vs **放在 OSL 的安心**\n* **口号**：安全感是最好的投资工具"
         }
       ],
       "sources": [
         {
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/musician-loses-420k-bitcoin-retirement-fund-after-installing-fake-ledger-app"
+        },
+        {
           "name": "The Block",
-          "url": "https://www.theblock.co/post/397266/list-of-unsolvable-issues-have-shrunk-top-white-house-crypto-advisory-says-as-momentum-builds-to-pass-legislation"
-        },
-        {
-          "name": "CoinDesk",
-          "url": "https://www.coindesk.com/policy/2026/04/13/white-house-s-top-crypto-adviser-witt-says-talks-clearing-other-points-on-clarity-act"
-        },
-        {
-          "name": "WatcherGuru",
-          "url": "https://x.com/WatcherGuru/status/2043766352322658437"
+          "url": "https://www.theblock.co/post/397155/g-love-loses-btc-fake-ledger"
         }
       ],
       "id": "ap_7"
     },
     {
-      "title": "Bitmine 持有 4% ETH 供应量，Tom Lee 称 ETH 为\"战时价值储藏\"",
+      "title": "加密基金单周净流入 11 亿美元，创今年最强单周",
       "category": "行业趋势",
       "timing": "Day",
-      "relation": "Direct",
-      "intent": "ETH 机构背书 → ETH 交易冲动 + Staking 兴趣",
-      "site": "Both",
-      "summary": "Bitmine 持有大量 ETH，Tom Lee \"战时价值储藏\"叙事引发关注。联动 ETH 现货交易和 HK 站 ETH Staking，向用户推 ETH 配置教育。",
-      "dont_do": "不做 ETH 价格预测，不暗示\"跟 Bitmine 买就能赚\"，不承诺 Staking 固定收益率。",
+      "relation": "Indirect",
+      "intent": "机构跟随 / 拉新入金",
+      "site": "Global",
+      "summary": "机构资金大规模入场信号，借此向 Global 站新用户传递市场信心，联动 Referral 拉新与 StableHub 渗透。",
+      "dont_do": "不做行情预测，不暗示“牛市来了”。",
       "channels": [
         {
           "name": "Paid Ads",
-          "markdown": "### 核心策略\n- **Global 站**：Google 搜索词定向 ETH 交易者\n- **HK 站**：Meta 定向对 ETH Staking 感兴趣的用户\n\n### 素材方向\n- \"机构正在积累 ETH，你的 ETH 在哪里？\""
-        },
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 核心方案\n- **Push**：针对合约活跃用户推送 ETH 配置窗口提醒\n- **EDM**：针对 HK VIP 用户推送 ETH Staking 权益介绍\n\n### 关键 KPI\n- **ETH 交易量**、**Staking AUM**"
+          "markdown": "### 投放策略\n* **渠道**：Meta / Google（Global 站）\n### 素材与文案\n* **卖点组合**：**法币出入金通道（Apple Pay/Google Pay）** + 0 费率\n* **素材方向**：AI 口播视频（文案：机构单周入场 11 亿美元，你如何跟上？）"
         },
         {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **搜索词**：**ETH Staking 香港**、**以太坊 Staking 收益**、**机构买 ETH**\n\n### 内容结构\n- 撰写 \"ETH Staking 入门：香港持牌平台操作指南\"。"
+          "markdown": "### 内容策略\n* **关键词**：**买 BTC**、USDT 兑换、法币出入金\n* **类型**：热点快讯（机构资金入场指南）\n* **内链**：StableHub 页面 + 现货交易页"
         },
         {
           "name": "社区",
-          "markdown": "### 核心话题\n- 发起投票：\"你认为 ETH 是战时价值储藏吗？\"\n- 素材：Bitmine 持仓数据图表。"
+          "markdown": "### 目标平台\n* **Reddit**（理财/加密版块）\n### 话题策略\n* **形式**：**客观数据种草帖**\n* **核心方向**：自然带出 StableHub 作为机构入场时的“稳健配置选项”"
         }
       ],
       "sources": [
         {
-          "name": "The Block",
-          "url": "https://www.theblock.co/post/397229/bitmine-holds-4-of-ethereum-supply-as-total-holdings-reach-11-8-billion"
+          "name": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/crypto-etp-1-1-billion-inflows-strongest-gains-january"
         },
         {
-          "name": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/04/13/bitmine-s-tom-lee-calls-ether-the-wartime-store-of-value-as-holdings-hit-4-87-million-eth"
-        },
-        {
-          "name": "WatcherGuru",
-          "url": "https://x.com/WatcherGuru/status/2043682209190514879"
+          "name": "Decrypt",
+          "url": "https://decrypt.co/364130/surging-bitcoin-ethereum-etf-investments-crypto-funds-best-week-since-january"
         }
       ],
       "id": "ap_8"
     },
     {
-      "title": "Coinbase 向 70 国开放永续合约（竞对截流）",
-      "category": "竞品动态",
-      "timing": "Day",
-      "relation": "Indirect",
-      "intent": "竞对扩张 → 用户关注合约交易 → OSL 合约差异化截流",
+      "title": "美国 IRS 加强加密税务监管，申报截止日临近",
+      "category": "监管政策",
+      "timing": "Flash",
+      "relation": "Brand",
+      "intent": "合规平台选择 / 信任强化",
       "site": "Global",
-      "summary": "Coinbase 扩张合约市场，市场关注度上升，是 OSL Global 合约差异化推广的截流窗口。联动合约交易赛 S2，以 USDC 保证金、合规背书为卖点。",
-      "dont_do": "绝不点名攻击 Coinbase，不做直接优劣对比，只正面输出 OSL 优势。",
+      "summary": "IRS 申报截止日临近，借机强化 OSL 的合规叙事，吸引注重合规且需要清晰交易记录导出功能的美国及全球用户。",
+      "dont_do": "不提供税务建议，不针对中国大陆用户营销。",
       "channels": [
         {
-          "name": "Paid Ads",
-          "markdown": "### 核心策略\n- **Google 竞价**：针对合约交易、永续合约关键词截流\n\n### 素材卖点\n- **优势**：最高 10 倍杠杆 + USDC 保证金 + 上市公司背景\n- **优惠**：合约交易赛手续费全免"
-        },
-        {
-          "name": "站内运营 / 用户触达",
-          "markdown": "### 触达方案\n- **Push**：针对合约/杠杆活跃用户推送交易赛 S2 活动通知\n- **EDM**：针对已入金用户发送合约交易差异化优势教育"
-        },
-        {
           "name": "SEO",
-          "markdown": "### 关键词定向\n- **核心词**：**合规合约交易所**、**USDC 保证金合约**\n\n### 内容建议\n- 指南：\"如何选择合规的加密合约交易平台\""
+          "markdown": "### 内容策略\n* **关键词**：**合规交易所**、加密资产税务、安全交易所\n* **类型**：指南（“为何选择合规平台更便于税务申报”）\n* **时效**：6 小时内发布"
         },
         {
           "name": "社区",
-          "markdown": "### 核心策略\n- 发布交易赛 S2 战报或海报，突出手续费减免。\n- 文案：\"合规才是长期竞争力，USDC 保证金让交易更简单。\""
+          "markdown": "### 运营平台\n* **Twitter**\n### 话题策略\n* **形式**：**截止日倒计时**\n* **卖点**：OSL 合规平台的**交易记录导出功能**\n* **文案**：合规平台让税务申报不再是噩梦"
         }
       ],
       "sources": [
         {
-          "name": "coinbase",
-          "url": "https://x.com/coinbase/status/2043721060705829205"
+          "name": "Odaily",
+          "url": "https://www.odaily.news/zh-CN/newsflash/476650"
         }
       ],
       "id": "ap_9"
+    },
+    {
+      "title": "日本央行降低加息预期，BTC 上行风险解除",
+      "category": "宏观经济",
+      "timing": "Day",
+      "relation": "Indirect",
+      "intent": "FOMO 交易 / 入金",
+      "site": "Global",
+      "summary": "日本央行降低加息预期，解除市场尾部风险，可作为 Global 站拉新与 StableHub 渗透的辅助看涨信号。",
+      "dont_do": "不做价格预测，不暗示“必涨”。",
+      "channels": [
+        {
+          "name": "Paid Ads",
+          "markdown": "### 投放策略\n* **渠道**：Google Search（Global 站）\n### 素材与文案\n* **卖点组合**：**StableHub 稳定币理财** + 法币出入金\n* **视觉方向**：静态图（文案：宏观风险缓解，稳健配置正当时）"
+        },
+        {
+          "name": "SEO",
+          "markdown": "### 内容策略\n* **关键词**：**BTC 价格分析**、稳定币理财\n* **类型**：宏观解读（“日本央行暂缓加息对加密市场的影响”）"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/04/14/japan-s-central-bank-cools-rate-hike-expectations-removing-a-key-risk-for-bitcoin-s-rally"
+        }
+      ],
+      "id": "ap_10"
     }
   ]
 }

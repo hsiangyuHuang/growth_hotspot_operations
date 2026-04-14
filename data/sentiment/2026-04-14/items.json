@@ -130,5 +130,29 @@
     "published_at": "2026-04-07T08:26:58+00:00",
     "fetched_at": "2026-04-14T00:03:48.402605+00:00",
     "keyword_matched": "OSL exchange"
+  },
+  {
+    "id": "afa96f64",
+    "source": "twitter:search",
+    "source_type": "twitter",
+    "title": "Proud to see @BanxaOfficial, part of OSL Group, officially launch @Google Pay as a new payment metho",
+    "content": "Proud to see @BanxaOfficial, part of OSL Group, officially launch @Google Pay as a new payment method! 🚀\n\nThis makes fiat-to-crypto on-ramps smoother, faster, and more familiar for users worldwide — lowering friction and boosting accessibility to compliant digital assets like @usdgo_official.\n\nGreat work by the Banxa team on a strong step forward for the ecosystem.\n\nCongrats on the launch! What a strong way to start the week. 🤝",
+    "url": "https://x.com/osldotcom/status/2043886250055332041",
+    "author": "@osldotcom",
+    "published_at": "2026-04-14T02:57:10+00:00",
+    "fetched_at": "2026-04-14T08:56:12.462444+00:00",
+    "keyword_matched": "OSL crypto"
+  },
+  {
+    "id": "ecb141f3",
+    "source": "twitter:search",
+    "source_type": "twitter",
+    "title": "@SoSoValueCrypto OSL Group’s global exchange, OSL Global, announced today the official launch of the",
+    "content": "@SoSoValueCrypto OSL Group’s global exchange, OSL Global, announced today the official launch of the POL/USD trading pair on the Polygon network, supporting Pro Trade.",
+    "url": "https://x.com/0x1manarmy/status/2043973834546757813",
+    "author": "@0x1manarmy",
+    "published_at": "2026-04-14T08:45:12+00:00",
+    "fetched_at": "2026-04-14T08:56:12.462444+00:00",
+    "keyword_matched": "OSL exchange"
   }
 ]
