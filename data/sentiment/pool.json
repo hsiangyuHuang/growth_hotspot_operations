@@ -2,8 +2,8 @@
   "total_raw": 17,
   "items": [
     {
-      "title": "香港稳定币牌照发放预期及 OSL 市场表现分析",
-      "summary": "市场关注香港首批**稳定币牌照**发放，OSL 股价受获牌传闻影响曾**上涨 20%**。尽管首批牌照由银行包揽引发部分失望，但分析认为 OSL 作为**最早合规持牌交易所**，其稳定性在加密平台中被视为优于 HashKey，但未来获牌仍具不确定性。",
+      "title": "香港稳定币牌照监管预期与 OSL 股价波动",
+      "summary": "市场热议香港**稳定币牌照**首批名单，传闻包括汇丰、渣打及 **OSL**。虽然目前牌照暂由银行包揽，但 **OSL** 作为首家持牌交易所，其合规地位仍受认可，股价此前曾受**发牌预期**推动上涨 20%。",
       "category": "监管合规",
       "importance": "high",
       "sources": [
@@ -18,11 +18,64 @@
           "url": "https://x.com/dachong007/status/2042479152566358441"
         }
       ],
-      "published_at": "2026-04-10T14:34:11+00:00"
+      "published_at": "2026-04-10T05:45:52+00:00"
     },
     {
-      "title": "OSL 集团旗下 Banxa 拓展支付渠道并公布 TON 生态数据",
-      "summary": "OSL 集团旗下的 **Banxa** 正式上线 **Google Pay** 作为支付方式，旨在降低全球用户法币兑加密货币的门槛。此外，Banxa 与 OSL 在 **TON 区块链**上的处理交易额已突破 **5000 万美元**。",
+      "title": "OSL 战略转型稳定币支付及市场前景分析",
+      "summary": "分析指出 OSL 已将其业务重心全面转向**稳定币支付**。通过 **USDGO** 利息奖励计划及针对机构的持牌服务，市场模拟预测其在 2025 年将实现**强劲增长并走向盈利**。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@QBitFlowApp",
+          "url": "https://x.com/QBitFlowApp/status/2044309748980559992"
+        },
+        {
+          "platform": "twitter",
+          "author": "@LeeDG_GF",
+          "url": "https://x.com/LeeDG_GF/status/2042223606504345927"
+        },
+        {
+          "platform": "twitter",
+          "author": "@periodtrader_",
+          "url": "https://x.com/periodtrader_/status/2040086446757847231"
+        }
+      ],
+      "published_at": "2026-04-03T15:18:06+00:00"
+    },
+    {
+      "title": "OSL Indonesia 品牌重塑与业务扩张",
+      "summary": "OSL 通过以 1500 万美元收购 Koinsayang 正式进军印尼市场。目前已推出首个**基于真实资产的 Launchpool**（支持 XAUT 和 USDT），并开展 Telegram 社区激励活动以吸引当地用户。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@valenttt____",
+          "url": "https://x.com/valenttt____/status/2043230002163200115"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Fintaraid_",
+          "url": "https://x.com/Fintaraid_/status/2043643794491654518"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2043632532839965016"
+        },
+        {
+          "platform": "twitter",
+          "author": "@iniheksa",
+          "url": "https://x.com/iniheksa/status/2042165024752586843"
+        }
+      ],
+      "published_at": "2026-04-09T08:57:38+00:00"
+    },
+    {
+      "title": "Banxa 合作伙伴动态：上线 Google Pay 及 TON 生态里程碑",
+      "summary": "OSL Group 旗下的 **Banxa** 宣布上线 **Google Pay** 作为入金渠道，简化合规资产购买流程。此外，Banxa 与 OSL 在 **TON 区块链**上的交易处理量已突破 **5000 万美元**。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -37,11 +90,11 @@
           "url": "https://x.com/BanxaOfficial/status/2041093568043896987"
         }
       ],
-      "published_at": "2026-04-14T02:57:10+00:00"
+      "published_at": "2026-04-06T10:00:02+00:00"
     },
     {
-      "title": "OSL Pay 联合推广活动：免手续费购币",
-      "summary": "OSL Pay 联合 Bitunix 推出限时**免手续费**购币优惠，活动持续至 **4 月 24 日**。新用户最高可享受 **500 USDT** 的免手续费额度，现有用户最高 **300 USDT**。",
+      "title": "OSL Pay 联合推广：0 手续费购币活动",
+      "summary": "OSL Pay 联合 **Bitunix** 等合作伙伴推出限时优惠，新老用户通过信用卡购买加密货币可享受 **0 手续费**，最高额度支持 500 USDT。",
       "category": "活动推广",
       "importance": "medium",
       "sources": [
@@ -56,11 +109,11 @@
           "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
         }
       ],
-      "published_at": "2026-04-12T09:30:04+00:00"
+      "published_at": "2026-04-10T07:31:00+00:00"
     },
     {
-      "title": "OSL 交易所产品更新：新币上线与利息奖励延长",
-      "summary": "OSL Global 宣布上线 **POL/USD** 交易对（基于 Polygon 网络）。同时，OSL 集团宣布通过 StableHub 延长 **USDGO** 的**利息奖励计划**，持续吸引稳定币存款。",
+      "title": "OSL Global 上线 POL/USD 交易对",
+      "summary": "OSL 全球站（OSL Global）宣布正式上线 **POL/USD** 交易对，并支持 Polygon 网络下的 **Pro Trade** 专业交易功能。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -68,44 +121,15 @@
           "platform": "twitter",
           "author": "@0x1manarmy",
           "url": "https://x.com/0x1manarmy/status/2043973834546757813"
-        },
-        {
-          "platform": "twitter",
-          "author": "@LeeDG_GF",
-          "url": "https://x.com/LeeDG_GF/status/2042223606504345927"
         }
       ],
       "published_at": "2026-04-14T08:45:12+00:00"
     },
     {
-      "title": "OSL 印度尼西亚市场业务进展与社区活动",
-      "summary": "OSL 印度尼西亚（由 Koinsayang 品牌重塑而来）推出本地首个基于**现实资产 (RWA)** 的 **Launchpool**，支持 XAUT 和 USDT 池。此外，平台正在举行 Telegram 社区活动，通过 XP 积分和周度测验分发奖励。",
-      "category": "产品动态",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@Fintaraid_",
-          "url": "https://x.com/Fintaraid_/status/2043643794491654518"
-        },
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2043632532839965016"
-        },
-        {
-          "platform": "twitter",
-          "author": "@valenttt____",
-          "url": "https://x.com/valenttt____/status/2043230002163200115"
-        }
-      ],
-      "published_at": "2026-04-13T10:53:44+00:00"
-    },
-    {
-      "title": "用户反馈：稳定币上线诉求及 OTC 业务门槛讨论",
-      "summary": "有用户强烈要求 OSL 交易所尽快上线**人民币稳定币和港币稳定币**。此外，社区内有关于 OSL **OTC 业务**的科普，指出其 USDT/USDC 交易门槛为 **1 亿印尼盾**，旨在为大宗交易提供优于盘口的价格。",
+      "title": "用户反馈：呼吁上线法币稳定币及 OTC 业务咨询",
+      "summary": "用户对 OSL 提出产品建议，要求尽快上线**人民币（CNY）及港币（HKD）稳定币**。此外，社区讨论了 OSL 的 **OTC 业务**（最低起投额 1 亿印尼盾），强调其在大额交易中的价格优势。",
       "category": "用户反馈",
-      "importance": "medium",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -118,30 +142,11 @@
           "url": "https://x.com/hoteliercrypto/status/2041432532013740164"
         }
       ],
-      "published_at": "2026-04-07T08:26:58+00:00"
-    },
-    {
-      "title": "OSL 集团财务展望与招聘动态",
-      "summary": "市场出现针对 OSL 集团 **2025 年盈利模拟预测**的讨论，称其专注持牌合规机构服务，展现出强劲的**盈利潜力**。同时，OSL 印度尼西亚正在招聘加密内容专家。",
-      "category": "市场分析",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@periodtrader_",
-          "url": "https://x.com/periodtrader_/status/2040086446757847231"
-        },
-        {
-          "platform": "twitter",
-          "author": "@0xkaccy",
-          "url": "https://x.com/0xkaccy/status/2039786256008368199"
-        }
-      ],
-      "published_at": "2026-04-03T15:18:06+00:00"
+      "published_at": "2026-04-05T09:04:00+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-09",
-    "to": "2026-04-15"
+    "from": "2026-04-10",
+    "to": "2026-04-16"
   }
 }
