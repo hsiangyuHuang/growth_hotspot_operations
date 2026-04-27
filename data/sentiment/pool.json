@@ -1,9 +1,9 @@
 {
-  "total_raw": 23,
+  "total_raw": 21,
   "items": [
     {
-      "title": "OSL 与 Circle 达成战略合作拓展亚洲 USDC 业务",
-      "summary": "OSL 集团与 **Circle** 宣布合作，旨在扩大 **USDC** 在亚洲市场的交易与支付应用。该举措将为机构客户提供无缝的**法币兑换**、实时结算及增强的流动性，进一步强化香港作为全球稳定币基础设施中心的地位。",
+      "title": "OSL 与 Circle 扩大合作以深化亚洲 USDC 流动性",
+      "summary": "OSL 集团宣布与 **Circle** 建立合作伙伴关系，旨在通过 **USDC** 扩大在亚洲的交易和支付功能，为机构客户提供无缝的**法币兑换**及**实时结算**效率，加强全球稳定币基础设施建设。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -36,8 +36,8 @@
       "published_at": "2026-04-25T01:10:33+00:00"
     },
     {
-      "title": "OSL 推出 BizPay 并推进稳定币支付基础设施建设",
-      "summary": "OSL 推出 **BizPay** 服务，通过“稳定币三明治”模式简化 **B2B 跨境支付**，用户无需理解底层加密逻辑即可实现即时结算。高管 Albert Wong 在 Money20/20 峰会表示，稳定币将在未来成为像电力一样的**企业金融基础设施**。",
+      "title": "OSL 重点展示 BizPay 及稳定币跨境支付解决方案",
+      "summary": "OSL 推出 **OSL BizPay**，利用“稳定币三明治”模式优化 **B2B 跨境结算**；高管在 Money20/20 Asia 上强调稳定币将成为企业基础设施的一部分，市场报告指出 OSL 已将业务核心转向**稳定币支付**。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -48,16 +48,16 @@
         },
         {
           "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2046784443067883569"
+          "author": "@QBitFlowApp",
+          "url": "https://x.com/QBitFlowApp/status/2044309748980559992"
         }
       ],
       "published_at": "2026-04-22T02:54:25+00:00"
     },
     {
-      "title": "OSL 印度尼西亚上线 Launchpool 获用户积极反馈",
-      "summary": "OSL 印度尼西亚推出首个基于真实资产的 **Launchpool**，支持 **POL ($POL)** 和 **XAUT** 质押。用户反馈积极，有用户分享投入 **1200 美金 10 天获利 16 美金** 的体验，认为其功能不输国际顶级交易所，提升了本地用户的**产品粘性**。",
-      "category": "活动推广",
+      "title": "OSL Indonesia 推出 Launchpool 活动受用户好评",
+      "summary": "**OSL Indonesia** 推出首个 **Launchpool** 功能并分发价值超过 1.25 亿印尼盾的 **$POL (Polygon)** 奖励。用户反馈该功能优于部分海外交易所，**KYC 及理财收益**体验良好，对平台活动的粘性有所增加。",
+      "category": "用户反馈",
       "importance": "medium",
       "sources": [
         {
@@ -77,25 +77,20 @@
         },
         {
           "platform": "twitter",
-          "author": "@yakunasira",
-          "url": "https://x.com/yakunasira/status/2045104149000274268"
-        },
-        {
-          "platform": "twitter",
           "author": "@Shaputra04v",
           "url": "https://x.com/Shaputra04v/status/2045067824507588793"
         },
         {
           "platform": "twitter",
-          "author": "@Fintaraid_",
-          "url": "https://x.com/Fintaraid_/status/2043643794491654518"
+          "author": "@yakunasira",
+          "url": "https://x.com/yakunasira/status/2045104161021386874"
         }
       ],
       "published_at": "2026-04-24T12:15:06+00:00"
     },
     {
-      "title": "OSL 旗下 Banxa 整合 Apple Pay 与 Google Pay 支付",
-      "summary": "OSL 集团旗下的 **Banxa** 正式上线 **Google Pay** 和 **Apple Pay** 支付渠道。此举极大地降低了用户从**法币入金加密货币**的门槛，提升了其在全球范围内的合规数字资产可获得性。",
+      "title": "OSL 旗下 Banxa 整合 Apple/Google Pay 并支持主流支付",
+      "summary": "OSL 集团旗下 **Banxa** 正式上线 **Google Pay** 与 **Apple Pay** 支付渠道，为用户提供更顺畅的**法币兑换加密货币**（on-ramp）体验，进一步降低合规数字资产的准入门槛。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -113,22 +108,8 @@
       "published_at": "2026-04-18T06:49:06+00:00"
     },
     {
-      "title": "市场分析：OSL 战略转型稳定币支付赛道",
-      "summary": "最新市场调研报告指出，OSL 已将其业务核心转向 **稳定币支付**。随着 2030 年加密汇款市场预计达到 **990 亿美元**，OSL 的转型使其与 PayPal 等传统支付巨头共同处于行业前沿。",
-      "category": "市场分析",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@QBitFlowApp",
-          "url": "https://x.com/QBitFlowApp/status/2044309748980559992"
-        }
-      ],
-      "published_at": "2026-04-15T07:00:00+00:00"
-    },
-    {
-      "title": "OSL Global 上线 POL/USD 交易对",
-      "summary": "OSL 集团的全球业务板块 **OSL Global** 宣布在 Polygon 网络上正式推出 **POL/USD** 交易对，并支持其 **Pro Trade** 专业交易功能。",
+      "title": "OSL Global 正式上线 POL/USD 交易对",
+      "summary": "OSL 集团旗下的全球交易所 **OSL Global** 宣布正式上线 **POL/USD** 交易对，并支持 **Pro Trade** 专业交易功能，扩展了平台对 Polygon 网络资产的支持。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -141,10 +122,10 @@
       "published_at": "2026-04-14T08:45:12+00:00"
     },
     {
-      "title": "OSL 高管出席亚洲加密论坛分享机构化战略",
-      "summary": "OSL 战略合作伙伴负责人 **Kevin Law** 出席 Cypher Asia 加密论坛。他强调了 OSL 在 **合规基础设施**、机构合作以及自动化推动业务增长方面的领先地位。",
+      "title": "OSL 亮相 Cypher Asia Crypto Forum 等行业盛会",
+      "summary": "OSL 战略合作伙伴负责人分享了公司在**合规基础设施**和**机构化合作**方面的进展。同时 OSL HK 与万向区块链、Gate、火币创始人等共同出席行业活动，显示其在香港及亚洲 Web3 圈层的影响力。",
       "category": "其他",
-      "importance": "medium",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -157,25 +138,11 @@
           "url": "https://x.com/RAN_System/status/2047330920261427701"
         }
       ],
-      "published_at": "2026-04-23T01:58:00+00:00"
-    },
-    {
-      "title": "OSL 印度尼西亚开展社区 Telegram 互动活动",
-      "summary": "OSL 印度尼西亚官方举办 **Telegram Party** 活动，通过邀请好友、社区讨论及每周测验等方式活跃用户社区，并分发**现金/代币奖励**。",
-      "category": "活动推广",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2043632532839965016"
-        }
-      ],
-      "published_at": "2026-04-13T10:08:59+00:00"
+      "published_at": "2026-04-23T15:05:03+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-20",
-    "to": "2026-04-26"
+    "from": "2026-04-21",
+    "to": "2026-04-27"
   }
 }
