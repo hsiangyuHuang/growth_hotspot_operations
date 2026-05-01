@@ -1,9 +1,9 @@
 {
-  "total_raw": 21,
+  "total_raw": 20,
   "items": [
     {
-      "title": "OSL 与 Circle 达成战略合作扩大 USDC 亚太市场",
-      "summary": "**OSL 集团与 Circle 宣布合作**，旨在提升亚太地区 **USDC** 的流动性。该合作将通过 OSL 的持牌平台扩大 USDC 的交易和支付用途，直接满足该地区对**机构级稳定币**和高效跨境结算的需求。",
+      "title": "OSL 与 Circle 达成全球战略合作",
+      "summary": "OSL 集团与 **Circle** 建立合作伙伴关系，旨在提升全球及亚洲市场的 **USDC** 存取与交易能力，满足机构对稳定币支付与跨境结算的需求。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -24,23 +24,18 @@
         },
         {
           "platform": "twitter",
-          "author": "@PlantreeX",
-          "url": "https://x.com/PlantreeX/status/2047319546998948173"
+          "author": "@CryptoHe4dlines",
+          "url": "https://x.com/CryptoHe4dlines/status/2047163680702308468"
         }
       ],
       "published_at": "2026-04-26T17:59:15+00:00"
     },
     {
-      "title": "OSL 印尼站 Launchpool 获用户积极反馈",
-      "summary": "**OSL 印尼 (OSL ID)** 推出的 **Launchpool** 功能受到本地用户好评，用户反馈称其为首个拥有此类功能的印尼本地合规交易所。目前正开展 **$POL (Polygon)** 奖励活动，有用户晒出 **1200 美元本金 10 天收益 16 美元** 的记录，对平台粘性有所增加。",
+      "title": "OSL 印度尼西亚 Launchpool 用户反馈正面",
+      "summary": "用户反馈 **OSL Indonesia** 的 **Launchpool** 功能体验良好，有用户分享投入约 **1200 美金** 资金在 10 天内获得 **16 美金** 收益，该平台正持续推广 $POL 等代币奖励活动。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
-        {
-          "platform": "twitter",
-          "author": "@edyrehuel",
-          "url": "https://x.com/edyrehuel/status/2047650539689910752"
-        },
         {
           "platform": "twitter",
           "author": "@ANDREDIKA14",
@@ -48,15 +43,20 @@
         },
         {
           "platform": "twitter",
-          "author": "@Shaputra04v",
-          "url": "https://x.com/Shaputra04v/status/2045067824507588793"
+          "author": "@edyrehuel",
+          "url": "https://x.com/edyrehuel/status/2047650539689910752"
+        },
+        {
+          "platform": "twitter",
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2046415447210537432"
         }
       ],
       "published_at": "2026-04-24T12:15:06+00:00"
     },
     {
-      "title": "OSL BizPay 推动 B2B 跨境支付稳定币化",
-      "summary": "OSL 展示其 **BizPay 解决方案**，利用“稳定币三明治”模式简化企业跨境结算。高管指出其愿景是让稳定币在 18 个月内成为像电力一样的**金融基础设施**，实现**秒级法币结算**而无需用户感知加密货币的复杂性。",
+      "title": "OSL BizPay 亮相 Money20/20 峰会",
+      "summary": "OSL 高层在 Money20/20 亚洲峰会分享 **OSL BizPay** 的“**稳定币三明治**”技术，该方案可实现 B2B 跨境支付的 **即时结算**，将稳定币作为底层设施简化企业财务流程。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -69,8 +69,8 @@
       "published_at": "2026-04-22T02:54:25+00:00"
     },
     {
-      "title": "OSL 集团发布亚太区大规模招聘计划",
-      "summary": "作为香港领先的持牌交易所，**OSL 正在亚太地区招募多个职位**，涵盖交易、财务及加密基础设施建设。项目提供高达 **5 万港元** 的内部推荐奖励，显示出强劲的扩张势头。",
+      "title": "OSL 集团启动亚太区大规模招聘",
+      "summary": "OSL 交易所母公司正招聘包括 **量化、交易、品牌** 在内的多个职位，支持亚太区业务扩张，并提供最高 **5 万港币** 的推荐奖金。",
       "category": "其他",
       "importance": "medium",
       "sources": [
@@ -83,8 +83,8 @@
       "published_at": "2026-04-28T10:19:50+00:00"
     },
     {
-      "title": "OSL 活跃于香港 Web3 嘉年华及行业论坛",
-      "summary": "OSL 战略合作伙伴负责人 Kevin Law 出席 **Cypher Asia Crypto Forum**，分享平台在**合规化和基础设施**方面的领先优势。此外，OSL 在香港举办的 **Crypto Party** 吸引了包括 Huobi 创始人、万向区块链等行业大咖参与，提升了品牌社交影响力。",
+      "title": "OSL 参与香港 Web3 节及 Cypher Asia 论坛",
+      "summary": "OSL 战略伙伴负责人 Kevin Law 等高管参加 **Cypher Asia** 论坛，探讨 **合规基础设施** 规模化及机构化发展战略，并与多名行业领袖进行交流。",
       "category": "活动推广",
       "importance": "low",
       "sources": [
@@ -100,15 +100,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@Pavelhide",
-          "url": "https://x.com/Pavelhide/status/2049128434983432650"
+          "author": "@CassieLuo45818",
+          "url": "https://x.com/CassieLuo45818/status/2049481593937670182"
         }
       ],
-      "published_at": "2026-04-23T15:05:03+00:00"
+      "published_at": "2026-04-23T01:58:00+00:00"
     },
     {
-      "title": "OSL 旗下 Banxa 升级法币入金体验",
-      "summary": "**OSL 集团成员 Banxa** 宣布优化法币转加密货币流程，支持 **Apple Pay 和 Google Pay** 快速结账。该举措旨在通过更快的验证和合规渠道，为数百万用户提供**无摩擦入金体验**。",
+      "title": "Banxa 整合 Apple/Google Pay 提升入金体验",
+      "summary": "作为 OSL 集团成员的 **Banxa** 宣布优化法币兑加密货币流程，通过支持 **Apple Pay** 和 **Google Pay** 提供更流畅的合规支付体验。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -122,7 +122,7 @@
     }
   ],
   "date_range": {
-    "from": "2026-04-24",
-    "to": "2026-04-30"
+    "from": "2026-04-25",
+    "to": "2026-05-01"
   }
 }
