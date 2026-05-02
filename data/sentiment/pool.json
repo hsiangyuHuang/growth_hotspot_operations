@@ -2,8 +2,8 @@
   "total_raw": 20,
   "items": [
     {
-      "title": "OSL 与 Circle 达成全球战略合作",
-      "summary": "OSL 集团与 **Circle** 建立合作伙伴关系，旨在提升全球及亚洲市场的 **USDC** 存取与交易能力，满足机构对稳定币支付与跨境结算的需求。",
+      "title": "OSL 与 Circle 达成战略合作拓展 USDC 亚洲市场",
+      "summary": "**OSL 集团与 Circle 宣布合作**，旨在扩大 **USDC 在全球及亚洲市场的交易与支付应用**。此举将为机构客户提供更强的 **USDC 流动性**，并利用稳定币基础设施优化**跨境结算效率**，强化香港作为数字资产枢纽的地位。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -19,6 +19,11 @@
         },
         {
           "platform": "twitter",
+          "author": "@PlantreeX",
+          "url": "https://x.com/PlantreeX/status/2047319546998948173"
+        },
+        {
+          "platform": "twitter",
           "author": "@TronWeekly",
           "url": "https://x.com/TronWeekly/status/2047246600410628489"
         },
@@ -26,25 +31,40 @@
           "platform": "twitter",
           "author": "@CryptoHe4dlines",
           "url": "https://x.com/CryptoHe4dlines/status/2047163680702308468"
+        },
+        {
+          "platform": "twitter",
+          "author": "@byul_finance",
+          "url": "https://x.com/byul_finance/status/2047126422708539492"
+        },
+        {
+          "platform": "twitter",
+          "author": "@byul_japan",
+          "url": "https://x.com/byul_japan/status/2047126422700061153"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Uematsu4Takashi",
+          "url": "https://x.com/Uematsu4Takashi/status/2047319546998948173"
         }
       ],
       "published_at": "2026-04-26T17:59:15+00:00"
     },
     {
-      "title": "OSL 印度尼西亚 Launchpool 用户反馈正面",
-      "summary": "用户反馈 **OSL Indonesia** 的 **Launchpool** 功能体验良好，有用户分享投入约 **1200 美金** 资金在 10 天内获得 **16 美金** 收益，该平台正持续推广 $POL 等代币奖励活动。",
+      "title": "用户对 OSL Indonesia Launchpool 功能反馈积极",
+      "summary": "多名印尼用户分享在 **OSL Indonesia** 使用 **Launchpool** 的盈利体验，提及质押 1200 美金在 10 天内获得约 **16 美金（$POL）收益**。用户评价该功能足以**媲美海外一线交易所**，并对后续项目表示期待。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@ANDREDIKA14",
-          "url": "https://x.com/ANDREDIKA14/status/2047638231756484814"
+          "author": "@edyrehuel",
+          "url": "https://x.com/edyrehuel/status/2047650539689910752"
         },
         {
           "platform": "twitter",
-          "author": "@edyrehuel",
-          "url": "https://x.com/edyrehuel/status/2047650539689910752"
+          "author": "@ANDREDIKA14",
+          "url": "https://x.com/ANDREDIKA14/status/2047638231756484814"
         },
         {
           "platform": "twitter",
@@ -55,8 +75,22 @@
       "published_at": "2026-04-24T12:15:06+00:00"
     },
     {
-      "title": "OSL BizPay 亮相 Money20/20 峰会",
-      "summary": "OSL 高层在 Money20/20 亚洲峰会分享 **OSL BizPay** 的“**稳定币三明治**”技术，该方案可实现 B2B 跨境支付的 **即时结算**，将稳定币作为底层设施简化企业财务流程。",
+      "title": "OSL Indonesia 系统维护通知",
+      "summary": "**OSL Indonesia** 将于 2026 年 5 月 6 日 23:00 至 5 月 7 日 01:00 (WIB) 进行**系统维护**，期间**法币及加密货币的充值与提现**功能将暂停使用。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2050045995011219773"
+        }
+      ],
+      "published_at": "2026-05-01T02:53:47+00:00"
+    },
+    {
+      "title": "OSL BizPay 亮相 Money20/20 展示稳定币跨境结算方案",
+      "summary": "OSL 高管在 Money20/20 Asia 上介绍 **OSL BizPay**，强调**稳定币作为 B2B 支付底层架构**的优势。该产品允许企业通过“**稳定币夹心**”模式实现两分钟内的**全球资金流转与法币结算**，降低跨境业务复杂性。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -64,65 +98,61 @@
           "platform": "twitter",
           "author": "@osldotcom",
           "url": "https://x.com/osldotcom/status/2046784660894802030"
+        },
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2046784443067883569"
         }
       ],
       "published_at": "2026-04-22T02:54:25+00:00"
     },
     {
-      "title": "OSL 集团启动亚太区大规模招聘",
-      "summary": "OSL 交易所母公司正招聘包括 **量化、交易、品牌** 在内的多个职位，支持亚太区业务扩张，并提供最高 **5 万港币** 的推荐奖金。",
-      "category": "其他",
+      "title": "OSL 高管出席 Cypher Asia 论坛分享机构战略",
+      "summary": "OSL 战略伙伴关系负责人 Kevin Law 在 Cypher Asia 论坛上强调了 OSL 在**合规基础设施和机构级合作伙伴**方面的进展，重申了公司在自动化与合规化方面的核心竞争力。",
+      "category": "市场分析",
       "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@crypto_vazima",
-          "url": "https://x.com/crypto_vazima/status/2049071080074051946"
-        }
-      ],
-      "published_at": "2026-04-28T10:19:50+00:00"
-    },
-    {
-      "title": "OSL 参与香港 Web3 节及 Cypher Asia 论坛",
-      "summary": "OSL 战略伙伴负责人 Kevin Law 等高管参加 **Cypher Asia** 论坛，探讨 **合规基础设施** 规模化及机构化发展战略，并与多名行业领袖进行交流。",
-      "category": "活动推广",
-      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
           "author": "@osldotcom",
           "url": "https://x.com/osldotcom/status/2047132851183997213"
-        },
-        {
-          "platform": "twitter",
-          "author": "@RAN_System",
-          "url": "https://x.com/RAN_System/status/2047330920261427701"
-        },
-        {
-          "platform": "twitter",
-          "author": "@CassieLuo45818",
-          "url": "https://x.com/CassieLuo45818/status/2049481593937670182"
         }
       ],
       "published_at": "2026-04-23T01:58:00+00:00"
     },
     {
-      "title": "Banxa 整合 Apple/Google Pay 提升入金体验",
-      "summary": "作为 OSL 集团成员的 **Banxa** 宣布优化法币兑加密货币流程，通过支持 **Apple Pay** 和 **Google Pay** 提供更流畅的合规支付体验。",
-      "category": "产品动态",
-      "importance": "medium",
+      "title": "OSL 品牌在港活跃度提及（招聘与社交）",
+      "summary": "OSL 在香港市场持续活跃，涉及 **APAC 地区多个职位招聘**（最高 5 万港币推荐奖金）、**香港加密货币咨询**及行业聚会，显示其在香港持牌市场的品牌存在感。",
+      "category": "其他",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2045394170635063450"
+          "author": "@crypto_vazima",
+          "url": "https://x.com/crypto_vazima/status/2049071080074051946"
+        },
+        {
+          "platform": "twitter",
+          "author": "@CassieLuo45818",
+          "url": "https://x.com/CassieLuo45818/status/2049481593937670182"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Pavelhide",
+          "url": "https://x.com/Pavelhide/status/2049128434983432650"
+        },
+        {
+          "platform": "twitter",
+          "author": "@RAN_System",
+          "url": "https://x.com/RAN_System/status/2047330920261427701"
         }
       ],
-      "published_at": "2026-04-18T06:49:06+00:00"
+      "published_at": "2026-04-29T13:31:04+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-25",
-    "to": "2026-05-01"
+    "from": "2026-04-26",
+    "to": "2026-05-02"
   }
 }
