@@ -1,9 +1,9 @@
 {
-  "total_raw": 20,
+  "total_raw": 23,
   "items": [
     {
-      "title": "OSL 与 Circle 达成战略合作拓展 USDC 亚洲市场",
-      "summary": "**OSL 集团与 Circle 宣布合作**，旨在扩大 **USDC 在全球及亚洲市场的交易与支付应用**。此举将为机构客户提供更强的 **USDC 流动性**，并利用稳定币基础设施优化**跨境结算效率**，强化香港作为数字资产枢纽的地位。",
+      "title": "OSL 与 Circle 达成全球战略合作",
+      "summary": "OSL 集团宣布与 **Circle** 达成合作，旨在扩大 **USDC** 在全球市场（尤其是亚洲）的交易、支付及机构需求。此举被视为重建金融基础设施的关键一步，涵盖了**法币兑换、实时结算及跨国结算**，以增强市场效率。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -36,23 +36,13 @@
           "platform": "twitter",
           "author": "@byul_finance",
           "url": "https://x.com/byul_finance/status/2047126422708539492"
-        },
-        {
-          "platform": "twitter",
-          "author": "@byul_japan",
-          "url": "https://x.com/byul_japan/status/2047126422700061153"
-        },
-        {
-          "platform": "twitter",
-          "author": "@Uematsu4Takashi",
-          "url": "https://x.com/Uematsu4Takashi/status/2047319546998948173"
         }
       ],
       "published_at": "2026-04-26T17:59:15+00:00"
     },
     {
-      "title": "用户对 OSL Indonesia Launchpool 功能反馈积极",
-      "summary": "多名印尼用户分享在 **OSL Indonesia** 使用 **Launchpool** 的盈利体验，提及质押 1200 美金在 10 天内获得约 **16 美金（$POL）收益**。用户评价该功能足以**媲美海外一线交易所**，并对后续项目表示期待。",
+      "title": "OSL Indonesia Launchpool 功能及用户收益反馈",
+      "summary": "印尼用户对 OSL 的 **Launchpool** 功能反响热烈，认为其性能不亚于国际头部平台。用户分享实测经验：投入 **1200 美元** 本金，10天收益约 **16 美元**。官方同时在推广 **$POL (Polygon)** 奖励活动，分发价值 1.25 亿印尼盾的奖金。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -75,22 +65,8 @@
       "published_at": "2026-04-24T12:15:06+00:00"
     },
     {
-      "title": "OSL Indonesia 系统维护通知",
-      "summary": "**OSL Indonesia** 将于 2026 年 5 月 6 日 23:00 至 5 月 7 日 01:00 (WIB) 进行**系统维护**，期间**法币及加密货币的充值与提现**功能将暂停使用。",
-      "category": "产品动态",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@OSL_ID",
-          "url": "https://x.com/OSL_ID/status/2050045995011219773"
-        }
-      ],
-      "published_at": "2026-05-01T02:53:47+00:00"
-    },
-    {
-      "title": "OSL BizPay 亮相 Money20/20 展示稳定币跨境结算方案",
-      "summary": "OSL 高管在 Money20/20 Asia 上介绍 **OSL BizPay**，强调**稳定币作为 B2B 支付底层架构**的优势。该产品允许企业通过“**稳定币夹心**”模式实现两分钟内的**全球资金流转与法币结算**，降低跨境业务复杂性。",
+      "title": "OSL BizPay 亮相 Money20/20 峰会",
+      "summary": "OSL 高层在 Money20/20 Asia 峰会上展示了 **OSL BizPay**，提出“**稳定币三明治**”模式解决 B2B 跨境结算。该模式允许企业在 2 分钟内完成全球资金流转并以法币结算，将稳定币作为底层基建，实现 **即时结算** 体验。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -108,8 +84,22 @@
       "published_at": "2026-04-22T02:54:25+00:00"
     },
     {
-      "title": "OSL 高管出席 Cypher Asia 论坛分享机构战略",
-      "summary": "OSL 战略伙伴关系负责人 Kevin Law 在 Cypher Asia 论坛上强调了 OSL 在**合规基础设施和机构级合作伙伴**方面的进展，重申了公司在自动化与合规化方面的核心竞争力。",
+      "title": "OSL 平台安全性与零手续费评价",
+      "summary": "社区用户反馈 OSL 平台 **安全可靠 (aman)**，并特别强调了 **USDT 交易免手续费** 的优势，鼓励其他用户探索 OSL 平台。",
+      "category": "用户反馈",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@CrazeQuantum",
+          "url": "https://x.com/CrazeQuantum/status/2050506130644931027"
+        }
+      ],
+      "published_at": "2026-05-02T09:22:12+00:00"
+    },
+    {
+      "title": "OSL 集团阐述基础设施与合规化战略",
+      "summary": "OSL 战略合作负责人参加 Cypher Asia 加密论坛，强调 OSL 将坚持 **合规化、自动化和基础设施** 优先的发展方向，利用机构增长的势头加强业务布局。",
       "category": "市场分析",
       "importance": "medium",
       "sources": [
@@ -122,8 +112,22 @@
       "published_at": "2026-04-23T01:58:00+00:00"
     },
     {
-      "title": "OSL 品牌在港活跃度提及（招聘与社交）",
-      "summary": "OSL 在香港市场持续活跃，涉及 **APAC 地区多个职位招聘**（最高 5 万港币推荐奖金）、**香港加密货币咨询**及行业聚会，显示其在香港持牌市场的品牌存在感。",
+      "title": "OSL Indonesia 系统维护通知",
+      "summary": "OSL Indonesia 公告将于 2026 年 5 月 6 日至 7 日进行 **系统维护**，期间 **存取款功能 (法币与加密货币)** 将暂时不可用。",
+      "category": "其他",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2050045995011219773"
+        }
+      ],
+      "published_at": "2026-05-01T02:53:47+00:00"
+    },
+    {
+      "title": "OSL 亚太区多岗位招聘动态",
+      "summary": "社交媒体流传 OSL 正在亚太地区招聘多个岗位，涵盖 **交易、量化及财务** 领域，推荐奖金最高达 **50,000 港元**。",
       "category": "其他",
       "importance": "low",
       "sources": [
@@ -131,28 +135,13 @@
           "platform": "twitter",
           "author": "@crypto_vazima",
           "url": "https://x.com/crypto_vazima/status/2049071080074051946"
-        },
-        {
-          "platform": "twitter",
-          "author": "@CassieLuo45818",
-          "url": "https://x.com/CassieLuo45818/status/2049481593937670182"
-        },
-        {
-          "platform": "twitter",
-          "author": "@Pavelhide",
-          "url": "https://x.com/Pavelhide/status/2049128434983432650"
-        },
-        {
-          "platform": "twitter",
-          "author": "@RAN_System",
-          "url": "https://x.com/RAN_System/status/2047330920261427701"
         }
       ],
-      "published_at": "2026-04-29T13:31:04+00:00"
+      "published_at": "2026-04-28T10:19:50+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-26",
-    "to": "2026-05-02"
+    "from": "2026-04-27",
+    "to": "2026-05-03"
   }
 }
