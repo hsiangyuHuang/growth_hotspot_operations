@@ -1,9 +1,9 @@
 {
-  "total_raw": 23,
+  "total_raw": 21,
   "items": [
     {
-      "title": "OSL 与 Circle 达成战略合作扩大 USDC 业务",
-      "summary": "OSL 集团宣布与 **Circle** 建立合作伙伴关系，旨在扩大 **USDC** 在全球市场（特别是亚洲）的交易和支付用途，增强 **机构级** 稳定币基础设施的流动性。此举被视为重建金融基础设施的关键一步。",
+      "title": "OSL 与 Circle 达成战略合作扩展 USDC 业务",
+      "summary": "**OSL 集团与 Circle 建立合作伙伴关系**，旨在通过 OSL 平台在亚洲及全球市场扩展 **USDC 的交易与支付功能**。此举将增强机构对稳定币的需求，提升跨境结算效率，并支持 **法币与 USDC 之间的无缝转换**。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -19,11 +19,6 @@
         },
         {
           "platform": "twitter",
-          "author": "@PlantreeX",
-          "url": "https://x.com/PlantreeX/status/2047319546998948173"
-        },
-        {
-          "platform": "twitter",
           "author": "@TronWeekly",
           "url": "https://x.com/TronWeekly/status/2047246600410628489"
         },
@@ -36,9 +31,9 @@
       "published_at": "2026-04-26T17:59:15+00:00"
     },
     {
-      "title": "OSL Indonesia 推出 Launchpool 活动及用户正面反馈",
-      "summary": "OSL 印尼平台推出 **Launchpool** 功能并分发超过 1.25 亿印尼盾的 **$POL (Polygon)** 奖励。用户反馈称其为首个具备此类功能的印尼合规交易所，并对 **10天获得约16美金收益** 的理财体验表示满意。",
-      "category": "活动推广",
+      "title": "用户对 OSL Indonesia Launchpool 及安全性的正面反馈",
+      "summary": "印度尼西亚用户对 **OSL Launchpool** 功能表示高度认可，称其收益稳定（如10天获益16美元）且 **功能不输国际主流交易平台**。此外，用户提及 OSL 平台具有 **安全性高、USDT 零手续费** 等优势。",
+      "category": "用户反馈",
       "importance": "medium",
       "sources": [
         {
@@ -53,34 +48,6 @@
         },
         {
           "platform": "twitter",
-          "author": "@OSL_ID",
-          "url": "https://x.com/OSL_ID/status/2046415447210537432"
-        }
-      ],
-      "published_at": "2026-04-24T12:15:06+00:00"
-    },
-    {
-      "title": "OSL Indonesia 系统维护通知",
-      "summary": "OSL Indonesia 将于 **2026年5月6日深夜至7日凌晨** 进行系统维护。期间 **法币及加密货币的充值与提现** 服务将暂停。",
-      "category": "产品动态",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@OSL_ID",
-          "url": "https://x.com/OSL_ID/status/2050045995011219773"
-        }
-      ],
-      "published_at": "2026-05-01T02:53:47+00:00"
-    },
-    {
-      "title": "用户评价 OSL 平台安全性与费用优势",
-      "summary": "用户在社交媒体上称赞 OSL 平台 **安全可靠**，并特别指出 **USDT 交易免手续费** 是其核心吸引力，认为其是优选的交易平台。",
-      "category": "用户反馈",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
           "author": "@CrazeQuantum",
           "url": "https://x.com/CrazeQuantum/status/2050506130644931027"
         },
@@ -93,8 +60,8 @@
       "published_at": "2026-05-02T09:22:12+00:00"
     },
     {
-      "title": "OSL 展示 BizPay 跨境支付与稳定币解决方案",
-      "summary": "OSL 高管在 Money20/20 Asia 等论坛展示了 **OSL BizPay**，强调通过 **“稳定币三明治”** 模式实现 B2B 跨境即时结算，使用户无需接触加密复杂性即可完成法币到法币的快速转账。",
+      "title": "OSL 展示 BizPay 跨境支付方案及稳定币战略",
+      "summary": "OSL 高管在 Money20/20 Asia 及 Cypher Asia 论坛上介绍了 **OSL BizPay**。该方案采用 **“稳定币夹心（Stablecoin Sandwich）”** 模式，为企业提供隐藏复杂性的 **即时法币结算** 服务，将稳定币视为金融基础设施的“电力”。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -112,9 +79,23 @@
       "published_at": "2026-04-23T01:58:00+00:00"
     },
     {
-      "title": "OSL 集团亚太区人才招聘与行业峰会动态",
-      "summary": "OSL 正在亚太区招聘交易、量化及品牌相关岗位，**最高引荐奖金达 5万港币**。同时，OSL 积极参与香港 **Web3Festival** 及其它加密论坛，提升品牌曝光度。",
-      "category": "其他",
+      "title": "OSL Indonesia 系统维护通知",
+      "summary": "OSL Indonesia 宣布将于 **2026年5月6日晚间进行系统维护**。维护期间，平台将暂停 **法币及加密货币的充值与提现服务**。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2050045995011219773"
+        }
+      ],
+      "published_at": "2026-05-01T02:53:47+00:00"
+    },
+    {
+      "title": "OSL 品牌活动、招聘及市场宣发动态",
+      "summary": "OSL 近期在亚太地区展开 **多职位招聘**，提供高达 5万港币的推荐金。同时，OSL 积极参与香港的 **Crypto Party** 等社交活动，并与行业分析师合作通过 **OSL Exchange 提供免费市场资讯** 以吸引用户。",
+      "category": "活动推广",
       "importance": "low",
       "sources": [
         {
@@ -124,20 +105,20 @@
         },
         {
           "platform": "twitter",
-          "author": "@CassieLuo45818",
-          "url": "https://x.com/CassieLuo45818/status/2049481593937670182"
+          "author": "@hoteliercrypto",
+          "url": "https://x.com/hoteliercrypto/status/2050431167904809378"
         },
         {
           "platform": "twitter",
-          "author": "@RAN_System",
-          "url": "https://x.com/RAN_System/status/2047330920261427701"
+          "author": "@Pavelhide",
+          "url": "https://x.com/Pavelhide/status/2049128434983432650"
         }
       ],
-      "published_at": "2026-04-29T13:31:04+00:00"
+      "published_at": "2026-05-02T04:24:20+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-28",
-    "to": "2026-05-04"
+    "from": "2026-04-29",
+    "to": "2026-05-05"
   }
 }
