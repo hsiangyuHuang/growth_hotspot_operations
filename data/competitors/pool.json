@@ -461,6 +461,45 @@
           ]
         },
         {
+          "title": "HashKey CEO 论述稳定币与 AI 支付的结合",
+          "category": "监管合规",
+          "summary": "HashKey Group 董事长**肖风**接受《文汇报》采访：\n- 指出香港**稳定币立法**将使其在跨国贸易和 **AI 驱动的支付**中发挥重要作用。\n- 认为稳定币能填补传统金融系统在 AI 场景下的不足。",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "HashKey Group",
+              "url": "https://x.com/HashKeyGroup/status/2042872579200032913"
+            }
+          ],
+          "date": "2026-04-12"
+        },
+        {
+          "title": "投资越南交易所 CAEX 并达成战略合作",
+          "category": "合作伙伴",
+          "summary": "**HashKey Group** 成为越南 **CAEX** 的战略合作伙伴：\n- 与 VPBankS 及 LynkiD 共同支持该受监管交易试点\n- 致力于在合规框架内拓展亚洲高潜力数字资产市场",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "HashKey Group Twitter",
+              "url": "https://x.com/HashKeyGroup/status/2042433862974963917"
+            }
+          ],
+          "date": "2026-04-11"
+        },
+        {
+          "title": "筹备亚洲连接论坛 (Asia Connect Forum)",
+          "category": "活动推广",
+          "summary": "HashKey Exchange 正在积极邀请行业专家参加其**亚洲连接论坛**：\n- 拟探讨 **Web3 代币、稳定币及 RWA** 的未来发展\n- 肖风博士确认出席前沿论坛，分享行业积淀与视角",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "HashKey Exchange Twitter",
+              "url": "https://x.com/HashKeyExchange/status/2042555297181635010"
+            }
+          ],
+          "date": "2026-04-11"
+        },
+        {
           "title": "展示 HashKey On-Chain AI 支付解决方案",
           "category": "产品更新",
           "summary": "**连接 Web2 商业与 Web3 金融**\n- 重点介绍 HashKey 结算协议 (HSP)，旨在解决跨境支付合规难题\n- 与新加坡金融管理局支持的封闭式平台进行深度对接分享",
@@ -474,42 +513,6 @@
           ]
         },
         {
-          "title": "HashKey CEO 论述稳定币与 AI 支付的结合",
-          "category": "监管合规",
-          "summary": "HashKey Group 董事长**肖风**接受《文汇报》采访：\n- 指出香港**稳定币立法**将使其在跨国贸易和 **AI 驱动的支付**中发挥重要作用。\n- 认为稳定币能填补传统金融系统在 AI 场景下的不足。",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "HashKey Group",
-              "url": "https://x.com/HashKeyGroup/status/2042872579200032913"
-            }
-          ]
-        },
-        {
-          "title": "投资越南交易所 CAEX 并达成战略合作",
-          "category": "合作伙伴",
-          "summary": "**HashKey Group** 成为越南 **CAEX** 的战略合作伙伴：\n- 与 VPBankS 及 LynkiD 共同支持该受监管交易试点\n- 致力于在合规框架内拓展亚洲高潜力数字资产市场",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "HashKey Group Twitter",
-              "url": "https://x.com/HashKeyGroup/status/2042433862974963917"
-            }
-          ]
-        },
-        {
-          "title": "筹备亚洲连接论坛 (Asia Connect Forum)",
-          "category": "活动推广",
-          "summary": "HashKey Exchange 正在积极邀请行业专家参加其**亚洲连接论坛**：\n- 拟探讨 **Web3 代币、稳定币及 RWA** 的未来发展\n- 肖风博士确认出席前沿论坛，分享行业积淀与视角",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "HashKey Exchange Twitter",
-              "url": "https://x.com/HashKeyExchange/status/2042555297181635010"
-            }
-          ]
-        },
-        {
           "title": "与 Oceanus Group 建立战略合作伙伴关系",
           "category": "合作伙伴",
           "summary": "双方将利用 **HashKey OTC** 的合规结算轨道和 Oceanus 的 **ODIN** 平台，推进受监管的稳定币在贸易金融中的结算。**目标**：打破传统贸易融资与数字资产之间的隔阂。",
@@ -519,7 +522,8 @@
               "name": "twitter:@HashKeyGroup",
               "url": "https://x.com/HashKeyGroup/status/2042148334400631145"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "通过持牌交易所提供 ETH 质押服务",
@@ -531,7 +535,8 @@
               "name": "twitter:@HashKeyExchange",
               "url": "https://x.com/HashKeyExchange/status/2042094213261881379"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "2026 香港 Web3 嘉年华议程发布",
@@ -543,7 +548,8 @@
               "name": "Odaily",
               "url": "https://www.odaily.news/zh-CN/post/5210171"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "举办 Web3 Festival 亚洲连接论坛",
@@ -555,7 +561,8 @@
               "name": "Twitter",
               "url": "https://x.com/HashKeyExchange/status/2041795682265395224"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         }
       ]
     },
@@ -645,7 +652,8 @@
               "name": "Bullish Twitter",
               "url": "https://x.com/Bullish/status/2042610548257247464"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "发布 2026 年 3 月运营指标报告",
@@ -657,7 +665,8 @@
               "name": "Twitter",
               "url": "https://x.com/Bullish/status/2041841187716235545"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         }
       ]
     },
@@ -2245,32 +2254,6 @@
           ]
         },
         {
-          "title": "赵长鹏接受采访谈及赴美认罪决策",
-          "category": "监管合规",
-          "summary": "**创始人 CZ 分享合规博弈细节**\n- 在 4 月 9 日的采访中透露，自愿赴美认罪是为了保护 Binance 免遭起诉\n- 旨在将对 BNB 持有者的影响降至最低",
-          "date": "2026-04-09",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2044128558084436151"
-            }
-          ]
-        },
-        {
-          "title": "赵长鹏（CZ）新书《币安人生》上线",
-          "category": "其他",
-          "summary": "币安创始人 **CZ** 的自传 **《Freedom of Money》（币安人生）** 正式发布：\n- 引发加密社区广泛阅读与讨论\n- 链上甚至出现同名热门模因币及其持仓集群",
-          "date": "2026-04-08",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "律动 BlockBeats",
-              "url": "https://m.theblockbeats.info/news/61923"
-            }
-          ]
-        },
-        {
           "title": "Binance Web3 钱包上线 Pre-IPO 资产探索功能",
           "category": "产品更新",
           "summary": "**Binance Web3 钱包**推出了链上 **Pre-IPO 资产探索功能**：\n- 首批包含 5 种代币化资产，涉及 **SpaceX** 和 **OpenAI** 等知名科技公司。\n- 允许用户在公司上市前通过 Web3 钱包接触其代币化份额。",
@@ -2280,7 +2263,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2042771786291646714"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "现货山寨币流动性增强计划更新",
@@ -2292,7 +2276,8 @@
               "name": "Binance",
               "url": "https://x.com/binance/status/2042890803408966115"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "推出期货交易机器人选择指南",
@@ -2304,7 +2289,8 @@
               "name": "Binance",
               "url": "https://x.com/binance/status/2042980994500710422"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "上线首批Pre-IPO资产",
@@ -2316,7 +2302,8 @@
               "name": "律动 BlockBeats",
               "url": "https://m.theblockbeats.info/flash/340621"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "回应阿联酋员工调动传闻",
@@ -2332,7 +2319,8 @@
               "name": "律动 BlockBeats",
               "url": "https://m.theblockbeats.info/flash/340619"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "3月交易量数据显示现货份额下滑",
@@ -2344,7 +2332,8 @@
               "name": "律动 BlockBeats",
               "url": "https://m.theblockbeats.info/news/61871"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "推出多项理财与交易活动",
@@ -2356,7 +2345,8 @@
               "name": "Binance Twitter",
               "url": "https://x.com/binance/status/2042664307335307582"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "Binance 钱包集成 Predict.fun 推出零 Gas 费预测市场",
@@ -2376,7 +2366,8 @@
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/binance-prediction-markets-app"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Binance Capital Connect 机构级交易平台上线",
@@ -2388,7 +2379,8 @@
               "name": "twitter:@_RichardTeng",
               "url": "https://x.com/_RichardTeng/status/2042150136856637473"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Binance 支持英国 NCA 冻结 1200 万美元诈骗资金",
@@ -2400,7 +2392,8 @@
               "name": "twitter:@binance",
               "url": "https://x.com/binance/status/2042289294598160494"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Binance 广场推出 Tip to Chat 打赏私聊功能",
@@ -2412,7 +2405,8 @@
               "name": "twitter:@binance",
               "url": "https://x.com/binance/status/2042272007446810726"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Binance 上线 USDS 并开启相关理财与杠杆服务",
@@ -2424,7 +2418,8 @@
               "name": "Binance",
               "url": "https://www.binance.com/en/support/announcement/0a9581bcaef24410a1dace51722112c8"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Binance 计划下架 BIFI、FIO 等 6 个代币",
@@ -2435,6 +2430,20 @@
             {
               "name": "twitter:@binance",
               "url": "https://x.com/binance/status/2042121788910661957"
+            }
+          ],
+          "date": "2026-04-10"
+        },
+        {
+          "title": "赵长鹏接受采访谈及赴美认罪决策",
+          "category": "监管合规",
+          "summary": "**创始人 CZ 分享合规博弈细节**\n- 在 4 月 9 日的采访中透露，自愿赴美认罪是为了保护 Binance 免遭起诉\n- 旨在将对 BNB 持有者的影响降至最低",
+          "date": "2026-04-09",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "twitter:@WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2044128558084436151"
             }
           ]
         },
@@ -2452,7 +2461,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2041869397372105182"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "受地缘政治利好影响，币安BTC交易额激增",
@@ -2468,7 +2478,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2041854347496321382"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "上线 XAUT 杠杆交易挑战赛",
@@ -2479,6 +2490,20 @@
             {
               "name": "Twitter",
               "url": "https://x.com/binance/status/2041848889687331027"
+            }
+          ],
+          "date": "2026-04-09"
+        },
+        {
+          "title": "赵长鹏（CZ）新书《币安人生》上线",
+          "category": "其他",
+          "summary": "币安创始人 **CZ** 的自传 **《Freedom of Money》（币安人生）** 正式发布：\n- 引发加密社区广泛阅读与讨论\n- 链上甚至出现同名热门模因币及其持仓集群",
+          "date": "2026-04-08",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "律动 BlockBeats",
+              "url": "https://m.theblockbeats.info/news/61923"
             }
           ]
         },
@@ -2500,7 +2525,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2041438061431824641"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "发布第41期储备证明报告",
@@ -2516,7 +2542,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2041473516206526653"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "KGST 赚币计划上调收益率",
@@ -2528,7 +2555,8 @@
               "name": "Binance Twitter",
               "url": "https://x.com/binance/status/2041578088400560459"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "首席合规官 Noah Perlman 及多名高管拟离职",
@@ -2544,7 +2572,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2041175799504765005"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         },
         {
           "title": "上线山寨币现货流动性增强计划",
@@ -2556,7 +2585,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2041015720289718360"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         },
         {
           "title": "推广 Binance Pay 及 Airdrop 奖励活动",
@@ -2572,7 +2602,8 @@
               "name": "Binance Twitter",
               "url": "https://x.com/binance/status/2041067485781258549"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -3495,7 +3526,8 @@
               "name": "OKX",
               "url": "https://x.com/okx/status/2042807350516383751"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "发布周度产品更新与列表计划",
@@ -3511,7 +3543,8 @@
               "name": "OKX",
               "url": "https://x.com/okx/status/2042895014099874205"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "战略投资越南交易所 CAEX",
@@ -3527,7 +3560,8 @@
               "name": "OKX Twitter",
               "url": "https://x.com/okx/status/2042425004214927506"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "钱包推出“加油站”功能",
@@ -3539,7 +3573,8 @@
               "name": "OKX Twitter",
               "url": "https://x.com/okx/status/2042581383692820807"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "Agent Trade Kit 新增技能市场",
@@ -3551,7 +3586,8 @@
               "name": "OKX Twitter",
               "url": "https://x.com/okx/status/2042505462734569474"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "OKX 推出支持 AI 代理生态的智能钱包",
@@ -3563,7 +3599,8 @@
               "name": "twitter:@okx",
               "url": "https://x.com/okx/status/2042090901955108903"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "OKX CEO Star 回应 CZ 10 亿美元赌约指控",
@@ -3575,7 +3612,8 @@
               "name": "Odaily",
               "url": "https://www.odaily.news/zh-CN/newsflash/476073"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "OKX 现货上线 OneFootball 粉丝代币 OFC",
@@ -3587,7 +3625,8 @@
               "name": "twitter:@okx",
               "url": "https://x.com/okx/status/2042218473666056674"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "OKX 正式上线美国市场",
@@ -3599,7 +3638,8 @@
               "name": "Twitter",
               "url": "https://x.com/okx/status/2041690263484039349"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "上线美股永续合约服务",
@@ -3611,7 +3651,8 @@
               "name": "Twitter",
               "url": "https://x.com/okx/status/2041946729323356167"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "上线 AI 代理插件商店 (Plugin Store)",
@@ -3623,7 +3664,8 @@
               "name": "Twitter",
               "url": "https://x.com/okx/status/2041765484119650647"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "OKX 卡在欧洲地区上线",
@@ -3635,7 +3677,8 @@
               "name": "Twitter",
               "url": "https://x.com/okx/status/2041931347028029703"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "上线 UPUSDT 全球永续合约",
@@ -3647,7 +3690,8 @@
               "name": "Twitter",
               "url": "https://x.com/okx/status/2041856084600824163"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "Agent Trade Kit 上线技能市场",
@@ -3659,7 +3703,8 @@
               "name": "OKX Twitter",
               "url": "https://x.com/okx/status/2041478709215990170"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "对 GENIUS 法案及稳定币合规发声",
@@ -3671,7 +3716,8 @@
               "name": "OKX Twitter",
               "url": "https://x.com/okx/status/2041653330276151332"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "OKX Europe 上线全新交易体验",
@@ -3683,7 +3729,8 @@
               "name": "OKX Twitter",
               "url": "https://x.com/okx/status/2041154744211705975"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         },
         {
           "title": "发布 Agent Trade Kit 自动化交易工具",
@@ -3695,7 +3742,8 @@
               "name": "OKX Twitter",
               "url": "https://x.com/okx/status/2041040982959862263"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -4373,7 +4421,8 @@
               "name": "Bybit",
               "url": "https://x.com/Bybit_Official/status/2043040578624217092"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "推广 XAUT 存款奖励与收益活动",
@@ -4389,7 +4438,8 @@
               "name": "Bybit",
               "url": "https://x.com/Bybit_Official/status/2042784700498936248"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "xStocks 在 Mantle 网络上线",
@@ -4401,7 +4451,8 @@
               "name": "Bybit Twitter",
               "url": "https://x.com/bybit_official/status/2042573308894314752"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "理财与交易自动化升级",
@@ -4413,7 +4464,8 @@
               "name": "Bybit Twitter",
               "url": "https://x.com/Bybit_Official/status/2042633705848451362"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "扩展大宗商品永续合约奖励",
@@ -4425,7 +4477,8 @@
               "name": "Bybit Twitter",
               "url": "https://x.com/Bybit_Official/status/2042543112241795088"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "Bybit P2P 停止支持保加利亚列弗 (BGN)",
@@ -4437,7 +4490,8 @@
               "name": "twitter:@Bybit_Official",
               "url": "https://x.com/Bybit_Official/status/2042361915263922649"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Bybit AI Hub 升级及 NVDAX 空投活动",
@@ -4449,7 +4503,8 @@
               "name": "twitter:@Bybit_Official",
               "url": "https://x.com/Bybit_Official/status/2042271320499441920"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "XAUT 期权手续费优惠与理财年化提升",
@@ -4461,7 +4516,8 @@
               "name": "twitter:@Bybit_Official",
               "url": "https://x.com/Bybit_Official/status/2042214905055453317"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "上线“周三掉落”交易赢取 12 万美元奖金活动",
@@ -4473,7 +4529,8 @@
               "name": "Twitter",
               "url": "https://x.com/Bybit_Official/status/2041848533817471279"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "Bybit Card 联动 Tomorrowland 巴西音乐节",
@@ -4485,7 +4542,8 @@
               "name": "Bybit Twitter",
               "url": "https://x.com/Bybit_Official/status/2041576740959465732"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "推出“Wall Street Showdown”交易大赛",
@@ -4497,7 +4555,8 @@
               "name": "Bybit Twitter",
               "url": "https://x.com/Bybit_Official/status/2041455948821127596"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "卢旺达中央银行对 Bybit P2P 平台发出警告",
@@ -4509,7 +4568,8 @@
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/rwanda-swats-bybit-p2p-platform-offering-franc-to-crypto-trading"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         },
         {
           "title": "期权交易上线止盈止损功能",
@@ -4521,7 +4581,8 @@
               "name": "Bybit Official Twitter",
               "url": "https://x.com/Bybit_Official/status/2041236155014811947"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         },
         {
           "title": "发布第 32 期储备证明 (PoR) 报告",
@@ -4533,7 +4594,8 @@
               "name": "Bybit Official Twitter",
               "url": "https://x.com/Bybit_Official/status/2041067135682621945"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -5225,7 +5287,8 @@
               "name": "CryptoSlate",
               "url": "https://cryptoslate.com/bitcoin-bulls-are-eyeing-100000-yet-the-futures-market-hints-at-another-dip-first/"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "机构大户从多平台提现 2.65 万枚 ETH",
@@ -5237,7 +5300,8 @@
               "name": "lookonchain",
               "url": "https://x.com/lookonchain/status/2042789850269782057"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "CEO Brian Armstrong 转向支持《Clarity Act》",
@@ -5253,7 +5317,8 @@
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/coinbase-ceo-treasury-secretary-clarity-act"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "联合开展“大西洋行动”打击诈骗",
@@ -5265,7 +5330,8 @@
               "name": "Decrypt",
               "url": "https://decrypt.co/363878/operation-atlantic-us-uk-agencies-trace-freeze-millions-stolen-crypto"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "托管业务出现大规模资产异动",
@@ -5281,7 +5347,8 @@
               "name": "Lookonchain",
               "url": "https://x.com/lookonchain/status/2042631378039443846"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "Coinbase 前高管 Brett Redfearn 出任 Securitize 总裁",
@@ -5293,7 +5360,8 @@
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/sec-official-securitize-president-board"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "与 MarketVector 合作推出 BTC 与代币化黄金指数",
@@ -5305,7 +5373,8 @@
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/marketvector-coinbase-bitcoin-gold-index-store-of-value-debate"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "计划在澳大利亚推出股票交易服务",
@@ -5317,7 +5386,8 @@
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/coinbase-afsl-license-australia-crypto-equity-trading"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "交易所内发生近 8.5 亿 USDC 资金变动",
@@ -5329,7 +5399,8 @@
               "name": "Whale Alert",
               "url": "https://x.com/whale_alert/status/2041874770308841676"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "获得澳大利亚金融服务执照",
@@ -5345,7 +5416,8 @@
               "name": "CoinDesk",
               "url": "https://x.com/CoinDesk/status/2041643863647854972"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "支持启动 x402 基金会",
@@ -5357,7 +5429,8 @@
               "name": "Odaily",
               "url": "https://www.odaily.news/zh-CN/post/5210138"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "与阿斯顿·马丁 F1 车队合作更新",
@@ -5369,7 +5442,8 @@
               "name": "Coinbase Twitter",
               "url": "https://x.com/coinbase/status/2041531303586312597"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "CEO Brian Armstrong 披露公司三大优先业务",
@@ -5381,7 +5455,8 @@
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2041230207504564493"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         },
         {
           "title": "Coinbase Asset Management 与 Ethena 达成借贷协议",
@@ -5393,7 +5468,8 @@
               "name": "The Defiant",
               "url": "https://thedefiant.io/news/defi/ethena-strikes-lending-deals-with-anchorage-and-maple-amid-usde-reserve-overhaul"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -5703,7 +5779,8 @@
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/product/asset-listings/bonzo-is-available-for-trading"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "协同政府追踪冻结被盗资金",
@@ -5715,7 +5792,8 @@
               "name": "Decrypt",
               "url": "https://decrypt.co/363878/operation-atlantic-us-uk-agencies-trace-freeze-millions-stolen-crypto"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "上线 NEAR 协议 5% 年化质押服务",
@@ -5727,7 +5805,8 @@
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/product/staking/near-earn-up-to-5-apy"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "推出 Liquidity Connect 托管直连服务",
@@ -5739,7 +5818,8 @@
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/product/new-features/liquidity-connect-colocation"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "上线 Kraken VIP 专家分析会话",
@@ -5751,7 +5831,8 @@
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/vip/behind-the-curtain"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "3月纽约机构论坛回顾",
@@ -5763,7 +5844,8 @@
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/event/institutional-forum-2026"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         }
       ]
     },
@@ -5856,7 +5938,8 @@
               "name": "bitFlyer Twitter",
               "url": "https://x.com/bitFlyer/status/2042437421543952892"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "参与 TEAMZ WEB3/AI SUMMIT 2026",
@@ -5868,7 +5951,8 @@
               "name": "bitFlyer Twitter",
               "url": "https://x.com/bitFlyer/status/2041395551413903744"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "CEO 参加 TEAMZ WEB3/AI SUMMIT 2026",
@@ -5880,7 +5964,8 @@
               "name": "bitFlyer Twitter",
               "url": "https://x.com/bitFlyer/status/2041063368380068156"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -6129,7 +6214,8 @@
               "name": "GMO Coin Twitter",
               "url": "https://x.com/gmo_coin/status/2042507934907928990"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "因 Cosmos (ATOM) 网络升级暂停服务",
@@ -6141,7 +6227,8 @@
               "name": "Twitter",
               "url": "https://x.com/gmo_coin/status/2041783206282981486"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "Flare (FLR) 网络升级暂停充提",
@@ -6153,7 +6240,8 @@
               "name": "GMO Coin Twitter",
               "url": "https://x.com/gmo_coin/status/2041401622585319655"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         }
       ]
     },
@@ -6411,7 +6499,8 @@
               "name": "twitter:@bitbank_inc",
               "url": "https://x.com/bitbank_inc/status/2042065212703175042"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Polygon 升级及充提暂停预告",
@@ -6423,7 +6512,8 @@
               "name": "bitbank Twitter",
               "url": "https://x.com/bitbank_inc/status/2041340788249076164"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "XYM (Symbol) 充值与提现服务恢复",
@@ -6435,7 +6525,8 @@
               "name": "bitbank Twitter",
               "url": "https://x.com/bitbank_inc/status/2041065218147774682"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -6624,7 +6715,8 @@
               "name": "SBI VC Trade Twitter",
               "url": "https://x.com/sbivc_official/status/2042428832490406374"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "计划上线 CANTON 出库服务",
@@ -6636,7 +6728,8 @@
               "name": "SBI VC Trade Twitter",
               "url": "https://x.com/sbivc_official/status/2042533069949931873"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "USDC 借贷理财年化收益率维持 10%",
@@ -6648,7 +6741,8 @@
               "name": "twitter:@sbivc_official",
               "url": "https://x.com/sbivc_official/status/2042104961690132556"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "特别年率借贷活动开启",
@@ -6660,7 +6754,8 @@
               "name": "Twitter",
               "url": "https://x.com/sbivc_official/status/2041760802584326227"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         }
       ]
     },
@@ -6753,7 +6848,8 @@
               "name": "twitter:@Rakuten_Wallet",
               "url": "https://x.com/Rakuten_Wallet/status/2042167727968952428"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "法人口座杠杆倍率调整上线",
@@ -6765,7 +6861,8 @@
               "name": "Twitter",
               "url": "https://x.com/Rakuten_Wallet/status/2041795721154982127"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "预告 4 月 15 日上线 5 种新代币",
@@ -6777,7 +6874,8 @@
               "name": "Twitter",
               "url": "https://x.com/Rakuten_Wallet/status/2041793145281958186"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         }
       ]
     },
@@ -6875,7 +6973,8 @@
               "name": "twitter:@Bitstamp",
               "url": "https://x.com/Bitstamp/status/2042195820947116344"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         }
       ]
     },
@@ -7468,7 +7567,8 @@
               "name": "twitter:@cryptocom",
               "url": "https://x.com/cryptocom/status/2042165623577317686"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "支持 DAI 更名为 USDS 的代币置换",
@@ -7480,7 +7580,8 @@
               "name": "twitter:@cryptocom",
               "url": "https://x.com/cryptocom/status/2042157672624005243"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "推出 EGLD 闪电奖励计划",
@@ -7492,7 +7593,8 @@
               "name": "Twitter",
               "url": "https://x.com/cryptocom/status/2041818359881208297"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "上线 XRP 与 BTC 交易返现活动",
@@ -7504,7 +7606,8 @@
               "name": "Twitter",
               "url": "https://x.com/cryptocom/status/2041780841261457453"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "限价单注资功能支持 Apple Pay 与 Google Pay",
@@ -7516,7 +7619,8 @@
               "name": "Crypto.com Twitter",
               "url": "https://x.com/cryptocom/status/2041516344017821747"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "欧洲冠军联赛（UCL）合作推广",
@@ -7528,7 +7632,8 @@
               "name": "Crypto.com Twitter",
               "url": "https://x.com/cryptocom/status/2041643180743868699"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "上线 ETH 应用端充值与购买竞赛",
@@ -7540,7 +7645,8 @@
               "name": "Crypto.com Twitter",
               "url": "https://x.com/cryptocom/status/2041282554888659435"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -7560,7 +7666,8 @@
               "name": "CoinDesk",
               "url": "https://x.com/CoinDesk/status/2042287954920415516"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         }
       ]
     },
@@ -7909,7 +8016,8 @@
               "name": "Indodax Twitter",
               "url": "https://x.com/indodax/status/2042535456395370834"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "上线代币化股票交易服务",
@@ -7921,7 +8029,8 @@
               "name": "twitter:@indodax",
               "url": "https://x.com/indodax/status/2042077873553723794"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "启动 XAUt 交易竞赛与空投激励",
@@ -7933,7 +8042,8 @@
               "name": "Indodax Announcements",
               "url": "https://blog.indodax.com/trading-competition-xaut/"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "正式上线 Tokenized Stocks（代币化股票）",
@@ -7945,7 +8055,8 @@
               "name": "Indodax Blog",
               "url": "https://blog.indodax.com/tokenized-stocks/"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "启动 GAS (Giveaway April Seru) 活动",
@@ -7957,7 +8068,8 @@
               "name": "Twitter",
               "url": "https://x.com/indodax/status/2041837356534124843"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "上线 Aztec (AZTEC)、Espresso (ESP) 及 Tria (TRIA)",
@@ -7973,7 +8085,8 @@
               "name": "Indodax Blog",
               "url": "https://blog.indodax.com/listing-apr2-2026/"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "举办“SuperDAX”与“加密中学”推广活动",
@@ -7985,7 +8098,8 @@
               "name": "Indodax Twitter",
               "url": "https://x.com/indodax/status/2041467700535505055"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "2026 加密文学月路演开幕",
@@ -7997,7 +8111,8 @@
               "name": "Indodax Twitter",
               "url": "https://x.com/indodax/status/2041008471106310291"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -8515,19 +8630,6 @@
           ]
         },
         {
-          "title": "支持 UTK 代币置换并更名为 xMoney (XMN)",
-          "category": "产品更新",
-          "summary": "**Tokocrypto** 宣布支持 **Utrust (UTK)** 品牌重塑计划：\n- 已于 4 月 14 日下架所有 UTK 交易对\n- 将按照官方比例将 UTK 置换为 **XMN**",
-          "date": "2025-04-14",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2044242802868138468"
-            }
-          ]
-        },
-        {
           "title": "推出 BCA 虚拟账户存款返现活动",
           "category": "活动推广",
           "summary": "Tokocrypto 与 **BCA 银行**合作：\n- 使用 BCA 虚拟账户存款，有机会获得最高 **Rp50,000** 的返现。\n- 旨在提升用户法币入金的活跃度。",
@@ -8537,7 +8639,8 @@
               "name": "Tokocrypto",
               "url": "https://x.com/Tokocrypto/status/2042861455738011905"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "分析韩国交易所提现延迟新规",
@@ -8549,7 +8652,8 @@
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/korea-selatan-kunci-celah-fraud-di-exchange-penarikan-kripto-tak-bisa-ngebut-lagi/"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "启动 Tokocrypto Prestige 挑战赛",
@@ -8561,7 +8665,8 @@
               "name": "Tokocrypto Twitter",
               "url": "https://x.com/Tokocrypto/status/2042560074326118433"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "与 OJK 共同开启 2026 加密文学月 (BLK)",
@@ -8573,7 +8678,8 @@
               "name": "twitter:@Tokocrypto",
               "url": "https://x.com/Tokocrypto/status/2042246591919292799"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "同步下架 BIFI、FIO、FUN 等代币",
@@ -8585,7 +8691,8 @@
               "name": "twitter:@Tokocrypto",
               "url": "https://x.com/Tokocrypto/status/2042185576095568351"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "Solana 推出 STRIDE 与 SIRN 安全程序",
@@ -8597,7 +8704,8 @@
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/solana-luncurkan-stride-dan-sirn-tameng-ancaman-exploit/"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "合作银行系统维护通知",
@@ -8609,7 +8717,8 @@
               "name": "Twitter",
               "url": "https://x.com/Tokocrypto/status/2041833321299374239"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "支持 Dai (DAI) 迁移及更名为 USDS",
@@ -8621,7 +8730,8 @@
               "name": "Tokocrypto Twitter",
               "url": "https://x.com/Tokocrypto/status/2041350130042036446"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "关注 Injective 主网 USDC 升级投票",
@@ -8637,7 +8747,8 @@
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/upgrade-usdc-di-injective-langkah-besar-inj-menuju-settlement-on-chain/"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "推出 VA BCA 充值返现活动",
@@ -8649,7 +8760,8 @@
               "name": "Tokocrypto Twitter",
               "url": "https://x.com/Tokocrypto/status/2041487653611118793"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         },
         {
           "title": "与 OJK 合作举办 2026 加密文学月活动",
@@ -8661,7 +8773,8 @@
               "name": "Tokocrypto Twitter",
               "url": "https://x.com/Tokocrypto/status/2041028061504946449"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         },
         {
           "title": "开启 ROBO 代币存入与交易活动",
@@ -8672,6 +8785,20 @@
             {
               "name": "Tokocrypto Twitter",
               "url": "https://x.com/Tokocrypto/status/2041060079852789893"
+            }
+          ],
+          "date": "2026-04-07"
+        },
+        {
+          "title": "支持 UTK 代币置换并更名为 xMoney (XMN)",
+          "category": "产品更新",
+          "summary": "**Tokocrypto** 宣布支持 **Utrust (UTK)** 品牌重塑计划：\n- 已于 4 月 14 日下架所有 UTK 交易对\n- 将按照官方比例将 UTK 置换为 **XMN**",
+          "date": "2025-04-14",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "twitter:@Tokocrypto",
+              "url": "https://x.com/Tokocrypto/status/2044242802868138468"
             }
           ]
         }
@@ -8836,7 +8963,8 @@
               "name": "Pintu",
               "url": "https://x.com/PintuID/status/2042799799863529592"
             }
-          ]
+          ],
+          "date": "2026-04-12"
         },
         {
           "title": "上线 11 种新代币",
@@ -8848,7 +8976,8 @@
               "name": "Pintu Twitter",
               "url": "https://x.com/PintuID/status/2042497982327898309"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "启动 6 周年系列周年庆活动",
@@ -8860,7 +8989,8 @@
               "name": "Pintu Twitter",
               "url": "https://x.com/PintuID/status/2042520491739746612"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         },
         {
           "title": "Pintu 6 周年庆直播与系列抽奖",
@@ -8872,7 +9002,8 @@
               "name": "twitter:@PintuID",
               "url": "https://x.com/PintuID/status/2042120454832619924"
             }
-          ]
+          ],
+          "date": "2026-04-10"
         },
         {
           "title": "上线星巴克、洛克希德马丁等代币化股票",
@@ -8884,7 +9015,8 @@
               "name": "Twitter",
               "url": "https://x.com/PintuID/status/2041773228969087319"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "开启六周年每日抽奖活动",
@@ -8896,7 +9028,8 @@
               "name": "Twitter",
               "url": "https://x.com/PintuID/status/2041803410480177269"
             }
-          ]
+          ],
+          "date": "2026-04-09"
         },
         {
           "title": "Pintu 成立六周年纪念",
@@ -8908,7 +9041,8 @@
               "name": "Pintu Twitter",
               "url": "https://x.com/PintuID/status/2041425957383442469"
             }
-          ]
+          ],
+          "date": "2026-04-08"
         }
       ]
     },
@@ -9078,7 +9212,8 @@
               "name": "Luno Global Twitter",
               "url": "https://x.com/LunoGlobal/status/2041050098466177216"
             }
-          ]
+          ],
+          "date": "2026-04-07"
         }
       ]
     },
@@ -9198,7 +9333,8 @@
               "name": "IBKR Twitter",
               "url": "https://x.com/IBKR/status/2042633706641273077"
             }
-          ]
+          ],
+          "date": "2026-04-11"
         }
       ]
     }

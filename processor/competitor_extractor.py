@@ -82,7 +82,7 @@ RESPONSE_SCHEMA = {
                                     },
                                 },
                             },
-                            "required": ["title", "category", "summary", "importance"],
+                            "required": ["title", "category", "summary", "importance", "date"],
                         },
                     },
                 },

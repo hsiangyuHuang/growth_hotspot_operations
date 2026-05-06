@@ -124,6 +124,8 @@ def _generate_competitor_pool():
                 }
             comp_events.setdefault(name, [])
             for ev in comp.get("events", []):
+                if not ev.get("date"):
+                    ev["date"] = d  # 用 result.json 所在目录日期兜底
                 key = f"{name}|{ev.get('title', '')}"
                 if key in seen_keys:
                     continue
