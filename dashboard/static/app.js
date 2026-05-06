@@ -704,6 +704,7 @@ function esc(str) {
 
 let _currentCompData = null;
 let filterRegion = "ALL";
+let compTimeRange = 7; // 默认展示近 7 天
 
 const REGION_CONFIG = {
   HK:     { label: '香港',    color: 'text-rose-400',    bg: 'bg-rose-500/10',    bar: 'bg-rose-500',    hex: '#f43f5e' },
@@ -759,14 +760,41 @@ function setFilterRegion(v) {
   if (_currentCompData) renderCompetitorDashboard(_currentCompData);
 }
 
-function renderCompetitorDashboard(data) {
-  const competitors = data.competitors || [];
+function setCompTimeRange(days) {
+  compTimeRange = days;
+  if (_currentCompData) renderCompetitorDashboard(_currentCompData);
+}
 
-  // Header
-  const compDateLabel = data.date_range
-    ? `竞品动态 ${data.date_range.from} ~ ${data.date_range.to}`
-    : (data.run_date ? `竞品数据 ${data.run_date}` : "");
-  document.getElementById("header-date").textContent = compDateLabel;
+function _filterCompByTimeRange(competitors) {
+  if (!compTimeRange) return competitors;
+  const now = new Date();
+  const cutoff = new Date(now.getTime() - compTimeRange * 24 * 60 * 60 * 1000);
+  const cutoffStr = cutoff.toISOString().slice(0, 10);
+  return competitors.map(c => {
+    const filtered = (c.events || []).filter(e => !e.date || e.date >= cutoffStr);
+    return { ...c, events: filtered };
+  });
+}
+
+function renderCompetitorDashboard(data) {
+  const rawCompetitors = data.competitors || [];
+  const competitors = _filterCompByTimeRange(rawCompetitors);
+
+  // Header — show displayed time range
+  const now = new Date();
+  const fromDate = new Date(now.getTime() - compTimeRange * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const toDate = now.toISOString().slice(0, 10);
+  document.getElementById("header-date").textContent = `竞品动态 ${fromDate} ~ ${toDate}`;
+
+  // Time range buttons
+  const timeRanges = [7, 14, 30];
+  const timeBtns = timeRanges.map(d => {
+    const isActive = compTimeRange === d;
+    const base = 'text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer select-none';
+    const activeStyle = 'bg-cyan-500/15 text-cyan-400 ring-1 ring-inset ring-cyan-500/30 shadow-sm';
+    const inactiveStyle = 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.06]';
+    return `<button onclick="setCompTimeRange(${d})" class="${base} ${isActive ? activeStyle : inactiveStyle}">${d}天</button>`;
+  }).join("");
 
   // Region filter buttons
   const regions = ["ALL", ...Object.keys(REGION_CONFIG)];
@@ -782,7 +810,11 @@ function renderCompetitorDashboard(data) {
     return `<button onclick="setFilterRegion('${r}')" class="${base} ${isActive ? active : inactive}">${label}</button>`;
   }).join("");
   document.getElementById("sub-tabs-competitors").innerHTML =
-    '<div class="flex items-center gap-1.5"><span class="text-xs text-slate-500 font-medium mr-1">区域</span>' + regionBtns + '</div>';
+    '<div class="flex flex-wrap items-center gap-3">'
+    + '<div class="flex items-center gap-1.5"><span class="text-xs text-slate-500 font-medium mr-1">时间</span>' + timeBtns + '</div>'
+    + '<div class="w-px h-4 bg-white/10"></div>'
+    + '<div class="flex items-center gap-1.5"><span class="text-xs text-slate-500 font-medium mr-1">区域</span>' + regionBtns + '</div>'
+    + '</div>';
 
   // Split active / inactive, apply region filter
   const active = competitors.filter(c => (c.events || []).length > 0);
@@ -825,7 +857,7 @@ function renderCompetitorDashboard(data) {
       const rCfg = REGION_CONFIG[c.region] || REGION_CONFIG.HK;
       return `<span class="inline-flex items-center gap-1 text-[10px] font-mono text-slate-600 px-2 py-1 rounded border border-white/[0.05] bg-white/[0.02]"><span class="${rCfg.color}">${esc(c.region)}</span> ${esc(c.name)}</span>`;
     }).join("");
-    html += `<div class="mt-4"><div class="text-[10px] text-slate-500 font-mono mb-2">近7日无动态 (${filteredInactive.length})</div><div class="flex flex-wrap gap-2">${tags}</div></div>`;
+    html += `<div class="mt-4"><div class="text-[10px] text-slate-500 font-mono mb-2">近${compTimeRange}日无动态 (${filteredInactive.length})</div><div class="flex flex-wrap gap-2">${tags}</div></div>`;
   }
 
   if (!html) html = '<div class="text-center py-20 text-slate-500"><p class="text-sm">该区域暂无竞品数据</p></div>';
@@ -835,9 +867,7 @@ function renderCompetitorDashboard(data) {
   // Sidebar
   renderCompetitorSidebar(competitors);
 
-  const compFooterDate = data.date_range
-    ? `${data.date_range.from} ~ ${data.date_range.to}`
-    : (data.run_date || "");
+  const compFooterDate = `${fromDate} ~ ${toDate}`;
   document.getElementById("footer-left").textContent = `OSL Growth Intelligence · ${compFooterDate}`;
   document.getElementById("footer-right").textContent = `竞品监控 · ${competitors.length} 家竞品`;
 }

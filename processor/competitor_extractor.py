@@ -1,4 +1,7 @@
-"""用 Gemini 从竞品原始数据中提取结构化竞品动态 JSON。"""
+"""用 Gemini 从竞品原始数据中提取结构化竞品动态 JSON。
+
+按 region 分组并行调用 Gemini，每组独立提取后合并结果。
+"""
 import asyncio
 import json
 import logging
@@ -31,6 +34,7 @@ EXTRACTION_PROMPT = """你是一个竞品情报分析师。从以下原始数据
 7. sources 中的 name 只填媒体/平台名称（如 "Binance Blog"、"CoinDesk"），不含文章标题
 8. 去重：同一事件即使来自多个渠道也只输出一次，但在 sources 中合并所有来源
 9. 忽略无实质内容的推文（如纯转发、表情包、无信息量内容）
+10. 特别注意识别营销活动类事件（交易赛、空投、Earn 产品推广、推荐奖励、红包、零手续费促销等），归类为「活动推广」
 """
 
 RESPONSE_SCHEMA = {
@@ -118,34 +122,41 @@ def _build_items_markdown(items: list[dict]) -> str:
     return "\n".join(lines)
 
 
-async def extract(items: list[dict], run_date: str) -> dict:
-    """用 Gemini 从竞品原始数据提取结构化动态。"""
-    api_key = os.environ.get("GEMINI_API_KEY", "")
-    if not api_key:
-        raise EnvironmentError("GEMINI_API_KEY not set")
-    model = "gemini-3-flash-preview"
-
-    # 加载竞品配置获取 region
-    cfg = _load_config()
-    comp_meta = {}
+def _group_items_by_region(items: list[dict], cfg: dict) -> dict[str, list[dict]]:
+    """按 region 分组 items"""
+    comp_to_region = {}
     for comp in cfg.get("competitors", []):
-        comp_meta[comp["name"]] = {"region": comp.get("region", "HK"), "logo": comp.get("logo", "")}
+        comp_to_region[comp["name"]] = comp.get("region", "HK")
 
-    # 过滤无效 items
+    groups: dict[str, list[dict]] = {}
+    for item in items:
+        comp_name = item.get("competitor", "Unknown")
+        region = comp_to_region.get(comp_name, "OTHER")
+        groups.setdefault(region, []).append(item)
+
+    return groups
+
+
+async def _extract_region(
+    client: genai.Client,
+    model: str,
+    region: str,
+    items: list[dict],
+    comp_meta: dict,
+    max_retries: int = 5,
+) -> list[dict]:
+    """对单个 region 的 items 调用 Gemini 提取"""
     valid_items = [
         item for item in items
         if item.get("title", "").strip() and len(item.get("title", "")) >= 10
     ]
-    if len(valid_items) < len(items):
-        logger.info(f"[CompetitorExtractor] Filtered {len(items) - len(valid_items)} invalid items")
+    if not valid_items:
+        return []
 
     md = _build_items_markdown(valid_items)
-    logger.info(f"[CompetitorExtractor] Input: {len(valid_items)} items, {len(md)} chars markdown")
+    logger.info(f"[CompetitorExtractor:{region}] Input: {len(valid_items)} items, {len(md)} chars")
 
-    client = genai.Client(api_key=api_key)
-    max_retries = 5
     last_error = None
-
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
@@ -158,43 +169,78 @@ async def extract(items: list[dict], run_date: str) -> dict:
             )
             result = json.loads(response.text)
 
-            # 注入 region，并补全配置中所有未被 Gemini 输出的竞品（events 为空）
-            extracted = {c["name"]: c for c in result.get("competitors", [])}
-            for comp in result.get("competitors", []):
+            extracted = result.get("competitors", [])
+            for comp in extracted:
                 meta = comp_meta.get(comp["name"], {})
-                comp["region"] = meta.get("region", "HK")
+                comp["region"] = meta.get("region", region)
                 comp["logo"] = meta.get("logo", "")
 
-            # 按配置顺序填充完整竞品列表
-            full_list = []
-            for comp_cfg in cfg.get("competitors", []):
-                name = comp_cfg["name"]
-                if name in extracted:
-                    full_list.append(extracted[name])
-                else:
-                    full_list.append({
-                        "name": name,
-                        "region": comp_cfg.get("region", "HK"),
-                        "logo": comp_cfg.get("logo", ""),
-                        "summary": f"近7日未监测到 {name} 的公开动态",
-                        "events": [],
-                    })
-
-            logger.info(
-                f"[CompetitorExtractor] Extracted {len(extracted)} competitors with data, "
-                f"{len(full_list)} total (attempt {attempt})"
-            )
-
-            return {
-                "run_date": run_date,
-                "competitors": full_list,
-            }
+            logger.info(f"[CompetitorExtractor:{region}] Extracted {len(extracted)} competitors (attempt {attempt})")
+            return extracted
         except Exception as e:
             last_error = e
             if attempt < max_retries:
                 wait = min(2 ** attempt, 30)
-                logger.warning(f"[CompetitorExtractor] Attempt {attempt} failed: {e}, retrying in {wait}s...")
+                logger.warning(f"[CompetitorExtractor:{region}] Attempt {attempt} failed: {e}, retrying in {wait}s...")
                 await asyncio.sleep(wait)
 
-    logger.error(f"[CompetitorExtractor] All {max_retries} attempts failed: {last_error}")
-    raise RuntimeError(f"Competitor extraction failed after {max_retries} attempts: {last_error}") from last_error
+    logger.error(f"[CompetitorExtractor:{region}] All {max_retries} attempts failed: {last_error}")
+    return []
+
+
+async def extract(items: list[dict], run_date: str) -> dict:
+    """按 region 分组并行调用 Gemini 提取，合并结果。"""
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+    if not api_key:
+        raise EnvironmentError("GEMINI_API_KEY not set")
+    model = "gemini-3-flash-preview"
+
+    cfg = _load_config()
+    comp_meta = {}
+    for comp in cfg.get("competitors", []):
+        comp_meta[comp["name"]] = {"region": comp.get("region", "HK"), "logo": comp.get("logo", "")}
+
+    # 按 region 分组
+    region_groups = _group_items_by_region(items, cfg)
+    logger.info(
+        f"[CompetitorExtractor] Total {len(items)} items split into {len(region_groups)} regions: "
+        + ", ".join(f"{r}({len(v)})" for r, v in sorted(region_groups.items()))
+    )
+
+    client = genai.Client(api_key=api_key)
+
+    # 并行提取各 region
+    tasks = [
+        _extract_region(client, model, region, region_items, comp_meta)
+        for region, region_items in sorted(region_groups.items())
+    ]
+    region_results = await asyncio.gather(*tasks)
+
+    # 合并所有 region 的结果
+    extracted_map: dict[str, dict] = {}
+    for region_comps in region_results:
+        for comp in region_comps:
+            extracted_map[comp["name"]] = comp
+
+    # 按配置顺序填充完整竞品列表（补全无数据的竞品）
+    full_list = []
+    for comp_cfg in cfg.get("competitors", []):
+        name = comp_cfg["name"]
+        if name in extracted_map:
+            full_list.append(extracted_map[name])
+        else:
+            full_list.append({
+                "name": name,
+                "region": comp_cfg.get("region", "HK"),
+                "logo": comp_cfg.get("logo", ""),
+                "summary": f"近期未监测到 {name} 的公开动态",
+                "events": [],
+            })
+
+    total_events = sum(len(c.get("events", [])) for c in full_list)
+    logger.info(f"[CompetitorExtractor] Final: {len(extracted_map)} competitors with data, {total_events} events total")
+
+    return {
+        "run_date": run_date,
+        "competitors": full_list,
+    }

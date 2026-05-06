@@ -26,7 +26,7 @@ logging.basicConfig(
 logger = logging.getLogger("main")
 
 DATA_DIR = Path(__file__).parent / "data"
-POOL_WINDOW = 7  # 滚动信息池窗口天数
+POOL_WINDOW = 30  # 滚动信息池窗口天数
 
 _DATE_RE = __import__("re").compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -84,6 +84,82 @@ def _collect_pool_items(subdir: str, window: int = POOL_WINDOW) -> tuple[list[di
             merged.append(item)
 
     return merged, date_dirs[-1], date_dirs[0]
+
+
+def _generate_competitor_pool():
+    """合并近 POOL_WINDOW 天的 result.json 生成 pool.json（纯合并去重，不调 LLM）。"""
+    import yaml
+
+    target_dir = DATA_DIR / "competitors"
+    if not target_dir.exists():
+        return
+
+    date_dirs = sorted(
+        [d.name for d in target_dir.iterdir() if _is_date_dir(d)],
+        reverse=True,
+    )[:POOL_WINDOW]
+
+    if not date_dirs:
+        logger.info("无竞品历史 result.json，跳过 Pool 生成")
+        return
+
+    # 收集所有竞品事件，按 (competitor, title) 去重
+    comp_events: dict[str, list[dict]] = {}
+    comp_meta: dict[str, dict] = {}
+    seen_keys: set[str] = set()
+
+    for d in date_dirs:
+        result_path = target_dir / d / "result.json"
+        with open(result_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for comp in data.get("competitors", []):
+            name = comp.get("name", "")
+            if not name:
+                continue
+            if name not in comp_meta:
+                comp_meta[name] = {
+                    "region": comp.get("region", "HK"),
+                    "logo": comp.get("logo", ""),
+                    "summary": comp.get("summary", ""),
+                }
+            comp_events.setdefault(name, [])
+            for ev in comp.get("events", []):
+                key = f"{name}|{ev.get('title', '')}"
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
+                comp_events[name].append(ev)
+
+    # 按配置顺序组装完整列表
+    config_path = Path(__file__).parent / "config" / "competitors.yaml"
+    with open(config_path, "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f)
+
+    full_list = []
+    for comp_cfg in cfg.get("competitors", []):
+        name = comp_cfg["name"]
+        meta = comp_meta.get(name, {})
+        events = comp_events.get(name, [])
+        events.sort(key=lambda e: e.get("date", ""), reverse=True)
+        full_list.append({
+            "name": name,
+            "region": meta.get("region", comp_cfg.get("region", "HK")),
+            "logo": meta.get("logo", comp_cfg.get("logo", "")),
+            "summary": meta.get("summary", f"近期未监测到 {name} 的公开动态"),
+            "events": events,
+        })
+
+    pool_result = {
+        "date_range": {"from": date_dirs[-1], "to": date_dirs[0]},
+        "competitors": full_list,
+    }
+
+    pool_path = target_dir / "pool.json"
+    with open(pool_path, "w", encoding="utf-8") as f:
+        json.dump(pool_result, f, ensure_ascii=False, indent=2)
+
+    total_events = sum(len(c["events"]) for c in full_list)
+    logger.info(f"竞品 Pool 生成：合并 {len(date_dirs)} 天 result.json，{total_events} 事件（去重后）→ {pool_path}")
 
 
 async def run_fetch_and_process():
@@ -174,21 +250,10 @@ async def run_fetch_and_process():
         except Exception as e:
             logger.warning(f"舆情提取失败：{e}")
 
-    # ── 竞品 7 日 Pool 提取 ──
-    logger.info("=== 生成竞品 7 日 Pool ===")
+    # ── 竞品 30 日 Pool（合并 result.json，不调 LLM）──
+    logger.info("=== 生成竞品 30 日 Pool ===")
     try:
-        comp_pool_items, comp_from, comp_to = _collect_pool_items("competitors")
-        if comp_pool_items:
-            from processor import competitor_extractor
-            pool_result = await competitor_extractor.extract(comp_pool_items, today)
-            pool_result["date_range"] = {"from": comp_from, "to": comp_to}
-            pool_result.pop("run_date", None)
-            pool_path = DATA_DIR / "competitors" / "pool.json"
-            with open(pool_path, "w", encoding="utf-8") as f:
-                json.dump(pool_result, f, ensure_ascii=False, indent=2)
-            logger.info(f"竞品 Pool 生成：{len(comp_pool_items)} items（去重后）→ {pool_path}")
-        else:
-            logger.info("无竞品历史数据，跳过 Pool 生成")
+        _generate_competitor_pool()
     except Exception as e:
         logger.warning(f"竞品 Pool 生成失败：{e}")
 
