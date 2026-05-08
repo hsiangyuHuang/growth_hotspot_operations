@@ -1,9 +1,9 @@
 {
-  "total_raw": 51,
+  "total_raw": 50,
   "items": [
     {
-      "title": "OSL Group 与 Circle 达成战略合作拓展 USDC 业务",
-      "summary": "OSL Group 与 **Circle** 建立合作伙伴关系，旨在通过其在亚洲的持牌平台扩展 **USDC** 的交易及支付效用。此次合作被视为重建**金融基础设施**的重要一步，旨在满足机构对稳定币实时结算和法币兑换的需求，特别是在**香港及全球市场**。",
+      "title": "OSL 与 Circle 达成战略合作",
+      "summary": "**OSL Group 与 Circle 建立伙伴关系**，旨在提升 **USDC** 在亚洲市场的交易和支付公用事业。该合作将利用 OSL 在亚洲的合规平台，推动**机构客户**对稳定币的接入，并提升**跨境结算**效率。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -21,18 +21,13 @@
           "platform": "twitter",
           "author": "@TronWeekly",
           "url": "https://x.com/TronWeekly/status/2047246600410628489"
-        },
-        {
-          "platform": "twitter",
-          "author": "@PlantreeX",
-          "url": "https://x.com/PlantreeX/status/2047319546998948173"
         }
       ],
       "published_at": "2026-04-26T17:59:15+00:00"
     },
     {
-      "title": "香港首批稳定币牌照动态及 OSL 监管预期",
-      "summary": "市场热议香港**稳定币监管牌照**发放，虽然传闻首批可能优先授予**汇丰、渣打**等银行机构，但 OSL 作为香港最早的**持牌合规交易所**仍被视为有力竞争者。分析指 OSL 股价曾因牌照预期上涨，市场对其在 **RWA 和跨境结算**领域的合规优势保持高度关注。",
+      "title": "香港首批稳定币沙盒牌照名单传闻",
+      "summary": "市场讨论**香港首批稳定币牌照**发放情况，传闻 **OSL** 有望与汇丰（HSBC）、渣打（SC）共同入选。舆论认为 OSL 作为**最早合规持牌交易所**，其稳定性高于部分同行，尽管牌照初期的确定性存在博弈。",
       "category": "监管合规",
       "importance": "high",
       "sources": [
@@ -44,20 +39,15 @@
         {
           "platform": "twitter",
           "author": "@dachong007",
-          "url": "https://x.com/dachong007/status/2042480892032307320"
-        },
-        {
-          "platform": "twitter",
-          "author": "@apacfinstab",
-          "url": "https://x.com/apacfinstab/status/2039312023461507572"
+          "url": "https://x.com/dachong007/status/2042479152566358441"
         }
       ],
       "published_at": "2026-04-10T14:34:11+00:00"
     },
     {
-      "title": "OSL Indonesia Launchpool 上线及用户收益反馈",
-      "summary": "OSL 印尼站正式推出 **Launchpool** 功能，支持 **USDT、XAUT (黄金代币) 及 POL** 的质押奖励。用户反馈积极，有用户分享质押 1200 美元 10 天获利 16 美元的**真实收益体验**。该产品被认为是印尼市场上首个基于真实资产的 Launchpool。",
-      "category": "产品动态",
+      "title": "OSL Indonesia 推出 Launchpool 并受到用户好评",
+      "summary": "**OSL Indonesia**（原 Koinsayang，由 OSL Group 斥资 1500 万美元收购）正式推出 **Launchpool** 功能，支持 **POL** 和 **XAUT**。用户反馈积极，10 天收益可达 16 美元（约 25 万印尼盾），认为其是印尼首个受 **OJK 监管**且具备此类功能的合规平台。",
+      "category": "活动推广",
       "importance": "medium",
       "sources": [
         {
@@ -72,16 +62,40 @@
         },
         {
           "platform": "twitter",
-          "author": "@Fintaraid_",
-          "url": "https://x.com/Fintaraid_/status/2043643794491654518"
+          "author": "@valenttt____",
+          "url": "https://x.com/valenttt____/status/2043230002163200115"
         }
       ],
       "published_at": "2026-04-24T12:15:06+00:00"
     },
     {
-      "title": "OSL 集团旗 Banxa 业务进展：整合主流支付与 TON 网络",
-      "summary": "OSL 集团旗下 **Banxa** 宣布支持 **Google Pay 和 Apple Pay**，进一步降低了法币到加密货币的入门门槛。同时，Banxa 与 OSL 在 **TON 区块链**上已处理超过 **5000 万美元**的交易量，显示出强劲的机构与零售采用率。",
+      "title": "OSL Pay 联合第三方交易平台开展 0 手续费促销",
+      "summary": "**OSL Pay** 与 Bitunix 等平台合作，推出**限时买币 0 手续费**活动（至 4 月 24 日）。此外，OSL BizPay 推广其 **B2B 跨境支付**解决方案，利用稳定币作为中间层实现法币间的秒级结算。",
       "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@BitunixOfficial",
+          "url": "https://x.com/BitunixOfficial/status/2042505610927784126"
+        },
+        {
+          "platform": "twitter",
+          "author": "@cryptopuxiii",
+          "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
+        },
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2046784660894802030"
+        }
+      ],
+      "published_at": "2026-04-22T02:54:25+00:00"
+    },
+    {
+      "title": "OSL 旗下 Banxa 业务及 TON 网络交易数据",
+      "summary": "OSL Group 旗下公司 **Banxa** 在 **TON 网络**上的处理交易额已突破 **5000 万美元**。同时，Banxa 宣布集成 **Google Pay 和 Apple Pay**，为合规数字资产（如 USDGO）提供更流畅的法币出入金通道。",
+      "category": "合作伙伴",
       "importance": "medium",
       "sources": [
         {
@@ -98,27 +112,8 @@
       "published_at": "2026-04-14T02:57:10+00:00"
     },
     {
-      "title": "OSL Pay 推广活动：零手续费购买加密货币",
-      "summary": "OSL Pay 联合 **Bitunix** 等合作伙伴推出限时**零手续费**购币活动，新用户最高可享受 500 USDT 的免手续费额度。该活动旨在通过 **OSL Pay** 支付通道提升用户在合规支付场景下的活跃度。",
-      "category": "活动推广",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@BitunixOfficial",
-          "url": "https://x.com/BitunixOfficial/status/2042505610927784126"
-        },
-        {
-          "platform": "twitter",
-          "author": "@cryptopuxiii",
-          "url": "https://x.com/cryptopuxiii/status/2043260350926049287"
-        }
-      ],
-      "published_at": "2026-04-10T07:31:00+00:00"
-    },
-    {
-      "title": "用户反馈：要求 OSL 上架人民币及港币稳定币",
-      "summary": "有用户在社交媒体向 OSL 官方建议尽快**上架人民币和港币稳定币**，表达了对当前平台币种选择局限性的不满。此外，也有用户询问如何在平台开始理财并关注其 **USDT 零提币费**的优势。",
+      "title": "用户建议 OSL 上线人民币及港币稳定币",
+      "summary": "用户在社交媒体上对 **OSL 交易所**提出诉求，要求尽快上线**人民币稳定币和港币稳定币**交易对。另有用户对平台 **USDT 免手续费**及**官方支持频道（@OSL_Support）**的上线表示肯定。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -129,36 +124,36 @@
         },
         {
           "platform": "twitter",
-          "author": "@EvilsReturns",
-          "url": "https://x.com/EvilsReturns/status/2051947313375941046"
+          "author": "@CrazeQuantum",
+          "url": "https://x.com/CrazeQuantum/status/2050506130644931027"
         },
         {
           "platform": "twitter",
-          "author": "@CrazeQuantum",
-          "url": "https://x.com/CrazeQuantum/status/2050506130644931027"
+          "author": "@OSL_Support",
+          "url": "https://x.com/OSL_Support/status/2052312487698035171"
         }
       ],
-      "published_at": "2026-05-06T08:48:57+00:00"
+      "published_at": "2026-05-07T09:00:01+00:00"
     },
     {
-      "title": "OSL Indonesia 系统维护通知",
-      "summary": "OSL 印尼站发布公告，将于 **2026 年 5 月 6 日至 7 日**进行系统维护。维护期间**充值及提现功能**（法币与加密货币）将暂时无法使用，提醒用户合理安排资金。",
+      "title": "OSL Global 上线 POL/USD 交易对",
+      "summary": "**OSL Global** 宣布正式上线基于 Polygon 网络的 **POL/USD** 交易对，并支持专业交易（Pro Trade）模式，进一步扩展其机构级交易品种。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@OSL_ID",
-          "url": "https://x.com/OSL_ID/status/2050045995011219773"
+          "author": "@0x1manarmy",
+          "url": "https://x.com/0x1manarmy/status/2043973834546757813"
         }
       ],
-      "published_at": "2026-05-01T02:53:47+00:00"
+      "published_at": "2026-04-14T08:45:12+00:00"
     },
     {
-      "title": "OSL 集团市场分析与未来盈利预期",
-      "summary": "市场报告指出 OSL 集团已将其业务核心转向**稳定币支付**，预计到 2030 年加密驱动的汇款市场将大幅增长。另有模拟盈利报告预测 OSL 集团在 **2025 年将走向盈利**，重点在于其受监管的机构级加密服务。",
+      "title": "OSL Group 2025 年盈利预测与战略地位分析",
+      "summary": "市场分析指出 **OSL Group (HKEX: 863)** 预计在 2025 年实现强劲增长并走向盈利。报告强调其作为**持牌机构加密服务商**的独特性，尤其是其向**稳定币支付**业务的全面转型。",
       "category": "市场分析",
-      "importance": "medium",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -172,29 +167,10 @@
         }
       ],
       "published_at": "2026-04-15T07:00:00+00:00"
-    },
-    {
-      "title": "OSL 集团品牌扩张与人才招聘动态",
-      "summary": "OSL 集团 (HKEX: 863) 持续在 **APAC 地区**招聘交易、金融及加密基础设施相关职位，并提供高达 **5 万港币**的推荐金。此外，OSL 确认收购印尼本土交易所 **Koinsayang** 并完成品牌重塑。",
-      "category": "其他",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@crypto_vazima",
-          "url": "https://x.com/crypto_vazima/status/2049071080074051946"
-        },
-        {
-          "platform": "twitter",
-          "author": "@valenttt____",
-          "url": "https://x.com/valenttt____/status/2043230002163200115"
-        }
-      ],
-      "published_at": "2026-04-28T10:19:50+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-08",
-    "to": "2026-05-07"
+    "from": "2026-04-09",
+    "to": "2026-05-08"
   }
 }
