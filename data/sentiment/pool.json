@@ -1,9 +1,9 @@
 {
-  "total_raw": 56,
+  "total_raw": 58,
   "items": [
     {
-      "title": "OSL Group 加入 Mastercard 加密货币凭据伙伴计划",
-      "summary": "OSL Group 正式加入 **Mastercard 加密货币凭据伙伴计划 (MCPP)**，旨在连接加密原生公司与全球金融机构，通过 OSL BizPay 和 StableHub 扩展其 **合规稳定币基础设施**，实现实时、无国界的 B2B 支付。",
+      "title": "OSL 集团加入 Mastercard 加密伙伴计划",
+      "summary": "OSL 集团宣布加入 **Mastercard Crypto Credential Partner Program (MCPP)**。此次合作旨在利用 **OSL BizPay** 和 **StableHub** 基础设施，连接加密原生企业与全球金融机构，通过合规的**稳定币解决方案**实现实时、无国界的 B2B 支付。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -26,8 +26,8 @@
       "published_at": "2026-05-08T09:11:11+00:00"
     },
     {
-      "title": "OSL Group 与 Circle 合作扩展 USDC 在亚洲的采用",
-      "summary": "OSL Group 与 Circle 达成合作伙伴关系，旨在提升 **USDC** 在亚洲市场的交易与支付效用。此次合作重点在于满足机构对 **稳定币跨境结算** 和法币转换的需求，重建香港的金融基础设施。",
+      "title": "OSL 与 Circle 合作扩大 USDC 亚洲市场准入",
+      "summary": "OSL 集团与 **Circle** 建立合作伙伴关系，旨在提升亚洲地区的 **USDC 交易和支付**效用。合作重点在于为机构提供无缝的**法币兑换和流动性**，利用稳定币作为金融基础设施，推动跨境结算效率。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -38,22 +38,22 @@
         },
         {
           "platform": "twitter",
-          "author": "@NBTC_finance",
-          "url": "https://x.com/NBTC_finance/status/2047845687451095478"
+          "author": "@TronWeekly",
+          "url": "https://x.com/TronWeekly/status/2047246600410628489"
         },
         {
           "platform": "twitter",
-          "author": "@TronWeekly",
-          "url": "https://x.com/TronWeekly/status/2047246600410628489"
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2047132851183997213"
         }
       ],
       "published_at": "2026-04-26T17:59:15+00:00"
     },
     {
-      "title": "市场讨论香港首批稳定币牌照名单，OSL 被视为热门候选",
-      "summary": "社交媒体讨论香港稳定币牌照进展，传闻首批牌照将授予银行（汇丰、渣打）及 **OSL**。分析认为 OSL 作为 **合规持牌交易所** 稳定性较高，但获牌过程仍受传统金融机构主导影响。此前市场传闻曾带动 OSL 股价上涨 20%。",
-      "category": "市场分析",
-      "importance": "medium",
+      "title": "香港稳定币牌照预期引发市场讨论",
+      "summary": "市场传闻香港首批**稳定币发行人牌照**可能授予汇丰、渣打和 **OSL**。分析人士指出，OSL 作为**最早合规持牌交易所**，其入选确定性较高。受此预期影响，OSL 股价曾出现 **20% 的大幅波动**。",
+      "category": "监管合规",
+      "importance": "high",
       "sources": [
         {
           "platform": "twitter",
@@ -63,21 +63,21 @@
         {
           "platform": "twitter",
           "author": "@dachong007",
-          "url": "https://x.com/dachong007/status/2042480892032307320"
+          "url": "https://x.com/dachong007/status/2042479152566358441"
         }
       ],
       "published_at": "2026-04-10T14:34:11+00:00"
     },
     {
-      "title": "OSL Indonesia 推出 Launchpool 等理财产品获用户积极反馈",
-      "summary": "OSL Indonesia 推出的 **Launchpool、Earn 及 Staking** 功能引发用户关注，被称为印尼首个提供 **实物资产 (RWA)** 投资（如 XAUT 池）的本土合规交易所。用户反馈通过质押 USDT 或 POL 获得了实际收益，整体体验良好。",
-      "category": "用户反馈",
+      "title": "OSL Indonesia 推出首个合规 Launchpool",
+      "summary": "OSL 印尼平台正式推出 **Launchpool** 业务，成为当地首家提供基于真实资产质押奖励的合规交易所。目前支持 **POL (Polygon)** 和 **XAUT (黄金代币)** 的质押。用户反馈极佳，称其收益稳定（如 1200 美元 10 天获利 16 美元）且受 **OJK 监管**更具安全性。",
+      "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@RocioX5454",
-          "url": "https://x.com/RocioX5454/status/2052051965597946088"
+          "author": "@edyrehuel",
+          "url": "https://x.com/edyrehuel/status/2047650539689910752"
         },
         {
           "platform": "twitter",
@@ -86,15 +86,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@edyrehuel",
-          "url": "https://x.com/edyrehuel/status/2047650539689910752"
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2046415447210537432"
         }
       ],
-      "published_at": "2026-05-06T15:44:48+00:00"
+      "published_at": "2026-04-24T12:15:06+00:00"
     },
     {
-      "title": "OSL 旗下 Banxa 在 TON 网络交易额突破 5000 万美元并集成新支付方式",
-      "summary": "OSL Group 成员 **Banxa** 宣布在 **TON 区块链** 上的处理量已达 5000 万美元。同时，Banxa 已正式上线 **Apple Pay 和 Google Pay**，进一步优化了法币到加密货币的入金体验。",
+      "title": "OSL 集团旗下 Banxa 业务及 TON 生态进展",
+      "summary": "OSL 集团旗下支付平台 **Banxa** 宣布其在 **TON 区块链**上的处理交易额已突破 **5000 万美元**。同时，Banxa 已正式集成 **Google Pay** 和 **Apple Pay**，显著优化了全球用户的法币入金体验，支持更快速的合规资产准入。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -106,28 +106,89 @@
         {
           "platform": "twitter",
           "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2043886250055332041"
+          "url": "https://x.com/osldotcom/status/2045394170635063450"
         }
       ],
-      "published_at": "2026-04-14T02:57:10+00:00"
+      "published_at": "2026-04-18T06:49:06+00:00"
     },
     {
-      "title": "OSL Support 官方支持账号正式上线",
-      "summary": "**OSL Support** 官方推特上线，承诺提供 **24/7 全天候客户支持**，涵盖紧急公告、产品建议反馈及实时在线答疑服务。",
+      "title": "OSL Support 官方支持账号上线",
+      "summary": "**OSL Support** 官方账号正式启动，提供 **24/7** 的全球在线支持。服务内容包括紧急公告发布、一线咨询解答、产品意见反馈及功能建议收集，致力于提升用户的平台使用体验。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
           "author": "@OSL_Support",
-          "url": "https://x.com/OSL_Support/status/2052312487698035171"
+          "url": "https://x.com/OSL_Support/status/2053764745812127990"
         }
       ],
-      "published_at": "2026-05-07T09:00:01+00:00"
+      "published_at": "2026-05-11T09:10:47+00:00"
     },
     {
-      "title": "Bitget Wallet 集成 OSL Pay 提供受监管支付服务",
-      "summary": "**Bitget Wallet** 用户现可通过集成 **OSL Pay** 访问受监管的法币与加密货币支付基础设施，确保交易的安全性和合规性。",
+      "title": "OSL 集团收购 Koinsayang 完成印尼品牌重塑",
+      "summary": "OSL 集团以 **1500 万美元**收购印尼本地交易所 Koinsayang，并将其重新更名为 **OSL Indonesia**。此举是 OSL 东南亚扩张战略的关键，旨在通过合规持牌身份在印尼市场竞争，用户认为其 **USDT 零费用**和 **OJK 监管**是核心优势。",
+      "category": "其他",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@valenttt____",
+          "url": "https://x.com/valenttt____/status/2043230002163200115"
+        },
+        {
+          "platform": "twitter",
+          "author": "@CrazeQuantum",
+          "url": "https://x.com/CrazeQuantum/status/2050506130644931027"
+        }
+      ],
+      "published_at": "2026-04-12T07:29:28+00:00"
+    },
+    {
+      "title": "OSL 高管分享稳定币基础设施愿景",
+      "summary": "在 Money20/20 Asia 及 Web3 嘉年华期间，OSL 高管强调稳定币正在从加密叙事演变为**企业支付基础设施**。通过 **OSL BizPay** 实现的“稳定币三明治”策略（法币-稳定币-法币）可将跨境结算缩短至 2 分钟，为全球企业提供无缝体验。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2046784660894802030"
+        }
+      ],
+      "published_at": "2026-04-22T02:54:25+00:00"
+    },
+    {
+      "title": "OSL Global 上线 POL/USD 交易对",
+      "summary": "OSL Global 宣布在其交易平台正式上线 **POL/USD (Polygon)** 交易对，并支持 **Pro Trade** 专业交易功能，满足机构及专业投资者对高性能数字资产交易的需求。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@0x1manarmy",
+          "url": "https://x.com/0x1manarmy/status/2043973834546757813"
+        }
+      ],
+      "published_at": "2026-04-14T08:45:12+00:00"
+    },
+    {
+      "title": "OSL Indonesia 推出场外交易 (OTC) 服务",
+      "summary": "OSL 针对大额交易用户推出 **OTC 服务**，最低门槛为 **1 亿印尼盾**。该服务旨在为高净值个人及进出口企业提供**低于市场簿价**的 USDT/USDC 深度流动性，简化大额资产配置流程。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@hoteliercrypto",
+          "url": "https://x.com/hoteliercrypto/status/2041432532013740164"
+        }
+      ],
+      "published_at": "2026-04-07T08:26:58+00:00"
+    },
+    {
+      "title": "Bitget Wallet 集成 OSL Pay 提供合规入金",
+      "summary": "**Bitget Wallet** 宣布集成 **OSL Pay** 作为其入金渠道之一。OSL Pay 为用户提供受监管的法币与加密货币支付基础设施，确保全球市场交易的安全与**合规性**。",
       "category": "合作伙伴",
       "importance": "medium",
       "sources": [
@@ -138,71 +199,10 @@
         }
       ],
       "published_at": "2026-05-07T06:06:00+00:00"
-    },
-    {
-      "title": "OSL Indonesia 举行 POL 代币 Launchpool 与社区活动",
-      "summary": "OSL Indonesia 开展多项推广活动，包括总奖池达 2.3 亿 POL 的 **Launchpool 质押奖励**，以及旨在增加 Telegram 社区活跃度的“电报派对”活动。",
-      "category": "活动推广",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@OSL_ID",
-          "url": "https://x.com/OSL_ID/status/2046415447210537432"
-        },
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2043632532839965016"
-        }
-      ],
-      "published_at": "2026-04-21T02:27:17+00:00"
-    },
-    {
-      "title": "用户建议 OSL 增加人民币及港币稳定币交易对",
-      "summary": "有用户在社交媒体向 OSL 官方反馈，强烈建议平台尽快上线 **人民币稳定币 (CNY stablecoin)** 和 **港币稳定币 (HKD stablecoin)** 交易对。",
-      "category": "用户反馈",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@ichanghun294009",
-          "url": "https://x.com/ichanghun294009/status/2040717075413598380"
-        }
-      ],
-      "published_at": "2026-04-05T09:04:00+00:00"
-    },
-    {
-      "title": "OSL Indonesia 系统维护通知",
-      "summary": "OSL Indonesia 宣布于 2026 年 5 月 6 日至 7 日进行 **系统维护**，期间法币及加密货币的 **充值与提现服务** 暂停。",
-      "category": "产品动态",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@OSL_ID",
-          "url": "https://x.com/OSL_ID/status/2050045995011219773"
-        }
-      ],
-      "published_at": "2026-05-01T02:53:47+00:00"
-    },
-    {
-      "title": "OSL Group 亚太区开启多个职位招聘",
-      "summary": "OSL Group 正在亚太地区招募 **量化交易、财务、品牌及加密基础设施** 相关人才，推荐奖励最高达 5 万港币。",
-      "category": "其他",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@crypto_vazima",
-          "url": "https://x.com/crypto_vazima/status/2049071080074051946"
-        }
-      ],
-      "published_at": "2026-04-28T10:19:50+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-12",
-    "to": "2026-05-11"
+    "from": "2026-04-13",
+    "to": "2026-05-12"
   }
 }
