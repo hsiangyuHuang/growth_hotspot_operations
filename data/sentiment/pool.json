@@ -1,17 +1,12 @@
 {
-  "total_raw": 54,
+  "total_raw": 52,
   "items": [
     {
-      "title": "OSL 集团加入 Mastercard Crypto Credential 合作伙伴计划",
-      "summary": "OSL 集团正式加入 **Mastercard Crypto Credential** 计划，旨在连接加密原生公司、支付平台与全球金融机构，通过 **OSL BizPay** 和 **StableHub** 扩展合规的稳定币基础设施。",
+      "title": "OSL 与万事达卡（Mastercard）达成合作",
+      "summary": "OSL 集团宣布正式加入 **Mastercard Crypto Credential Partner Program (MCPP)**，旨在连接加密货币公司、支付平台和全球金融机构。OSL 将通过其合规的稳定币基础设施（BizPay、StableHub 等）进一步深耕**企业支付基础设施**，支持全球范围内的实时合规支付。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2052576724328833190"
-        },
         {
           "platform": "twitter",
           "author": "@ChainInsightLab",
@@ -19,23 +14,23 @@
         },
         {
           "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2052629573133541770"
+        },
+        {
+          "platform": "twitter",
           "author": "@ItsBitcoinWorld",
           "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
         }
       ],
-      "published_at": "2026-05-08T02:30:00+00:00"
+      "published_at": "2026-05-08T09:11:11+00:00"
     },
     {
-      "title": "OSL 与 Circle 合作扩大 USDC 在亚洲的应用",
-      "summary": "OSL 集团与 **Circle** 达成合作，旨在提升 **USDC** 在亚洲市场的交易、支付效用及机构采用率。该合作被视为重建香港金融基础设施、连接交易与结算的关键一步。",
+      "title": "OSL 集团与 Circle 合作扩展 USDC 亚洲市场",
+      "summary": "OSL 与 Circle 达成合作伙伴关系，旨在提升 **USDC 在亚洲市场的交易与支付公用性**。双方将通过 OSL 的持牌平台扩大 USDC 的机构需求，并支持**跨境结算与实时法币转换**。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2047132851183997213"
-        },
         {
           "platform": "twitter",
           "author": "@WizzyOnChain",
@@ -43,34 +38,20 @@
         },
         {
           "platform": "twitter",
-          "author": "@NBTC_finance",
-          "url": "https://x.com/NBTC_finance/status/2047845687451095478"
+          "author": "@TronWeekly",
+          "url": "https://x.com/TronWeekly/status/2047246600410628489"
         },
         {
           "platform": "twitter",
-          "author": "@TronWeekly",
-          "url": "https://x.com/TronWeekly/status/2047080506588590550"
+          "author": "@byul_finance",
+          "url": "https://x.com/byul_finance/status/2047126422708539492"
         }
       ],
-      "published_at": "2026-04-22T22:30:00+00:00"
+      "published_at": "2026-04-26T17:59:15+00:00"
     },
     {
-      "title": "香港加密监管优势提及：OSL 为持牌交易所代表",
-      "summary": "市场分析指出香港在加密监管上领先于美国 SEC，已拥有 **6 只现货 ETF** 及包括 **OSL** 和 HashKey 在内的**持牌交易所**，展示了亚洲构建市场的速度。",
-      "category": "监管合规",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@wugaoxi",
-          "url": "https://x.com/wugaoxi/status/2053409813690974331"
-        }
-      ],
-      "published_at": "2026-05-10T09:40:24+00:00"
-    },
-    {
-      "title": "OSL StableHub 扩展支持 5 种稳定币",
-      "summary": "OSL **StableHub** 宣布将支持 **USDGO, USDC, AUSD, RLUSD, USDG**。用户可在这些稳定币间进行 **1:1 零费用、零滑点**闪兑，并可获得选定资产的 APR 奖励。",
+      "title": "OSL StableHub 扩展并支持五种稳定币",
+      "summary": "OSL StableHub 宣布即将支持包括 **USDGO, USDC, AUSD, RLUSD, USDG** 在内的五种稳定币。用户可以享受 **1:1 零手续费、无滑点兑换**，以及特定资产的 **APR 奖励**。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -88,8 +69,8 @@
       "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL 印度尼西亚推出 Launchpool 及本地化银行充值服务",
-      "summary": "OSL 印度尼西亚获得用户好评，用户称赞其 **POL Launchpool** 收益（1200 刀本金 10 天获利 16 刀）及通过 **Nobu National Bank** 实现的便捷存款功能。用户反馈该平台安全且受 **OJK 监管**。",
+      "title": "印尼用户对 OSL Launchpool 的积极反馈",
+      "summary": "多位印尼用户分享了参与 OSL Indonesia **Launchpool (POL)** 的收益体验，称其为印尼首个提供此类功能的本地交易所。用户反馈投入约 **$1200 在 10 天内获得了约 $16 收益**，对平台的**合规性 (OJK 监管)** 和新功能表示认可。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -100,8 +81,8 @@
         },
         {
           "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2054197516560920698"
+          "author": "@edyrehuel",
+          "url": "https://x.com/edyrehuel/status/2047650539689910752"
         },
         {
           "platform": "twitter",
@@ -109,11 +90,11 @@
           "url": "https://x.com/RocioX5454/status/2052051965597946088"
         }
       ],
-      "published_at": "2026-05-12T13:50:27+00:00"
+      "published_at": "2024-04-24T11:26:12+00:00"
     },
     {
-      "title": "OSL BizPay 分享稳定币支付与 AI Agent 结合愿景",
-      "summary": "OSL BizPay 副总裁在 Money2020 Asia 分享指出，稳定币正演变为**企业级基础设施**。OSL 提出的 **“稳定币三明治”** 模式通过 BizPay 在后台实现即时结算，赋能未来 AI Agent 的可编程支付。",
+      "title": "OSL 亮相 Money20/20 Asia 讨论稳定币支付",
+      "summary": "OSL BizPay 负责人 Leon Chua 和 Albert Wong 在 **Money20/20 Asia** 分享了稳定币如何成为企业支付基础设施。提出 **\"Stablecoin Sandwich\"** 模式，通过 OSL BizPay 实现跨国资金的即时结算，将稳定币作为中间桥梁，降低传统企业接触加密货币的复杂性。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -124,17 +105,17 @@
         },
         {
           "platform": "twitter",
-          "author": "@LongTreeLabs",
-          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2046784443067883569"
         }
       ],
       "published_at": "2026-05-18T03:29:07+00:00"
     },
     {
-      "title": "OSL 客服支持账号 OSL Support 正式上线",
-      "summary": "OSL 官方发布 **OSL Support** 账号，提供 **24/7** 紧急公告发布、一线咨询支持、产品建议及功能反馈通道。",
+      "title": "OSL 官方客服推特账号上线",
+      "summary": "OSL 宣布 **@OSL_Support** 正式上线，提供 **24/7 全天候支持服务**，涵盖紧急公告、产品咨询及功能建议，旨在加强与用户的实时互动。",
       "category": "产品动态",
-      "importance": "low",
+      "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
@@ -145,36 +126,22 @@
       "published_at": "2026-05-11T09:10:47+00:00"
     },
     {
-      "title": "OSL 旗下 Banxa 集成 Google Pay 和 Apple Pay",
-      "summary": "OSL 集团旗下的 **Banxa** 正式上线 **Google Pay** 和 **Apple Pay** 支付方式，简化了法币到加密货币的出入金流程，提升了获取 **USDGO** 等数字资产的便利性。",
+      "title": "OSL 与 Banxa 整合提升法币出入金体验",
+      "summary": "OSL 集团通过旗下 **Banxa** 提升了法币兑加密货币的体验，现已支持 **Apple Pay 和 Google Pay**，提供更快的验证流程，打造合规且无摩擦的交易环境。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
           "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2043886250055332041"
+          "url": "https://x.com/osldotcom/status/2045394170635063450"
         }
       ],
-      "published_at": "2026-04-14T02:57:10+00:00"
+      "published_at": "2026-04-18T06:49:06+00:00"
     },
     {
-      "title": "市场分析：OSL 业务重心向稳定币支付转型",
-      "summary": "分析指出 OSL 已将业务重点转向 **稳定币支付轨道**，与 PayPal 等支付巨头竞逐到 2030 年规模预计达 990 亿美元的加密驱动汇款市场。",
-      "category": "市场分析",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@QBitFlowApp",
-          "url": "https://x.com/QBitFlowApp/status/2044309748980559992"
-        }
-      ],
-      "published_at": "2026-04-15T07:00:00+00:00"
-    },
-    {
-      "title": "OSL 印度尼西亚宣布系统维护公告",
-      "summary": "OSL 印度尼西亚于 5 月 6 日深夜进行 **系统维护**，期间充值与提现功能暂时无法使用。此前该平台发布了关于 **USDT 交易零手续费** 的用户反馈引导。",
+      "title": "OSL Indonesia 系统维护通知",
+      "summary": "OSL 印度尼西亚宣布将在 **2026年5月6日 23:00 至 5月7日 01:00 WIB** 进行系统维护。期间法币及加密货币的**充值与提现功能将暂停使用**。",
       "category": "其他",
       "importance": "low",
       "sources": [
@@ -185,10 +152,34 @@
         }
       ],
       "published_at": "2026-05-01T02:53:47+00:00"
+    },
+    {
+      "title": "市场分析：OSL 业务重心转向稳定币支付",
+      "summary": "多份报告和 KOL 观点指出，OSL 已将其业务核心转向**稳定币支付轨道**。作为香港持牌交易所的代表，OSL 与 HashKey 被视为亚洲合规市场的领导者。用户对 **OSL 参与香港 Web3 活动** 及推出的企业级稳定币 **USDGO**（Anchorage 发行）表现出高度关注。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@QBitFlowApp",
+          "url": "https://x.com/QBitFlowApp/status/2044309748980559992"
+        },
+        {
+          "platform": "twitter",
+          "author": "@wugaoxi",
+          "url": "https://x.com/wugaoxi/status/2053409813690974331"
+        },
+        {
+          "platform": "twitter",
+          "author": "@hananotsorry",
+          "url": "https://x.com/hananotsorry/status/2054466966132605071"
+        }
+      ],
+      "published_at": "2026-05-13T07:41:09+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-21",
-    "to": "2026-05-20"
+    "from": "2026-04-22",
+    "to": "2026-05-21"
   }
 }
