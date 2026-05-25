@@ -1,21 +1,26 @@
 {
-  "total_raw": 77,
+  "total_raw": 76,
   "items": [
     {
-      "title": "OSL 香港上市吉尔吉斯斯坦实物黄金锚定稳定币 USDKG",
-      "summary": "OSL 集团宣布在香港持牌交易所上线由吉尔吉斯共和国发行的**实物黄金锚定稳定币 USDKG**。该币种与美元 1:1 挂钩，由国家监管并由实物黄金支持。此举旨在通过合规渠道增强亚洲数字资产生态系统，为**专业投资者**提供资产代币化接入点。",
+      "title": "OSL 上线吉尔吉斯斯坦实物黄金背书稳定币 USDKG",
+      "summary": "香港持牌交易所 OSL 宣布上线由吉尔吉斯斯坦**国家监督、实物黄金背书**的稳定币 **USDKG**（1:1 挂钩美元）。该举措被视为亚洲 **RWA（现实世界资产）代币化**在合规市场的重大里程碑，专业投资者可通过 OTC 和 Pro Trade 进行交易。",
       "category": "产品动态",
       "importance": "high",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@Cointelegraph",
-          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
+          "author": "@SovereignYield",
+          "url": "https://x.com/SovereignYield/status/2057522537211523113"
         },
         {
           "platform": "twitter",
-          "author": "@CoinpediaNews",
-          "url": "https://x.com/CoinpediaNews/status/2057457522609664276"
+          "author": "@StablecoinHI",
+          "url": "https://x.com/StablecoinHI/status/2057497425158287742"
+        },
+        {
+          "platform": "twitter",
+          "author": "@TheCryptoKind",
+          "url": "https://x.com/TheCryptoKind/status/2057461946061070838"
         },
         {
           "platform": "twitter",
@@ -23,11 +28,11 @@
           "url": "https://x.com/InvezzPortal/status/2057382948395954620"
         }
       ],
-      "published_at": "2026-05-21T13:20:16+00:00"
+      "published_at": "2026-05-21T18:02:54+00:00"
     },
     {
-      "title": "OSL 集团加入万事达卡加密货币合作伙伴计划 (MCPP)",
-      "summary": "OSL 集团正式加入 **Mastercard Crypto Credential Partner Program**。此次合作将通过 **OSL BizPay 和 StableHub** 基础设施，将加密原生企业与全球金融机构连接，推动合规稳定币在**跨境 B2B 支付**和实时结算领域的应用。",
+      "title": "OSL 集团加入万事达卡（Mastercard）加密合作伙伴计划",
+      "summary": "OSL 集团宣布加入 **Mastercard Crypto Credential Partner Program**，旨在将合规的稳定币基础设施（如 **OSL BizPay** 和 **StableHub**）集成到全球金融支付生态中，重点赋能 **B2B 跨境实时结算**。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -38,6 +43,11 @@
         },
         {
           "platform": "twitter",
+          "author": "@ChainInsightLab",
+          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
+        },
+        {
+          "platform": "twitter",
           "author": "@ItsBitcoinWorld",
           "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
         }
@@ -45,11 +55,16 @@
       "published_at": "2026-05-08T02:30:00+00:00"
     },
     {
-      "title": "OSL 与 Circle 战略合作，扩大 USDC 在亚洲的支付与交易应用",
-      "summary": "OSL 集团与 Circle 达成合作，旨在提升 **USDC 在亚洲市场的流动性**。双方通过集成稳定币基础设施，支持机构级用户实现法币与稳定币的无缝转换，加速**合规跨境结算**的效率。",
+      "title": "OSL 与 Circle 合作拓展 USDC 亚洲支付应用",
+      "summary": "OSL 与 **Circle** 达成战略合作，以扩大 **USDC** 在亚太地区的交易和支付效用。OSL 的 **StableHub** 宣布将支持 **USDGO、USDC、AUSD、RLUSD、USDG** 五种稳定币的 1:1 **零手续费、无滑点**兑换。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2054815138189033750"
+        },
         {
           "platform": "twitter",
           "author": "@WizzyOnChain",
@@ -61,14 +76,19 @@
           "url": "https://x.com/TronWeekly/status/2047246600410628489"
         }
       ],
-      "published_at": "2026-04-26T17:59:15+00:00"
+      "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL 印度尼西亚用户反馈：Launchpool 与合规性广受好评",
-      "summary": "印尼社区用户反馈 OSL Indonesia 是当地首个推出 **Launchpool（如 Polygon/POL 奖励）** 功能的合规交易所。用户对其**零手续费交易 USDT**、通过 Nobu 银行快速充值以及受 OJK 监管的安全性表示高度认可，认为其产品力已可与国际大所竞争。",
-      "category": "用户反馈",
+      "title": "OSL 印度尼西亚站 Launchpool 获用户积极反馈",
+      "summary": "OSL 印度尼西亚站推出 **Launchpool** 奖励活动及价值 3.5 亿印尼盾的推广。用户反馈显示，参与该功能的体验良好，有用户分享 **1200 美金投入 10 天获利 16 美金**。此外，平台正在分发 **Polygon ($POL)** 奖励。",
+      "category": "活动推广",
       "importance": "medium",
       "sources": [
+        {
+          "platform": "twitter",
+          "author": "@ANDREDIKA14",
+          "url": "https://x.com/ANDREDIKA14/status/2047638231756484814"
+        },
         {
           "platform": "twitter",
           "author": "@edyrehuel",
@@ -76,67 +96,77 @@
         },
         {
           "platform": "twitter",
-          "author": "@RocioX5454",
-          "url": "https://x.com/RocioX5454/status/2052051965597946088"
-        },
-        {
-          "platform": "twitter",
-          "author": "@ANDREDIKA14",
-          "url": "https://x.com/ANDREDIKA14/status/2047638231756484814"
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2046415447210537432"
         }
       ],
       "published_at": "2026-04-24T12:15:06+00:00"
     },
     {
-      "title": "OSL BizPay 布局 AI 支付与跨境稳定币清算",
-      "summary": "OSL 高管在 Money2020 Asia 分享业务洞察，强调 **OSL BizPay** 利用稳定币和智能合约实现“稳定币三明治”架构，简化企业跨境支付流程。同时探讨了 Web3 的即时结算特性是 **AI Agent（AI 代理）** 自动支付时代的必需基础设施。",
-      "category": "市场分析",
+      "title": "OSL 运营更新：24/7 支持上线及系统维护",
+      "summary": "OSL 官方支持账号 **OSL Support** 正式启动，提供 **24/7 全天候在线服务**。印度尼西亚站新增 **Nobu National Bank** 存款渠道，并于 5 月 6 日完成了系统例行维护。用户对 **USDT 存取免手续费**表示好评。",
+      "category": "用户反馈",
       "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2046784660894802030"
-        },
-        {
-          "platform": "twitter",
-          "author": "@LongTreeLabs",
-          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
-        }
-      ],
-      "published_at": "2026-04-22T02:54:25+00:00"
-    },
-    {
-      "title": "OSL StableHub 扩展支持 5 种稳定币并上线收益奖励",
-      "summary": "OSL **StableHub** 宣布将支持 **USDGO、USDC、AUSD、RLUSD 和 USDG** 5 种稳定币。平台提供 1:1 零手续费、零滑点兑换，并为特定资产提供年化收益 (APR) 奖励。",
-      "category": "产品动态",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2054815138189033750"
-        }
-      ],
-      "published_at": "2026-05-14T06:44:40+00:00"
-    },
-    {
-      "title": "OSL 官方客服支持账号 @OSL_Support 正式上线",
-      "summary": "OSL 宣布成立官方支持账号 **@OSL_Support**，提供 **24/7 全天候在线服务**，涵盖紧急公告、产品建议反馈和用户咨询响应。",
-      "category": "产品动态",
-      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
           "author": "@OSL_Support",
           "url": "https://x.com/OSL_Support/status/2053764745812127990"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2054197516560920698"
+        },
+        {
+          "platform": "twitter",
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2050045995011219773"
         }
       ],
       "published_at": "2026-05-11T09:10:47+00:00"
+    },
+    {
+      "title": "OSL 高管在 Money2020 Asia 深度解析 AI 支付与稳定币",
+      "summary": "OSL BizPay 副总裁 Albert Wong 探讨了 **Web3 可编程支付与 AI Agent** 的契合点，提出 **“稳定币三明治”** 模式解决企业跨境结算痛点。OSL 强调其 **USDGO** 稳定币已突破 4 亿美元流通量，支持企业级资金管理。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@LongTreeLabs",
+          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
+        },
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2046784443067883569"
+        },
+        {
+          "platform": "twitter",
+          "author": "@hananotsorry",
+          "url": "https://x.com/hananotsorry/status/2054466966132605071"
+        }
+      ],
+      "published_at": "2026-05-12T07:35:38+00:00"
+    },
+    {
+      "title": "OSL 集团发布亚太地区多岗位招聘需求",
+      "summary": "OSL 正在亚太地区招聘涵盖**交易、量化、品牌及加密基础设施**在内的多个职位，支持 **Hybrid 混合办公**模式，并提供高达 5 万港元的推荐奖金。",
+      "category": "其他",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@crypto_vazima",
+          "url": "https://x.com/crypto_vazima/status/2049071080074051946"
+        }
+      ],
+      "published_at": "2026-04-28T10:19:50+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-04-25",
-    "to": "2026-05-24"
+    "from": "2026-04-26",
+    "to": "2026-05-25"
   }
 }
