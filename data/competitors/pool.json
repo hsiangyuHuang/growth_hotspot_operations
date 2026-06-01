@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-05-02",
-    "to": "2026-05-31"
+    "from": "2026-05-03",
+    "to": "2026-06-01"
   },
   "competitors": [
     {
@@ -873,19 +873,6 @@
           ]
         },
         {
-          "title": "参展 2026 Consensus 迈阿密大会并开启现场推广",
-          "category": "活动推广",
-          "summary": "**Alchemy Pay** 确认参加 2026 年 5 月 5 日至 7 日举办的 **Consensus Miami**。\n*   在 2406 号展位展示最新的**加密支付创新**。\n*   举办拍照社交互动活动，参与者可赢取 **$ACH** 及专属周边奖励。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@AlchemyPay",
-              "url": "https://x.com/AlchemyPay/status/2050055890452246661"
-            }
-          ]
-        },
-        {
           "title": "原生支持 Conflux 网络上的 $USDT0",
           "category": "产品更新",
           "summary": "**Alchemy Pay** 宣布在 Conflux 网络上原生支持 **$USDT0**：\n- 将其全球 **300 多种支付方式**与 Conflux 的 L1 基础设施相结合\n- 旨在解锁更具可访问性的现实世界**稳定币效用**",
@@ -1120,7 +1107,7 @@
       "name": "Binance",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=binance.com&sz=64",
-      "summary": "公布2030年发展蓝图，并持续进行有关互联网资本市场（ICM）和交易策略的市场教育。",
+      "summary": "近期重点布局 Pre-IPO 合约市场并寻求重新进入菲律宾市场，同时持续进行区块链技术科普。",
       "events": [
         {
           "title": "Binance 实时行情功能接入 ChatGPT",
@@ -1626,27 +1613,6 @@
             {
               "name": "twitter:@binance",
               "url": "https://x.com/binance/status/2057522042254049531"
-            }
-          ]
-        },
-        {
-          "title": "上线 SpaceX Pre-IPO 永续合约",
-          "category": "产品更新",
-          "summary": "**Binance** 推出首个 Pre-IPO 永续合约 $SPCXUSDT：\n- 允许散户在 SpaceX 正式上市前对其估值进行投机交易\n- 旨在打破以往仅限机构参与 Pre-IPO 市场的壁垒",
-          "date": "2026-05-21",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Binance Blog",
-              "url": "https://www.binance.com/en/support/announcement/4a9484ee10b347d287f514ee3fdd6a29"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/binance-launches-spacex-linked-perpetual-futures-ahead-of-potential-ipo"
-            },
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/markets/2026/05/21/binance-launches-spacex-pre-ipo-perps"
             }
           ]
         },
@@ -2830,32 +2796,6 @@
           ]
         },
         {
-          "title": "全平台集成 Chat 社交功能",
-          "category": "产品更新",
-          "summary": "**Binance** 在首页、搜索和 Square 广场全方位推广其 **Chat** 功能。\n*   旨在将平台打造为**加密社交枢纽**。\n*   用户可通过多个入口即时访问聊天室。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2050319347454009416"
-            }
-          ]
-        },
-        {
-          "title": "#BuildWithYou 社区功能反馈奖励活动",
-          "category": "活动推广",
-          "summary": "发起 **#BuildWithYou** 活动征集用户对“被低估功能”的反馈。\n*   参与者需分享功能见解并完成调研问卷。\n*   前 20 名优胜者可获得 **100 USDC**，活动截止日期为 5 月 11 日。",
-          "date": "2026-05-01",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2050213658752364847"
-            }
-          ]
-        },
-        {
           "title": "币安创始人 CZ 称竞争对手曾阻碍其获得赦免",
           "category": "监管合规",
           "summary": "**赵长鹏（CZ）** 在近期表态中提到，部分加密货币交易所竞争对手曾反对其赦免申请。其核心观点包括：\n* **阻碍回归**：竞品主要担心赦免会为币安重返**美国市场**铺平道路\n* **竞争格局**：事件反映了顶级交易所之间在合规与市场准入层面的博弈",
@@ -2865,6 +2805,32 @@
             {
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/cz-says-crypto-exchange-rivals-opposed-his-pardon-bid?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+            }
+          ]
+        },
+        {
+          "title": "上线 SpaceX Pre-IPO 永续合约",
+          "category": "产品更新",
+          "summary": "**Binance** 与 Hyperliquid 上线了 SpaceX Pre-IPO 永续合约。\\n- 该合约价格较 1.75 万亿美元目标估值**溢价约 34%**。\\n- 市场隐含估值已达 **2.3 万亿美元**，反映了投资者对 SpaceX 结合 AI 与太空基础设施叙事的看好。",
+          "date": "2024-05-31",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Odaily",
+              "url": "https://www.odaily.news/zh-CN/post/5211084"
+            }
+          ]
+        },
+        {
+          "title": "计划重新进入菲律宾市场",
+          "category": "监管合规",
+          "summary": "**Binance** 准备重新进入**菲律宾**市场。\\n- 这是在亚洲监管动态变化背景下的重要市场重返动作。\\n- 该消息被列为亚洲周度十大加密新闻之一。",
+          "date": "2024-05-31",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2061046655269351658"
             }
           ]
         },
@@ -2930,7 +2896,7 @@
       "name": "OKX",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=okx.com&sz=64",
-      "summary": "加速欧洲市场合规化扩张，上线 ZEC 永续合约并发布第43期储备证明报告。",
+      "summary": "产品线快速扩张，上线预测市场合约并完成二层网络基础设施的重大升级。",
       "events": [
         {
           "title": "发布 Exchange OS 基础设施方案",
@@ -4213,49 +4179,6 @@
           ]
         },
         {
-          "title": "与 Ripple 合作上线稳定币 RLUSD",
-          "category": "新币上线",
-          "summary": "**OKX** 宣布与 **Ripple** 达成合作，正式支持 **RLUSD**。\n*   在全球范围内上线超过 300 个现货交易对，并计划上线期货合约。\n*   推出 **XRP 买入挑战 (Streak Campaign)** 推广活动以增强生态流动性。",
-          "date": "2026-05-01",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2050323262958096394"
-            },
-            {
-              "name": "twitter:@Rachelwolf00",
-              "url": "https://x.com/okx/status/2050316298832282057"
-            }
-          ]
-        },
-        {
-          "title": "推广 X-Perps 永续合约极致性能",
-          "category": "产品更新",
-          "summary": "**OKX** 宣传其 **X-Perps** 交易引擎的领先优势。\n*   提供**低于 3 毫秒**的极速执行能力。\n*   针对实时交易市场优化的基础设施，旨在吸引高频交易者。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2050297479766122953"
-            }
-          ]
-        },
-        {
-          "title": "上线美股科技巨头 (Mag 7) 财报杠杆交易",
-          "category": "产品更新",
-          "summary": "针对美股财报周，通过其应用提供对 **Mag 7**（如苹果、谷歌等）的即时杠杆敞口。\n*   无需传统券商账户即可参与，简化加密用户参与传统市场的路径。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2050009878471598505"
-            }
-          ]
-        },
-        {
           "title": "OKX 行情监测：BTC 突破 82,000 USDT",
           "category": "其他",
           "summary": "**比特币（BTC）** 价格在 OKX 平台表现强劲：\n* **价格突破**：成功突破 **82,000 USDT** 关口\n* **涨幅数据**：24小时内涨幅达 **1.69%**",
@@ -4278,6 +4201,45 @@
             {
               "name": "Odaily",
               "url": "https://www.odaily.news/zh-CN/post/5210691"
+            }
+          ]
+        },
+        {
+          "title": "上线 Event Contracts 预测合约",
+          "category": "产品更新",
+          "summary": "**OKX** 正式上线 **Event Contracts**。\\n- 支持用户对事件结果进行预测。\\n- 具备**零杠杆、零爆仓**的特性，降低了衍生品参与门槛。",
+          "date": "2024-05-31",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "OKX",
+              "url": "https://x.com/okx/status/2061244106936893637"
+            }
+          ]
+        },
+        {
+          "title": "X Layer 推出 Exchange OS 升级",
+          "category": "产品更新",
+          "summary": "**OKX** 的二层网络 **X Layer** 发布重大升级 **Exchange OS**。\\n- 提供完整堆栈，允许开发者直接部署现货、永续合约和结果预测产品。\\n- 减少了构建核心交易基础设施的重复工作。",
+          "date": "2024-05-31",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "OKX",
+              "url": "https://x.com/okx/status/2061017614919323841"
+            }
+          ]
+        },
+        {
+          "title": "美国站 5 月上线多种新代币",
+          "category": "新币上线",
+          "summary": "**OKX US** 公布 5 月份上线资产名单。\\n- 包含 **$PI, $EDGE, $PROS, $AI, $IRYS**。\\n- 持续扩展受合规监管地区的交易币种。",
+          "date": "2024-05-31",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "OKX",
+              "url": "https://x.com/okx/status/2061198808436932808"
             }
           ]
         },
@@ -4330,7 +4292,7 @@
       "name": "Bybit",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=bybit.com&sz=64",
-      "summary": "持续运营中，近期侧重于“新金融平台”的品牌愿景宣传和UI更新暗示。",
+      "summary": "近期通过联合营销活动吸引用户，并暗示将推出新的金融平台服务。",
       "events": [
         {
           "title": "USDC Unleashed 交易挑战赛",
@@ -5357,32 +5319,6 @@
           ]
         },
         {
-          "title": "赞助 2026 年世界金融科技峰会",
-          "category": "合作伙伴",
-          "summary": "**Bybit** 成为 2026 年 5 月 5 日至 6 日在班加罗尔举行的 **World Fintech Summit** 银牌赞助商。\n*   旨在探讨**区块链与负责任创新**的未来。\n*   通过峰会建立行业联系并展示品牌活力。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2050032458972701171"
-            }
-          ]
-        },
-        {
-          "title": "上线新用户 Learn & Trade 奖励中心",
-          "category": "活动推广",
-          "summary": "推出 **Bybit Learn & Trade Growth Hub**，提供最高 **80 USDT** 奖励。\n*   新用户通过学习加密知识、完成指定交易任务可获取**等级勋章**和现金奖。 ",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2050364648105316722"
-            }
-          ]
-        },
-        {
           "title": "CEO 评论 AI 与裁员关系",
           "category": "其他",
           "summary": "**CEO Ben Zhou 观点**：\n- 认为许多公司将裁员归咎于 AI 只是借口，不相信 AI 目前能大规模取代劳动力",
@@ -5405,6 +5341,19 @@
             {
               "name": "WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2055000193519555009"
+            }
+          ]
+        },
+        {
+          "title": "联合 xStocksFi 举办解谜活动",
+          "category": "活动推广",
+          "summary": "**Bybit** 推出 xStocks Puzzle Hunt 活动。\\n- 用户通过参与解谜竞争瓜分 **200,000 USDT** 的奖金池。\\n- 旨在提升用户对 xStocks 产品的参与度。",
+          "date": "2024-05-31",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Bybit Official",
+              "url": "https://x.com/Bybit_Official/status/2061182581073137954"
             }
           ]
         },
@@ -5453,7 +5402,7 @@
       "name": "Coinbase",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=coinbase.com&sz=64",
-      "summary": "深度参与美加密监管法案游说，同时加大 Coinbase One Card 的金融激励措施。",
+      "summary": "重金投入印度市场并推出本地化支付渠道，同时开展大规模用户奖励活动。",
       "events": [
         {
           "title": "JPMorgan 首席执行官抨击 Coinbase 及 Clarity 法案",
@@ -6481,41 +6430,32 @@
           ]
         },
         {
-          "title": "推出面向机构的稳定币信用策略基金 (CUSHY)",
+          "title": "在印度推出 INR 直接存取款服务",
           "category": "产品更新",
-          "summary": "**Coinbase** 宣布推出 **Coinbase Stablecoin Credit Strategy (CUSHY)**。\n*   主要针对**合格投资者和机构**。\n*   提供公共、私人和机会主义信贷策略的投资敞口，利用稳定币作为底层结算工具。",
-          "date": "2026-05-01",
+          "summary": "**Coinbase** 在印度市场上线直接**卢比 (INR)** 渠道。\\n- 支持通过 **IMPS** 进行存取款。\\n- 允许用户进行现货和永续合约交易，旨在角逐印度 30 亿美元的加密市场。\\n- 实体已在 **FIU-IND** 注册合规。",
+          "date": "2024-05-31",
           "importance": "high",
           "sources": [
             {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/coinbases-new-fund-shows-why-banks-are-fighting-stablecoin-yield-on-the-clarity-act/"
+              "name": "CoinDesk",
+              "url": "https://www.coindesk.com/markets/2026/05/31/coinbase-makes-a-major-play-for-india-s-booming-usd3-billion-crypto-market-with-local-currency-launch"
+            },
+            {
+              "name": "WuBlockchain",
+              "url": "https://x.com/WuBlockchain/status/2061252381405569264"
             }
           ]
         },
         {
-          "title": "披露 2025 年稳定币结算规模达 33 万亿美元",
-          "category": "其他",
-          "summary": "**Coinbase** 披露其 2025 年稳定币结算金额高达 **33 万亿美元**。\n*   强调其在**安全性**和**用户体验 (UX)** 方面的核心优势。\n*   目标是基于此规模进一步简化全球支付流程。",
-          "date": "2026-05-01",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@coinbase",
-              "url": "https://x.com/coinbase/status/2050318517535142166"
-            }
-          ]
-        },
-        {
-          "title": "Coinbase One 五月促销及独家奖励",
+          "title": "多重用户激励促销活动",
           "category": "活动推广",
-          "summary": "针对 **Coinbase One** 推出首年 **20% 折扣** 优惠。\n*   包含**零交易费**、3.50% USDC 奖励、增强的质押收益等权益。\n*   旨在通过五月限时奖励活动提升订阅用户量。",
-          "date": "2026-05-01",
+          "summary": "**Coinbase** 推出一系列限时激励措施。\\n- 包含 **1,000,000 美元** 的比特币奖池。\\n- 提供 **3% 转账奖励**、40% 的新资产质押加成以及 Coinbase One 首年 **20% 折扣**。",
+          "date": "2024-05-31",
           "importance": "medium",
           "sources": [
             {
-              "name": "twitter:@coinbase",
-              "url": "https://x.com/coinbase/status/2050241125181530341"
+              "name": "Coinbase",
+              "url": "https://x.com/coinbase/status/2061121446504439830"
             }
           ]
         },
@@ -6875,7 +6815,7 @@
       "name": "Remitano",
       "region": "VN",
       "logo": "https://www.google.com/s2/favicons?domain=remitano.com&sz=64",
-      "summary": "近期主要通过社交媒体开展社区互动与交易奖励活动，重点关注披萨日主题激励。",
+      "summary": "近期重点推广其在尼日利亚市场的法币出金业务，强调高效的奈拉兑换体验。",
       "events": [
         {
           "title": "发起账户安全评分与加固宣传活动",
@@ -7155,6 +7095,19 @@
           ]
         },
         {
+          "title": "推广奈拉 (Naira) 法币出金服务",
+          "category": "活动推广",
+          "summary": "**Remitano 强化其在尼日利亚的法币通道服务**：\n- 用户可在数秒内将 **BTC、USDT** 等加密货币直接兑换为 **尼日利亚奈拉 (Naira)**\n- 该功能支持直接在平台上进行操作，旨在提升当地用户的出金效率",
+          "date": "2024-05-20",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Twitter",
+              "url": "https://x.com/remitano/status/2061070195582759361"
+            }
+          ]
+        },
+        {
           "title": "宣传 24/7 全天候人工客服支持",
           "category": "产品更新",
           "summary": "**Remitano 强调其提供 24/7 全天候人工客户支持服务**：- 核心卖点为“真实人类”客服，区别于纯自动化机器人；- 旨在为用户的加密货币交易旅程提供即时保障；- 针对尼日利亚（#CryptoNigeria）等核心市场进行重点推广。",
@@ -7343,32 +7296,6 @@
               "url": "https://x.com/bitFlyer/status/2052689977398755656"
             }
           ]
-        },
-        {
-          "title": "“春季比特币祭”最终弹活动",
-          "category": "活动推广",
-          "summary": "启动**连续 5 周春季祭**的最后一阶段活动。\n*   庆祝连续 10 年市场占有率第一。\n*   5 月 1 日至 7 日，用户仅需登录即可参与 **1,000 日元 BTC** 的抽奖。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@bitFlyer",
-              "url": "https://x.com/bitFlyer/status/2050047565576773722"
-            }
-          ]
-        },
-        {
-          "title": "发布 Crypto Radio 第 17 期探讨多国监管差异",
-          "category": "其他",
-          "summary": "通过播客节目解答用户关于**日美欧监管差异**及日元稳定币发展的问题。\n*   致力于增强用户对加密资产审计及合规流程的理解。",
-          "date": "2026-05-01",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@bitFlyer",
-              "url": "https://x.com/bitFlyer/status/2050153264600252812"
-            }
-          ]
         }
       ]
     },
@@ -7527,8 +7454,34 @@
       "name": "GMO Coin",
       "region": "JP",
       "logo": "https://www.google.com/s2/favicons?domain=coin.z.com&sz=64",
-      "summary": "近期未监测到 GMO Coin 的公开动态",
+      "summary": "近期主要处理 SUI 网络服务的恢复工作，并针对移动端 App 出现的强制登出故障进行紧急排查与修复。",
       "events": [
+        {
+          "title": "恢复 SUI 充值及发送服务",
+          "category": "其他",
+          "summary": "**GMO Coin 已正式恢复 SUI 代币的相关充提业务**\n- 恢复时间：2026-06-01 02:02\n- 状态说明：此前因故暂停的 SUI 预入及送付功能已全面恢复正常使用",
+          "date": "2026-06-01",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "twitter:@gmo_coin",
+              "url": "https://x.com/gmo_coin/status/2061134085507227720"
+            }
+          ]
+        },
+        {
+          "title": "移动端 App 强制登出故障公告",
+          "category": "其他",
+          "summary": "**GMO Coin 正在调查智能手机应用出现的异常技术问题**\n- 问题描述：确认到部分用户在使用移动端 App 时会被强制登出\n- 应对方案：技术团队正进行调查与修复；在修复完成前，建议用户通过 **Web 浏览器** 进行交易",
+          "date": "2026-06-01",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "twitter:@gmo_coin",
+              "url": "https://x.com/gmo_coin/status/2060971737442033950"
+            }
+          ]
+        },
         {
           "title": "SUI 充值与发送服务恢复正常",
           "category": "产品更新",
@@ -7803,32 +7756,6 @@
             {
               "name": "Twitter",
               "url": "https://x.com/gmo_coin/status/2052584343118496040"
-            }
-          ]
-        },
-        {
-          "title": "资产余额增长部分享 0% 质押手续费",
-          "category": "活动推广",
-          "summary": "针对比 4 月平均余额有增长的用户，提供**质押手续费 0%** 的优惠。\n*   涵盖新购买、外部入金及从其他交易所转入的资产。\n*   旨在通过**零成本奖励**吸引用户增加资产持仓。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@gmo_coin",
-              "url": "https://x.com/gmo_coin/status/2050062672373367146"
-            }
-          ]
-        },
-        {
-          "title": "支持元宇宙项目 Wilder World 更新",
-          "category": "合作伙伴",
-          "summary": "关注 **Wilder World** 的次世代元宇宙更新。\n*   重点提及“Shards”机制对游戏进程的影响及独特经济设计。\n*   加强与元宇宙生态项目的互动。",
-          "date": "2026-05-01",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@gmo_coin",
-              "url": "https://x.com/gmo_coin/status/2050059908675256415"
             }
           ]
         }
@@ -8201,36 +8128,6 @@
               "url": "https://x.com/bitbank_inc/status/2050772371028779308"
             }
           ]
-        },
-        {
-          "title": "SBI Holdings 计划收购 bitbank 股权并将其纳为子公司",
-          "category": "融资/IPO",
-          "summary": "**SBI Holdings** 宣布正就收购 **bitbank** 股权进行深入谈话。\n*   目标是将其打造为**合并子公司**，以巩固 SBI 在日本加密领域的领导地位。\n*   目前处于早期尽职调查阶段，具体时间表待定。",
-          "date": "2026-05-01",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/399709/sbi-holdings-in-talks-to-acquire-stake-in-crypto-exchange-bitbank-eyes-subsidiary-status"
-            },
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2050093790611018193"
-            }
-          ]
-        },
-        {
-          "title": "推出 EPOS CRYPTO 信用卡 for bitbank",
-          "category": "产品更新",
-          "summary": "发行全新的 **EPOS CRYPTO 信用卡**。\n*   推出发卡纪念活动，用户最高可获价值 **4,000 日元** 的资产奖励。\n*   配合社交媒体互动赠送 Amazon 礼品卡。",
-          "date": "2026-05-01",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@bitbank_inc",
-              "url": "https://x.com/bitbank_inc/status/2050047640629551257"
-            }
-          ]
         }
       ]
     },
@@ -8534,32 +8431,6 @@
             {
               "name": "twitter:@sbivc_official",
               "url": "https://x.com/sbivc_official/status/2052292353491419138"
-            }
-          ]
-        },
-        {
-          "title": "发布 SBI VISA Crypto 信用卡",
-          "category": "产品更新",
-          "summary": "联合 **Visa** 推出可自动累积 **BTC、ETH、XRP** 的信用卡。\n*   消费金额自动兑换为加密资产。\n*   金卡限时提供最高 **10% 的高额返现** 比例。",
-          "date": "2026-05-01",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@sbivc_official",
-              "url": "https://x.com/sbivc_official/status/2050123755461247407"
-            }
-          ]
-        },
-        {
-          "title": "信用卡发行纪念新开户送 1000 日元 BTC",
-          "category": "活动推广",
-          "summary": "为配合信用卡发布，开展 VCTRADE 平台新户礼遇活动。\n*   新开户用户可直接获赠价值 **1,000 日元** 的比特币。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@sbivc_official",
-              "url": "https://x.com/sbivc_official/status/2050123998235902435"
             }
           ]
         }
@@ -8987,23 +8858,6 @@
             {
               "name": "twitter:@Rakuten_Wallet",
               "url": "https://x.com/Rakuten_Wallet/status/2052276233862574131"
-            }
-          ]
-        },
-        {
-          "title": "上线多吉币 (DOGE) 交易",
-          "category": "新币上线",
-          "summary": "**Rakuten Wallet** 正式将 **DOGE** 纳入交易图鉴。\n*   强调其作为支付手段的实力和巨大的市场价值。\n*   此举带动了平台内加密资产的情绪回升。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Rakuten_Wallet",
-              "url": "https://x.com/Rakuten_Wallet/status/2050138977861353959"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/markets/xrp-sentiment-hits-2-year-high-but-why-is-price-stuck"
             }
           ]
         }
@@ -9473,7 +9327,7 @@
       "name": "Crypto.com",
       "region": "EU",
       "logo": "https://www.google.com/s2/favicons?domain=crypto.com&sz=64",
-      "summary": "近期重点围绕欧冠联赛决赛开展体育营销活动，持续通过全球顶级赛事进行品牌曝光。",
+      "summary": "近期侧重于推广其 Visa 卡的消费返现与旅行权益，并新增了 Sailing 资产交易支持。",
       "events": [
         {
           "title": "Cronos App 开放官方候补名单",
@@ -9693,32 +9547,6 @@
             {
               "name": "Crypto.com Twitter",
               "url": "https://x.com/cryptocom/status/2052689971740356680"
-            }
-          ]
-        },
-        {
-          "title": "冠名赞助 F1 迈阿密大奖赛",
-          "category": "活动推广",
-          "summary": "**Crypto.com** 以冠名赞助商身份深度参与 **F1 迈阿密大奖赛**。\n*   通过全球顶尖体育赛事展示品牌形象，强化在迈阿密等核心城市的品牌曝光。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@cryptocom",
-              "url": "https://x.com/cryptocom/status/2050226238376001633"
-            }
-          ]
-        },
-        {
-          "title": "Airdrop Arena 启动 $250,000 APT 奖励活动",
-          "category": "活动推广",
-          "summary": "在 **Airdrop Arena** 推出价值 **25 万美元** 的 **$APT** 奖励计划。\n*   用户需通过分配 **$CRO** 参与活动。\n*   购买并存入至少 1,500 CRO 的用户可获得 **120% 的积分加成**。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@cryptocom",
-              "url": "https://x.com/cryptocom/status/2050168353688265145"
             }
           ]
         },
@@ -10100,6 +9928,32 @@
             {
               "name": "Twitter",
               "url": "https://x.com/cryptocom/status/2054951416209301686"
+            }
+          ]
+        },
+        {
+          "title": "Crypto.com Visa 卡核心权益宣传",
+          "category": "产品更新",
+          "summary": "**Crypto.com 推广其 Visa 卡权益**：\\n- **返现优惠**：最高可达 5% 的消费返现\\n- **跨境便利**：享受 0 外汇手续费 (Zero FX fees)\\n- **旅行权益**：免费进入机场贵宾室",
+          "date": "2024-05-23",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "X (Twitter)",
+              "url": "https://x.com/cryptocom/status/2061178402288087379"
+            }
+          ]
+        },
+        {
+          "title": "Sailing (SAIL) 交易正式上线",
+          "category": "新币上线",
+          "summary": "**Crypto.com 开启 Sailing 交易**：\\n- 平台已正式支持 **Sailing** 资产的交易服务\\n- 该消息同步自合作伙伴 **OG.com** 的官方公告",
+          "date": "2024-05-23",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "X (Twitter)",
+              "url": "https://x.com/cryptocom/status/2061113010370859082"
             }
           ]
         },
@@ -10579,7 +10433,7 @@
       "name": "Indodax",
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=indodax.com&sz=64",
-      "summary": "持续运营中，近期主要通过社交媒体与用户进行市场牛熊转换的观点互动。",
+      "summary": "近期主要通过参与线下社交聚会与节日互动维持社区活跃度。",
       "events": [
         {
           "title": "ISMAYA 旗下门店 10% 专属折扣",
@@ -11089,32 +10943,6 @@
           ]
         },
         {
-          "title": "Indodax 3.0 版本评价激励活动",
-          "category": "产品更新",
-          "summary": "针对 **Indodax 3.0** 版本的更新发起评价征集活动。\n*   提供总额为 **300 万印尼盾** 的 USDT 奖励给 8 名优胜者。\n*   旨在收集用户反馈并提升移动应用商店排名。",
-          "date": "2026-05-01",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@indodax",
-              "url": "https://x.com/indodax/status/2050077874300879286"
-            }
-          ]
-        },
-        {
-          "title": "发布五月系列活动计划表",
-          "category": "活动推广",
-          "summary": "预告 2026 年 5 月的全月活动安排。\n*   包括社区互动奖励 **SobatSuperDAX**，总奖金 **800 万印尼盾**。\n*   通过多平台（TG、IG、YouTube）同步活动节奏。",
-          "date": "2026-05-01",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@indodax",
-              "url": "https://x.com/indodax/status/2050093005428686986"
-            }
-          ]
-        },
-        {
           "title": "Indodax 与 Club Wyndham Asia 达成合作",
           "category": "合作伙伴",
           "summary": "**Indodax 已验证用户**可享受 Club Wyndham Asia 酒店预订折扣：\n- **优惠力度**：最高 **65% 的住宿折扣**\n- **覆盖地区**：包括巴厘岛、普吉岛和曼谷等热门目的地\n- **活动有效期**：2026 年 4 月 1 日至 12 月 31 日",
@@ -11126,6 +10954,19 @@
               "url": "https://x.com/indodax/status/2052573566965567666"
             }
           ]
+        },
+        {
+          "title": "参与雅加达 Memory of Pizza 线下活动",
+          "category": "活动推广",
+          "summary": "**Indodax** 与 axisrobotics 合作在雅加达举办了 \"MEMORY OF PIZZA\" 聚会：- **品牌互动**：通过线下交流提升社区凝聚力 - **文化营销**：利用加密货币节庆日进行品牌推广",
+          "date": "2025-05-31",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "X (Twitter)",
+              "url": "https://x.com/indodax/status/2061168696316621131"
+            }
+          ]
         }
       ]
     },
@@ -11133,7 +10974,7 @@
       "name": "Tokocrypto",
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=tokocrypto.com&sz=64",
-      "summary": "近期成功举办了覆盖印尼多地的 Bitcoin Pizza Day 线下庆典，并持续通过其新闻平台提供高频的行业风险预警与行情分析。",
+      "summary": "近期侧重于 Bitcoin Pizza Day 的品牌营销活动，并持续提供高频的市场行情深度分析。",
       "events": [
         {
           "title": "举办 Bitcoin Pizza Day 全印尼系列庆祝活动",
@@ -12297,28 +12138,28 @@
           ]
         },
         {
-          "title": "上线 SOPH Token 增强娱乐赛道布局",
-          "category": "新币上线",
-          "summary": "**Tokocrypto** 正式上线 Layer 2 代币 **SOPH**。\n*   该代币专注于游戏、社交媒体及数字娱乐内容。\n*   平台同步发布深度市场分析报告辅助用户决策。",
-          "date": "2026-05-01",
+          "title": "举办 Bitcoin Pizza Day 社交实验活动",
+          "category": "活动推广",
+          "summary": "**Tokocrypto** 在雅加达 Blok M 地区开展了针对性的社交实验：- **线下普及**：通过与女性群体互动推广比特币文化 - **品牌曝光**：发布现场记录视频，利用 Pizza Day 节点进行内容营销",
+          "date": "2025-05-31",
           "importance": "medium",
           "sources": [
             {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/harga-soph-token-hari-ini/"
+              "name": "X (Twitter)",
+              "url": "https://x.com/Tokocrypto/status/2061025896027553997"
             }
           ]
         },
         {
-          "title": "筹备 Bitcoin Pizza Day 线下分享会",
+          "title": "发起未来社区活动建议征集",
           "category": "活动推广",
-          "summary": "举办 **Bitcoin Pizza Talks** 预热活动。\n*   邀请 Web3 营销专家及创作者分享行业见解。\n*   通过节日活动加强与本地社区的粘性。",
-          "date": "2026-05-01",
+          "summary": "**Tokocrypto** 向 Tokonauts 社区征求活动需求：- **用户导向**：基于社区反馈规划下一阶段运营活动 - **互动增强**：通过调研提升用户的平台参与感",
+          "date": "2025-05-31",
           "importance": "low",
           "sources": [
             {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2050154415399838153"
+              "name": "X (Twitter)",
+              "url": "https://x.com/Tokocrypto/status/2060980597456036107"
             }
           ]
         },
@@ -12882,7 +12723,7 @@
       "name": "Reku",
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=reku.id&sz=64",
-      "summary": "近期动态较少，主要通过社交媒体发布非正式互动内容以维持社区活跃度。",
+      "summary": "近期未监测到 Reku 的公开动态",
       "events": [
         {
           "title": "2026 年比特币披萨日庆祝及联合推广",
