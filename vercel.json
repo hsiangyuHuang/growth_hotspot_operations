@@ -1,4 +1,7 @@
 {
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "framework": null,
   "rewrites": [
     { "source": "/static/(.*)", "destination": "/dashboard/static/$1" },
     { "source": "/", "destination": "/dashboard/index.html" }
