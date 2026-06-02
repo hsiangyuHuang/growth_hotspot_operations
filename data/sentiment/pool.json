@@ -1,9 +1,9 @@
 {
-  "total_raw": 72,
+  "total_raw": 71,
   "items": [
     {
-      "title": "OSL 上市吉尔吉斯共和国监管的黄金抵押稳定币 USDKG",
-      "summary": "OSL 宣布在其香港持牌交易所上市由吉尔吉斯共和国监管的**黄金抵押稳定币 USDKG**。该代币与美元 1:1 挂钩并由**实物黄金储备**支持。此举被视为亚洲合规市场**现实资产代币化 (RWA)** 的重要里程碑，专业投资者可通过 OTC 和 Pro Trade 进行交易。",
+      "title": "OSL 上线黄金锚定稳定币 USDKG",
+      "summary": "OSL 宣布在其香港持牌交易所上线由**吉尔吉斯共和国监管的黄金锚定稳定币 USDKG**。该币种与美元 1:1 挂钩并由实物黄金支撑，向专业投资者开放 **OTC 及 Pro Trade** 交易。此举被视为 RWA（真实世界资产）代币化在亚洲受监管平台的重要进展。",
       "category": "产品动态",
       "importance": "high",
       "sources": [
@@ -19,20 +19,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@BitcoinWorldN",
-          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
-        },
-        {
-          "platform": "twitter",
           "author": "@InvezzPortal",
           "url": "https://x.com/InvezzPortal/status/2057382948395954620"
         }
       ],
-      "published_at": "2026-05-21T13:20:16+00:00"
+      "published_at": "2026-05-25T03:56:00Z"
     },
     {
-      "title": "OSL 集团加入 Mastercard 加密货币合作伙伴计划",
-      "summary": "OSL 集团正式加入 **Mastercard Crypto Credential Partner Program (MCPP)**。通过此次合作，OSL 将利用其合规的稳定币基础设施（包括 **OSL BizPay** 和 **StableHub**），助力 Mastercard 构建受信任的 B2B 支付生态，实现**合规的实时跨境支付**。",
+      "title": "OSL 集团加入万事达卡（Mastercard）合作伙伴计划",
+      "summary": "OSL 集团宣布加入 **Mastercard Crypto Partner Program**。双方将通过 OSL BizPay、StableHub 等基础设施，合作开发**合规的 B2B 支付解决方案**，旨在利用稳定币实现全球跨境资金的实时结算。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -43,23 +38,23 @@
         },
         {
           "platform": "twitter",
-          "author": "@ChainInsightLab",
-          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
-        },
-        {
-          "platform": "twitter",
           "author": "@ItsBitcoinWorld",
           "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
         }
       ],
-      "published_at": "2026-05-08T02:30:00+00:00"
+      "published_at": "2026-05-08T02:30:00Z"
     },
     {
-      "title": "OSL Indonesia 促销活动及用户对免费提现的好评",
-      "summary": "OSL Indonesia 开展名为 **UPO (Untung Pakai OSL)** 的大型促销活动，总奖金达 3.5 亿印尼盾。多位用户反馈称赞其**免费法币及链上提现 (Free WD)**、零存款手续费以及新用户奖励，认为其对新手极具吸引力，甚至预测其将成为印尼顶级交易所。",
+      "title": "OSL 印尼用户对免手续费及活动反馈积极",
+      "summary": "大量印尼用户在社交媒体反馈 OSL 平台的**充值、银行提现及链上转账“零手续费”**体验。用户特别提到了 **UPO (Untung Pakai OSL)** 活动以及针对新用户的 **50,000 印尼盾奖励**，称赞其 KYC 流程迅速且对新手友好。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
+        {
+          "platform": "twitter",
+          "author": "@bangdevzz",
+          "url": "https://x.com/bangdevzz/status/2061306982527857106"
+        },
         {
           "platform": "twitter",
           "author": "@haicharicacha",
@@ -67,25 +62,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@edyjayakarya",
-          "url": "https://x.com/edyjayakarya/status/2060928779795722320"
-        },
-        {
-          "platform": "twitter",
           "author": "@HikariKagami",
           "url": "https://x.com/HikariKagami/status/2059856504338198842"
-        },
-        {
-          "platform": "twitter",
-          "author": "@DioeconmeXBT",
-          "url": "https://x.com/DioeconmeXBT/status/2053447649681129694"
         }
       ],
-      "published_at": "2026-05-31T03:47:27+00:00"
+      "published_at": "2026-06-01T04:40:56Z"
     },
     {
-      "title": "OSL StableHub 扩展支持并上线 USDG",
-      "summary": "OSL StableHub 即将支持包括 **USDGO, USDC, AUSD, RLUSD, USDG** 在内的 5 种稳定币。该平台提供 **1:1 零手续费、零滑点兑换**，并为特定资产提供吸引人的 APR 奖励。此外，由 Anchorage Digital 发行的 **USDGO** 流通量已突破 4 亿美元。",
+      "title": "OSL 扩展 StableHub 支持并上线 USDG",
+      "summary": "OSL StableHub 宣布将支持 **USDGO、USDC、AUSD、RLUSD 和 USDG** 五种稳定币的 1:1 无缝兑换。同时，OSL 上线 **USDG 稳定币交易及奖励活动**，显示其在受监管数字美元市场的竞争意图。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -98,48 +83,15 @@
           "platform": "twitter",
           "author": "@PlanetDefi",
           "url": "https://x.com/PlanetDefi/status/2054534659099251151"
-        },
-        {
-          "platform": "twitter",
-          "author": "@hananotsorry",
-          "url": "https://x.com/hananotsorry/status/2054466966132605071"
         }
       ],
-      "published_at": "2026-05-14T06:44:40+00:00"
+      "published_at": "2026-05-14T06:44:40Z"
     },
     {
-      "title": "OSL 与 Circle 达成战略合作扩大 USDC 接入",
-      "summary": "OSL 集团与 Circle 达成合作，旨在**扩大 USDC 在全球市场的接入与交易**。OSL 作为亚洲最大的持牌加密平台之一，此举旨在直接满足区域内机构对稳定币的强劲需求。",
+      "title": "OSL 印尼正式加入 ICEx 生态系统",
+      "summary": "PT Multikripto Exchange Indonesia (**OSL Indonesia**) 正式进入 **ICEx Group 生态系统**。双方高层共同见证了这一时刻，标志着 OSL 在印尼合规加密市场的进一步扩张。",
       "category": "合作伙伴",
       "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@WizzyOnChain",
-          "url": "https://x.com/WizzyOnChain/status/2048461923575034094"
-        }
-      ],
-      "published_at": "2026-04-26T17:59:15+00:00"
-    },
-    {
-      "title": "OSL 股票价格触及 52 周低点",
-      "summary": "在近期加密货币相关股票的市场分析中，**OSL 股票 (HKEX: 863)** 与 Metaplanet、Monex 等公司一同被列为触及 **52 周低点**的标的。",
-      "category": "市场分析",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@matthew_sigel",
-          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
-        }
-      ],
-      "published_at": "2026-05-27T18:56:40+00:00"
-    },
-    {
-      "title": "OSL Indonesia 接入 ICEx 集团生态系统",
-      "summary": "PT Multikripto Exchange Indonesia (**OSL Indonesia**) 正式进入 **ICEx 集团生态系统**。此次合作由 ICEx CEO、OSL Indonesia CTO 及 CACI CEO 共同见证，标志着 OSL 在印尼市场的区域整合进一步加深。",
-      "category": "合作伙伴",
-      "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
@@ -147,11 +99,11 @@
           "url": "https://x.com/ICExGroup/status/2059525548104417460"
         }
       ],
-      "published_at": "2026-05-27T06:42:09+00:00"
+      "published_at": "2026-05-27T06:42:09Z"
     },
     {
-      "title": "OSL 高管探讨稳定币与 AI 结合的支付未来",
-      "summary": "OSL BizPay 副总裁 Leon Chua 在 Money20/20 Asia 上强调稳定币正从加密原生领域转向**现实世界支付基础设施**。此外，OSL 高管 Albert Wong 认为 Web3 的可编程性是 **AI Agent 支付时代**的必选项，OSL 正通过 BizPay 赋能高效跨境支付。",
+      "title": "OSL BizPAY 探讨 AI Agent 与 Web3 支付结合",
+      "summary": "OSL BizPAY 负责人分享了稳定币在**跨境结算**中的应用，并指出 **Web3 的可编程性**是未来 AI Agent 支付时代的“刚需”。OSL 正在通过稳定币和实时结算技术赋能传统金融机构。",
       "category": "市场分析",
       "importance": "medium",
       "sources": [
@@ -166,13 +118,13 @@
           "url": "https://x.com/osldotcom/status/2056215480311140815"
         }
       ],
-      "published_at": "2026-05-18T03:29:07+00:00"
+      "published_at": "2026-05-18T03:29:07Z"
     },
     {
-      "title": "OSL 官方客服账号 OSL_Support 正式上线",
-      "summary": "OSL 宣布其官方支持账号 **@OSL_Support** 正式投入使用，提供 **24/7 全天候服务**。该账号将用于发布紧急公告、处理用户查询、收集产品反馈及功能建议。",
+      "title": "OSL 官方客服账号 OSL Support 上线",
+      "summary": "OSL 宣布其官方推特 **Support 账号正式投入运营**。该账号提供 24/7 全天候支持，发布紧急公告、收集产品反馈并提供技术建议。",
       "category": "产品动态",
-      "importance": "low",
+      "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
@@ -180,11 +132,30 @@
           "url": "https://x.com/OSL_Support/status/2053764745812127990"
         }
       ],
-      "published_at": "2026-05-11T09:10:47+00:00"
+      "published_at": "2026-05-11T09:10:47Z"
     },
     {
-      "title": "OSL Indonesia 系统维护通知",
-      "summary": "OSL Indonesia 发布公告，计划于 **2026 年 5 月 6 日晚间**进行系统维护。维护期间，**法币与加密货币的充值及提现功能**将暂时不可用。",
+      "title": "OSL 股票表现及香港监管优势分析",
+      "summary": "市场数据显示 OSL 股票（HK: 863）近期触及 **52 周低点**。同时，分析人士指出，相较于美国，**香港拥有持牌交易所（如 OSL、HashKey）**及 RWA 试点，在加密监管和市场建设上显示出独特速度优势。",
+      "category": "市场分析",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@matthew_sigel",
+          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
+        },
+        {
+          "platform": "twitter",
+          "author": "@wugaoxi",
+          "url": "https://x.com/wugaoxi/status/2053409813690974331"
+        }
+      ],
+      "published_at": "2026-05-27T18:56:40Z"
+    },
+    {
+      "title": "OSL 印尼系统维护公告",
+      "summary": "OSL 印尼发布通知，于 2026 年 **5 月 6 日至 7 日凌晨**进行系统维护。维护期间**法币及加密货币的充值与提现功能**暂时无法使用。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -194,11 +165,11 @@
           "url": "https://x.com/OSL_ID/status/2050045995011219773"
         }
       ],
-      "published_at": "2026-05-01T02:53:47+00:00"
+      "published_at": "2026-05-01T02:53:47Z"
     }
   ],
   "date_range": {
-    "from": "2026-05-03",
-    "to": "2026-06-01"
+    "from": "2026-05-04",
+    "to": "2026-06-02"
   }
 }
