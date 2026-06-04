@@ -2,8 +2,8 @@
   "total_raw": 71,
   "items": [
     {
-      "title": "OSL 上线黄金锚定稳定币 USDKG",
-      "summary": "OSL 宣布在其香港持牌交易所上线由**吉尔吉斯共和国监管的黄金锚定稳定币 USDKG**。该币种与美元 1:1 挂钩并由实物黄金支撑，向专业投资者开放 **OTC 及 Pro Trade** 交易。此举被视为 RWA（真实世界资产）代币化在亚洲受监管平台的重要进展。",
+      "title": "OSL 推出全球首个国家监管的黄金支持稳定币 USDKG",
+      "summary": "OSL 宣布在其香港持牌交易所上线由吉尔吉斯共和国监管的**实物黄金支持稳定币 USDKG**。该资产与美元 1:1 挂钩，由国家实体发行。此举标志着 **RWA（现实世界资产）代币化**在合规市场的重大进展，专业投资者可通过 OTC 和 Pro Trade 进行交易。",
       "category": "产品动态",
       "importance": "high",
       "sources": [
@@ -19,15 +19,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@InvezzPortal",
-          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
+          "author": "@BitcoinWorldN",
+          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
         }
       ],
-      "published_at": "2026-05-25T03:56:00Z"
+      "published_at": "2026-05-25T03:56:00+00:00"
     },
     {
-      "title": "OSL 集团加入万事达卡（Mastercard）合作伙伴计划",
-      "summary": "OSL 集团宣布加入 **Mastercard Crypto Partner Program**。双方将通过 OSL BizPay、StableHub 等基础设施，合作开发**合规的 B2B 支付解决方案**，旨在利用稳定币实现全球跨境资金的实时结算。",
+      "title": "OSL Group 加入万事达卡（Mastercard）加密货币伙伴计划",
+      "summary": "OSL Group 正式加入 **Mastercard Crypto Credential Partner Program (MCPP)**。双方将共同推动合规的**稳定币支付基础设施**，通过 OSL BizPay 和 StableHub 实现全球 B2B 实时结算，连接传统金融与数字资产市场。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -42,11 +42,11 @@
           "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
         }
       ],
-      "published_at": "2026-05-08T02:30:00Z"
+      "published_at": "2026-05-08T02:30:00+00:00"
     },
     {
-      "title": "OSL 印尼用户对免手续费及活动反馈积极",
-      "summary": "大量印尼用户在社交媒体反馈 OSL 平台的**充值、银行提现及链上转账“零手续费”**体验。用户特别提到了 **UPO (Untung Pakai OSL)** 活动以及针对新用户的 **50,000 印尼盾奖励**，称赞其 KYC 流程迅速且对新手友好。",
+      "title": "OSL 印度尼西亚用户反馈：零手续费与开户奖励受热捧",
+      "summary": "多位印度尼西亚用户反馈 OSL 平台具备**极高的成本优势**，包括**零手续费**（充值、银行提现及链上转账均为 Rp0）、快速的 KYC 流程以及 50,000 印尼盾的开户奖励。用户普遍认为其对新手及资深交易者非常友好。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -62,15 +62,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@HikariKagami",
-          "url": "https://x.com/HikariKagami/status/2059856504338198842"
+          "author": "@edyjayakarya",
+          "url": "https://x.com/edyjayakarya/status/2060928779795722320"
         }
       ],
-      "published_at": "2026-06-01T04:40:56Z"
+      "published_at": "2026-06-01T04:40:56+00:00"
     },
     {
-      "title": "OSL 扩展 StableHub 支持并上线 USDG",
-      "summary": "OSL StableHub 宣布将支持 **USDGO、USDC、AUSD、RLUSD 和 USDG** 五种稳定币的 1:1 无缝兑换。同时，OSL 上线 **USDG 稳定币交易及奖励活动**，显示其在受监管数字美元市场的竞争意图。",
+      "title": "OSL StableHub 升级并上线多款合规稳定币奖励",
+      "summary": "OSL 扩展其 **StableHub** 平台，支持 USDGO、USDC、AUSD、RLUSD 和 USDG 五种稳定币的 **1:1 零手续费兑换**。此外，OSL 上线了由 Anchorage Digital 发行的 **USDGO** 以及 **USDG**，提供质押理财奖励，深耕合规稳定币支付赛道。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -81,49 +81,16 @@
         },
         {
           "platform": "twitter",
-          "author": "@PlanetDefi",
-          "url": "https://x.com/PlanetDefi/status/2054534659099251151"
+          "author": "@hananotsorry",
+          "url": "https://x.com/hananotsorry/status/2054466966132605071"
         }
       ],
-      "published_at": "2026-05-14T06:44:40Z"
+      "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL 印尼正式加入 ICEx 生态系统",
-      "summary": "PT Multikripto Exchange Indonesia (**OSL Indonesia**) 正式进入 **ICEx Group 生态系统**。双方高层共同见证了这一时刻，标志着 OSL 在印尼合规加密市场的进一步扩张。",
-      "category": "合作伙伴",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@ICExGroup",
-          "url": "https://x.com/ICExGroup/status/2059525548104417460"
-        }
-      ],
-      "published_at": "2026-05-27T06:42:09Z"
-    },
-    {
-      "title": "OSL BizPAY 探讨 AI Agent 与 Web3 支付结合",
-      "summary": "OSL BizPAY 负责人分享了稳定币在**跨境结算**中的应用，并指出 **Web3 的可编程性**是未来 AI Agent 支付时代的“刚需”。OSL 正在通过稳定币和实时结算技术赋能传统金融机构。",
-      "category": "市场分析",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@LongTreeLabs",
-          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
-        },
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2056215480311140815"
-        }
-      ],
-      "published_at": "2026-05-18T03:29:07Z"
-    },
-    {
-      "title": "OSL 官方客服账号 OSL Support 上线",
-      "summary": "OSL 宣布其官方推特 **Support 账号正式投入运营**。该账号提供 24/7 全天候支持，发布紧急公告、收集产品反馈并提供技术建议。",
-      "category": "产品动态",
+      "title": "OSL 官方 24/7 客户支持账号正式上线",
+      "summary": "OSL 宣布正式启用专门的 **@OSL_Support** 推特账号，提供 **24/7 全天候支持**、紧急公告发布及产品建议收集，旨在提升用户服务响应速度和互动质量。",
+      "category": "用户反馈",
       "importance": "medium",
       "sources": [
         {
@@ -132,44 +99,68 @@
           "url": "https://x.com/OSL_Support/status/2053764745812127990"
         }
       ],
-      "published_at": "2026-05-11T09:10:47Z"
+      "published_at": "2026-05-11T09:10:47+00:00"
     },
     {
-      "title": "OSL 股票表现及香港监管优势分析",
-      "summary": "市场数据显示 OSL 股票（HK: 863）近期触及 **52 周低点**。同时，分析人士指出，相较于美国，**香港拥有持牌交易所（如 OSL、HashKey）**及 RWA 试点，在加密监管和市场建设上显示出独特速度优势。",
+      "title": "OSL 印度尼西亚集成 Nobu 银行并推出 UPO 大型活动",
+      "summary": "OSL 印度尼西亚（PT Multikripto Exchange Indonesia）加入 **ICEx 生态**，集成 **Nobu National Bank** 以优化本地法币充值。同时启动 **UPO (Untung Pakai OSL)** 活动，总奖池达 **3.5 亿印尼盾**，涵盖交易竞赛和加密盲盒。",
+      "category": "活动推广",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@ICExGroup",
+          "url": "https://x.com/ICExGroup/status/2059525548104417460"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2054197516560920698"
+        },
+        {
+          "platform": "twitter",
+          "author": "@haicharicacha",
+          "url": "https://x.com/haicharicacha/status/2060641674272137324"
+        }
+      ],
+      "published_at": "2026-05-30T08:37:14+00:00"
+    },
+    {
+      "title": "市场分析：OSL 在香港合规架构下的领军地位",
+      "summary": "分析指出，在香港已推出比特币/以太坊现货 ETF 的背景下，OSL 作为**持牌交易所**，正通过其 **BizPay** 业务将稳定币引入实物支付和 **AI 代理（AI Agents）可编程支付**领域，体现了亚洲在合规市场建设上的领先优势。",
       "category": "市场分析",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@matthew_sigel",
-          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
+          "author": "@wugaoxi",
+          "url": "https://x.com/wugaoxi/status/2053409813690974331"
         },
         {
           "platform": "twitter",
-          "author": "@wugaoxi",
-          "url": "https://x.com/wugaoxi/status/2053409813690974331"
+          "author": "@LongTreeLabs",
+          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
         }
       ],
-      "published_at": "2026-05-27T18:56:40Z"
+      "published_at": "2026-05-12T07:35:38+00:00"
     },
     {
-      "title": "OSL 印尼系统维护公告",
-      "summary": "OSL 印尼发布通知，于 2026 年 **5 月 6 日至 7 日凌晨**进行系统维护。维护期间**法币及加密货币的充值与提现功能**暂时无法使用。",
-      "category": "产品动态",
-      "importance": "medium",
+      "title": "加密货币板块股价监测：OSL 触及 52 周低点",
+      "summary": "分析师 Matthew Sigel 报告指出，在加密相关股票中，OSL 股价与 Metaplanet、Monex 等一同触及 **52 周低点**，而部分算力公司如 RIOT 则触及高点。",
+      "category": "市场分析",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@OSL_ID",
-          "url": "https://x.com/OSL_ID/status/2050045995011219773"
+          "author": "@matthew_sigel",
+          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
         }
       ],
-      "published_at": "2026-05-01T02:53:47Z"
+      "published_at": "2026-05-27T18:56:40+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-05-04",
-    "to": "2026-06-02"
+    "from": "2026-05-05",
+    "to": "2026-06-04"
   }
 }
