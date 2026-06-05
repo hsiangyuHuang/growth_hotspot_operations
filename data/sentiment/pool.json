@@ -2,8 +2,8 @@
   "total_raw": 71,
   "items": [
     {
-      "title": "OSL 推出全球首个国家监管的黄金支持稳定币 USDKG",
-      "summary": "OSL 宣布在其香港持牌交易所上线由吉尔吉斯共和国监管的**实物黄金支持稳定币 USDKG**。该资产与美元 1:1 挂钩，由国家实体发行。此举标志着 **RWA（现实世界资产）代币化**在合规市场的重大进展，专业投资者可通过 OTC 和 Pro Trade 进行交易。",
+      "title": "OSL 上线黄金锚定稳定币 USDKG",
+      "summary": "OSL 宣布在香港持牌交易所上线由**吉尔吉斯共和国**监管、以实物黄金支撑的稳定币 **USDKG**。该资产支持 **1:1 挂钩美元**，目前已面向专业投资者开放 **OTC 和 Pro Trade** 交易。此举被视为区域内 **RWA（现实世界资产）** 代币化的重要进展。",
       "category": "产品动态",
       "importance": "high",
       "sources": [
@@ -19,15 +19,29 @@
         },
         {
           "platform": "twitter",
-          "author": "@BitcoinWorldN",
-          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
+          "author": "@InvezzPortal",
+          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
         }
       ],
-      "published_at": "2026-05-25T03:56:00+00:00"
+      "published_at": "2026-05-21T13:20:16+00:00"
     },
     {
-      "title": "OSL Group 加入万事达卡（Mastercard）加密货币伙伴计划",
-      "summary": "OSL Group 正式加入 **Mastercard Crypto Credential Partner Program (MCPP)**。双方将共同推动合规的**稳定币支付基础设施**，通过 OSL BizPay 和 StableHub 实现全球 B2B 实时结算，连接传统金融与数字资产市场。",
+      "title": "星展银行 (DBS) 成为 OSL 香港业务结算银行",
+      "summary": "星展银行正式成为 OSL 香港业务的**法币结算银行**，并为 OSL 集团旗下持牌实体 **OSL Digital Securities** 开通账户。此合作进一步巩固了 OSL 的**合规银行网络**，提升了服务机构客户的能力。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@OSL_HK",
+          "url": "https://x.com/OSL_HK/status/2062439080601043412"
+        }
+      ],
+      "published_at": "2026-06-04T07:39:29+00:00"
+    },
+    {
+      "title": "OSL 集团加入万事达卡 (Mastercard) 加密货币伙伴计划",
+      "summary": "OSL 集团宣布加入 **Mastercard Crypto Partner Program (MCPP)**，旨在将合规的稳定币支付方案集成至全球支付系统。通过 **OSL BizPay** 和 **StableHub**，平台将助力企业实现**实时、跨境的 B2B 支付**。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -38,15 +52,15 @@
         },
         {
           "platform": "twitter",
-          "author": "@ItsBitcoinWorld",
-          "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
+          "author": "@ChainInsightLab",
+          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
         }
       ],
       "published_at": "2026-05-08T02:30:00+00:00"
     },
     {
-      "title": "OSL 印度尼西亚用户反馈：零手续费与开户奖励受热捧",
-      "summary": "多位印度尼西亚用户反馈 OSL 平台具备**极高的成本优势**，包括**零手续费**（充值、银行提现及链上转账均为 Rp0）、快速的 KYC 流程以及 50,000 印尼盾的开户奖励。用户普遍认为其对新手及资深交易者非常友好。",
+      "title": "OSL 印度尼西亚用户反馈与活动表现",
+      "summary": "印尼用户高度评价 OSL 的**零手续费**政策（包括银行提现及链上转账）和**快速 KYC** 体验。平台推出的 **UPO (Untung Pakai OSL)** 活动（总奖金 **3.5 亿印尼盾**）及 **50,000 IDR 新手奖励**引发社区热议，部分用户称其为印尼“顶流交易所”。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -58,7 +72,7 @@
         {
           "platform": "twitter",
           "author": "@haicharicacha",
-          "url": "https://x.com/haicharicacha/status/2060931133341380774"
+          "url": "https://x.com/haicharicacha/status/2060641674272137324"
         },
         {
           "platform": "twitter",
@@ -69,8 +83,8 @@
       "published_at": "2026-06-01T04:40:56+00:00"
     },
     {
-      "title": "OSL StableHub 升级并上线多款合规稳定币奖励",
-      "summary": "OSL 扩展其 **StableHub** 平台，支持 USDGO、USDC、AUSD、RLUSD 和 USDG 五种稳定币的 **1:1 零手续费兑换**。此外，OSL 上线了由 Anchorage Digital 发行的 **USDGO** 以及 **USDG**，提供质押理财奖励，深耕合规稳定币支付赛道。",
+      "title": "OSL StableHub 扩展支持 5 种稳定币",
+      "summary": "OSL StableHub 宣布即将支持包括 **USDGO、USDC、AUSD、RLUSD 和 USDG** 在内的五种稳定币。用户可享受 **1:1 零费用、无滑点兑换**，并可在特定资产上获得 **APR 奖励**。此外，OSL 也上架了由 Anchorage Digital 发行的合规稳定币 **USDGO**。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -88,10 +102,67 @@
       "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL 官方 24/7 客户支持账号正式上线",
-      "summary": "OSL 宣布正式启用专门的 **@OSL_Support** 推特账号，提供 **24/7 全天候支持**、紧急公告发布及产品建议收集，旨在提升用户服务响应速度和互动质量。",
-      "category": "用户反馈",
+      "title": "市场分析：OSL 股价及合规市场地位",
+      "summary": "分析指出 OSL 股价目前处于 **52 周低点**。尽管面临股价压力，OSL 在香港合规市场仍处于领先地位，拥有 **Bitcoin/ETH 现货 ETF 托管服务**、**RWA 代币化试点**及受监管的交易所牌照。",
+      "category": "市场分析",
       "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@matthew_sigel",
+          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
+        },
+        {
+          "platform": "twitter",
+          "author": "@wugaoxi",
+          "url": "https://x.com/wugaoxi/status/2053409813690974331"
+        }
+      ],
+      "published_at": "2026-05-27T18:56:40+00:00"
+    },
+    {
+      "title": "OSL BizPAY 探讨 AI 代理与可编程支付",
+      "summary": "OSL 负责人 Albert Wong 在 Money20/20 Asia 等活动中表示，Web3 的**可编程性与即时清算**是 **AI Agent 支付时代**的关键基础设施。OSL 正通过其 **BizPay** 业务，赋能传统金融利用稳定币进行高效跨境结算。",
+      "category": "其他",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@LongTreeLabs",
+          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
+        },
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2056215480311140815"
+        }
+      ],
+      "published_at": "2026-05-18T03:29:07+00:00"
+    },
+    {
+      "title": "OSL 印度尼西亚完成系统维护",
+      "summary": "OSL 印度尼西亚于 2026 年 **5 月 6 日至 7 日** 期间进行了预定的系统维护，维护期间**充值、提现及交易功能**暂时停用。此外，平台近期新增了通过 **Nobu National Bank** 直接充值的支付渠道。",
+      "category": "产品动态",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@OSL_ID",
+          "url": "https://x.com/OSL_ID/status/2050045995011219773"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2054197516560920698"
+        }
+      ],
+      "published_at": "2026-05-12T13:50:27+00:00"
+    },
+    {
+      "title": "OSL 官方客服账号 @OSL_Support 正式运营",
+      "summary": "OSL 推出专门的推特支持账号，提供 **24/7 全天候响应**，处理紧急公告、用户咨询、产品反馈及功能建议，增强了**客户服务体验**。",
+      "category": "产品动态",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -102,65 +173,22 @@
       "published_at": "2026-05-11T09:10:47+00:00"
     },
     {
-      "title": "OSL 印度尼西亚集成 Nobu 银行并推出 UPO 大型活动",
-      "summary": "OSL 印度尼西亚（PT Multikripto Exchange Indonesia）加入 **ICEx 生态**，集成 **Nobu National Bank** 以优化本地法币充值。同时启动 **UPO (Untung Pakai OSL)** 活动，总奖池达 **3.5 亿印尼盾**，涵盖交易竞赛和加密盲盒。",
-      "category": "活动推广",
+      "title": "新币上线预告：$TT 登陆 OSL",
+      "summary": "TT Chain 官方宣布其原生代币 **$TT** 即将上线 OSL 交易所，进一步拓展其全球合规交易渠道。",
+      "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@ICExGroup",
-          "url": "https://x.com/ICExGroup/status/2059525548104417460"
-        },
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2054197516560920698"
-        },
-        {
-          "platform": "twitter",
-          "author": "@haicharicacha",
-          "url": "https://x.com/haicharicacha/status/2060641674272137324"
+          "author": "@TTChain_",
+          "url": "https://x.com/TTChain_/status/2060631714268156149"
         }
       ],
-      "published_at": "2026-05-30T08:37:14+00:00"
-    },
-    {
-      "title": "市场分析：OSL 在香港合规架构下的领军地位",
-      "summary": "分析指出，在香港已推出比特币/以太坊现货 ETF 的背景下，OSL 作为**持牌交易所**，正通过其 **BizPay** 业务将稳定币引入实物支付和 **AI 代理（AI Agents）可编程支付**领域，体现了亚洲在合规市场建设上的领先优势。",
-      "category": "市场分析",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@wugaoxi",
-          "url": "https://x.com/wugaoxi/status/2053409813690974331"
-        },
-        {
-          "platform": "twitter",
-          "author": "@LongTreeLabs",
-          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
-        }
-      ],
-      "published_at": "2026-05-12T07:35:38+00:00"
-    },
-    {
-      "title": "加密货币板块股价监测：OSL 触及 52 周低点",
-      "summary": "分析师 Matthew Sigel 报告指出，在加密相关股票中，OSL 股价与 Metaplanet、Monex 等一同触及 **52 周低点**，而部分算力公司如 RIOT 则触及高点。",
-      "category": "市场分析",
-      "importance": "low",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@matthew_sigel",
-          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
-        }
-      ],
-      "published_at": "2026-05-27T18:56:40+00:00"
+      "published_at": "2026-05-30T07:57:40+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-05-05",
-    "to": "2026-06-04"
+    "from": "2026-05-06",
+    "to": "2026-06-05"
   }
 }
