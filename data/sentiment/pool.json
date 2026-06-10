@@ -2,56 +2,8 @@
   "total_raw": 69,
   "items": [
     {
-      "title": "OSL 香港上线全球首个国家监管的黄金代币 USDKG",
-      "summary": "OSL 集团宣布在其香港持牌交易所上线 **USDKG**，这是一种由吉尔吉斯共和国国家监管、与美元 1:1 挂钩并由**实物黄金全额抵押**的稳定币。该资产通过 OSL 的 OTC 和专业交易平台提供给专业投资者，被视为亚洲虚拟资产市场中连接传统资产的重要里程碑。",
-      "category": "产品动态",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@Cointelegraph",
-          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
-        },
-        {
-          "platform": "twitter",
-          "author": "@CNCSignalGlobal",
-          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
-        },
-        {
-          "platform": "twitter",
-          "author": "@CoinpediaNews",
-          "url": "https://x.com/CoinpediaNews/status/2057457522609664276"
-        },
-        {
-          "platform": "twitter",
-          "author": "@InvezzPortal",
-          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
-        }
-      ],
-      "published_at": "2026-05-21T13:20:16+00:00"
-    },
-    {
-      "title": "OSL 集团加入万事达卡 (Mastercard) 加密货币合作伙伴计划",
-      "summary": "OSL 集团正式加入 **Mastercard Crypto Credential Partner Program (MCPP)**。此次合作旨在利用 OSL 的合规稳定币基础设施（如 OSL BizPay、StableHub），将加密货币原生企业、支付平台与全球金融机构连接，推动**实时合规的 B2B 跨境支付**。",
-      "category": "合作伙伴",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2052576724328833190"
-        },
-        {
-          "platform": "twitter",
-          "author": "@ItsBitcoinWorld",
-          "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
-        }
-      ],
-      "published_at": "2026-05-08T02:30:00+00:00"
-    },
-    {
       "title": "星展银行成为 OSL 香港业务法币结算银行",
-      "summary": "**星展银行 (DBS)** 正式成为 OSL 香港业务的**法币结算银行**，并为 OSL Digital Securities 开通账户。此举进一步强化了 OSL 的合规银行网络，助力其服务更多元化的机构客户。",
+      "summary": "OSL 集团宣布**星展银行 (DBS)** 成为其香港业务的**法币结算银行**，并为持牌实体 OSL Digital Securities 开通账户，此举将进一步巩固 OSL 的合规银行网络。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -64,8 +16,56 @@
       "published_at": "2026-06-04T07:39:29+00:00"
     },
     {
-      "title": "印尼用户对 OSL 平台给予高度正面评价",
-      "summary": "多位印尼用户反馈 OSL 平台的 **KYC 审核速度极快**，且提供**零手续费的出入金服务**（包括本地银行和链上提币）。用户还提到了 OSL 印度尼西亚新增的 Launchpool、质押理财及 Learn & Earn 等功能，认为其安全且符合 OJK 监管。",
+      "title": "OSL 集团加入万事达卡 (Mastercard) 加密伙伴计划",
+      "summary": "OSL 集团正式加入 **Mastercard Crypto Partner Program (MCPP)**，旨在利用 **OSL BizPay** 和 **StableHub** 基础设施，将合规稳定币解决方案整合至全球支付生态系统。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2052576724328833190"
+        },
+        {
+          "platform": "twitter",
+          "author": "@ItsBitcoinWorld",
+          "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
+        },
+        {
+          "platform": "twitter",
+          "author": "@ChainInsightLab",
+          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
+        }
+      ],
+      "published_at": "2026-05-08T02:30:00+00:00"
+    },
+    {
+      "title": "OSL 上线吉尔吉斯斯坦主权监管黄金稳定币 USDKG",
+      "summary": "OSL 在香港持牌交易所上线由**吉尔吉斯共和国**监管、1:1 挂钩美元并由**实物黄金**抵押的稳定币 **USDKG**，为专业投资者提供 RWA (现实资产代币化) 交易选择。",
+      "category": "产品动态",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Cointelegraph",
+          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
+        },
+        {
+          "platform": "twitter",
+          "author": "@BitcoinWorldN",
+          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
+        },
+        {
+          "platform": "twitter",
+          "author": "@InvezzPortal",
+          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
+        }
+      ],
+      "published_at": "2026-05-21T08:48:13+00:00"
+    },
+    {
+      "title": "OSL Indonesia 用户反馈：零费用政策受好评",
+      "summary": "多名用户反馈 OSL 印度尼西亚平台体验良好，特别是**充值、提现及链上转账零手续费**政策。用户同时认可其 **OJK 监管**的安全性，并参与了 UPO (Untung Pakai OSL) 活动。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -76,8 +76,13 @@
         },
         {
           "platform": "twitter",
-          "author": "@edyjayakarya",
-          "url": "https://x.com/edyjayakarya/status/2060928779795722320"
+          "author": "@haicharicacha",
+          "url": "https://x.com/haicharicacha/status/2060931133341380774"
+        },
+        {
+          "platform": "twitter",
+          "author": "@HikariKagami",
+          "url": "https://x.com/HikariKagami/status/2059856504338198842"
         },
         {
           "platform": "twitter",
@@ -88,8 +93,8 @@
       "published_at": "2026-06-01T04:40:56+00:00"
     },
     {
-      "title": "OSL StableHub 扩展支持五大稳定币",
-      "summary": "OSL StableHub 宣布将支持 **USDGO, USDC, AUSD, RLUSD, USDG** 五种稳定币，用户可享受 **1:1 零手续费、无滑点**兑换，部分资产还可获得 APR 奖励。",
+      "title": "OSL StableHub 扩大稳定币兑换支持",
+      "summary": "**OSL StableHub** 宣布支持包括 **USDGO、USDC、AUSD、RLUSD 和 USDG** 在内的 5 种稳定币，提供 **1:1 零手续费且零滑点**的兑换服务。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -97,14 +102,19 @@
           "platform": "twitter",
           "author": "@osldotcom",
           "url": "https://x.com/osldotcom/status/2054815138189033750"
+        },
+        {
+          "platform": "twitter",
+          "author": "@PlanetDefi",
+          "url": "https://x.com/PlanetDefi/status/2054534659099251151"
         }
       ],
       "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL 积极布局 AI 可编程支付与跨境结算",
-      "summary": "OSL 高管在多个论坛（如 Money20/20 Asia）表示，Web3 的可编程性与即时确认特性天然契合 **AI Agent 支付**场景。OSL 正通过 **BizPay** 业务利用稳定币与实时结算能力赋能传统金融机构。",
-      "category": "市场分析",
+      "title": "OSL BizPay 探讨 AI 与可编程支付的结合",
+      "summary": "OSL 高层在 Money20/20 及相关采访中指出，**OSL BizPay** 正利用稳定币和智能合约赋能**跨境支付**，并认为 Web3 的即时确认特性天然契合 **AI Agent** 支付时代。",
+      "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
@@ -121,29 +131,38 @@
       "published_at": "2026-05-12T07:35:38+00:00"
     },
     {
-      "title": "OSL 印度尼西亚开展大规模营销活动 UPO",
-      "summary": "OSL 印度尼西亚启动名为 **UPO (Untung Pakai OSL)** 的推广活动，总奖池达 **3.5 亿印尼盾**，包含交易竞赛、新用户注册礼包及加密货币盲盒。",
-      "category": "活动推广",
+      "title": "Bitget Wallet 集成 OSL Pay 提供合规入金通道",
+      "summary": "**Bitget Wallet** 与 **OSL Pay** 达成合作，通过集成其合规基础设施，为用户提供机构级的**法币与加密货币支付**流程。",
+      "category": "合作伙伴",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@haicharicacha",
-          "url": "https://x.com/haicharicacha/status/2062927549764878339"
-        },
-        {
-          "platform": "twitter",
-          "author": "@bangdevzz",
-          "url": "https://x.com/bangdevzz/status/2058084142425034934"
+          "author": "@BitgetWallet",
+          "url": "https://x.com/BitgetWallet/status/2052268692696940873"
         }
       ],
-      "published_at": "2026-06-05T16:00:29+00:00"
+      "published_at": "2026-05-07T06:06:00+00:00"
     },
     {
-      "title": "OSL 集团股价触及 52 周低点",
-      "summary": "市场分析显示，尽管业务持续扩张，OSL 股票与 Metaplanet、Monex 等加密相关股票近期均触及 **52 周低点**。",
+      "title": "OSL 官方客服支持账号正式上线",
+      "summary": "OSL 宣布成立官方支持账号 **@OSL_Support**，提供 **24/7 全天候服务**，用于处理紧急公告、产品反馈及用户查询。",
+      "category": "产品动态",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@OSL_Support",
+          "url": "https://x.com/OSL_Support/status/2053764745812127990"
+        }
+      ],
+      "published_at": "2026-05-11T09:10:47+00:00"
+    },
+    {
+      "title": "OSL 股价触及 52 周低点",
+      "summary": "市场分析指出，加密货币相关股票表现分化，**OSL 股价**与 Metaplanet、Monex 等一同触及 **52 周低点**。",
       "category": "市场分析",
-      "importance": "medium",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -155,7 +174,7 @@
     }
   ],
   "date_range": {
-    "from": "2026-05-10",
-    "to": "2026-06-09"
+    "from": "2026-05-11",
+    "to": "2026-06-10"
   }
 }
