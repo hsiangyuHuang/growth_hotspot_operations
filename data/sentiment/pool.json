@@ -2,8 +2,51 @@
   "total_raw": 69,
   "items": [
     {
-      "title": "星展银行成为 OSL 香港业务法币结算银行",
-      "summary": "OSL 集团宣布**星展银行 (DBS)** 成为其香港业务的**法币结算银行**，并为持牌实体 OSL Digital Securities 开通账户，此举将进一步巩固 OSL 的合规银行网络。",
+      "title": "OSL 香港上线吉尔吉斯斯坦国家监管的黄金足额抵押稳定币 USDKG",
+      "summary": "OSL 集团宣布在香港持牌交易所 OSL HK 上线 **USDKG**。该币种由吉尔吉斯斯坦政府监管，与美元 1:1 挂钩并由**实物黄金全额抵押**。目前面向专业投资者提供 **USDKG/USDT** 交易对及场外交易服务。此举被视为亚太地区实物资产代币化（RWA）进入合规市场的重大进展。",
+      "category": "产品动态",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@CNCSignalGlobal",
+          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
+        },
+        {
+          "platform": "twitter",
+          "author": "@InvezzPortal",
+          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Cointelegraph",
+          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
+        }
+      ],
+      "published_at": "2026-05-21T13:20:16+00:00"
+    },
+    {
+      "title": "OSL 集团加入万事达卡（Mastercard）加密货币合作伙伴计划",
+      "summary": "OSL 集团正式加入 **Mastercard Crypto Partner Program (MCPP)**，旨在将合规的稳定币支付方案整合至全球支付网络。通过 **OSL BizPay** 和 **StableHub**，双方将共同推动企业级跨境 B2B 支付和实时可编程支付的基础设施建设。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2052576724328833190"
+        },
+        {
+          "platform": "twitter",
+          "author": "@ChainInsightLab",
+          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
+        }
+      ],
+      "published_at": "2026-05-08T02:30:00+00:00"
+    },
+    {
+      "title": "星展银行（DBS）成为 OSL 香港业务法币结算银行",
+      "summary": "星展银行正式成为 OSL 香港业务的**法币结算银行**，并为 OSL Digital Securities 开通账户。此项合作进一步强化了 OSL 的**合规银行网络**和机构客户服务能力。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -16,56 +59,8 @@
       "published_at": "2026-06-04T07:39:29+00:00"
     },
     {
-      "title": "OSL 集团加入万事达卡 (Mastercard) 加密伙伴计划",
-      "summary": "OSL 集团正式加入 **Mastercard Crypto Partner Program (MCPP)**，旨在利用 **OSL BizPay** 和 **StableHub** 基础设施，将合规稳定币解决方案整合至全球支付生态系统。",
-      "category": "合作伙伴",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2052576724328833190"
-        },
-        {
-          "platform": "twitter",
-          "author": "@ItsBitcoinWorld",
-          "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
-        },
-        {
-          "platform": "twitter",
-          "author": "@ChainInsightLab",
-          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
-        }
-      ],
-      "published_at": "2026-05-08T02:30:00+00:00"
-    },
-    {
-      "title": "OSL 上线吉尔吉斯斯坦主权监管黄金稳定币 USDKG",
-      "summary": "OSL 在香港持牌交易所上线由**吉尔吉斯共和国**监管、1:1 挂钩美元并由**实物黄金**抵押的稳定币 **USDKG**，为专业投资者提供 RWA (现实资产代币化) 交易选择。",
-      "category": "产品动态",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@Cointelegraph",
-          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
-        },
-        {
-          "platform": "twitter",
-          "author": "@BitcoinWorldN",
-          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
-        },
-        {
-          "platform": "twitter",
-          "author": "@InvezzPortal",
-          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
-        }
-      ],
-      "published_at": "2026-05-21T08:48:13+00:00"
-    },
-    {
-      "title": "OSL Indonesia 用户反馈：零费用政策受好评",
-      "summary": "多名用户反馈 OSL 印度尼西亚平台体验良好，特别是**充值、提现及链上转账零手续费**政策。用户同时认可其 **OJK 监管**的安全性，并参与了 UPO (Untung Pakai OSL) 活动。",
+      "title": "OSL 印度尼西亚用户对免费出金及 KYC 体验反馈积极",
+      "summary": "多位印尼用户在社交媒体分享了 OSL 平台的使用体验，重点称赞其**免手续费的链上及银行转账提现**、**快速的 KYC 审核**以及针对新用户的 UPO (Untung Pakai OSL) 活动奖励。用户认为该平台受 OJK 监管且具备国际标准，安全性较高。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -76,13 +71,8 @@
         },
         {
           "platform": "twitter",
-          "author": "@haicharicacha",
-          "url": "https://x.com/haicharicacha/status/2060931133341380774"
-        },
-        {
-          "platform": "twitter",
-          "author": "@HikariKagami",
-          "url": "https://x.com/HikariKagami/status/2059856504338198842"
+          "author": "@edyjayakarya",
+          "url": "https://x.com/edyjayakarya/status/2060928779795722320"
         },
         {
           "platform": "twitter",
@@ -93,8 +83,8 @@
       "published_at": "2026-06-01T04:40:56+00:00"
     },
     {
-      "title": "OSL StableHub 扩大稳定币兑换支持",
-      "summary": "**OSL StableHub** 宣布支持包括 **USDGO、USDC、AUSD、RLUSD 和 USDG** 在内的 5 种稳定币，提供 **1:1 零手续费且零滑点**的兑换服务。",
+      "title": "OSL StableHub 扩展支持 5 种稳定币并上线 USDG",
+      "summary": "OSL StableHub 宣布将支持包括 **USDGO、USDC、AUSD、RLUSD、USDG** 在内的五种稳定币。用户可享受 **1:1 零手续费、零滑点**兑换，并可通过特定资产获取年化收益。同时，OSL 积极推广由 Anchorage Digital 发行的企业级稳定币 **USDGO**。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -105,50 +95,17 @@
         },
         {
           "platform": "twitter",
-          "author": "@PlanetDefi",
-          "url": "https://x.com/PlanetDefi/status/2054534659099251151"
+          "author": "@hananotsorry",
+          "url": "https://x.com/hananotsorry/status/2054466966132605071"
         }
       ],
       "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL BizPay 探讨 AI 与可编程支付的结合",
-      "summary": "OSL 高层在 Money20/20 及相关采访中指出，**OSL BizPay** 正利用稳定币和智能合约赋能**跨境支付**，并认为 Web3 的即时确认特性天然契合 **AI Agent** 支付时代。",
-      "category": "产品动态",
+      "title": "OSL 官方支持账号 @OSL_Support 正式上线",
+      "summary": "OSL 宣布成立官方推特支持账号 **@OSL_Support**，提供 24/7 全天候服务，负责发布**紧急公告**、产品反馈收集及 frontline 用户咨询回复。",
+      "category": "其他",
       "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@LongTreeLabs",
-          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
-        },
-        {
-          "platform": "twitter",
-          "author": "@hananotsorry",
-          "url": "https://x.com/hananotsorry/status/2054466966132605071"
-        }
-      ],
-      "published_at": "2026-05-12T07:35:38+00:00"
-    },
-    {
-      "title": "Bitget Wallet 集成 OSL Pay 提供合规入金通道",
-      "summary": "**Bitget Wallet** 与 **OSL Pay** 达成合作，通过集成其合规基础设施，为用户提供机构级的**法币与加密货币支付**流程。",
-      "category": "合作伙伴",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@BitgetWallet",
-          "url": "https://x.com/BitgetWallet/status/2052268692696940873"
-        }
-      ],
-      "published_at": "2026-05-07T06:06:00+00:00"
-    },
-    {
-      "title": "OSL 官方客服支持账号正式上线",
-      "summary": "OSL 宣布成立官方支持账号 **@OSL_Support**，提供 **24/7 全天候服务**，用于处理紧急公告、产品反馈及用户查询。",
-      "category": "产品动态",
-      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -159,10 +116,10 @@
       "published_at": "2026-05-11T09:10:47+00:00"
     },
     {
-      "title": "OSL 股价触及 52 周低点",
-      "summary": "市场分析指出，加密货币相关股票表现分化，**OSL 股价**与 Metaplanet、Monex 等一同触及 **52 周低点**。",
+      "title": "OSL 股票价格触及 52 周低点",
+      "summary": "市场分析指出，加密货币相关美股及港股表现分化，OSL 集团股票与 Metaplanet 等标的共同触及 **52 周价格低点**。",
       "category": "市场分析",
-      "importance": "low",
+      "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
@@ -171,10 +128,29 @@
         }
       ],
       "published_at": "2026-05-27T18:56:40+00:00"
+    },
+    {
+      "title": "OSL 与 Bitget Wallet 合作推广 BizPay 基础设施",
+      "summary": "OSL BizPay 与 Bitget Wallet 达成合作，为其用户提供合规的**法币与加密货币支付通路**。OSL 强调其可编程支付特性是未来 AI Agent 支付时代的核心组件。",
+      "category": "合作伙伴",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@BitgetWallet",
+          "url": "https://x.com/BitgetWallet/status/2052268692696940873"
+        },
+        {
+          "platform": "twitter",
+          "author": "@LongTreeLabs",
+          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
+        }
+      ],
+      "published_at": "2026-05-12T07:35:38+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-05-11",
-    "to": "2026-06-10"
+    "from": "2026-05-12",
+    "to": "2026-06-11"
   }
 }
