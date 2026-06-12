@@ -1,52 +1,9 @@
 {
-  "total_raw": 69,
+  "total_raw": 68,
   "items": [
     {
-      "title": "OSL 香港上线吉尔吉斯斯坦国家监管的黄金足额抵押稳定币 USDKG",
-      "summary": "OSL 集团宣布在香港持牌交易所 OSL HK 上线 **USDKG**。该币种由吉尔吉斯斯坦政府监管，与美元 1:1 挂钩并由**实物黄金全额抵押**。目前面向专业投资者提供 **USDKG/USDT** 交易对及场外交易服务。此举被视为亚太地区实物资产代币化（RWA）进入合规市场的重大进展。",
-      "category": "产品动态",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@CNCSignalGlobal",
-          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
-        },
-        {
-          "platform": "twitter",
-          "author": "@InvezzPortal",
-          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
-        },
-        {
-          "platform": "twitter",
-          "author": "@Cointelegraph",
-          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
-        }
-      ],
-      "published_at": "2026-05-21T13:20:16+00:00"
-    },
-    {
-      "title": "OSL 集团加入万事达卡（Mastercard）加密货币合作伙伴计划",
-      "summary": "OSL 集团正式加入 **Mastercard Crypto Partner Program (MCPP)**，旨在将合规的稳定币支付方案整合至全球支付网络。通过 **OSL BizPay** 和 **StableHub**，双方将共同推动企业级跨境 B2B 支付和实时可编程支付的基础设施建设。",
-      "category": "合作伙伴",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@osldotcom",
-          "url": "https://x.com/osldotcom/status/2052576724328833190"
-        },
-        {
-          "platform": "twitter",
-          "author": "@ChainInsightLab",
-          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
-        }
-      ],
-      "published_at": "2026-05-08T02:30:00+00:00"
-    },
-    {
-      "title": "星展银行（DBS）成为 OSL 香港业务法币结算银行",
-      "summary": "星展银行正式成为 OSL 香港业务的**法币结算银行**，并为 OSL Digital Securities 开通账户。此项合作进一步强化了 OSL 的**合规银行网络**和机构客户服务能力。",
+      "title": "星展银行（DBS）成为 OSL 香港法币结算银行",
+      "summary": "**星展银行**正式成为 OSL 在香港业务的**法币结算银行**，并为 OSL Digital Securities 开通账户。此举强化了 OSL 的**合规银行网络**及服务机构客户的能力。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -59,8 +16,70 @@
       "published_at": "2026-06-04T07:39:29+00:00"
     },
     {
-      "title": "OSL 印度尼西亚用户对免费出金及 KYC 体验反馈积极",
-      "summary": "多位印尼用户在社交媒体分享了 OSL 平台的使用体验，重点称赞其**免手续费的链上及银行转账提现**、**快速的 KYC 审核**以及针对新用户的 UPO (Untung Pakai OSL) 活动奖励。用户认为该平台受 OJK 监管且具备国际标准，安全性较高。",
+      "title": "OSL 集团加入万事达卡（Mastercard）加密货币伙伴计划",
+      "summary": "OSL 集团加入 **Mastercard Crypto Partner Program**，旨在通过 **OSL BizPay** 和 **StableHub** 整合合规的稳定币支付解决方案，推动全球 B2B 实时支付。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2052576724328833190"
+        },
+        {
+          "platform": "twitter",
+          "author": "@ChainInsightLab",
+          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
+        },
+        {
+          "platform": "twitter",
+          "author": "@ItsBitcoinWorld",
+          "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
+        }
+      ],
+      "published_at": "2026-05-08T02:30:00+00:00"
+    },
+    {
+      "title": "OSL 在香港上线吉尔吉斯斯坦国家监管的黄金稳定币 USDKG",
+      "summary": "OSL 官方上线 **USDKG**，这是由**吉尔吉斯共和国**国家监督、与美元 1:1 挂钩且由实物黄金支持的稳定币。该资产面向 OSL 的专业投资者提供，助力 **RWA（现实世界资产）代币化**落地。",
+      "category": "产品动态",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Cointelegraph",
+          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
+        },
+        {
+          "platform": "twitter",
+          "author": "@CoinpediaNews",
+          "url": "https://x.com/CoinpediaNews/status/2057457522609664276"
+        },
+        {
+          "platform": "twitter",
+          "author": "@CNCSignalGlobal",
+          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
+        }
+      ],
+      "published_at": "2026-05-21T13:20:16+00:00"
+    },
+    {
+      "title": "香港要求持牌交易所必须通过全资子公司托管客户资产",
+      "summary": "监管动态显示，香港要求每家持牌交易所必须通过其**全资子公司**托管资产，不接受第三方托管商。OSL 作为合规交易所被视为行业标杆。",
+      "category": "监管合规",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Kilenktor_Maks",
+          "url": "https://x.com/Kilenktor_Maks/status/2063965449516142965"
+        }
+      ],
+      "published_at": "2026-06-08T12:44:44+00:00"
+    },
+    {
+      "title": "OSL 印度尼西亚用户反馈：低手续费、快速 KYC 与 OJK 监管认可",
+      "summary": "多位印尼用户分享使用体验，称赞 OSL 平台 **KYC 审核快**、**充值免费**且**提现（法币及链上）零手续费**。用户特别提到 OSL 已获得 **OJK 监管**，安全性高于其他平台。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -71,20 +90,34 @@
         },
         {
           "platform": "twitter",
+          "author": "@haicharicacha",
+          "url": "https://x.com/haicharicacha/status/2060931133341380774"
+        },
+        {
+          "platform": "twitter",
           "author": "@edyjayakarya",
           "url": "https://x.com/edyjayakarya/status/2060928779795722320"
-        },
+        }
+      ],
+      "published_at": "2026-06-01T04:40:56+00:00"
+    },
+    {
+      "title": "OSL 印度尼西亚推出 Launchpool 与质押赚币功能",
+      "summary": "用户反馈显示 OSL Indonesia 已上线 **Launchpool**、**Earn & Staking** 以及 **Learn & Earn** 等生态功能，使持币用户能够获取额外收益。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
         {
           "platform": "twitter",
           "author": "@RocioX5454",
           "url": "https://x.com/RocioX5454/status/2052051965597946088"
         }
       ],
-      "published_at": "2026-06-01T04:40:56+00:00"
+      "published_at": "2026-05-06T15:44:48+00:00"
     },
     {
-      "title": "OSL StableHub 扩展支持 5 种稳定币并上线 USDG",
-      "summary": "OSL StableHub 宣布将支持包括 **USDGO、USDC、AUSD、RLUSD、USDG** 在内的五种稳定币。用户可享受 **1:1 零手续费、零滑点**兑换，并可通过特定资产获取年化收益。同时，OSL 积极推广由 Anchorage Digital 发行的企业级稳定币 **USDGO**。",
+      "title": "OSL 推出企业级稳定币 USDGO 并扩展 StableHub 支持",
+      "summary": "OSL 推出由 Anchorage Digital 发行的 **USDGO 稳定币**，并宣布 **OSL StableHub** 将支持包括 USDGO、USDC、RLUSD 在内的 5 种稳定币 1:1 无手续费兑换。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -102,22 +135,22 @@
       "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL 官方支持账号 @OSL_Support 正式上线",
-      "summary": "OSL 宣布成立官方推特支持账号 **@OSL_Support**，提供 24/7 全天候服务，负责发布**紧急公告**、产品反馈收集及 frontline 用户咨询回复。",
-      "category": "其他",
+      "title": "Bitget Wallet 接入 OSL Pay 支付基础设施",
+      "summary": "**Bitget Wallet** 宣布通过 **OSL Pay** 提供合规的法币与加密货币支付通道，利用 OSL 的机构级基础设施支持全球市场的合规交易流。",
+      "category": "合作伙伴",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@OSL_Support",
-          "url": "https://x.com/OSL_Support/status/2053764745812127990"
+          "author": "@BitgetWallet",
+          "url": "https://x.com/BitgetWallet/status/2052268692696940873"
         }
       ],
-      "published_at": "2026-05-11T09:10:47+00:00"
+      "published_at": "2026-05-07T06:06:00+00:00"
     },
     {
-      "title": "OSL 股票价格触及 52 周低点",
-      "summary": "市场分析指出，加密货币相关美股及港股表现分化，OSL 集团股票与 Metaplanet 等标的共同触及 **52 周价格低点**。",
+      "title": "OSL 股价触及 52 周低点",
+      "summary": "市场分析显示，在加密货币相关股票的表现中，**OSL 股票**（863.HK）近期处于 **52 周低点**，与 Hynix、AMD 等表现强劲的科技股形成对比。",
       "category": "市场分析",
       "importance": "medium",
       "sources": [
@@ -130,27 +163,22 @@
       "published_at": "2026-05-27T18:56:40+00:00"
     },
     {
-      "title": "OSL 与 Bitget Wallet 合作推广 BizPay 基础设施",
-      "summary": "OSL BizPay 与 Bitget Wallet 达成合作，为其用户提供合规的**法币与加密货币支付通路**。OSL 强调其可编程支付特性是未来 AI Agent 支付时代的核心组件。",
-      "category": "合作伙伴",
-      "importance": "medium",
+      "title": "OSL Support 官方客服推特账号上线",
+      "summary": "OSL 宣布 **@OSL_Support** 账号正式启用，提供 **24/7 全天候支持**，涵盖紧急公告、产品咨询及功能反馈。",
+      "category": "其他",
+      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@BitgetWallet",
-          "url": "https://x.com/BitgetWallet/status/2052268692696940873"
-        },
-        {
-          "platform": "twitter",
-          "author": "@LongTreeLabs",
-          "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
+          "author": "@OSL_Support",
+          "url": "https://x.com/OSL_Support/status/2053764745812127990"
         }
       ],
-      "published_at": "2026-05-12T07:35:38+00:00"
+      "published_at": "2026-05-11T09:10:47+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-05-12",
-    "to": "2026-06-11"
+    "from": "2026-05-13",
+    "to": "2026-06-12"
   }
 }
