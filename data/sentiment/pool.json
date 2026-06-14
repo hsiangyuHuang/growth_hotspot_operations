@@ -1,31 +1,12 @@
 {
-  "total_raw": 65,
+  "total_raw": 64,
   "items": [
     {
-      "title": "星展銀行成為 OSL 香港法幣結算銀行",
-      "summary": "**星展銀行 (DBS)** 正式成為 OSL 香港業務的**法幣結算銀行**，並為 OSL Digital Securities 開通賬戶。此舉進一步強化了 OSL 的**合規銀行網絡**及機構客戶服務能力。",
-      "category": "合作伙伴",
-      "importance": "high",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@OSL_HK",
-          "url": "https://x.com/OSL_HK/status/2062439080601043412"
-        }
-      ],
-      "published_at": "2026-06-04T07:39:29+00:00"
-    },
-    {
-      "title": "OSL 上線全球首個國家監管的黃金穩定幣 USDKG",
-      "summary": "OSL 宣佈上線由**吉爾吉斯共和國**監督、1:1 錨定美元且有**實物黃金支撐**的穩定幣 **USDKG**。該資產面向專業投資者，標誌著 OSL 在 **RWA（現實世界資產）代幣化**領域的重大突破。",
+      "title": "OSL 上线由吉尔吉斯斯坦国家监管的金本位稳定币 USDKG",
+      "summary": "OSL 交易所宣布在香港上线首个由**吉尔吉斯斯坦国家监督、实物黄金支持**的稳定币 **USDKG**。该资产按 1:1 锚定美元，目前面向专业投资者提供 **OTC 及 Pro Trade 交易**。此举被视为 RWA（现实世界资产）代币化在合规市场的重要进展。",
       "category": "产品动态",
       "importance": "high",
       "sources": [
-        {
-          "platform": "twitter",
-          "author": "@Cointelegraph",
-          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
-        },
         {
           "platform": "twitter",
           "author": "@CNCSignalGlobal",
@@ -33,20 +14,25 @@
         },
         {
           "platform": "twitter",
-          "author": "@BitcoinWorldN",
-          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
+          "author": "@Cointelegraph",
+          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
         },
         {
           "platform": "twitter",
           "author": "@InvezzPortal",
           "url": "https://x.com/InvezzPortal/status/2057382948395954620"
+        },
+        {
+          "platform": "twitter",
+          "author": "@BitcoinWorldN",
+          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
         }
       ],
-      "published_at": "2026-05-21T13:20:16+00:00"
+      "published_at": "2026-05-25T03:56:00+00:00"
     },
     {
-      "title": "OSL 集團加入萬事達卡加密貨幣夥伴計劃",
-      "summary": "OSL 集團宣佈加入 **Mastercard 加密貨幣合作夥伴計劃 (MCPP)**，旨在利用 **OSL BizPay** 和 **StableHub** 基礎設施，將合規的**穩定幣支付方案**整合至全球金融體系，推動 B2B 跨境結算。",
+      "title": "OSL 集团加入万事达卡（Mastercard）加密货币伙伴计划",
+      "summary": "OSL 集团正式加入 **Mastercard Crypto Credential Partner Program**，旨在通过 **OSL BizPay** 和 **StableHub** 基础设施，将合规的稳定币支付方案整合至全球支付网络，赋能企业实现**实时、跨境 B2B 支付**。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -59,13 +45,32 @@
           "platform": "twitter",
           "author": "@ItsBitcoinWorld",
           "url": "https://x.com/ItsBitcoinWorld/status/2052648646944907415"
+        },
+        {
+          "platform": "twitter",
+          "author": "@ChainInsightLab",
+          "url": "https://x.com/ChainInsightLab/status/2052677686124761298"
         }
       ],
       "published_at": "2026-05-08T02:30:00+00:00"
     },
     {
-      "title": "OSL 印尼站推廣及用戶提幣費用反饋",
-      "summary": "OSL 印尼站（OSL ID）受到社區關注，用戶反饋其 **KYC 流程極速**，且提供**提幣至本地銀行及鏈上轉賬零手續費**（$0 fee）的優惠。此外，平台推出的 **UPO (Untung Pakai OSL)** 活動提供總價值 3.5 億印尼盾的獎勵。",
+      "title": "星展银行（DBS）成为 OSL 香港业务法币结算银行",
+      "summary": "**星展银行**正式为 OSL 旗下的 **OSL Digital Securities** 开通账户，担任其**法币结算银行**。此项合作巩固了 OSL 的合规银行网络，大幅强化了其为机构客户提供法币存取与结算的能力。",
+      "category": "合作伙伴",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@OSL_HK",
+          "url": "https://x.com/OSL_HK/status/2062439080601043412"
+        }
+      ],
+      "published_at": "2026-06-04T07:39:29+00:00"
+    },
+    {
+      "title": "OSL Indonesia 推出大幅优惠及零费用政策，用户反馈积极",
+      "summary": "OSL 印尼站通过 **UPO（Untung Pakai OSL）** 活动提供总价值数亿印尼盾的奖励。用户反馈指出 OSL 提供**免费提币到银行、零手续费链上转账、零充值费**及快速 KYC 流程。社区对平台受 **OJK 监管**的安全性表示认可。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -76,20 +81,25 @@
         },
         {
           "platform": "twitter",
-          "author": "@edyjayakarya",
-          "url": "https://x.com/edyjayakarya/status/2060928779795722320"
+          "author": "@haicharicacha",
+          "url": "https://x.com/haicharicacha/status/2060931133341380774"
         },
         {
           "platform": "twitter",
-          "author": "@haicharicacha",
-          "url": "https://x.com/haicharicacha/status/2060641674272137324"
+          "author": "@HikariKagami",
+          "url": "https://x.com/HikariKagami/status/2059856504338198842"
+        },
+        {
+          "platform": "twitter",
+          "author": "@DioeconmeXBT",
+          "url": "https://x.com/DioeconmeXBT/status/2053447649681129694"
         }
       ],
       "published_at": "2026-06-01T04:40:56+00:00"
     },
     {
-      "title": "OSL 擴展 StableHub 支持多種穩定幣 1:1 兌換",
-      "summary": "OSL **StableHub** 宣佈將支持包括 **USDGO、USDC、AUSD、RLUSD 和 USDG** 在內的五種穩定幣，為用戶提供 **1:1 無手續費、零滑點**的兌換服務，並針對特定資產提供 APR 獎勵。",
+      "title": "OSL 扩展 StableHub 稳定币枢纽，支持多款合规稳定币",
+      "summary": "OSL **StableHub** 宣布将支持包括 **USDGO, USDC, AUSD, RLUSD, USDG** 在内的 5 种稳定币。用户可享受 **1:1 零费用、零滑点兑换**，并能在部分资产上获得 **APR 奖励**，旨在提升稳定币作为流动性工具的实用性。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -102,62 +112,39 @@
           "platform": "twitter",
           "author": "@PlanetDefi",
           "url": "https://x.com/PlanetDefi/status/2054534659099251151"
+        },
+        {
+          "platform": "twitter",
+          "author": "@hananotsorry",
+          "url": "https://x.com/hananotsorry/status/2054466966132605071"
         }
       ],
       "published_at": "2026-05-14T06:44:40+00:00"
     },
     {
-      "title": "OSL 探討 AI Agent 與 Web3 可編程支付的契合度",
-      "summary": "OSL BizPAY 負責人 Albert Wong 在活動中指出，Web3 的**可編程性與即時確認**特性是未來 **AI Agent 支付時代**的必選項。OSL 正通過 BizPay 賦能傳統金融實現高效跨境支付。",
-      "category": "产品动态",
+      "title": "OSL 探索 AI 与 Web3 结合及可编程支付应用",
+      "summary": "OSL 管理层在多个活动（如 Money20/20）中探讨 **Web3 可编程支付与 AI Agent** 的契合点。通过 **OSL BizPay**，平台正利用稳定币和智能合约赋能传统金融机构进行高效的**跨境支付与实时结算**。",
+      "category": "市场分析",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
           "author": "@LongTreeLabs",
           "url": "https://x.com/LongTreeLabs/status/2054103188786065895"
-        }
-      ],
-      "published_at": "2026-05-12T07:35:38+00:00"
-    },
-    {
-      "title": "OSL 印尼站宣佈接入 Nobu 銀行並加入 ICEx 生態",
-      "summary": "OSL 印尼站正式接入 **Nobu National Bank** 以優化用戶存款流程，並宣佈加入 **ICEx Group 生態系統**，進一步擴大在東南亞市場的合規版圖。",
-      "category": "合作伙伴",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@mizzelaalphax",
-          "url": "https://x.com/mizzelaalphax/status/2054197516560920698"
         },
         {
           "platform": "twitter",
-          "author": "@ICExGroup",
-          "url": "https://x.com/ICExGroup/status/2059525548104417460"
+          "author": "@osldotcom",
+          "url": "https://x.com/osldotcom/status/2056215480311140815"
         }
       ],
-      "published_at": "2026-05-27T06:42:09+00:00"
+      "published_at": "2026-05-18T03:29:07+00:00"
     },
     {
-      "title": "市場分析：OSL 股價觸及 52 週低點",
-      "summary": "在加密貨幣相關股票的分析中，OSL 與 Metaplanet、Monex 等公司被列入**觸及 52 週低點**的名單，反映了近期二級市場對其股票表現的擔憂。",
-      "category": "市场分析",
+      "title": "OSL 官方客服渠道在 Twitter 正式上线",
+      "summary": "OSL 宣布正式启动官方支持账号 **@OSL_Support**，提供 **24/7 全天候在线服务**。该频道将用于发布紧急通知、处理用户查询、收集产品建议及功能提议，以提升品牌交互质量。",
+      "category": "产品动态",
       "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@matthew_sigel",
-          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
-        }
-      ],
-      "published_at": "2026-05-27T18:56:40+00:00"
-    },
-    {
-      "title": "OSL 官方客服賬號 OSL Support 正式上線",
-      "summary": "OSL 在 X 平臺開設官方** 24/7 客服支持賬號 @OSL_Support**，用於發佈緊急公告、收集產品反饋及提供一線技術諮詢。",
-      "category": "其他",
-      "importance": "low",
       "sources": [
         {
           "platform": "twitter",
@@ -166,10 +153,76 @@
         }
       ],
       "published_at": "2026-05-11T09:10:47+00:00"
+    },
+    {
+      "title": "TT Chain 宣布 $TT 即将上线 OSL 交易所",
+      "summary": "**TT Chain** 官方预告其代币 **$TT** 将上线 OSL 交易所。此举被视为 TT Chain 拓展全球合规市场的重要里程碑，具体上市细节将由官方稍后公布。",
+      "category": "产品动态",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@TTChain_",
+          "url": "https://x.com/TTChain_/status/2060631714268156149"
+        }
+      ],
+      "published_at": "2026-05-30T07:57:40+00:00"
+    },
+    {
+      "title": "OSL Indonesia 合作伙伴更新：入驻 ICEx 生态并支持 Nobu 银行充值",
+      "summary": "OSL 印尼站正式加入 **ICEx Group** 生态系统。同时，平台新增支持通过 **Nobu National Bank** 直接进行存款，进一步提升了印尼本地用户的资产存取便捷度。",
+      "category": "合作伙伴",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@ICExGroup",
+          "url": "https://x.com/ICExGroup/status/2059525548104417460"
+        },
+        {
+          "platform": "twitter",
+          "author": "@mizzelaalphax",
+          "url": "https://x.com/mizzelaalphax/status/2054197516560920698"
+        }
+      ],
+      "published_at": "2026-05-27T06:42:09+00:00"
+    },
+    {
+      "title": "香港加密监管框架对比：OSL 作为持牌标杆被引用",
+      "summary": "在关于香港与美国/新加坡监管差异的讨论中，OSL 与 HashKey 作为**香港持牌交易所**的代表被频繁提及。分析指出香港要求持牌平台通过全资子公司托管资产，这种**强制性的托管规定**与新加坡及阿联酋的模式形成鲜明对比。",
+      "category": "监管合规",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Kilenktor_Maks",
+          "url": "https://x.com/Kilenktor_Maks/status/2063965449516142965"
+        },
+        {
+          "platform": "twitter",
+          "author": "@wugaoxi",
+          "url": "https://x.com/wugaoxi/status/2053409813690974331"
+        }
+      ],
+      "published_at": "2026-06-08T12:44:44+00:00"
+    },
+    {
+      "title": "OSL 股票（0863.HK）市场表现分析：触及 52 周低点",
+      "summary": "市场分析指出，在加密货币相关股票的表现中，OSL 集团（OSL Group）近期触及 **52 周低点**。这与部分日本及美国的加密概念股触及高点的走势形成反差。",
+      "category": "市场分析",
+      "importance": "low",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@matthew_sigel",
+          "url": "https://x.com/matthew_sigel/status/2059710397033099327"
+        }
+      ],
+      "published_at": "2026-05-27T18:56:40+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-05-14",
-    "to": "2026-06-13"
+    "from": "2026-05-15",
+    "to": "2026-06-14"
   }
 }
