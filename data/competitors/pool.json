@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-05-18",
-    "to": "2026-06-17"
+    "from": "2026-05-19",
+    "to": "2026-06-18"
   },
   "competitors": [
     {
@@ -1005,7 +1005,7 @@
       "name": "Binance",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=binance.com&sz=64",
-      "summary": "欧盟合规进程面临重大挑战，希腊监管机构或将拒绝其 MiCA 许可申请，威胁其在欧盟的市场准入。",
+      "summary": "近期未监测到 Binance 的公开动态",
       "events": [
         {
           "title": "希腊监管机构或将拒绝其欧盟 MiCA 牌照申请",
@@ -2226,32 +2226,6 @@
           ]
         },
         {
-          "title": "Binance Online 发布 2026 市场趋势洞察",
-          "category": "其他",
-          "summary": "**Binance Online** 专题讨论：\n- 邀请 CZ、Chamath 及 Pomp 探讨 **2026 年资本流向**\n- 深入解析加密货币市场结构的根本性变化",
-          "date": "2026-05-18",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Binance Blog",
-              "url": "https://x.com/binance/status/2056027101828993038"
-            }
-          ]
-        },
-        {
-          "title": "#BuildWithYou 社区活动结果公布",
-          "category": "活动推广",
-          "summary": "**#BuildWithYou** 活动获奖名单：\n- 奖励积极参与产品功能反馈的社区用户\n- 旨在提升社区在产品建设中的参与度",
-          "date": "2026-05-18",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2055845762647605251"
-            }
-          ]
-        },
-        {
           "title": "上线 x402 可编程支付协议",
           "category": "产品更新",
           "summary": "**Binance 推出基于 BNB Chain 的 x402 协议**，支持 HTTP 原生可编程支付：\n- 实现**离线授权与链上结算**\n- 专为**软件原生商务和 AI 代理驱动**的交易设计\n- 支持按需付费和基于使用量的计费模式",
@@ -2330,19 +2304,6 @@
             {
               "name": "twitter:@WuBlockchain",
               "url": "https://x.com/WuBlockchain/status/2056449742960468352"
-            }
-          ]
-        },
-        {
-          "title": "CZ 披露资本配置战略",
-          "category": "融资/IPO",
-          "summary": "**赵长鹏 (CZ)** 在 Consensus Miami 2026 演讲中表示：\n- 个人及 Yzi Labs 仍将 **70%–80% 的资本** 投入区块链领域\n- 区块链仍是其核心专业领域，并看好 AI 代理对行业的改变",
-          "date": "2026-05-07",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2056087357472845916"
             }
           ]
         },
@@ -3373,45 +3334,6 @@
           ]
         },
         {
-          "title": "更新月度储备证明 (PoR)",
-          "category": "其他",
-          "summary": "**资产安全性** 披露更新：\n- 平台资产保持 **1:1 比例** 储备\n- 强调已连续 3 年以上发布公开可验证的储备证明",
-          "date": "2026-05-18",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2056125629829890091"
-            }
-          ]
-        },
-        {
-          "title": "美国用户专项 XRP 激励活动",
-          "category": "活动推广",
-          "summary": "推出 **5 天打卡奖励** 计划：\n- 新用户交易 $10 即可获得 $10 XRP\n- 连续交易达标最高可获得 **$100 XRP** 奖励",
-          "date": "2026-05-18",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2056034845625667643"
-            }
-          ]
-        },
-        {
-          "title": "欧洲市场存款利息推广",
-          "category": "活动推广",
-          "summary": "针对 **欧洲用户** 的衍生品激励：\n- 存入 $10 起即可参与\n- 衍生品账户存款可赚取最高 **5% 的年化收益**",
-          "date": "2026-05-18",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2055898635720593672"
-            }
-          ]
-        },
-        {
           "title": "发布第 43 期储备证明 (PoR)",
           "category": "其他",
           "summary": "**OKX** 发布截至 5 月 7 日的储备快照：\n- **BTC** 持仓下降 5.0% 至 11.1 万枚；\n- **ETH** 持仓下降 3.12% 至 156 万枚；\n- **USDT** 持仓增加 2810 万枚。",
@@ -3568,7 +3490,7 @@
       "name": "Bybit",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=bybit.com&sz=64",
-      "summary": "持续扩展衍生品业务，上线 Tether Gold 期权交易市场并维持高额资产流动。",
+      "summary": "近期未监测到 Bybit 的公开动态",
       "events": [
         {
           "title": "推出 Tether Gold (XAUt) 专属期权市场",
@@ -4291,19 +4213,6 @@
           ]
         },
         {
-          "title": "Bybit x MegaETH 联合 AMA 活动",
-          "category": "合作伙伴",
-          "summary": "举办 X Spaces 专题讨论：\n- 探讨 **$USDM**、**$MEGA** 及生态系统更新\n- 提供 **250 USDT** 交易赠金作为参与奖励",
-          "date": "2026-05-20",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2055844893675626645"
-            }
-          ]
-        },
-        {
           "title": "TradFi 永续合约上线期货机器人",
           "category": "产品更新",
           "summary": "**上线传统金融资产永续合约机器人**：- 支持特斯拉(TSLA)、谷歌(GOOGL)、亚马逊(AMZN)等代币化版本- 允许用户通过策略机器人自动化执行交易",
@@ -4417,19 +4326,6 @@
             {
               "name": "twitter:@Bybit_Official",
               "url": "https://x.com/Bybit_Official/status/2056328953183293492"
-            }
-          ]
-        },
-        {
-          "title": "BTC 披萨节系列促销活动",
-          "category": "活动推广",
-          "summary": "推出 **Pizza Index** 及卡片激励：\n- **Bybit Card** 用户购买披萨可享受返现奖励\n- 推出专门的指数工具致敬比特币披萨节",
-          "date": "2026-05-18",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2055981657748869269"
             }
           ]
         },
@@ -4577,7 +4473,7 @@
       "name": "Coinbase",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=coinbase.com&sz=64",
-      "summary": "通过 AI 技术与代币化传统金融产品加速向“全能交易所”转型。",
+      "summary": "近期未监测到 Coinbase 的公开动态",
       "events": [
         {
           "title": "发布系统大更新：集成 AI 顾问与统一流动性",
@@ -5558,19 +5454,6 @@
             {
               "name": "twitter:@EleanorTerrett",
               "url": "https://x.com/EleanorTerrett/status/2056429023811522884"
-            }
-          ]
-        },
-        {
-          "title": "上线 AI 基础设施股票永续合约",
-          "category": "产品更新",
-          "summary": "Coinbase 计划拓宽衍生品市场：\n- 5 月 18 日上线 **4 只 AI 基础设施股票** 的永续合约\n- 进一步模糊加密市场与传统科技股的交易边界",
-          "date": "2026-05-18",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5210808"
             }
           ]
         },
@@ -6975,7 +6858,7 @@
       "name": "bitbank",
       "region": "JP",
       "logo": "https://www.google.com/s2/favicons?domain=bitbank.cc&sz=64",
-      "summary": "近期侧重于发布比特币市场深度分析和技术走势预测，密切关注宏观法案对行情的影响。",
+      "summary": "近期未监测到 bitbank 的公开动态",
       "events": [
         {
           "title": "发布比特币市场行情与技术趋势分析报告",
@@ -8766,19 +8649,6 @@
           ]
         },
         {
-          "title": "Level Up 用户专享旅行奖励活动",
-          "category": "活动推广",
-          "summary": "**Crypto.com** 针对其 Level Up 会员推出高额消费激励：\n- **奖励力度**：在预订住宿、航班、邮轮及租车时，最高可获得 **40% 的加密货币奖励**\n- **目标群体**：仅限 **Level Up 用户**参与\n- **场景覆盖**：全面覆盖主流**旅行及交通租赁消费**",
-          "date": "2024-11-20",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/cryptocom/status/2056038602589589794"
-            }
-          ]
-        },
-        {
           "title": "启动巴黎赛事预测互动活动",
           "category": "活动推广",
           "summary": "**Crypto.com** 在社交媒体上针对巴黎体育赛事决赛发起预测活动。要点包括：- 引导用户通过指定链接参与赛果**预测**- 结合热门体育赛事提升社区**活跃度**与用户参与感",
@@ -9840,7 +9710,7 @@
       "name": "Tokocrypto",
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=tokocrypto.com&sz=64",
-      "summary": "持续运营中，近期侧重于通过旗下的 Tokocrypto News 平台输出加密市场分析，涵盖主流币种分析、价格预测及宏观经济对市场的影响。",
+      "summary": "近期未监测到 Tokocrypto 的公开动态",
       "events": [
         {
           "title": "发布 2026 年 6 月 15 日加密市场技术分析与交易信号",
@@ -10846,27 +10716,6 @@
           ]
         },
         {
-          "title": "举办 Bitcoin Pizza Talks 职业导航直播活动",
-          "category": "活动推广",
-          "summary": "**开展 Web3 职业规划主题直播**：- **活动核心**：探讨如何打破行业壁垒进入 Web3，分享职业路径与入门技巧；- **职能覆盖**：详细解析市场营销、社区运营等多个职位的岗位机会；- **嘉宾阵营**：邀请行业专家 Sharon 及 Tokoranger 主持人进行深度对话；- **奖励设置**：在直播互动环节中为参与用户提供额外奖励。",
-          "date": "2026-05-17",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Tokocrypto/status/2055983203006271734"
-            },
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Tokocrypto/status/2055981154847826295"
-            },
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Tokocrypto/status/2055979141766205536"
-            }
-          ]
-        },
-        {
           "title": "举办 Bitcoin Pizza Day 社交实验活动",
           "category": "活动推广",
           "summary": "**Tokocrypto** 在雅加达 Blok M 地区开展了针对性的社交实验：- **线下普及**：通过与女性群体互动推广比特币文化 - **品牌曝光**：发布现场记录视频，利用 Pizza Day 节点进行内容营销",
@@ -11640,7 +11489,7 @@
       "name": "盈透证券",
       "region": "BROKER",
       "logo": "https://www.google.com/s2/favicons?domain=interactivebrokers.com&sz=64",
-      "summary": "盈透证券近期通过其 IBKR Campus 平台密集发布宏观经济分析与市场评论，重点关注美联储人事变动、地缘政治对大宗商品的影响及加密货币走势。",
+      "summary": "近期未监测到 盈透证券 的公开动态",
       "events": [
         {
           "title": "IBKR Campus 发布宏观经济及美联储政策深度展望",
