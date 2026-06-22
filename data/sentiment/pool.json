@@ -1,9 +1,38 @@
 {
-  "total_raw": 46,
+  "total_raw": 45,
   "items": [
     {
-      "title": "星展銀行成為 OSL 香港法幣結算銀行",
-      "summary": "**星展銀行 (DBS)** 正式成為 OSL 香港業務的**法幣結算銀行**，並為其持牌實體 OSL Digital Securities 開通賬戶，進一步強化其**合規銀行網絡**。",
+      "title": "OSL 香港上架黄金抵押稳定币 USDKG",
+      "summary": "OSL 宣布在香港持牌平台上线由**吉尔吉斯共和国**支持、以物理黄金 1:1 抵押的稳定币 **USDKG**。该资产面向专业投资者提供 **USDKG/USDT** 交易对，标志着**现实资产代币化 (RWA)** 在香港合规市场的进一步扩张。",
+      "category": "产品动态",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@CNCSignalGlobal",
+          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
+        },
+        {
+          "platform": "twitter",
+          "author": "@CoinpediaNews",
+          "url": "https://x.com/CoinpediaNews/status/2057457522609664276"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Cointelegraph",
+          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
+        },
+        {
+          "platform": "twitter",
+          "author": "@InvezzPortal",
+          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
+        }
+      ],
+      "published_at": "2026-05-21T08:48:13+00:00"
+    },
+    {
+      "title": "星展银行成为 OSL 法币结算银行",
+      "summary": "**星展银行 (DBS)** 正式成为 OSL 香港业务的**法币结算银行**，并为 OSL Digital Securities 开通账户。此举旨在强化 OSL 的**合规银行网络**，提升机构客户的服务能力。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -16,32 +45,22 @@
       "published_at": "2026-06-04T07:39:29+00:00"
     },
     {
-      "title": "OSL 香港上線吉爾吉斯斯坦政府監督的黃金穩定幣 USDKG",
-      "summary": "OSL 宣佈上線由**吉爾吉斯斯坦政府監督**的 1:1 黃金抵押穩定幣 **USDKG**。該產品面向**專業投資者**，標誌着實物資產代幣化（RWA）進入香港合規市場。",
-      "category": "产品动态",
+      "title": "OSL Indonesia 加入 ICEx 生态系统",
+      "summary": "PT Multikripto Exchange Indonesia (**OSL Indonesia**) 正式进入 **ICEx Group 生态系统**，旨在深化在印尼市场的合规数字资产布局。",
+      "category": "合作伙伴",
       "importance": "high",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@Cointelegraph",
-          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
-        },
-        {
-          "platform": "twitter",
-          "author": "@CNCSignalGlobal",
-          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
-        },
-        {
-          "platform": "twitter",
-          "author": "@InvezzPortal",
-          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
+          "author": "@ICExGroup",
+          "url": "https://x.com/ICExGroup/status/2059525548104417460"
         }
       ],
-      "published_at": "2026-05-25T03:56:00+00:00"
+      "published_at": "2026-05-27T06:42:09+00:00"
     },
     {
-      "title": "OSL Indonesia 用戶反饋與推廣活動",
-      "summary": "印尼用戶對 OSL Indonesia 給予正面評價，稱讚其 **KYC 審核速度快**、**銀行與鏈上提現零手續費**。同時，官方啟動了總額達 **3.5 億印尼盾** 的 UPO 交易競賽與註冊獎勵活動。",
+      "title": "印尼用户好评 OSL 免提币手续费政策",
+      "summary": "多位用户反馈 **OSL Indonesia** 的使用体验极佳，重点提及**提币（法币及链上）零手续费**、**KYC 流程极速**以及新用户注册奖励。用户认为其受 **OJK 监管**且交易成本低，是理想的投资平台。",
       "category": "用户反馈",
       "importance": "medium",
       "sources": [
@@ -53,47 +72,19 @@
         {
           "platform": "twitter",
           "author": "@haicharicacha",
-          "url": "https://x.com/haicharicacha/status/2062927549764878339"
+          "url": "https://x.com/haicharicacha/status/2060931133341380774"
         },
         {
           "platform": "twitter",
-          "author": "@HikariKagami",
-          "url": "https://x.com/HikariKagami/status/2059856504338198842"
+          "author": "@edyjayakarya",
+          "url": "https://x.com/edyjayakarya/status/2060928779795722320"
         }
       ],
-      "published_at": "2026-06-05T16:00:29+00:00"
+      "published_at": "2026-06-01T04:40:56+00:00"
     },
     {
-      "title": "TT Chain ($TT) 即將上線 OSL 交易所",
-      "summary": "**TT Chain ($TT)** 官方宣佈即將在 OSL 交易所上線，作為其全球市場擴展的一部分，具體上市細節待公佈。",
-      "category": "产品动态",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@TTChain_",
-          "url": "https://x.com/TTChain_/status/2060631714268156149"
-        }
-      ],
-      "published_at": "2026-05-30T07:57:40+00:00"
-    },
-    {
-      "title": "OSL 支持 Anchorage Digital 發行的 USDGO 穩定幣",
-      "summary": "由 Anchorage Digital 發行的 1:1 美元抵押穩定幣 **USDGO** 獲得 OSL 支持，旨在為機構級用戶提供合規的**全球支付**與儲備透明度。",
-      "category": "合作伙伴",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@DeclanCrypt",
-          "url": "https://x.com/DeclanCrypt/status/2063879021637571030"
-        }
-      ],
-      "published_at": "2026-06-08T07:01:18+00:00"
-    },
-    {
-      "title": "OSL 股價觸及 52 週低點",
-      "summary": "在加密資產類股票分析中，**OSL 股價**與 Metaplanet、Monex 等公司一同被列為處於 **52 週低點**的個股。",
+      "title": "OSL 股价触及 52 周低点",
+      "summary": "市场分析显示，在一众加密货币关联股票中，**OSL 股价触及 52 周新低**，与 Hynix、AMD 等创下新高的股票形成对比。",
       "category": "市场分析",
       "importance": "medium",
       "sources": [
@@ -106,36 +97,60 @@
       "published_at": "2026-05-27T18:56:40+00:00"
     },
     {
-      "title": "OSL Indonesia 加入 ICEx Group 生態系統",
-      "summary": "OSL 印尼分公司（PT Multikripto Exchange Indonesia）正式宣佈進入 **ICEx Group 生態系統**，旨在加強印尼市場的合規交易佈局。",
-      "category": "合作伙伴",
+      "title": "OSL 增加 USDGO 与 TT Chain 支持",
+      "summary": "OSL 宣布支持由 Anchorage Digital 发行的 **USDGO 稳定币**，并确认即将上线 **TT Chain ($TT)** 交易，持续丰富平台的资产种类。",
+      "category": "产品动态",
       "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@ICExGroup",
-          "url": "https://x.com/ICExGroup/status/2059525548104417460"
+          "author": "@DeclanCrypt",
+          "url": "https://x.com/DeclanCrypt/status/2063879021637571030"
+        },
+        {
+          "platform": "twitter",
+          "author": "@TTChain_",
+          "url": "https://x.com/TTChain_/status/2060631714268156149"
         }
       ],
-      "published_at": "2026-05-27T06:42:09+00:00"
+      "published_at": "2026-06-08T07:01:18+00:00"
     },
     {
-      "title": "OSL 成為 Proof of Talk 2026 黃金合作夥伴",
-      "summary": "OSL 宣佈作為**黃金合作夥伴**加入 **Proof of Talk 2026** 峰會，展示其在亞洲穩定幣交易與支付基礎設施方面的領先地位。",
+      "title": "OSL 赞助 Proof of Talk 2026 并启动 UPO 活动",
+      "summary": "OSL 成为 **Proof of Talk 2026 金牌合作伙伴**。同时在印尼启动 **UPO (Untung Pakai OSL)** 大型营销活动，提供总额 **3.5 亿印尼盾**的奖池以吸引新老交易者。",
       "category": "活动推广",
-      "importance": "low",
+      "importance": "medium",
       "sources": [
         {
           "platform": "twitter",
           "author": "@proofoftalk",
           "url": "https://x.com/proofoftalk/status/2061070226285117551"
+        },
+        {
+          "platform": "twitter",
+          "author": "@haicharicacha",
+          "url": "https://x.com/haicharicacha/status/2060641674272137324"
         }
       ],
       "published_at": "2026-05-31T13:00:09+00:00"
+    },
+    {
+      "title": "香港持牌交易所资产托管监管讨论",
+      "summary": "内容强调香港监管环境的独特性，要求所有持牌交易所（如 OSL）必须通过**全资附属子公司**托管客户资产，**不接受第三方托管**，这与新加坡或阿联酋的政策存在显著差异。",
+      "category": "监管合规",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@Kilenktor_Maks",
+          "url": "https://x.com/Kilenktor_Maks/status/2063965449516142965"
+        }
+      ],
+      "published_at": "2026-06-08T12:44:44+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-05-22",
-    "to": "2026-06-21"
+    "from": "2026-05-23",
+    "to": "2026-06-22"
   }
 }
