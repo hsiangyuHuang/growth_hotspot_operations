@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-05-25",
-    "to": "2026-06-24"
+    "from": "2026-05-26",
+    "to": "2026-06-25"
   },
   "competitors": [
     {
@@ -690,7 +690,7 @@
       "name": "Binance",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=binance.com&sz=64",
-      "summary": "币安近期集中上线多类传统金融资产合约与现货交易对，并积极应对品牌冒充诈骗风险。",
+      "summary": "近期重点应对欧洲 MiCA 监管合规调整，同时持续扩展合约交易产品线。",
       "events": [
         {
           "title": "上线多款 USDⓈ 本位 TradFi 永续合约",
@@ -719,6 +719,48 @@
           ]
         },
         {
+          "title": "撤回希腊 MiCA 牌照申请并寻求其他欧盟司法管辖区授权",
+          "category": "监管合规",
+          "summary": "在 7 月 1 日 MiCA 截止日期前，Binance 战略性调整其欧洲合规布局：\n* **主动撤回**在希腊提交的 MiCA 牌照申请\n* **寻求授权**：计划在其他欧盟成员国寻求合规认证\n* **合规承诺**：联席 CEO 表示仍致力于在法律框架内运营以服务欧盟用户",
+          "date": "2026-06-24",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "The Block",
+              "url": "https://www.theblock.co/post/406009/binance-ceo-remains-committed-securing-eu-license-exchange-withdraws-greece-bid"
+            },
+            {
+              "name": "CoinTelegraph",
+              "url": "https://cointelegraph.com/news/binance-eu-license-greece-mica-setback"
+            },
+            {
+              "name": "CoinDesk",
+              "url": "https://www.coindesk.com/policy/2026/06/24/binance-withdraws-greek-mica-bid-but-vows-to-remain-in-europe"
+            },
+            {
+              "name": "Decrypt",
+              "url": "https://decrypt.co/371990/binance-withdraws-mica-license-application-greece-eu-users-limbo"
+            },
+            {
+              "name": "The Defiant",
+              "url": "https://thedefiant.io/news/regulation/binance-withdraws-greece-mica-application-targets-new-eu-jurisdiction"
+            }
+          ]
+        },
+        {
+          "title": "上线 OUSDT 1-50 倍 U 本位永续合约",
+          "category": "产品更新",
+          "summary": "Binance 合约平台进一步丰富衍生品种类：\n* **上线时间**：2026 年 6 月 24 日\n* **产品细节**：推出以 USDⓈ 为保证金的 **OUSDT 永续合约**，最高支持 50 倍杠杆",
+          "date": "2026-06-24",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Binance",
+              "url": "https://www.binance.com/en/support/announcement/a6b7d5a8a14a44c1b6a6a34813c6d93f"
+            }
+          ]
+        },
+        {
           "title": "欧元交易占比及 MiCA 合规压力",
           "category": "监管合规",
           "summary": "**CryptoQuant 数据**显示，欧元交易目前仅占 Binance 现货交易量的 **1%**。随着 **MiCA 法案** 7月1日截止日期的临近，该交易所正面临合规不确定性。",
@@ -728,6 +770,19 @@
             {
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/eur-trades-binance-spot-volume-cryptoquant?utm_source=rss&utm_medium=rss&utm_campaign=rss"
+            }
+          ]
+        },
+        {
+          "title": "创始人 CZ 回应个人身份误解",
+          "category": "其他",
+          "summary": "Binance 创始人 CZ 试图澄清关于其个人背景及身份的相关误解：\n* **核心观点**：针对监管压力下的个人形象及在公司的过往角色进行说明",
+          "date": "2026-06-23",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "CoinDesk",
+              "url": "https://www.coindesk.com/policy/2026/06/23/cz-binance-founder-wants-to-clear-up-misunderstandings-about-who-he-is"
             }
           ]
         },
@@ -1618,75 +1673,6 @@
           ]
         },
         {
-          "title": "Binance Alpha 上线 Solstice (SLX)",
-          "category": "新币上线",
-          "summary": "**Binance 平台资产上新：**\n- 计划于 **5月25日** 在 Alpha 平台正式上线 **Solstice (SLX)** 代币",
-          "date": "2026-05-25",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5210943"
-            }
-          ]
-        },
-        {
-          "title": "推出 TradFi 期货跟单交易",
-          "category": "产品更新",
-          "summary": "**Binance 更新跟单系统支持 TradFi 交易对：**\n- 用户需更新至 **App 3.14+** 或使用 Web 端\n- 交易员可通过“跟单交易”页面筛选 **“TradFi Pairs”** 开始带单\n- 旨在将传统金融资产的波动性引入链上交易环境",
-          "date": "2026-05-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2058382610905096222"
-            }
-          ]
-        },
-        {
-          "title": "Binance 澳大利亚将实施转账合规新规",
-          "category": "监管合规",
-          "summary": "**为遵守当地监管要求，Binance Australia 宣布：**\n- 从 **2026年7月1日** 起，用户需提供存款的**发送者信息**及提现的**受益人信息**\n- 此举旨在满足针对加密货币转账的监管审计与反洗钱要求",
-          "date": "2026-05-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2058444918641803626"
-            }
-          ]
-        },
-        {
-          "title": "多项社区激励与营销活动",
-          "category": "活动推广",
-          "summary": "**近期启动的两项主要营销活动：**\n- **Binance Pizza Selfie：** 分享自拍瓜分 **$5,000 BTC** 奖池\n- **竞猜活动：** 转发、关注并回复指定猜测，瓜分 **$3,000 BNB** 奖池",
-          "date": "2026-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2058564270623727886"
-            },
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2058473183473291497"
-            }
-          ]
-        },
-        {
-          "title": "开放 380+ 个 AI 相关岗位招聘",
-          "category": "人事变动",
-          "summary": "**Binance 正在扩张其 AI 团队规模：**\n- 目前开放 **380 多个空缺职位**\n- 核心理念为 **“AI 学习，人类主导”**，旨在利用 AI 增强团队效率而非取代人力",
-          "date": "2026-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2058699667307630668"
-            }
-          ]
-        },
-        {
           "title": "推出机构级 OMS 工具包",
           "category": "产品更新",
           "summary": "**推出 Binance OMS Toolkit**：- 为交易技术提供商打造的首个机构级交易所解决方案- 包含 OMS Pro 等专业组件",
@@ -1942,7 +1928,7 @@
       "name": "OKX",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=okx.com&sz=64",
-      "summary": "OKX 欧洲区负责人对行业在 MiCA 监管下的生存状况表达了严峻预期。",
+      "summary": "持续运营中，近期以平台内资产价格监控及市场趋势分析为主。",
       "events": [
         {
           "title": "OKX 欧洲主管预测 MiCA 将引发行业洗牌",
@@ -2526,32 +2512,6 @@
           ]
         },
         {
-          "title": "发布 Agent Payments Protocol (APP)",
-          "category": "产品更新",
-          "summary": "**推出针对智能代理的支付协议：**\n- 支持代理进行 **报价、托管、交易及自动纠纷处理**\n- 这是一个 **跨链通用标准**，目前已上线供开发者使用",
-          "date": "2026-05-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2058616795192254951"
-            }
-          ]
-        },
-        {
-          "title": "推出 Vibes 社交信号分析工具",
-          "category": "产品更新",
-          "summary": "**增强链上数据洞察能力：**\n- 整合 **社交信号、KOL 动态及持币者情绪**\n- 为用户提供全方位的市场上下文，消除链上数据分析盲点",
-          "date": "2026-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2058435664039784652"
-            }
-          ]
-        },
-        {
           "title": "OKX DEX 聚合器功能升级",
           "category": "产品更新",
           "summary": "**推出聚合器+版本**：- 内置 MEV 保护机制防止机器人抢跑- 引入专业做市商竞价以提供更优成交价",
@@ -3125,32 +3085,6 @@
           ]
         },
         {
-          "title": "推广 Bybit Card 多资产支付功能",
-          "category": "产品更新",
-          "summary": "**Bybit 强调其借记卡的综合金融能力：**\n- 支持 **加密货币、股票、黄金及原油** 等多种资产的支付结算\n- 致力于打造 **“新金融平台”** (New Financial Platform) 形象",
-          "date": "2026-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2058548573873074468"
-            }
-          ]
-        },
-        {
-          "title": "上线 $SPCX 杠杆交易",
-          "category": "活动推广",
-          "summary": "**扩展代币交易功能：**\n- 支持 **$SPCX** 交易，最高提供 **10倍杠杆**\n- 通过社交媒体引导用户参与该代币的杠杆交易",
-          "date": "2026-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2058457977145675996"
-            }
-          ]
-        },
-        {
           "title": "TradFi 永续合约上线期货机器人",
           "category": "产品更新",
           "summary": "**上线传统金融资产永续合约机器人**：- 支持特斯拉(TSLA)、谷歌(GOOGL)、亚马逊(AMZN)等代币化版本- 允许用户通过策略机器人自动化执行交易",
@@ -3307,7 +3241,7 @@
       "name": "Coinbase",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=coinbase.com&sz=64",
-      "summary": "Coinbase 正在美国监管框架下加速扩张其加密货币永续合约产品线。",
+      "summary": "近期未监测到 Coinbase 的公开动态",
       "events": [
         {
           "title": "加速扩展永续合约产品线",
@@ -4073,19 +4007,6 @@
           ]
         },
         {
-          "title": "Coinbase 高管表示不畏惧华尔街竞争",
-          "category": "其他",
-          "summary": "**针对传统金融机构进入加密领域的态度：**\n- 交易所高管在采访中表示，Coinbase **不担心** 来自华尔街的直接竞争\n- 强调其在加密原生领域的长期积累与护城河",
-          "date": "2026-05-24",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/business/2026/05/24/coinbase-does-not-fear-competition-from-wall-street-says-exchange-executive"
-            }
-          ]
-        },
-        {
           "title": "质押奖励限时加成 40%",
           "category": "活动推广",
           "summary": "**推出质押激励政策**：- 针对特定资产提供为期 60 天的 40% 奖励加成",
@@ -4242,7 +4163,7 @@
       "name": "Kraken",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=kraken.com&sz=64",
-      "summary": "Kraken 重点关注欧洲 MiCA 法案的实施，并为机构客户提供合规指引。",
+      "summary": "持续丰富资产交易种类，并受益于其合作伙伴在欧洲合规进程的推进。",
       "events": [
         {
           "title": "发布 MiCA 法案合规指引及风险警示",
@@ -4254,6 +4175,45 @@
             {
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/product/kraken-institutional/mica-enforcement-begins-july-1"
+            }
+          ]
+        },
+        {
+          "title": "上线 NES 代币现货交易",
+          "category": "新币上线",
+          "summary": "Kraken 交易所正式列示 **NES** 代币：\n* **开放交易**：2026 年 6 月 24 日起生效\n* **功能支持**：用户可通过 Funding 模块进行充值并在现货市场进行交易",
+          "date": "2026-06-24",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Kraken Blog",
+              "url": "https://blog.kraken.com/product/asset-listings/nes-is-available-for-trading"
+            }
+          ]
+        },
+        {
+          "title": "上线 SPCXx (SpaceX) 股权代币杠杆交易",
+          "category": "产品更新",
+          "summary": "Kraken Pro 推出基于 **SpaceX (SPCXx)** 的代币化股权杠杆对：\n* **交易对**：SPCXx/USD\n* **杠杆支持**：提供最高 **3 倍** 杠杆，支持多头与空头头寸",
+          "date": "2026-06-24",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "Kraken Blog",
+              "url": "https://blog.kraken.com/product/margin/new-pair-available-spcxx"
+            }
+          ]
+        },
+        {
+          "title": "合作伙伴 OpenPayd 获得 MiCA 牌照",
+          "category": "合作伙伴",
+          "summary": "为 Kraken 提供支付基础设施的 **OpenPayd** 成功获得 MiCA 牌照：\n* **业务影响**：Kraken 可通过合规渠道进一步扩展在欧洲的受监管加密服务",
+          "date": "2026-06-24",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "CoinTelegraph",
+              "url": "https://cointelegraph.com/news/openpayd-mica-license-stablecoin-adoption-europe"
             }
           ]
         },
@@ -4643,19 +4603,6 @@
             {
               "name": "Twitter",
               "url": "https://x.com/remitano/status/2063661600372916630"
-            }
-          ]
-        },
-        {
-          "title": "发起账户安全评分与加固宣传活动",
-          "category": "活动推广",
-          "summary": "**Remitano** 在社交平台发起账户安全互动，旨在提升用户对账户防护的重视程度：\n- 引导用户根据标准为自己的账户安全性进行**评分**（总分90分）\n- 提供**安全设置链接**，鼓励用户完成身份验证或开启安全功能以加固账户",
-          "date": "2025-02-17",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@Remitano",
-              "url": "https://x.com/remitano/status/2058608974488797215"
             }
           ]
         },
@@ -5209,7 +5156,7 @@
       "name": "bitbank",
       "region": "JP",
       "logo": "https://www.google.com/s2/favicons?domain=bitbank.cc&sz=64",
-      "summary": "持续运营中，近期主要通过官方知识库发布每日市场行情与技术面分析报告。",
+      "summary": "持续运营中，近期侧重于提供比特币市场行情深度分析与用户教育内容。",
       "events": [
         {
           "title": "bitbank 发布 2026-06-23 比特币行情与技术信号分析",
@@ -5612,7 +5559,7 @@
       "name": "SBI VC Trade",
       "region": "JP",
       "logo": "https://www.google.com/s2/favicons?domain=sbivc.co.jp&sz=64",
-      "summary": "近期未监测到 SBI VC Trade 的公开动态",
+      "summary": "SBI集团推出日本首个信托银行支持的稳定币 JPYSC，初期仅限该平台用户使用。",
       "events": [
         {
           "title": "举办“世界动荡下的投资对策”研讨会",
@@ -5624,6 +5571,19 @@
             {
               "name": "Twitter",
               "url": "https://x.com/sbivc_official/status/2059570720741728529"
+            }
+          ]
+        },
+        {
+          "title": "推出日本首个信托银行支持的稳定币 JPYSC",
+          "category": "产品更新",
+          "summary": "**SBI集团**宣布推出日本首个由信托银行支持的稳定币 **JPYSC**。\\n- **可用性限制**：在监管和税务处理明确之前，JPYSC 的使用目前仅限于 **SBI VC Trade** 账户。\\n- **战略意义**：这是日本金融体系在合规稳定币应用方面的里程碑动作。",
+          "date": "2026-06-24",
+          "importance": "high",
+          "sources": [
+            {
+              "name": "The Block",
+              "url": "https://www.theblock.co/post/405952/japan-sbi-group-launches-jpysc?utm_source=rss&utm_medium=rss"
             }
           ]
         },
@@ -5758,19 +5718,6 @@
             {
               "name": "Twitter",
               "url": "https://x.com/sbivc_official/status/2059547109926502664"
-            }
-          ]
-        },
-        {
-          "title": "5月27日定期系统维护",
-          "category": "产品更新",
-          "summary": "**SBI VC Trade** 将于 **2026年5月27日** 12:00 至 15:00 进行系统维护。- **服务影响**：维护期间停止一切交易功能，用户仅可完成开户。- **订单处理**：交易所未成交订单将全部取消，销售所订单将在维护后恢复。",
-          "date": "2026-05-27",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/sbivc_official/status/2058718990604882250"
             }
           ]
         },
@@ -5922,19 +5869,6 @@
             {
               "name": "twitter:@Rakuten_Wallet",
               "url": "https://x.com/Rakuten_Wallet/status/2060164383687524452"
-            }
-          ]
-        },
-        {
-          "title": "限时营销活动截止提醒",
-          "category": "活动推广",
-          "summary": "**Rakuten Wallet** 发布的限时营销活动将于 **5月29日** 09:59 结束。- 呼吁用户在截止时间前踊跃参与活动。",
-          "date": "2026-05-29",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Rakuten_Wallet/status/2058719184490844419"
             }
           ]
         },
@@ -6580,49 +6514,6 @@
           ]
         },
         {
-          "title": "CFTC 内部官员因质疑 Crypto.com 等平台合规性遭清退",
-          "category": "监管合规",
-          "summary": "**《纽约时报》披露 CFTC 内部针对加密平台的监管争议**：\n- 多名对 Crypto.com、Polymarket 及 Gemini 提出合规质疑的职业官员被停职或驱逐\n- 质疑点包括 Crypto.com **未公平对待小额散户**以及与特定政治背景公司的商业关联\n- 监管机构高层被指干预审查流程，协助平台规避调查或获取批准",
-          "date": "2024-06-08",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/cftc-officials-who-questioned-prediction-markets-were-suspended-nyt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-            },
-            {
-              "name": "Odaily 快讯",
-              "url": "https://www.odaily.news/zh-CN/newsflash/483786"
-            }
-          ]
-        },
-        {
-          "title": "推广政治选举预测市场产品 Crypto.com Predict",
-          "category": "产品更新",
-          "summary": "**持续推进预测交易业务**：\n- 允许用户对美国大选（如肯塔基州、德克萨斯州）等政治结果进行交易\n- 旨在通过热门政治话题提升平台活跃度与产品使用率",
-          "date": "2024-06-08",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/cryptocom/status/2058602681464226084"
-            }
-          ]
-        },
-        {
-          "title": "赞助 F1 加拿大大奖赛活动",
-          "category": "活动推广",
-          "summary": "**深化体育赛事跨界营销**：\n- 作为 Formula 1® 官方合作伙伴，在蒙特利尔大奖赛期间开展品牌宣传\n- 结合赛事节点强化在北美地区的品牌认知度",
-          "date": "2024-06-07",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/cryptocom/status/2058605448018657389"
-            }
-          ]
-        },
-        {
           "title": "UFC Freedom 250 签名球衣抽奖活动",
           "category": "活动推广",
           "summary": "**Crypto.com** 举办 UFC 联名营销活动：\n* 抽奖赠送由 **Bo Nickal** 亲笔签名的 **UFC Freedom 250** 比赛战袍\n* 旨在通过社交媒体互动提升 **品牌关注度**",
@@ -6935,7 +6826,7 @@
       "name": "Indodax",
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=indodax.com&sz=64",
-      "summary": "近期主要进行资产下架与迁移工作，并联合社区开展策略分享 AMA 活动。",
+      "summary": "近期未监测到 Indodax 的公开动态",
       "events": [
         {
           "title": "Indodax Goes to Campus 走进 ITB Stikom Bali",
@@ -7395,7 +7286,7 @@
       "name": "Tokocrypto",
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=tokocrypto.com&sz=64",
-      "summary": "近期以内容运营为主，每日发布行情信号并深入调研 RWA 赛道动态。",
+      "summary": "持续运营中，近期侧重于通过其新闻门户 Tokocrypto News 提供深度市场行情分析、代币价格异动预警（如 HEI、PI、ETH、SOL、XRP）及宏观政策影响研究。",
       "events": [
         {
           "title": "发布每日加密货币信号与行情分析",
@@ -8176,32 +8067,6 @@
           ]
         },
         {
-          "title": "计划下架 ATA、FARM 等 5 种代币",
-          "category": "其他",
-          "summary": "**Tokocrypto** 宣布由于流动性或合规性评估，将停止部分代币的交易。关键信息：\n* **下架时间**：2026-05-27 10:00 WIB\n* **受影响资产**：ATA、FARM、MLN、PHB 和 SYS\n* **用户指引**：建议用户在截止日期前完成**提现或资产转换**",
-          "date": "2026-05-25",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2058445141229129896"
-            }
-          ]
-        },
-        {
-          "title": "在巴厘岛举办 Bitcoin Pizza Day 线下路演",
-          "category": "活动推广",
-          "summary": "**Tokocrypto** 在巴厘岛开展了大规模路演活动。具体细节：\n* **活动地点**：巴厘岛 Geo Open Space\n* **互动形式**：邀请 Tokonauts 参与**线下交流**与 Pizza Day 庆祝\n* **战略意义**：通过**地域针对性营销**扩大在印尼主要地区的品牌影响力",
-          "date": "2026-05-25",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2058535730289557650"
-            }
-          ]
-        },
-        {
           "title": "举办 Bitcoin Pizza Day 三城路演",
           "category": "活动推广",
           "summary": "**Tokocrypto 完成印尼巡回路演**：\n- **城市**：泗水（Surabaya）、马朗（Malang）、巴厘岛（Bali）\n- **规模**：吸引 300 多名参与者，旨在增强社区共识与文化认同",
@@ -8742,19 +8607,6 @@
               "url": "https://x.com/reku_id/status/2061373276828606745"
             }
           ]
-        },
-        {
-          "title": "举办 Bitcoin Pizza Day 线下庆祝活动",
-          "category": "活动推广",
-          "summary": "**Reku** 联合 **CST Token** 举办了 Bitcoin Pizza Day 线下活动。主要内容包括：\n* 在**线下聚会**中与社区成员互动，发放周边奖励\n* 为参与活动的社区成员举办**惊喜生日庆祝**活动\n* 旨在通过**节日营销**提升社区凝聚力",
-          "date": "2026-05-22",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@reku_id",
-              "url": "https://x.com/reku_id/status/2058426646789763093"
-            }
-          ]
         }
       ]
     },
@@ -8776,8 +8628,63 @@
       "name": "盈透证券",
       "region": "BROKER",
       "logo": "https://www.google.com/s2/favicons?domain=interactivebrokers.com&sz=64",
-      "summary": "近期未监测到 盈透证券 的公开动态",
+      "summary": "盈透证券近期通过其 IBKR Campus 平台持续发布关于预测市场、宏观经济动向及 AI 行业投资深度分析的研究报告。",
       "events": [
+        {
+          "title": "盈透证券预测市场关注美国核心宏观经济合约到期",
+          "category": "产品更新",
+          "summary": "盈透证券**预测市场 (Prediction Market)** 披露了参与者对关键经济指标的预期：\n- **PCE（个人消费支出）**、初请失业金人数及 WEI 合约即将到期\n- 市场参与者预计将出现**高通胀**、强劲的经济活动以及低迷的裁员数据",
+          "date": "2026-06-24",
+          "importance": "medium",
+          "sources": [
+            {
+              "name": "IBKR Campus",
+              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/pce-claims-wei-contracts-expiring-tomorrow/"
+            }
+          ]
+        },
+        {
+          "title": "发布 AI 投资专题分析与能源需求研究报告",
+          "category": "其他",
+          "summary": "针对 **AI 行业泡沫**及市场动量，盈透证券发布系列深度分析：\n- 提出通过**盈利增长对比**来识别 AI 股票炒作风险的测试方法\n- 探讨 **AI 能源供应链**中的潜在赢家及 2026 年的**股息增长**机会\n- 指出投资者对 AI 的解读正从少数公司转向更广泛的投资组合",
+          "date": "2026-06-24",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "IBKR Campus",
+              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/the-ai-boom-needs-energy-but-whos-actually-supplying-it/"
+            },
+            {
+              "name": "IBKR Campus",
+              "url": "https://www.interactivebrokers.com/campus/traders-insight/above-the-noise-ai-markets-and-momentum/"
+            },
+            {
+              "name": "IBKR Campus",
+              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/the-simple-test-to-see-through-ai-stock-hype/"
+            },
+            {
+              "name": "IBKR Campus",
+              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/beyond-ai-where-investors-can-still-find-dividend-growth-in-2026/"
+            }
+          ]
+        },
+        {
+          "title": "宏观经济分析：霍尔木兹海峡交通恢复与通胀预期",
+          "category": "其他",
+          "summary": "**宏观市场研判**动态：\n- 观察到**霍尔木兹海峡**商业交通恢复，原油价格跌破 70 美元，缓解了通胀担忧并引发国债反弹\n- 分析了美联储主席 Kevin Warsh 关于**抗通胀**的政策表态对短期利率及股市的影响",
+          "date": "2026-06-24",
+          "importance": "low",
+          "sources": [
+            {
+              "name": "IBKR Campus",
+              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/hormuz-traffic-recovery-sparks-treasury-rally-as-oil-sinks-below-70/"
+            },
+            {
+              "name": "IBKR Campus",
+              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-market-insights/bad-week-for-inflation-proxies/"
+            }
+          ]
+        },
         {
           "title": "盈透预测市场推出新加坡 CPI 相关预测合约",
           "category": "活动推广",

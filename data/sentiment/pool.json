@@ -2,37 +2,36 @@
   "total_raw": 45,
   "items": [
     {
-      "title": "OSL 香港上市吉尔吉斯斯坦国资背景金本位稳定币 USDKG",
-      "summary": "OSL 宣布在香港持牌交易所上线由**吉尔吉斯斯坦**国营实体发行的金本位稳定币 **USDKG**。该币种与美元 1:1 挂钩，由实物黄金储备支持，首个交易对为 USDKG/USDT。此举被视为**亚洲首个**受监管的 RWA（现实世界资产）代币化重大进展，吸引了大量国际媒体与行业分析师关注。",
-      "category": "产品动态",
+      "title": "香港持牌交易所资产托管监管要求讨论",
+      "summary": "**香港监管机构要求持牌交易所**（如 OSL）必须通过全资子公司托管客户资产，不接受第三方托管。此政策被认为与新加坡和阿联酋的监管模式有显著区别，强调了香港**资产托管的严苛性与合规性**。",
+      "category": "监管合规",
       "importance": "high",
       "sources": [
         {
           "platform": "twitter",
-          "author": "@Cointelegraph",
-          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
-        },
-        {
-          "platform": "twitter",
-          "author": "@CNCSignalGlobal",
-          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
-        },
-        {
-          "platform": "twitter",
-          "author": "@BitcoinWorldN",
-          "url": "https://x.com/BitcoinWorldN/status/2057456488273313851"
-        },
-        {
-          "platform": "twitter",
-          "author": "@InvezzPortal",
-          "url": "https://x.com/InvezzPortal/status/2057382948395954620"
+          "author": "@Kilenktor_Maks",
+          "url": "https://x.com/Kilenktor_Maks/status/2063965449516142965"
         }
       ],
-      "published_at": "2026-05-21T08:48:13+00:00"
+      "published_at": "2026-06-08T12:44:44+00:00"
     },
     {
-      "title": "星展银行 (DBS) 成为 OSL 香港业务法币结算银行",
-      "summary": "**星展银行 (DBS)** 正式成为 OSL 香港业务的**法币结算银行**，并为 OSL Digital Securities 开通账户。此项合作进一步强化了 OSL 的**合规银行网络**，提升了其服务机构客户的能力，稳固了其在香港数字资产生态中的地位。",
+      "title": "OSL 支持 Anchorage Digital 发行的 USDGO 稳定币",
+      "summary": "由 Anchorage Digital Bank 发行的 1:1 美元足额抵押**稳定币 USDGO 获得 OSL 支持**。该资产旨在提供机构级安全性和储备透明度，助力合规的全球支付。",
+      "category": "合作伙伴",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@DeclanCrypt",
+          "url": "https://x.com/DeclanCrypt/status/2063879021637571030"
+        }
+      ],
+      "published_at": "2026-06-08T07:01:18+00:00"
+    },
+    {
+      "title": "星展银行成为 OSL 香港法币结算银行",
+      "summary": "**星展银行（DBS）**正式成为 OSL 香港业务的**法币结算银行**，并为 OSL Digital Securities 开通账户。此举将强化 OSL 的**合规银行网络**及机构客户服务能力。",
       "category": "合作伙伴",
       "importance": "high",
       "sources": [
@@ -45,38 +44,9 @@
       "published_at": "2026-06-04T07:39:29+00:00"
     },
     {
-      "title": "印尼用户反馈：OSL 零费用政策与 KYC 效率广受好评",
-      "summary": "多位印度尼西亚用户在社交媒体上推荐 OSL 平台，重点提及其**极速 KYC 流程**、**充值免费**以及**提现至本地银行零手续费**。用户普遍认为 OSL Indonesia 受 **OJK 监管**，安全性高，且对新手投资者非常友好。",
+      "title": "OSL 印尼站用户反馈与营销活动动态",
+      "summary": "印尼用户对 OSL Indonesia 反馈积极，重点关注其**零手续费提现、快速 KYC** 以及受 OJK 监管的安全性。同时，平台推出了总奖池达 **3.5 亿印尼盾的 UPO 推广活动**，吸引大量新用户参与讨论。",
       "category": "用户反馈",
-      "importance": "medium",
-      "sources": [
-        {
-          "platform": "twitter",
-          "author": "@bangdevzz",
-          "url": "https://x.com/bangdevzz/status/2061306982527857106"
-        },
-        {
-          "platform": "twitter",
-          "author": "@haicharicacha",
-          "url": "https://x.com/haicharicacha/status/2060931133341380774"
-        },
-        {
-          "platform": "twitter",
-          "author": "@edyjayakarya",
-          "url": "https://x.com/edyjayakarya/status/2060928779795722320"
-        },
-        {
-          "platform": "twitter",
-          "author": "@HikariKagami",
-          "url": "https://x.com/HikariKagami/status/2059856504338198842"
-        }
-      ],
-      "published_at": "2026-05-28T04:37:15+00:00"
-    },
-    {
-      "title": "OSL Indonesia 启动大规模营销活动 UPO",
-      "summary": "OSL Indonesia 宣布启动名为 **UPO (Untung Pakai OSL)** 的大型推广活动，总奖金池达 **3.5 亿印尼盾**。活动包括针对新用户的注册奖励、交易竞赛及加密货币礼盒，旨在扩大在东南亚的市场份额。",
-      "category": "活动推广",
       "importance": "medium",
       "sources": [
         {
@@ -86,15 +56,58 @@
         },
         {
           "platform": "twitter",
-          "author": "@blakeexx07",
-          "url": "https://x.com/blakeexx07/status/2062846794380538004"
+          "author": "@bangdevzz",
+          "url": "https://x.com/bangdevzz/status/2061306982527857106"
+        },
+        {
+          "platform": "twitter",
+          "author": "@HikariKagami",
+          "url": "https://x.com/HikariKagami/status/2059856504338198842"
         }
       ],
-      "published_at": "2026-05-30T08:37:14+00:00"
+      "published_at": "2026-06-05T16:00:29+00:00"
     },
     {
-      "title": "OSL 上线新资产：$TT 及 Anchorage 支持的 $USDGO",
-      "summary": "OSL 交易所近期频繁增加资产供应，包括即将上线 **$TT (TT Chain)** 以及支持由 Anchorage Digital Bank 发行的合规稳定币 **$USDGO**。这些举措体现了 OSL 在合规框架下持续扩张资产类别的策略。",
+      "title": "OSL 交易所上线黄金支持稳定币 USDKG",
+      "summary": "OSL 宣布上线由吉尔吉斯共和国监管、**实物黄金支撑的稳定币 USDKG**。该资产 1:1 锚定美元，已在 OSL 的**持牌基础设施**上开启交易，标志着 RWA（现实世界资产）代币化在合规市场的进一步应用。",
+      "category": "产品动态",
+      "importance": "high",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@CNCSignalGlobal",
+          "url": "https://x.com/CNCSignalGlobal/status/2058758958203158725"
+        },
+        {
+          "platform": "twitter",
+          "author": "@CoinpediaNews",
+          "url": "https://x.com/CoinpediaNews/status/2057457522609664276"
+        },
+        {
+          "platform": "twitter",
+          "author": "@Cointelegraph",
+          "url": "https://x.com/Cointelegraph/status/2057451409977545183"
+        }
+      ],
+      "published_at": "2026-05-25T03:56:00+00:00"
+    },
+    {
+      "title": "OSL 确认为 Proof of Talk 2026 大会金牌合作伙伴",
+      "summary": "OSL 将以**金牌合作伙伴**身份参加 **Proof of Talk 2026** 大会。该会议定位为亚洲领先的稳定币交易与支付基础设施提供商，致力于连接传统金融与数字资产。",
+      "category": "活动推广",
+      "importance": "medium",
+      "sources": [
+        {
+          "platform": "twitter",
+          "author": "@proofoftalk",
+          "url": "https://x.com/proofoftalk/status/2061070226285117551"
+        }
+      ],
+      "published_at": "2026-05-31T13:00:09+00:00"
+    },
+    {
+      "title": "TT Chain ($TT) 即将上线 OSL 交易所",
+      "summary": "**TT Chain ($TT)** 官方宣布即将登陆 OSL 交易所，此举是其全球化扩张战略的重要里程碑，具体上市细节将后续公布。",
       "category": "产品动态",
       "importance": "medium",
       "sources": [
@@ -102,18 +115,13 @@
           "platform": "twitter",
           "author": "@TTChain_",
           "url": "https://x.com/TTChain_/status/2060631714268156149"
-        },
-        {
-          "platform": "twitter",
-          "author": "@DeclanCrypt",
-          "url": "https://x.com/DeclanCrypt/status/2063879021637571030"
         }
       ],
       "published_at": "2026-05-30T07:57:40+00:00"
     },
     {
-      "title": "分析师指出 OSL 股价触及 52 周低点",
-      "summary": "市场分析师 Matthew Sigel 在其加密股票综述中提到，**OSL (863.HK)** 的股价已触及 **52 周低点**，与 Metaplanet 和 Monex 等公司一同处于低迷期，这与其产品端的积极扩张形成市场反差。",
+      "title": "OSL 股价表现及行业地位分析",
+      "summary": "分析师指出 OSL 股票近期触及 **52 周低位**，与 Metaplanet 和 Monex 等加密概念股表现类似。与此同时，**OSL 印度站正式加入 ICEx 生态系统**，持续扩大区域影响力。",
       "category": "市场分析",
       "importance": "medium",
       "sources": [
@@ -121,32 +129,18 @@
           "platform": "twitter",
           "author": "@matthew_sigel",
           "url": "https://x.com/matthew_sigel/status/2059710397033099327"
-        }
-      ],
-      "published_at": "2026-05-27T18:56:40+00:00"
-    },
-    {
-      "title": "OSL 参与全球行业峰会并加入 ICEx 生态系统",
-      "summary": "OSL 作为金牌合作伙伴参加了 **Proof of Talk 2026** 峰会。此外，**OSL Indonesia** 正式进入 **ICEx Group** 生态系统，通过机构间合作进一步深化在东南亚的数字资产基础设施建设。",
-      "category": "合作伙伴",
-      "importance": "medium",
-      "sources": [
+        },
         {
           "platform": "twitter",
           "author": "@ICExGroup",
           "url": "https://x.com/ICExGroup/status/2059525548104417460"
-        },
-        {
-          "platform": "twitter",
-          "author": "@proofoftalk",
-          "url": "https://x.com/proofoftalk/status/2061070226285117551"
         }
       ],
-      "published_at": "2026-05-27T06:42:09+00:00"
+      "published_at": "2026-05-27T18:56:40+00:00"
     }
   ],
   "date_range": {
-    "from": "2026-05-25",
-    "to": "2026-06-24"
+    "from": "2026-05-26",
+    "to": "2026-06-25"
   }
 }
