@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-05-31",
-    "to": "2026-07-01"
+    "from": "2026-06-01",
+    "to": "2026-07-02"
   },
   "competitors": [
     {
@@ -1130,32 +1130,6 @@
           ]
         },
         {
-          "title": "开展“互联网资本市场”系列教育活动",
-          "category": "其他",
-          "summary": "**Binance** 向用户普及 **互联网资本市场（ICM）** 概念：\n- 定义：利用区块链技术让任何人都能在数分钟内发行代币或支持新项目\n- 形式：通过官方博客和社交平台发布深度科普文章",
-          "date": "2026-05-29",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Binance Blog",
-              "url": "https://x.com/binance/status/2060873956299518425"
-            }
-          ]
-        },
-        {
-          "title": "发布2030年战略发展规划",
-          "category": "其他",
-          "summary": "**Binance** 披露了其面向 **2030 年的宏伟建设计划**：\n- 核心逻辑：在市场行情低迷时坚持构建（Build）\n- 长期目标：涉及内部运营与全球版图的战略性扩张",
-          "date": "2026-05-26",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/business/2026/05/26/when-the-market-is-bad-we-build-inside-binance-s-bold-2030-master-plan"
-            }
-          ]
-        },
-        {
           "title": "上线代币化股票交易功能",
           "category": "产品更新",
           "summary": "**推出股票交易服务**：- 允许合规用户买卖超过 **7,000 种股票和 ETF**；- 交易门槛低至 **5 美元**；- 首批支持包括 **Apple** 在内的知名美股资产。",
@@ -1619,58 +1593,6 @@
           ]
         },
         {
-          "title": "深耕欧洲合规衍生品市场",
-          "category": "监管合规",
-          "summary": "**OKX** 旗下的 New Money App 强化欧洲合规服务：\n- 新增支持：在欧洲推出 **$ZEC（Zcash）永续合约**\n- 激励措施：为欧洲经济区（EEA）用户提供高达 **5% 的存款奖金**",
-          "date": "2026-05-29",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/okx/status/2060654979178709256"
-            }
-          ]
-        },
-        {
-          "title": "五月代币上线与现货业务进展",
-          "category": "新币上线",
-          "summary": "**OKX** 汇总了 5 月份的热门全球上线资产：\n- 包含代币：**$IRYS、$AI、$PROS、$EDGE**\n- 现货交易：$IRYS 已正式开启全球现货交易对",
-          "date": "2026-05-29",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/okx/status/2060836420583887243"
-            }
-          ]
-        },
-        {
-          "title": "发布第 43 期储备证明（PoR）报告",
-          "category": "其他",
-          "summary": "**OKX** 定期公示其资产透明度：\n- 事件：正式发布 **第 43 期储备证明（PoR）报告**，确保用户资产 1:1 准备金",
-          "date": "2026-05-29",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/okx/status/2060609992193937658"
-            }
-          ]
-        },
-        {
-          "title": "周末有奖问答活动",
-          "category": "活动推广",
-          "summary": "**OKX** 举办社区互动活动：\n- 奖金：**$500 USDT**\n- 参与方式：关注官方推特、转发并回答相关问题",
-          "date": "2026-05-29",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/okx/status/2060700525016785207"
-            }
-          ]
-        },
-        {
           "title": "发布第 43 期储备证明 (PoR)",
           "category": "其他",
           "summary": "**OKX** 发布截至 5 月 7 日的储备快照：\n- **BTC** 持仓下降 5.0% 至 11.1 万枚；\n- **ETH** 持仓下降 3.12% 至 156 万枚；\n- **USDT** 持仓增加 2810 万枚。",
@@ -2071,19 +1993,6 @@
             {
               "name": "Bybit Official",
               "url": "https://x.com/Bybit_Official/status/2061447675879272963"
-            }
-          ]
-        },
-        {
-          "title": "品牌愿景更新与新平台预告",
-          "category": "产品更新",
-          "summary": "**Bybit** 官宣了其作为 **“全能金融遥控器”** 的新定位：\n- 重点：强调 **New Financial Platform** 概念，暗示将有重大 UI 或产品架构调整",
-          "date": "2026-05-29",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Bybit_Official/status/2060783548659822714"
             }
           ]
         },
@@ -2778,36 +2687,6 @@
           ]
         },
         {
-          "title": "CLARITY 法案游说与立法进展",
-          "category": "监管合规",
-          "summary": "**CLARITY 法案** 在美国参议院取得进展，引发市场热议：\n- 核心影响：法案可能允许加密平台对存款和稳定币 **支付利息**\n- 争议点：摩根大通 CEO Jamie Dimon 公开批评该法案，并指责 **Coinbase** 进行游说活动",
-          "date": "2026-05-29",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2060814754751578408"
-            },
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5211070"
-            }
-          ]
-        },
-        {
-          "title": "Coinbase One Card 激励活动",
-          "category": "活动推广",
-          "summary": "**Coinbase** 升级其卡片奖励体系：\n- 消费奖励：每笔购买最高可获得 **4% Bitcoin 返现**\n- 新户礼：新申办卡片在首月消费满 $100 可获 **$50 Bitcoin 奖励**",
-          "date": "2026-05-29",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/coinbase/status/2060872517867225107"
-            }
-          ]
-        },
-        {
           "title": "机构账户出现大额 SOL 流入",
           "category": "其他",
           "summary": "**大额转账监控**：- 约 **135 万枚 SOL**（价值约 8400 万美元）从未知钱包转入 **Coinbase Institutional**。",
@@ -3448,19 +3327,6 @@
             {
               "name": "X (Twitter)",
               "url": "https://x.com/remitano/status/2061543678913507717"
-            }
-          ]
-        },
-        {
-          "title": "社区奖励池解锁活动",
-          "category": "活动推广",
-          "summary": "**Remitano 启动社区互动奖励活动**。主要内容包括：- 参与人数目前已达 50 人，成功解锁 **10%** 的奖励池；- 当参与者达到 **500+** 时，将解锁总价值超过 **$1,000** 的 USDT 奖励及交易抵用券。",
-          "date": "2024-05-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/remitano/status/2060783299526889668"
             }
           ]
         },
@@ -4653,19 +4519,6 @@
           ]
         },
         {
-          "title": "Crypto.com 参与欧冠决赛官方比赛硬币交付仪式",
-          "category": "活动推广",
-          "summary": "**Crypto.com** 在布达佩斯普斯卡什竞技场完成了 **2025年欧冠决赛** 官方比赛硬币的交付：\n- 由传奇球星 **Ashley Cole** 亲自参与硬币送达环节\n- 此动作为 **#UCLwithCryptoCom** 系列全球品牌营销活动的组成部分\n- 旨在通过高规格赛事开球仪式强化其「Fortune Favors the Brave」的品牌口号",
-          "date": "2025-05-31",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/cryptocom/status/2060632554844107113"
-            }
-          ]
-        },
-        {
           "title": "启动巴黎赛事预测互动活动",
           "category": "活动推广",
           "summary": "**Crypto.com** 在社交媒体上针对巴黎体育赛事决赛发起预测活动。要点包括：- 引导用户通过指定链接参与赛果**预测**- 结合热门体育赛事提升社区**活跃度**与用户参与感",
@@ -5701,40 +5554,6 @@
             {
               "name": "X",
               "url": "https://x.com/tokocrypto/status/2061283122470391808"
-            }
-          ]
-        },
-        {
-          "title": "举办 Bitcoin Pizza Day 全印尼系列庆祝活动",
-          "category": "活动推广",
-          "summary": "**Tokocrypto 在印尼多个核心城市举办比特币披萨日周年纪念活动**：\n- **覆盖城市**：包括玛琅 (Malang)、巴厘岛 (Bali) 及雅加达 Blok M 区域。\n- **互动形式**：举办线下聚会并同步在社交媒体发起“10,000 BTC 用途畅想”互动话题。\n- **品牌效应**：通过回顾比特币首笔实物交易，增强社区凝聚力并提升品牌知名度。",
-          "date": "2026-05-30",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2060600298599743863"
-            },
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2060643468473692538"
-            },
-            {
-              "name": "twitter:@Tokocrypto",
-              "url": "https://x.com/Tokocrypto/status/2060711787209924932"
-            }
-          ]
-        },
-        {
-          "title": "发布行业风险预警：Circle 冻结 cUSDC 资产",
-          "category": "其他",
-          "summary": "**Tokocrypto 新闻门户向用户通报稳定币监管动态**：\n- **事件核心**：Circle 黑名单限制了 Zama 的 **cUSDC 合约**，导致约 **1,260 万美元** 资金被冻结。\n- **风险提示**：指出中心化稳定币存在合约冻结风险，导致持有者无法正常兑付。",
-          "date": "2026-05-30",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/circle-bekukan-us126-juta-cusdc-risiko-sentralisasi-stablecoin/"
             }
           ]
         },
