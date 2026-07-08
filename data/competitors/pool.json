@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-07",
-    "to": "2026-07-07"
+    "from": "2026-06-08",
+    "to": "2026-07-08"
   },
   "competitors": [
     {
@@ -605,36 +605,6 @@
           ]
         },
         {
-          "title": "上线代币化股票交易功能",
-          "category": "产品更新",
-          "summary": "**推出股票交易服务**：- 允许合规用户买卖超过 **7,000 种股票和 ETF**；- 交易门槛低至 **5 美元**；- 首批支持包括 **Apple** 在内的知名美股资产。",
-          "date": "2025-05-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2063275303674269927"
-            },
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2063184532577116362"
-            }
-          ]
-        },
-        {
-          "title": "发布最新储备金证明（PoR）",
-          "category": "其他",
-          "summary": "**资产透明度更新**：- 更新本月 **Proof of Reserves** 机制；- 允许用户验证其资产在平台上是否维持 **1:1 储备**。",
-          "date": "2025-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2063222084940288219"
-            }
-          ]
-        },
-        {
           "title": "欧洲 MiCA 法案合规挑战与流动性风险",
           "category": "监管合规",
           "summary": "随着**MiCA 法案于 7 月 1 日生效**，币安在欧洲的市场准入面临严峻考验：\n- **USDT 流动性**：法案可能导致非合规稳定币在欧盟市场的流动性受限。\n- **监管沟通**：虽然成员国拥有发牌权，但**欧洲央行（ECB）**在申请过程中的影响力引发法律界关注。",
@@ -876,62 +846,6 @@
               "url": "https://x.com/okx/status/2064007039882514610"
             }
           ]
-        },
-        {
-          "title": "强调 MiCA 合规性与用户迁移",
-          "category": "监管合规",
-          "summary": "**合规预警**：- 针对 2026 年 7 月生效的 **MiCA 法案** 发布声明；- 呼吁用户迁移至**完全受监管**的平台以规避执法风险。",
-          "date": "2025-05-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2063312491895980191"
-            }
-          ]
-        },
-        {
-          "title": "xStocks 与 X Layer 达成战略合作",
-          "category": "合作伙伴",
-          "summary": "**代币化资产布局**：- 合作伙伴关系旨在将**代币化股票和 ETF**（涵盖 AI、国防、稀有矿产等）引入 X Layer 网络。",
-          "date": "2025-05-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2063319636020502729"
-            }
-          ]
-        },
-        {
-          "title": "推出“The Beautiful Game”足球营销活动",
-          "category": "活动推广",
-          "summary": "**世界杯主题营销**：- 包含 **500 USDT** 奖金池的周末竞猜；- 推出免存款、积分制的足球互动游戏，支持通过签到和邀请好友获得奖励。",
-          "date": "2025-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2063357786344337700"
-            },
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2063191757156696196"
-            }
-          ]
-        },
-        {
-          "title": "多项产品功能迭代上线",
-          "category": "产品更新",
-          "summary": "**产品矩阵更新**：- 在 X Layer 上线 **Outcome Market**；- OKX Card 新增 **自动充值** 功能；- TradingView 支持 **X-Perps** 交易；- 美国地区上线 **$RLUSD 存款匹配** 奖励。",
-          "date": "2025-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@okx",
-              "url": "https://x.com/okx/status/2063146707202760733"
-            }
-          ]
         }
       ]
     },
@@ -1045,32 +959,6 @@
             {
               "name": "Twitter",
               "url": "https://x.com/Bybit_Official/status/2063923992843395172"
-            }
-          ]
-        },
-        {
-          "title": "举办足球季主题活动",
-          "category": "活动推广",
-          "summary": "**Bybit Football Season**：- 开展转发抽奖赠送**球衣**活动；- 利用足球赛事热度进行社区互动与品牌推广。",
-          "date": "2025-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2063169017825648935"
-            }
-          ]
-        },
-        {
-          "title": "推广交易限额功能",
-          "category": "产品更新",
-          "summary": "**功能普及**：- 宣传 **Set the limits** 自动交易执行功能，旨在提升用户在睡眠或离线时的交易效率。",
-          "date": "2025-05-24",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2063289816934990116"
             }
           ]
         },
@@ -1564,19 +1452,6 @@
           ]
         },
         {
-          "title": "机构账户出现大额 SOL 流入",
-          "category": "其他",
-          "summary": "**大额转账监控**：- 约 **135 万枚 SOL**（价值约 8400 万美元）从未知钱包转入 **Coinbase Institutional**。",
-          "date": "2025-05-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@whale_alert",
-              "url": "https://x.com/whale_alert/status/2063236127763439667"
-            }
-          ]
-        },
-        {
           "title": "AWS 集成 Coinbase x402 协议支持 AI 支付",
           "category": "合作伙伴",
           "summary": "**Amazon Web Services (AWS)** 已将 Coinbase 的 **x402 协议**集成至 CloudFront 及其 WAF 中：\n- 支持网站向 **AI 代理（AI Agents）**收取费用，并直接通过 **USDC（Base 网络）**结算。\n- 标志着超大规模云服务商首次直接整合**链上结算系统**进行流量变现。",
@@ -1981,19 +1856,6 @@
               "url": "https://x.com/remitano/status/2064429076878618664"
             }
           ]
-        },
-        {
-          "title": "发布加密货币安全防范指南",
-          "category": "其他",
-          "summary": "**Remitano** 在社交平台发起安全意识宣传，提醒用户应对日益复杂的诈骗手段：\\n- 提出 **“Stop. Challenge. Report.”**（停止、挑战、报告）三步安全防护法\\n- 引导用户通过滑动阅读等形式学习如何识别并防范潜在风险，确保平台内资产安全",
-          "date": "2024-05-20",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "twitter:@Remitano",
-              "url": "https://x.com/remitano/status/2063320012937691583"
-            }
-          ]
         }
       ]
     },
@@ -2245,19 +2107,6 @@
             {
               "name": "Twitter",
               "url": "https://x.com/bitbank_inc/status/2063455998178902167"
-            }
-          ]
-        },
-        {
-          "title": "推出 EPOS CRYPTO 联名信用卡及推广活动",
-          "category": "产品更新",
-          "summary": "**bitbank 推出联名加密信用卡并开启促销**：\n- **产品特性**：与 EPOS 合作推出，持卡人消费可赚取加密货币，支持通过 bitbank 账户或银行账户支付\n- **资费优惠**：该卡提供永久免年费政策\n- **活动推广**：用户通过关注官方账号并转发指定推文，可参与 500 日元 Amazon 礼品卡抽奖活动",
-          "date": "2024-05-23",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "X (Twitter)",
-              "url": "https://x.com/bitbank_inc/status/2063093666022080574"
             }
           ]
         },
@@ -3058,53 +2907,6 @@
             {
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/chatgpt-dirombak-openai-bidik-ipo-fantastis-rp16-000-triliun/"
-            }
-          ]
-        },
-        {
-          "title": "Double Date Cashback 获奖名单公布",
-          "category": "活动推广",
-          "summary": "**Tokocrypto** 将于近期举办直播活动，揭晓营销活动获奖者：\n- **活动名称**：Double Date Cashback\n- **直播时间**：2026年6月7日 19:00 WIB\n- **直播平台**：Tokocrypto 官方 TikTok 账号",
-          "date": "2026-06-07",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "X (Twitter)",
-              "url": "https://x.com/Tokocrypto/status/2063244263127916842"
-            }
-          ]
-        },
-        {
-          "title": "报道印尼盾 (IDR) 对美元汇率创历史新低",
-          "category": "其他",
-          "summary": "**Tokocrypto News** 关注宏观经济对本地市场的影响：\n- **核心事件**：2026年6月4日至5日，印尼盾汇率触及历史低点，报 **Rp18,031–Rp18,136** 每美元\n- **影响因素**：全球美元走强及市场不确定性增加",
-          "date": "2026-06-05",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "X (Twitter)",
-              "url": "https://x.com/Tokocrypto/status/2063204374953042199"
-            }
-          ]
-        },
-        {
-          "title": "发布全球加密市场交易活跃度深度报告",
-          "category": "其他",
-          "summary": "**Tokocrypto** 对全球市场低迷态势进行预警：\n- **交易量萎缩**：2026年4月全球中心化交易所现货交易量跌至 **6790亿美元**，为2.5年来最低水平\n- **市场情绪**：提及包括 **MicroStrategy** 减持 BTC、**Arthur Hayes** 抛售 WLD 以及 **SpaceX IPO** 预期等多个市场动向",
-          "date": "2026-06-05",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/volume-perdagangan-kripto-turun-ke-titik-terendah-dalam-25-tahun/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/strategi-baru-michael-saylor-prinsip-never-sell-btc-tak-lagi-absolut/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/arthur-hayes-buang-semua-wld-harga-langsung-terjun-bebas-28/"
             }
           ]
         },
