@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-08",
-    "to": "2026-07-08"
+    "from": "2026-06-09",
+    "to": "2026-07-09"
   },
   "competitors": [
     {
@@ -646,66 +646,6 @@
               "url": "https://cryptoslate.com/three-world-cup-betting-crypto-wallets-have-cashed-out-more-than-24-million/"
             }
           ]
-        },
-        {
-          "title": "拟于 6 月 10 日上线股票借贷产品 FPSL",
-          "category": "产品更新",
-          "summary": "**Binance** 计划进一步多元化产品线：\n- 拟于 **6 月 10 日**正式推出股票借贷产品 **FPSL**。",
-          "date": "2024-06-10",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5211201"
-            }
-          ]
-        },
-        {
-          "title": "部署 24 项 AI 安全倡议及 100 多个检测模型",
-          "category": "产品更新",
-          "summary": "**Binance** 正在通过 AI 技术升级安全系统以应对日益复杂的诈骗：\n- 部署了 **24+ 项 AI 倡议**和 **100+ 个模型**。\n- 旨在实时检测欺诈、预警用户并大规模保护资金安全。",
-          "date": "2024-06-08",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2063637322667589754"
-            }
-          ]
-        },
-        {
-          "title": "发布基于意图（Intent-based）的 DeFi 交易研究",
-          "category": "产品更新",
-          "summary": "**Binance** 探讨 DeFi 交互新趋势：\n- **基于意图的交易**可有效减少交易失败率。\n- 旨在简化跨链操作并提升用户交互体验。",
-          "date": "2024-06-08",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@binance",
-              "url": "https://x.com/binance/status/2063727828646973898"
-            }
-          ]
-        },
-        {
-          "title": "巨额 BTC 转入平台及 4 月现货交易量下降",
-          "category": "其他",
-          "summary": "**市场数据与资金流向**：\n- 某鲸鱼在底部买入 **1,656 枚 BTC** 后转入 Binance，获利约 350 万美元。\n- 4 月份 CEX 现货交易量降至 **6790 亿美元**，为 2023 年 10 月以来最低，同比下降 46%。",
-          "date": "2024-06-08",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@lookonchain",
-              "url": "https://x.com/lookonchain/status/2063785550335865002"
-            },
-            {
-              "name": "twitter:@whale_alert",
-              "url": "https://x.com/whale_alert/status/2063745943283830975"
-            },
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2063467415967769083"
-            }
-          ]
         }
       ]
     },
@@ -972,53 +912,6 @@
             {
               "name": "Odaily 快讯",
               "url": "https://www.odaily.news/zh-CN/newsflash/490271"
-            }
-          ]
-        },
-        {
-          "title": "推出 IPO Express 并开启 SpaceX 代币化股权订阅",
-          "category": "产品更新",
-          "summary": "**Bybit** 推出链上股权发行产品 **IPO Express**：\n- 合资格的 VIP 和 PRO 用户可使用 **USDC** 订阅 SpaceX 股权。\n- 获得分配后可获得代币化股份，现货交易预计于 **6 月 12 日**开启。",
-          "date": "2024-06-08",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "twitter:@Bybit_Official",
-              "url": "https://x.com/Bybit_Official/status/2063532446742708570"
-            },
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2063587347094982881"
-            }
-          ]
-        },
-        {
-          "title": "与 xStocks 达成合作伙伴关系",
-          "category": "合作伙伴",
-          "summary": "**Bybit** 扩展其传统资产代币化服务：\n- 采用 Payward 的 **xStocks** 框架提供服务。\n- 该框架源自 Kraken 收购的 **Backed Finance** 技术。",
-          "date": "2024-06-08",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/403893/bybit-follows-kraken-in-offering-tokenized-spacex-ipo-access-via-xstocks"
-            }
-          ]
-        },
-        {
-          "title": "Arthur Hayes 及鲸鱼近期大额提现动态",
-          "category": "其他",
-          "summary": "**大户资金动态**：\n- BitMEX 联创 **Arthur Hayes** 关联钱包从 Bybit 提取约 3.4 万枚 **HYPE**（约 209 万美元）。\n- 某神秘鲸鱼从 Bybit 提取 **2500 万 USDT** 持续买入 $币安人生。",
-          "date": "2024-06-08",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/newsflash/487901"
-            },
-            {
-              "name": "twitter:@lookonchain",
-              "url": "https://x.com/lookonchain/status/2063447009210912937"
             }
           ]
         }
@@ -1491,32 +1384,6 @@
           ]
         },
         {
-          "title": "上线首批永续型股票指数期货",
-          "category": "产品更新",
-          "summary": "**Coinbase** 进一步模糊加密货币与传统金融边界：\n- 拟于 **6 月 8 日**正式推出其首批**永续型股票指数期货**产品。",
-          "date": "2024-06-08",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5211201"
-            }
-          ]
-        },
-        {
-          "title": "支持印度卢比 (INR) 充值服务",
-          "category": "产品更新",
-          "summary": "**Coinbase** 加速印度市场扩张：\n- 现已支持 **INR 充值**，简化印度用户的入金流程。",
-          "date": "2024-06-08",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "twitter:@WuBlockchain",
-              "url": "https://x.com/WuBlockchain/status/2063638066753864161"
-            }
-          ]
-        },
-        {
           "title": "Coinbase 拟推出代币化股票产品",
           "category": "产品更新",
           "summary": "* **产品计划**：Coinbase 已宣布将推出**代币化股票**版本。\\n* **待定细节**：根据 Galaxy 研究主管消息，目前尚未说明具体运作方式（是属于发行方支持还是第三方支持类型），具体机制有待披露。",
@@ -1796,19 +1663,6 @@
               "url": "https://blog.kraken.com/news/industry-news/europe-mica-switch"
             }
           ]
-        },
-        {
-          "title": "上线 SpaceX (SPCX) Pre-IPO 永续合约",
-          "category": "产品更新",
-          "summary": "**Kraken Derivatives** 推出高风险股权衍生品：\n- 允许用户在 SpaceX 正式上市前通过 **SPCX 永续合约**进行看多或看空。\n- 提供最高 **5 倍杠杆**，支持多抵押品保证金，但不向美、加及欧洲部分地区开放。",
-          "date": "2024-06-08",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/kraken-derivatives/spacex-5x-leverage-perp"
-            }
-          ]
         }
       ]
     },
@@ -1818,32 +1672,6 @@
       "logo": "https://www.google.com/s2/favicons?domain=remitano.com&sz=64",
       "summary": "近期未监测到 Remitano 的公开动态",
       "events": [
-        {
-          "title": "发布 2026 年 6 月第一周加密市场回顾",
-          "category": "其他",
-          "summary": "**Remitano 发布 6 月 1 日至 7 日周报：** 1. **市场行情**：BTC 跌至 $61,500，ETH 跌至 $1,769，ADA 跌破 $0.20 创 4 年新低； 2. **代币异动**：WLD 受 Arthur Hayes 抛售影响在一天内下跌 20%。",
-          "date": "2026-06-08",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/remitano/status/2063682404934406493"
-            }
-          ]
-        },
-        {
-          "title": "发起 REMISAFETY 社区安全意识互动活动",
-          "category": "活动推广",
-          "summary": "**Remitano 推出拼词游戏提高安全意识：** 1. **互动内容**：邀请用户利用“REMISAFETY”字母组合单词参与回复； 2. **核心目标**：通过游戏化互动方式，针对尼日利亚等地区市场强化社区用户的安全防范认知。",
-          "date": "2026-06-08",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/remitano/status/2063661600372916630"
-            }
-          ]
-        },
         {
           "title": "比特币披萨日回忆分享活动",
           "category": "活动推广",
@@ -2094,19 +1922,6 @@
             {
               "name": "twitter:@bitbank_inc",
               "url": "https://x.com/bitbank_inc/status/2063807101798174963"
-            }
-          ]
-        },
-        {
-          "title": "推出EPOS CRYPTO联名卡及配套社媒抽奖活动",
-          "category": "活动推广",
-          "summary": "**bitbank上线EPOS CRYPTO联名信用卡**，其核心内容包括：\\n- **卡片权益**：永久免年费，刷卡消费可累积加密货币资产\\n- **支付渠道**：支持绑定普通银行账户或bitbank账户进行支付\\n- **营销活动**：通过Twitter平台进行关注与转推抽奖，参与者有机会获赠500日元Amazon礼品卡",
-          "date": "2024-11-20",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/bitbank_inc/status/2063455998178902167"
             }
           ]
         },
@@ -2392,19 +2207,6 @@
               "url": "https://x.com/cryptocom/status/2063931899853128158"
             }
           ]
-        },
-        {
-          "title": "启动巴黎赛事预测互动活动",
-          "category": "活动推广",
-          "summary": "**Crypto.com** 在社交媒体上针对巴黎体育赛事决赛发起预测活动。要点包括：- 引导用户通过指定链接参与赛果**预测**- 结合热门体育赛事提升社区**活跃度**与用户参与感",
-          "date": "2024-08-04",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/cryptocom/status/2063622002431168713"
-            }
-          ]
         }
       ]
     },
@@ -2621,19 +2423,6 @@
             {
               "name": "Twitter",
               "url": "https://x.com/indodax/status/2063909101663338870"
-            }
-          ]
-        },
-        {
-          "title": "独家周边礼品竞猜活动",
-          "category": "活动推广",
-          "summary": "**INDODAX 独家周边**获取活动。用户通过参与答题竞猜，有机会获得官方提供的限量版专属礼品。",
-          "date": "2024-05-22",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/indodax/status/2063486165609484560"
             }
           ]
         }
@@ -2892,49 +2681,6 @@
               "url": "https://x.com/Tokocrypto/status/2063814278684282965"
             }
           ]
-        },
-        {
-          "title": "发布多领域市场动态与行业深度分析",
-          "category": "其他",
-          "summary": "**市场情报与宏观趋势分析**。Tokocrypto 通过其新闻平台持续输出高质量内容，涵盖：* **主流币走势**（ETH/SOL/AVAX/FIDA/PI）；* **监管与合规**（SEC 对 PAXG 的审批）；* **科技跨界**（OpenAI IPO 传闻、2026 世界杯与 Web3 趋势）。",
-          "date": "2026-06-07",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/eth-rebound-2-harga-ethereum-sentuh-us1-599-di-tengah-tekanan-pasar/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/chatgpt-dirombak-openai-bidik-ipo-fantastis-rp16-000-triliun/"
-            }
-          ]
-        },
-        {
-          "title": "Double Date Cashback 活动开奖",
-          "category": "活动推广",
-          "summary": "**2500 万印尼盾**奖池返现活动直播开奖。* 活动通过 **TikTok 直播**公布中奖者；* 旨在提高用户在特定日期前后的交易活跃度。",
-          "date": "2024-05-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Tokocrypto/status/2063560346045165701"
-            }
-          ]
-        },
-        {
-          "title": "推广 DCA、质押及零手续费功能",
-          "category": "产品更新",
-          "summary": "**核心交易功能**重点推广。包括：* **DCA (定期定额投资)** 工具；* **Staking (质押)** 服务；* **Convert (零手续费闪兑)** 功能，降低用户交易门槛。",
-          "date": "2024-05-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/Tokocrypto/status/2063650878746460377"
-            }
-          ]
         }
       ]
     },
@@ -3086,19 +2832,6 @@
             {
               "name": "Twitter",
               "url": "https://x.com/LunoGlobal/status/2063969206732013753"
-            }
-          ]
-        },
-        {
-          "title": "联合举办 MYBW x ARC 创始人晚宴",
-          "category": "合作伙伴",
-          "summary": "**MYBW x ARC Founders Night**。Luno 与 MalaysiaBCW 及 ARC 联合举办社交活动，旨在连接加密生态系统内的核心初创团队与创始人。",
-          "date": "2024-05-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Twitter",
-              "url": "https://x.com/LunoGlobal/status/2063477999346020622"
             }
           ]
         }
