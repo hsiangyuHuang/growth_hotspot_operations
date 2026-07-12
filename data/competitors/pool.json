@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-11",
-    "to": "2026-07-11"
+    "from": "2026-06-12",
+    "to": "2026-07-12"
   },
   "competitors": [
     {
@@ -356,45 +356,6 @@
             {
               "name": "CoinDesk",
               "url": "https://www.coindesk.com/policy/2026/06/11/philippines-central-bank-says-binance-and-its-local-partner-lack-licenses-to-operate"
-            }
-          ]
-        },
-        {
-          "title": "上线代币化美股产品 bStocks",
-          "category": "产品更新",
-          "summary": "**Binance 正式上线 bStocks 产品**，将传统美股转换为链上代币。主要内容包括：\n- **首批支持 5 种美股**：用户可将持有的股票转换为代币进行交易。\n- **7*24 小时交易**：打破传统市场时间限制，实现全天候链上交易。\n- **新兴市场驱动**：首周成交额 84% 来自新兴市场，定位于服务被传统金融忽视的零售用户。",
-          "date": "2026-06-10",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/converge/tradfi-and-fintech/binance-launches-bstocks-tokenized-us-equities-24-7-onchain-trading"
-            }
-          ]
-        },
-        {
-          "title": "上线多款 TradFi 标的永续合约",
-          "category": "产品更新",
-          "summary": "**Binance 合约平台上线多款以 USDⓈ 计价的传统金融（TradFi）永续合约**，进一步丰富了加密货币与传统资产的交叉投资工具。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/b893d3539ae34c47856013b1f3cc94fb"
-            }
-          ]
-        },
-        {
-          "title": "推出 SpaceX 相关 Pre-IPO 交易产品",
-          "category": "产品更新",
-          "summary": "**Binance 与多家交易所同步推出与 SpaceX 挂钩的衍生品**。关键要点：\n- **Pre-IPO 投资机会**：允许用户在 SpaceX 正式上市前参与其估值博弈。\n- **市场趋势**：此类产品旨在捕捉机构级标的的散户化交易需求。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/blockchaincom-launches-247-institutional-perpetuals-adds-spacex-pre-ipo-trading"
             }
           ]
         },
@@ -808,71 +769,6 @@
           ]
         },
         {
-          "title": "联合万事达卡推出 AI 代理支付功能",
-          "category": "合作伙伴",
-          "summary": "**Coinbase 与 Mastercard、Ripple 合作推出「Agent Pay」服务**。主要功能：\n- **支持 AI 机器人支付**：允许 AI 代理使用卡、银行账户及稳定币结算服务费。\n- **自动化交易**：旨在解决机器与机器之间的资金流转瓶颈。",
-          "date": "2026-06-10",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/370660/mastercard-enables-ai-agent-payments-crypto-giants-coinbase-ripple"
-            }
-          ]
-        },
-        {
-          "title": "在英国发起「Stand With Crypto」维权运动",
-          "category": "监管合规",
-          "summary": "**Coinbase 支持的 Stand With Crypto 呼吁成员抵制限制加密交易的银行**。背景如下：\n- **对抗银行封锁**：针对英国银行封锁数字资产交易的行为，动员超过 28 万名持有者参与抗议。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/business/2026/06/10/over-280-000-uk-crypto-holders-kick-off-campaign-against-banks-blocking-transactions"
-            }
-          ]
-        },
-        {
-          "title": "采用 Pyth 实时美股定价索引",
-          "category": "合作伙伴",
-          "summary": "**Coinbase 采用 Pyth 网络提供的美股及大宗商品持续定价指数**，用于支持其相关代币化资产和衍生品在非市场交易时段的报价。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/pyth-24-7-pricing-indices-tokenized-stocks-commodities"
-            }
-          ]
-        },
-        {
-          "title": "Coinbase Ventures 二级市场增持 ENA",
-          "category": "融资/IPO",
-          "summary": "**Coinbase Ventures 在公开市场购买了 Ethena (ENA) 代币**，展示了对 DeFi 稳定币协议的持续战略支持。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/wall-street-is-buying-defi-tokens-again-even-as-everyone-worries-the-code-is-unsafe/"
-            }
-          ]
-        },
-        {
-          "title": "上线 SpaceX 相关永续合约",
-          "category": "产品更新",
-          "summary": "**Coinbase 加入 SpaceX 预上市产品竞争**，推出相关永续产品以满足用户对高关注度科技企业 Pre-IPO 的投资需求。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/blockchaincom-launches-247-institutional-perpetuals-adds-spacex-pre-ipo-trading"
-            }
-          ]
-        },
-        {
           "title": "GameStop 续签比特币期权合作协议",
           "category": "合作伙伴",
           "summary": "**GameStop 继续将比特币持仓与 Coinbase 挂钩以获取预付现金**。\n- **交易结构**：GameStop 在 5 月底展期了其 Coinbase 期权交易。\n- **现状**：此举旨在维持流动性，尽管对其季度业绩贡献有限。",
@@ -1137,45 +1033,6 @@
             {
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/product/new-features/usdcx-deposits-and-withdrawals-now-available-on-canton"
-            }
-          ]
-        },
-        {
-          "title": "集成 Pyth 全天候价格索引",
-          "category": "合作伙伴",
-          "summary": "**Kraken 宣布采用 Pyth 网络**，获取美国股票、黄金及石油的持续定价，以增强其产品在非市场交易时间的报价能力。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/pyth-24-7-pricing-indices-tokenized-stocks-commodities"
-            }
-          ]
-        },
-        {
-          "title": "发布 6 月宏观经济动态分析",
-          "category": "其他",
-          "summary": "**Kraken Blog 发布针对 CPI、FOMC 会议及 SpaceX IPO 的经济简报**。关键点包括对美联储主席政策指引变化的预测分析。",
-          "date": "2026-06-10",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/economic-brief/june-10-2026"
-            }
-          ]
-        },
-        {
-          "title": "上线 SpaceX 挂钩衍生品",
-          "category": "产品更新",
-          "summary": "**Kraken 紧跟市场趋势上线 SpaceX 预上市相关交易产品**，利用市场对商业航天巨头的上市预期吸引交易流量。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/blockchaincom-launches-247-institutional-perpetuals-adds-spacex-pre-ipo-trading"
             }
           ]
         },
@@ -1589,19 +1446,6 @@
               "url": "https://blog.indodax.com/deposit-withdrawal-tahun-baru-islam-2026/"
             }
           ]
-        },
-        {
-          "title": "支持 DODO、SYN 及 TLM 网络迁移",
-          "category": "产品更新",
-          "summary": "**Indodax 宣布支持三款代币的网络迁移工作**：\n- **涉及代币**：DODO (DODO)、Synapse (SYN) 以及 Alien Worlds (TLM)\n- **技术细节**：支持代币从 **BEP20 网络迁移至 ERC20 网络**\n- **目的**：确保用户在代币网络架构调整期间的资产安全与充提顺畅",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/migration-dodo-syn-tlm/"
-            }
-          ]
         }
       ]
     },
@@ -1775,31 +1619,6 @@
             {
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/mengenal-tokenized-stocks-ketika-saham-tradisional-masuk-ke-dunia-blockchain/"
-            }
-          ]
-        },
-        {
-          "title": "发布每日加密货币交易信号与市场深度分析报告",
-          "category": "其他",
-          "summary": "**Tokocrypto 发布 2026 年 6 月 10 日市场分析系列报告**：\n- **技术分析**：重点覆盖了 **BTC、SOL、XRP、ADA 及 HYPE** 等热门资产的支撑位与阻力位分析\n- **信号服务**：推出针对交易者的**每日市场信号（Sinyal Kripto）**，包含具体的策略建议\n- **宏观监测**：报道了**地缘政治紧张局势**（如美伊局势）对比特币价格波动的直接影响\n- **生态动态**：预警了 **Pi Network (PI) 的代币解锁风险**及 **Cardano (ADA) Leios 测试网**上线前的波动性",
-          "date": "2026-06-10",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/sinyal-kripto-10-juni-2026-analisis-teknikal-dan-proyeksi-pasar/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/analisa-harga-btc-hari-ini-bitcoin-turun-3-tekanan-jual-kembali/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/bitcoin-turun-setelah-as-serang-iran-geopolitik-tekan-pasar-crypto/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/harga-pi-network-turun-3-tertekan-token-unlock-dan-sentimen-pasar/"
             }
           ]
         }
