@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-12",
-    "to": "2026-07-12"
+    "from": "2026-06-13",
+    "to": "2026-07-13"
   },
   "competitors": [
     {
@@ -326,36 +326,6 @@
             {
               "name": "CryptoSlate",
               "url": "https://cryptoslate.com/crypto-exchanges-are-opening-a-two-front-war-for-the-stock-market/"
-            }
-          ]
-        },
-        {
-          "title": "上线 bStocks 代币化美股证券交易服务",
-          "category": "产品更新",
-          "summary": "**Binance** 宣布推出首批五种 **bStocks 代币化美股证券**，允许符合条件的合规用户在链上进行 7x24 小时交易，并将持有的证券转换为代币。此外，现货平台已同步上线相关交易对及交易机器人服务。",
-          "date": "2026-06-11",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/5646e3f9ea6b4c989cb76aa18bd99245"
-            },
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/converge/tradfi-and-fintech/binance-launches-bstocks-tokenized-us-equities-24-7-onchain-trading"
-            }
-          ]
-        },
-        {
-          "title": "菲律宾央行称 Binance 缺乏经营许可",
-          "category": "监管合规",
-          "summary": "**菲律宾中央银行**表示，**Binance** 及其当地合作伙伴**缺乏在该国运营的必要牌照**，相关监管压力可能影响其在东南亚的合规进程。",
-          "date": "2026-06-11",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/policy/2026/06/11/philippines-central-bank-says-binance-and-its-local-partner-lack-licenses-to-operate"
             }
           ]
         },
@@ -688,87 +658,6 @@
           ]
         },
         {
-          "title": "与 Morpho 和 Ethena 合作上线 USDC 借贷池",
-          "category": "合作伙伴",
-          "summary": "- **与 Morpho 合作**：推出两个 USDC 借贷金库，分为保守的 **Prime 层**和高收益层。\n- **与 Ethena 合作**：在 **Coinbase App** 内直接上线基于 **USDe** 的收益池，覆盖美国及海外用户。",
-          "date": "2026-06-12",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/cefi/coinbase-usdc-lending-vaults-morpho-steakhouse-ethena-risk-tier"
-            },
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/newsflash/489647"
-            }
-          ]
-        },
-        {
-          "title": "发布 Coinbase for Agents AI 代理账户",
-          "category": "产品更新",
-          "summary": "**Coinbase** 推出独立账户产品，允许 **ChatGPT 和 Claude 等 AI 助手**在用户设定的限制内，自动执行加密货币交易、资产管理及支付任务。该产品旨在构建 AI 时代的支付基础设施。",
-          "date": "2026-06-11",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/404458/coinbase-agents-dedicated-accounts-ai-bots-trade-pay-users"
-            },
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/tech/2026/06/11/coinbase-launches-ai-agent-accounts-that-can-trade-and-spend-on-your-behalf"
-            },
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/370835/coinbase-tool-ai-agents-trade-crypto-make-payments"
-            },
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/cefi/coinbase-for-agents-ai-accounts-trade-pay-x402"
-            }
-          ]
-        },
-        {
-          "title": "稳定币年度结算量突破 1 万亿美元",
-          "category": "其他",
-          "summary": "CEO Brian Armstrong 披露 **Coinbase 每年处理的稳定币支付额已达 1 万亿美元**，展示了平台在支付基础设施领域的深度渗透。",
-          "date": "2026-06-11",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/cefi/brian-armstrong-says-coinbase-processes-usd1t-in-stablecoin-payments-annually"
-            }
-          ]
-        },
-        {
-          "title": "MassPay 采用 Coinbase 扩展 USDC 跨境结算",
-          "category": "合作伙伴",
-          "summary": "**MassPay** 接入 **Coinbase** 提供的 USDC 支付轨道，旨在利用稳定币降低企业全球支付的成本并提高结算速度。",
-          "date": "2026-06-11",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/masspay-coinbase-partner-stablecoin-cross-border-payments"
-            }
-          ]
-        },
-        {
-          "title": "量子顾问委员会发布抗量子迁移警告",
-          "category": "其他",
-          "summary": "**Coinbase 量子顾问委员会** 敦促开发者即刻启动**后量子迁移（Post-Quantum Migration）**工作，以应对量子计算对比特币及加密资产的潜在威胁。",
-          "date": "2026-06-11",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/370851/bitcoin-quantum-threat-now-coinbase"
-            }
-          ]
-        },
-        {
           "title": "GameStop 续签比特币期权合作协议",
           "category": "合作伙伴",
           "summary": "**GameStop 继续将比特币持仓与 Coinbase 挂钩以获取预付现金**。\n- **交易结构**：GameStop 在 5 月底展期了其 Coinbase 期权交易。\n- **现状**：此举旨在维持流动性，尽管对其季度业绩贡献有限。",
@@ -1011,32 +900,6 @@
           ]
         },
         {
-          "title": "入选 Fortune 首届加密百强榜单 CeFi 第三名",
-          "category": "其他",
-          "summary": "**Kraken** 被《财富》杂志评选为**首届加密 100 强企业**，并在中心化金融（CeFi）类别中排名第 **3** 位。",
-          "date": "2026-06-11",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/news/industry-news/fortune-crypto-100-list-2026"
-            }
-          ]
-        },
-        {
-          "title": "支持 Canton 网络 USDCx 充提",
-          "category": "产品更新",
-          "summary": "**Kraken** 正式上线 **Canton** 网络上的 **USDCx** 充值与提现功能，增加了用户对隐私增强型 Layer 1 网络资产的支持。",
-          "date": "2026-06-11",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/new-features/usdcx-deposits-and-withdrawals-now-available-on-canton"
-            }
-          ]
-        },
-        {
           "title": "获得 MiCA 授权并强化欧洲市场布局",
           "category": "监管合规",
           "summary": "针对 **MiCA 法案** 7 月 1 日开始执行，Kraken 确认已获得多项关键授权：\n- 通过**爱尔兰中央银行**获得 MiCA 授权。\n- 持有 **MiFID 衍生品牌照**和**电子货币（E-money）牌照**，可合法服务欧洲经济区用户。",
@@ -1275,19 +1138,6 @@
               "url": "https://www.theblock.co/post/405952/japan-sbi-group-launches-jpysc?utm_source=rss&utm_medium=rss"
             }
           ]
-        },
-        {
-          "title": "SBI 新生银行推出加密货币代金券奖励活动",
-          "category": "活动推广",
-          "summary": "**SBI 新生银行启动加密货币利息奖励方案**：\\n- **激励机制**：客户可获得相当于其存款利息 20% 的凭证，用于在 SBI VC Trade 兑换 BTC、ETH 或 XRP。\\n- **时间规划**：该活动于 6 月 10 日正式上线，初始周期为三个月，计划于秋季推广至普通存款等更多业务领域。",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/sbi-shinsei-crypto-vouchers/"
-            }
-          ]
         }
       ]
     },
@@ -1340,19 +1190,6 @@
       "summary": "近期未监测到 Indodax 的公开动态",
       "events": [
         {
-          "title": "Indodax Goes to Campus 走进 ITB Stikom Bali",
-          "category": "活动推广",
-          "summary": "**开展校园教育普及活动**：\n- 推出“Indodax Goes to Campus”计划，通过与高校互动提升大学生对加密行业的认知\n- 旨在加强与年轻潜在用户群体的品牌粘性",
-          "date": "2026-06-26",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/igtc-stikombali-jun26/"
-            }
-          ]
-        },
-        {
           "title": "Indodax 与 Love Beau 开展联名促销活动",
           "category": "活动推广",
           "summary": "- **Indodax** 联合 **Love Beau** 为用户提供线下福利；- 用户通过展示已验证的 **INDODAX 账户**，即可在 **Love Beau** 享受特定护理项目 **100,000 印尼盾** 的折扣。",
@@ -1401,49 +1238,6 @@
             {
               "name": "Indodax Announcements",
               "url": "https://blog.indodax.com/beyond-code/"
-            }
-          ]
-        },
-        {
-          "title": "推出机场贵宾厅会员专属折扣优惠",
-          "category": "活动推广",
-          "summary": "**联合 IAS Hospitality 推出增值权益**：\n- **Indodax Prioritas 成员**：享受 20% 的机场高端休息室折扣\n- **已认证普通用户**：享受 15% 的相同服务折扣\n- 该活动自 2026 年 6 月 10 日起生效，覆盖多家机场休息室",
-          "date": "2026-06-10",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/promo-prioritas-lounge-bandara/"
-            },
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/promo-lounge-bandara/"
-            }
-          ]
-        },
-        {
-          "title": "MYRO 代币合约地址迁移支持",
-          "category": "其他",
-          "summary": "**支持 MYRO 合约升级**：\n- 暂时关闭 MYRO 的充提业务以便进行合约地址转换\n- 技术停机时间始于 2026 年 6 月 10 日 15:15 WIB",
-          "date": "2026-06-10",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/contract-address-migration-myro/"
-            }
-          ]
-        },
-        {
-          "title": "伊斯兰新年期间服务流程调整",
-          "category": "其他",
-          "summary": "**发布假期运营公告**：\n- 针对 2026 伊斯兰新年假期对充提服务时间进行常规性调整与优化通告",
-          "date": "2026-06-10",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/deposit-withdrawal-tahun-baru-islam-2026/"
             }
           ]
         }
@@ -1593,32 +1387,6 @@
             {
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/riset-kripto-8-12-juni-2026-bitcoin-konsolidasi-bye-or-buy/"
-            }
-          ]
-        },
-        {
-          "title": "推出每日加密货币信号分析专栏",
-          "category": "产品更新",
-          "summary": "**常态化提供市场策略服务**：\n- 每日发布“Sinyal Kripto”分析报告，整合**技术指标**与当日**市场策略**\n- 重点关注具备高波动潜力的资产，助力用户决策",
-          "date": "2026-06-11",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/sinyal-kripto-11-juni-2026-analisis-teknikal-dan-proyeksi-pasar/"
-            }
-          ]
-        },
-        {
-          "title": "Tokocrypto 研究团队发布 RWA 行业深度洞察",
-          "category": "其他",
-          "summary": "**强化研究影响力**：\n- 研究团队针对 **Tokenized Stocks（代币化股票）** 趋势进行专题解析\n- 探讨传统股票（如苹果、特斯拉）通过区块链技术进行资产数字化的潜力",
-          "date": "2026-06-11",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/mengenal-tokenized-stocks-ketika-saham-tradisional-masuk-ke-dunia-blockchain/"
             }
           ]
         }
@@ -1922,40 +1690,6 @@
             {
               "name": "IBKR Campus",
               "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/successful-blockchains-resemble-thriving-islands/"
-            }
-          ]
-        },
-        {
-          "title": "发布基于深度强化学习的期货市场交易审计技术方案",
-          "category": "其他",
-          "summary": "**盈透证券量化频道（IBKR Quant News）发布技术指引**：介绍如何使用 **Keras/TensorFlow** 开发多智能体 DDQN（双深度 Q 网络）引擎，该引擎专门用于评估**白银期货市场（SI=F）**的算法执行制度与策略表现。",
-          "date": "2026-06-11",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/ibkr-quant-news/a-multi-agent-ddqn-strategic-audit-engine-for-silver-markets-using-keras-tensorflow/"
-            }
-          ]
-        },
-        {
-          "title": "发布 2026 年上半年系列宏观经济与市场趋势报告",
-          "category": "其他",
-          "summary": "**IBKR Campus 连续发布多项深度市场洞察**：1. **宏观分析**：评估**霍尔木兹能源冲击**引发的 PPI 飙升（5月达 6.5%）对新任美联储主席 Kevin Warsh 政策的影响；2. **美股动态**：分析指出 2026 年上半年**股票拆分活动大幅降温**，并预测美股长期存在的供应短缺问题可能即将结束；3. **量化对比**：针对**半导体板块**相对于标普 500 指数的季节性表现进行了历史数据对比。",
-          "date": "2026-06-11",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/wall-street-rebounds-overlooking-hot-ppi-in-favor-of-cooler-oil/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/split-decisions-what-stock-splits-reveal-about-corporations-in-h1-2026/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/the-us-stock-shortage-may-be-ending/"
             }
           ]
         }
