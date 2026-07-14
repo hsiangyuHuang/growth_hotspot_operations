@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-13",
-    "to": "2026-07-13"
+    "from": "2026-06-14",
+    "to": "2026-07-14"
   },
   "competitors": [
     {
@@ -284,48 +284,6 @@
             {
               "name": "The Defiant",
               "url": "https://thedefiant.io/converge/regulation/binance-could-face-eu-exit-as-reports-say-greek-regulator-is-set-to-reject-mica-license"
-            }
-          ]
-        },
-        {
-          "title": "上线并随后取消 SpaceX 代币化 IPO 申购活动",
-          "category": "活动推广",
-          "summary": "**SpaceX (SPCXB) 代币化证券因底层份额短缺被迫终止**。\n- **资金规模**：该打新活动在上线前吸引了约 5.57 亿美元资金参与。\n- **原因及补救**：因第三方供应商 xStocks 无法交付底层股份，Binance 已全额退款并向受影响用户提供额外补偿。\n- **行业影响**：反映了加密交易所试图打通美股 IPO 通道时面临的合规与交付挑战。",
-          "date": "2026-06-12",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Binance Blog",
-              "url": "https://www.binance.com/en/support/announcement/191cb96109f24c5c85362631a55a45d3"
-            },
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/404644/bybit-binance-bitget-cancel-tokenized-spacex-ipo-allocations-share-shortage"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/spacex-ipo-550m-binance-crypto-rails-front-run-wall-street-pre-ipo-price-discovery"
-            },
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/cefi/bybit-binance-bitget-cancel-tokenized-spacex-allocations-xstocks-fails-deliver-shares"
-            },
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5211340"
-            }
-          ]
-        },
-        {
-          "title": "计划将美股与 ETF 引入加密交易应用",
-          "category": "产品更新",
-          "summary": "**Binance 拟直接竞争传统零售经纪业务**。\n- **资产覆盖**：计划通过 bStocks 提供超过 7,000 种美股和 ETF 的访问权限。\n- **战略意图**：旨在吸引原本属于华尔街传统券商的散户交易关系。",
-          "date": "2026-06-12",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/crypto-exchanges-are-opening-a-two-front-war-for-the-stock-market/"
             }
           ]
         },
@@ -632,45 +590,6 @@
           ]
         },
         {
-          "title": "推出 AI 代理支付与交易工具 Coinbase for Agents",
-          "category": "产品更新",
-          "summary": "**赋能 AI 在链上自主管理加密资产**。\n- **主要功能**：允许 AI 代理无需人工干预即可执行支付、交易和持仓管理。\n- **应用场景**：旨在降低链上操作门槛，构建 AI 驱动的金融服务生态。",
-          "date": "2026-06-12",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/coinbase-launches-tool-letting-ai-agents-make-payments-and-trade-crypto"
-            }
-          ]
-        },
-        {
-          "title": "受监管金银期货实现 24/7 全天候交易",
-          "category": "产品更新",
-          "summary": "**Coinbase Derivatives 打破传统大宗商品交易时间限制**。\n- **实施细节**：CFTC 监管的金银期货合约将不再于周末休市，实现 24/7 交易。\n- **后续计划**：计划在未来将石油期货也纳入全天候交易范畴。",
-          "date": "2026-06-12",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/converge/cefi/coinbase-gold-silver-futures-24-7-trading-us-regulated-oil"
-            }
-          ]
-        },
-        {
-          "title": "GameStop 续签比特币期权合作协议",
-          "category": "合作伙伴",
-          "summary": "**GameStop 继续将比特币持仓与 Coinbase 挂钩以获取预付现金**。\n- **交易结构**：GameStop 在 5 月底展期了其 Coinbase 期权交易。\n- **现状**：此举旨在维持流动性，尽管对其季度业绩贡献有限。",
-          "date": "2026-05-31",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/370905/gamestop-renews-bitcoin-deal-that-did-little-for-its-record-quarter"
-            }
-          ]
-        },
-        {
           "title": "AWS 集成 Coinbase x402 协议支持 AI 支付",
           "category": "合作伙伴",
           "summary": "**Amazon Web Services (AWS)** 已将 Coinbase 的 **x402 协议**集成至 CloudFront 及其 WAF 中：\n- 支持网站向 **AI 代理（AI Agents）**收取费用，并直接通过 **USDC（Base 网络）**结算。\n- 标志着超大规模云服务商首次直接整合**链上结算系统**进行流量变现。",
@@ -874,32 +793,6 @@
           ]
         },
         {
-          "title": "入选 2026 年全球跨境支付百强榜单",
-          "category": "其他",
-          "summary": "**Kraken 连续八年获选为全球最具影响力的跨境支付参与者之一**。\n- **行业地位**：该榜单由 FXC Intelligence 发布，涵盖全球顶级银行、金融科技及汇款提供商。\n- **战略意义**：凸显了 Kraken 在加密货币与法币资金流动方面的核心作用。",
-          "date": "2026-06-12",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/news/industry-news/fxc-intelligence-2026-cross-border-payments-100"
-            }
-          ]
-        },
-        {
-          "title": "进军美股和 ETF 零售经纪市场",
-          "category": "产品更新",
-          "summary": "**Kraken 正在将其产品扩展至传统证券交易领域**。\n- **核心内容**：将美国股票和 ETF 整合至现有的加密 App 中。\n- **竞争格局**：与 Binance、Bybit 等共同向传统华尔街经纪商发起挑战。",
-          "date": "2026-06-12",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/crypto-exchanges-are-opening-a-two-front-war-for-the-stock-market/"
-            }
-          ]
-        },
-        {
           "title": "获得 MiCA 授权并强化欧洲市场布局",
           "category": "监管合规",
           "summary": "针对 **MiCA 法案** 7 月 1 日开始执行，Kraken 确认已获得多项关键授权：\n- 通过**爱尔兰中央银行**获得 MiCA 授权。\n- 持有 **MiFID 衍生品牌照**和**电子货币（E-money）牌照**，可合法服务欧洲经济区用户。",
@@ -1081,27 +974,6 @@
             {
               "name": "bitbank Knowledge",
               "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260615"
-            }
-          ]
-        },
-        {
-          "title": "发布 2026 年 6 月 12 日比特币市场深度研判报告",
-          "category": "其他",
-          "summary": "**发布比特币日度及周度行情分析报告**：- **价格波动**：比特币成功收复 1000 万日元关口，短期内显现底座支撑力；- **关键驱动**：报告指出后续反转需关注 **ETF 资金流入** 的恢复情况，并探讨了 **美伊协议进展** 对币价的提振作用；- **技术关注点**：重点监测 **14EMA 指标** 以及 1050 万日元和 6.4 万美元等关键阻力位。",
-          "date": "2026-06-12",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/weekly-bitcoin-review20260612"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/daily_signal20260612"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/bitbank-daily-2026-06-12"
             }
           ]
         }
@@ -1376,19 +1248,6 @@
               "url": "https://news.tokocrypto.com/pasar-crypto-waspada-agenda-padat-pekan-ini-bisa-picu-volatilitas/"
             }
           ]
-        },
-        {
-          "title": "发布 6 月加密货币市场深度研究报告",
-          "category": "产品更新",
-          "summary": "**Tokocrypto 研究团队发布了 2026 年 6 月 8-12 日的战略分析周报**。\\n- 报告深度解读了**全球宏观经济数据**对加密资产市场的潜在影响。\\n- 包含对 **Bitcoin (BTC)**、**Ethereum (ETH)** 及 **XRP** 等主流资产的价格走势研判。\\n- 旨在通过数据驱动的洞察，为用户提供市场复苏期的投资参考依据。",
-          "date": "2026-06-12",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/riset-kripto-8-12-juni-2026-bitcoin-konsolidasi-bye-or-buy/"
-            }
-          ]
         }
       ]
     },
@@ -1635,61 +1494,6 @@
             {
               "name": "IBKR Campus",
               "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/bitcoin-meets-critical-support-at-60k/"
-            }
-          ]
-        },
-        {
-          "title": "深度追踪 SpaceX 及 AI 巨头 IPO 动态",
-          "category": "其他",
-          "summary": "盈透证券重点关注并报道了 **SpaceX 的正式上市交易** 及相关科技巨头动态：\n- **SpaceX** 预计于 2026 年 6 月 12 日开始交易，市场对其估值高度期待。\n- **Anthropic 和 OpenAI** 亦计划在同年上市，三大公司预计将为公开市场增加近 **4 万亿美元** 市值。\n- 分析了美伊潜在和平协议对 **油价** 及市场的波动影响。",
-          "date": "2026-06-12",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/spacex-ready-for-launch/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/the-mega-ipos-that-could-change-what-you-own/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-market-insights/deal-or-no-deal/"
-            }
-          ]
-        },
-        {
-          "title": "发布基于预测市场的宏观经济展望",
-          "category": "其他",
-          "summary": "利用其 **预测市场 (Prediction Market)** 数据为投资者提供多维度市场洞察：\n- 预测 **美国工业产值** 年化增长接近 1.6%，反映制造业持续扩张。\n- 追踪 **Russell 2000 指数** 创新高及 **衰退风险** 对投资者的潜在影响。",
-          "date": "2026-06-12",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/prediction-market/us-industrial-production-expected-near-1-6-on-monday/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/russell-2000-reaches-fresh-record-as-oil-hits-2-month-low/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/what-is-a-recession-and-how-can-investors-be-affected/"
-            }
-          ]
-        },
-        {
-          "title": "发布区块链生态系统研究观点",
-          "category": "其他",
-          "summary": "探讨了区块链成功的核心逻辑：\n- 认为 **开发者、用户、流动性提供者** 组成的活力生态系统比单纯的技术优势更关键。\n- 强调了 **网络效应** 随时间产生的复利价值。",
-          "date": "2026-06-12",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/successful-blockchains-resemble-thriving-islands/"
             }
           ]
         }
