@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-14",
-    "to": "2026-07-14"
+    "from": "2026-06-15",
+    "to": "2026-07-15"
   },
   "competitors": [
     {
@@ -417,19 +417,6 @@
               "url": "https://cointelegraph.com/news/bybit-launches-tokenized-bond-products-from-pimco-and-cmbi-through-rwa-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
             }
           ]
-        },
-        {
-          "title": "大额 USDT 资金流入 Bybit",
-          "category": "其他",
-          "summary": "- **SIREN 控盘者**在链上抛售约 2.01 亿枚代币后，将部分获利资金（约 **2480 万 USDT**）转入 **Bybit** 及 Bitget。- 此次变动导致其 SIREN 链上持仓占比从 94% 下降至 **66%**。",
-          "date": "2024-06-14",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Odaily 快讯",
-              "url": "https://www.odaily.news/zh-CN/newsflash/490271"
-            }
-          ]
         }
       ]
     },
@@ -599,32 +586,6 @@
             {
               "name": "The Defiant",
               "url": "https://thedefiant.io/news/defi/aws-cloudfront-coinbase-x402-ai-agents-usdc-base"
-            }
-          ]
-        },
-        {
-          "title": "发布量子计算安全威胁研究报告",
-          "category": "其他",
-          "summary": "- **Coinbase** 发布报告警示**地址重用**行为可能导致数百万枚比特币（包含交易所冷钱包）面临量子计算攻击风险。- 提议通过**设置迁移截止日期**和**冻结脆弱资产**等技术手段进行防御。",
-          "date": "2024-06-14",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/404685/coinbase-quantum-report-flags-exchange-cold-wallets-among-millions-of-bitcoin-exposed-by-address-reuse?utm_source=rss&utm_medium=rss"
-            }
-          ]
-        },
-        {
-          "title": "Coinbase for Agents 支付功能重大更新",
-          "category": "产品更新",
-          "summary": "- 正式上线 **Coinbase for Agents**，支持为 AI Agent 创建独立账户并进行资产管理。- 推出 **x402 协议**，支持 Agent 直接使用 **USDC 余额**进行支付。- 发布 **Swift SDK**，允许开发者在 iOS 原生应用中快速集成自托管钱包功能。",
-          "date": "2024-06-14",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Odaily 快讯",
-              "url": "https://www.odaily.news/zh-CN/newsflash/490273"
             }
           ]
         },
