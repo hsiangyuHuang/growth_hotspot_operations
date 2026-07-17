@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-17",
+    "to": "2026-07-17"
   },
   "competitors": [
     {
@@ -404,19 +404,6 @@
               "url": "https://www.coindesk.com/markets/2026/06/16/tether-gold-now-has-a-dedicated-options-market-on-bybit"
             }
           ]
-        },
-        {
-          "title": "上线基于 PIMCO 和 CMBI 的代币化债券产品",
-          "category": "产品更新",
-          "summary": "**深耕 RWA 赛道**：\n- 通过其 RWA 平台推出由 **PIMCO** 和 **招银国际 (CMBI)** 提供的**代币化机构债券基金**\n- 旨在为符合条件的用户提供区块链上的传统金融资产访问权限，满足日益增长的机构级资产需求",
-          "date": "2026-06-15",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/bybit-launches-tokenized-bond-products-from-pimco-and-cmbi-through-rwa-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-            }
-          ]
         }
       ]
     },
@@ -728,32 +715,6 @@
           ]
         },
         {
-          "title": "上线 Anthropic 和 OpenAI 的 Pre-IPO 永续合约",
-          "category": "产品更新",
-          "summary": "**创新衍生品交易**：\n- 推出针对 **Anthropic** 和 **OpenAI** 的 Pre-IPO 永续合约\n- 支持最高 **5 倍杠杆**和多抵押品（flex）保证金模式，允许用户在公司上市前进行多空博弈",
-          "date": "2026-06-15",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/kraken-derivatives/trade-anthropic-and-open-ai-at-up-to-5x-leverage"
-            }
-          ]
-        },
-        {
-          "title": "面向美国交易者推出 CFTC 监管的永续期货",
-          "category": "监管合规",
-          "summary": "**美国合规化突破**：\n- 在美国市场上线受 **CFTC 监管**的永续期货产品\n- 符合条件的客户可通过 **Kraken Pro** 访问，该产品与现货、杠杆及 CME 期货共同构成了其美国衍生品矩阵",
-          "date": "2026-06-15",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/kraken-derivatives/announcing-cftc-regulated-us-perps"
-            }
-          ]
-        },
-        {
           "title": "获得 MiCA 授权并强化欧洲市场布局",
           "category": "监管合规",
           "summary": "针对 **MiCA 法案** 7 月 1 日开始执行，Kraken 确认已获得多项关键授权：\n- 通过**爱尔兰中央银行**获得 MiCA 授权。\n- 持有 **MiFID 衍生品牌照**和**电子货币（E-money）牌照**，可合法服务欧洲经济区用户。",
@@ -905,36 +866,6 @@
             {
               "name": "bitbank Knowledge",
               "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260616"
-            }
-          ]
-        },
-        {
-          "title": "限制 Polymarket 相关资金转账以规避监管风险",
-          "category": "监管合规",
-          "summary": "**加强合规审查，防止涉及非法博彩行为**：- 警告用户，涉及 **Polymarket** 相关的资金转账可能面临**账户封禁**；- 此举旨在严格遵守日本本土的**博彩法律**要求。",
-          "date": "2026-06-15",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/bitbank-japan-crackdown-polymarket-linked-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-            }
-          ]
-        },
-        {
-          "title": "发布最新比特币市场洞察与技术分析报告",
-          "category": "其他",
-          "summary": "**提供市场深度分析，辅助用户决策**：- 发布 **2026 年 6 月 15 日**当周市场周报，解读 **FOMC** 政策及中东局势影响；- 技术分析显示 BTC 已收复 **14EMA**，短期地缘及市场情绪有所改善。",
-          "date": "2026-06-15",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/bitbank-weekly-market-insight-2026-06-15"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260615"
             }
           ]
         }
@@ -1169,44 +1100,6 @@
             {
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/harga-bittensor-tertekan-perdebatan-guncang-sentimen-tao/"
-            }
-          ]
-        },
-        {
-          "title": "发布 2026 年 6 月 15 日加密市场技术分析与交易信号",
-          "category": "产品更新",
-          "summary": "**Tokocrypto** 推出了最新的市场信号服务，旨在为交易者提供深入的市场洞察和每日交易策略。\\n\\n*   **核心资产分析**：重点分析了 3 个具有价格波动潜力的加密资产。\\n*   **决策支持**：结合**实时市场数据**和**技术指标**，为用户提供结构化的交易参考。",
-          "date": "2026-06-15",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/sinyal-kripto-15-juni-2026-analisis-teknikal-dan-proyeksi-pasar/"
-            }
-          ]
-        },
-        {
-          "title": "发布全球宏观经济与加密市场关联研究报告",
-          "category": "其他",
-          "summary": "**Tokocrypto News** 针对近期的全球宏观经济动态发布了系列研究，分析其对加密市场的波动影响。\\n\\n*   **政策监控**：密切跟踪**美联储 6 月议息会议**及新任联储主席的政策信号。\\n*   **地缘政治**：评估美伊协议对减缓市场风险及推动比特币回升至 **73,000 美元**的潜在作用。\\n*   **行业趋势**：关注 MicroStrategy 增持 **1 亿美元比特币**及 SpaceX IPO 等重大资本动向对加密情绪的带动。",
-          "date": "2026-06-15",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/keputusan-the-fed-17-juni-apa-sinyal-pertama-kevin-warsh/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/strategy-beli-bitcoin-lagi-senilai-us100-juta-saham-mstr-naik-7/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/kalshi-prediksi-bitcoin-bisa-kembali-ke-us73-000-sebelum-akhir-juni/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/pasar-crypto-waspada-agenda-padat-pekan-ini-bisa-picu-volatilitas/"
             }
           ]
         }
