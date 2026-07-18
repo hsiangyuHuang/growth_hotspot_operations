@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-17",
-    "to": "2026-07-17"
+    "from": "2026-06-18",
+    "to": "2026-07-18"
   },
   "competitors": [
     {
@@ -259,35 +259,6 @@
           ]
         },
         {
-          "title": "希腊监管机构或将拒绝其欧盟 MiCA 牌照申请",
-          "category": "监管合规",
-          "summary": "**核心风险**：据路透社报道，希腊监管机构正准备拒绝 Binance 的 MiCA 牌照申请。\n- **时间节点**：若申请最终被拒，Binance 可能在 **7 月 1 日** 欧盟 MiCA 新规生效后面临停止服务或退出欧盟市场的风险。\n- **官方回应**：Binance 坚称其申请完全合规，并警告监管排斥可能削弱市场流动性。",
-          "date": "2026-06-16",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/404947/binance-may-forced-halt-services-eu-clients-next-month-reuters?utm_source=rss&utm_medium=rss"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/binance-response-mica-european-union-license?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            },
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/policy/2026/06/16/binance-says-its-european-regulatory-application-is-fully-compliant-despite-report-of-greek-rejection"
-            },
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/371343/binance-rejected-eu-regulatory-license-reuters"
-            },
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/converge/regulation/binance-could-face-eu-exit-as-reports-say-greek-regulator-is-set-to-reject-mica-license"
-            }
-          ]
-        },
-        {
           "title": "欧洲 MiCA 法案合规挑战与流动性风险",
           "category": "监管合规",
           "summary": "随着**MiCA 法案于 7 月 1 日生效**，币安在欧洲的市场准入面临严峻考验：\n- **USDT 流动性**：法案可能导致非合规稳定币在欧盟市场的流动性受限。\n- **监管沟通**：虽然成员国拥有发牌权，但**欧洲央行（ECB）**在申请过程中的影响力引发法律界关注。",
@@ -391,21 +362,7 @@
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=bybit.com&sz=64",
       "summary": "近期未监测到 Bybit 的公开动态",
-      "events": [
-        {
-          "title": "推出 Tether Gold (XAUt) 专属期权市场",
-          "category": "产品更新",
-          "summary": "**业务扩展**：Bybit 正式为 Tether Gold 资产开设了专门的期权交易市场。\n- **市场定位**：进一步丰富了其衍生品产品线，满足用户对黄金锚定资产的套期保值需求。",
-          "date": "2026-06-16",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/markets/2026/06/16/tether-gold-now-has-a-dedicated-options-market-on-bybit"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "Coinbase",
@@ -483,83 +440,6 @@
             {
               "name": "Odaily 快讯",
               "url": "https://www.odaily.news/zh-CN/newsflash/493204"
-            }
-          ]
-        },
-        {
-          "title": "发布系统大更新：集成 AI 顾问与统一流动性",
-          "category": "产品更新",
-          "summary": "**核心更新内容**：\n- **AI 助手**：解锁了 AI 驱动的投资顾问功能。\n- **流动性整合**：实现了美国平台与国际平台之间的 **全球统一流动性**。\n- **交易功能**：新增了期权交易及 pre-IPO 市场功能。",
-          "date": "2026-06-16",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/405012/coinbase-unveils-system-update-unlocking-an-ai-advisor-global-unified-liquidity-options-trading-and-more?utm_source=rss&utm_medium=rss"
-            },
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/business/2026/06/16/coinbase-intoduces-ai-advisor-stock-options-and-pre-ipo-markets-in-finance-push"
-            }
-          ]
-        },
-        {
-          "title": "进军代币化美股市场并支持 ACATS 资产转移",
-          "category": "产品更新",
-          "summary": "**金融融合**：\n- **代币化股票**：推出由美国公司股票 **1:1 支持** 的链上代币化证券，持有者可获得股息。\n- **资产互通**：支持用户通过 ACATS 系统转移传统股票投资组合，加速向传统金融领域扩张。",
-          "date": "2026-06-16",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/404978/coinbase-launching-tokenized-us-stocks-backed-11-holders-receive-dividends?utm_source=rss&utm_medium=rss"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/coinbase-acats-stock-portfolio-transfers-beyond-crypto?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            },
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/converge/tradfi-and-fintech/coinbase-teases-1-1-backed-tokenized-u-s-stocks-with-on-chain-dividends"
-            }
-          ]
-        },
-        {
-          "title": "联合 AWS 推出 AI 代理支付协议 x402",
-          "category": "合作伙伴",
-          "summary": "**技术突破**：与 AWS 合作，允许出版商在 CloudFront 和 WAF 上通过 **x402 协议** 向 AI 代理（Agents）收取内容费用。",
-          "date": "2026-06-16",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/404877/coinbase-aws-enable-publishers-on-cloudfront-and-waf-to-charge-ai agents-via-x402-protocol?utm_source=rss&utm_medium=rss"
-            }
-          ]
-        },
-        {
-          "title": "印度当局起诉涉案 2000 万美元的 Coinbase 仿冒诈骗团伙",
-          "category": "其他",
-          "summary": "**安全事件**：印度执法局对 8 名被告提起指控，其涉嫌通过 **网页欺骗（Spoofing）** 手段冒充 Coinbase 平台进行巨额诈骗。",
-          "date": "2026-06-16",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/404872/india-files-charges-against-8-defendants-in-alleged-20-million-coinbase-spoofing-scam?utm_source=rss&utm_medium=rss"
-            }
-          ]
-        },
-        {
-          "title": "CEO Brian Armstrong 呼吁改革“合格投资者”规则",
-          "category": "监管合规",
-          "summary": "**政策倡议**：Brian Armstrong 批评现行规则是“累进税”，认为基于财富的投资限制剥夺了普通民众参与私募投资的机会。",
-          "date": "2026-06-15",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/regulation/coinbase-armstrong-accredited-investor-regressive-tax"
             }
           ]
         },
@@ -849,23 +729,6 @@
             {
               "name": "bitbank Knowledge",
               "url": "https://bitbank.cc/knowledge/markets/article/bitbank-daily-2026-06-19"
-            }
-          ]
-        },
-        {
-          "title": "发布比特币市场行情与技术趋势分析报告",
-          "category": "其他",
-          "summary": "**发布每日市场分析内容**，核心要点如下：- 探讨了**Clarity 法案**对 BTC 价格走势带来的不确定性；- 分析指出 BTC 短期趋势正在**改善**，站上 14EMA；- 提醒投资者注意 **1100 万日元**关口的利确回吐风险。",
-          "date": "2026-06-16",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/bitbank-daily-2026-06-16"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260616"
             }
           ]
         }
@@ -1314,40 +1177,6 @@
             {
               "name": "IBKR Campus",
               "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/seeing-a-basis-to-be-rationally-exuberant/"
-            }
-          ]
-        },
-        {
-          "title": "IBKR Campus 发布宏观经济及美联储政策深度展望",
-          "category": "其他",
-          "summary": "**盈透证券**针对全球宏观经济局势发布一系列深度点评：\n- **联储政策预测**：预测新任主席 Kevin Warsh 领导下的首次议息会议将保持政策一致性，目前市场预期无异议通过概率为 68%。\n- **地缘政治影响**：分析美伊和平协议进展对原油市场的冲击，指出原油价格已跌至 3 个月低点。\n- **重大交易点评**：关注 SpaceX 拟收购 AI 编程工具商 Anysphere 以及百胜餐饮出售必胜客等企业动态。",
-          "date": "2026-06-16",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/prediction-market/no-dissent-expected-at-first-warsh-led-fomc/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/dow-jumps-to-fresh-record-as-crude-oil-tumbles-to-3-month-low/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/deals-of-the-day-put-ai-and-fast-food-on-notice/"
-            }
-          ]
-        },
-        {
-          "title": "发布比特币技术分析报告，关注 6 万美元支撑位",
-          "category": "其他",
-          "summary": "**IBKR Campus** 发布加密货币市场技术评论：\n- **市场表现**：比特币在 2026 年表现疲软，较 2025 年 10 月高点已下跌逾 50%。\n- **关键价位**：指出 6 万美元是当前比特币面临的关键心理与技术支撑位，并探讨了引发此次抛售的潜在理论。",
-          "date": "2026-06-16",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/bitcoin-meets-critical-support-at-60k/"
             }
           ]
         }
