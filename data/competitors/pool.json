@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-20",
-    "to": "2026-07-20"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "competitors": [
     {
@@ -259,36 +259,6 @@
           ]
         },
         {
-          "title": "欧洲 MiCA 法案合规挑战与流动性风险",
-          "category": "监管合规",
-          "summary": "随着**MiCA 法案于 7 月 1 日生效**，币安在欧洲的市场准入面临严峻考验：\n- **USDT 流动性**：法案可能导致非合规稳定币在欧盟市场的流动性受限。\n- **监管沟通**：虽然成员国拥有发牌权，但**欧洲央行（ECB）**在申请过程中的影响力引发法律界关注。",
-          "date": "2024-06-25",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/mica-rules-questions-ecb-role-binance-licensing?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            },
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/europes-mica-july-deadline-puts-binance-access-and-usdt-liquidity-on-the-line/"
-            }
-          ]
-        },
-        {
-          "title": "菲律宾监管状态法律澄清",
-          "category": "监管合规",
-          "summary": "BlockShoals 法律负责人对币安在**菲律宾**的运营合规性做出说明：\n- 币安可在菲律宾证监会框架下提供**交易访问服务**。\n- 但涉及披索转账等央行监管业务，仍需获得 **VASP 牌照**。",
-          "date": "2024-06-25",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/blockshoals-binance-regulatory-status-philippines?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            }
-          ]
-        },
-        {
           "title": "三家世界杯预测钱包获利2400万美元并转入币安",
           "category": "其他",
           "summary": "- **巨额获利**：三个加密货币钱包在世界杯预测市场共计获利 **2425 万美元**。\\n- **资金归集**：所有获利资金最终被汇入同一个 **Binance 存款地址**。\\n- **潜在关联**：Lookonchain 监测指出，资金流向的一致性暗示这些账户可能由同一交易者或实体控制。",
@@ -444,19 +414,6 @@
           ]
         },
         {
-          "title": "AWS 集成 Coinbase x402 协议支持 AI 支付",
-          "category": "合作伙伴",
-          "summary": "**Amazon Web Services (AWS)** 已将 Coinbase 的 **x402 协议**集成至 CloudFront 及其 WAF 中：\n- 支持网站向 **AI 代理（AI Agents）**收取费用，并直接通过 **USDC（Base 网络）**结算。\n- 标志着超大规模云服务商首次直接整合**链上结算系统**进行流量变现。",
-          "date": "2024-06-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/defi/aws-cloudfront-coinbase-x402-ai-agents-usdc-base"
-            }
-          ]
-        },
-        {
           "title": "Coinbase 拟推出代币化股票产品",
           "category": "产品更新",
           "summary": "* **产品计划**：Coinbase 已宣布将推出**代币化股票**版本。\\n* **待定细节**：根据 Galaxy 研究主管消息，目前尚未说明具体运作方式（是属于发行方支持还是第三方支持类型），具体机制有待披露。",
@@ -593,19 +550,6 @@
               "url": "https://blog.kraken.com/event/money20-20-europe-2026"
             }
           ]
-        },
-        {
-          "title": "获得 MiCA 授权并强化欧洲市场布局",
-          "category": "监管合规",
-          "summary": "针对 **MiCA 法案** 7 月 1 日开始执行，Kraken 确认已获得多项关键授权：\n- 通过**爱尔兰中央银行**获得 MiCA 授权。\n- 持有 **MiFID 衍生品牌照**和**电子货币（E-money）牌照**，可合法服务欧洲经济区用户。",
-          "date": "2024-06-25",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/news/industry-news/europe-mica-switch"
-            }
-          ]
         }
       ]
     },
@@ -708,27 +652,6 @@
             {
               "name": "bitbank Knowledge",
               "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260622"
-            }
-          ]
-        },
-        {
-          "title": "发布比特币市场行情深度系列报告",
-          "category": "其他",
-          "summary": "**bitbank 发布多篇比特币走势分析报告**，核心内容包括：- **市场预警**：BTC 在 1000 万日元关口表现疲软，存在短期跌破风险；- **多维研判**：结合了 ETF 流向、期货价格偏差、链上指标及中东地缘政治风险对币价的影响进行综合评估。",
-          "date": "2026-06-19",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/weekly-bitcoin-review20260619"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260619"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/bitbank-daily-2026-06-19"
             }
           ]
         }
@@ -854,19 +777,6 @@
               "url": "https://blog.indodax.com/ama-cryptosharia/"
             }
           ]
-        },
-        {
-          "title": "举办 Beyond Code 加密安全专题沙龙",
-          "category": "活动推广",
-          "summary": "**Indodax** 发起名为 “Beyond Code: The Human Side of Crypto Security” 的活动：• **核心议题**：邀请行业专家从非代码（人性与管理）维度探讨加密货币安全。• **活动形式**：线下沙龙，旨在通过专家分享提升用户的资产安全保护意识。",
-          "date": "2026-06-19",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/beyond-code/"
-            }
-          ]
         }
       ]
     },
@@ -929,40 +839,6 @@
             {
               "name": "Tokocrypto News",
               "url": "https://news.tokocrypto.com/tebak-tebakan-pertandingan-piala-dunia-berhadiah-rp1-miliar-gini-cara-ikutannya/"
-            }
-          ]
-        },
-        {
-          "title": "发布 2026 年 6 月中旬加密市场研究报告",
-          "category": "其他",
-          "summary": "**Tokocrypto 研究团队**发布了 6 月 15 日至 19 日的周期性战略报告：• **市场分析**：涵盖了全球地缘政治缓解及印尼本地宏观债务状况对资产价格的潜在影响。• **趋势展望**：分析了比特币支撑位及以太坊的短期修正压力。",
-          "date": "2026-06-19",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/riset-kripto-15-19-juni-2026-geopolitik-reda-utang-ri-naik-sell-on-the-news/"
-            }
-          ]
-        },
-        {
-          "title": "发布 Pre-IPO 代币交易与热门代币教育指南",
-          "category": "其他",
-          "summary": "**Tokocrypto** 针对当前市场热点发布了一系列投资者教育指南：• **Pre-IPO 专题**：详细解析 Pre-IPO 代币的交易机制，帮助投资者在项目上市前获取估值敞口。• **板块热点**：针对 GTA 6 题材、Bittensor (TAO) 以及 Pi Network 的市场动态提供了深度解读与操作参考。",
-          "date": "2026-06-19",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/ramai-pre-ipo-token-trading-apa-maksudnya/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/pre-order-gta-6-diungkap-meme-coin-bertema-game-melonjak/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/harga-bittensor-tertekan-perdebatan-guncang-sentimen-tao/"
             }
           ]
         }
