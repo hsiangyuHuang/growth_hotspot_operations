@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-22",
+    "to": "2026-07-22"
   },
   "competitors": [
     {
@@ -410,19 +410,6 @@
             {
               "name": "Odaily 快讯",
               "url": "https://www.odaily.news/zh-CN/newsflash/493204"
-            }
-          ]
-        },
-        {
-          "title": "Coinbase 拟推出代币化股票产品",
-          "category": "产品更新",
-          "summary": "* **产品计划**：Coinbase 已宣布将推出**代币化股票**版本。\\n* **待定细节**：根据 Galaxy 研究主管消息，目前尚未说明具体运作方式（是属于发行方支持还是第三方支持类型），具体机制有待披露。",
-          "date": "2024-03-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/newsflash/492659"
             }
           ]
         }
