@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-22",
-    "to": "2026-07-22"
+    "from": "2026-06-23",
+    "to": "2026-07-23"
   },
   "competitors": [
     {
@@ -255,19 +255,6 @@
             {
               "name": "Binance Blog",
               "url": "https://www.binance.com/en/support/announcement/88ea4a4f9f0b4ad4b7b308195c026fe4"
-            }
-          ]
-        },
-        {
-          "title": "三家世界杯预测钱包获利2400万美元并转入币安",
-          "category": "其他",
-          "summary": "- **巨额获利**：三个加密货币钱包在世界杯预测市场共计获利 **2425 万美元**。\\n- **资金归集**：所有获利资金最终被汇入同一个 **Binance 存款地址**。\\n- **潜在关联**：Lookonchain 监测指出，资金流向的一致性暗示这些账户可能由同一交易者或实体控制。",
-          "date": "2024-06-21",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/three-world-cup-betting-crypto-wallets-have-cashed-out-more-than-24-million/"
             }
           ]
         }
