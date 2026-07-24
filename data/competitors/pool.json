@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-23",
-    "to": "2026-07-23"
+    "from": "2026-06-24",
+    "to": "2026-07-24"
   },
   "competitors": [
     {
@@ -155,19 +155,6 @@
           ]
         },
         {
-          "title": "欧元交易占比及 MiCA 合规压力",
-          "category": "监管合规",
-          "summary": "**CryptoQuant 数据**显示，欧元交易目前仅占 Binance 现货交易量的 **1%**。随着 **MiCA 法案** 7月1日截止日期的临近，该交易所正面临合规不确定性。",
-          "date": "2026-06-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/eur-trades-binance-spot-volume-cryptoquant?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            }
-          ]
-        },
-        {
           "title": "创始人 CZ 回应个人身份误解",
           "category": "其他",
           "summary": "Binance 创始人 CZ 试图澄清关于其个人背景及身份的相关误解：\n* **核心观点**：针对监管压力下的个人形象及在公司的过往角色进行说明",
@@ -231,32 +218,6 @@
               "url": "https://cointelegraph.com/news/binances-yi-he-warns-alleged-scammer-coinup-responds?utm_source=rss&utm_medium=rss&utm_campaign=rss"
             }
           ]
-        },
-        {
-          "title": "新增现货交易对及交易机器人服务",
-          "category": "产品更新",
-          "summary": "**Binance 现货**上线了新的交易对，并配套推出了相关的**交易机器人（Trading Bots）服务**，以提升交易多样性。",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Binance Blog",
-              "url": "https://www.binance.com/en/support/announcement/f0c763fc49934c1b9b4e4ce1653e67dc"
-            }
-          ]
-        },
-        {
-          "title": "上线多项 TradFi 永续合约",
-          "category": "产品更新",
-          "summary": "**Binance 合约平台**计划推出多项以 USDⓈ 为保证金的 **TradFi 永续合约**，旨在将传统金融产品引入加密货币交易市场。",
-          "date": "2026-06-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Binance Blog",
-              "url": "https://www.binance.com/en/support/announcement/88ea4a4f9f0b4ad4b7b308195c026fe4"
-            }
-          ]
         }
       ]
     },
@@ -276,39 +237,6 @@
             {
               "name": "The Block",
               "url": "https://www.theblock.co/post/405777/okx-europe-chief-mica-deadline-nears?utm_source=rss&utm_medium=rss"
-            }
-          ]
-        },
-        {
-          "title": "与洲际交易所 (ICE) 成立合资公司",
-          "category": "合作伙伴",
-          "summary": "**OKX 与纽交所母公司 ICE** 宣布成立 50/50 的合资公司。核心动向包括：\n- **代币化美股**：使 OKX 用户能接入 NYSE 代币化股票市场\n- **金融牌照**：将以美国注册经纪交易商及期货佣金商（FCM）身份运营\n- **前纽约州州长 Andrew Cuomo** 被任命为该合资公司的**联席主席**",
-          "date": "2026-06-22",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/405640/nyse-intercontinental-exchange-okx-expand-access-tokenized-equities-joint-venture-cuomo?utm_source=rss&utm_medium=rss"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/andrew-cuomo-okx-intercontinental-exchange-venture?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            },
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/markets/2026/06/22/okx-and-nyse-partner-to-bridge-tradfi-and-crypto-markets-in-joint-venture-led-by-andrew-cuomo"
-            },
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/371789/new-york-stock-exchange-ice-okx-crypto-tokenized-securities"
-            },
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/converge/tradfi-and-fintech/ice-okx-50-50-joint-venture-tokenized-nyse-equities-cuomo-co-chair"
-            },
-            {
-              "name": "Odaily 文章",
-              "url": "https://www.odaily.news/zh-CN/post/5211497"
             }
           ]
         }
@@ -371,32 +299,6 @@
             {
               "name": "CoinTelegraph",
               "url": "https://cointelegraph.com/news/cboe-bitcoin-ether-perpetual-futures-cftc-kalshi?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            }
-          ]
-        },
-        {
-          "title": "参投项目 Goldfinch Finance 启动清算",
-          "category": "融资/IPO",
-          "summary": "由 **Coinbase Ventures 参投**的 DeFi 借贷协议 **Goldfinch Finance** 正式启动清算。主要原因为：\n- **大规模借款人违约**导致无法收回资金\n- 已导致存款人资金被困近三年",
-          "date": "2026-06-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/defi/goldfinch-finance-winds-down-depositors-report-50m-defaults"
-            }
-          ]
-        },
-        {
-          "title": "机构客户摩根士丹利通过 Coinbase 增持 BTC",
-          "category": "其他",
-          "summary": "**摩根士丹利（Morgan Stanley）**从 Coinbase 平台买入了 **166.24 枚 BTC**。其目前的 BTC 持仓总额已达到约 **2.88 亿美元**。",
-          "date": "2026-06-22",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Odaily 快讯",
-              "url": "https://www.odaily.news/zh-CN/newsflash/493204"
             }
           ]
         }
@@ -511,19 +413,6 @@
               "url": "https://cointelegraph.com/news/openpayd-mica-license-stablecoin-adoption-europe"
             }
           ]
-        },
-        {
-          "title": "亮相 Money20/20 Europe 2026 峰会",
-          "category": "活动推广",
-          "summary": "**Kraken 联席 CEO Arjun Sethi** 发表了主题为“Money Open”的演讲。此外，Kraken 与**花旗银行（Citi）**举行了炉边谈话，探讨：\n- **嵌入式金融服务**在数字商业中的应用\n- 重点推介其 **Payward Services** 基础设施",
-          "date": "2026-06-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/event/money20-20-europe-2026"
-            }
-          ]
         }
       ]
     },
@@ -609,23 +498,6 @@
             {
               "name": "bitbank Knowledge",
               "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260623"
-            }
-          ]
-        },
-        {
-          "title": "发布比特币市场周报及日度行情深度分析",
-          "category": "其他",
-          "summary": "**bitbank Knowledge** 于 6 月 22 日发布了多维度市场报告：- **技术面分析**：重点关注比特币在 **200 周线**的支撑力度，以及 **14EMA** 和 **CCI/ADX** 指标对短期趋势的信号导向。- **基本面动态**：探讨了**美国与伊朗协议**及相关经济指标对市场波动的潜在影响。- **行情预测**：指出当前市场方向感缺失，需关注短期反转的焦点。",
-          "date": "2026-06-22",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/bitbank-weekly-market-insight-2026-06-22"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260622"
             }
           ]
         }
@@ -789,32 +661,6 @@
               "url": "https://news.tokocrypto.com/tokenized-stocks-cara-baru-mengakses-saham-global-lebih-mudah/"
             }
           ]
-        },
-        {
-          "title": "正式加入 ICEx Group 生态系统",
-          "category": "合作伙伴",
-          "summary": "**Tokocrypto 宣布加入 ICEx Group**，这是其强化印尼数字金融资产市场基础设施的重要战略步骤。\\n- **战略目标**：通过加入该生态系统，巩固其在印尼数字资产行业的领先地位。\\n- **行业影响**：此举旨在提升平台合规性并推动印尼本地数字资产市场的协同增长。",
-          "date": "2026-06-22",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/tokocrypto-bergabung-ke-icex-group-perkuat-ekosistem-aset-digital-indonesia/"
-            }
-          ]
-        },
-        {
-          "title": "推出 2026 世界杯 10 亿印尼盾竞猜活动",
-          "category": "活动推广",
-          "summary": "**Tokocrypto 针对 2026 年世界杯启动大规模营销**，设立总额达 10 亿印尼盾的奖金池。\\n- **核心玩法**：用户通过参与比赛结果预测活动（Tebak-Tebakan）赢取奖励。\\n- **市场策略**：利用国际大型体育赛事的高流量，提升印尼本土用户的参与度与平台活跃度。",
-          "date": "2026-06-22",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/tebak-tebakan-pertandingan-piala-dunia-berhadiah-rp1-miliar-gini-cara-ikutannya/"
-            }
-          ]
         }
       ]
     },
@@ -972,61 +818,6 @@
             {
               "name": "IBKR Campus",
               "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-market-insights/bad-week-for-inflation-proxies/"
-            }
-          ]
-        },
-        {
-          "title": "盈透预测市场推出新加坡 CPI 相关预测合约",
-          "category": "活动推广",
-          "summary": "**盈透证券**利用其预测市场（Prediction Market）平台，针对新加坡 5 月 CPI 数据发布预测合约：* **功能推广**：引导投资者利用金融预测工具参与宏观经济趋势的预判；* **市场分析**：文章指出全球通胀可能在 2026 年见顶，并对即将公布的新加坡 CPI 数据进行前瞻解读。",
-          "date": "2026-06-22",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/prediction-market/consider-the-1-6-yes-for-tuesdays-singapore-cpi/"
-            }
-          ]
-        },
-        {
-          "title": "发布量化交易与机器学习专题教学动态",
-          "category": "其他",
-          "summary": "**IBKR Campus** 旗下的 Quant News 频道发布技术内容，旨在强化平台在量化投研领域的教育布局：* **核心主题**：深入探讨如何将**机器学习算法**应用于复杂的股票市场预测模型；* **应用价值**：指导用户如何通过算法工具在不确定的市场环境中挖掘潜在投资机会。",
-          "date": "2026-06-22",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/ibkr-quant-news/machine-learning-algorithms-for-stock-market-prediction/"
-            }
-          ]
-        },
-        {
-          "title": "发布系列宏观经济及市场趋势研报",
-          "category": "其他",
-          "summary": "**盈透证券**发布多份市场分析报告，涵盖利率波动、货币政策预期及关键行业信息：* **债市监测**：分析 SpaceX 首次发债对收益率曲线的影响，指出 2 年期美债收益率创下 16 个月新高；* **利率预警**：引述美银观点称美联储可能在 2026 年底前**加息 75 个基点**，超出市场普遍预期；* **宏观资讯**：汇总包括 6 月 FOMC 会议维持利率在 3.5%-3.75% 区间、微软购电协议及前联储主席格林斯潘逝世等动态。",
-          "date": "2026-06-22",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/2-year-jumps-to-16-month-high-resulting-in-flattest-curve-in-over-a-year/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/fed-rate-hikes-are-coming-bank-of-america-warns-in-shocking-hawkish-call/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/economic-update-week-of-june-22-2026/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/weekly-market-recap-week-of-june-22-2026/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/seeing-a-basis-to-be-rationally-exuberant/"
             }
           ]
         }
