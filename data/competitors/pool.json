@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-24",
-    "to": "2026-07-24"
+    "from": "2026-06-25",
+    "to": "2026-07-25"
   },
   "competitors": [
     {
@@ -52,32 +52,6 @@
       "logo": "https://www.google.com/s2/favicons?domain=binance.com&sz=64",
       "summary": "近期未监测到 Binance 的公开动态",
       "events": [
-        {
-          "title": "上线多款 USDⓈ 本位 TradFi 永续合约",
-          "category": "产品更新",
-          "summary": "**币安合约**计划于 2026 年 6 月 29 日上线多个以 **USDⓈ 为保证金的传统金融（TradFi）永续合约**，进一步丰富其衍生品交易种类。",
-          "date": "2026-06-29",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/ba04ce1272df4bdf8d2595ccb0e1954b"
-            }
-          ]
-        },
-        {
-          "title": "新增 JPY 现货交易对并开启挂单零手续费活动",
-          "category": "活动推广",
-          "summary": "币安于 2026 年 6 月 26 日上线**新的日元（JPY）现货交易对**，并同步推出**挂单零手续费（Zero Maker Fee）**优惠活动，旨在吸引日元市场用户。",
-          "date": "2026-06-26",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/d83363b157b24be699c47baa4aa307fa"
-            }
-          ]
-        },
         {
           "title": "因 MiCA 规则生效，币安将限制欧盟地区服务",
           "category": "监管合规",
@@ -166,58 +140,6 @@
               "url": "https://www.coindesk.com/policy/2026/06/23/cz-binance-founder-wants-to-clear-up-misunderstandings-about-who-he-is"
             }
           ]
-        },
-        {
-          "title": "杠杆交易平台新增交易对",
-          "category": "产品更新",
-          "summary": "币安杠杆（Binance Margin）于 2026 年 6 月 23 日**新增多个杠杆交易对**，提升用户的资产配置灵活性。",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/3af18ad98b3048a3b959ef1405b9d45b"
-            }
-          ]
-        },
-        {
-          "title": "现货平台上线 bStocks 股票代币交易对",
-          "category": "新币上线",
-          "summary": "币安现货于 2026 年 6 月 23 日新增以下 **bStocks 交易对**：* **AMD**（Advanced Micro Devices）* **EWYB**（iShares MSCI South Korea ETF）* **INTCB**（Intel）* **MSTRB**（MicroStrategy）",
-          "date": "2026-06-23",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/d1343e10bc2648cd8302c83a5b1223a9"
-            }
-          ]
-        },
-        {
-          "title": "上线 ARXUSDT 永续合约",
-          "category": "新币上线",
-          "summary": "币安合约于 2026 年 6 月 23 日上线以 **USDⓈ 为保证金的 ARX 永续合约**，最高杠杆倍数待定。",
-          "date": "2026-06-23",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/7fa4e8b3ced94b4c8c189a4593dbce9b"
-            }
-          ]
-        },
-        {
-          "title": "何一针对冒充身份诈骗发布警告",
-          "category": "其他",
-          "summary": "币安联合创始人**何一**发布推文警告用户关注一个名为“Zhu Pan”的**身份冒充诈骗者**。对此，CoinUp 平台已公开否认与该个人有任何关联。",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/binances-yi-he-warns-alleged-scammer-coinup-responds?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            }
-          ]
         }
       ]
     },
@@ -226,21 +148,7 @@
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=okx.com&sz=64",
       "summary": "近期未监测到 OKX 的公开动态",
-      "events": [
-        {
-          "title": "OKX 欧洲主管预测 MiCA 将引发行业洗牌",
-          "category": "监管合规",
-          "summary": "OKX 欧洲区首席执行官 Ghoos 表示，由于 ESMA 强制要求**未授权企业必须在 7 月 1 日前停止欧盟业务**，预计 **80% 的加密交易所将无法在 MiCA 时代生存**。",
-          "date": "2026-06-23",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/405777/okx-europe-chief-mica-deadline-nears?utm_source=rss&utm_medium=rss"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "Bybit",
@@ -286,19 +194,6 @@
             {
               "name": "Odaily",
               "url": "https://www.odaily.news/zh-CN/newsflash/494607"
-            }
-          ]
-        },
-        {
-          "title": "加速扩展永续合约产品线",
-          "category": "产品更新",
-          "summary": "随着美国监管机构对加密衍生品态度的转变，**Coinbase 正在积极扩大其永续合约供应**，以应对 Cboe 和 Kalshi 等对手的市场竞争。",
-          "date": "2026-06-23",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/cboe-bitcoin-ether-perpetual-futures-cftc-kalshi?utm_source=rss&utm_medium=rss&utm_campaign=rss"
             }
           ]
         }
@@ -359,19 +254,6 @@
             {
               "name": "Kraken Blog",
               "url": "https://blog.kraken.com/product/margin/eea-futures-30-days-no-trading-fees"
-            }
-          ]
-        },
-        {
-          "title": "发布 MiCA 法案合规指引及风险警示",
-          "category": "监管合规",
-          "summary": "针对 **2026 年 7 月 1 日**生效的欧洲 **MiCA（加密资产市场法案）**，Kraken 提醒机构客户关注：* **对手方风险**：非授权托管机构将带来合规漏洞；* **报告义务**：合规要求将延伸至 CCO 签发和 LP 报告环节。",
-          "date": "2026-06-26",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/kraken-institutional/mica-enforcement-begins-july-1"
             }
           ]
         },
@@ -483,23 +365,6 @@
               "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260625"
             }
           ]
-        },
-        {
-          "title": "bitbank 发布 2026-06-23 比特币行情与技术信号分析",
-          "category": "其他",
-          "summary": "**发布每日 BTC 研报与技术指标**：- 分析 **FRB 利率观望情绪** 对币价上行空间的限制 - 解读 **14EMA 均线** 表现，关注 1070 万日元关口的短期反转信号",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/bitbank-daily-2026-06-23"
-            },
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260623"
-            }
-          ]
         }
       ]
     },
@@ -597,32 +462,6 @@
               "url": "https://blog.indodax.com/promo-lovebeau/"
             }
           ]
-        },
-        {
-          "title": "宣布下架 MTL 与 GXC 并迁移至 REI",
-          "category": "产品更新",
-          "summary": "**Indodax** 计划于 2026 年 6 月 30 日下架资产：\\n- **MTL** 和 **GXC** 将正式下架\\n- **GXC** 资产将迁移至 **REI** 网络\\n- 提醒用户关注相关时间节点以处理资产",
-          "date": "2026-06-23",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/informasi-delisting-juni23-2026/"
-            }
-          ]
-        },
-        {
-          "title": "联合 Crypto Sharia 举办策略交易 AMA",
-          "category": "活动推广",
-          "summary": "**Indodax** 开展社区互动活动：\\n- 与 **Crypto Sharia** 合作举办 AMA\\n- 主题为“从叙事到行动：应对当前市场的交易策略”\\n- 旨在提升用户的市场应对能力和交易技巧",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/ama-cryptosharia/"
-            }
-          ]
         }
       ]
     },
@@ -631,38 +470,7 @@
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=tokocrypto.com&sz=64",
       "summary": "近期未监测到 Tokocrypto 的公开动态",
-      "events": [
-        {
-          "title": "发布每日加密货币信号与行情分析",
-          "category": "其他",
-          "summary": "**Tokocrypto** 发布市场分析观察：\\n- 提供了针对特定资产的**技术分析和交易策略**\\n- 监测到 **DeXe (DEXE)** 出现显著涨幅\\n- 关注美国 **PCE 通胀数据** 对市场的潜在影响",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/sinyal-kripto-23-juni-2026-analisis-teknikal-dan-proyeksi-pasar/"
-            },
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/pasar-kripto-hari-ini-23-juni-2026-soroti-tren-tokenisasi-saham-dan-data-inflasi-as/"
-            }
-          ]
-        },
-        {
-          "title": "开展 RWA 与代币化股票专题研究",
-          "category": "其他",
-          "summary": "**Tokocrypto 研究团队** 探讨金融创新：\\n- 深入分析了**真实世界资产 (RWA)** 的代币化趋势\\n- 讨论了通过区块链访问**全球股票市场**的新方式\\n- 强调了 **Tokenized Stocks** 在传统金融数字化中的作用",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Tokocrypto News",
-              "url": "https://news.tokocrypto.com/tokenized-stocks-cara-baru-mengakses-saham-global-lebih-mudah/"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "PINTU",
