@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-25",
-    "to": "2026-07-25"
+    "from": "2026-06-26",
+    "to": "2026-07-26"
   },
   "competitors": [
     {
@@ -83,61 +83,6 @@
             {
               "name": "CoinDesk",
               "url": "https://www.coindesk.com/policy/2026/06/24/post-prison-cz-says-time-behind-bars-didn-t-hurt-the-billionaire-s-business-after-binance"
-            }
-          ]
-        },
-        {
-          "title": "撤回希腊 MiCA 牌照申请并寻求其他欧盟司法管辖区授权",
-          "category": "监管合规",
-          "summary": "在 7 月 1 日 MiCA 截止日期前，Binance 战略性调整其欧洲合规布局：\n* **主动撤回**在希腊提交的 MiCA 牌照申请\n* **寻求授权**：计划在其他欧盟成员国寻求合规认证\n* **合规承诺**：联席 CEO 表示仍致力于在法律框架内运营以服务欧盟用户",
-          "date": "2026-06-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/406009/binance-ceo-remains-committed-securing-eu-license-exchange-withdraws-greece-bid"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/binance-eu-license-greece-mica-setback"
-            },
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/policy/2026/06/24/binance-withdraws-greek-mica-bid-but-vows-to-remain-in-europe"
-            },
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/371990/binance-withdraws-mica-license-application-greece-eu-users-limbo"
-            },
-            {
-              "name": "The Defiant",
-              "url": "https://thedefiant.io/news/regulation/binance-withdraws-greece-mica-application-targets-new-eu-jurisdiction"
-            }
-          ]
-        },
-        {
-          "title": "上线 OUSDT 1-50 倍 U 本位永续合约",
-          "category": "产品更新",
-          "summary": "Binance 合约平台进一步丰富衍生品种类：\n* **上线时间**：2026 年 6 月 24 日\n* **产品细节**：推出以 USDⓈ 为保证金的 **OUSDT 永续合约**，最高支持 50 倍杠杆",
-          "date": "2026-06-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Binance",
-              "url": "https://www.binance.com/en/support/announcement/a6b7d5a8a14a44c1b6a6a34813c6d93f"
-            }
-          ]
-        },
-        {
-          "title": "创始人 CZ 回应个人身份误解",
-          "category": "其他",
-          "summary": "Binance 创始人 CZ 试图澄清关于其个人背景及身份的相关误解：\n* **核心观点**：针对监管压力下的个人形象及在公司的过往角色进行说明",
-          "date": "2026-06-23",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/policy/2026/06/23/cz-binance-founder-wants-to-clear-up-misunderstandings-about-who-he-is"
             }
           ]
         }
@@ -256,45 +201,6 @@
               "url": "https://blog.kraken.com/product/margin/eea-futures-30-days-no-trading-fees"
             }
           ]
-        },
-        {
-          "title": "上线 NES 代币现货交易",
-          "category": "新币上线",
-          "summary": "Kraken 交易所正式列示 **NES** 代币：\n* **开放交易**：2026 年 6 月 24 日起生效\n* **功能支持**：用户可通过 Funding 模块进行充值并在现货市场进行交易",
-          "date": "2026-06-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/asset-listings/nes-is-available-for-trading"
-            }
-          ]
-        },
-        {
-          "title": "上线 SPCXx (SpaceX) 股权代币杠杆交易",
-          "category": "产品更新",
-          "summary": "Kraken Pro 推出基于 **SpaceX (SPCXx)** 的代币化股权杠杆对：\n* **交易对**：SPCXx/USD\n* **杠杆支持**：提供最高 **3 倍** 杠杆，支持多头与空头头寸",
-          "date": "2026-06-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/margin/new-pair-available-spcxx"
-            }
-          ]
-        },
-        {
-          "title": "合作伙伴 OpenPayd 获得 MiCA 牌照",
-          "category": "合作伙伴",
-          "summary": "为 Kraken 提供支付基础设施的 **OpenPayd** 成功获得 MiCA 牌照：\n* **业务影响**：Kraken 可通过合规渠道进一步扩展在欧洲的受监管加密服务",
-          "date": "2026-06-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/openpayd-mica-license-stablecoin-adoption-europe"
-            }
-          ]
         }
       ]
     },
@@ -384,19 +290,6 @@
             {
               "name": "The Block",
               "url": "https://www.theblock.co/post/406067/ripple-launches-rlusd-stablecoin-japan?utm_source=rss&utm_medium=rss"
-            }
-          ]
-        },
-        {
-          "title": "推出日本首个信托银行支持的稳定币 JPYSC",
-          "category": "产品更新",
-          "summary": "**SBI集团**宣布推出日本首个由信托银行支持的稳定币 **JPYSC**。\\n- **可用性限制**：在监管和税务处理明确之前，JPYSC 的使用目前仅限于 **SBI VC Trade** 账户。\\n- **战略意义**：这是日本金融体系在合规稳定币应用方面的里程碑动作。",
-          "date": "2026-06-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/405952/japan-sbi-group-launches-jpysc?utm_source=rss&utm_medium=rss"
             }
           ]
         }
@@ -571,61 +464,6 @@
             {
               "name": "IBKR Campus",
               "url": "https://www.interactivebrokers.com/campus/ibkr-quant-news/applying-transformers-to-financial-time-series/"
-            }
-          ]
-        },
-        {
-          "title": "盈透证券预测市场关注美国核心宏观经济合约到期",
-          "category": "产品更新",
-          "summary": "盈透证券**预测市场 (Prediction Market)** 披露了参与者对关键经济指标的预期：\n- **PCE（个人消费支出）**、初请失业金人数及 WEI 合约即将到期\n- 市场参与者预计将出现**高通胀**、强劲的经济活动以及低迷的裁员数据",
-          "date": "2026-06-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/pce-claims-wei-contracts-expiring-tomorrow/"
-            }
-          ]
-        },
-        {
-          "title": "发布 AI 投资专题分析与能源需求研究报告",
-          "category": "其他",
-          "summary": "针对 **AI 行业泡沫**及市场动量，盈透证券发布系列深度分析：\n- 提出通过**盈利增长对比**来识别 AI 股票炒作风险的测试方法\n- 探讨 **AI 能源供应链**中的潜在赢家及 2026 年的**股息增长**机会\n- 指出投资者对 AI 的解读正从少数公司转向更广泛的投资组合",
-          "date": "2026-06-24",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/the-ai-boom-needs-energy-but-whos-actually-supplying-it/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/above-the-noise-ai-markets-and-momentum/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/the-simple-test-to-see-through-ai-stock-hype/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/stocks/beyond-ai-where-investors-can-still-find-dividend-growth-in-2026/"
-            }
-          ]
-        },
-        {
-          "title": "宏观经济分析：霍尔木兹海峡交通恢复与通胀预期",
-          "category": "其他",
-          "summary": "**宏观市场研判**动态：\n- 观察到**霍尔木兹海峡**商业交通恢复，原油价格跌破 70 美元，缓解了通胀担忧并引发国债反弹\n- 分析了美联储主席 Kevin Warsh 关于**抗通胀**的政策表态对短期利率及股市的影响",
-          "date": "2026-06-24",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/hormuz-traffic-recovery-sparks-treasury-rally-as-oil-sinks-below-70/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-market-insights/bad-week-for-inflation-proxies/"
             }
           ]
         }
