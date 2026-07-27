@@ -1,7 +1,7 @@
 {
   "date_range": {
-    "from": "2026-06-26",
-    "to": "2026-07-26"
+    "from": "2026-06-27",
+    "to": "2026-07-27"
   },
   "competitors": [
     {
@@ -51,42 +51,7 @@
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=binance.com&sz=64",
       "summary": "近期未监测到 Binance 的公开动态",
-      "events": [
-        {
-          "title": "因 MiCA 规则生效，币安将限制欧盟地区服务",
-          "category": "监管合规",
-          "summary": "**核心动态**：随着欧盟 MiCA（加密资产市场监管）规则于 7 月 1 日生效，币安因尚未获得成员国授权将**限制在欧注册与相关服务**。\n- **具体措施**：用户资产提现功能保持开放。\n- **区域调整**：已撤回在希腊的 MiCA 牌照申请，正在寻求在其他欧盟成员国的授权。\n- **监管压力**：在爱尔兰和拉脱维亚的合规谈判中也遇到了摩擦。",
-          "date": "2026-06-24",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/binance-eu-service-limits-july-1-mica-effect?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            },
-            {
-              "name": "CryptoSlate",
-              "url": "https://cryptoslate.com/why-europe-is-struggling-to-give-binance-the-mica-license-it-needs/"
-            },
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/post/5211574"
-            }
-          ]
-        },
-        {
-          "title": "CZ 狱后首次发声：业务并未受阻",
-          "category": "人事变动",
-          "summary": "**关键内容**：原币安首席执行官赵长鹏（CZ）在服刑期满后表示，这段经历**并未损害其个人商业地位**，对币安卸任后的未来表现出信心。",
-          "date": "2026-06-24",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/policy/2026/06/24/post-prison-cz-says-time-behind-bars-didn-t-hurt-the-billionaire-s-business-after-binance"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "OKX",
@@ -107,102 +72,14 @@
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=coinbase.com&sz=64",
       "summary": "近期未监测到 Coinbase 的公开动态",
-      "events": [
-        {
-          "title": "二层网络 Base 因主网故障中断出块两小时",
-          "category": "产品更新",
-          "summary": "**事故回顾**：Coinbase 孵化的以太坊 L2 网络 Base 遭遇**主网出块停滞**，导致交易延迟或中断。\n- **故障影响**：存取款功能一度受限，交易在 status 页面显示为停滞。\n- **当前状态**：故障持续约两小时后已**成功恢复出块**，据称与计划升级前的出块问题有关。",
-          "date": "2026-06-25",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/406213/coinbase-incubated-base-blockchain-suffers-unsafe-head-stall-interrupting-block-production?utm_source=rss&utm_medium=rss"
-            },
-            {
-              "name": "CoinDesk",
-              "url": "https://www.coindesk.com/tech/2026/06/25/coinbase-s-base-blockchain-resumes-after-two-hour-outage-disrupted-network"
-            },
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/372110/coinbase-ethereum-network-base-recovers-block-production-issue"
-            }
-          ]
-        },
-        {
-          "title": "Ark Invest 增持 Coinbase 股份",
-          "category": "融资/IPO",
-          "summary": "**资本动态**：凯茜·伍德（Cathie Wood）旗下的 **Ark Invest** 在股市下跌期间逆势购入更多 Coinbase 股份。\n- **背景**：此次操作显示了机构投资者对 Coinbase 长期价值的信心，同时购入的还有 Circle 和 Robinhood 等公司股份。",
-          "date": "2026-06-25",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Odaily",
-              "url": "https://www.odaily.news/zh-CN/newsflash/494607"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "Kraken",
       "region": "GLOBAL",
       "logo": "https://www.google.com/s2/favicons?domain=kraken.com&sz=64",
       "summary": "近期未监测到 Kraken 的公开动态",
-      "events": [
-        {
-          "title": "Kraken Institutional 与 Centrifuge 合作支持 RWA 托管",
-          "category": "合作伙伴",
-          "summary": "**业务进展**：Kraken Institutional 宣布与 **Centrifuge** 建立合作伙伴关系，旨在将**现实世界资产（RWA）**引入合格托管服务。\n- **首发产品**：将首先支持 Janus Henderson 的旗舰 AAA 级 **CLO 策略产品 JAAA**，该产品现已通过 Centrifuge 实现了代币化。",
-          "date": "2026-06-26",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/kraken-institutional/centrifuge-rwas-in-qualified-custody"
-            }
-          ]
-        },
-        {
-          "title": "上线代币 NOCK 现货交易",
-          "category": "新币上线",
-          "summary": "**上币动态**：Kraken 正式开放 **NOCK** 交易。\n- **操作指南**：用户可通过 Funding 页面进行充值并参与交易。",
-          "date": "2026-06-26",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/asset-listings/nock-is-available-for-trading"
-            }
-          ]
-        },
-        {
-          "title": "与 Maple 合作完成首个链上仓库融资设施",
-          "category": "合作伙伴",
-          "summary": "**金融创新**：Kraken 与 **Maple** 合作完成了一项针对数字资产抵押贷款的**链上仓库设施**。\n- **核心价值**：首次在完全链上环境中复制了机构信贷市场的结构性保护，资金将用于支持 Kraken 的 OTC 借贷计划。",
-          "date": "2026-06-26",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/news/maple-onchain-warehouse-facility"
-            }
-          ]
-        },
-        {
-          "title": "针对 EEA 地区新合约用户推出 30 天零手续费活动",
-          "category": "活动推广",
-          "summary": "**营销推广**：欧洲经济区（EEA）的新期货交易者可享受**首个 30 天 0 手续费**优惠。\n- **活动详情**：涵盖高达 1000 万美元交易量的 Taker 零费用及 Maker 零费用。\n- **支持产品**：支持 300 多个永续合约对，最高 10 倍杠杆。",
-          "date": "2026-06-26",
-          "importance": "medium",
-          "sources": [
-            {
-              "name": "Kraken Blog",
-              "url": "https://blog.kraken.com/product/margin/eea-futures-30-days-no-trading-fees"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "Remitano",
@@ -237,63 +114,14 @@
       "region": "JP",
       "logo": "https://www.google.com/s2/favicons?domain=bitbank.cc&sz=64",
       "summary": "近期未监测到 bitbank 的公开动态",
-      "events": [
-        {
-          "title": "SBI Holdings 宣布以 2.89 亿美元收购 bitbank",
-          "category": "融资/IPO",
-          "summary": "**SBI Holdings 已达成协议，将以约 2.89 亿美元的价格全资收购 bitbank**。\n- 交易预计于 **2026 年 10 月**左右完成。\n- 该收购旨在整合加密交易、稳定币、代币化及区块链基础设施，打造**日本最大的加密交易所生态系统**。",
-          "date": "2026-06-25",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/406105/sbi-holdings-agrees-to-acquire-japanese-crypto-exchange-bitbank-in-288-6-million-deal?utm_source=rss&utm_medium=rss"
-            },
-            {
-              "name": "CoinTelegraph",
-              "url": "https://cointelegraph.com/news/sbi-acquire-bitbank-289-million-deal?utm_source=rss&utm_medium=rss&utm_campaign=rss"
-            },
-            {
-              "name": "Decrypt",
-              "url": "https://decrypt.co/372117/sbi-holdings-289-million-bitbank-deal-japan-largest-crypto-exchange"
-            }
-          ]
-        },
-        {
-          "title": "发布比特币跌破 1000 万日元行情分析",
-          "category": "其他",
-          "summary": "**发布每日市场动态简报**。\n- 比特币价格跌破 **1000 万日元**大关，日跌幅达 2.4%。\n- 技术分析指出 CCI 指标显示市场处于**超卖水准**，提醒关注安值圈的小幅反弹机会。",
-          "date": "2026-06-25",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "bitbank Knowledge",
-              "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260625"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "SBI VC Trade",
       "region": "JP",
       "logo": "https://www.google.com/s2/favicons?domain=sbivc.co.jp&sz=64",
       "summary": "近期未监测到 SBI VC Trade 的公开动态",
-      "events": [
-        {
-          "title": "Ripple 通过 SBI VC Trade 在日本上线 RLUSD 稳定币",
-          "category": "合作伙伴",
-          "summary": "**Ripple 的 RLUSD 稳定币正式通过 SBI VC Trade 平台进入日本市场**。\n- 该服务同时面向**机构用户和零售用户**。\n- 此举是在获得监管批准后，Ripple 扩大其在日本跨境支付和稳定币应用的重要进展。",
-          "date": "2026-06-25",
-          "importance": "high",
-          "sources": [
-            {
-              "name": "The Block",
-              "url": "https://www.theblock.co/post/406067/ripple-launches-rlusd-stablecoin-japan?utm_source=rss&utm_medium=rss"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "Rakuten Wallet",
@@ -342,21 +170,7 @@
       "region": "ID",
       "logo": "https://www.google.com/s2/favicons?domain=indodax.com&sz=64",
       "summary": "近期未监测到 Indodax 的公开动态",
-      "events": [
-        {
-          "title": "Indodax 与 Love Beau 开展联名促销活动",
-          "category": "活动推广",
-          "summary": "- **Indodax** 联合 **Love Beau** 为用户提供线下福利；- 用户通过展示已验证的 **INDODAX 账户**，即可在 **Love Beau** 享受特定护理项目 **100,000 印尼盾** 的折扣。",
-          "date": "2026-06-25",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "Indodax Announcements",
-              "url": "https://blog.indodax.com/promo-lovebeau/"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     {
       "name": "Tokocrypto",
@@ -412,62 +226,7 @@
       "region": "BROKER",
       "logo": "https://www.google.com/s2/favicons?domain=interactivebrokers.com&sz=64",
       "summary": "近期未监测到 盈透证券 的公开动态",
-      "events": [
-        {
-          "title": "发布宏观经济洞察与美股市场深度分析",
-          "category": "其他",
-          "summary": "**通过 IBKR Campus 发布一系列深度研究报告**，核心内容包括：- **利率与通胀**：对墨西哥央行利率政策及美国 PCE 通胀数据进行预测，探讨其对固收及加密资产的潜在影响；- **个股动态**：深度评估美光科技（Micron）超预期财报对 AI 板块的提振作用，同时关注苹果产品调价引发的市场情绪变动；- **市场综述**：对外汇（FX）市场规模进行科普，指出 2025 年日交易量已达 9.6 万亿美元。",
-          "date": "2026-06-25",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/prediction-market/banxico-hold-priced-at-0-95-umich-upward-revision-expected/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-economic-landscape/micron-beat-and-raise-and-upbeat-econ-data-offset-apple-price-increase-worries/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/ibkr-market-insights/makers-and-takers/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/forex/the-worlds-biggest-market-is-hiding-in-plain-sight/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/will-the-upcoming-pce-report-fuel-a-crypto-recovery/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/feds-favorite-inflation-gauge-hits-3-year-high-fueling-rate-hike-bets-updated/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/traders-insight/securities/macro/micron-out-with-big-results-and-big-implications/"
-            }
-          ]
-        },
-        {
-          "title": "推出量化交易教程与新兴加密平台深度解析",
-          "category": "其他",
-          "summary": "**拓展专业化交易资源与新兴金融赛道研究**：- **量化技术**：发布技术文章，指导交易者如何将 **Transformer 模型**应用于金融时间序列特征识别，以提升量化策略精细度；- **加密研究**：通过播客节目深度解读 Hyperliquid 平台的永续合约交易机制及价格发现功能。",
-          "date": "2026-06-25",
-          "importance": "low",
-          "sources": [
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/podcasts/ibkr-podcasts/why-all-the-hype-behind-hyperliquid/"
-            },
-            {
-              "name": "IBKR Campus",
-              "url": "https://www.interactivebrokers.com/campus/ibkr-quant-news/applying-transformers-to-financial-time-series/"
-            }
-          ]
-        }
-      ]
+      "events": []
     }
   ]
 }
