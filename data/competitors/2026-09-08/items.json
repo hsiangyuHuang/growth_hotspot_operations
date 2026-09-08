@@ -1,0 +1,200 @@
+[
+  {
+    "id": "af532939",
+    "competitor": "Kraken",
+    "source": "Kraken Blog",
+    "source_type": "rss",
+    "title": "TWAP orders are now available on Kraken Pro: move size without moving the market",
+    "content": "TL;DR\n\n\n\n\nTWAP orders are live on Kraken Pro, splitting one large order into smaller child orders executed over a window you choose, from 1 minute to 7 days.\n\n\n\nBuilt-in controls cap parent order size against expected market volume, limit how far child orders can deviate from your limit price, and enforce minimum intervals between order actions.\n\n\n\nChild orders execute as IOC (immediate-or-cancel) at the best bid or ask, so your limit price holds throughout the run.\n\n\n\nTWAP is available now on K",
+    "url": "https://blog.kraken.com/product/pro/twap-orders-now-available",
+    "published_at": "2026-09-07T15:42:44+00:00",
+    "fetched_at": "2026-09-08T01:15:39.612188+00:00"
+  },
+  {
+    "id": "92af2731",
+    "competitor": "bitbank",
+    "source": "bitbank Knowledge",
+    "source_type": "rss",
+    "title": "BTCは底堅く3週続伸　米インフレ指標が次の試金石",
+    "content": "2026年8月31日週のビットコイン（BTC）市況と相場を総括。FRB理事発言と米雇用統計を中心に価格変動の要因を整理し、今週の相場見通しと注目材料を解説します。",
+    "url": "https://bitbank.cc/knowledge/markets/article/bitbank-weekly-market-insight-2026-09-07",
+    "published_at": "2026-09-07T08:11:53+00:00",
+    "fetched_at": "2026-09-08T01:15:39.796018+00:00"
+  },
+  {
+    "id": "7fbbe3b2",
+    "competitor": "bitbank",
+    "source": "bitbank Knowledge",
+    "source_type": "rss",
+    "title": "ビットコインは高値圏を維持、4週目の上昇継続なるか",
+    "content": "ビットコインは0.6%上昇し、終値は1256万円となりました。先週は3週連続の陽線を記録し、強気トレンドを維持。一方、週足の上昇率は鈍化しており、高値更新できるかが今週の焦点です。",
+    "url": "https://bitbank.cc/knowledge/markets/article/daily-signal20260907",
+    "published_at": "2026-09-07T08:01:42+00:00",
+    "fetched_at": "2026-09-08T01:15:39.796018+00:00"
+  },
+  {
+    "id": "406ee370",
+    "competitor": "bitbank",
+    "source": "bitbank Knowledge",
+    "source_type": "rss",
+    "title": "ビットコインマイニングの現状は？2026年のハッシュレートと収益性を解説",
+    "content": "2026年のビットコインマイニングの現状を解説。ハッシュレート低下、マイナーの収益性、ASIC価格、AIデータセンターへの事業転換を最新データから整理します。",
+    "url": "https://bitbank.cc/knowledge/markets/article/bitbankplus-report-mining",
+    "published_at": "2026-09-07T04:14:19+00:00",
+    "fetched_at": "2026-09-08T01:15:39.796018+00:00"
+  },
+  {
+    "id": "86e6059f",
+    "competitor": "Indodax",
+    "source": "Indodax Announcements",
+    "source_type": "rss",
+    "title": "AMA Bersama AsetQu: Kenalan Lebih Dekat dengan Crypto Properti",
+    "content": "INDODAX mengajak kamu ikut sesi Ask Me Anything (AMA) eksklusif bersama AsetQu, platform Crypto Properti yang menghadirkan cara baru berinvestasi di sektor properti lewat aset digital...",
+    "url": "https://blog.indodax.com/ama-asetqu/",
+    "published_at": "2026-09-07T09:58:44+00:00",
+    "fetched_at": "2026-09-08T01:15:39.625356+00:00"
+  },
+  {
+    "id": "76a13e46",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "Apa Itu NVDA, Saham dari NVIDIA?",
+    "content": "Kalau kamu yang sering main game di PC, atau mungkin mengikuti berita seputar AI dan data center pasti kamu pernah mendengar nama NVIDIA dan GeForce.\n\n\n\nPerusahaan teknologi asal Amerika Serikat ini merancang GPU dan platform accelerated computing yang digunakan di berbagai bidang, mulai dari gaming, visualisasi profesional, hingga infrastruktur AI berskala besar. Supaya lebih jelas, yuk kenali lebih dalam saham NVDA!\n\n\n\n\n\n\n\nApa Itu Saham NVDA?\n\n\n\nSaham NVDA adalah kode ticker yang mewakili NVID",
+    "url": "https://news.tokocrypto.com/apa-itu-nvda-saham-dari-nvidia/",
+    "published_at": "2026-09-07T16:02:56+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "e2373ce5",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "Sinyal Kripto Hari Ini 7 September 2026: Analisis MANTRA, AXS, dan LAYER, Mana yang Menarik?",
+    "content": "Bingung menentukan aset kripto yang menarik untuk dipantau dan tidak ingin repot menganalisis banyak grafik? Dalam sinyal kripto hari ini, trader Tokocrypto Fyqieh Fachrur membahas pergerakan MANTRA (OM), Axie Infinity (AXS), dan Solayer (LAYER), lengkap dengan level harga penting serta potensi arah pergerakannya. \n\n\n\nSimak analisis berikut untuk membantu kamu menyusun strategi trading hari ini dengan lebih praktis dan terarah.\n\n\n\nLAYER/USDT — Solayer (+5.08%)\n\n\n\nSinyal Trading:\n\n\n\nEntry: $0.070",
+    "url": "https://news.tokocrypto.com/sinyal-kripto-hari-ini-7-september-2026/",
+    "published_at": "2026-09-07T14:20:47+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "bf3eb279",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "MRVLB Bertahan di Atas US$220, Momentum Saham Marvell Buka Jalan ke US$230",
+    "content": "Marvell Technology Tokenized bStocks (MRVLB) menguat 0,78% ke US$223,52 dalam 24 jam meski pasar kripto sedikit melemah. Momentum saham Marvell dan pertumbuhan tokenized equities menjadi penopang utama, sementara US$230 menjadi resistance terdekat.\n\n\n\nMarvell Technology Tokenized bStocks (MRVLB) mencatat kenaikan 0,78% dalam 24 jam ke level US$223,52, berdasarkan snapshot data pasar yang digunakan.\n\n\n\nKenaikan tersebut terjadi ketika pasar kripto secara keseluruhan bergerak sedikit negatif. Arti",
+    "url": "https://news.tokocrypto.com/mrvlb-bertahan-di-atas-us220-momentum-saham-marvell-buka-jalan-ke-us230/",
+    "published_at": "2026-09-07T12:24:05+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "720d01c3",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "NOKB Bertahan di Atas US$10, Reli Saham Nokia Jaga Momentum Positif",
+    "content": "Nokia Tokenized bStocks (NOKB) menguat 0,74% ke US$10,23 dalam 24 jam meski pasar kripto bergerak sedikit melemah. Penguatan saham Nokia, kenaikan volume perdagangan, dan momentum sektor tokenized equities menjadi penopang utama.\n\n\n\nNokia Tokenized bStocks (NOKB) mencatat kenaikan 0,74% dalam 24 jam ke level US$10,23, berdasarkan snapshot data pasar yang digunakan.\n\n\n\nPergerakan tersebut terjadi ketika pasar kripto secara keseluruhan cenderung melemah. Volume perdagangan NOKB juga naik sekitar 2",
+    "url": "https://news.tokocrypto.com/nokb-bertahan-di-atas-us10-reli-saham-nokia-jaga-momentum-positif/",
+    "published_at": "2026-09-07T12:13:38+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "b47d4052",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "INTCB Dekati US$100, Rally Saham Intel dan Tokenized Stocks Jadi Penopang",
+    "content": "Intel Tokenized bStocks (INTCB) menguat 1,05% ke US$97,84 dalam 24 jam meski pasar kripto bergerak sedikit melemah. Momentum saham Intel, lonjakan volume perdagangan, dan meningkatnya aktivitas tokenized equities membuka peluang harga kembali menguji US$100.\n\n\n\nIntel Tokenized bStocks (INTCB) mencatat kenaikan 1,05% dalam 24 jam ke level US$97,84, berdasarkan snapshot data pasar yang digunakan.\n\n\n\nPergerakan tersebut cukup menonjol karena Bitcoin pada periode yang sama melemah sekitar 0,69%, sem",
+    "url": "https://news.tokocrypto.com/intcb-dekati-us100-rally-saham-intel-dan-tokenized-stocks-jadi-penopang/",
+    "published_at": "2026-09-07T12:04:05+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "608a9030",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "AMDB Dekati US$500, Momentum Tokenized Stocks Jaga Tren Positif",
+    "content": "Advanced Micro Devices Tokenized bStocks (AMDB) menguat 0,83% ke US$481,89 dalam 24 jam meski pasar kripto sedikit melemah. Momentum saham AMD, meningkatnya volume perdagangan, dan pertumbuhan tokenized equities membuka peluang harga kembali menguji US$500.\n\n\n\nAdvanced Micro Devices Tokenized bStocks (AMDB) mencatat kenaikan 0,83% dalam 24 jam ke level US$481,89, berdasarkan snapshot data pasar yang digunakan.\n\n\n\nKenaikan tersebut terjadi ketika pasar kripto secara keseluruhan sedikit melemah, m",
+    "url": "https://news.tokocrypto.com/amdb-dekati-us500-momentum-tokenized-stocks-jaga-tren-positif/",
+    "published_at": "2026-09-07T11:57:10+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "d632980e",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "SKHYB Naik ke US$179, Momentum Chip AI Buka Jalan Menuju US$190",
+    "content": "SK Hynix Tokenized bStocks (SKHYB) menguat 1,49% ke US$179,71 dalam 24 jam meski Bitcoin bergerak sedikit melemah. Rally saham SK Hynix, momentum tokenized stocks, dan berkembangnya regulasi RWA menjadi penopang kenaikan.\n\n\n\nSK Hynix Tokenized bStocks (SKHYB) mencatat kenaikan 1,49% dalam 24 jam ke level US$179,71, berdasarkan snapshot data pasar yang digunakan.\n\n\n\nPergerakan tersebut terjadi ketika Bitcoin justru bergerak sedikit negatif, menunjukkan SKHYB mendapatkan kekuatan dari faktor lain ",
+    "url": "https://news.tokocrypto.com/skhyb-naik-ke-us179-momentum-chip-ai-buka-jalan-menuju-us190/",
+    "published_at": "2026-09-07T11:51:32+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "bb35082d",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "Analisa Harga BTC Hari Ini: Tekanan Jual Muncul Setelah Gagal Pertahankan Level $80.000",
+    "content": "Analisa harga BTC hari ini menyoroti Bitcoin yang  kembali terpaska kehilangan pijakan di level psikologis $80.000. \n\n\n\nSetelah sempat menyentuh area $80.530 dalam perdagangan 24 jam terakhir, BTC justru berbalik melemah dan kini bergerak di bawah level tersebut. \n\n\n\nPergerakan ini menunjukkan bahwa pembeli masih belum cukup kuat untuk mempertahankan Bitcoin di atas salah satu level penting dalam tren jangka pendek.\n\n\n\nBerdasarkan data pasar terbaru, harga Bitcoin berada di $79.604,88, turun sek",
+    "url": "https://news.tokocrypto.com/analisa-harga-btc-hari-ini-tekanan-jual-muncul-setelah-gagal-pertahankan-level-80-000/",
+    "published_at": "2026-09-07T04:25:28+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "994957df",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "Pasar Kripto Hari Ini 7 September 2026: BTC Sideways, Siap Tembus &85K?",
+    "content": "Pasar kripto hari ini, Senin, 7 September 2026 menunjukkan pergerakan positif di sejumlah altcoin. Sementara itu, Bitcoin (BTC) kembali menjadi perhatian setelah munculnya sejumlah katalis yang membuka peluang bagi harga untuk kembali menembus level US$85.000.\n\n\n\nDi jajaran altcoin, RAY mencatat kenaikan 34% hingga menyentuh Rp21.221,91. ORCA melonjak 30% dan kini diperdagangkan di sekitar Rp29.011,35, sementara JUP menguat 18% ke level Rp4.691,56.\n\n\n\nUntuk Bitcoin, harga perlu menembus level US",
+    "url": "https://news.tokocrypto.com/pasar-kripto-hari-ini-7-september-2026-btc-sideways-siap-tembus-85k/",
+    "published_at": "2026-09-07T04:00:43+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "689f30fb",
+    "competitor": "Tokocrypto",
+    "source": "Tokocrypto News",
+    "source_type": "rss",
+    "title": "Analisa Harga Pi Network Hari Ini: Turun 0,97%, Likuiditas Tipis Buat PI Tertekan",
+    "content": "Pergerakan Pi Network kembali berada di bawah tekanan ringan. Kali ini, penurunan harga PI tidak dibarengi dengan kabar negatif besar dari ekosistemnya. \n\n\n\nJustru, kondisi pasar yang relatif sepi menjadi salah satu faktor penting yang membuat pergerakan kecil berubah menjadi penurunan yang lebih terasa.\n\n\n\nHarga Pi Network tercatat berada di sekitar $0,0945, turun 0,97 persen dalam 24 jam. Pelemahan tersebut membuat PI sedikit tertinggal dari pasar kripto secara keseluruhan yang cenderung berge",
+    "url": "https://news.tokocrypto.com/analisa-harga-pi-network-hari-ini-turun-097-likuiditas-tipis-buat-pi-tertekan/",
+    "published_at": "2026-09-07T03:56:43+00:00",
+    "fetched_at": "2026-09-08T01:15:39.732161+00:00"
+  },
+  {
+    "id": "8bcc5781",
+    "competitor": "Coinbase",
+    "source": "CoinDesk",
+    "source_type": "media",
+    "title": "U.S. inflation, Coinbase’s Deribit switch: Crypto Week Ahead",
+    "content": "",
+    "url": "https://www.coindesk.com/markets/2026/09/07/u-s-inflation-coinbase-s-deribit-switch-crypto-week-ahead",
+    "published_at": "2026-09-07T08:07:05+00:00",
+    "fetched_at": "2026-09-08T01:16:57.704005+00:00"
+  },
+  {
+    "id": "bb8f8ec8",
+    "competitor": "OKX",
+    "source": "Odaily 快讯",
+    "source_type": "media",
+    "title": "交易所相关ONE缺口降至65.81亿枚，Harmony协调恢复充提及交易",
+    "content": "Odaily星球日报讯 据 Harmony 监测，8 月 11 日事件后的交易所对账进展显示，Harmony 已与币安、Gate、KuCoin、MEXC、OKX 及币安.US 核实链上充提和跨平台资金流，目前正优先协调尽快恢复 ONE 充值、提现及交易，具体恢复时间由各交易所另行公告。Harmony 匹配 295 笔、合计约 34.93 亿枚 ONE 的跨交易所转账，并调整循环转账及回流资金后，相关暂计缺口由约 102.34 亿枚 ONE 降至 65.81 亿枚 ONE，减少约 36.53 亿枚。该变化属于对账口径调整，并不等同于新增追回资金。其中，币安数据仍为暂定上限估计，Gate 及 OKX 部分数据仍待最终核实。",
+    "url": "https://www.odaily.news/zh-CN/newsflash/516189",
+    "published_at": "2026-09-08T00:33:08+00:00",
+    "fetched_at": "2026-09-08T01:16:57.704005+00:00"
+  },
+  {
+    "id": "10b4c21d",
+    "competitor": "Coinbase",
+    "source": "Odaily 文章",
+    "source_type": "media",
+    "title": "当 Polymarket 们等走向「幕后」：预测市场的下半场，在交易所之外？",
+    "content": "预测市场，最近在发生一个挺有意思的变化。从币安、Coinbase，再到盈透证券（IBKR）、Robinhood，头部玩家们纷纷重心上移，不再执著于复制一个 Polymarket。大家纷纷在想办法，怎么让 Polymarket、Kalshi 们逐渐「退到幕后」，变成其他金融产品可以直接调用的底层能力。这其实很像今天的股票交易，用户通过富途、老虎或 Robinhood 点击买入 TSLA，大多数用户不会关心订单最终流向哪家 Market Maker、经过哪套清算系统。预测市场未来也可能如此。前端可能是某一家券商、钱包、新闻 App 甚至 AI Agent，中间是 Aggregator 和 Router，真正提供市场、流动性与结算的 Polymarket、Kalshi 们，则越来越像隐藏在背后的金融基础设施。回看 DeFi，从 AMM 到聚合器、衍生品、专业做市和智能执行，这条路已经走过一遍。预测市场，或许也正在进入类似的下半场。一、预测市场，开始更多走向「幕后」过去几年，预测市场证明了现实世界里的「不确定性」，的确可以成为一种有价格、有流动性的交易资产。从美国总统大选，到世界杯等体育赛事，",
+    "url": "https://www.odaily.news/zh-CN/post/5212882",
+    "published_at": "2026-09-07T09:00:24+00:00",
+    "fetched_at": "2026-09-08T01:16:57.704005+00:00"
+  }
+]
