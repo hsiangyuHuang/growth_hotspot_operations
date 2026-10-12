@@ -1,0 +1,229 @@
+{
+  "run_date": "2026-10-12",
+  "competitors": [
+    {
+      "name": "HashKey",
+      "region": "HK",
+      "logo": "https://www.google.com/s2/favicons?domain=hashkey.com&sz=64",
+      "summary": "近期未监测到 HashKey 的公开动态",
+      "events": []
+    },
+    {
+      "name": "HKVAX",
+      "region": "HK",
+      "logo": "https://www.google.com/s2/favicons?domain=hkvax.com&sz=64",
+      "summary": "近期未监测到 HKVAX 的公开动态",
+      "events": []
+    },
+    {
+      "name": "VDX",
+      "region": "HK",
+      "logo": "https://www.google.com/s2/favicons?domain=vdx.com&sz=64",
+      "summary": "近期未监测到 VDX 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Bullish",
+      "region": "HK",
+      "logo": "https://www.google.com/s2/favicons?domain=bullish.com&sz=64",
+      "summary": "近期未监测到 Bullish 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Alchemy Pay",
+      "region": "HK",
+      "logo": "https://www.google.com/s2/favicons?domain=alchemypay.org&sz=64",
+      "summary": "近期未监测到 Alchemy Pay 的公开动态",
+      "events": []
+    },
+    {
+      "name": "First Digital Labs",
+      "region": "HK",
+      "logo": "https://www.google.com/s2/favicons?domain=firstdigitallabs.com&sz=64",
+      "summary": "近期未监测到 First Digital Labs 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Binance",
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=binance.com&sz=64",
+      "summary": "近期未监测到 Binance 的公开动态",
+      "events": []
+    },
+    {
+      "name": "OKX",
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=okx.com&sz=64",
+      "summary": "近期未监测到 OKX 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Bybit",
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=bybit.com&sz=64",
+      "summary": "近期未监测到 Bybit 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Coinbase",
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=coinbase.com&sz=64",
+      "summary": "近期未监测到 Coinbase 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Kraken",
+      "region": "GLOBAL",
+      "logo": "https://www.google.com/s2/favicons?domain=kraken.com&sz=64",
+      "summary": "近期未监测到 Kraken 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Remitano",
+      "region": "VN",
+      "logo": "https://www.google.com/s2/favicons?domain=remitano.com&sz=64",
+      "summary": "近期未监测到 Remitano 的公开动态",
+      "events": []
+    },
+    {
+      "name": "bitFlyer",
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=bitflyer.com&sz=64",
+      "summary": "近期未监测到 bitFlyer 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Coincheck",
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=coincheck.com&sz=64",
+      "summary": "近期未监测到 Coincheck 的公开动态",
+      "events": []
+    },
+    {
+      "name": "GMO Coin",
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=coin.z.com&sz=64",
+      "summary": "近期未监测到 GMO Coin 的公开动态",
+      "events": []
+    },
+    {
+      "name": "bitbank",
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=bitbank.cc&sz=64",
+      "summary": "近期未监测到 bitbank 的公开动态",
+      "events": []
+    },
+    {
+      "name": "SBI VC Trade",
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=sbivc.co.jp&sz=64",
+      "summary": "近期未监测到 SBI VC Trade 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Rakuten Wallet",
+      "region": "JP",
+      "logo": "https://www.google.com/s2/favicons?domain=rakuten-wallet.co.jp&sz=64",
+      "summary": "近期未监测到 Rakuten Wallet 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Bitstamp",
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=bitstamp.net&sz=64",
+      "summary": "近期未监测到 Bitstamp 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Bitpanda",
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=bitpanda.com&sz=64",
+      "summary": "近期未监测到 Bitpanda 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Bitvavo",
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=bitvavo.com&sz=64",
+      "summary": "近期未监测到 Bitvavo 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Crypto.com",
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=crypto.com&sz=64",
+      "summary": "近期未监测到 Crypto.com 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Gemini",
+      "region": "EU",
+      "logo": "https://www.google.com/s2/favicons?domain=gemini.com&sz=64",
+      "summary": "近期未监测到 Gemini 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Indodax",
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=indodax.com&sz=64",
+      "summary": "近期未监测到 Indodax 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Tokocrypto",
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=tokocrypto.com&sz=64",
+      "summary": "近期未监测到 Tokocrypto 的公开动态",
+      "events": []
+    },
+    {
+      "name": "PINTU",
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=pintu.co.id&sz=64",
+      "summary": "近期未监测到 PINTU 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Upbit Indonesia",
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=upbit.co.id&sz=64",
+      "summary": "近期未监测到 Upbit Indonesia 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Luno",
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=luno.com&sz=64",
+      "summary": "近期未监测到 Luno 的公开动态",
+      "events": []
+    },
+    {
+      "name": "Reku",
+      "region": "ID",
+      "logo": "https://www.google.com/s2/favicons?domain=reku.id&sz=64",
+      "summary": "近期未监测到 Reku 的公开动态",
+      "events": []
+    },
+    {
+      "name": "富途/Moomoo",
+      "region": "BROKER",
+      "logo": "https://www.google.com/s2/favicons?domain=moomoo.com&sz=64",
+      "summary": "近期未监测到 富途/Moomoo 的公开动态",
+      "events": []
+    },
+    {
+      "name": "老虎证券",
+      "region": "BROKER",
+      "logo": "https://www.google.com/s2/favicons?domain=tigerbrokers.com&sz=64",
+      "summary": "近期未监测到 老虎证券 的公开动态",
+      "events": []
+    },
+    {
+      "name": "盈透证券",
+      "region": "BROKER",
+      "logo": "https://www.google.com/s2/favicons?domain=interactivebrokers.com&sz=64",
+      "summary": "近期未监测到 盈透证券 的公开动态",
+      "events": []
+    }
+  ]
+}
